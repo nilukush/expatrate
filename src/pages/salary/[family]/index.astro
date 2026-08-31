@@ -1,0 +1,85 @@
+---
+import '../../../styles/global.css';
+import '../../../styles/wizard.css';
+import '../../../styles/seo.css';
+import { detailPages, breadcrumbLd, webAppLd, organizationLd, SITE_URL, countrySlug } from '../../../lib/seo';
+import { t } from '../../../i18n';
+
+export function getStaticPaths() {
+  const families = new Map<string, string>();
+  for (const page of detailPages()) families.set(page.familyId, page.familyName);
+  return [...families.entries()].map(([id, name]) => ({
+    params: { family: id },
+    props: { familyId: id, familyName: name },
+  }));
+}
+
+const { familyId, familyName } = Astro.props;
+const pages = detailPages().filter((page) => page.familyId === familyId);
+const title = t('seo.roleHubTitle', { family: familyName });
+const crumbs = [
+  { name: t('seo.breadcrumbHome'), url: `${SITE_URL}/` },
+  { name: 'Salary by role', url: `${SITE_URL}/salary/` },
+  { name: familyName, url: `${SITE_URL}/salary/${familyId}/` },
+];
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={t('seo.roleHubAnswer', { family: familyName })} />
+    <link rel="canonical" href={`${SITE_URL}/salary/${familyId}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">%</span>
+          <span class="brand-name">ExpatRate</span>
+        </a>
+        <p class="site-header-tag">Free · No sign-up · Runs in your browser</p>
+      </header>
+
+      <article class="seo-shell">
+        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">{t('seo.breadcrumbHome')}</a> ›
+          <span aria-current="page">{familyName}</span>
+        </nav>
+
+        <h1 class="seo-h1">{title}</h1>
+        <p class="seo-answer">{t('seo.roleHubAnswer', { family: familyName })}</p>
+
+        <h2 class="seo-h2">{t('seo.roleHubH2')}</h2>
+        <ul class="seo-list">
+          {pages.map((page) => (
+            <li>
+              <a href={`/salary/${familyId}/in/${countrySlug(page.countryName)}/`}>
+                {familyName} salaries in {page.countryName}: median {page.answer.medianFormatted}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <p class="seo-cta">
+          <a href="/">Get your personal quote.</a>
+        </p>
+      </article>
+
+      <footer class="site-footer">
+        <p>Estimates from public market data, indicative only. Not financial, tax, or legal advice.</p>
+        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
+      </footer>
+    </main>
+  </body>
+</html>

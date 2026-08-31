@@ -1,0 +1,46 @@
+[
+  {
+    "country": "ARE",
+    "style": "gcc-split",
+    "basicPercent": { "min": 50, "max": 60 },
+    "housingPercent": { "min": 20, "max": 30 },
+    "transportPercent": { "min": 5, "max": 10 },
+    "gratuity": "End-of-service gratuity accrues on basic salary only: 21 days of basic wage per year for the first 5 years, 30 days per year after, capped at 2 years of wage. Negotiate total package with a reasonable basic.",
+    "legalBasis": "Federal Decree-Law No. 33 of 2021 obliges accommodation or an allowance but mandates no split; the 25%-of-basic housing figure traces to the repealed 1980 law and survives as convention only.",
+    "sourceUrls": [
+      "https://uaelegislation.gov.ae/en/legislations/1541",
+      "https://quickhcm.com/multi-component-salary-structures-gcc/"
+    ]
+  },
+  {
+    "country": "SAU",
+    "style": "gcc-split",
+    "basicPercent": { "min": 50, "max": 75 },
+    "housingPercent": { "min": 20, "max": 25 },
+    "transportPercent": { "min": 5, "max": 10 },
+    "gratuity": "Saudi Labor Law caps housing allowance at 2 months of basic wage per year.",
+    "legalBasis": "Saudi Labor Law; payroll conventions reported by Papaya Global and Marco Payroll.",
+    "sourceUrls": [
+      "https://www.papayaglobal.com/countrypedia/country/saudi-arabia/",
+      "https://marcopayroll.com/countries/saudi-arabia/"
+    ]
+  },
+  {
+    "country": "QAT",
+    "style": "gcc-split",
+    "basicPercent": null,
+    "housingPercent": null,
+    "transportPercent": { "min": 8, "max": 12 },
+    "gratuity": "Housing is usually provided or allowanced rather than a fixed split; end-of-service is per Qatar Labor Law.",
+    "legalBasis": "Recruiter and payroll practice; no statutory split mandated.",
+    "sourceUrls": [
+      "https://associatedalliance.com/a-business-consulting-that-can-produce/",
+      "https://quickhcm.com/multi-component-salary-structures-gcc/"
+    ]
+  },
+  { "country": "GBR", "style": "single-gross", "gratuity": "Not applicable; statutory notice and pension apply.", "legalBasis": "UK convention: single gross figure.", "sourceUrls": ["https://www.gov.uk/income-tax-rates"] },
+  { "country": "USA", "style": "single-gross", "gratuity": "Not applicable; 401(k) match and health coverage are quoted separately.", "legalBasis": "US convention: single gross figure.", "sourceUrls": ["https://data-explorer.oecd.org/s/12t"] },
+  { "country": "DEU", "style": "single-gross", "gratuity": "Not applicable; collective agreements may add supplements.", "legalBasis": "German convention: single gross figure.", "sourceUrls": ["https://data-explorer.oecd.org/s/12t"] },
+  { "country": "SGP", "style": "single-gross", "gratuity": "Not applicable; AWS (13th month) is common practice but not statutory.", "legalBasis": "Singapore convention: single gross figure.", "sourceUrls": ["https://www.iras.gov.sg"] },
+  { "country": "IND", "style": "single-gross", "gratuity": "Gratuity is statutory after 5 years (15 days of basic per year); CTC quoting dominates and mixes allowances in.", "legalBasis": "Payment of Gratuity Act; CTC convention.", "sourceUrls": ["http://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1"] }
+]

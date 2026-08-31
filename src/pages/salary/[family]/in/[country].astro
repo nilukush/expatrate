@@ -1,0 +1,113 @@
+---
+import '../../../../styles/global.css';
+import '../../../../styles/wizard.css';
+import '../../../../styles/seo.css';
+import { detailPages, detailUrl, countryHubUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, monthlyFor } from '../../../../lib/seo';
+import { t } from '../../../../i18n';
+
+export function getStaticPaths() {
+  return detailPages().map((page) => ({
+    params: { family: page.familyId, country: page.countrySlug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const title = t('seo.detailTitle', { family: page.familyName, country: page.countryName });
+const description = t('seo.detailDescription', { family: page.familyName, country: page.countryName });
+const crumbs = [
+  { name: t('seo.breadcrumbHome'), url: `${SITE_URL}/` },
+  { name: t('seo.countryHubTitle', { country: page.countryName }).replace(/^Salary benchmarks for /, 'Salaries in '), url: `${SITE_URL}${countryHubUrl(page.countrySlug)}` },
+  { name: page.familyName, url: `${SITE_URL}${detailUrl(page.familyId, page.countrySlug)}` },
+];
+const fmt = (amount: number, currency: string) =>
+  new Intl.NumberFormat('en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={`${SITE_URL}${detailUrl(page.familyId, page.countrySlug)}`} />
+    <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description ?? title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">%</span>
+          <span class="brand-name">ExpatRate</span>
+        </a>
+        <p class="site-header-tag">Free · No sign-up · Runs in your browser</p>
+      </header>
+
+      <article class="seo-shell">
+        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">{t('seo.breadcrumbHome')}</a> ›
+          <a href={countryHubUrl(page.countrySlug)}>Salaries in {page.countryName}</a> ›
+          <span aria-current="page">{page.familyName}</span>
+        </nav>
+
+        <h1 class="seo-h1">{t('seo.detailH1', { family: page.familyName, country: page.countryName })}</h1>
+        <p class="seo-answer">{page.answer.paragraph}</p>
+
+        <h2 class="seo-h2">{t('seo.bySeniority')}</h2>
+        {page.levels.map((level) => (
+          <section class="seo-level">
+            <p class="seo-level-title">{t('seo.levelLabel', { level: level.levelLabel, quality: level.quality })}</p>
+            <dl class="seo-level-figures">
+              {level.p25 > 0 ? (
+                <div>
+                  <dt>P25</dt>
+                  <dd>{fmt(level.p25, level.currency)}</dd>
+                </div>
+              ) : null}
+              <div>
+                <dt>Median</dt>
+                <dd>{fmt(level.p50, level.currency)}</dd>
+              </div>
+              {level.p75 > 0 ? (
+                <div>
+                  <dt>P75</dt>
+                  <dd>{fmt(level.p75, level.currency)}</dd>
+                </div>
+              ) : null}
+              <div>
+                <dt>{t('results.perMonth')}</dt>
+                <dd>{monthlyFor(level.p50, level.currency)}</dd>
+              </div>
+            </dl>
+            <p class="seo-note">{level.p25 === 0 ? t('seo.medianOnlyNote') : t('seo.monthlyNote', { amount: monthlyFor(level.p50, level.currency) })}</p>
+            <p class="seo-note">{level.note}</p>
+          </section>
+        ))}
+
+        <h2 class="seo-h2">{t('seo.sourcesTitle')}</h2>
+        <ul class="seo-sources">
+          {page.levels.flatMap((level) => level.sources).filter((url, index, all) => all.indexOf(url) === index).map((url) => (
+            <li><a href={url} rel="nofollow noopener" target="_blank">{url}</a></li>
+          ))}
+        </ul>
+
+        <p class="seo-cta">
+          {t('seo.ctaBody')} <a href="/">Get your personal quote.</a>
+        </p>
+      </article>
+
+      <footer class="site-footer">
+        <p>Estimates from public market data, indicative only. Not financial, tax, or legal advice.</p>
+        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
+      </footer>
+    </main>
+  </body>
+</html>

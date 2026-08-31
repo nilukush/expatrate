@@ -1,0 +1,116 @@
+---
+import '../styles/global.css';
+import '../styles/wizard.css';
+import countries from '../data/countries.json';
+import benchmarks from '../data/benchmarks.json';
+import { t, setLocale, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+setLocale(locale);
+const dir = locale === 'ar' ? 'rtl' : 'ltr';
+const SITE_URL = 'https://expatrate.pages.dev';
+const localePath = locale === 'en' ? '/' : `/${locale}/`;
+const benchmarkCountries = new Set(
+  benchmarks.entries
+    .filter((e) => e.status !== 'insufficient_data')
+    .map((e) => e.country),
+).size;
+const year = new Date().getFullYear();
+const fontPreload =
+  locale === 'ar'
+    ? '/fonts/noto-sans-arabic-var.woff2'
+    : locale === 'hi'
+      ? '/fonts/noto-sans-devanagari-var.woff2'
+      : '/fonts/inter-latin-var.woff2';
+const langs: Array<{ code: Locale; label: string; href: string }> = [
+  { code: 'en', label: 'EN', href: '/' },
+  { code: 'ar', label: 'عربي', href: '/ar/' },
+  { code: 'hi', label: 'हिन्दी', href: '/hi/' },
+];
+const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
+  '__HL__',
+  `<span class="hero-hl">${t('home.titleWord')}</span>`,
+);
+---
+
+<!doctype html>
+<html lang={locale} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={t('home.description')} />
+    <title>{t('home.title')}</title>
+    <link rel="canonical" href={`${SITE_URL}${localePath}`} />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/`} />
+    <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    <meta property="og:title" content={t('home.title')} />
+    <meta property="og:description" content={t('home.description')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${SITE_URL}${localePath}`} />
+    <meta property="og:image" content={`${SITE_URL}/og-default.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <div class="page-glow" aria-hidden="true"></div>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href={localePath}>
+          <span class="brand-mark" aria-hidden="true">%</span>
+          <span class="brand-name" dir="ltr">ExpatRate</span>
+        </a>
+        <nav class="lang-switch" aria-label={t('home.langLabel')}>
+          {langs.map((lang) => (
+            <a href={lang.href} aria-current={lang.code === locale ? 'page' : undefined}>{lang.label}</a>
+          ))}
+        </nav>
+      </header>
+
+      <section class="hero">
+        <p class="hero-eyebrow">{t('home.eyebrow')}</p>
+        <h1 class="hero-title" set:html={heroTitleHtml} />
+        <p class="hero-sub">{t('home.sub')}</p>
+        <ul class="hero-trust">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            {t('home.trust1')}
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+            {t('home.trust2', { n: countries.length })}
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 0 2 2h13"/><path d="M9 7h6"/></svg>
+            {t('home.trust3')}
+          </li>
+        </ul>
+      </section>
+
+      <div id="wizard" class="wizard-rail"></div>
+      <section id="results" class="results-rail" hidden></section>
+
+      <footer class="site-footer">
+        <p>{t('home.footerData', { n: countries.length, b: benchmarkCountries })}</p>
+        <nav class="footer-nav">
+          <a href={`${localePath}methodology/`}>{t('home.linkMethodology')}</a> · <a href={`${localePath}salaries/`}>{t('home.linkSalaries')}</a> · <a href={`${localePath}privacy/`}>{t('home.linkPrivacy')}</a>
+        </nav>
+        <p>{t('home.footerAdvice')}</p>
+        <p>{t('home.footerRights', { year })}</p>
+      </footer>
+    </main>
+    <script>
+      import { mountWizard } from '../wizard/main';
+      const wizard = document.getElementById('wizard');
+      const results = document.getElementById('results');
+      if (wizard && results) {
+        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : 'en');
+      }
+    </script>
+  </body>
+</html>

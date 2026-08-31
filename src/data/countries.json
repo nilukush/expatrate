@@ -1,0 +1,1856 @@
+[
+  {
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "currency": "AFN",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ALB",
+    "name": "Albania",
+    "currency": "ALL",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DZA",
+    "name": "Algeria",
+    "currency": "DZD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ASM",
+    "name": "American Samoa",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "AND",
+    "name": "Andorra",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "AGO",
+    "name": "Angola",
+    "currency": "AOA",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ATG",
+    "name": "Antigua & Barbuda",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ARG",
+    "name": "Argentina",
+    "currency": "ARS",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ARM",
+    "name": "Armenia",
+    "currency": "AMD",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ABW",
+    "name": "Aruba",
+    "currency": "AWG",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "AUS",
+    "name": "Australia",
+    "currency": "AUD",
+    "region": "Oceania",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "AUT",
+    "name": "Austria",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "currency": "AZN",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BHS",
+    "name": "Bahamas",
+    "currency": "BSD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BHR",
+    "name": "Bahrain",
+    "currency": "BHD",
+    "region": "GCC",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "currency": "BDT",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BRB",
+    "name": "Barbados",
+    "currency": "BBD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BLR",
+    "name": "Belarus",
+    "currency": "BYN",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BEL",
+    "name": "Belgium",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BLZ",
+    "name": "Belize",
+    "currency": "BZD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BEN",
+    "name": "Benin",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BMU",
+    "name": "Bermuda",
+    "currency": "BMD",
+    "region": "North America",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "currency": "INR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BOL",
+    "name": "Bolivia",
+    "currency": "BOB",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BIH",
+    "name": "Bosnia & Herzegovina",
+    "currency": "BAM",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BWA",
+    "name": "Botswana",
+    "currency": "BWP",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BRA",
+    "name": "Brazil",
+    "currency": "BRL",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "VGB",
+    "name": "British Virgin Islands",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BRN",
+    "name": "Brunei",
+    "currency": "BND",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BGR",
+    "name": "Bulgaria",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BFA",
+    "name": "Burkina Faso",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "BDI",
+    "name": "Burundi",
+    "currency": "BIF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "currency": "KHR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CMR",
+    "name": "Cameroon",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CAN",
+    "name": "Canada",
+    "currency": "CAD",
+    "region": "North America",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "CPV",
+    "name": "Cape Verde",
+    "currency": "CVE",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CYM",
+    "name": "Cayman Islands",
+    "currency": "KYD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CAF",
+    "name": "Central African Republic",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TCD",
+    "name": "Chad",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CHL",
+    "name": "Chile",
+    "currency": "CLP",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CHN",
+    "name": "China",
+    "currency": "CNH",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "COL",
+    "name": "Colombia",
+    "currency": "COP",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "COM",
+    "name": "Comoros",
+    "currency": "KMF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "COG",
+    "name": "Congo - Brazzaville",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "COD",
+    "name": "Congo - Kinshasa",
+    "currency": "CDF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CRI",
+    "name": "Costa Rica",
+    "currency": "CRC",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CIV",
+    "name": "Côte d’Ivoire",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "HRV",
+    "name": "Croatia",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CUW",
+    "name": "Curaçao",
+    "currency": "XCG",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CYP",
+    "name": "Cyprus",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CZE",
+    "name": "Czechia",
+    "currency": "CZK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DNK",
+    "name": "Denmark",
+    "currency": "DKK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DJI",
+    "name": "Djibouti",
+    "currency": "DJF",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DMA",
+    "name": "Dominica",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DOM",
+    "name": "Dominican Republic",
+    "currency": "DOP",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "EGY",
+    "name": "Egypt",
+    "currency": "EGP",
+    "region": "Africa",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "SLV",
+    "name": "El Salvador",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GNQ",
+    "name": "Equatorial Guinea",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ERI",
+    "name": "Eritrea",
+    "currency": "ERN",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "EST",
+    "name": "Estonia",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SWZ",
+    "name": "Eswatini",
+    "currency": "SZL",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "currency": "ETB",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "FRO",
+    "name": "Faroe Islands",
+    "currency": "DKK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "FJI",
+    "name": "Fiji",
+    "currency": "FJD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "FIN",
+    "name": "Finland",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "FRA",
+    "name": "France",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PYF",
+    "name": "French Polynesia",
+    "currency": "XPF",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GAB",
+    "name": "Gabon",
+    "currency": "XAF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GMB",
+    "name": "Gambia",
+    "currency": "GMD",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GEO",
+    "name": "Georgia",
+    "currency": "GEL",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "DEU",
+    "name": "Germany",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "GHA",
+    "name": "Ghana",
+    "currency": "GHS",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GRC",
+    "name": "Greece",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GRL",
+    "name": "Greenland",
+    "currency": "DKK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GRD",
+    "name": "Grenada",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GUM",
+    "name": "Guam",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GTM",
+    "name": "Guatemala",
+    "currency": "GTQ",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GIN",
+    "name": "Guinea",
+    "currency": "GNF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GNB",
+    "name": "Guinea-Bissau",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "GUY",
+    "name": "Guyana",
+    "currency": "GYD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "HTI",
+    "name": "Haiti",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "HND",
+    "name": "Honduras",
+    "currency": "HNL",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "HKG",
+    "name": "Hong Kong SAR China",
+    "currency": "HKD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "HUN",
+    "name": "Hungary",
+    "currency": "HUF",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ISL",
+    "name": "Iceland",
+    "currency": "ISK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "IND",
+    "name": "India",
+    "currency": "INR",
+    "region": "Asia",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "currency": "IDR",
+    "region": "Asia",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "IRN",
+    "name": "Iran",
+    "currency": "IRR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "IRQ",
+    "name": "Iraq",
+    "currency": "IQD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "IRL",
+    "name": "Ireland",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ISR",
+    "name": "Israel",
+    "currency": "ILS",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ITA",
+    "name": "Italy",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "JAM",
+    "name": "Jamaica",
+    "currency": "JMD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "JPN",
+    "name": "Japan",
+    "currency": "JPY",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "JOR",
+    "name": "Jordan",
+    "currency": "JOD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "currency": "KZT",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KEN",
+    "name": "Kenya",
+    "currency": "KES",
+    "region": "Africa",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "KIR",
+    "name": "Kiribati",
+    "currency": "AUD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "XKX",
+    "name": "Kosovo",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "currency": "KWD",
+    "region": "GCC",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KGZ",
+    "name": "Kyrgyzstan",
+    "currency": "KGS",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LAO",
+    "name": "Laos",
+    "currency": "LAK",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LVA",
+    "name": "Latvia",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LBN",
+    "name": "Lebanon",
+    "currency": "LBP",
+    "region": "Middle East",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "LSO",
+    "name": "Lesotho",
+    "currency": "LSL",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LBR",
+    "name": "Liberia",
+    "currency": "LRD",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LBY",
+    "name": "Libya",
+    "currency": "LYD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LTU",
+    "name": "Lithuania",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LUX",
+    "name": "Luxembourg",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MAC",
+    "name": "Macao SAR China",
+    "currency": "MOP",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MDG",
+    "name": "Madagascar",
+    "currency": "MGA",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MWI",
+    "name": "Malawi",
+    "currency": "MWK",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MYS",
+    "name": "Malaysia",
+    "currency": "MYR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MDV",
+    "name": "Maldives",
+    "currency": "MVR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MLI",
+    "name": "Mali",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MLT",
+    "name": "Malta",
+    "currency": "EUR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MHL",
+    "name": "Marshall Islands",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MRT",
+    "name": "Mauritania",
+    "currency": "MRU",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "currency": "MUR",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MEX",
+    "name": "Mexico",
+    "currency": "MXN",
+    "region": "LATAM",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "FSM",
+    "name": "Micronesia",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MDA",
+    "name": "Moldova",
+    "currency": "MDL",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MNG",
+    "name": "Mongolia",
+    "currency": "MNT",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MNE",
+    "name": "Montenegro",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MAR",
+    "name": "Morocco",
+    "currency": "MAD",
+    "region": "Africa",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "MOZ",
+    "name": "Mozambique",
+    "currency": "MZN",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MMR",
+    "name": "Myanmar (Burma)",
+    "currency": "MMK",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NAM",
+    "name": "Namibia",
+    "currency": "ZAR",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NRU",
+    "name": "Nauru",
+    "currency": "AUD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NPL",
+    "name": "Nepal",
+    "currency": "NPR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "NCL",
+    "name": "New Caledonia",
+    "currency": "XPF",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NZL",
+    "name": "New Zealand",
+    "currency": "NZD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NIC",
+    "name": "Nicaragua",
+    "currency": "NIO",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NER",
+    "name": "Niger",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "currency": "NGN",
+    "region": "Africa",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "MKD",
+    "name": "North Macedonia",
+    "currency": "MKD",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "MNP",
+    "name": "Northern Mariana Islands",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "NOR",
+    "name": "Norway",
+    "currency": "NOK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "OMN",
+    "name": "Oman",
+    "currency": "OMR",
+    "region": "GCC",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "currency": "PKR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PLW",
+    "name": "Palau",
+    "currency": "USD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PSE",
+    "name": "Palestinian Territories",
+    "currency": "JOD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PAN",
+    "name": "Panama",
+    "currency": "PAB",
+    "region": "LATAM",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "PNG",
+    "name": "Papua New Guinea",
+    "currency": "PGK",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PRY",
+    "name": "Paraguay",
+    "currency": "PYG",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PER",
+    "name": "Peru",
+    "currency": "PEN",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PHL",
+    "name": "Philippines",
+    "currency": "PHP",
+    "region": "Asia",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "POL",
+    "name": "Poland",
+    "currency": "PLN",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PRT",
+    "name": "Portugal",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "PRI",
+    "name": "Puerto Rico",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "QAT",
+    "name": "Qatar",
+    "currency": "QAR",
+    "region": "GCC",
+    "tier": 1,
+    "taxRegime": "zero-personal",
+    "packageConvention": "gcc-qat"
+  },
+  {
+    "iso3": "ROU",
+    "name": "Romania",
+    "currency": "RON",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "RUS",
+    "name": "Russia",
+    "currency": "RUB",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "currency": "RWF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "WSM",
+    "name": "Samoa",
+    "currency": "WST",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SMR",
+    "name": "San Marino",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "STP",
+    "name": "São Tomé & Príncipe",
+    "currency": "STN",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "currency": "SAR",
+    "region": "GCC",
+    "tier": 1,
+    "taxRegime": "zero-personal",
+    "packageConvention": "gcc-sau"
+  },
+  {
+    "iso3": "SEN",
+    "name": "Senegal",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SRB",
+    "name": "Serbia",
+    "currency": "RSD",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "currency": "SCR",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SLE",
+    "name": "Sierra Leone",
+    "currency": "SLE",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SGP",
+    "name": "Singapore",
+    "currency": "SGD",
+    "region": "Asia",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "SXM",
+    "name": "Sint Maarten",
+    "currency": "XCG",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SVK",
+    "name": "Slovakia",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SVN",
+    "name": "Slovenia",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SLB",
+    "name": "Solomon Islands",
+    "currency": "SBD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SOM",
+    "name": "Somalia",
+    "currency": "SOS",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "currency": "ZAR",
+    "region": "Africa",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "KOR",
+    "name": "South Korea",
+    "currency": "KRW",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "currency": "SSP",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ESP",
+    "name": "Spain",
+    "currency": "EUR",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "currency": "LKR",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "KNA",
+    "name": "St. Kitts & Nevis",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "LCA",
+    "name": "St. Lucia",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "VCT",
+    "name": "St. Vincent & Grenadines",
+    "currency": "XCD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SDN",
+    "name": "Sudan",
+    "currency": "SDG",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SUR",
+    "name": "Suriname",
+    "currency": "SRD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SWE",
+    "name": "Sweden",
+    "currency": "SEK",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "CHE",
+    "name": "Switzerland",
+    "currency": "CHF",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "SYR",
+    "name": "Syria",
+    "currency": "SYP",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TJK",
+    "name": "Tajikistan",
+    "currency": "TJS",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TZA",
+    "name": "Tanzania",
+    "currency": "TZS",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "THA",
+    "name": "Thailand",
+    "currency": "THB",
+    "region": "Asia",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "TLS",
+    "name": "Timor-Leste",
+    "currency": "USD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TGO",
+    "name": "Togo",
+    "currency": "XOF",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TON",
+    "name": "Tonga",
+    "currency": "TOP",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TTO",
+    "name": "Trinidad & Tobago",
+    "currency": "TTD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "currency": "TND",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TUR",
+    "name": "Türkiye",
+    "currency": "TRY",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TKM",
+    "name": "Turkmenistan",
+    "currency": "TMT",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TCA",
+    "name": "Turks & Caicos Islands",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "TUV",
+    "name": "Tuvalu",
+    "currency": "AUD",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "VIR",
+    "name": "U.S. Virgin Islands",
+    "currency": "USD",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "UGA",
+    "name": "Uganda",
+    "currency": "UGX",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "UKR",
+    "name": "Ukraine",
+    "currency": "UAH",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "ARE",
+    "name": "United Arab Emirates",
+    "currency": "AED",
+    "region": "GCC",
+    "tier": 1,
+    "taxRegime": "zero-personal",
+    "packageConvention": "gcc-uae"
+  },
+  {
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "currency": "GBP",
+    "region": "Europe",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "USA",
+    "name": "United States",
+    "currency": "USD",
+    "region": "North America",
+    "tier": 1,
+    "taxRegime": "progressive-2026",
+    "packageConvention": "western-single"
+  },
+  {
+    "iso3": "URY",
+    "name": "Uruguay",
+    "currency": "UYU",
+    "region": "LATAM",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "UZB",
+    "name": "Uzbekistan",
+    "currency": "UZS",
+    "region": "Europe",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "currency": "VUV",
+    "region": "Oceania",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "currency": "VND",
+    "region": "Asia",
+    "tier": 2,
+    "taxRegime": "unverified",
+    "packageConvention": "unverified"
+  },
+  {
+    "iso3": "ZMB",
+    "name": "Zambia",
+    "currency": "ZMW",
+    "region": "Africa",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  }
+]

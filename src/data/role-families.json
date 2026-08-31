@@ -1,0 +1,73 @@
+{
+  "families": [
+    {
+      "id": "software-engineering",
+      "name": "Software Engineering"
+    },
+    {
+      "id": "data-and-ai",
+      "name": "Data and AI"
+    },
+    {
+      "id": "it-executive",
+      "name": "IT and Technology Executive"
+    },
+    {
+      "id": "product-management",
+      "name": "Product Management"
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity"
+    },
+    {
+      "id": "design",
+      "name": "Design (UX and UI)"
+    },
+    {
+      "id": "delivery-and-project-management",
+      "name": "Delivery and Project Management"
+    },
+    {
+      "id": "sales-and-business-development",
+      "name": "Sales and Business Development"
+    },
+    {
+      "id": "marketing-and-growth",
+      "name": "Marketing and Growth"
+    },
+    {
+      "id": "finance-and-accounting",
+      "name": "Finance and Accounting"
+    },
+    {
+      "id": "hr-and-people",
+      "name": "HR and People"
+    },
+    {
+      "id": "operations-and-supply-chain",
+      "name": "Operations and Supply Chain"
+    },
+    {
+      "id": "general-management",
+      "name": "General Management and Executive Leadership"
+    },
+    {
+      "id": "engineering-civil-mechanical-electrical",
+      "name": "Engineering (Civil, Mechanical, Electrical)"
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare"
+    },
+    {
+      "id": "education-and-teaching",
+      "name": "Education and Teaching"
+    }
+  ],
+  "levels": [
+    "senior",
+    "lead",
+    "executive"
+  ]
+}

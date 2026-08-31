@@ -1,0 +1,35 @@
+---
+import SeoPage from '../components/SeoPage.astro';
+import PrivacyPage from '../components/PrivacyPage.astro';
+import { detailPages, seoCountries, countrySlug, type Locale } from '../lib/seo';
+
+// Localized variants of the SEO pages live under /ar/ and /hi/. English pages
+// are served by their own, more specific routes, which win over this catch-all.
+type Kind = 'detail' | 'country' | 'role' | 'salaries' | 'methodology' | 'privacy';
+
+export function getStaticPaths() {
+  const locales: Locale[] = ['ar', 'hi'];
+  const paths: Array<{ params: { slug: string | undefined }; props: { locale: Locale; kind: Kind; familyId?: string; countrySlugParam?: string } }> = [];
+  for (const locale of locales) {
+    for (const page of detailPages()) {
+      paths.push({ params: { slug: `${locale}/salary/${page.familyId}/in/${page.countrySlug}` }, props: { locale, kind: 'detail', familyId: page.familyId, countrySlugParam: page.countrySlug } });
+    }
+    for (const country of seoCountries()) {
+      paths.push({ params: { slug: `${locale}/salaries/${country.slug}` }, props: { locale, kind: 'country', countrySlugParam: country.slug } });
+    }
+    const familyIds = new Set(detailPages().map((p) => p.familyId));
+    for (const familyId of familyIds) {
+      paths.push({ params: { slug: `${locale}/salary/${familyId}` }, props: { locale, kind: 'role', familyId } });
+    }
+    paths.push({ params: { slug: `${locale}/salaries` }, props: { locale, kind: 'salaries' } });
+    paths.push({ params: { slug: `${locale}/methodology` }, props: { locale, kind: 'methodology' } });
+    paths.push({ params: { slug: `${locale}/privacy` }, props: { locale, kind: 'privacy' } });
+  }
+  return paths;
+}
+
+const { locale, kind, familyId, countrySlugParam } = Astro.props;
+const Page = kind === 'privacy' ? PrivacyPage : SeoPage;
+---
+
+<Page locale={locale} kind={kind} familyId={familyId} countrySlugParam={countrySlugParam} />

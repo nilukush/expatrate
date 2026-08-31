@@ -1,0 +1,1659 @@
+{
+  "meta": {
+    "indicator": "PA.NUS.PRVT.PP (PPP conversion factor, private consumption, LCU per international USD)",
+    "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+    "license": "CC BY 4.0",
+    "retrievedAt": "2026-08-30",
+    "note": "World Bank PA.NUS.PRVT.PP (PPP conversion factor, private consumption, LCU per international USD), most recent non-empty year per economy. All supported countries are covered, so the purchasing-power floor always computes. The original 9 tier-1 rows were hand-verified by the Verifier agent on 2026-08-30; 14 more were fetched the same day; the remainder were added by scripts/sync-world-data.mjs on 2026-08-30 (vintage year recorded per row)."
+  },
+  "rows": [
+    {
+      "iso3": "ABW",
+      "year": 2021,
+      "value": 1.51344382762909,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AFG",
+      "year": 2024,
+      "value": 13.9880484201057,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AGO",
+      "year": 2025,
+      "value": 364.10268930543,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ALB",
+      "year": 2025,
+      "value": 47.1177467318046,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AND",
+      "year": 2021,
+      "value": 0.639068841934204,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ARE",
+      "year": 2025,
+      "value": 2.527,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ARG",
+      "year": 2021,
+      "value": 42.9862403869629,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ARM",
+      "year": 2025,
+      "value": 158.529692605185,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ASM",
+      "year": 2021,
+      "value": 0.903446389799177,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ATG",
+      "year": 2025,
+      "value": 2.19148067125986,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AUS",
+      "year": 2025,
+      "value": 1.4646,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AUT",
+      "year": 2025,
+      "value": 0.750352,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "AZE",
+      "year": 2025,
+      "value": 0.542946118780084,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BDI",
+      "year": 2025,
+      "value": 1344.64114331703,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BEL",
+      "year": 2025,
+      "value": 0.771758,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BEN",
+      "year": 2025,
+      "value": 196.180920904836,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BFA",
+      "year": 2025,
+      "value": 193.107323578259,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BGD",
+      "year": 2025,
+      "value": 34.9406280714451,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BGR",
+      "year": 2025,
+      "value": 0.414616944167498,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BHR",
+      "year": 2025,
+      "value": 0.18346131214322,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BHS",
+      "year": 2024,
+      "value": 1.10675765538476,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BIH",
+      "year": 2025,
+      "value": 0.769029781854437,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BLR",
+      "year": 2025,
+      "value": 0.848605879235493,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BLZ",
+      "year": 2025,
+      "value": 1.08762083040378,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BMU",
+      "year": 2021,
+      "value": 1.44135057926178,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BOL",
+      "year": 2025,
+      "value": 2.69923478338388,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BRA",
+      "year": 2025,
+      "value": 2.58149013637329,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BRB",
+      "year": 2021,
+      "value": 2.63730001449585,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BRN",
+      "year": 2025,
+      "value": 0.527038244468472,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BTN",
+      "year": 2025,
+      "value": 21.0523202631162,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "BWA",
+      "year": 2025,
+      "value": 5.31072478393597,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CAF",
+      "year": 2025,
+      "value": 259.014655355872,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CAN",
+      "year": 2025,
+      "value": 1.2605,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CHE",
+      "year": 2025,
+      "value": 1.065544,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CHL",
+      "year": 2025,
+      "value": 486.878432,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CHN",
+      "year": 2025,
+      "value": 3.4595580434271,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CIV",
+      "year": 2025,
+      "value": 228.256988332931,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CMR",
+      "year": 2025,
+      "value": 209.008402147983,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "COD",
+      "year": 2021,
+      "value": 928.602478027344,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "COG",
+      "year": 2025,
+      "value": 231.265389642548,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "COL",
+      "year": 2025,
+      "value": 1665.592955,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "COM",
+      "year": 2025,
+      "value": 253.731980130598,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CPV",
+      "year": 2025,
+      "value": 52.9795427569351,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CRI",
+      "year": 2025,
+      "value": 314.538731,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CUW",
+      "year": 2021,
+      "value": 1.409050822258,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CYM",
+      "year": 2021,
+      "value": 1.16750240325928,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CYP",
+      "year": 2025,
+      "value": 0.592250926360917,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "CZE",
+      "year": 2025,
+      "value": 14.65771,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DEU",
+      "year": 2025,
+      "value": 0.719,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DJI",
+      "year": 2025,
+      "value": 88.5485984189418,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DMA",
+      "year": 2025,
+      "value": 1.55795723176331,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DNK",
+      "year": 2025,
+      "value": 6.921663,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DOM",
+      "year": 2025,
+      "value": 23.8084706913573,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "DZA",
+      "year": 2025,
+      "value": 41.7362435844435,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ECU",
+      "year": 2025,
+      "value": 0.441506220037222,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "EGY",
+      "year": 2025,
+      "value": 7.722,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ERI",
+      "year": 2021,
+      "value": 5.19667768478394,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ESP",
+      "year": 2025,
+      "value": 0.607856,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "EST",
+      "year": 2025,
+      "value": 0.671741,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ETH",
+      "year": 2025,
+      "value": 27.0057314452972,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "FIN",
+      "year": 2025,
+      "value": 0.80201,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "FJI",
+      "year": 2025,
+      "value": 0.889449806452232,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "FRA",
+      "year": 2025,
+      "value": 0.732501,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "FRO",
+      "year": 2021,
+      "value": 6.53218603134155,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "FSM",
+      "year": 2022,
+      "value": 0.926676076751688,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GAB",
+      "year": 2025,
+      "value": 280.849994724835,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GBR",
+      "year": 2025,
+      "value": 0.702,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GEO",
+      "year": 2025,
+      "value": 1.08749274580272,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GHA",
+      "year": 2025,
+      "value": 5.24995407961755,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GIN",
+      "year": 2025,
+      "value": 3613.36449038786,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GMB",
+      "year": 2024,
+      "value": 19.3888347432863,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GNB",
+      "year": 2025,
+      "value": 224.853869936628,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GNQ",
+      "year": 2024,
+      "value": 275.679106178901,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GRC",
+      "year": 2025,
+      "value": 0.580055,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GRD",
+      "year": 2025,
+      "value": 1.66796585492047,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GRL",
+      "year": 2021,
+      "value": 5.48598432540894,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GTM",
+      "year": 2025,
+      "value": 3.43217668006576,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GUM",
+      "year": 2021,
+      "value": 1.11213398346611,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "GUY",
+      "year": 2025,
+      "value": 97.8050035061521,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "HKG",
+      "year": 2025,
+      "value": 5.76759042860516,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "HND",
+      "year": 2025,
+      "value": 12.6170007962755,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "HRV",
+      "year": 2025,
+      "value": 0.520776807666999,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "HTI",
+      "year": 2025,
+      "value": 133.532589656197,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "HUN",
+      "year": 2025,
+      "value": 204.540733,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "IDN",
+      "year": 2025,
+      "value": 5065.969,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "IND",
+      "year": 2025,
+      "value": 19.839,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "IRL",
+      "year": 2025,
+      "value": 0.903963,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "IRN",
+      "year": 2025,
+      "value": 157796.048482441,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "IRQ",
+      "year": 2025,
+      "value": 545.98638658854,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ISL",
+      "year": 2025,
+      "value": 166.598924,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ISR",
+      "year": 2025,
+      "value": 3.655759,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ITA",
+      "year": 2025,
+      "value": 0.644824,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "JAM",
+      "year": 2025,
+      "value": 98.2417402226466,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "JOR",
+      "year": 2025,
+      "value": 0.318288385857299,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "JPN",
+      "year": 2025,
+      "value": 103.33658,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KAZ",
+      "year": 2025,
+      "value": 190.98276551719,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KEN",
+      "year": 2025,
+      "value": 44.9843,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KGZ",
+      "year": 2025,
+      "value": 29.321586132952,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KHM",
+      "year": 2025,
+      "value": 1472.80130650376,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KIR",
+      "year": 2024,
+      "value": 0.934430185468443,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KNA",
+      "year": 2023,
+      "value": 2.14611782745287,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KOR",
+      "year": 2025,
+      "value": 880.125358,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "KWT",
+      "year": 2025,
+      "value": 0.183187259430518,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LAO",
+      "year": 2025,
+      "value": 5870.11046725055,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LBN",
+      "year": 2025,
+      "value": 58470.1387,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LBR",
+      "year": 2025,
+      "value": 0.533478423712667,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LBY",
+      "year": 2025,
+      "value": 1.79248544973222,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LCA",
+      "year": 2025,
+      "value": 1.59470755573369,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LKA",
+      "year": 2025,
+      "value": 81.132321829585,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LSO",
+      "year": 2025,
+      "value": 6.23295294045793,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LTU",
+      "year": 2025,
+      "value": 0.549622,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LUX",
+      "year": 2025,
+      "value": 0.873002,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "LVA",
+      "year": 2025,
+      "value": 0.552125,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MAC",
+      "year": 2025,
+      "value": 4.94685847656749,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MAR",
+      "year": 2025,
+      "value": 3.9596,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MDA",
+      "year": 2025,
+      "value": 8.77294960538386,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MDG",
+      "year": 2025,
+      "value": 1315.38474116168,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MDV",
+      "year": 2025,
+      "value": 9.57426755093762,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MEX",
+      "year": 2025,
+      "value": 11.3088,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MHL",
+      "year": 2021,
+      "value": 0.952069344766988,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MKD",
+      "year": 2025,
+      "value": 22.3925017926221,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MLI",
+      "year": 2025,
+      "value": 193.448767309698,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MLT",
+      "year": 2025,
+      "value": 0.610362616091725,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MMR",
+      "year": 2021,
+      "value": 499.697723388672,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MNE",
+      "year": 2025,
+      "value": 0.43894822001994,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MNG",
+      "year": 2025,
+      "value": 1180.72494007661,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MNP",
+      "year": 2021,
+      "value": 0.937482775701845,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MOZ",
+      "year": 2025,
+      "value": 25.4989140443101,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MRT",
+      "year": 2025,
+      "value": 12.1923421371597,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MUS",
+      "year": 2025,
+      "value": 20.1054902867368,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MWI",
+      "year": 2025,
+      "value": 627.1674087801,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "MYS",
+      "year": 2025,
+      "value": 1.43063372521878,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NAM",
+      "year": 2025,
+      "value": 7.37916795801798,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NCL",
+      "year": 2021,
+      "value": 116.089539203239,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NER",
+      "year": 2025,
+      "value": 199.580023538794,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NGA",
+      "year": 2025,
+      "value": 318.0596,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NIC",
+      "year": 2025,
+      "value": 13.5337691271877,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NLD",
+      "year": 2025,
+      "value": 0.7673,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NOR",
+      "year": 2025,
+      "value": 10.001321,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NPL",
+      "year": 2025,
+      "value": 35.2703228981619,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NRU",
+      "year": 2021,
+      "value": 1.14345096549451,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "NZL",
+      "year": 2025,
+      "value": 1.529087,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "OMN",
+      "year": 2025,
+      "value": 0.181864783148751,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PAK",
+      "year": 2025,
+      "value": 65.3961460407036,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PAN",
+      "year": 2025,
+      "value": 0.4967,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PER",
+      "year": 2025,
+      "value": 1.92703167944648,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PHL",
+      "year": 2025,
+      "value": 20.5335,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PLW",
+      "year": 2025,
+      "value": 0.963317720533901,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PNG",
+      "year": 2025,
+      "value": 2.76190379488816,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "POL",
+      "year": 2025,
+      "value": 2.063158,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PRI",
+      "year": 2021,
+      "value": 0.896932303905487,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PRT",
+      "year": 2025,
+      "value": 0.574713,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PRY",
+      "year": 2025,
+      "value": 2874.55964196734,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PSE",
+      "year": 2025,
+      "value": 0.906517515862514,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "PYF",
+      "year": 2021,
+      "value": 101.865636234078,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "QAT",
+      "year": 2024,
+      "value": 2.7555,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ROU",
+      "year": 2025,
+      "value": 2.18053324965105,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "RUS",
+      "year": 2025,
+      "value": 30.7531677427568,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "RWA",
+      "year": 2025,
+      "value": 372.708064661893,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SAU",
+      "year": 2025,
+      "value": 1.871,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SDN",
+      "year": 2022,
+      "value": 224.283499405375,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SEN",
+      "year": 2025,
+      "value": 226.514339375311,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SGP",
+      "year": 2025,
+      "value": 1.024,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SLB",
+      "year": 2025,
+      "value": 7.64775147548691,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SLE",
+      "year": 2025,
+      "value": 6.92562829658794,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SLV",
+      "year": 2025,
+      "value": 0.468846458572409,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SMR",
+      "year": 2025,
+      "value": 0.735981567763693,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SOM",
+      "year": 2021,
+      "value": 10392.2489678791,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SRB",
+      "year": 2025,
+      "value": 52.9296870508475,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SSD",
+      "year": 2021,
+      "value": 158.052139282227,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "STP",
+      "year": 2025,
+      "value": 14.6989139133247,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SUR",
+      "year": 2025,
+      "value": 15.6295611371596,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SVK",
+      "year": 2025,
+      "value": 0.565748,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SVN",
+      "year": 2025,
+      "value": 0.592804,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SWE",
+      "year": 2025,
+      "value": 8.889005,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SWZ",
+      "year": 2021,
+      "value": 6.18902730941772,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SXM",
+      "year": 2021,
+      "value": 1.53710055351257,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SYC",
+      "year": 2025,
+      "value": 8.45029129812648,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "SYR",
+      "year": 2021,
+      "value": 506.863739013672,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TCA",
+      "year": 2021,
+      "value": 1.31719124317169,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TCD",
+      "year": 2025,
+      "value": 222.7610217762,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TGO",
+      "year": 2025,
+      "value": 218.390674232124,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "THA",
+      "year": 2025,
+      "value": 10.6063,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TJK",
+      "year": 2021,
+      "value": 3.21827816963196,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TKM",
+      "year": 2021,
+      "value": 1.57215428352356,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TLS",
+      "year": 2025,
+      "value": 0.445647699325513,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TON",
+      "year": 2025,
+      "value": 1.87686427610128,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TTO",
+      "year": 2025,
+      "value": 3.84086021913748,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TUN",
+      "year": 2025,
+      "value": 0.980303631223321,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TUR",
+      "year": 2025,
+      "value": 17.744381,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TUV",
+      "year": 2021,
+      "value": 1.2944100347858,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TZA",
+      "year": 2025,
+      "value": 661.495628388577,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "UGA",
+      "year": 2025,
+      "value": 1337.11009292043,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "UKR",
+      "year": 2025,
+      "value": 11.8646230019296,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "URY",
+      "year": 2025,
+      "value": 29.8551247863117,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "USA",
+      "year": 2025,
+      "value": 1,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "UZB",
+      "year": 2025,
+      "value": 3573.27635438062,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "VCT",
+      "year": 2025,
+      "value": 1.6781094402171,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "VGB",
+      "year": 2021,
+      "value": 1.02093863487244,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "VIR",
+      "year": 2021,
+      "value": 1.01027965545654,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "VNM",
+      "year": 2025,
+      "value": 7203.3696,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "VUT",
+      "year": 2025,
+      "value": 122.238166921349,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "WSM",
+      "year": 2025,
+      "value": 1.8816986070326,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "XKX",
+      "year": 2022,
+      "value": 0.38622874252396,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ZAF",
+      "year": 2025,
+      "value": 7.74,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "ZMB",
+      "year": 2025,
+      "value": 8.39252772382659,
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
+      "retrievedAt": "2026-08-30"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "educationAllowancePrevalence": [
+    { "country": "ARE", "shareOfEmployers": 0.75 },
+    { "country": "SAU", "shareOfEmployers": 0.75 },
+    { "country": "QAT", "shareOfEmployers": 0.3 }
+  ],
+  "prevalenceSource": "https://associatedalliance.com/a-business-consulting-that-can-produce/",
+  "prevalenceNote": "Approximately 75% of UAE and Saudi employers pay an education allowance versus about 30% in Qatar (GCC mobility research, docs/RESEARCH/analyzer-report.md).",
+  "schoolFees": [
+    {
+      "country": "ARE",
+      "city": "Dubai",
+      "currency": "AED",
+      "minAnnual": 12723,
+      "maxAnnual": 120000,
+      "maxNote": "and above at premium schools",
+      "source": "https://www.edarabia.com/dubai-school-fees/"
+    },
+    {
+      "country": "SAU",
+      "currency": "SAR",
+      "minAnnual": 40000,
+      "maxAnnual": 100000,
+      "note": "average international school range",
+      "source": "https://holbornassets.sa/blog/education-costs-in-saudi-arabia-planning-for-your-childrens-future-as-an-expat/"
+    }
+  ]
+}

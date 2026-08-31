@@ -1,0 +1,2 @@
+# ExpatRate
+Free expat salary quoting tool. Two-anchor method: verified market percentiles (P25/P50/P75 by role family, seniority, country) and a purchasing-power floor (World Bank PPP plus legislated tax). 206 countries, 16 role families, every number sourced.

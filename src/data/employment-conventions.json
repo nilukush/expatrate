@@ -1,0 +1,20 @@
+{
+  "defaultMonthsPerYear": 12,
+  "dayRateDivisors": { "standard": 220, "usHourlyBasis": 2080 },
+  "countryOverrides": [
+    {
+      "country": "PHL",
+      "thirteenthMonthMandatory": true,
+      "quality": "pending-verification",
+      "note": "13th-month pay is mandatory practice in the Philippines; verify against current DOLE rules and the defined computation before this country ships, so monthly to annual conversion does not silently drop 8.3%.",
+      "sourceUrl": "https://taxsummaries.pwc.com/philippines/individual/taxes-on-personal-income"
+    },
+    {
+      "country": "IDN",
+      "religiousAllowanceTHR": true,
+      "quality": "pending-verification",
+      "note": "THR religious allowance applies before Lebaran; verify against current Indonesian labor regulations before this country ships.",
+      "sourceUrl": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income"
+    }
+  ]
+}

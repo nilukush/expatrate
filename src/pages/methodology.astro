@@ -1,0 +1,106 @@
+---
+import '../styles/global.css';
+import '../styles/wizard.css';
+import '../styles/seo.css';
+import { detailPages, breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL } from '../lib/seo';
+import { t } from '../i18n';
+
+const pages = detailPages();
+const sourceCounts = new Map<string, number>();
+for (const page of pages) {
+  for (const level of page.levels) {
+    for (const source of level.sources) {
+      sourceCounts.set(source, (sourceCounts.get(source) ?? 0) + 1);
+    }
+  }
+}
+const sources = [...sourceCounts.entries()].sort((a, b) => b[1] - a[1]);
+const crumbs = [
+  { name: t('seo.breadcrumbHome'), url: `${SITE_URL}/` },
+  { name: 'Methodology', url: `${SITE_URL}/methodology/` },
+];
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('seo.methodologyTitle')}</title>
+    <meta name="description" content="The two-anchor method: market percentiles where data exists, a purchasing-power floor everywhere, both shown with sources and dates." />
+    <link rel="canonical" href={`${SITE_URL}/methodology/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(datasetLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
+    <meta property="og:title" content="ExpatRate methodology" />
+    <meta property="og:description" content="How every number on ExpatRate is computed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">%</span>
+          <span class="brand-name">ExpatRate</span>
+        </a>
+        <p class="site-header-tag">Free · No sign-up · Runs in your browser</p>
+      </header>
+
+      <article class="seo-shell">
+        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">{t('seo.breadcrumbHome')}</a> ›
+          <span aria-current="page">Methodology</span>
+        </nav>
+
+        <h1 class="seo-h1">{t('seo.methodologyH1')}</h1>
+
+        <h2 class="seo-h2">Anchor one: the market quote</h2>
+        <p class="seo-answer">
+          Percentiles (P25, median, P75) for your role family, seniority, and country, from official
+          statistics (BLS OEWS, ONS ASHE, ATO taxation statistics, CBS StatLine, Job Bank Canada, PSA)
+          and cited recruiter sources. Every row lists its sources, sample size where stated, quality
+          rating, and review date. Where no verified source exists, the cell stays an explicit gap.
+        </p>
+
+        <h2 class="seo-h2">Anchor two: the purchasing-power floor</h2>
+        <p class="seo-answer">
+          Your net salary, transferred at World Bank private-consumption PPP rates, then grossed up at
+          the target country's effective tax rate from legislated schedules. It answers what gross you
+          need to live as well as today. It is a decision number, never an opening quote; when the
+          market cannot fund it, the result says so and shows the gap.
+        </p>
+
+        <h2 class="seo-h2">Provenance</h2>
+        <p class="seo-note">
+          {pages.length} benchmark pages generated from the curated dataset. Sources, with the number of
+          cells each backs:
+        </p>
+        <table class="seo-table">
+          <thead>
+            <tr><th>Source</th><th>Cells</th></tr>
+          </thead>
+          <tbody>
+            {sources.map(([url, count]) => (
+              <tr>
+                <td><a href={url} rel="nofollow noopener" target="_blank">{url}</a></td>
+                <td>{count}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p class="seo-note">
+          Estimates from public market data, indicative only. Not financial, tax, or legal advice.
+        </p>
+      </article>
+
+      <footer class="site-footer">
+        <p>ExpatRate. Free, no sign-up, resumes never leave your device.</p>
+        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
+      </footer>
+    </main>
+  </body>
+</html>

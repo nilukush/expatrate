@@ -1,0 +1,180 @@
+---
+import '../styles/global.css';
+import '../styles/wizard.css';
+import '../styles/seo.css';
+import {
+  detailPage, detailPages, seoCountries, detailUrl, countryHubUrl,
+  breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL, countrySlug,
+} from '../lib/seo';
+import { t, setLocale, type Locale } from '../i18n';
+import { localName } from '../lib/seo';
+
+interface Props {
+  locale: Locale;
+  kind: 'detail' | 'country' | 'role' | 'salaries' | 'methodology';
+  familyId?: string;
+  countrySlugParam?: string;
+}
+const { locale, kind, familyId, countrySlugParam } = Astro.props;
+setLocale(locale);
+const dir = locale === 'ar' ? 'rtl' : 'ltr';
+const localePath = locale === 'en' ? '' : `/${locale}`;
+const fontPreload = locale === 'ar' ? '/fonts/noto-sans-arabic-var.woff2' : locale === 'hi' ? '/fonts/noto-sans-devanagari-var.woff2' : '/fonts/inter-latin-var.woff2';
+const fmt = (amount: number, currency: string) => new Intl.NumberFormat(locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : 'en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
+const monthly = (amount: number, currency: string) => fmt(amount / 12, currency);
+const levelCells = (level: { p25: number; p50: number; p75: number; currency: string }) => {
+  const cells = [{ label: 'P50', value: fmt(level.p50, level.currency) }];
+  if (level.p25 > 0) cells.unshift({ label: 'P25', value: fmt(level.p25, level.currency) });
+  if (level.p75 > 0) cells.push({ label: 'P75', value: fmt(level.p75, level.currency) });
+  return cells;
+};
+
+// Resolve content per kind
+const countries = seoCountries();
+const page = kind === 'detail' && familyId
+  ? detailPages().find((p) => p.familyId === familyId && p.countrySlug === countrySlugParam)
+  : undefined;
+const country = kind === 'country' ? countries.find((c) => c.slug === countrySlugParam) : undefined;
+const rolePages = kind === 'role' && familyId ? detailPages().filter((p) => p.familyId === familyId) : [];
+const roleFamilyName = rolePages[0]?.familyLocal ?? '';
+
+const title = kind === 'detail' && page
+  ? t('seo.detailTitle', { family: page.familyLocal, country: page.countryLocal })
+  : kind === 'country' && country
+    ? t('seo.countryHubTitle', { country: country.name })
+    : kind === 'role' ? t('seo.roleHubTitle', { family: roleFamilyName })
+    : kind === 'salaries' ? t('seo.breadcrumbSalaries') + ' - ExpatRate'
+    : t('seo.methodologyTitle');
+const description = kind === 'detail' && page
+  ? t('seo.detailDescription', { family: page.familyLocal, country: page.countryLocal })
+  : t('seo.appDescription');
+const canonical = kind === 'detail' && page
+  ? `${SITE_URL}${localePath}${detailUrl(page.familyId, page.countrySlug)}`
+  : kind === 'country' && country
+    ? `${SITE_URL}${localePath}${countryHubUrl(country.slug)}`
+    : kind === 'role' && familyId ? `${SITE_URL}${localePath}/salary/${familyId}/`
+    : kind === 'salaries' ? `${SITE_URL}${localePath}/salaries/`
+    : `${SITE_URL}${localePath}/methodology/`;
+const altPath = (l: string) => l === 'en' ? '' : `/${l}`;
+const hrefFor = (l: string) => {
+  const lp = altPath(l);
+  if (kind === 'detail' && page) return `${SITE_URL}${lp}${detailUrl(page.familyId, page.countrySlug)}`;
+  if (kind === 'country' && country) return `${SITE_URL}${lp}${countryHubUrl(country.slug)}`;
+  if (kind === 'role' && familyId) return `${SITE_URL}${lp}/salary/${familyId}/`;
+  if (kind === 'salaries') return `${SITE_URL}${lp}/salaries/`;
+  return `${SITE_URL}${lp}/methodology/`;
+};
+const crumbsBase = [{ name: t('seo.breadcrumbHome'), url: `${SITE_URL}${localePath}/` }];
+const crumbs = kind === 'detail' && page
+  ? [...crumbsBase, { name: `${t('seo.breadcrumbSalaries')} - ${page.countryLocal}`, url: `${SITE_URL}${localePath}${countryHubUrl(page.countrySlug)}` }, { name: page.familyName, url: canonical }]
+  : kind === 'country' && country
+    ? [...crumbsBase, { name: t('seo.breadcrumbSalaries'), url: `${SITE_URL}${localePath}/salaries/` }, { name: country.name, url: canonical }]
+    : [...crumbsBase, { name: title, url: canonical }];
+const valid = (kind !== 'detail' && kind !== 'country') || page || country;
+---
+<!doctype html>
+<html lang={locale} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={hrefFor('en')} />
+    <link rel="alternate" hreflang="ar" href={hrefFor('ar')} />
+    <link rel="alternate" hreflang="hi" href={hrefFor('hi')} />
+    <link rel="alternate" hreflang="x-default" href={hrefFor('en')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE_URL}/og-default.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
+    <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
+    {kind === 'methodology' && <script type="application/ld+json" set:html={JSON.stringify(datasetLd())} />}
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href={`${localePath}/`}><span class="brand-mark" aria-hidden="true">%</span><span class="brand-name" dir="ltr">ExpatRate</span></a>
+        <nav class="lang-switch" aria-label={t('home.langLabel')}>
+          <a href={hrefFor('en') === `${SITE_URL}/methodology/` ? '/' : hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
+          <a href={hrefFor('ar').replace(SITE_URL, '') || '/'}>عربي</a>
+          <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
+        </nav>
+      </header>
+      <article class="seo-shell">
+        {kind === 'detail' && page && (
+          <>
+            <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+              <a href={`${localePath}/`}>{t('seo.breadcrumbHome')}</a> ›
+              <a href={`${localePath}${countryHubUrl(page.countrySlug)}`}>{page.countryLocal}</a> ›
+              <span aria-current="page">{page.familyName}</span>
+            </nav>
+            <h1 class="seo-h1">{t('seo.detailH1', { family: page.familyLocal, country: page.countryLocal })}</h1>
+            <p class="seo-answer">{page.answer.paragraph}</p>
+            <h2 class="seo-h2">{t('seo.bySeniority')}</h2>
+            {page.levels.map((level) => (
+              <section class="seo-level">
+                <p class="seo-level-title">{t('seo.levelLabel', { level: level.levelLabel, quality: level.quality })}</p>
+                <dl class="seo-level-figures">
+                  {levelCells(level).map((cell) => (<div><dt>{cell.label}</dt><dd>{cell.value}</dd></div>))}
+                </dl>
+                <p class="seo-note">{t('seo.monthlyNote', { amount: monthly(level.p50, level.currency) })}</p>
+              </section>
+            ))}
+            <h2 class="seo-h2">{t('seo.sourcesTitle')}</h2>
+            <ul class="seo-sources">
+              {page.levels.flatMap((l) => l.sources).filter((u, i, a) => a.indexOf(u) === i).map((u) => <li><a href={u} rel="nofollow noopener" target="_blank">{u}</a></li>)}
+            </ul>
+            <p class="seo-cta">{t('seo.ctaBody')} <a href={`${localePath}/`}>{t('seo.cta')}.</a></p>
+          </>
+        )}
+        {kind === 'country' && country && (
+          <>
+            <h1 class="seo-h1">{title}</h1>
+            <p class="seo-answer">{t('seo.countryHubAnswer', { n: detailPages().filter((p) => p.countryIso3 === country.iso3).length })}</p>
+            <h2 class="seo-h2">{t('seo.countryHubH2')}</h2>
+            <ul class="seo-list">
+              {detailPages().filter((p) => p.countryIso3 === country.iso3).map((p) => <li><a href={`${localePath}${detailUrl(p.familyId, country.slug)}`}>{p.familyLocal}</a></li>)}
+            </ul>
+            <p class="seo-cta"><a href={`${localePath}/`}>{t('seo.cta')}.</a></p>
+          </>
+        )}
+        {kind === 'role' && rolePages.length > 0 && (
+          <>
+            <h1 class="seo-h1">{title}</h1>
+            <p class="seo-answer">{t('seo.roleHubAnswer', { family: roleFamilyName })}</p>
+            <h2 class="seo-h2">{t('seo.roleHubH2')}</h2>
+            <ul class="seo-list">
+              {rolePages.map((p) => <li><a href={`${localePath}/salary/${familyId}/in/${countrySlug(p.countryName)}/`}>{p.familyLocal} - {p.countryLocal}: {p.answer.medianFormatted}</a></li>)}
+            </ul>
+          </>
+        )}
+        {kind === 'salaries' && (
+          <>
+            <h1 class="seo-h1">{t('seo.breadcrumbSalaries')}</h1>
+            <p class="seo-answer">{t('seo.countryHubAnswer', { n: countries.length })}</p>
+            <ul class="seo-list">
+              {countries.map((c) => <li><a href={`${localePath}${countryHubUrl(c.slug)}`}>{localName(c.iso3, c.name)}</a></li>)}
+            </ul>
+          </>
+        )}
+        {kind === 'methodology' && (
+          <>
+            <h1 class="seo-h1">{t('seo.methodologyH1')}</h1>
+            <p class="seo-answer">{t('seo.appDescription')}</p>
+            <p class="seo-note">{t('seo.datasetDescription')}</p>
+          </>
+        )}
+      </article>
+      <footer class="site-footer">
+        <p>{t('home.footerAdvice')}</p>
+        <p>{t('home.footerRights', { year: new Date().getFullYear() })}</p>
+      </footer>
+    </main>
+  </body>
+</html>

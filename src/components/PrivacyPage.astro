@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import '../styles/wizard.css';
+import '../styles/seo.css';
+import { t, setLocale, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+setLocale(locale);
+const dir = locale === 'ar' ? 'rtl' : 'ltr';
+const SITE_URL = 'https://expatrate.pages.dev';
+const localePath = locale === 'en' ? '' : `/${locale}`;
+const fontPreload =
+  locale === 'ar'
+    ? '/fonts/noto-sans-arabic-var.woff2'
+    : locale === 'hi'
+      ? '/fonts/noto-sans-devanagari-var.woff2'
+      : '/fonts/inter-latin-var.woff2';
+const altPath = (l: string) => (l === 'en' ? '' : `/${l}`);
+---
+
+<!doctype html>
+<html lang={locale} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('privacy.title')}</title>
+    <meta name="description" content={t('privacy.description')} />
+    <link rel="canonical" href={`${SITE_URL}${localePath}/privacy/`} />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/privacy/`} />
+    <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/privacy/`} />
+    <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/privacy/`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/privacy/`} />
+    <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <article class="seo-shell">
+        <p class="seo-breadcrumb"><a href={`${altPath(locale)}/`}>ExpatRate</a></p>
+        <h1 class="seo-h1">{t('privacy.title')}</h1>
+        <p class="seo-answer">{t('privacy.intro')}</p>
+        <h2 class="seo-h2">{t('privacy.deviceTitle')}</h2>
+        <p class="seo-answer">{t('privacy.deviceBody')}</p>
+        <h2 class="seo-h2">{t('privacy.analyticsTitle')}</h2>
+        <p class="seo-answer">{t('privacy.analyticsBody')}</p>
+        <h2 class="seo-h2">{t('privacy.externalTitle')}</h2>
+        <p class="seo-answer">{t('privacy.externalBody')}</p>
+      </article>
+      <footer class="site-footer">
+        <p>{t('home.footerAdvice')}</p>
+        <p>{t('home.footerRights', { year: new Date().getFullYear() })}</p>
+      </footer>
+    </main>
+  </body>
+</html>

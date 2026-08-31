@@ -1,0 +1,486 @@
+[
+  {
+    "iso3": "ARE",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0,
+        "quality": "High",
+        "note": "0% personal income tax in the UAE (u.ae; PwC 2026).",
+        "sourceUrl": "https://u.ae/en/information-and-services/finance-and-investment/taxation"
+      }
+    ]
+  },
+  {
+    "iso3": "SAU",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0,
+        "quality": "High",
+        "note": "0% personal income tax in Saudi Arabia; expat GOSI is an employer-only occupational hazard contribution (PwC 2026).",
+        "sourceUrl": "https://taxsummaries.pwc.com/saudi-arabia/individual/other-taxes"
+      }
+    ]
+  },
+  {
+    "iso3": "QAT",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0,
+        "quality": "Medium",
+        "note": "0% personal income tax on salaries in Qatar; pending primary-source verification before launch.",
+        "sourceUrl": "https://taxsummaries.pwc.com/qatar/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "GBR",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.417,
+        "quality": "High",
+        "note": "Worked example verified 2026-08-30: GBP 307k gross yields about GBP 179.6k net through 2026-27 income tax bands plus employee NI at 8% to the upper earnings limit and 2% above (Verifier report; gov.uk; House of Commons Library CBP-10618).",
+        "sourceUrl": "https://www.gov.uk/income-tax-rates"
+      }
+    ]
+  },
+  {
+    "iso3": "USA",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.32,
+        "quality": "Low",
+        "note": "Rough estimate at executive income: federal brackets to 37% (2026 single) plus FICA, state taxes excluded. Pending verification; the full bracket engine is a v2 item.",
+        "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      }
+    ]
+  },
+  {
+    "iso3": "IND",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.27,
+        "quality": "Medium",
+        "note": "Derived from the Verifier worked example: INR 6.8-7.0M gross under the new regime yields about INR 5.07M net (AY 2026-27 bands plus 4% cess; the 87A rebate is not available to non-residents).",
+        "sourceUrl": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1"
+      }
+    ]
+  },
+  {
+    "iso3": "SGP",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.23,
+        "quality": "Medium",
+        "note": "Approximation for executive income: YA 2026 resident top rate 24% (23% above S$500k); non-residents pay 24% flat on employment income; no CPF for employment-pass expats (IRAS; PwC).",
+        "sourceUrl": "https://taxsummaries.pwc.com/singapore/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "EGY",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.25,
+        "quality": "Medium",
+        "note": "Derived from the Verifier worked example: EGP 2.6-2.7M gross yields about EGP 1.98M net under the 0-27.5% progressive schedule with social insurance (PwC Egypt 2026).",
+        "sourceUrl": "https://taxsummaries.pwc.com/egypt/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "IDN",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.28,
+        "quality": "Low",
+        "note": "Rough estimate under the 5-35% resident progressive schedule at executive income, pending verification. Indonesia is the open verification item from the research phase.",
+        "sourceUrl": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "DEU",
+    "tiers": [
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.42,
+        "quality": "Low",
+        "note": "Rough estimate at executive income: 45% top bracket, Soli, and employee social shares with ceilings (pension ceiling 101,400 EUR; health 69,750 EUR). Pending verification.",
+        "sourceUrl": "https://taxsummaries.pwc.com/germany/individual/other-taxes"
+      }
+    ]
+  },
+  {
+    "iso3": "AUS",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.24,
+        "quality": "Medium",
+        "note": "ATO resident schedule 2025-26 plus 2% Medicare levy, computed at a representative AUD 120,000; excludes offsets, salary-sacrifice super, and HECS.",
+        "sourceUrl": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.32,
+        "quality": "Medium",
+        "note": "ATO resident schedule 2025-26 plus 2% Medicare levy, computed at a representative AUD 220,000; foreign-resident rates (no Medicare, no tax-free threshold) land within about one point at this level.",
+        "sourceUrl": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.4,
+        "quality": "Medium",
+        "note": "ATO resident schedule 2025-26 plus 2% Medicare levy, computed at a representative AUD 500,000; the top bracket is 45% plus 2% Medicare, and foreign-resident treatment converges to about the same effective rate.",
+        "sourceUrl": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents"
+      }
+    ]
+  },
+  {
+    "iso3": "NLD",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.32,
+        "quality": "Medium",
+        "note": "Belastingdienst 2026 Box 1 (35.75% to EUR 38,883, 37.56% to about EUR 79,137, 49.5% above; national insurance premiums embedded) plus employee health contribution, net of general and labour credits, computed at a representative EUR 67,000. Excludes the 30% expat facility: if you qualify, your effective deduction is materially lower in the first years.",
+        "sourceUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene-heffingskorting/tabel-algemene-heffingskorting-2026"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.38,
+        "quality": "Medium",
+        "note": "Belastingdienst 2026 Box 1 (35.75% to EUR 38,883, 37.56% to about EUR 79,137, 49.5% above; national insurance premiums embedded) plus employee health contribution, net of general and labour credits, computed at a representative EUR 95,000. Excludes the 30% expat facility: if you qualify, your effective deduction is materially lower in the first years.",
+        "sourceUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene-heffingskorting/tabel-algemene-heffingskorting-2026"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.45,
+        "quality": "Medium",
+        "note": "Belastingdienst 2026 Box 1 (35.75% to EUR 38,883, 37.56% to about EUR 79,137, 49.5% above; national insurance premiums embedded) plus employee health contribution, net of general and labour credits, computed at a representative EUR 200,000. Excludes the 30% expat facility: if you qualify, your effective deduction is materially lower in the first years.",
+        "sourceUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene-heffingskorting/tabel-algemene-heffingskorting-2026"
+      }
+    ]
+  },
+  {
+    "iso3": "CAN",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.27,
+        "quality": "Medium",
+        "note": "Federal 2026 brackets (14/20.5/26/29/33%, thresholds 58,523/117,045/181,440/258,482) plus Ontario (5.05-13.16% incl. surtaxes) and CPP2/EI, computed at a representative CAD 120,000; credits excluded, so this slightly overstates. Other provinces differ by a few points; Quebec is higher.",
+        "sourceUrl": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.32,
+        "quality": "Medium",
+        "note": "Federal 2026 brackets (14/20.5/26/29/33%, thresholds 58,523/117,045/181,440/258,482) plus Ontario (5.05-13.16% incl. surtaxes) and CPP2/EI, computed at a representative CAD 220,000; credits excluded, so this slightly overstates. Other provinces differ by a few points; Quebec is higher.",
+        "sourceUrl": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.38,
+        "quality": "Medium",
+        "note": "Federal 2026 brackets (14/20.5/26/29/33%, thresholds 58,523/117,045/181,440/258,482) plus Ontario (5.05-13.16% incl. surtaxes) and CPP2/EI, computed at a representative CAD 400,000; credits excluded, so this slightly overstates. Other provinces differ by a few points; Quebec is higher.",
+        "sourceUrl": "https://www.taxtips.ca/taxrates/on.htm"
+      }
+    ]
+  },
+  {
+    "iso3": "IRL",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.2825,
+        "quality": "Medium",
+        "note": "EUR70,000 gross, single PAYE employee, 2026. Income tax 20% on first EUR44,000 + 40% balance minus EUR4,000 credits = EUR15,200; USC 0.5%/2%/3% bands = EUR1,632.82; PRSI Class A 4.2% = EUR2,940. Total EUR19,772.82 = 28.25%.",
+        "sourceUrl": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.3823,
+        "quality": "Medium",
+        "note": "EUR120,000 gross, 2026. Income tax EUR35,200 after credits; USC EUR5,630.62 (8% above EUR70,044); PRSI 4.2% EUR5,040. Total EUR45,870.62 = 38.23%.",
+        "sourceUrl": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.4549,
+        "quality": "Medium",
+        "note": "EUR250,000 gross, 2026. Income tax EUR87,200 after credits; USC EUR16,030.62 (8% top rate above EUR70,044); PRSI 4.2% EUR10,500. Total EUR113,730.62 = 45.49%. Assumes no pension contribution.",
+        "sourceUrl": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"
+      }
+    ]
+  },
+  {
+    "iso3": "NZL",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.22,
+        "quality": "Medium",
+        "note": "IRD 2025-26 resident schedule (10.5% to 15,600; 17.5% to 53,500; 30% to 78,100; 33% to 180,000; 39% above) plus ACC earners levy 1.67% (cap 152,790), computed at a representative NZD 80,000: income tax 16,277.50 plus ACC 1,336.00 = 22.0%. KiwiSaver excluded.",
+        "sourceUrl": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.28,
+        "quality": "Medium",
+        "note": "IRD 2025-26 resident schedule plus ACC 1.67% (cap 152,790), computed at NZD 150,000: income tax 39,377.50 plus ACC 2,505.00 = 27.9%. KiwiSaver excluded.",
+        "sourceUrl": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.33,
+        "quality": "Medium",
+        "note": "IRD 2025-26 resident schedule incl. 39% top rate above 180,000, plus ACC capped at 2,551.59, computed at NZD 300,000: income tax 96,077.50 plus ACC 2,551.59 = 32.9%. KiwiSaver excluded.",
+        "sourceUrl": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals"
+      }
+    ]
+  },
+  {
+    "iso3": "ZAF",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.226,
+        "quality": "Medium",
+        "note": "2026 tax year PAYE at R600,000: R121,475 + 36% x (600,000 - 512,800) = R152,867, less primary rebate R17,235 = R135,632 = 22.6% effective. Excludes UIF and medical tax credits; assumes under-65 with no retirement contributions.",
+        "sourceUrl": "https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.312,
+        "quality": "Medium",
+        "note": "2026 tax year PAYE at R1,200,000: R251,258 + 41% x (1,200,000 - 857,900) = R391,519, less rebate R17,235 = R374,284 = 31.2% effective. Excludes UIF and medical tax credits.",
+        "sourceUrl": "https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.374,
+        "quality": "Medium",
+        "note": "2026 tax year PAYE at R2,500,000: R644,489 + 45% x (2,500,000 - 1,817,000) = R951,839, less rebate R17,235 = R934,604 = 37.4% effective (45% marginal). Excludes UIF and medical tax credits.",
+        "sourceUrl": "https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/"
+      }
+    ]
+  },
+  {
+    "iso3": "VNM",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.068,
+        "quality": "Medium",
+        "note": "VND 600M/year (50M/month), resident, no dependants, excludes social insurance. 2026 schedule in force (5 brackets 5/10/20/30/35%, personal deduction 15.5M/month = 186M/year, Law 109/2025/QH15 + Resolution 110/2025/UBTVQH15): taxable 414M; tax 40.8M = 6.8% of gross. The 2025 7-bracket schedule with the 11M deduction yields 13.0%; both computations documented.",
+        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/chi-tiet-bieu-thu-nhap-ca-nhan-luy-tien-tung-phan-119260327091407544.htm"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.1585,
+        "quality": "Medium",
+        "note": "VND 1.2B/year (100M/month). 2026 schedule: taxable 1,014M; tax 190.2M = 15.85% of gross. 2025 schedule yields 21.3%. Excludes social insurance.",
+        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/chi-tiet-bieu-thue-thu-nhap-ca-nhan-luy-tien-tung-phan-119260327091407544.htm"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.25,
+        "quality": "Medium",
+        "note": "VND 2.4B/year (200M/month). 2026 schedule: taxable 2,214M; tax 600.9M = 25.0% of gross. 2025 schedule yields 28.2%. Excludes social insurance.",
+        "sourceUrl": "https://xaydungchinhsach.chinhphu.vn/chi-tiet-bieu-thue-thu-nhap-ca-nhan-luy-tien-tung-phan-119260327091407544.htm"
+      }
+    ]
+  },
+  {
+    "iso3": "MYS",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.064,
+        "quality": "Medium",
+        "note": "MYR 96,000/year. Resident YA2026 LHDN scale: chargeable 83,000 after EPF relief (capped RM4,000) and personal relief RM9,000; tax 6,170 = 6.4%. EPF employee 11% is retirement savings, excluded from effectiveDeduction.",
+        "sourceUrl": "https://www.hasil.gov.my/en/individu/kadar-cukai/"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.145,
+        "quality": "Medium",
+        "note": "MYR 180,000/year. Chargeable 167,000; tax 26,150 = 14.5%. EPF 11% excluded (savings).",
+        "sourceUrl": "https://www.hasil.gov.my/en/individu/kadar-cukai/"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.198,
+        "quality": "Medium",
+        "note": "MYR 360,000/year. Chargeable 347,000; tax 71,150 = 19.8%. EPF 11% excluded (savings). Dividend income above RM100,000 carries a separate 2% tax, not included.",
+        "sourceUrl": "https://www.hasil.gov.my/en/individu/kadar-cukai/"
+      }
+    ]
+  },
+  {
+    "iso3": "KEN",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.3,
+        "quality": "High",
+        "note": "Representative gross 350,000 per month (4.2m per year), aligned with the senior medians above. On taxable pay of 328,645 (gross minus SHIF 9,625, Affordable Housing Levy 5,250, NSSF 6,480) KRA monthly PAYE bands of 10/25/30/32.5/35 percent in force since July 2023 give tax of 93,377 less personal relief 2,400, so PAYE 90,977; adding SHIF 2.75 percent (9,625) and housing levy 1.5 percent (5,250) totals 105,852, which is 30.2 percent of gross (rounded 0.30). NSSF of 6,480 (Year 4 rates from 1 Feb 2026, Tier I on the first 9,000 and Tier II up to 108,000, KPMG and Business Daily) is excluded as retirement savings held in the member's name; including it would give 32.1 percent.",
+        "sourceUrl": "https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.32,
+        "quality": "High",
+        "note": "Representative gross 600,000 per month (7.2m per year), aligned with the lead medians above. Taxable pay is 568,020 (gross minus SHIF 16,500, housing levy 9,000, NSSF 6,480); KRA PAYE bands give 166,890 less personal relief 2,400, so PAYE 164,490; adding SHIF 16,500 and housing levy 9,000 totals 189,990, which is 31.7 percent of gross (rounded 0.32). NSSF 6,480 (Year 4 from Feb 2026) is excluded as retirement savings; including it would give 32.7 percent.",
+        "sourceUrl": "https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.33,
+        "quality": "High",
+        "note": "Representative gross 950,000 per month (11.4m per year), aligned with the executive medians above. Taxable pay is 903,145 (gross minus SHIF 26,125, housing levy 14,250, NSSF 6,480); KRA PAYE bands, including the 32.5 percent slice up to 800,000 and 35 percent above, give 278,384 less personal relief 2,400, so PAYE 275,984; adding SHIF 26,125 and housing levy 14,250 totals 316,359, which is 33.3 percent of gross (rounded 0.33). NSSF 6,480 (Year 4 from Feb 2026) is excluded as retirement savings; including it would give 34.0 percent.",
+        "sourceUrl": "https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye"
+      }
+    ]
+  },
+  {
+    "iso3": "NGA",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.245,
+        "quality": "Medium",
+        "note": "Representative annual gross N24,000,000 (N2.0M monthly, consistent with the senior medians in the NGA benchmarks: software engineering N1.85M, data N2.15M, product N2.15M, finance N1.54M). Statutory items: employee pension 8 percent of gross = N1,920,000 (Pension Reform Act 2014 applies 8 percent to basic plus housing plus transport; taken here as full gross, so this is the high end of the typical deduction); rent relief N500,000 (Nigeria Tax Act 2025 cap, lower of N500,000 or 20 percent of annual rent). Taxable income = 24,000,000 - 1,920,000 - 500,000 = N21,580,000. PAYE under the Nigeria Tax Act 2025 bands effective 1 January 2026: N330,000 (15 percent of the 2.2M band) + N1,620,000 (18 percent of the 9M band) + N2,011,800 (21 percent of 9.58M above 12M) = N3,961,800. Total statutory deduction = 3,961,800 + 1,920,000 = N5,881,800 = 24.5 percent of gross (24.9 percent if no rent relief is claimed). Excluded: National Housing Fund 2.5 percent of basic, voluntary for private sector employees since the Business Facilitation (Miscellaneous Provisions) Act 2023; NHIA health premium, no mandatory employee rate (employer borne in practice). Sources: PwC Worldwide Tax Summaries Nigeria individual pages (rates page last reviewed 29 May 2026; deductions page covering rent relief and removal of the consolidated relief allowance) and KPMG Flash Alert 2025-168 (bands and 1 January 2026 effective date), both verified 31 August 2026.",
+        "sourceUrl": "https://taxsummaries.pwc.com/nigeria/individual/taxes-on-personal-income"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.259,
+        "quality": "Medium",
+        "note": "Representative annual gross N36,000,000 (N3.0M monthly, sitting between the senior tech medians of N1.85M to N2.15M and the CTO median of N4.0M, and near the finance lead median of N3.08M). Employee pension 8 percent = N2,880,000; rent relief N500,000. Taxable income = N32,620,000. PAYE: N330,000 + N1,620,000 + N2,730,000 (21 percent of the 13M band) + N1,752,600 (23 percent of 7.62M above 25M) = N6,432,600. Total statutory deduction = 6,432,600 + 2,880,000 = N9,312,600 = 25.9 percent of gross (26.2 percent without rent relief). Exclusions as per the senior tier note: NHF (2.5 percent of basic) is voluntary for private sector employees since 2023, and the NHIA levy has no mandatory employee rate. Pension base assumption (basic plus housing plus transport equal to gross) pushes the deduction toward the high end. Bands per Nigeria Tax Act 2025 effective 1 January 2026, verified via PwC and KPMG Flash Alert 2025-168 on 31 August 2026.",
+        "sourceUrl": "https://taxsummaries.pwc.com/nigeria/individual/taxes-on-personal-income"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.267,
+        "quality": "Medium",
+        "note": "Representative annual gross N48,000,000 (N4.0M monthly, matching the CTO median from the TechCabal September 2025 expert survey in the NGA benchmarks; far below large listed bank CEO pay of N195M to N485M a year). Employee pension 8 percent = N3,840,000; rent relief N500,000. Taxable income = N43,660,000. PAYE: N330,000 + N1,620,000 + N2,730,000 + N4,291,800 (23 percent of 18.66M between 25M and 50M) = N8,971,800. Total statutory deduction = 8,971,800 + 3,840,000 = N12,811,800 = 26.7 percent of gross (26.9 percent without rent relief). Above N50M taxable income the marginal rate is 25 percent, so deductions converge toward the high 20s at very high pay. Exclusions and assumptions as per the senior tier note (NHF voluntary in the private sector; NHIA employer borne; pension base taken as full gross). Bands per Nigeria Tax Act 2025 effective 1 January 2026, verified via PwC (page reviewed 29 May 2026) and KPMG Flash Alert 2025-168 on 31 August 2026.",
+        "sourceUrl": "https://taxsummaries.pwc.com/nigeria/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "MAR",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.283,
+        "quality": "Medium",
+        "note": "Representative salary 30,000 MAD gross per month (360,000 per year), consistent with senior benchmark medians of 24,000 to 55,000 MAD in the companion mar.json file. Monthly employee deductions: CNSS 4.48 percent of the first 6,000 MAD (ceiling in force through 2026) = 268.80; AMO 2.26 percent uncapped = 678.00; professional expenses abatement 20 percent of gross capped at 2,500 per month (30,000 per year). Net taxable = 30,000 - 268.80 - 678.00 - 2,500 = 26,553.20 per month = 318,638.40 per year. IR per the 2025/2026 annual scale (Loi de Finances 2025, loi 60-24: 0-40,000 at 0 percent, 40,001-60,000 at 10 percent, 60,001-80,000 at 20 percent, 80,001-100,000 at 30 percent, 100,001-180,000 at 34 percent, above 180,000 at 37 percent with 27,400 to deduct): 0.37 x 318,638.40 - 27,400 = 90,496.21 per year = 7,541.35 per month. Total statutory deduction = 268.80 + 678.00 + 7,541.35 = 8,488.15 of 30,000 = 28.3 percent. Scale, abatement and rates verified via Humantal bareme IR 2026 (published 2026-01-12) and EKM Audit 2025 IR guide (2025-04-01); CNSS 4.48 percent with the 6,000 ceiling and AMO 2.26 percent verified via Cleiss (updated 2024) and AJIEL (2026-03-10, ceiling unchanged at 6,000 for 2026; a rise to 8,000 reported by La Vie Eco remains a draft). Single taxpayer, no family deduction, no voluntary CIMR or mutual included.",
+        "sourceUrl": "https://humantal.ma/ressources/bareme-ir-2026-maroc"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.308,
+        "quality": "Medium",
+        "note": "Representative salary 40,000 MAD gross per month (480,000 per year), consistent with lead benchmark medians of 30,000 to 50,000 MAD in the companion mar.json file. Monthly employee deductions: CNSS 4.48 percent of the first 6,000 = 268.80; AMO 2.26 percent x 40,000 = 904.00; professional expenses abatement capped at 2,500. Net taxable = 40,000 - 268.80 - 904.00 - 2,500 = 36,327.20 per month = 435,926.40 per year. IR: 0.37 x 435,926.40 - 27,400 = 133,892.77 per year = 11,157.73 per month. Total statutory deduction = 268.80 + 904.00 + 11,157.73 = 12,330.53 of 40,000 = 30.8 percent. Legal basis and verification identical to the senior tier: 2025/2026 IR scale from Loi de Finances 2025 (loi 60-24) via Humantal (2026-01-12) and EKM Audit (2025-04-01); CNSS 4.48 percent capped at 6,000 MAD and AMO 2.26 percent uncapped via Cleiss (2024) and AJIEL (2026-03-10). Single taxpayer, no family deduction, no voluntary CIMR included.",
+        "sourceUrl": "https://humantal.ma/ressources/bareme-ir-2026-maroc"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.337,
+        "quality": "Medium",
+        "note": "Representative salary 65,000 MAD gross per month (780,000 per year), consistent with executive benchmark medians of 40,000 to 115,000 MAD in the companion mar.json file. Monthly employee deductions: CNSS 4.48 percent of the first 6,000 = 268.80; AMO 2.26 percent x 65,000 = 1,469.00; professional expenses abatement capped at 2,500. Net taxable = 65,000 - 268.80 - 1,469.00 - 2,500 = 60,762.20 per month = 729,146.40 per year. IR: 0.37 x 729,146.40 - 27,400 = 242,384.17 per year = 20,198.68 per month. Total statutory deduction = 268.80 + 1,469.00 + 20,198.68 = 21,936.48 of 65,000 = 33.7 percent. Legal basis and verification identical to the other tiers: IR scale from Loi de Finances 2025 (loi 60-24, top rate 37 percent, exemption threshold 40,000) via Humantal (2026-01-12) and EKM Audit (2025-04-01); CNSS 4.48 percent capped at 6,000 MAD and AMO 2.26 percent uncapped via Cleiss (2024) and AJIEL (2026-03-10). Fixed salary only; executive variable pay is excluded, and variable is taxed at the same statutory rates when paid. Single taxpayer, no family deduction, no voluntary CIMR included.",
+        "sourceUrl": "https://humantal.ma/ressources/bareme-ir-2026-maroc"
+      }
+    ]
+  },
+  {
+    "iso3": "PAN",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.2,
+        "quality": "High",
+        "note": "Representative senior salary 3,000 USD per month, 39,000 USD per year gross including the 13th month salary (decimo tercer mes). Employee social security: CSS 9.75% plus Seguro Educativo 1.25% = 11.00% of gross = 4,290 USD; the 9.75% employee rate is unchanged by Ley 462 de 2025, which raised only the employer rate (PwC tax summary reviewed August 2026; Morgan and Morgan alert April 2025; Deel CSS guide 2026). ISR base = 39,000 minus 4,290 deductible CSS = 34,710; DGI scale (verified 31 August 2026: 0% to 11,000, 15% on 11,000-50,000, 25% above 50,000) gives ISR = 15% x 23,710 = 3,556.50 USD. Total 7,846.50 USD = 20.1% of gross. No itemized deductions or education credits applied; if the reduced 7.25% employee CSS rate applies to the 13th month (as reported by Panama America payroll coverage), the total falls by about 0.2 points.",
+        "sourceUrl": "https://dgi.mef.gob.pa/DInforme/Tarifa"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.26,
+        "quality": "High",
+        "note": "Representative lead salary 7,000 USD per month, 91,000 USD per year gross including the 13th month salary, consistent with Michael Page gerencia-level medians (6,000-8,000 for finance and IT management). Employee CSS 9.75% + Seguro Educativo 1.25% = 11.00% x 91,000 = 10,010 USD. ISR base = 91,000 minus 10,010 = 80,990; DGI scale gives 5,850 + 25% x (80,990 minus 50,000) = 13,597.50 USD. Total 23,607.50 USD = 25.9% of gross. No itemized deductions or education credits applied; employee CSS rate unchanged in 2026 (Ley 462 de 2025 raised employer side only).",
+        "sourceUrl": "https://dgi.mef.gob.pa/DInforme/Tarifa"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.29,
+        "quality": "High",
+        "note": "Representative executive salary 12,500 USD per month, 162,500 USD per year gross including the 13th month salary, consistent with Michael Page director-level medians (10,000-15,000 technology director; 12,000-20,000 finance director). Employee CSS 9.75% + Seguro Educativo 1.25% = 11.00% x 162,500 = 17,875 USD. ISR base = 162,500 minus 17,875 = 144,625; DGI scale gives 5,850 + 25% x (144,625 minus 50,000) = 29,506.25 USD. Total 47,381.25 USD = 29.2% of gross. No itemized deductions or education credits applied; employee CSS rate unchanged in 2026 (Ley 462 de 2025 raised employer side only).",
+        "sourceUrl": "https://dgi.mef.gob.pa/DInforme/Tarifa"
+      }
+    ]
+  },
+  {
+    "iso3": "LBN",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.07,
+        "quality": "Medium",
+        "note": "Representative senior gross of 3,000 USD per month (36,000 USD per year, consistent with the senior medians benchmarked for Lebanon), converted at the fixed 89,500 LBP per USD. Income tax per the 2024 Budget Law scale (2/4/7/11/15/20/25 percent on annual brackets of 360M/900M/1.8B/3.6B/7.2B/13.5B LBP, in force since 1 January 2024): taxable income of 2,728.8M LBP after the 450M LBP single-taxpayer deduction and deductible NSSF gives tax of 193.97M LBP (about 2,168 USD, 6.0 percent). Employee NSSF is 3 percent for sickness and maternity on a base capped at 120M LBP per month (ceiling effective July-August 2025 per NSSF Memo 805), i.e. 43.2M LBP (483 USD, 1.3 percent), for a total of about 7.4 percent of gross. End-of-service indemnity is employer-paid and excluded.",
+        "sourceUrl": "https://www.aldic.net/tax-alert-tax-on-salaries-according-to-the-budget-law-of-the-year-2024/"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.09,
+        "quality": "Medium",
+        "note": "Representative lead gross of 4,500 USD per month (54,000 USD per year, about 4,833M LBP at 89,500 LBP per USD). Income tax: taxable income of 4,339.8M LBP after the 450M single-taxpayer deduction and deductible NSSF gives 91.8M (through 1.8B LBP) plus 198M at 11 percent plus 110.97M at 15 percent, totaling 400.77M LBP (about 4,478 USD, 8.3 percent). Employee NSSF adds the capped 43.2M LBP (483 USD, 0.9 percent), for a total of about 9.2 percent of gross. A non-working spouse and children would raise deductions (plus 225M LBP spouse and 45M LBP per child) and lower this by roughly one to two points. End-of-service indemnity is employer-paid and excluded.",
+        "sourceUrl": "https://www.aldic.net/tax-alert-tax-on-salaries-according-to-the-budget-law-of-the-year-2024/"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.12,
+        "quality": "Medium",
+        "note": "Representative executive gross of 7,500 USD per month (90,000 USD per year, about 8,055M LBP at 89,500 LBP per USD). Income tax: taxable income of 7,561.8M LBP after the 450M single-taxpayer deduction and deductible NSSF gives 289.8M (through 3.6B LBP) plus 540M at 15 percent plus 72.36M at 20 percent, totaling 902.16M LBP (about 10,079 USD, 11.2 percent). Employee NSSF adds the capped 43.2M LBP (483 USD, 0.5 percent), for a total of about 11.7 percent of gross. Because the NSSF base is capped so low, the deduction share is driven almost entirely by the progressive scale, which tops out at 25 percent above 13.5B LBP (about 150,800 USD per year). End-of-service indemnity is employer-paid and excluded.",
+        "sourceUrl": "https://www.aldic.net/tax-alert-tax-on-salaries-according-to-the-budget-law-of-the-year-2024/"
+      }
+    ]
+  },
+  {
+    "iso3": "MEX",
+    "tiers": [
+      {
+        "label": "senior",
+        "effectiveDeduction": 0.21,
+        "quality": "High",
+        "note": "Representative senior gross of MXN 55,000 per month (660,000 per year, consistent with the 50,000-62,500 medians found for senior developers and data engineers). ISR: 2026 monthly tariff (Anexo 8 RMF 2026, in force since January 2026, brackets raised 13.21 percent for accumulated inflation) applied to the taxable base of 53,628.80 (gross minus worker IMSS) gives 5,665.16 fixed plus 23.52 percent of 18,265.97 = 9,960.91. Worker IMSS = 1,371.20 (2.0 percent of SBC for invalidez y vida 0.625, cesantia y vejez 1.125 and prestaciones en dinero 0.25, plus 0.40 percent on the SBC above 3 minimum wages of 9,577.22 per month at 315.04 daily per CONASAMI, plus 0.375 percent above 3 UMA of 3,566.22 per month, UMA 117.31 daily per INEGI from 1 Feb 2026); subsidio al empleo is 0 above 7,382.33. Total 11,332.11 per month, 20.6 percent of gross, assuming SBC equals gross salary and excluding employer charges.",
+        "sourceUrl": "https://www.elcontribuyente.mx/tablas-isr/2026/"
+      },
+      {
+        "label": "lead",
+        "effectiveDeduction": 0.26,
+        "quality": "High",
+        "note": "Representative lead gross of MXN 105,000 per month (1,260,000 per year, matching the Gerente de Contabilidad average of 105,000 and the 92,500-150,630 lead range found). ISR 2026 monthly tariff on the taxable base of 102,680.98 gives 10,457.09 fixed plus 30.00 percent of 46,944.30 = 24,540.38. Worker IMSS is capped because the SBC ceiling is 25 UMA (2,932.75 daily, about 89,155.60 per month), so the same rate components as the senior tier yield a maximum of 2,319.02, only 2.21 percent of gross; subsidio al empleo is 0. Total 26,859.40 per month, 25.6 percent of gross.",
+        "sourceUrl": "https://www.elcontribuyente.mx/tablas-isr/2026/"
+      },
+      {
+        "label": "executive",
+        "effectiveDeduction": 0.29,
+        "quality": "High",
+        "note": "Representative executive gross of MXN 183,750 per month (2,205,000 per year, matching the Director de Tecnologia and Director de RRHH averages, with Director de Finanzas at 191,250 and the Buk CEO median at 233,000). ISR 2026 monthly tariff on the taxable base of 181,430.98 gives 37,009.69 fixed plus 34.00 percent of 39,550.32 = 50,456.80. Worker IMSS stays capped at the 25 UMA ceiling (89,155.60 per month) at 2,319.02, which falls to 1.26 percent of gross, so the social security share declines at this level while total statutory deductions reach 52,775.82 per month, 28.7 percent of gross.",
+        "sourceUrl": "https://www.elcontribuyente.mx/tablas-isr/2026/"
+      }
+    ]
+  }
+]

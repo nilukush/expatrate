@@ -1,0 +1,32 @@
+# Agent instruction and memory files (kept local, never committed)
+CLAUDE.md
+AGENTS.md
+MEMORY.md
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+build/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Test artifacts
+coverage/
+playwright-report/
+test-results/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local tooling artifacts
+.playwright-mcp/

@@ -1,4 +1,4 @@
-import { calculate } from '../engine/engine';
+import { calculate, evaluateOffer } from '../engine/engine';
 import { loadDatasets } from '../engine/data';
 import type { CountryRow } from '../engine/types';
 import type { EngineResult } from '../engine/types';
@@ -920,6 +920,17 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     resultsEl.innerHTML = `
       <h2 id="resultsHeading" class="wz-heading" tabindex="-1">${escapeHtml(t('results.heading'))}</h2>
       <div class="wz-grid-results">${sections.join('')}</div>
+      <div class="wz-card" id="offerCard">
+        <h3>${escapeHtml(t('results.offerTitle'))}</h3>
+        <p class="wz-note">${escapeHtml(t('results.offerHelp'))}</p>
+        <div class="wz-row">
+          <input type="text" id="offerAmount" class="wz-input" inputmode="decimal" autocomplete="off" placeholder="${escapeHtml(t('results.offerPlaceholder'))}" />
+          <select id="offerCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), result.quote?.currency ?? 'USD', 'USD')}</select>
+          <select id="offerBasis" class="wz-select"><option value="monthly">${escapeHtml(t('options.grossNet') ? '' : '')}${escapeHtml(t('results.perMonth'))}</option><option value="annual">${escapeHtml(t('results.perYear'))}</option></select>
+          <button type="button" id="offerEval" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.offerEval'))}</button>
+        </div>
+        <p id="offerVerdict" class="wz-interpretation" hidden></p>
+      </div>
       <div class="wz-actions">
         <button type="button" id="shareBtn" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.share'))}</button>
         <button type="button" id="printBtn" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.print'))}</button>
@@ -929,6 +940,31 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
 
     resultsEl.querySelector<HTMLElement>('#resultsHeading')?.focus();
     resultsEl.querySelector('#printBtn')?.addEventListener('click', () => window.print());
+    resultsEl.querySelector('#offerEval')?.addEventListener('click', () => {
+      const verdictEl = resultsEl.querySelector<HTMLElement>('#offerVerdict');
+      if (!verdictEl || !result.quote) return;
+      const raw = (resultsEl.querySelector<HTMLInputElement>('#offerAmount')?.value ?? '').replace(/,/g, '');
+      const amount = Number.parseFloat(raw);
+      if (!Number.isFinite(amount) || amount <= 0) {
+        verdictEl.textContent = t('results.offerNeedAmount');
+        verdictEl.hidden = false;
+        return;
+      }
+      const currency = resultsEl.querySelector<HTMLSelectElement>('#offerCurrency')?.value ?? 'USD';
+      const basis = resultsEl.querySelector<HTMLSelectElement>('#offerBasis')?.value === 'annual' ? 'annual' : 'monthly';
+      try {
+        const verdict = evaluateOffer({ amount, currency, basis, gross: true }, result, fx.rates);
+        const band = t(`results.offerBand.${verdict.bandPosition}`);
+        const floorLine = verdict.floorGapPct === null ? '' : ' ' + (verdict.floorGapPct >= 0
+          ? t('results.offerAboveFloor', { pct: verdict.floorGapPct })
+          : t('results.offerBelowFloor', { pct: Math.abs(verdict.floorGapPct) }));
+        verdictEl.textContent = `${t('results.offerVerdict', { band, pct: verdict.percentileInBand })}${floorLine}`;
+        verdictEl.hidden = false;
+      } catch {
+        verdictEl.textContent = t('results.offerNoBand');
+        verdictEl.hidden = false;
+      }
+    });
     resultsEl.querySelector('#startOver')?.addEventListener('click', () => {
       clearState();
       state = { ...DEFAULT_STATE, packageOnTop: { ...DEFAULT_STATE.packageOnTop } };

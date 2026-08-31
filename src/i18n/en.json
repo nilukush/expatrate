@@ -158,7 +158,21 @@
     "notAdvice": "Estimates from public market data, indicative only. Not financial, tax, or legal advice.",
     "interpretMonthly": "We understood: {amount} per month {basis} ({annual} per year).",
     "interpretAnnual": "We understood: {amount} per year {basis} ({monthly} per month).",
-    "basisLine": "{monthly} per month {basis} ({annual} per year) earned in {country}"
+    "basisLine": "{monthly} per month {basis} ({annual} per year) earned in {country}",
+    "offerTitle": "Evaluate an offer",
+    "offerHelp": "Got a number from a recruiter? See where it lands before you answer.",
+    "offerPlaceholder": "Offer amount",
+    "offerEval": "Check",
+    "offerNeedAmount": "Enter the offer amount first.",
+    "offerNoBand": "No market band for this target, so the offer cannot be positioned.",
+    "offerVerdict": "This offer sits {band}, around the {pct} mark of the published band.",
+    "offerAboveFloor": "It clears your purchasing-power floor by {pct}%.",
+    "offerBelowFloor": "It falls {pct}% short of your purchasing-power floor.",
+    "offerBand": {
+      "below-p25": "below the P25",
+      "within-band": "inside the market band",
+      "above-p75": "above the P75"
+    }
   },
   "parse": {
     "resumeLabel": "Resume (PDF or DOCX, optional)",

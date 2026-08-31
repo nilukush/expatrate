@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test, describe } from 'vitest';
-import { calculate, loadDatasets } from '../src/engine/index';
+import { calculate, evaluateOffer, loadDatasets } from '../src/engine/index';
 import type { EngineInputs, FxRates } from '../src/engine/types';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
@@ -344,4 +344,29 @@ test('entry mode: no current salary returns a market-only quote with no floor', 
   expect(result.floor).toBeNull();
   expect(result.basisLine).toBeNull();
   expect(result.confidence.reasons.some((r) => r.key === 'entryMode')).toBe(true);
+});
+
+test('offer evaluation: positions an offer in the market band and against the floor', () => {
+  const result = calculate(PERSONA, { datasets, fx });
+  const verdict = evaluateOffer(
+    { amount: 70000, currency: 'AED', basis: 'monthly', gross: true },
+    result,
+    fx,
+  );
+  expect(verdict.bandPosition).toBe('within-band');
+  expect(verdict.percentileInBand).toBeGreaterThan(40);
+  expect(verdict.percentileInBand).toBeLessThan(75);
+  expect(verdict.floorGapPct).not.toBeNull();
+  expect(verdict.floorGapPct!).toBeGreaterThan(0);
+});
+
+test('offer evaluation: flags an offer below the band and in another currency', () => {
+  const result = calculate(PERSONA, { datasets, fx });
+  const verdict = evaluateOffer(
+    { amount: 120000, currency: 'USD', basis: 'annual', gross: true },
+    result,
+    fx,
+  );
+  expect(verdict.bandPosition).toBe('below-p25');
+  expect(verdict.floorGapPct!).toBeLessThan(0);
 });

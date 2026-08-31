@@ -158,7 +158,21 @@
     "notAdvice": "सार्वजनिक बाज़ार डेटा से अनुमान, केवल संकेत हेतु। वित्तीय, कर या कानूनी सलाह नहीं।",
     "interpretMonthly": "हम समझे: {amount} प्रति माह ({basis}), यानी {annual} प्रति वर्ष।",
     "interpretAnnual": "हम समझे: {amount} प्रति वर्ष ({basis}), यानी {monthly} प्रति माह।",
-    "basisLine": "{monthly} प्रति माह ({basis}), यानी {annual} प्रति वर्ष, {country} में"
+    "basisLine": "{monthly} प्रति माह ({basis}), यानी {annual} प्रति वर्ष, {country} में",
+    "offerTitle": "ऑफ़र का मूल्यांकन करें",
+    "offerHelp": "रिक्रूटर से आंकड़ा मिला? जवाब देने से पहले जानें वह कहाँ खड़ा है।",
+    "offerPlaceholder": "ऑफ़र राशि",
+    "offerEval": "जाँचें",
+    "offerNeedAmount": "पहले ऑफ़र राशि दर्ज करें।",
+    "offerNoBand": "इस गंतव्य के लिए बाज़ार बैंड नहीं है, इसलिए ऑफ़र की स्थिति तय नहीं हो सकती।",
+    "offerVerdict": "यह ऑफ़र {band} है, प्रकाशित बैंड के लगभग {pct} अंक पर।",
+    "offerAboveFloor": "यह आपकी क्रय-शक्ति सीमा से {pct}% ऊपर है।",
+    "offerBelowFloor": "यह आपकी क्रय-शक्ति सीमा से {pct}% नीचे है।",
+    "offerBand": {
+      "below-p25": "P25 से नीचे",
+      "within-band": "बाज़ार बैंड के भीतर",
+      "above-p75": "P75 से ऊपर"
+    }
   },
   "parse": {
     "resumeLabel": "रिज़्यूमे (PDF या DOCX, वैकल्पिक)",

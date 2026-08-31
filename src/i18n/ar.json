@@ -158,7 +158,21 @@
     "notAdvice": "تقديرات من بيانات سوق عامة، لإرشادك فقط. ليست مشورة مالية أو ضريبية أو قانونية.",
     "interpretMonthly": "فهمنا: {amount} شهرياً ({basis}) أي {annual} سنوياً.",
     "interpretAnnual": "فهمنا: {amount} سنوياً ({basis}) أي {monthly} شهرياً.",
-    "basisLine": "{monthly} شهرياً ({basis}) أي {annual} سنوياً، في {country}"
+    "basisLine": "{monthly} شهرياً ({basis}) أي {annual} سنوياً، في {country}",
+    "offerTitle": "قيّم عرضًا",
+    "offerHelp": "وصلك رقم من مسؤول التوظيف؟ اعرف موقعه قبل أن ترد.",
+    "offerPlaceholder": "قيمة العرض",
+    "offerEval": "تحقق",
+    "offerNeedAmount": "أدخل قيمة العرض أولًا.",
+    "offerNoBand": "لا يوجد نطاق سوقي لهذه الوجهة، لذا لا يمكن تحديد موضع العرض.",
+    "offerVerdict": "يقع هذا العرض {band}، عند حوالي علامة {pct} من النطاق المنشور.",
+    "offerAboveFloor": "يتجاوز حدك الأدنى للقوة الشرائية بنسبة {pct}٪.",
+    "offerBelowFloor": "يقل عن حدك الأدنى للقوة الشرائية بنسبة {pct}٪.",
+    "offerBand": {
+      "below-p25": "أول الربع الأدنى",
+      "within-band": "داخل نطاق السوق",
+      "above-p75": "فوق الربع الأعلى"
+    }
   },
   "parse": {
     "resumeLabel": "السيرة الذاتية (PDF أو DOCX، اختياري)",

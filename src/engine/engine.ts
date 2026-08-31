@@ -378,3 +378,37 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     warnings,
   };
 }
+
+export interface OfferVerdict {
+  bandPosition: 'below-p25' | 'within-band' | 'above-p75';
+  /** Linear read of where the offer sits between the published P25 and P75. */
+  percentileInBand: number;
+  /** Percent gap vs the purchasing-power floor; null in entry mode (no floor). */
+  floorGapPct: number | null;
+  /** The offer as monthly gross in the quote currency, for display. */
+  monthlyGrossInQuoteCurrency: number;
+}
+
+export function evaluateOffer(offer: SalaryInput, result: EngineResult, fx: FxRates): OfferVerdict {
+  if (!result.quote) {
+    throw new Error('No market band to compare the offer against.');
+  }
+  const monthlyOfferCurrency = offer.basis === 'monthly' ? offer.amount : offer.amount / 12;
+  const quote = result.quote;
+  const monthly = offer.currency === quote.currency
+    ? monthlyOfferCurrency
+    : fromUsd(toUsd(monthlyOfferCurrency, offer.currency, fx), quote.currency, fx);
+  const p25 = quote.lowMonthly;
+  const p75 = quote.stretchMonthly;
+  const bandPosition = monthly < p25 ? 'below-p25' : monthly > p75 ? 'above-p75' : 'within-band';
+  const span = p75 - p25;
+  const percentileInBand = span > 0
+    ? Math.round(25 + (50 * (monthly - p25)) / span)
+    : monthly >= p75
+      ? 75
+      : 25;
+  const floorGapPct = result.floor
+    ? Math.round(((monthly - result.floor.monthlyGross) / result.floor.monthlyGross) * 100)
+    : null;
+  return { bandPosition, percentileInBand, floorGapPct, monthlyGrossInQuoteCurrency: monthly };
+}

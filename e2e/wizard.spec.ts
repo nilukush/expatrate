@@ -309,3 +309,12 @@ test('entry mode: a user with no current salary gets a market-only quote', async
   await expect(page.locator('#quoteTarget')).toContainText('AED');
   await expect(page.locator('#basisLine')).toContainText(/market band alone|entry|floor/i);
 });
+
+test('offer evaluation: positions a recruiter offer against the quote', async ({ page }) => {
+  await fillHappyPathToResults(page);
+  await page.fill('#offerAmount', '70000');
+  await page.click('#offerEval');
+  await expect(page.locator('#offerVerdict')).toBeVisible();
+  await expect(page.locator('#offerVerdict')).toContainText(/band/i);
+  await expect(page.locator('#offerVerdict')).toContainText('%');
+});

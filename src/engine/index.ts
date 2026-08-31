@@ -1,4 +1,4 @@
-export { calculate } from './engine';
+export { calculate, evaluateOffer } from './engine';
 export { loadDatasets } from './data';
 export type {
   BenchmarkData,

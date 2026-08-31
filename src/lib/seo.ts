@@ -248,13 +248,30 @@ export function datasetLd(): Record<string, unknown> {
 }
 
 export function sitemapXml(urls: string[]): string {
+  // Group URLs by their locale-independent path so each entry can declare the
+  // full reciprocal alternate set. A URL may never claim a hreflang whose
+  // href points at a different locale (Google rejects such files).
+  const groups = new Map<string, { en?: string; ar?: string; hi?: string }>();
+  for (const url of urls) {
+    const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi))(\/.*)?$/);
+    const locale = match ? match[2] : 'en';
+    const path = match ? match[3] ?? '/' : url.replace(/^https?:\/\/[^/]+/, '') || '/';
+    const group = groups.get(path) ?? {};
+    group[locale as 'en' | 'ar' | 'hi'] = url;
+    groups.set(path, group);
+  }
   const entries = urls
     .map((url) => {
-      const alternates = [
-        `<xhtml:link rel="alternate" hreflang="en" href="${url}"/>`,
-        `<xhtml:link rel="alternate" hreflang="x-default" href="${url}"/>`,
-      ].join('');
-      return `  <url>\n    <loc>${url}</loc>\n    ${alternates}\n  </url>`;
+      const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi))(\/.*)?$/);
+      const locale = match ? match[2] : 'en';
+      const path = match ? match[3] ?? '/' : url.replace(/^https?:\/\/[^/]+/, '') || '/';
+      const group = groups.get(path) ?? { [locale]: url };
+      const alternates = (['en', 'ar', 'hi'] as const)
+        .filter((l) => group[l])
+        .map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${group[l]}"/>`)
+        .join('');
+      const xDefault = `<xhtml:link rel="alternate" hreflang="x-default" href="${group.en ?? url}"/>`;
+      return `  <url>\n    <loc>${url}</loc>\n    ${alternates}${xDefault}\n  </url>`;
     })
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries}\n</urlset>\n`;

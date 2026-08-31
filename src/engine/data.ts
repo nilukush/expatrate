@@ -1,5 +1,6 @@
 import countriesJson from '../data/countries.json';
 import pppJson from '../data/ppp.json';
+import taxBracketsJson from '../data/tax-brackets.json';
 import taxJson from '../data/tax-effective.json';
 import benchmarksJson from '../data/benchmarks.json';
 import packageJson from '../data/package-conventions.json';
@@ -13,6 +14,7 @@ import type {
   FamilyContextData,
   PackageConvention,
   PppRow,
+  BracketTable,
   TaxRow,
 } from './types';
 
@@ -21,6 +23,7 @@ export function loadDatasets(): Datasets {
     countries: countriesJson as unknown as CountryRow[],
     ppp: pppJson.rows as unknown as PppRow[],
     tax: taxJson as unknown as TaxRow[],
+    taxBrackets: taxBracketsJson as unknown as BracketTable[],
     benchmarks: benchmarksJson.entries as unknown as BenchmarkEntry[],
     packageConventions: packageJson as unknown as PackageConvention[],
     employment: employmentJson as unknown as EmploymentConventions,

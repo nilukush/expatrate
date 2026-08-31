@@ -93,7 +93,9 @@ describe('purchasingPowerFloor (Verifier worked examples)', () => {
       { datasets, fx },
     );
     const annual = result.floor!.monthlyGross * 12;
-    expect(annual).toBeGreaterThan(6_800_000);
+    // Bracket-based 2026 Indian rates (new-regime slabs, cess and surcharge
+    // folded in) gross up slightly lower than the old tier: 6.77M.
+    expect(annual).toBeGreaterThan(6_600_000);
     expect(annual).toBeLessThan(7_100_000);
   });
 
@@ -105,10 +107,11 @@ describe('purchasingPowerFloor (Verifier worked examples)', () => {
       targetCountry: 'USA',
     };
     const result = calculate(input, { datasets, fx });
-    // 100,000 / 0.702 * 1.0 = 142,450 net USD; / (1 - 0.32) = 209,485 annual
+    // 142,450 net USD grossed up through the US single-filer brackets and
+    // capped FICA lands at about 193,650 annual (26.4% effective).
     const annual = result.floor!.monthlyGross * 12;
-    expect(annual).toBeGreaterThan(206_000);
-    expect(annual).toBeLessThan(213_000);
+    expect(annual).toBeGreaterThan(190_000);
+    expect(annual).toBeLessThan(200_000);
   });
 });
 
@@ -247,8 +250,10 @@ describe('presentation and risk layers', () => {
     expect(result.anchor!.p50Monthly).toBeCloseTo(157000 / 12, 0);
     expect(result.quote!.targetMonthly).toBeCloseTo(16550, -2);
     expect(result.floor).not.toBeNull();
-    // AED 646,452 net / PPP 2.527 x AUS PPP 1.4646 = AUD 374,633 net; gross-up at 40%.
-    expect(result.floor!.annualGross).toBeCloseTo(374633 / 0.6, -3);
+    // AUD 374,633 net grossed up through the 2026-27 ATO brackets plus
+    // Medicare lands at about AUD 642,516 (41.7% effective at that income).
+    expect(result.floor!.annualGross).toBeGreaterThan(620_000);
+    expect(result.floor!.annualGross).toBeLessThan(665_000);
     expect(result.floor!.currency).toBe('AUD');
     expect(result.warnings.some((w) => w.key === 'targetTaxDefault')).toBe(false);
     // The Dubai floor sits above the Australian CIO market ceiling: said plainly.
@@ -256,9 +261,9 @@ describe('presentation and risk layers', () => {
     // The floor ships its own derivation so the UI can show the math.
     const d = result.floor!.derivation;
     expect(d.netMonthlyTarget).toBeCloseTo(374633 / 12, -2);
-    expect(d.taxRate).toBeCloseTo(0.40, 2);
-    expect(d.taxLabel).toBe('executive');
-    expect(d.taxQuality).toBe('Medium');
+    expect(d.taxRate).toBeCloseTo(0.417, 2);
+    expect(d.taxLabel).toBe('2026 brackets');
+    expect(d.taxQuality).toBe('High');
     expect(d.originPpp).toBeCloseTo(2.527, 3);
     expect(d.targetPpp).toBeCloseTo(1.4646, 3);
     expect(d.originPppYear).toBe(2025);
@@ -277,9 +282,9 @@ describe('presentation and risk layers', () => {
     expect(result.warnings.some((w) => w.key === 'medianOnly')).toBe(true);
   });
 
-  test('a target without a verified tax tier surfaces the 20% default assumption', () => {
+  test('a target without brackets or a verified tax tier surfaces the 20% default assumption', () => {
     const result = calculate(
-      { ...PERSONA, targetCountry: 'THA' },
+      { ...PERSONA, targetCountry: 'PAK' },
       { datasets, fx },
     );
     expect(result.warnings.some((w) => w.key === 'targetTaxDefault')).toBe(true);
@@ -295,8 +300,10 @@ describe('presentation and risk layers', () => {
     expect(result.anchor?.currency).toBe('EUR');
     // Annual band 111,400 / 128,600 / 148,100 -> monthly approx 9,283 / 10,717 / 12,342.
     expect(result.anchor!.p50Monthly).toBeCloseTo(128600 / 12, 0);
-    // Floor: AED 646,452 net / PPP 2.527 x NLD PPP 0.7673 = EUR 196,206 net; at 45% tax.
-    expect(result.floor!.annualGross).toBeCloseTo(196206 / 0.55, -3);
+    // EUR 196,206 net grossed up through the 2026 Dutch scale plus capped
+    // premiums lands at about EUR 368,753 (46.8% effective at that income).
+    expect(result.floor!.annualGross).toBeGreaterThan(355_000);
+    expect(result.floor!.annualGross).toBeLessThan(382_000);
     expect(result.warnings.some((w) => w.key === 'targetTaxDefault')).toBe(false);
   });
 
@@ -308,8 +315,11 @@ describe('presentation and risk layers', () => {
     expect(result.status).toBe('ok');
     expect(result.anchor!.currency).toBe('CAD');
     expect(result.anchor!.p50Monthly).toBeCloseTo(200000 / 12, 0);
-    // AED 646,452 net / PPP 2.527 x CAN PPP 1.2605 = CAD 322,405 net; at 38% Ontario-basis tax.
-    expect(result.floor!.annualGross).toBeCloseTo(322405 / 0.62, -3);
+    // CAD 322,405 net grossed up through the 2026 federal brackets plus CPP
+    // and EI: about CAD 442,981 (27.2% federal effective; the bracket table
+    // excludes the provincial layer, which the tier estimate had baked in).
+    expect(result.floor!.annualGross).toBeGreaterThan(425_000);
+    expect(result.floor!.annualGross).toBeLessThan(462_000);
     expect(result.warnings.some((w) => w.key === 'targetTaxDefault')).toBe(false);
   });
 
@@ -369,4 +379,28 @@ test('offer evaluation: flags an offer below the band and in another currency', 
   );
   expect(verdict.bandPosition).toBe('below-p25');
   expect(verdict.floorGapPct!).toBeLessThan(0);
+});
+
+test('floor uses the bracket table when the target country has one', () => {
+  const result = calculate(
+    { ...PERSONA, targetCountry: 'GBR' },
+    { datasets, fx },
+  );
+  expect(result.floor).not.toBeNull();
+  expect(result.floor!.derivation.taxLabel).toBe('2026 brackets');
+  expect(result.floor!.derivation.taxRate).toBeGreaterThan(0.2);
+  expect(result.floor!.derivation.taxRate).toBeLessThan(0.5);
+});
+
+test('origin tax uses the bracket table when available', () => {
+  const gbrPersona = {
+    ...PERSONA,
+    originCountry: 'GBR',
+    currentSalary: { amount: 8000, currency: 'GBP', basis: 'monthly', gross: true },
+  };
+  const result = calculate(gbrPersona, { datasets, fx });
+  // 96k GBP gross: income tax + NI lands near 33%; a tier default would be 20%.
+  const basis = result.basisLine ?? '';
+  expect(basis).toContain('GBP');
+  expect(result.status).not.toBe('insufficient_data');
 });

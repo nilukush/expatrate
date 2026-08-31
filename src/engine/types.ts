@@ -137,10 +137,53 @@ export interface FamilyContextData {
   }>;
 }
 
+export interface TaxBracketRow {
+  /** Upper bound of annual taxable income; null means the open top band. */
+  threshold: number | null;
+  rate: number;
+}
+
+export interface SocialContributionRow {
+  name: string;
+  rate: number;
+  /** 'wage' (default): rate on the wage base. 'incomeTax': rate on computed income tax (surcharges). */
+  base?: 'wage' | 'incomeTax';
+  /** Annual wage-base cap; null means uncapped. */
+  wageBaseCapAnnual: number | null;
+  /** Earnings below this are exempt from the contribution; 0 if none. */
+  wageBaseFloorAnnual?: number;
+  /** True for statutory contributions that are savings in the worker's own account. */
+  savings?: boolean;
+}
+
+export interface ReliefTaper {
+  /** Gross income where the relief starts reducing. */
+  fromGross: number;
+  /** Gross income where the relief reaches zero. */
+  toGross: number;
+}
+
+export interface BracketTable {
+  iso3: string;
+  currency: string;
+  personalReliefAnnual: number;
+  /** Optional linear reduction of the relief to zero between two gross incomes. */
+  personalReliefTaper?: ReliefTaper;
+  /** True where the law deducts employee socials from taxable income (e.g., Germany). */
+  socialsReduceTaxable?: boolean;
+  brackets: TaxBracketRow[];
+  employeeSocial: SocialContributionRow[];
+  representativeCheck?: Array<{ label: string; annualGross: number; computedEffective: number }>;
+  sourceUrl: string;
+  note: string;
+  lastReviewed: string;
+}
+
 export interface Datasets {
   countries: CountryRow[];
   ppp: PppRow[];
   tax: TaxRow[];
+  taxBrackets: BracketTable[];
   benchmarks: BenchmarkEntry[];
   packageConventions: PackageConvention[];
   employment: EmploymentConventions;

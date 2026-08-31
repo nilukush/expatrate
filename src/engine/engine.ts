@@ -1,3 +1,4 @@
+import { effectiveDeductionAt, solveGrossForNet } from './tax';
 import type {
   BenchmarkData,
   ConfidenceResult,
@@ -224,7 +225,16 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     basisLine = `${origin.currency} ${Math.round(annual / months)} per month ${salary.gross ? 'gross' : 'net'} (${origin.currency} ${Math.round(annual)} per year) earned in ${origin.name}`;
 
     // Net income, applying the origin tax tier and any package-on-top components.
-    const originTax = effectiveDeduction(datasets, inputs.originCountry as string, inputs.level);
+    const originBracket = datasets.taxBrackets.find((t) => t.iso3 === inputs.originCountry);
+    const originTax = originBracket
+      ? {
+          label: '2026 brackets',
+          effectiveDeduction: effectiveDeductionAt(originBracket, annual),
+          quality: 'High',
+          note: originBracket.note,
+          sourceUrl: originBracket.sourceUrl,
+        }
+      : effectiveDeduction(datasets, inputs.originCountry as string, inputs.level);
     netAnnual = salary.gross ? annual * (1 - originTax.effectiveDeduction) : annual;
 
     if (inputs.currentPackageOnTop) {
@@ -252,16 +262,31 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
   if (originPpp && targetPpp) {
     const realIncomeUsd = netAnnual / originPpp.value;
     const targetNet = realIncomeUsd * targetPpp.value;
-    const targetGross = targetNet / (1 - targetTax.effectiveDeduction);
+    const targetBracket = datasets.taxBrackets.find((t) => t.iso3 === inputs.targetCountry);
+    let targetGross: number;
+    let taxRate: number;
+    let taxLabel: string;
+    let taxQuality: string;
+    if (targetBracket) {
+      targetGross = solveGrossForNet(targetBracket, targetNet, targetTax.effectiveDeduction);
+      taxRate = effectiveDeductionAt(targetBracket, targetGross);
+      taxLabel = '2026 brackets';
+      taxQuality = 'High';
+    } else {
+      targetGross = targetNet / (1 - targetTax.effectiveDeduction);
+      taxRate = targetTax.effectiveDeduction;
+      taxLabel = targetTax.label;
+      taxQuality = targetTax.quality;
+    }
     floor = {
       currency: target.currency,
       annualGross: targetGross,
       monthlyGross: targetGross / 12,
       derivation: {
         netMonthlyTarget: targetNet / 12,
-        taxRate: targetTax.effectiveDeduction,
-        taxLabel: targetTax.label,
-        taxQuality: targetTax.quality,
+        taxRate,
+        taxLabel,
+        taxQuality: taxQuality,
         originPpp: originPpp.value,
         originPppYear: originPpp.year,
         targetPpp: targetPpp.value,
@@ -270,7 +295,7 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
       },
     };
   }
-  if (targetTaxAssumed && floor) {
+  if (targetTaxAssumed && floor && !datasets.taxBrackets.some((t) => t.iso3 === inputs.targetCountry)) {
     warnings.push({ key: 'targetTaxDefault', params: { country: target.name } });
   }
   const stalePpp = [originPpp, targetPpp].filter((row): row is NonNullable<typeof row> =>

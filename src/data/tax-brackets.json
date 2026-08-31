@@ -21,12 +21,14 @@
       {
         "name": "National Insurance class 1 main (8% on earnings between primary threshold 12,570 and upper earnings limit 50,270)",
         "rate": 0.08,
-        "wageBaseCapAnnual": 50270
+        "wageBaseCapAnnual": 50270,
+        "wageBaseFloorAnnual": 12570
       },
       {
         "name": "National Insurance class 1 upper (2% on all earnings above 50,270)",
         "rate": 0.02,
-        "wageBaseCapAnnual": null
+        "wageBaseCapAnnual": null,
+        "wageBaseFloorAnnual": 50270
       }
     ],
     "representativeCheck": [
@@ -48,55 +50,63 @@
     ],
     "sourceUrl": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
     "note": "England/Wales/Northern Ireland income tax for tax year 2026-27 (6 Apr 2026 - 5 Apr 2027); thresholds frozen, Scotland has its own bands (excluded). Brackets are on taxable income (gross minus personal allowance, which tapers to 0 between 100,000 and 125,140 gross; this taper is applied in the checks). NI class 1: 8% between 12,570 and 50,270, 2% above. Checks (income tax + NI / gross): 60,000 = 11,432 + 3,210.60 = 14,642.60 (24.40%); 100,000 = 27,432 + 4,010.60 = 31,442.60 (31.44%); 200,000 (allowance fully tapered) = 76,203 + 6,010.60 = 82,213.60 (41.11%). Rates per gov.uk (income-tax-rates) and HMRC employer thresholds 2026-27.",
-    "lastReviewed": "2026-08-31"
+    "lastReviewed": "2026-08-31",
+    "personalReliefTaper": {
+      "fromGross": 100000,
+      "toGross": 125140
+    }
   },
   {
     "iso3": "DEU",
     "currency": "EUR",
-    "personalReliefAnnual": 12348,
+    "personalReliefAnnual": 1230,
     "brackets": [
       {
-        "threshold": 2726,
+        "threshold": 12348,
+        "rate": 0
+      },
+      {
+        "threshold": 15074,
         "rate": 0.1649
       },
       {
-        "threshold": 5451,
+        "threshold": 17799,
         "rate": 0.2148
       },
       {
-        "threshold": 11961,
+        "threshold": 24309,
         "rate": 0.251
       },
       {
-        "threshold": 18471,
+        "threshold": 30819,
         "rate": 0.2735
       },
       {
-        "threshold": 24981,
+        "threshold": 37329,
         "rate": 0.296
       },
       {
-        "threshold": 31490,
+        "threshold": 43838,
         "rate": 0.3186
       },
       {
-        "threshold": 38000,
+        "threshold": 50348,
         "rate": 0.3411
       },
       {
-        "threshold": 44510,
+        "threshold": 56858,
         "rate": 0.3637
       },
       {
-        "threshold": 51020,
+        "threshold": 63368,
         "rate": 0.3862
       },
       {
-        "threshold": 57530,
+        "threshold": 69878,
         "rate": 0.4087
       },
       {
-        "threshold": 265477,
+        "threshold": 277825,
         "rate": 0.42
       },
       {
@@ -133,7 +143,9 @@
       {
         "name": "Solidarity surcharge (5.5% of income tax, only where annual income tax exceeds 20,350; base is tax, not wages)",
         "rate": 0.055,
-        "wageBaseCapAnnual": null
+        "wageBaseCapAnnual": null,
+        "base": "incomeTax",
+        "wageBaseFloorAnnual": 20350
       }
     ],
     "representativeCheck": [
@@ -154,8 +166,9 @@
       }
     ],
     "sourceUrl": "https://www.gesetze-im-internet.de/estg/__32a.html",
-    "note": "Calendar 2026, single taxpayer tax class I, church tax excluded. The first two statutory zones (12,348-17,799 rising 14-24% and 17,800-69,878 rising 24-42%, per 32a(1) EStG) are quadratic formulas; the table approximates them with 10 stepped marginal bands (matches the exact formula within about 20 euro). Checks compute taxable income as gross minus employee social minus the 1,230 employee lump-sum deduction. Totals (tax + soli + social / gross): 60,000 = 9,215 + 0 + 12,690 = 21,905 (36.51%); 100,000 = 22,805 + 292 + 17,959 = 41,056 (41.06%); 200,000 = 64,743 + 3,561 + 18,107 = 86,411 (43.21%). Social caps 2026: RV/AV 101,400; GKV/PV 69,750 (bundesregierung.de); soli exemption limit 20,350 of tax.",
-    "lastReviewed": "2026-08-31"
+    "note": "Calendar 2026, single taxpayer tax class I, church tax excluded. The first two statutory zones (12,348-17,799 rising 14-24% and 17,800-69,878 rising 24-42%, per 32a(1) EStG) are quadratic formulas; the table approximates them with 10 stepped marginal bands (matches the exact formula within about 20 euro). Checks compute taxable income as gross minus employee social minus the 1,230 employee lump-sum deduction. Totals (tax + soli + social / gross): 60,000 = 9,215 + 0 + 12,690 = 21,905 (36.51%); 100,000 = 22,805 + 292 + 17,959 = 41,056 (41.06%); 200,000 = 64,743 + 3,561 + 18,107 = 86,411 (43.21%). Social caps 2026: RV/AV 101,400; GKV/PV 69,750 (bundesregierung.de); soli exemption limit 20,350 of tax. Engine model: relief is the 1,230 worker lump-sum; the 12,348 basic allowance is a zero-rate first band and all thresholds are absolute (allowance-shifted), socials reduce taxable income, soli is 5.5% of income tax above the 20,350 exemption limit (taper approximated as a hard limit).",
+    "lastReviewed": "2026-08-31",
+    "socialsReduceTaxable": true
   },
   {
     "iso3": "IND",
@@ -187,15 +200,28 @@
         "rate": 0.25
       },
       {
+        "threshold": 5000000,
+        "rate": 0.312
+      },
+      {
+        "threshold": 10000000,
+        "rate": 0.3432
+      },
+      {
+        "threshold": 20000000,
+        "rate": 0.3588
+      },
+      {
         "threshold": null,
-        "rate": 0.3
+        "rate": 0.39
       }
     ],
     "employeeSocial": [
       {
         "name": "EPF employee share (12% of basic wages; statutory wage ceiling 15,000/month - retirement savings in the worker's own account, but statutory)",
         "rate": 0.12,
-        "wageBaseCapAnnual": 180000
+        "wageBaseCapAnnual": 180000,
+        "savings": true
       },
       {
         "name": "ESI (0.75%, applies only if gross wages are 21,000/month or less)",
@@ -221,7 +247,7 @@
       }
     ],
     "sourceUrl": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
-    "note": "New (default) tax regime, FY 2026-27 (Apr 2026 - Mar 2027); Union Budget Feb 2026 kept the slabs and the Income Tax Act 2025 replaced the 1961 Act from 1 Apr 2026 without rate change. Relief is the 75,000 standard deduction; the 87A rebate makes tax nil on taxable income up to 1,200,000 (applied); surcharge 10% above 5m / 15% above 10m taxable (marginal relief ignored) and 4% cess are included in the checks; state professional tax excluded. Totals (tax incl cess/surcharge + EPF / gross): 2,500,000 = 319,800 + 21,600 = 341,400 (13.66%); 5,000,000 = 1,099,800 + 21,600 = 1,121,400 (22.43%); 12,000,000 = 3,776,370 + 21,600 = 3,797,970 (31.65%). ESI nil at these salaries; EPF capped at the statutory 15,000/month ceiling (many employers apply 12% to full basic pay, which would raise these).",
+    "note": "New (default) tax regime, FY 2026-27 (Apr 2026 - Mar 2027); Union Budget Feb 2026 kept the slabs and the Income Tax Act 2025 replaced the 1961 Act from 1 Apr 2026 without rate change. Relief is the 75,000 standard deduction; the 87A rebate makes tax nil on taxable income up to 1,200,000 (applied); surcharge 10% above 5m / 15% above 10m taxable (marginal relief ignored) and 4% cess are included in the checks; state professional tax excluded. Totals (tax incl cess/surcharge + EPF / gross): 2,500,000 = 319,800 + 21,600 = 341,400 (13.66%); 5,000,000 = 1,099,800 + 21,600 = 1,121,400 (22.43%); 12,000,000 = 3,776,370 + 21,600 = 3,797,970 (31.65%). ESI nil at these salaries; EPF capped at the statutory 15,000/month ceiling (many employers apply 12% to full basic pay, which would raise these). Engine model: the 4% cess and the income-based surcharge (10/15/25%) are folded into effective top-band rates; boundary marginal relief is ignored (as in the source arithmetic).",
     "lastReviewed": "2026-08-31"
   },
   {
@@ -326,12 +352,14 @@
       {
         "name": "CPP base (5.95% on earnings between the 3,500 exemption and the YMPE 74,600)",
         "rate": 0.0595,
-        "wageBaseCapAnnual": 74600
+        "wageBaseCapAnnual": 74600,
+        "wageBaseFloorAnnual": 3500
       },
       {
         "name": "CPP2 (4% on earnings between 74,600 and the YAMPE 85,000)",
         "rate": 0.04,
-        "wageBaseCapAnnual": 85000
+        "wageBaseCapAnnual": 85000,
+        "wageBaseFloorAnnual": 74600
       },
       {
         "name": "Employment insurance (1.63% outside Quebec, to the maximum insurable earnings)",
@@ -357,7 +385,7 @@
       }
     ],
     "sourceUrl": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html",
-    "note": "Federal 2026 tax year only (provincial/territorial tax excluded - it typically adds 20-25c per dollar of federal tax). Important: the basic personal amount is a non-refundable CREDIT equal to 14% of 16,452 (2,303.28), not a deduction; the checks subtract it from bracket tax (for the 250,000 case the phased-down BPA floor of about 14,829 is used). CPP has a 3,500 pensionable-earnings floor. Totals (net federal tax + CPP/CPP2 + EI / gross): 75,000 = 9,267.73 + 5,369.52 = 14,637.24 (19.52%); 130,000 = 21,255.25 + 5,769.52 = 27,024.77 (20.79%); 250,000 = 54,739.27 + 5,769.52 = 60,508.79 (24.20%). CPP/EI per CRA: YMPE 74,600, YAMPE 85,000, EI MIE 68,900.",
+    "note": "Federal 2026 tax year only (provincial/territorial tax excluded - it typically adds 20-25c per dollar of federal tax). Important: the basic personal amount is a non-refundable CREDIT equal to 14% of 16,452 (2,303.28), not a deduction; the checks subtract it from bracket tax (for the 250,000 case the phased-down BPA floor of about 14,829 is used). CPP has a 3,500 pensionable-earnings floor. Totals (net federal tax + CPP/CPP2 + EI / gross): 75,000 = 9,267.73 + 5,369.52 = 14,637.24 (19.52%); 130,000 = 21,255.25 + 5,769.52 = 27,024.77 (20.79%); 250,000 = 54,739.27 + 5,769.52 = 60,508.79 (24.20%). CPP/EI per CRA: YMPE 74,600, YAMPE 85,000, EI MIE 68,900. Engine model: the basic personal amount is applied as a deduction instead of a 14% credit (about 1.4pp understatement of tax), offset against the excluded provincial layer; CPP floors (YBE 3,500; CPP2 above the 74,600 YMPE) are applied.",
     "lastReviewed": "2026-08-31"
   },
   {
@@ -476,7 +504,8 @@
       {
         "name": "CPF employee share (20% for age 55 and below; combined Ordinary + Additional Wage salary ceiling 102,000/year, with the monthly Ordinary Wage ceiling at 8,000 from Jan 2026). Not payable by Employment Pass / S Pass holders.",
         "rate": 0.2,
-        "wageBaseCapAnnual": 102000
+        "wageBaseCapAnnual": 102000,
+        "savings": true
       }
     ],
     "representativeCheck": [
@@ -535,12 +564,14 @@
       {
         "name": "JHT old-age benefit (2%, no cap - savings in the worker's own account, statutory)",
         "rate": 0.02,
-        "wageBaseCapAnnual": null
+        "wageBaseCapAnnual": null,
+        "savings": true
       },
       {
         "name": "JP pension (1%; wage base capped at 11,086,300/month from Mar 2026)",
         "rate": 0.01,
-        "wageBaseCapAnnual": 133035600
+        "wageBaseCapAnnual": 133035600,
+        "savings": true
       },
       {
         "name": "JKP unemployment insurance (0.22%; wage base capped at 5,000,000/month)",
@@ -1149,7 +1180,8 @@
       {
         "name": "EPF (employee)",
         "rate": 0.11,
-        "wageBaseCapAnnual": null
+        "wageBaseCapAnnual": null,
+        "savings": true
       }
     ],
     "representativeCheck": [
@@ -1293,7 +1325,7 @@
   {
     "iso3": "MAR",
     "currency": "MAD",
-    "personalReliefAnnual": 0,
+    "personalReliefAnnual": 30000,
     "brackets": [
       {
         "threshold": 40000,
@@ -1350,7 +1382,7 @@
       }
     ],
     "sourceUrl": "https://taxsummaries.pwc.com/morocco/individual/taxes-on-personal-income",
-    "note": "Finance Law 2025 scale in force for 2026 (0/10/20/30/34/37%); CNSS employee 4.48% capped at MAD 6,000/month (72,000/year) and AMO 2.26% uncapped. Brackets apply to net professional income after a 20% expense abatement capped at MAD 30,000 (no flat personal relief, so relief is 0 and the abatement is applied in the representative check).",
+    "note": "Finance Law 2025 scale in force for 2026 (0/10/20/30/34/37%); CNSS employee 4.48% capped at MAD 6,000/month (72,000/year) and AMO 2.26% uncapped. Brackets apply to net professional income after a 20% expense abatement capped at MAD 30,000 (no flat personal relief, so relief is 0 and the abatement is applied in the representative check). Engine model: the capped abatement is carried as a flat 30,000 relief because the cap binds at all professional salary levels.",
     "lastReviewed": "2026-08-31"
   },
   {
@@ -1401,8 +1433,9 @@
       }
     ],
     "sourceUrl": "https://taxsummaries.pwc.com/panama/individual/taxes-on-personal-income",
-    "note": "ISR on salaries is 0% on the first USD 11,000 of taxable income, 15% up to 50,000 and 25% above (PwC, reviewed Aug 2026). Employee CSS 9.75% (raised from 9.25% by Law 462 of 2025, effective April 2025) plus Seguro Educativo 1.25% gives 11% total with no ceiling; employee socials are deducted from the ISR base in the check.",
-    "lastReviewed": "2026-08-31"
+    "note": "ISR on salaries is 0% on the first USD 11,000 of taxable income, 15% up to 50,000 and 25% above (PwC, reviewed Aug 2026). Employee CSS 9.75% (raised from 9.25% by Law 462 of 2025, effective April 2025) plus Seguro Educativo 1.25% gives 11% total with no ceiling; employee socials are deducted from the ISR base in the check. Engine model: ISR taxable income is gross minus employee CSS, per the DGI schedule.",
+    "lastReviewed": "2026-08-31",
+    "socialsReduceTaxable": true
   },
   {
     "iso3": "LBN",

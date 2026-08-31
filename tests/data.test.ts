@@ -241,3 +241,26 @@ test('fx snapshot: structurally valid fallback with the known coverage', () => {
     expect(['EUR', 'CAD', 'AUD']).toContain(code);
   }
 });
+
+test('tax brackets: 24 progressive regimes, ascending open-topped scales, valid socials', () => {
+  const rows = load('tax-brackets.json');
+  expect(rows).toHaveLength(24);
+  for (const r of rows) {
+    expect(r.iso3).toMatch(/^[A-Z]{3}$/);
+    expect(r.brackets.length).toBeGreaterThanOrEqual(2);
+    expect(r.brackets[r.brackets.length - 1].threshold).toBeNull();
+    let prev = 0;
+    for (const b of r.brackets.slice(0, -1)) {
+      expect(b.threshold).toBeGreaterThan(prev);
+      prev = b.threshold;
+    }
+    for (const b of r.brackets) expect(b.rate).toBeGreaterThanOrEqual(0);
+    expect(r.brackets.some((b: { rate: number }) => b.rate > 0)).toBe(true);
+    for (const s of r.employeeSocial ?? []) {
+      expect(s.rate).toBeGreaterThan(0);
+      if (s.wageBaseCapAnnual !== null) expect(s.wageBaseCapAnnual).toBeGreaterThan(0);
+    }
+    expect(r.sourceUrl.startsWith('https://')).toBe(true);
+    expect(r.note.length).toBeGreaterThan(30);
+  }
+});

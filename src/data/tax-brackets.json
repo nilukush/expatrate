@@ -1,0 +1,1547 @@
+[
+  {
+    "iso3": "GBR",
+    "currency": "GBP",
+    "personalReliefAnnual": 12570,
+    "brackets": [
+      {
+        "threshold": 37700,
+        "rate": 0.2
+      },
+      {
+        "threshold": 125140,
+        "rate": 0.4
+      },
+      {
+        "threshold": null,
+        "rate": 0.45
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "National Insurance class 1 main (8% on earnings between primary threshold 12,570 and upper earnings limit 50,270)",
+        "rate": 0.08,
+        "wageBaseCapAnnual": 50270
+      },
+      {
+        "name": "National Insurance class 1 upper (2% on all earnings above 50,270)",
+        "rate": 0.02,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 60000,
+        "computedEffective": 0.244
+      },
+      {
+        "label": "lead",
+        "annualGross": 100000,
+        "computedEffective": 0.3144
+      },
+      {
+        "label": "executive",
+        "annualGross": 200000,
+        "computedEffective": 0.4111
+      }
+    ],
+    "sourceUrl": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "note": "England/Wales/Northern Ireland income tax for tax year 2026-27 (6 Apr 2026 - 5 Apr 2027); thresholds frozen, Scotland has its own bands (excluded). Brackets are on taxable income (gross minus personal allowance, which tapers to 0 between 100,000 and 125,140 gross; this taper is applied in the checks). NI class 1: 8% between 12,570 and 50,270, 2% above. Checks (income tax + NI / gross): 60,000 = 11,432 + 3,210.60 = 14,642.60 (24.40%); 100,000 = 27,432 + 4,010.60 = 31,442.60 (31.44%); 200,000 (allowance fully tapered) = 76,203 + 6,010.60 = 82,213.60 (41.11%). Rates per gov.uk (income-tax-rates) and HMRC employer thresholds 2026-27.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "DEU",
+    "currency": "EUR",
+    "personalReliefAnnual": 12348,
+    "brackets": [
+      {
+        "threshold": 2726,
+        "rate": 0.1649
+      },
+      {
+        "threshold": 5451,
+        "rate": 0.2148
+      },
+      {
+        "threshold": 11961,
+        "rate": 0.251
+      },
+      {
+        "threshold": 18471,
+        "rate": 0.2735
+      },
+      {
+        "threshold": 24981,
+        "rate": 0.296
+      },
+      {
+        "threshold": 31490,
+        "rate": 0.3186
+      },
+      {
+        "threshold": 38000,
+        "rate": 0.3411
+      },
+      {
+        "threshold": 44510,
+        "rate": 0.3637
+      },
+      {
+        "threshold": 51020,
+        "rate": 0.3862
+      },
+      {
+        "threshold": 57530,
+        "rate": 0.4087
+      },
+      {
+        "threshold": 265477,
+        "rate": 0.42
+      },
+      {
+        "threshold": null,
+        "rate": 0.45
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Statutory pension RV (9.3% of pay; wage cap)",
+        "rate": 0.093,
+        "wageBaseCapAnnual": 101400
+      },
+      {
+        "name": "Unemployment insurance AV (1.3%; same cap as pension)",
+        "rate": 0.013,
+        "wageBaseCapAnnual": 101400
+      },
+      {
+        "name": "Health insurance GKV base (7.3%; wage cap)",
+        "rate": 0.073,
+        "wageBaseCapAnnual": 69750
+      },
+      {
+        "name": "Health insurance average Zusatzbeitrag, employee half (2026 average 2.9% total; cap as GKV)",
+        "rate": 0.0145,
+        "wageBaseCapAnnual": 69750
+      },
+      {
+        "name": "Long-term care PV (1.8%; childless employees pay an extra 0.6% not included here; cap as GKV)",
+        "rate": 0.018,
+        "wageBaseCapAnnual": 69750
+      },
+      {
+        "name": "Solidarity surcharge (5.5% of income tax, only where annual income tax exceeds 20,350; base is tax, not wages)",
+        "rate": 0.055,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 60000,
+        "computedEffective": 0.3651
+      },
+      {
+        "label": "lead",
+        "annualGross": 100000,
+        "computedEffective": 0.4106
+      },
+      {
+        "label": "executive",
+        "annualGross": 200000,
+        "computedEffective": 0.4321
+      }
+    ],
+    "sourceUrl": "https://www.gesetze-im-internet.de/estg/__32a.html",
+    "note": "Calendar 2026, single taxpayer tax class I, church tax excluded. The first two statutory zones (12,348-17,799 rising 14-24% and 17,800-69,878 rising 24-42%, per 32a(1) EStG) are quadratic formulas; the table approximates them with 10 stepped marginal bands (matches the exact formula within about 20 euro). Checks compute taxable income as gross minus employee social minus the 1,230 employee lump-sum deduction. Totals (tax + soli + social / gross): 60,000 = 9,215 + 0 + 12,690 = 21,905 (36.51%); 100,000 = 22,805 + 292 + 17,959 = 41,056 (41.06%); 200,000 = 64,743 + 3,561 + 18,107 = 86,411 (43.21%). Social caps 2026: RV/AV 101,400; GKV/PV 69,750 (bundesregierung.de); soli exemption limit 20,350 of tax.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "IND",
+    "currency": "INR",
+    "personalReliefAnnual": 75000,
+    "brackets": [
+      {
+        "threshold": 400000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 800000,
+        "rate": 0.05
+      },
+      {
+        "threshold": 1200000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 1600000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 2000000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 2400000,
+        "rate": 0.25
+      },
+      {
+        "threshold": null,
+        "rate": 0.3
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "EPF employee share (12% of basic wages; statutory wage ceiling 15,000/month - retirement savings in the worker's own account, but statutory)",
+        "rate": 0.12,
+        "wageBaseCapAnnual": 180000
+      },
+      {
+        "name": "ESI (0.75%, applies only if gross wages are 21,000/month or less)",
+        "rate": 0.0075,
+        "wageBaseCapAnnual": 252000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 2500000,
+        "computedEffective": 0.1366
+      },
+      {
+        "label": "lead",
+        "annualGross": 5000000,
+        "computedEffective": 0.2243
+      },
+      {
+        "label": "executive",
+        "annualGross": 12000000,
+        "computedEffective": 0.3165
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/india/individual/taxes-on-personal-income",
+    "note": "New (default) tax regime, FY 2026-27 (Apr 2026 - Mar 2027); Union Budget Feb 2026 kept the slabs and the Income Tax Act 2025 replaced the 1961 Act from 1 Apr 2026 without rate change. Relief is the 75,000 standard deduction; the 87A rebate makes tax nil on taxable income up to 1,200,000 (applied); surcharge 10% above 5m / 15% above 10m taxable (marginal relief ignored) and 4% cess are included in the checks; state professional tax excluded. Totals (tax incl cess/surcharge + EPF / gross): 2,500,000 = 319,800 + 21,600 = 341,400 (13.66%); 5,000,000 = 1,099,800 + 21,600 = 1,121,400 (22.43%); 12,000,000 = 3,776,370 + 21,600 = 3,797,970 (31.65%). ESI nil at these salaries; EPF capped at the statutory 15,000/month ceiling (many employers apply 12% to full basic pay, which would raise these).",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "USA",
+    "currency": "USD",
+    "personalReliefAnnual": 16100,
+    "brackets": [
+      {
+        "threshold": 12400,
+        "rate": 0.1
+      },
+      {
+        "threshold": 50400,
+        "rate": 0.12
+      },
+      {
+        "threshold": 105700,
+        "rate": 0.22
+      },
+      {
+        "threshold": 201775,
+        "rate": 0.24
+      },
+      {
+        "threshold": 256225,
+        "rate": 0.32
+      },
+      {
+        "threshold": 640600,
+        "rate": 0.35
+      },
+      {
+        "threshold": null,
+        "rate": 0.37
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Social Security OASDI (6.2% up to the wage base)",
+        "rate": 0.062,
+        "wageBaseCapAnnual": 184500
+      },
+      {
+        "name": "Medicare HI (1.45%, uncapped)",
+        "rate": 0.0145,
+        "wageBaseCapAnnual": null
+      },
+      {
+        "name": "Additional Medicare tax (0.9%, applies to wages above 200,000 for single filers)",
+        "rate": 0.009,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 100000,
+        "computedEffective": 0.2082
+      },
+      {
+        "label": "lead",
+        "annualGross": 175000,
+        "computedEffective": 0.2521
+      },
+      {
+        "label": "executive",
+        "annualGross": 400000,
+        "computedEffective": 0.3054
+      }
+    ],
+    "sourceUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+    "note": "Federal tax year 2026 (calendar 2026), single filer; rates 10-37% as extended by the One Big Beautiful Bill Act (Rev. Proc. 2025-32); state income taxes excluded. Employee FICA: OASDI 6.2% to the 184,500 wage base (SSA), Medicare 1.45% uncapped plus 0.9% above 200,000. Totals (income tax + FICA / gross): 100,000 = 13,170 + 7,650 = 20,820 (20.82%); 175,000 = 30,734 + 13,387.50 = 44,121.50 (25.21%); 400,000 = 103,134.25 + 19,039 = 122,173.25 (30.54%).",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "CAN",
+    "currency": "CAD",
+    "personalReliefAnnual": 16452,
+    "brackets": [
+      {
+        "threshold": 58523,
+        "rate": 0.14
+      },
+      {
+        "threshold": 117045,
+        "rate": 0.205
+      },
+      {
+        "threshold": 181440,
+        "rate": 0.26
+      },
+      {
+        "threshold": 258482,
+        "rate": 0.29
+      },
+      {
+        "threshold": null,
+        "rate": 0.33
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "CPP base (5.95% on earnings between the 3,500 exemption and the YMPE 74,600)",
+        "rate": 0.0595,
+        "wageBaseCapAnnual": 74600
+      },
+      {
+        "name": "CPP2 (4% on earnings between 74,600 and the YAMPE 85,000)",
+        "rate": 0.04,
+        "wageBaseCapAnnual": 85000
+      },
+      {
+        "name": "Employment insurance (1.63% outside Quebec, to the maximum insurable earnings)",
+        "rate": 0.0163,
+        "wageBaseCapAnnual": 68900
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 75000,
+        "computedEffective": 0.1952
+      },
+      {
+        "label": "lead",
+        "annualGross": 130000,
+        "computedEffective": 0.2079
+      },
+      {
+        "label": "executive",
+        "annualGross": 250000,
+        "computedEffective": 0.242
+      }
+    ],
+    "sourceUrl": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html",
+    "note": "Federal 2026 tax year only (provincial/territorial tax excluded - it typically adds 20-25c per dollar of federal tax). Important: the basic personal amount is a non-refundable CREDIT equal to 14% of 16,452 (2,303.28), not a deduction; the checks subtract it from bracket tax (for the 250,000 case the phased-down BPA floor of about 14,829 is used). CPP has a 3,500 pensionable-earnings floor. Totals (net federal tax + CPP/CPP2 + EI / gross): 75,000 = 9,267.73 + 5,369.52 = 14,637.24 (19.52%); 130,000 = 21,255.25 + 5,769.52 = 27,024.77 (20.79%); 250,000 = 54,739.27 + 5,769.52 = 60,508.79 (24.20%). CPP/EI per CRA: YMPE 74,600, YAMPE 85,000, EI MIE 68,900.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "AUS",
+    "currency": "AUD",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 18200,
+        "rate": 0.0
+      },
+      {
+        "threshold": 45000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 135000,
+        "rate": 0.3
+      },
+      {
+        "threshold": 190000,
+        "rate": 0.37
+      },
+      {
+        "threshold": null,
+        "rate": 0.45
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Medicare levy (2% of taxable income; statutory, uncapped)",
+        "rate": 0.02,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 90000,
+        "computedEffective": 0.2147
+      },
+      {
+        "label": "lead",
+        "annualGross": 150000,
+        "computedEffective": 0.2638
+      },
+      {
+        "label": "executive",
+        "annualGross": 250000,
+        "computedEffective": 0.3335
+      }
+    ],
+    "sourceUrl": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+    "note": "Resident rates for income year 2026-27 (from 1 Jul 2026): the 16% band cut to 15% per the legislated schedule; the 18,200 tax-free threshold is carried as the 0% first bracket (no separate deduction). Social entry is the 2% Medicare levy; the income-tested Medicare levy surcharge (1-1.5% for those without private cover) is excluded. Totals (income tax + Medicare / gross): 90,000 = 17,520 + 1,800 = 19,320 (21.47%); 150,000 = 36,570 + 3,000 = 39,570 (26.38%); 250,000 = 78,370 + 5,000 = 83,370 (33.35%).",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "SGP",
+    "currency": "SGD",
+    "personalReliefAnnual": 1000,
+    "brackets": [
+      {
+        "threshold": 20000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 30000,
+        "rate": 0.02
+      },
+      {
+        "threshold": 40000,
+        "rate": 0.035
+      },
+      {
+        "threshold": 80000,
+        "rate": 0.07
+      },
+      {
+        "threshold": 120000,
+        "rate": 0.115
+      },
+      {
+        "threshold": 160000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 200000,
+        "rate": 0.18
+      },
+      {
+        "threshold": 240000,
+        "rate": 0.19
+      },
+      {
+        "threshold": 280000,
+        "rate": 0.195
+      },
+      {
+        "threshold": 320000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 500000,
+        "rate": 0.22
+      },
+      {
+        "threshold": 1000000,
+        "rate": 0.23
+      },
+      {
+        "threshold": null,
+        "rate": 0.24
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "CPF employee share (20% for age 55 and below; combined Ordinary + Additional Wage salary ceiling 102,000/year, with the monthly Ordinary Wage ceiling at 8,000 from Jan 2026). Not payable by Employment Pass / S Pass holders.",
+        "rate": 0.2,
+        "wageBaseCapAnnual": 102000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 70000,
+        "computedEffective": 0.2369
+      },
+      {
+        "label": "lead",
+        "annualGross": 120000,
+        "computedEffective": 0.2353
+      },
+      {
+        "label": "executive",
+        "annualGross": 220000,
+        "computedEffective": 0.2053
+      }
+    ],
+    "sourceUrl": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+    "note": "Resident rates for YA 2027 (income earned in calendar 2026); the 0-24% schedule has applied since YA 2024 with no change announced through 2026. Relief shown is the 1,000 earned income relief (under 55); CPF is a statutory retirement-savings contribution to the worker's own accounts for citizens/PRs only. Totals (income tax + CPF / gross): 70,000 = 2,580 + 14,000 = 16,580 (23.69%); 120,000 = 7,835 + 20,400 = 28,235 (23.53%); 220,000 = 24,760 + 20,400 = 45,160 (20.53%) - an expat on an EP would pay only the income tax (3.7% / 6.5% / 11.3% respectively).",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "IDN",
+    "currency": "IDR",
+    "personalReliefAnnual": 54000000,
+    "brackets": [
+      {
+        "threshold": 60000000,
+        "rate": 0.05
+      },
+      {
+        "threshold": 250000000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 500000000,
+        "rate": 0.25
+      },
+      {
+        "threshold": 5000000000,
+        "rate": 0.3
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "BPJS Kesehatan health insurance (1%; wage base capped at 12,000,000/month)",
+        "rate": 0.01,
+        "wageBaseCapAnnual": 144000000
+      },
+      {
+        "name": "JHT old-age benefit (2%, no cap - savings in the worker's own account, statutory)",
+        "rate": 0.02,
+        "wageBaseCapAnnual": null
+      },
+      {
+        "name": "JP pension (1%; wage base capped at 11,086,300/month from Mar 2026)",
+        "rate": 0.01,
+        "wageBaseCapAnnual": 133035600
+      },
+      {
+        "name": "JKP unemployment insurance (0.22%; wage base capped at 5,000,000/month)",
+        "rate": 0.0022,
+        "wageBaseCapAnnual": 60000000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 120000000,
+        "computedEffective": 0.064
+      },
+      {
+        "label": "lead",
+        "annualGross": 300000000,
+        "computedEffective": 0.1252
+      },
+      {
+        "label": "executive",
+        "annualGross": 700000000,
+        "computedEffective": 0.2112
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/indonesia/individual/taxes-on-personal-income",
+    "note": "Calendar 2026 (resident with NPWP, PTKP 54,000,000 single, no dependants); Perppu 8/2025 did not change the progressive Article 17 rates (it ended and then PP 20/2026 reinstated the 0.5% UMKM final regime). Checks also deduct the 5% occupational allowance (capped 6,000,000) and employee social from gross before applying the brackets, per standard PPh 21 withholding. Totals (PPh 21 + employee BPJS / gross): 120,000,000 = 2,753,400 + 4,932,000 = 7,685,400 (6.40%); 300,000,000 = 28,664,647 + 8,902,356 = 37,567,003 (12.52%); 700,000,000 = 130,929,293 + 16,902,356 = 147,831,649 (21.12%). JHT and JP are retirement savings; expats generally do not join BPJS.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "EGY",
+    "currency": "EGP",
+    "personalReliefAnnual": 20000,
+    "brackets": [
+      {
+        "threshold": 40000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 55000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 70000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 200000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 400000,
+        "rate": 0.225
+      },
+      {
+        "threshold": 1200000,
+        "rate": 0.25
+      },
+      {
+        "threshold": null,
+        "rate": 0.275
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Social insurance (pension 9% + health insurance 1% + end-of-service bonus 1%)",
+        "rate": 0.11,
+        "wageBaseCapAnnual": 200400
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 600000,
+        "computedEffective": 0.2363
+      },
+      {
+        "label": "lead",
+        "annualGross": 1200000,
+        "computedEffective": 0.2432
+      },
+      {
+        "label": "executive",
+        "annualGross": 2400000,
+        "computedEffective": 0.2589
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/egypt/individual/taxes-on-personal-income",
+    "note": "Brackets and the EGP 20,000 personal exemption per PwC (reviewed 4 Feb 2026); calendar-year wage tax. Social insurance: 11% employee share of the insurable wage, which from 1 Jan 2026 ranges EGP 2,700-16,700 per month (NOSI, 30 Nov 2025), so the capped annual base is 200,400; the 9-point pension element is partly deferred retirement benefit, a savings debate flagged here. Statutory practice deducts social insurance from gross before the brackets; the representative checks instead tax (gross minus relief) to stay reproducible from this table, slightly overstating tax.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "NLD",
+    "currency": "EUR",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 38883,
+        "rate": 0.081
+      },
+      {
+        "threshold": 78426,
+        "rate": 0.3756
+      },
+      {
+        "threshold": null,
+        "rate": 0.495
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "AOW pension premium (in Box 1 first bracket)",
+        "rate": 0.179,
+        "wageBaseCapAnnual": 38883
+      },
+      {
+        "name": "Anw survivor pension premium (in Box 1 first bracket)",
+        "rate": 0.001,
+        "wageBaseCapAnnual": 38883
+      },
+      {
+        "name": "WLZ long-term care premium (in Box 1 first bracket)",
+        "rate": 0.0965,
+        "wageBaseCapAnnual": 38883
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 55000,
+        "computedEffective": 0.3628
+      },
+      {
+        "label": "lead",
+        "annualGross": 90000,
+        "computedEffective": 0.3831
+      },
+      {
+        "label": "executive",
+        "annualGross": 150000,
+        "computedEffective": 0.4279
+      }
+    ],
+    "sourceUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/sociale_verzekeringen/premies_volks_en_werknemersverzekeringen/volksverzekeringen/hoeveel_moet_u_betalen",
+    "note": "National insurance is collected through the Box 1 scale: the first bracket totals 35.75%, split here as 8.10% income tax plus 27.65% premiums (AOW 17.9%, Anw 0.1%, WLZ 9.65%) payable only on the first EUR 38,883; brackets 2-3 (37.56%, 49.5%) are premium-free. 2026 kept three indexed brackets; the planned merge to two brackets did not happen. Checks exclude the general tax credit (max EUR 3,115, phased out at EUR 78,426) and labour credit (max EUR 5,685, phased out at EUR 132,920), which reduce real burdens by up to about 15 points at the senior salary but nothing at the executive salary.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "IRL",
+    "currency": "EUR",
+    "personalReliefAnnual": 4000,
+    "brackets": [
+      {
+        "threshold": 44000,
+        "rate": 0.2
+      },
+      {
+        "threshold": null,
+        "rate": 0.4
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "PRSI Class A employee",
+        "rate": 0.042,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 60000,
+        "computedEffective": 0.2687
+      },
+      {
+        "label": "lead",
+        "annualGross": 95000,
+        "computedEffective": 0.3325
+      },
+      {
+        "label": "executive",
+        "annualGross": 160000,
+        "computedEffective": 0.377
+      }
+    ],
+    "sourceUrl": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+    "note": "personalReliefAnnual is the personal credit (EUR 2,000) plus PAYE credit (EUR 2,000), both flat with no income phase-out; Budget 2026 left bands and credits unchanged. The mandatory Universal Social Charge cannot be a flat rate and is NOT in these numbers: 2026 bands are 0.5% to EUR 12,012, 2% to EUR 28,700, 3% to EUR 70,044 and 8% above, adding roughly 2.2, 3.8 and 5.5 points at the three check salaries. PRSI is 4.2% and rises to 4.35% from 1 October 2026.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "JPN",
+    "currency": "JPY",
+    "personalReliefAnnual": 580000,
+    "brackets": [
+      {
+        "threshold": 1950000,
+        "rate": 0.05
+      },
+      {
+        "threshold": 3300000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 6950000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 9000000,
+        "rate": 0.23
+      },
+      {
+        "threshold": 18000000,
+        "rate": 0.33
+      },
+      {
+        "threshold": 40000000,
+        "rate": 0.4
+      },
+      {
+        "threshold": null,
+        "rate": 0.45
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Health insurance, Tokyo Kyokai Kenpo 2026-nendo (medical 9.85% + child-rearing 0.23%, employee half)",
+        "rate": 0.0504,
+        "wageBaseCapAnnual": 16680000
+      },
+      {
+        "name": "Employees' pension (kosei nenkin, employee half of 18.3%)",
+        "rate": 0.0915,
+        "wageBaseCapAnnual": 7800000
+      },
+      {
+        "name": "Employment insurance (general business, from 1 Apr 2026)",
+        "rate": 0.005,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 8000000,
+        "computedEffective": 0.2784
+      },
+      {
+        "label": "lead",
+        "annualGross": 12000000,
+        "computedEffective": 0.3009
+      },
+      {
+        "label": "executive",
+        "annualGross": 20000000,
+        "computedEffective": 0.3313
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/japan/individual/taxes-on-personal-income",
+    "note": "Brackets are national income tax only; the 2.1% reconstruction surtax on national tax and the roughly 10% local inhabitant tax are excluded from the checks (together they add about 8-12 points of gross). Basic deduction is JPY 580,000 (raised from 480,000 by the 2025 reform for income up to JPY 23.5M); the salary-earner employment income deduction (minimum JPY 650,000, maximum JPY 1,950,000) is deliberately not modelled, so checks overstate tax for typical employees. Health and pension use the 2026-nendo rates effective March 2026 payroll (FY2025 rates apply January-February), nursing-care insurance adds 1.62% (employee 0.81%) for ages 40-64, health caps approximate the monthly standard-remuneration ceiling of JPY 1.39M (bonuses assessed separately), and the pension element is partly individual retirement savings - savings debate flagged.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "NZL",
+    "currency": "NZD",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 15600,
+        "rate": 0.105
+      },
+      {
+        "threshold": 53500,
+        "rate": 0.175
+      },
+      {
+        "threshold": 78100,
+        "rate": 0.3
+      },
+      {
+        "threshold": 180000,
+        "rate": 0.33
+      },
+      {
+        "threshold": null,
+        "rate": 0.39
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "ACC earners' levy (collected via PAYE, GST-inclusive rate, 2026/27)",
+        "rate": 0.0175,
+        "wageBaseCapAnnual": 156641
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 80000,
+        "computedEffective": 0.221
+      },
+      {
+        "label": "lead",
+        "annualGross": 130000,
+        "computedEffective": 0.2696
+      },
+      {
+        "label": "executive",
+        "annualGross": 200000,
+        "computedEffective": 0.2991
+      }
+    ],
+    "sourceUrl": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+    "note": "Table is the 2026/27 tax year (1 April 2026 - 31 March 2027); the 2025/26 year used identical income-tax brackets, and there is no standard personal deduction. The only employee-side statutory levy is ACC collected through PAYE at 1.75% (GST-inclusive) on maximum liable earnings of NZD 156,641 for 2026/27, versus 1.67% / 152,790 in 2025/26. KiwiSaver (default 3%) is opt-out retirement savings, not a tax, and is excluded.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "PHL",
+    "currency": "PHP",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 250000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 400000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 800000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 2000000,
+        "rate": 0.25
+      },
+      {
+        "threshold": 8000000,
+        "rate": 0.3
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "SSS (employee share of 15%, in force since Jan 2025)",
+        "rate": 0.05,
+        "wageBaseCapAnnual": 420000
+      },
+      {
+        "name": "PhilHealth (employee half of 5%)",
+        "rate": 0.025,
+        "wageBaseCapAnnual": 1200000
+      },
+      {
+        "name": "Pag-IBIG employee share (2% above PHP 1,500/month)",
+        "rate": 0.02,
+        "wageBaseCapAnnual": 120000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 900000,
+        "computedEffective": 0.1927
+      },
+      {
+        "label": "lead",
+        "annualGross": 1800000,
+        "computedEffective": 0.2255
+      },
+      {
+        "label": "executive",
+        "annualGross": 3600000,
+        "computedEffective": 0.26
+      }
+    ],
+    "sourceUrl": "https://www.sss.gov.ph/wp-content/uploads/2024/12/2025-SSS-Contribution-Table-rev.pdf",
+    "note": "TRAIN bracket table in force since 2023 with no standard personal deduction; 13th-month pay and similar benefits are tax-exempt and excluded. SSS since January 2025 is 15% total (employee 5%) on a monthly salary credit capped at PHP 35,000, continuing through 2026; PhilHealth is 5% total (employee 2.5%) with the ceiling raised to PHP 100,000 per month by Circular 2026-0010; Pag-IBIG tops out at PHP 200 per month employee on the PHP 10,000 maximum salary. SSS pension and Pag-IBIG balances are partly individual savings - savings debate flagged; foreign nationals are exempt from Pag-IBIG.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "THA",
+    "currency": "THB",
+    "personalReliefAnnual": 100000,
+    "brackets": [
+      {
+        "threshold": 150000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 300000,
+        "rate": 0.05
+      },
+      {
+        "threshold": 500000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 750000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 1000000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 2000000,
+        "rate": 0.25
+      },
+      {
+        "threshold": 5000000,
+        "rate": 0.3
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Social Security Office contribution (section 33)",
+        "rate": 0.05,
+        "wageBaseCapAnnual": 210000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 1200000,
+        "computedEffective": 0.1254
+      },
+      {
+        "label": "lead",
+        "annualGross": 2400000,
+        "computedEffective": 0.194
+      },
+      {
+        "label": "executive",
+        "annualGross": 4800000,
+        "computedEffective": 0.247
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/thailand/individual/deductions",
+    "note": "personalReliefAnnual uses the Revenue Code rule for employment-income earners: personal allowance of THB 60,000 but not less than THB 100,000 (PwC lists a flat 60,000; the statutory minimum of 100,000 is applied here). The 50%-of-employment-income expense deduction (capped THB 100,000) is statutory but not modelled, so checks slightly overstate tax (about 2 points at the senior salary). SSO wage ceiling rose to THB 17,500 per month from January 2026, capping the contribution at THB 875 per month or 10,500 per year.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "ZAF",
+    "currency": "ZAR",
+    "personalReliefAnnual": 17820,
+    "brackets": [
+      {
+        "threshold": 245100,
+        "rate": 0.18
+      },
+      {
+        "threshold": 383100,
+        "rate": 0.26
+      },
+      {
+        "threshold": 530200,
+        "rate": 0.31
+      },
+      {
+        "threshold": 695800,
+        "rate": 0.36
+      },
+      {
+        "threshold": 887000,
+        "rate": 0.39
+      },
+      {
+        "threshold": 1878600,
+        "rate": 0.41
+      },
+      {
+        "threshold": null,
+        "rate": 0.45
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "UIF unemployment insurance",
+        "rate": 0.01,
+        "wageBaseCapAnnual": 212544
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 500000,
+        "computedEffective": 0.2257
+      },
+      {
+        "label": "lead",
+        "annualGross": 900000,
+        "computedEffective": 0.2889
+      },
+      {
+        "label": "executive",
+        "annualGross": 1600000,
+        "computedEffective": 0.3418
+      }
+    ],
+    "sourceUrl": "https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/",
+    "note": "Table is the 2027 year of assessment (1 March 2026 - 28 February 2027) after Budget 2026 applied the first inflation adjustment (about 3.4%) in years; the 2025/26 year used lower thresholds (top threshold R1,817,000) with primary rebate R17,235. Primary rebate R17,820 gives a tax threshold of R99,000 under 65. UIF is 1% capped at R177.12 per month; medical tax credits and retirement-fund contributions (capped at 27.5% of remuneration) are excluded, so real burdens are typically 2-3 points lower.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "VNM",
+    "currency": "VND",
+    "personalReliefAnnual": 186000000,
+    "brackets": [
+      {
+        "threshold": 120000000,
+        "rate": 0.05
+      },
+      {
+        "threshold": 360000000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 720000000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 1200000000,
+        "rate": 0.3
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 850000000,
+        "computedEffective": 0.1068
+      },
+      {
+        "label": "lead",
+        "annualGross": 1300000000,
+        "computedEffective": 0.1694
+      },
+      {
+        "label": "executive",
+        "annualGross": 2000000000,
+        "computedEffective": 0.2304
+      }
+    ],
+    "sourceUrl": "https://www.ey.com/en_vn/technical/tax/tax-and-law-updates/new-personal-income-tax-law-109-2025-qh25",
+    "note": "Law 109/2025/QH15 replaces the 7 old bands with 5 (5/10/20/30/35%) for employment income from the 2026 tax year; personal deduction 15.5M VND/month (186M/year). Foreign employees with work permits are outside Vietnamese SI/HI/UI in most cases, so no employee social line is included.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "MYS",
+    "currency": "MYR",
+    "personalReliefAnnual": 9000,
+    "brackets": [
+      {
+        "threshold": 5000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 20000,
+        "rate": 0.01
+      },
+      {
+        "threshold": 35000,
+        "rate": 0.03
+      },
+      {
+        "threshold": 50000,
+        "rate": 0.06
+      },
+      {
+        "threshold": 70000,
+        "rate": 0.11
+      },
+      {
+        "threshold": 100000,
+        "rate": 0.19
+      },
+      {
+        "threshold": 400000,
+        "rate": 0.25
+      },
+      {
+        "threshold": 600000,
+        "rate": 0.26
+      },
+      {
+        "threshold": 2000000,
+        "rate": 0.28
+      },
+      {
+        "threshold": null,
+        "rate": 0.3
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "EPF (employee)",
+        "rate": 0.11,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 130000,
+        "computedEffective": 0.215
+      },
+      {
+        "label": "lead",
+        "annualGross": 220000,
+        "computedEffective": 0.2743
+      },
+      {
+        "label": "executive",
+        "annualGross": 380000,
+        "computedEffective": 0.3104
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/malaysia/individual/taxes-on-personal-income",
+    "note": "YA 2026 resident scale (unchanged from YA 2025; top 30% above RM2m). EPF is SAVINGS, not a tax: the engine should exclude it from deductions (it is employee-owned). Statutory employee EPF is 11% for citizens and permanent residents (9% by election above RM5,000/month); non-citizen non-PR employees have a 2% statutory rate. Computed effectives below INCLUDE the 11% EPF.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "KEN",
+    "currency": "KES",
+    "personalReliefAnnual": 28800,
+    "brackets": [
+      {
+        "threshold": 288000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 387996,
+        "rate": 0.25
+      },
+      {
+        "threshold": 6000000,
+        "rate": 0.3
+      },
+      {
+        "threshold": 9600000,
+        "rate": 0.325
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "SHIF",
+        "rate": 0.0275,
+        "wageBaseCapAnnual": null
+      },
+      {
+        "name": "Affordable Housing Levy",
+        "rate": 0.015,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 4200000,
+        "computedEffective": 0.3128
+      },
+      {
+        "label": "lead",
+        "annualGross": 7200000,
+        "computedEffective": 0.3229
+      },
+      {
+        "label": "executive",
+        "annualGross": 11400000,
+        "computedEffective": 0.337
+      }
+    ],
+    "sourceUrl": "https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye",
+    "note": "PAYE bands (10 to 35%) unchanged for 2026; SHIF 2.75% and AHL 1.5% apply with no cap and are deducted before PAYE. NSSF (Tier I+II, 6% of pensionable pay capped at KES 432,000/year, max KES 25,920) is SAVINGS and is deliberately excluded from employeeSocial and from the computed effectives.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "NGA",
+    "currency": "NGN",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 800000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 3000000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 12000000,
+        "rate": 0.18
+      },
+      {
+        "threshold": 25000000,
+        "rate": 0.21
+      },
+      {
+        "threshold": 50000000,
+        "rate": 0.23
+      },
+      {
+        "threshold": null,
+        "rate": 0.25
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "Pension (RSA employee)",
+        "rate": 0.08,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 15000000,
+        "computedEffective": 0.2352
+      },
+      {
+        "label": "lead",
+        "annualGross": 30000000,
+        "computedEffective": 0.2559
+      },
+      {
+        "label": "executive",
+        "annualGross": 50000000,
+        "computedEffective": 0.2702
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/nigeria/individual/taxes-on-personal-income",
+    "note": "Nigeria Tax Act 2025 bands effective 1 Jan 2026; the old Consolidated Relief Allowance is gone (the 0% band up to NGN 800,000 replaces it). Employee pension of 8% (employee-owned Retirement Savings Account, savings-like) is deducted before tax in the check; a rent relief of up to NGN 500,000 also exists but is excluded here.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "MAR",
+    "currency": "MAD",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 40000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 60000,
+        "rate": 0.1
+      },
+      {
+        "threshold": 80000,
+        "rate": 0.2
+      },
+      {
+        "threshold": 100000,
+        "rate": 0.3
+      },
+      {
+        "threshold": 180000,
+        "rate": 0.34
+      },
+      {
+        "threshold": null,
+        "rate": 0.37
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "CNSS",
+        "rate": 0.0448,
+        "wageBaseCapAnnual": 72000
+      },
+      {
+        "name": "AMO",
+        "rate": 0.0226,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 300000,
+        "computedEffective": 0.2627
+      },
+      {
+        "label": "lead",
+        "annualGross": 500000,
+        "computedEffective": 0.3113
+      },
+      {
+        "label": "executive",
+        "annualGross": 800000,
+        "computedEffective": 0.3387
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/morocco/individual/taxes-on-personal-income",
+    "note": "Finance Law 2025 scale in force for 2026 (0/10/20/30/34/37%); CNSS employee 4.48% capped at MAD 6,000/month (72,000/year) and AMO 2.26% uncapped. Brackets apply to net professional income after a 20% expense abatement capped at MAD 30,000 (no flat personal relief, so relief is 0 and the abatement is applied in the representative check).",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "PAN",
+    "currency": "USD",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 11000,
+        "rate": 0.0
+      },
+      {
+        "threshold": 50000,
+        "rate": 0.15
+      },
+      {
+        "threshold": null,
+        "rate": 0.25
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "CSS (Caja de Seguro Social)",
+        "rate": 0.0975,
+        "wageBaseCapAnnual": null
+      },
+      {
+        "name": "Seguro Educativo",
+        "rate": 0.0125,
+        "wageBaseCapAnnual": null
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 60000,
+        "computedEffective": 0.2217
+      },
+      {
+        "label": "lead",
+        "annualGross": 100000,
+        "computedEffective": 0.266
+      },
+      {
+        "label": "executive",
+        "annualGross": 160000,
+        "computedEffective": 0.2909
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/panama/individual/taxes-on-personal-income",
+    "note": "ISR on salaries is 0% on the first USD 11,000 of taxable income, 15% up to 50,000 and 25% above (PwC, reviewed Aug 2026). Employee CSS 9.75% (raised from 9.25% by Law 462 of 2025, effective April 2025) plus Seguro Educativo 1.25% gives 11% total with no ceiling; employee socials are deducted from the ISR base in the check.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "LBN",
+    "currency": "LBP",
+    "personalReliefAnnual": 450000000,
+    "brackets": [
+      {
+        "threshold": 360000000,
+        "rate": 0.02
+      },
+      {
+        "threshold": 900000000,
+        "rate": 0.04
+      },
+      {
+        "threshold": 1800000000,
+        "rate": 0.07
+      },
+      {
+        "threshold": 3600000000,
+        "rate": 0.11
+      },
+      {
+        "threshold": 7200000000,
+        "rate": 0.15
+      },
+      {
+        "threshold": 13500000000,
+        "rate": 0.2
+      },
+      {
+        "threshold": null,
+        "rate": 0.25
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "NSSF (sickness and maternity)",
+        "rate": 0.03,
+        "wageBaseCapAnnual": 1440000000
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 2250000000,
+        "computedEffective": 0.0587
+      },
+      {
+        "label": "lead",
+        "annualGross": 4500000000,
+        "computedEffective": 0.0876
+      },
+      {
+        "label": "executive",
+        "annualGross": 9000000000,
+        "computedEffective": 0.126
+      }
+    ],
+    "sourceUrl": "https://www.aldic.net/en/tax-alert-tax-on-salaries-according-to-the-budget-law-of-the-year-2024/",
+    "note": "2024 Budget Law salary scale (2 to 25%) still in force for 2026; annual single-taxpayer deduction LBP 450,000,000 (spouse and children add more, excluded here). NSSF employee 3% (medical) on a base capped at LBP 120,000,000/month (1.44bn/year); employer end-of-service and family-allowance shares excluded.",
+    "lastReviewed": "2026-08-31"
+  },
+  {
+    "iso3": "MEX",
+    "currency": "MXN",
+    "personalReliefAnnual": 0,
+    "brackets": [
+      {
+        "threshold": 10135.11,
+        "rate": 0.0192
+      },
+      {
+        "threshold": 86022.11,
+        "rate": 0.064
+      },
+      {
+        "threshold": 151176.19,
+        "rate": 0.1088
+      },
+      {
+        "threshold": 175735.66,
+        "rate": 0.16
+      },
+      {
+        "threshold": 210403.69,
+        "rate": 0.1792
+      },
+      {
+        "threshold": 424353.97,
+        "rate": 0.2136
+      },
+      {
+        "threshold": 668840.14,
+        "rate": 0.2352
+      },
+      {
+        "threshold": 1276925.98,
+        "rate": 0.3
+      },
+      {
+        "threshold": 1702567.97,
+        "rate": 0.32
+      },
+      {
+        "threshold": 5107703.92,
+        "rate": 0.34
+      },
+      {
+        "threshold": null,
+        "rate": 0.35
+      }
+    ],
+    "employeeSocial": [
+      {
+        "name": "IMSS (employee share)",
+        "rate": 0.02375,
+        "wageBaseCapAnnual": 1069866.0
+      }
+    ],
+    "representativeCheck": [
+      {
+        "label": "senior",
+        "annualGross": 900000,
+        "computedEffective": 0.2331
+      },
+      {
+        "label": "lead",
+        "annualGross": 1500000,
+        "computedEffective": 0.2644
+      },
+      {
+        "label": "executive",
+        "annualGross": 2500000,
+        "computedEffective": 0.2928
+      }
+    ],
+    "sourceUrl": "https://taxsummaries.pwc.com/mexico/individual/taxes-on-personal-income",
+    "note": "2026 annual ISR tariff (1.92 to 35%, cuotas converted to pure marginal bands; thresholds are band upper limits). Employee IMSS is 2.375% of the contribution base (0.25+0.375+0.625+1.125) capped at 25 UMAs; UMA 2026 is MXN 117.31 daily (3,566.22 monthly), so the annual cap base is 1,069,866. Subsidio para el empleo and the salary-base integration factor are excluded (approximation: base equals gross).",
+    "lastReviewed": "2026-08-31"
+  }
+]

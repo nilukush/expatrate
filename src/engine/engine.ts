@@ -13,6 +13,7 @@ import type {
   PackageCompositionResult,
   PackageConvention,
   PppRow,
+  SalaryInput,
   TaxTier,
 } from './types';
 
@@ -188,57 +189,62 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     throw new Error('Remote for a foreign company requires the employer country.');
   }
 
-  const origin = findCountry(datasets, inputs.originCountry);
+  const entryMode = !inputs.currentSalary || !inputs.originCountry;
+  const origin = entryMode ? null : findCountry(datasets, inputs.originCountry as string);
   const target = findCountry(datasets, inputs.targetCountry);
-  const months = monthsPerYear(datasets, inputs.originCountry);
   const warnings: string[] = [];
 
-  // Normalize the current salary into origin-country currency, annual.
-  let annual = inputs.currentSalary.basis === 'monthly'
-    ? inputs.currentSalary.amount * months
-    : inputs.currentSalary.amount;
-  if (inputs.currentSalary.currency !== origin.currency) {
-    annual = fromUsd(toUsd(annual, inputs.currentSalary.currency, fx), origin.currency, fx);
-    warnings.push(
-      `Salary currency ${inputs.currentSalary.currency} differs from ${origin.name}; converted at the ${fx.asOf} rate.`,
-    );
-  }
-
-  // USD plausibility check tolerates a missing FX rate: PPP gives an equivalent scale.
-  const usdMonthly =
-    fx.rates[origin.currency] !== undefined
-      ? annual / fx.rates[origin.currency] / months
-      : annual / (datasets.ppp.find((p) => p.iso3 === inputs.originCountry)?.value ?? 1) / months;
-  if (inputs.currentSalary.basis === 'monthly' && usdMonthly > 100_000) {
-    throw new Error('This monthly amount is implausibly high. It looks like an annual figure; switch the basis to annual.');
-  }
-  if (inputs.currentSalary.basis === 'annual' && usdMonthly * months < 2_000) {
-    throw new Error('Implausibly low annual salary. Check the amount and the monthly or annual basis.');
-  }
-
-  const basisLine = `${origin.currency} ${Math.round(annual / months)} per month ${inputs.currentSalary.gross ? 'gross' : 'net'} (${origin.currency} ${Math.round(annual)} per year) earned in ${origin.name}`;
-
-  // Net income, applying the origin tax tier and any package-on-top components.
-  const originTax = effectiveDeduction(datasets, inputs.originCountry, inputs.level);
-  let netAnnual = inputs.currentSalary.gross ? annual * (1 - originTax.effectiveDeduction) : annual;
-
+  let annual = 0;
+  let basisLine: string | null = null;
+  let netAnnual = 0;
   let onTopShare = 0;
-  if (inputs.currentPackageOnTop) {
-    for (const [component, checked] of Object.entries(inputs.currentPackageOnTop)) {
-      if (checked) onTopShare += ON_TOP_SHARES[component] ?? 0;
+  if (!entryMode && origin) {
+    const months = monthsPerYear(datasets, inputs.originCountry as string);
+    const salary = inputs.currentSalary as SalaryInput;
+    annual = salary.basis === 'monthly' ? salary.amount * months : salary.amount;
+    if (salary.currency !== origin.currency) {
+      annual = fromUsd(toUsd(annual, salary.currency, fx), origin.currency, fx);
+      warnings.push(
+        `Salary currency ${salary.currency} differs from ${origin.name}; converted at the ${fx.asOf} rate.`,
+      );
     }
-    onTopShare = Math.min(onTopShare, MAX_ON_TOP_SHARE);
-    if (onTopShare > 0) {
-      netAnnual = netAnnual / (1 - onTopShare);
-      warnings.push({ key: 'packageOnTop' });
-      if (inputs.currentPackageOnTop.health && TAX_FUNDED_HEALTHCARE.has(inputs.targetCountry)) {
-        warnings.push({ key: 'healthOverlap', params: { country: findCountry(datasets, inputs.targetCountry).name } });
+
+    // USD plausibility check tolerates a missing FX rate: PPP gives an equivalent scale.
+    const usdMonthly =
+      fx.rates[origin.currency] !== undefined
+        ? annual / fx.rates[origin.currency] / months
+        : annual / (datasets.ppp.find((p) => p.iso3 === inputs.originCountry)?.value ?? 1) / months;
+    if (salary.basis === 'monthly' && usdMonthly > 100_000) {
+      throw new Error('This monthly amount is implausibly high. It looks like an annual figure; switch the basis to annual.');
+    }
+    if (salary.basis === 'annual' && usdMonthly * months < 2_000) {
+      throw new Error('Implausibly low annual salary. Check the amount and the monthly or annual basis.');
+    }
+
+    basisLine = `${origin.currency} ${Math.round(annual / months)} per month ${salary.gross ? 'gross' : 'net'} (${origin.currency} ${Math.round(annual)} per year) earned in ${origin.name}`;
+
+    // Net income, applying the origin tax tier and any package-on-top components.
+    const originTax = effectiveDeduction(datasets, inputs.originCountry as string, inputs.level);
+    netAnnual = salary.gross ? annual * (1 - originTax.effectiveDeduction) : annual;
+
+    if (inputs.currentPackageOnTop) {
+      for (const [component, checked] of Object.entries(inputs.currentPackageOnTop)) {
+        if (checked) onTopShare += ON_TOP_SHARES[component] ?? 0;
+      }
+      onTopShare = Math.min(onTopShare, MAX_ON_TOP_SHARE);
+      if (onTopShare > 0) {
+        netAnnual = netAnnual / (1 - onTopShare);
+        warnings.push({ key: 'packageOnTop' });
+        if (inputs.currentPackageOnTop.health && TAX_FUNDED_HEALTHCARE.has(inputs.targetCountry)) {
+          warnings.push({ key: 'healthOverlap', params: { country: target.name } });
+        }
       }
     }
   }
 
   // Purchasing-power floor: PPP transfer from origin to target, then gross-up.
-  const originPpp = datasets.ppp.find((p) => p.iso3 === inputs.originCountry);
+  // Entry mode has no origin salary, so no floor is computed.
+  const originPpp = entryMode ? undefined : datasets.ppp.find((p) => p.iso3 === inputs.originCountry);
   const targetPpp = datasets.ppp.find((p) => p.iso3 === inputs.targetCountry);
   const targetTax = effectiveDeduction(datasets, inputs.targetCountry, inputs.level);
   const targetTaxAssumed = targetTax.label === 'default';
@@ -352,8 +358,11 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
       : 'insufficient_data';
 
   const confidence = confidenceScore(anchor, inputs, datasets, stalePpp);
-  if (targetTaxAssumed) {
+  if (targetTaxAssumed && floor) {
     confidence.reasons.push({ key: 'targetTaxDefaultReason' });
+  }
+  if (entryMode) {
+    confidence.reasons.push({ key: 'entryMode' });
   }
   return {
     status,

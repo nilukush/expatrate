@@ -66,7 +66,8 @@
       "schooling": "Schooling",
       "flights": "Flights",
       "bonus": "Bonus",
-      "health": "Health insurance"
+      "health": "Health insurance",
+      "entryToggle": "I do not have a current salary (entry mode)"
     },
     "opportunity": {
       "title": "The opportunity",
@@ -274,6 +275,7 @@
     "upperBand": "The upper band (P75) is not published for this role and level here; the stretch is capped at the published median.",
     "floorAboveMarket": "Your purchasing-power floor ({floor} per month) sits above the market ceiling ({ceiling}) for this role. The market cannot fund your current lifestyle at local rates; the quote below is the winnable market number.",
     "currencyRisk": "This currency has moved sharply. Quote with an annual FX review clause or a USD-indexed component, and check the USD anchor alongside the local figure.",
-    "fxRates": "Rates: {source}, {date}."
+    "fxRates": "Rates: {source}, {date}.",
+    "entryMode": "Entry mode: no prior salary given, so this quote comes from the market band alone. There is no purchasing-power floor to show."
   }
 }

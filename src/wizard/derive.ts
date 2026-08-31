@@ -10,7 +10,19 @@ export function bandToLevel(band: ExperienceBand | ''): Level | null {
 
 export function toEngineInputs(state: WizardState): EngineInputs | null {
   const level = bandToLevel(state.experienceBand);
-  if (!level || state.salaryAmount === null || state.salaryAmount <= 0) return null;
+  if (!level) return null;
+  if (state.entryMode) {
+    return {
+      roleFamily: state.roleFamily,
+      level,
+      targetCountry: state.targetCountry,
+      workArrangement: state.workArrangement,
+      employerCountry: state.workArrangement === 'remote-foreign' ? state.employerCountry : undefined,
+      employmentType: state.employmentType,
+      displayCurrencies: state.displayCurrencies,
+    };
+  }
+  if (state.salaryAmount === null || state.salaryAmount <= 0) return null;
   return {
     roleFamily: state.roleFamily,
     level,

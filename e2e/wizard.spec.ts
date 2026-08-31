@@ -293,3 +293,19 @@ test.describe('wizard', () => {
     await expect(page.locator('#roleFamily')).toHaveValue('finance-and-accounting');
   });
 });
+
+test('entry mode: a user with no current salary gets a market-only quote', async ({ page }) => {
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'software-engineering');
+  await page.selectOption('#experienceBand', '3-5');
+  await page.click('#nextBtn');
+  await page.check('#entryMode');
+  await page.click('#nextBtn');
+  await page.selectOption('#targetCountry', 'ARE');
+  await page.click('#nextBtn');
+  await page.click('#skipFamily');
+  await page.click('#seeQuote');
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+  await expect(page.locator('#quoteTarget')).toContainText('AED');
+  await expect(page.locator('#basisLine')).toContainText(/market band alone|entry|floor/i);
+});

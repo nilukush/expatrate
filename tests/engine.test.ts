@@ -326,3 +326,22 @@ describe('presentation and risk layers', () => {
     expect(result.warnings.some((w) => w.key === 'upperBand')).toBe(true);
   });
 });
+
+test('entry mode: no current salary returns a market-only quote with no floor', () => {
+  const result = calculate(
+    {
+      roleFamily: PERSONA.roleFamily,
+      level: PERSONA.level,
+      targetCountry: 'ARE',
+      workArrangement: 'onsite',
+      employmentType: 'full-time',
+    },
+    { datasets, fx },
+  );
+  expect(result.status).toBe('ok');
+  expect(result.quote).not.toBeNull();
+  expect(result.quote!.lowMonthly).toBeGreaterThan(0);
+  expect(result.floor).toBeNull();
+  expect(result.basisLine).toBeNull();
+  expect(result.confidence.reasons.some((r) => r.key === 'entryMode')).toBe(true);
+});

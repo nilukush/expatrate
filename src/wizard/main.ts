@@ -198,8 +198,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       return `${progress}${heading(t('steps.pay.title'), t('steps.pay.help'))}
         <div class="wz-grid">
           <div class="wz-field">
-            <label for="originCountry">${escapeHtml(t('steps.pay.originCountry'))}</label>
-            <select id="originCountry" class="wz-select">${countryRows(state.originCountry, t('steps.pay.originCountryPlaceholder'))}</select>
+            ${state.entryMode ? '' : `<label for="originCountry">${escapeHtml(t('steps.pay.originCountry'))}</label>
+            <select id="originCountry" class="wz-select">${countryRows(state.originCountry, t('steps.pay.originCountryPlaceholder'))}</select>`}
           </div>
           <div class="wz-field">
             <label for="salaryCurrency">${escapeHtml(t('steps.pay.currency'))}</label>
@@ -222,6 +222,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         </fieldset>
         <p class="wz-interpretation" id="interpretation">${escapeHtml(interpretation)}</p>
         <div class="wz-field">
+          <label class="wz-check"><input type="checkbox" id="entryMode"${state.entryMode ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.entryToggle'))}</label>
           <label class="wz-check"><input type="checkbox" id="salaryConfirmed"${state.salaryConfirmed ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.confirm'))}</label>
         </div>
         <fieldset class="wz-seg">
@@ -340,11 +341,11 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       if (!state.experienceBand) errors.push({ fieldId: 'experienceBand', message: t('errors.experienceBand') });
     }
     if (step === 2) {
-      if (!state.originCountry) errors.push({ fieldId: 'originCountry', message: t('errors.originCountry') });
-      if (state.salaryAmount === null || Number.isNaN(state.salaryAmount) || state.salaryAmount <= 0) {
+      if (!state.entryMode && !state.originCountry) errors.push({ fieldId: 'originCountry', message: t('errors.originCountry') });
+      if (!state.entryMode && (state.salaryAmount === null || Number.isNaN(state.salaryAmount) || state.salaryAmount <= 0)) {
         errors.push({ fieldId: 'salaryAmount', message: t('errors.salaryAmount') });
       }
-      if (!state.salaryConfirmed) errors.push({ fieldId: 'salaryConfirmed', message: t('errors.salaryConfirmed') });
+      if (!state.entryMode && !state.salaryConfirmed) errors.push({ fieldId: 'salaryConfirmed', message: t('errors.salaryConfirmed') });
     }
     if (step === 3) {
       if (!state.targetCountry) errors.push({ fieldId: 'targetCountry', message: t('errors.targetCountry') });
@@ -566,6 +567,16 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
 
     if (step === 2) {
+      const entryBox = wizardEl.querySelector<HTMLInputElement>('#entryMode');
+      entryBox?.addEventListener('change', () => {
+        state.entryMode = entryBox.checked;
+        if (entryBox.checked) {
+          state.salaryAmount = null;
+          state.salaryConfirmed = false;
+        }
+        saveState(state);
+        render();
+      });
       const origin = wizardEl.querySelector<HTMLSelectElement>('#originCountry');
       const currencySelect = wizardEl.querySelector<HTMLSelectElement>('#salaryCurrency');
       origin?.addEventListener('change', () => {
@@ -904,7 +915,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       }
     }
 
-    sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.basisTitle'))}</h3><p id="basisLine">${escapeHtml(fmtNumbersIn(localizedBasisLine(result.basisLine)))}</p><p class="wz-note" id="fxLine">${escapeHtml(t('results.fx', { source: fx.source, date: fx.asOf }))}</p></div>`);
+    sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.basisTitle'))}</h3>${result.basisLine ? `<p id="basisLine">${escapeHtml(fmtNumbersIn(localizedBasisLine(result.basisLine)))}</p>` : `<p id="basisLine" class="wz-note">${escapeHtml(t('engine.entryMode'))}</p>`}<p class="wz-note" id="fxLine">${escapeHtml(t('results.fx', { source: fx.source, date: fx.asOf }))}</p></div>`);
 
     resultsEl.innerHTML = `
       <h2 id="resultsHeading" class="wz-heading" tabindex="-1">${escapeHtml(t('results.heading'))}</h2>

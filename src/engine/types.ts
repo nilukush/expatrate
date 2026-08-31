@@ -21,8 +21,9 @@ export interface PackageOnTop {
 export interface EngineInputs {
   roleFamily: string;
   level: Level;
-  originCountry: string;
-  currentSalary: SalaryInput;
+  /** Omitted in entry mode: no prior salary, so no floor is computed. */
+  originCountry?: string;
+  currentSalary?: SalaryInput;
   currentPackageOnTop?: PackageOnTop;
   targetCountry: string;
   workArrangement: WorkArrangement;
@@ -223,7 +224,8 @@ export interface EngineAmount {
 
 export interface EngineResult {
   status: 'ok' | 'floor-only' | 'insufficient_data';
-  basisLine: string;
+  /** Null in entry mode (no prior salary to describe). */
+  basisLine: string | null;
   anchor: MarketAnchor | null;
   floor: FloorResult | null;
   quote: QuoteResult | null;

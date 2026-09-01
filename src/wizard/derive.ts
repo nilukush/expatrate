@@ -20,6 +20,7 @@ export function toEngineInputs(state: WizardState): EngineInputs | null {
       employerCountry: state.workArrangement === 'remote-foreign' ? state.employerCountry : undefined,
       employmentType: state.employmentType,
       displayCurrencies: state.displayCurrencies,
+      hardshipPost: state.hardshipMode ? state.hardshipPost || undefined : undefined,
     };
   }
   if (state.salaryAmount === null || state.salaryAmount <= 0) return null;
@@ -39,5 +40,6 @@ export function toEngineInputs(state: WizardState): EngineInputs | null {
     employerCountry: state.workArrangement === 'remote-foreign' ? state.employerCountry : undefined,
     employmentType: state.employmentType,
     displayCurrencies: state.displayCurrencies,
+    hardshipPost: state.hardshipMode ? state.hardshipPost || undefined : undefined,
   };
 }

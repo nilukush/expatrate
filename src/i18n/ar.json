@@ -85,7 +85,11 @@
       "sponsorship": "تأشيرة العمل في الدولة المستهدفة",
       "sponsorshipPlaceholder": "أفضل عدم الذكر",
       "sponsorshipNotNeeded": "غير مطلوبة",
-      "sponsorshipNeeded": "مطلوبة"
+      "sponsorshipNeeded": "مطلوبة",
+      "hardshipToggle": "هذه مهمة انتقال مؤسسي",
+      "hardshipPost": "موقع العمل",
+      "hardshipPlaceholder": "اختر الموقع",
+      "hardshipHelp": "تأتي فروقات المواقع من جدول وزارة الخارجية الأمريكية DSSR. وهي تصف عادة أصحاب العمل ولا تغيّر رقم السوق أبدًا."
     },
     "family": {
       "title": "الوضع الأسري",
@@ -172,7 +176,12 @@
       "below-p25": "أول الربع الأدنى",
       "within-band": "داخل نطاق السوق",
       "above-p75": "فوق الربع الأعلى"
-    }
+    },
+    "hardshipTitle": "عرض معدّل للانتقال",
+    "hardshipBody": "فرق الموقع في {city} هو {pct}٪ (وزارة الخارجية الأمريكية DSSR).",
+    "hardshipRange": "النطاق المعدّل: من {low} إلى {stretch} شهريًا.",
+    "hardshipSource": "الجدول ساري من {date}.",
+    "hardshipDssr": "DSSR 500"
   },
   "parse": {
     "resumeLabel": "السيرة الذاتية (PDF أو DOCX، اختياري)",

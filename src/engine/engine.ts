@@ -376,6 +376,30 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     };
   }
 
+  // Advisory hardship differential: an opt-in corporate-relocation view.
+  // It scales an alternate range and never touches the primary quote.
+  let hardship: EngineResult['hardship'] = null;
+  if (inputs.hardshipPost && quote) {
+    const post = datasets.hardshipPosts.find(
+      (p) => p.iso3 === inputs.targetCountry && p.city === inputs.hardshipPost,
+    );
+    if (post) {
+      const factor = 1 + post.differentialPct / 100;
+      hardship = {
+        city: post.city,
+        differentialPct: post.differentialPct,
+        effectiveDate: post.effectiveDate,
+        sourceUrl: post.sourceUrl,
+        adjustedRangeMonthly: {
+          low: quote.lowMonthly * factor,
+          target: quote.targetMonthly * factor,
+          stretch: quote.stretchMonthly * factor,
+        },
+        currency: quote.currency,
+      };
+    }
+  }
+
   const status: EngineResult['status'] = quote
     ? 'ok'
     : floor
@@ -399,6 +423,7 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     employment,
     packageComposition: packageComp,
     currencyRisk,
+    hardship,
     confidence,
     warnings,
   };

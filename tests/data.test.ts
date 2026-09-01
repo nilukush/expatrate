@@ -264,3 +264,22 @@ test('tax brackets: 24 progressive regimes, ascending open-topped scales, valid 
     expect(r.note.length).toBeGreaterThan(30);
   }
 });
+
+test('hardship posts: DSSR rows for target countries only, valid schema', () => {
+  const rows = load('hardship-posts.json');
+  expect(rows.length).toBeGreaterThan(300);
+  const iso3 = new Set(load('countries.json').map((c: { iso3: string }) => c.iso3));
+  const keys = new Set<string>();
+  for (const r of rows) {
+    expect(iso3.has(r.iso3)).toBe(true);
+    expect(Number.isInteger(r.differentialPct)).toBe(true);
+    expect(r.differentialPct).toBeGreaterThanOrEqual(5);
+    expect(r.differentialPct).toBeLessThanOrEqual(35);
+    expect(r.effectiveDate).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(r.sourceUrl.startsWith('https://')).toBe(true);
+    const key = `${r.iso3}/${r.city}`;
+    expect(keys.has(key)).toBe(false);
+    keys.add(key);
+  }
+  expect(rows.every((r: { effectiveDate: string }) => r.effectiveDate === rows[0].effectiveDate)).toBe(true);
+});

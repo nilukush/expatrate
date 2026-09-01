@@ -85,7 +85,11 @@
       "sponsorship": "Visa sponsorship in the target country",
       "sponsorshipPlaceholder": "Prefer not to say",
       "sponsorshipNotNeeded": "Not needed",
-      "sponsorshipNeeded": "Needed"
+      "sponsorshipNeeded": "Needed",
+      "hardshipToggle": "This is a corporate relocation posting",
+      "hardshipPost": "Post",
+      "hardshipPlaceholder": "Choose the post",
+      "hardshipHelp": "Post differentials come from the US State Department DSSR table. They describe employer hardship practice and never change your market quote."
     },
     "family": {
       "title": "Family context",
@@ -172,7 +176,12 @@
       "below-p25": "below the P25",
       "within-band": "inside the market band",
       "above-p75": "above the P75"
-    }
+    },
+    "hardshipTitle": "Relocation-adjusted view",
+    "hardshipBody": "The post differential at {city} is {pct}% (US State Department DSSR).",
+    "hardshipRange": "Adjusted band: {low} to {stretch} per month.",
+    "hardshipSource": "Table effective {date}.",
+    "hardshipDssr": "DSSR 500"
   },
   "parse": {
     "resumeLabel": "Resume (PDF or DOCX, optional)",

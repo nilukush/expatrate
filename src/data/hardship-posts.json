@@ -1,0 +1,3026 @@
+[
+  {
+    "iso3": "ABW",
+    "city": "Oranjestad",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Oranjestad"
+  },
+  {
+    "iso3": "ABW",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Aruba not separately listed"
+  },
+  {
+    "iso3": "AFG",
+    "city": "Kabul",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kabul"
+  },
+  {
+    "iso3": "AFG",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in AFGHANISTAN not separately listed"
+  },
+  {
+    "iso3": "AGO",
+    "city": "Luanda",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Luanda"
+  },
+  {
+    "iso3": "AGO",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ANGOLA not separately listed"
+  },
+  {
+    "iso3": "ALB",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ALBANIA not separately listed"
+  },
+  {
+    "iso3": "ALB",
+    "city": "Tirana",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tirana"
+  },
+  {
+    "iso3": "ARE",
+    "city": "Abu Dhabi",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Abu Dhabi"
+  },
+  {
+    "iso3": "ARE",
+    "city": "Dubai",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dubai"
+  },
+  {
+    "iso3": "ARE",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in UNITED ARAB EMIRATES not separately listed"
+  },
+  {
+    "iso3": "ARG",
+    "city": "Buenos Aires",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Buenos Aires"
+  },
+  {
+    "iso3": "ARM",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ARMENIA not separately listed"
+  },
+  {
+    "iso3": "ARM",
+    "city": "Yerevan",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Yerevan"
+  },
+  {
+    "iso3": "AUS",
+    "city": "Alice Springs",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Alice Springs"
+  },
+  {
+    "iso3": "AZE",
+    "city": "Baku",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Baku"
+  },
+  {
+    "iso3": "AZE",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in AZERBAIJAN not separately listed"
+  },
+  {
+    "iso3": "BDI",
+    "city": "Bujumbura",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bujumbura"
+  },
+  {
+    "iso3": "BDI",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BURUNDI not separately listed"
+  },
+  {
+    "iso3": "BEN",
+    "city": "Cotonou",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cotonou"
+  },
+  {
+    "iso3": "BEN",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BENIN not separately listed"
+  },
+  {
+    "iso3": "BFA",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BURKINA FASO not separately listed"
+  },
+  {
+    "iso3": "BFA",
+    "city": "Ouagadougou",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ouagadougou"
+  },
+  {
+    "iso3": "BGD",
+    "city": "Dhaka",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dhaka"
+  },
+  {
+    "iso3": "BGD",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BANGLADESH not separately listed"
+  },
+  {
+    "iso3": "BGR",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BULGARIA not separately listed"
+  },
+  {
+    "iso3": "BGR",
+    "city": "Sofia",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Sofia"
+  },
+  {
+    "iso3": "BHR",
+    "city": "Manama",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Bahrain'; capital used as city"
+  },
+  {
+    "iso3": "BHS",
+    "city": "Andros Island",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Andros Island"
+  },
+  {
+    "iso3": "BHS",
+    "city": "Grand Bahama Island",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Grand Bahama Island"
+  },
+  {
+    "iso3": "BHS",
+    "city": "Nassau",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nassau"
+  },
+  {
+    "iso3": "BHS",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Bahamas, The not separately listed"
+  },
+  {
+    "iso3": "BIH",
+    "city": "Banja Luka",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Banja Luka"
+  },
+  {
+    "iso3": "BIH",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Bosnia and Herzegovina not separately listed"
+  },
+  {
+    "iso3": "BIH",
+    "city": "Sarajevo",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Sarajevo"
+  },
+  {
+    "iso3": "BLR",
+    "city": "Minsk",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Minsk"
+  },
+  {
+    "iso3": "BLR",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BELARUS not separately listed"
+  },
+  {
+    "iso3": "BLZ",
+    "city": "Belmopan",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Belmopan"
+  },
+  {
+    "iso3": "BLZ",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BELIZE not separately listed"
+  },
+  {
+    "iso3": "BMU",
+    "city": "Hamilton",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Bermuda'; capital used as city"
+  },
+  {
+    "iso3": "BOL",
+    "city": "La Paz",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: La Paz"
+  },
+  {
+    "iso3": "BOL",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BOLIVIA not separately listed"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Belo Horizonte",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Belo Horizonte"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Brasilia",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Brasilia"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Maranhao Mato Grosso & Do Sul",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Maranhao Mato Grosso & Do Sul"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BRAZIL not separately listed"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Porto Alegre",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Porto Alegre"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Recife, Pernambuco",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Recife, Pernambuco"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Rio de Janeiro",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Rio de Janeiro"
+  },
+  {
+    "iso3": "BRA",
+    "city": "Sao Paulo",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Sao Paulo"
+  },
+  {
+    "iso3": "BRB",
+    "city": "Bridgetown",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Barbados'; capital used as city"
+  },
+  {
+    "iso3": "BRN",
+    "city": "Bandar Seri Begawan",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bandar Seri Begawan"
+  },
+  {
+    "iso3": "BRN",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BRUNEI not separately listed"
+  },
+  {
+    "iso3": "BWA",
+    "city": "Gaborone",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Gaborone"
+  },
+  {
+    "iso3": "BWA",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in BOTSWANA not separately listed"
+  },
+  {
+    "iso3": "BWA",
+    "city": "Selebi Phikwe",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Selebi Phikwe"
+  },
+  {
+    "iso3": "CAF",
+    "city": "Bangui",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bangui"
+  },
+  {
+    "iso3": "CAF",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CENTRAL AFRICAN REPUBLIC not separately listed"
+  },
+  {
+    "iso3": "CHL",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CHILE not separately listed"
+  },
+  {
+    "iso3": "CHL",
+    "city": "Santiago",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Santiago"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Beijing",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Beijing"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Chengdu",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chengdu"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Guangzhou",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Guangzhou"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Nanjing",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nanjing"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CHINA not separately listed"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Shanghai",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Shanghai"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Shenyang",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Shenyang"
+  },
+  {
+    "iso3": "CHN",
+    "city": "Wuhan",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Wuhan"
+  },
+  {
+    "iso3": "CIV",
+    "city": "Abidjan",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Abidjan"
+  },
+  {
+    "iso3": "CIV",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in COTE D'IVOIRE not separately listed"
+  },
+  {
+    "iso3": "CMR",
+    "city": "Douala",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Douala"
+  },
+  {
+    "iso3": "CMR",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CAMEROON not separately listed"
+  },
+  {
+    "iso3": "CMR",
+    "city": "Yaounde",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Yaounde"
+  },
+  {
+    "iso3": "COD",
+    "city": "Kinshasa",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kinshasa"
+  },
+  {
+    "iso3": "COD",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in DEMOCRATIC REPUBLIC OF THE CONGO not separately listed"
+  },
+  {
+    "iso3": "COG",
+    "city": "Brazzaville",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Brazzaville"
+  },
+  {
+    "iso3": "COG",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in REPUBLIC OF THE CONGO not separately listed"
+  },
+  {
+    "iso3": "COL",
+    "city": "Barranquilla",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Barranquilla"
+  },
+  {
+    "iso3": "COL",
+    "city": "Bogota",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bogota"
+  },
+  {
+    "iso3": "COL",
+    "city": "Cartagena",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cartagena"
+  },
+  {
+    "iso3": "COL",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in COLOMBIA not separately listed"
+  },
+  {
+    "iso3": "CPV",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CABO VERDE not separately listed"
+  },
+  {
+    "iso3": "CPV",
+    "city": "Praia",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Praia"
+  },
+  {
+    "iso3": "CRI",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in COSTA RICA not separately listed"
+  },
+  {
+    "iso3": "CUW",
+    "city": "Willemstad",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Curacao'; capital used as city"
+  },
+  {
+    "iso3": "DJI",
+    "city": "Djibouti City",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Djibouti City"
+  },
+  {
+    "iso3": "DJI",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in DJIBOUTI not separately listed"
+  },
+  {
+    "iso3": "DOM",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in DOMINICAN REPUBLIC not separately listed"
+  },
+  {
+    "iso3": "DOM",
+    "city": "Santo Domingo",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Santo Domingo"
+  },
+  {
+    "iso3": "DZA",
+    "city": "Algiers",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Algiers"
+  },
+  {
+    "iso3": "DZA",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ALGERIA not separately listed"
+  },
+  {
+    "iso3": "ECU",
+    "city": "Guayaquil",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Guayaquil"
+  },
+  {
+    "iso3": "ECU",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ECUADOR not separately listed"
+  },
+  {
+    "iso3": "ECU",
+    "city": "Quito",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Quito"
+  },
+  {
+    "iso3": "EGY",
+    "city": "Alexandria",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Alexandria"
+  },
+  {
+    "iso3": "EGY",
+    "city": "Cairo",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cairo"
+  },
+  {
+    "iso3": "EGY",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in EGYPT not separately listed"
+  },
+  {
+    "iso3": "ERI",
+    "city": "Asmara",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Asmara"
+  },
+  {
+    "iso3": "ERI",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ERITREA not separately listed"
+  },
+  {
+    "iso3": "EST",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ESTONIA not separately listed"
+  },
+  {
+    "iso3": "EST",
+    "city": "Tallinn",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tallinn"
+  },
+  {
+    "iso3": "ETH",
+    "city": "Addis Ababa",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Addis Ababa"
+  },
+  {
+    "iso3": "ETH",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ETHIOPIA not separately listed"
+  },
+  {
+    "iso3": "FJI",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in FIJI not separately listed"
+  },
+  {
+    "iso3": "FJI",
+    "city": "Suva",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Suva"
+  },
+  {
+    "iso3": "FSM",
+    "city": "Chuuk",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chuuk"
+  },
+  {
+    "iso3": "FSM",
+    "city": "Kosrae",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kosrae"
+  },
+  {
+    "iso3": "FSM",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Micronesia, Federated States of not separately listed"
+  },
+  {
+    "iso3": "FSM",
+    "city": "Pohnpei",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Pohnpei"
+  },
+  {
+    "iso3": "FSM",
+    "city": "Yap",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Yap"
+  },
+  {
+    "iso3": "GAB",
+    "city": "Libreville",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Libreville"
+  },
+  {
+    "iso3": "GAB",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GABON not separately listed"
+  },
+  {
+    "iso3": "GEO",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GEORGIA not separately listed"
+  },
+  {
+    "iso3": "GEO",
+    "city": "Tbilisi",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tbilisi"
+  },
+  {
+    "iso3": "GHA",
+    "city": "Accra",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Accra"
+  },
+  {
+    "iso3": "GHA",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GHANA not separately listed"
+  },
+  {
+    "iso3": "GIN",
+    "city": "Conakry",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Conakry"
+  },
+  {
+    "iso3": "GIN",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GUINEA not separately listed"
+  },
+  {
+    "iso3": "GMB",
+    "city": "Banjul",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Banjul"
+  },
+  {
+    "iso3": "GMB",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Gambia, The not separately listed"
+  },
+  {
+    "iso3": "GNB",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GUINEA-BISSAU not separately listed"
+  },
+  {
+    "iso3": "GNQ",
+    "city": "Malabo",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Malabo"
+  },
+  {
+    "iso3": "GNQ",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in EQUATORIAL GUINEA not separately listed"
+  },
+  {
+    "iso3": "GRD",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Grenada' alongside separately listed cities"
+  },
+  {
+    "iso3": "GRD",
+    "city": "St. George's",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: St. George's"
+  },
+  {
+    "iso3": "GRL",
+    "city": "Nuuk",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nuuk"
+  },
+  {
+    "iso3": "GRL",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GREENLAND not separately listed"
+  },
+  {
+    "iso3": "GTM",
+    "city": "Guatemala City",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Guatemala City"
+  },
+  {
+    "iso3": "GTM",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GUATEMALA not separately listed"
+  },
+  {
+    "iso3": "GUY",
+    "city": "Georgetown",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Georgetown"
+  },
+  {
+    "iso3": "GUY",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in GUYANA not separately listed"
+  },
+  {
+    "iso3": "HKG",
+    "city": "Hong Kong",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Hong Kong"
+  },
+  {
+    "iso3": "HND",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in HONDURAS not separately listed"
+  },
+  {
+    "iso3": "HND",
+    "city": "San Pedro Sula",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: San Pedro Sula"
+  },
+  {
+    "iso3": "HND",
+    "city": "Tegucigalpa",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tegucigalpa"
+  },
+  {
+    "iso3": "HTI",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in HAITI not separately listed"
+  },
+  {
+    "iso3": "HTI",
+    "city": "Petionville",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Petionville"
+  },
+  {
+    "iso3": "HTI",
+    "city": "Port-au-Prince",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Port-au-Prince"
+  },
+  {
+    "iso3": "HUN",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in HUNGARY not separately listed"
+  },
+  {
+    "iso3": "HUN",
+    "city": "Papa",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Papa"
+  },
+  {
+    "iso3": "IDN",
+    "city": "Bandung",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bandung"
+  },
+  {
+    "iso3": "IDN",
+    "city": "Jakarta",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Jakarta"
+  },
+  {
+    "iso3": "IDN",
+    "city": "Medan",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Medan"
+  },
+  {
+    "iso3": "IDN",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in INDONESIA not separately listed"
+  },
+  {
+    "iso3": "IDN",
+    "city": "Surabaya",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Surabaya"
+  },
+  {
+    "iso3": "IND",
+    "city": "Chennai",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chennai"
+  },
+  {
+    "iso3": "IND",
+    "city": "Hyderabad",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Hyderabad"
+  },
+  {
+    "iso3": "IND",
+    "city": "Kolkata",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kolkata"
+  },
+  {
+    "iso3": "IND",
+    "city": "Mumbai",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Mumbai"
+  },
+  {
+    "iso3": "IND",
+    "city": "New Delhi",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: New Delhi"
+  },
+  {
+    "iso3": "IND",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in INDIA not separately listed"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Baghdad",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Baghdad"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Baghdad Diplomatic Support Center",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Baghdad Diplomatic Support Center"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Basrah",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Basrah"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Erbil",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Erbil"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Erbil Diplomatic Support Center (EDSC)",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Erbil Diplomatic Support Center (EDSC)"
+  },
+  {
+    "iso3": "IRQ",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in IRAQ not separately listed"
+  },
+  {
+    "iso3": "ISL",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ICELAND not separately listed"
+  },
+  {
+    "iso3": "ISL",
+    "city": "Reykjavik",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Reykjavik"
+  },
+  {
+    "iso3": "ISR",
+    "city": "Beer Sheva",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Beer Sheva"
+  },
+  {
+    "iso3": "ISR",
+    "city": "Jerusalem",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Jerusalem"
+  },
+  {
+    "iso3": "ISR",
+    "city": "Karmi'el",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Karmi'el"
+  },
+  {
+    "iso3": "ISR",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ISRAEL not separately listed"
+  },
+  {
+    "iso3": "ISR",
+    "city": "Tel Aviv",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tel Aviv"
+  },
+  {
+    "iso3": "ISR",
+    "city": "West Bank",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: West Bank"
+  },
+  {
+    "iso3": "JAM",
+    "city": "Kingston",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kingston"
+  },
+  {
+    "iso3": "JOR",
+    "city": "Amman",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Amman"
+  },
+  {
+    "iso3": "JOR",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in JORDAN not separately listed"
+  },
+  {
+    "iso3": "KAZ",
+    "city": "Almaty",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Almaty"
+  },
+  {
+    "iso3": "KAZ",
+    "city": "Astana",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Astana"
+  },
+  {
+    "iso3": "KAZ",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in KAZAKHSTAN not separately listed"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Kahawa",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kahawa"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Kiambu",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kiambu"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Kihara",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kihara"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Kikuyu",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kikuyu"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Nairobi",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nairobi"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in KENYA not separately listed"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Ruiru",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ruiru"
+  },
+  {
+    "iso3": "KEN",
+    "city": "Thogoto",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Thogoto"
+  },
+  {
+    "iso3": "KGZ",
+    "city": "Bishkek",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bishkek"
+  },
+  {
+    "iso3": "KGZ",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in KYRGYZSTAN not separately listed"
+  },
+  {
+    "iso3": "KHM",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CAMBODIA not separately listed"
+  },
+  {
+    "iso3": "KHM",
+    "city": "Phnom Penh",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Phnom Penh"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Camp Carroll",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Camp Carroll"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Chunchon",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chunchon"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Kunsan",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kunsan"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Kwangju",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kwangju"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Munsan",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Munsan"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Korea, South not separately listed"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Pohang",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Pohang"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Tongduchon",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tongduchon"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Uijongbu",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Uijongbu"
+  },
+  {
+    "iso3": "KOR",
+    "city": "Waegwan",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Waegwan"
+  },
+  {
+    "iso3": "KWT",
+    "city": "Kuwait City",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kuwait City"
+  },
+  {
+    "iso3": "KWT",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in KUWAIT not separately listed"
+  },
+  {
+    "iso3": "LAO",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LAOS not separately listed"
+  },
+  {
+    "iso3": "LAO",
+    "city": "Vientiane",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Vientiane"
+  },
+  {
+    "iso3": "LBN",
+    "city": "Beirut",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Beirut"
+  },
+  {
+    "iso3": "LBN",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LEBANON not separately listed"
+  },
+  {
+    "iso3": "LBR",
+    "city": "Monrovia",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Monrovia"
+  },
+  {
+    "iso3": "LBR",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LIBERIA not separately listed"
+  },
+  {
+    "iso3": "LBY",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LIBYA not separately listed"
+  },
+  {
+    "iso3": "LBY",
+    "city": "Tripoli",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tripoli"
+  },
+  {
+    "iso3": "LCA",
+    "city": "Castries",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Saint Lucia'; capital used as city"
+  },
+  {
+    "iso3": "LKA",
+    "city": "Colombo",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Colombo"
+  },
+  {
+    "iso3": "LKA",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SRI LANKA not separately listed"
+  },
+  {
+    "iso3": "LSO",
+    "city": "Maseru",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Maseru"
+  },
+  {
+    "iso3": "LSO",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LESOTHO not separately listed"
+  },
+  {
+    "iso3": "LTU",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in LITHUANIA not separately listed"
+  },
+  {
+    "iso3": "LTU",
+    "city": "Vilnius",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Vilnius"
+  },
+  {
+    "iso3": "MAR",
+    "city": "Casablanca",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Casablanca"
+  },
+  {
+    "iso3": "MAR",
+    "city": "Rabat",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Rabat"
+  },
+  {
+    "iso3": "MDA",
+    "city": "Chisinau",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chisinau"
+  },
+  {
+    "iso3": "MDA",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MOLDOVA not separately listed"
+  },
+  {
+    "iso3": "MDG",
+    "city": "Antananarivo",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Antananarivo"
+  },
+  {
+    "iso3": "MDG",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MADAGASCAR not separately listed"
+  },
+  {
+    "iso3": "MDV",
+    "city": "Male",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Male"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Ciudad Juarez",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ciudad Juarez"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Guadalajara",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Guadalajara"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Hermosillo",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Hermosillo"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Matamoros",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Matamoros"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Mazatlan",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Mazatlan"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Merida",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Merida"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Mexico City, D.F.",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Mexico City, D.F."
+  },
+  {
+    "iso3": "MEX",
+    "city": "Monterrey",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Monterrey"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Nogales",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nogales"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Nuevo Laredo",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nuevo Laredo"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MEXICO not separately listed"
+  },
+  {
+    "iso3": "MEX",
+    "city": "Tijuana",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tijuana"
+  },
+  {
+    "iso3": "MHL",
+    "city": "Kwajalein Atoll",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kwajalein Atoll"
+  },
+  {
+    "iso3": "MHL",
+    "city": "Majuro",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Majuro"
+  },
+  {
+    "iso3": "MHL",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MARSHALL ISLANDS not separately listed"
+  },
+  {
+    "iso3": "MKD",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NORTH MACEDONIA not separately listed"
+  },
+  {
+    "iso3": "MKD",
+    "city": "Skopje",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Skopje"
+  },
+  {
+    "iso3": "MLI",
+    "city": "Bamako",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bamako"
+  },
+  {
+    "iso3": "MLI",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MALI not separately listed"
+  },
+  {
+    "iso3": "MLT",
+    "city": "Valletta",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Malta'; capital used as city"
+  },
+  {
+    "iso3": "MMR",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in Burma (Myanmar) not separately listed; DSSR uses 'Burma'/'Rangoon' (Myanmar/Yangon)"
+  },
+  {
+    "iso3": "MMR",
+    "city": "Rangoon",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Rangoon; DSSR uses 'Burma'/'Rangoon' (Myanmar/Yangon)"
+  },
+  {
+    "iso3": "MNE",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MONTENEGRO not separately listed"
+  },
+  {
+    "iso3": "MNE",
+    "city": "Podgorica",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Podgorica"
+  },
+  {
+    "iso3": "MNG",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MONGOLIA not separately listed"
+  },
+  {
+    "iso3": "MNG",
+    "city": "Ulaanbaatar",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ulaanbaatar"
+  },
+  {
+    "iso3": "MOZ",
+    "city": "Maputo",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Maputo"
+  },
+  {
+    "iso3": "MOZ",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MOZAMBIQUE not separately listed"
+  },
+  {
+    "iso3": "MRT",
+    "city": "Nouakchott",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nouakchott"
+  },
+  {
+    "iso3": "MRT",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MAURITANIA not separately listed"
+  },
+  {
+    "iso3": "MUS",
+    "city": "Port Louis",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Mauritius'; capital used as city"
+  },
+  {
+    "iso3": "MWI",
+    "city": "Lilongwe",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lilongwe"
+  },
+  {
+    "iso3": "MWI",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MALAWI not separately listed"
+  },
+  {
+    "iso3": "MYS",
+    "city": "Kuala Lumpur",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kuala Lumpur"
+  },
+  {
+    "iso3": "MYS",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in MALAYSIA not separately listed"
+  },
+  {
+    "iso3": "NAM",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NAMIBIA not separately listed"
+  },
+  {
+    "iso3": "NAM",
+    "city": "Windhoek",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Windhoek"
+  },
+  {
+    "iso3": "NER",
+    "city": "Niamey",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Niamey"
+  },
+  {
+    "iso3": "NER",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NIGER not separately listed"
+  },
+  {
+    "iso3": "NGA",
+    "city": "Abuja",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Abuja"
+  },
+  {
+    "iso3": "NGA",
+    "city": "Lagos",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lagos"
+  },
+  {
+    "iso3": "NGA",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NIGERIA not separately listed"
+  },
+  {
+    "iso3": "NIC",
+    "city": "Managua",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Managua"
+  },
+  {
+    "iso3": "NIC",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NICARAGUA not separately listed"
+  },
+  {
+    "iso3": "NOR",
+    "city": "Tromso",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tromso"
+  },
+  {
+    "iso3": "NPL",
+    "city": "Kathmandu",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kathmandu"
+  },
+  {
+    "iso3": "NPL",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in NEPAL not separately listed"
+  },
+  {
+    "iso3": "OMN",
+    "city": "Muscat",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Muscat"
+  },
+  {
+    "iso3": "OMN",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in OMAN not separately listed"
+  },
+  {
+    "iso3": "OMN",
+    "city": "Salalah",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Salalah"
+  },
+  {
+    "iso3": "PAK",
+    "city": "Islamabad",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Islamabad"
+  },
+  {
+    "iso3": "PAK",
+    "city": "Karachi",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Karachi"
+  },
+  {
+    "iso3": "PAK",
+    "city": "Lahore",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lahore"
+  },
+  {
+    "iso3": "PAK",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PAKISTAN not separately listed"
+  },
+  {
+    "iso3": "PAK",
+    "city": "Peshawar",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Peshawar"
+  },
+  {
+    "iso3": "PAN",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PANAMA not separately listed"
+  },
+  {
+    "iso3": "PAN",
+    "city": "Panama City",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Panama City"
+  },
+  {
+    "iso3": "PER",
+    "city": "Lima",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lima"
+  },
+  {
+    "iso3": "PER",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PERU not separately listed"
+  },
+  {
+    "iso3": "PHL",
+    "city": "Cavite",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cavite"
+  },
+  {
+    "iso3": "PHL",
+    "city": "Manila",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Manila"
+  },
+  {
+    "iso3": "PHL",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PHILIPPINES not separately listed"
+  },
+  {
+    "iso3": "PLW",
+    "city": "Koror",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Koror"
+  },
+  {
+    "iso3": "PLW",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PALAU not separately listed"
+  },
+  {
+    "iso3": "PNG",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PAPUA NEW GUINEA not separately listed"
+  },
+  {
+    "iso3": "PNG",
+    "city": "Port Moresby",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Port Moresby"
+  },
+  {
+    "iso3": "PRT",
+    "city": "Ponta Delgada",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ponta Delgada"
+  },
+  {
+    "iso3": "PRY",
+    "city": "Asuncion",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Asuncion"
+  },
+  {
+    "iso3": "PRY",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in PARAGUAY not separately listed"
+  },
+  {
+    "iso3": "QAT",
+    "city": "Al Udeid",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Al Udeid"
+  },
+  {
+    "iso3": "QAT",
+    "city": "Camp As Sayliyah",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Camp As Sayliyah"
+  },
+  {
+    "iso3": "QAT",
+    "city": "Doha",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Doha"
+  },
+  {
+    "iso3": "QAT",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in QATAR not separately listed"
+  },
+  {
+    "iso3": "ROU",
+    "city": "Bucharest",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bucharest"
+  },
+  {
+    "iso3": "ROU",
+    "city": "Cluj",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cluj"
+  },
+  {
+    "iso3": "ROU",
+    "city": "Constanta-Mihail Kogalniceanu AB",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Constanta-Mihail Kogalniceanu AB"
+  },
+  {
+    "iso3": "ROU",
+    "city": "Other",
+    "differentialPct": 5,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ROMANIA not separately listed"
+  },
+  {
+    "iso3": "RUS",
+    "city": "Moscow",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Moscow"
+  },
+  {
+    "iso3": "RUS",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in RUSSIA not separately listed"
+  },
+  {
+    "iso3": "RUS",
+    "city": "Saint Petersburg",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Saint Petersburg"
+  },
+  {
+    "iso3": "RWA",
+    "city": "Kigali",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kigali"
+  },
+  {
+    "iso3": "RWA",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in RWANDA not separately listed"
+  },
+  {
+    "iso3": "SAU",
+    "city": "Dhahran Area",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dhahran Area"
+  },
+  {
+    "iso3": "SAU",
+    "city": "Jeddah",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Jeddah"
+  },
+  {
+    "iso3": "SAU",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SAUDI ARABIA not separately listed"
+  },
+  {
+    "iso3": "SAU",
+    "city": "Riyadh",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Riyadh"
+  },
+  {
+    "iso3": "SDN",
+    "city": "Khartoum",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Khartoum"
+  },
+  {
+    "iso3": "SDN",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SUDAN not separately listed"
+  },
+  {
+    "iso3": "SEN",
+    "city": "Dakar",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dakar"
+  },
+  {
+    "iso3": "SEN",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SENEGAL not separately listed"
+  },
+  {
+    "iso3": "SLB",
+    "city": "Honiara",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Honiara"
+  },
+  {
+    "iso3": "SLB",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SOLOMON ISLANDS not separately listed"
+  },
+  {
+    "iso3": "SLE",
+    "city": "Freetown",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Freetown"
+  },
+  {
+    "iso3": "SLE",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SIERRA LEONE not separately listed"
+  },
+  {
+    "iso3": "SLV",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in EL SALVADOR not separately listed"
+  },
+  {
+    "iso3": "SLV",
+    "city": "San Salvador",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: San Salvador"
+  },
+  {
+    "iso3": "SOM",
+    "city": "Mogadishu",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Mogadishu"
+  },
+  {
+    "iso3": "SOM",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SOMALIA not separately listed"
+  },
+  {
+    "iso3": "SRB",
+    "city": "Belgrade",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Belgrade"
+  },
+  {
+    "iso3": "SRB",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SERBIA not separately listed"
+  },
+  {
+    "iso3": "SSD",
+    "city": "Juba",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Juba"
+  },
+  {
+    "iso3": "SSD",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SOUTH SUDAN not separately listed"
+  },
+  {
+    "iso3": "STP",
+    "city": "Sao Tome",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Sao Tome and Principe'; capital used as city"
+  },
+  {
+    "iso3": "SUR",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SURINAME not separately listed"
+  },
+  {
+    "iso3": "SUR",
+    "city": "Paramaribo",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Paramaribo"
+  },
+  {
+    "iso3": "SWZ",
+    "city": "Mbabane",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Mbabane"
+  },
+  {
+    "iso3": "SWZ",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ESWATINI not separately listed"
+  },
+  {
+    "iso3": "SYC",
+    "city": "Victoria",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Seychelles'; capital used as city"
+  },
+  {
+    "iso3": "SYR",
+    "city": "Damascus",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Damascus"
+  },
+  {
+    "iso3": "SYR",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SYRIA not separately listed"
+  },
+  {
+    "iso3": "TCD",
+    "city": "Ndjamena",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ndjamena"
+  },
+  {
+    "iso3": "TCD",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in CHAD not separately listed"
+  },
+  {
+    "iso3": "TGO",
+    "city": "Lome",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lome"
+  },
+  {
+    "iso3": "TGO",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TOGO not separately listed"
+  },
+  {
+    "iso3": "THA",
+    "city": "Bangkok",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Bangkok"
+  },
+  {
+    "iso3": "THA",
+    "city": "Chiang Mai",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Chiang Mai"
+  },
+  {
+    "iso3": "THA",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in THAILAND not separately listed"
+  },
+  {
+    "iso3": "THA",
+    "city": "Udorn",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Udorn"
+  },
+  {
+    "iso3": "TJK",
+    "city": "Dushanbe",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dushanbe"
+  },
+  {
+    "iso3": "TJK",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TAJIKISTAN not separately listed"
+  },
+  {
+    "iso3": "TKM",
+    "city": "Ashgabat",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ashgabat"
+  },
+  {
+    "iso3": "TKM",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TURKMENISTAN not separately listed"
+  },
+  {
+    "iso3": "TLS",
+    "city": "Dili",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dili"
+  },
+  {
+    "iso3": "TLS",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TIMOR-LESTE not separately listed"
+  },
+  {
+    "iso3": "TON",
+    "city": "Nukualofa",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Nukualofa"
+  },
+  {
+    "iso3": "TON",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TONGA not separately listed"
+  },
+  {
+    "iso3": "TTO",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TRINIDAD AND TOBAGO not separately listed"
+  },
+  {
+    "iso3": "TTO",
+    "city": "Port of Spain",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Port of Spain"
+  },
+  {
+    "iso3": "TUN",
+    "city": "Carthage",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Carthage"
+  },
+  {
+    "iso3": "TUN",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TUNISIA not separately listed"
+  },
+  {
+    "iso3": "TUN",
+    "city": "Tunis",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tunis"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Adana-Incirlik",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Adana-Incirlik"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Ankara",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ankara"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Gaziantep",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Gaziantep"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Istanbul",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Istanbul"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Izmir-Cigli",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Izmir-Cigli"
+  },
+  {
+    "iso3": "TUR",
+    "city": "Other",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TURKEY not separately listed"
+  },
+  {
+    "iso3": "TZA",
+    "city": "Dar Es Salaam",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Dar Es Salaam"
+  },
+  {
+    "iso3": "TZA",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in TANZANIA not separately listed"
+  },
+  {
+    "iso3": "UGA",
+    "city": "Kampala",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kampala"
+  },
+  {
+    "iso3": "UGA",
+    "city": "Other",
+    "differentialPct": 35,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in UGANDA not separately listed"
+  },
+  {
+    "iso3": "UKR",
+    "city": "Kyiv",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Kyiv"
+  },
+  {
+    "iso3": "UKR",
+    "city": "Lviv",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lviv"
+  },
+  {
+    "iso3": "UKR",
+    "city": "Other",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in UKRAINE not separately listed"
+  },
+  {
+    "iso3": "URY",
+    "city": "Montevideo",
+    "differentialPct": 10,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Montevideo"
+  },
+  {
+    "iso3": "UZB",
+    "city": "Other",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in UZBEKISTAN not separately listed"
+  },
+  {
+    "iso3": "UZB",
+    "city": "Tashkent",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Tashkent"
+  },
+  {
+    "iso3": "VNM",
+    "city": "Hanoi",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Hanoi"
+  },
+  {
+    "iso3": "VNM",
+    "city": "Ho Chi Minh City",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Ho Chi Minh City"
+  },
+  {
+    "iso3": "VNM",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in VIETNAM not separately listed"
+  },
+  {
+    "iso3": "VUT",
+    "city": "Port Vila",
+    "differentialPct": 30,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Port Vila"
+  },
+  {
+    "iso3": "WSM",
+    "city": "Apia",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "Published as country-wide entry 'Samoa'; capital used as city"
+  },
+  {
+    "iso3": "XKX",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in KOSOVO not separately listed; XKX is user-assigned (no official ISO alpha-3)"
+  },
+  {
+    "iso3": "XKX",
+    "city": "Pristina",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Pristina; XKX is user-assigned (no official ISO alpha-3)"
+  },
+  {
+    "iso3": "ZAF",
+    "city": "Cape Town",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Cape Town"
+  },
+  {
+    "iso3": "ZAF",
+    "city": "Durban",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Durban"
+  },
+  {
+    "iso3": "ZAF",
+    "city": "Johannesburg",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Johannesburg"
+  },
+  {
+    "iso3": "ZAF",
+    "city": "Other",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in SOUTH AFRICA not separately listed"
+  },
+  {
+    "iso3": "ZAF",
+    "city": "Pretoria",
+    "differentialPct": 15,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Pretoria"
+  },
+  {
+    "iso3": "ZMB",
+    "city": "Lusaka",
+    "differentialPct": 20,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR post name: Lusaka"
+  },
+  {
+    "iso3": "ZMB",
+    "city": "Other",
+    "differentialPct": 25,
+    "effectiveDate": "2026-08-23",
+    "sourceUrl": "https://allowances.state.gov/web920/hardship.asp",
+    "note": "DSSR entry 'Other': all localities in ZAMBIA not separately listed"
+  }
+]

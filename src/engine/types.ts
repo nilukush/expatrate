@@ -30,6 +30,8 @@ export interface EngineInputs {
   employerCountry?: string;
   employmentType: EmploymentType;
   displayCurrencies?: string[];
+  /** Opt-in corporate relocation post (city name) for the hardship differential. */
+  hardshipPost?: string;
 }
 
 export interface FxRates {
@@ -179,11 +181,32 @@ export interface BracketTable {
   lastReviewed: string;
 }
 
+export interface HardshipPost {
+  iso3: string;
+  city: string;
+  /** US State Dept DSSR 500 post differential, integer percent 5..35. */
+  differentialPct: number;
+  effectiveDate: string;
+  sourceUrl: string;
+  note?: string;
+}
+
+export interface HardshipResult {
+  city: string;
+  differentialPct: number;
+  effectiveDate: string;
+  sourceUrl: string;
+  /** The quote band scaled by the differential, presented as an alternate view. */
+  adjustedRangeMonthly: { low: number; target: number; stretch: number };
+  currency: string;
+}
+
 export interface Datasets {
   countries: CountryRow[];
   ppp: PppRow[];
   tax: TaxRow[];
   taxBrackets: BracketTable[];
+  hardshipPosts: HardshipPost[];
   benchmarks: BenchmarkEntry[];
   packageConventions: PackageConvention[];
   employment: EmploymentConventions;
@@ -276,6 +299,7 @@ export interface EngineResult {
   employment: { type: EmploymentType; indicative: boolean; dayRate?: number } | null;
   packageComposition: PackageCompositionResult | null;
   currencyRisk: CurrencyRiskResult | null;
+  hardship: HardshipResult | null;
   confidence: ConfidenceResult;
   warnings: EngineMessage[];
 }

@@ -404,3 +404,37 @@ test('origin tax uses the bracket table when available', () => {
   expect(basis).toContain('GBP');
   expect(result.status).not.toBe('insufficient_data');
 });
+
+describe('hardship differential (corporate relocation mode)', () => {
+  const posts = [
+    { iso3: 'KEN', city: 'Nairobi', differentialPct: 10, effectiveDate: '2026-07-01', sourceUrl: 'https://travel.state.gov/dssr' },
+    { iso3: 'KEN', city: 'Mombasa', differentialPct: 10, effectiveDate: '2026-07-01', sourceUrl: 'https://travel.state.gov/dssr' },
+  ];
+  const hardshipDatasets = { ...datasets, hardshipPosts: posts };
+
+  test('an opted-in post scales an alternate range and never moves the primary quote', () => {
+    const plain = calculate({ ...PERSONA, targetCountry: 'KEN' }, { datasets, fx });
+    const withPost = calculate(
+      { ...PERSONA, targetCountry: 'KEN', hardshipPost: 'Nairobi' },
+      { datasets: hardshipDatasets, fx },
+    );
+    expect(withPost.hardship).not.toBeNull();
+    expect(withPost.hardship!.city).toBe('Nairobi');
+    expect(withPost.hardship!.differentialPct).toBe(10);
+    expect(withPost.hardship!.adjustedRangeMonthly.target).toBeCloseTo(
+      withPost.quote!.targetMonthly * 1.10, -2,
+    );
+    // The primary quote is untouched by the advisory mode.
+    expect(withPost.quote!.targetMonthly).toBeCloseTo(plain.quote!.targetMonthly, -2);
+  });
+
+  test('no opt-in or unknown post means no hardship card', () => {
+    const off = calculate({ ...PERSONA, targetCountry: 'KEN' }, { datasets: hardshipDatasets, fx });
+    expect(off.hardship).toBeNull();
+    const unknown = calculate(
+      { ...PERSONA, targetCountry: 'KEN', hardshipPost: 'Nowhere' },
+      { datasets: hardshipDatasets, fx },
+    );
+    expect(unknown.hardship).toBeNull();
+  });
+});

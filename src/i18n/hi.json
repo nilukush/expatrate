@@ -85,7 +85,11 @@
       "sponsorship": "लक्ष्य देश में वीज़ा प्रायोजन",
       "sponsorshipPlaceholder": "नहीं बताना चाहते",
       "sponsorshipNotNeeded": "जरूरी नहीं",
-      "sponsorshipNeeded": "जरूरी है"
+      "sponsorshipNeeded": "जरूरी है",
+      "hardshipPost": "पोस्ट",
+      "hardshipToggle": "यह कॉर्पोरेट स्थानांतरण पोस्टिंग है",
+      "hardshipPlaceholder": "पोस्ट चुनें",
+      "hardshipHelp": "पोस्ट विभेदक अमेरिकी विदेश विभाग के DSSR तालिका से आते हैं। ये नियोक्ता प्रथाओं का वर्णन करते हैं और कभी आपका बाज़ार आंकड़ा नहीं बदलते।"
     },
     "family": {
       "title": "परिवार संदर्भ",
@@ -172,7 +176,12 @@
       "below-p25": "P25 से नीचे",
       "within-band": "बाज़ार बैंड के भीतर",
       "above-p75": "P75 से ऊपर"
-    }
+    },
+    "hardshipTitle": "स्थानांतरण-समायोजित दृष्टि",
+    "hardshipBody": "{city} में पोस्ट विभेदक {pct}% है (अमेरिकी विदेश विभाग DSSR)।",
+    "hardshipRange": "समायोजित बैंड: {low} से {stretch} प्रति माह।",
+    "hardshipSource": "तालिका प्रभावी {date} से।",
+    "hardshipDssr": "DSSR 500"
   },
   "parse": {
     "resumeLabel": "रिज़्यूमे (PDF या DOCX, वैकल्पिक)",

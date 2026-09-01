@@ -318,3 +318,33 @@ test('offer evaluation: positions a recruiter offer against the quote', async ({
   await expect(page.locator('#offerVerdict')).toContainText(/band/i);
   await expect(page.locator('#offerVerdict')).toContainText('%');
 });
+
+test('hardship mode: relocation toggle adds an advisory card without moving the quote', async ({ page }) => {
+  const runToResults = async (withHardship: boolean) => {
+    await page.goto('/');
+    await page.waitForSelector('#stepIndicator', { state: 'visible' });
+    await page.selectOption('#roleFamily', 'it-executive');
+    await page.selectOption('#experienceBand', '15+');
+    await page.click('#nextBtn');
+    await page.check('#entryMode');
+    await page.click('#nextBtn');
+    await page.selectOption('#targetCountry', 'KEN');
+    if (withHardship) {
+      await page.check('#hardshipMode');
+      await page.selectOption('#hardshipPost', 'Nairobi');
+    }
+    await page.click('#nextBtn');
+    await page.click('#skipFamily');
+    await page.click('#seeQuote');
+    await expect(page.locator('#resultsHeading')).toBeVisible();
+    return page.locator('#quoteTarget').textContent();
+  };
+  const plain = await runToResults(false);
+  await runToResults(true);
+  await expect(page.locator('#hardshipCard')).toBeVisible();
+  await expect(page.locator('#hardshipCard')).toContainText('20%');
+  await expect(page.locator('#hardshipCard')).toContainText('Nairobi');
+  // The primary quote is identical to the same run without the mode.
+  const adjustedRun = await page.locator('#quoteTarget').textContent();
+  expect(adjustedRun).toBe(plain);
+});

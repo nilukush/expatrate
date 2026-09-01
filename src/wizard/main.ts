@@ -237,6 +237,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         ${buttons(2)}`;
     }
 
+
     if (step === 3) {
       return `${progress}${heading(t('steps.opportunity.title'), t('steps.opportunity.help'))}
         <div class="wz-field">
@@ -262,6 +263,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             <option value="needed"${state.sponsorship === 'needed' ? ' selected' : ''}>${escapeHtml(t('steps.opportunity.sponsorshipNeeded'))}</option>
           </select>
         </div>
+        ${hardshipBlock()}
         ${buttons(3)}`;
     }
 
@@ -304,6 +306,41 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     const target = countries.find((c) => c.iso3 === state.targetCountry);
     return target ? ['USD', target.currency] : ['USD'];
   }
+
+  function bindHardship(): void {
+    const hMode = wizardEl.querySelector<HTMLInputElement>('#hardshipMode');
+    hMode?.addEventListener('change', () => {
+      state.hardshipMode = hMode.checked;
+      const wrap = wizardEl.querySelector<HTMLElement>('#hardshipPostWrap');
+      if (wrap && !hMode.checked) wrap.setAttribute('hidden', '');
+      else if (wrap) wrap.removeAttribute('hidden');
+      saveState(state);
+    });
+    const hPost = wizardEl.querySelector<HTMLSelectElement>('#hardshipPost');
+    hPost?.addEventListener('change', () => {
+      state.hardshipPost = hPost.value;
+      saveState(state);
+    });
+  }
+
+  function hardshipBlock(): string {
+    const posts = datasets.hardshipPosts.filter((p) => p.iso3 === state.targetCountry);
+    // Always render the anchor so the target-country change patch has a node.
+    if (posts.length === 0) return '<div id="hardshipField"></div>';
+    const opts = posts
+      .map((p) => `<option value="${escapeHtml(p.city)}"${state.hardshipPost === p.city ? ' selected' : ''}>${escapeHtml(p.city)} (${p.differentialPct}%)</option>`)
+      .join('');
+    return `
+      <div class="wz-field" id="hardshipField">
+        <label class="wz-check"><input type="checkbox" id="hardshipMode"${state.hardshipMode ? ' checked' : ''} /> ${escapeHtml(t('steps.opportunity.hardshipToggle'))}</label>
+        <div id="hardshipPostWrap"${state.hardshipMode ? '' : ' hidden'}>
+          <label for="hardshipPost">${escapeHtml(t('steps.opportunity.hardshipPost'))}</label>
+          <select id="hardshipPost" class="wz-select"><option value="">${escapeHtml(t('steps.opportunity.hardshipPlaceholder'))}</option>${opts}</select>
+          <p class="wz-note">${escapeHtml(t('steps.opportunity.hardshipHelp'))}</p>
+        </div>
+      </div>`;
+  }
+
 
   function coverageNote(): string {
     if (!state.targetCountry) return '';
@@ -632,12 +669,20 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
 
     if (step === 3) {
+      bindHardship();
       readSelection('targetCountry', (value) => {
         state.targetCountry = value;
         const hint = wizardEl.querySelector<HTMLElement>('#coverageHint');
         if (hint) {
           hint.textContent = coverageNote();
           hint.hidden = !state.targetCountry;
+        }
+        // Rebuild only the hardship field so the post list follows the chosen
+        // country; a full re-render would derail keyboard navigation.
+        const field = wizardEl.querySelector<HTMLElement>('#hardshipField');
+        if (field) {
+          field.outerHTML = hardshipBlock();
+          bindHardship();
         }
       });
       const wrap = wizardEl.querySelector<HTMLElement>('#employerCountryWrap');
@@ -920,6 +965,16 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     resultsEl.innerHTML = `
       <h2 id="resultsHeading" class="wz-heading" tabindex="-1">${escapeHtml(t('results.heading'))}</h2>
       <div class="wz-grid-results">${sections.join('')}</div>
+      ${result.hardship ? `<div class="wz-card" id="hardshipCard">
+        <h3>${escapeHtml(t('results.hardshipTitle'))}</h3>
+        <p>${escapeHtml(t('results.hardshipBody', { city: result.hardship.city, pct: result.hardship.differentialPct }))}</p>
+        <p class="wz-hero">${escapeHtml(fmt(result.hardship.adjustedRangeMonthly.target, result.hardship.currency))} <span class="wz-unit">${escapeHtml(t('results.perMonth'))}</span></p>
+        <p class="wz-note">${escapeHtml(t('results.hardshipRange', {
+          low: fmt(result.hardship.adjustedRangeMonthly.low, result.hardship.currency),
+          stretch: fmt(result.hardship.adjustedRangeMonthly.stretch, result.hardship.currency),
+        }))}</p>
+        <p class="wz-note">${escapeHtml(t('results.hardshipSource', { date: result.hardship.effectiveDate }))} <a href="${result.hardship.sourceUrl}" rel="noopener">${escapeHtml(t('results.hardshipDssr'))}</a></p>
+      </div>` : ''}
       <div class="wz-card" id="offerCard">
         <h3>${escapeHtml(t('results.offerTitle'))}</h3>
         <p class="wz-note">${escapeHtml(t('results.offerHelp'))}</p>

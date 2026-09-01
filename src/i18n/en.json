@@ -51,7 +51,8 @@
       "jdImported": "Imported {title} from {source}",
       "jdUnsupported": "That link is not from a supported job board (Greenhouse, Lever, or Ashby). Paste the description instead.",
       "jdNotFound": "That job posting could not be found. It may have closed. Paste the description instead.",
-      "jdNetwork": "The job board could not be reached from your browser. Paste the description instead."
+      "jdNetwork": "The job board could not be reached from your browser. Paste the description instead.",
+      "jdBoards": "Works with postings hosted on Greenhouse, Lever, or Ashby. Your browser fetches the posting directly from the board; ExpatRate never sees it."
     },
     "pay": {
       "title": "Your current pay",

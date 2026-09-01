@@ -33,4 +33,12 @@ test.describe('job URL import', () => {
     await expect(page.locator('#jdImportNote')).toBeVisible();
     expect(await page.inputValue('#jdText')).toBe('');
   });
+
+  test('a persistent hint names the supported boards and the no-server promise', async ({ page }) => {
+    await page.goto('/');
+    const hint = page.locator('#jdFieldBoards');
+    await expect(hint).toBeVisible();
+    await expect(hint).toContainText('Greenhouse');
+    await expect(hint).toContainText('Ashby');
+  });
 });

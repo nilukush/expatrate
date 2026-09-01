@@ -103,3 +103,14 @@ test('privacy copy exists in every locale with the three core promises', () => {
   expect(en.deviceBody).toContain('never uploaded');
   expect(en.analyticsBody).toContain('cookie-free');
 });
+
+test('the job link hint names the boards and the no-server promise in every locale', () => {
+  const boardMarker = 'Greenhouse';
+  const promiseMarker = { en: /never sees it|no server/i, ar: 'دون أن يمر', hi: 'नहीं गुजरती' } as const;
+  for (const loc of locales) {
+    const hint: unknown = dict(loc).steps.role.jdBoards;
+    expect(typeof hint, `${loc} jdBoards is a string`).toBe('string');
+    expect(hint as string, loc).toContain(boardMarker);
+    expect(hint as string, loc).toMatch(new RegExp(promiseMarker[loc] as RegExp));
+  }
+});

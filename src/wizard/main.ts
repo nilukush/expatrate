@@ -192,6 +192,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             <button type="button" id="jdFetch" class="wz-btn wz-btn-secondary">${escapeHtml(t('steps.role.jdFetch'))}</button>
           </div>
           <p class="wz-note" id="jdImportNote" hidden></p>
+          <p class="wz-note" id="jdFieldBoards">${escapeHtml(t('steps.role.jdBoards'))}</p>
         </div>
         <div class="wz-field">
           <label for="jdText">${escapeHtml(t('steps.role.jd'))}</label>

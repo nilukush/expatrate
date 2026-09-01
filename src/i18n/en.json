@@ -44,7 +44,14 @@
       "jd": "Paste the job description (optional)",
       "jdHelp": "We read it locally to suggest a role family. Nothing is sent anywhere.",
       "jdSuggestion": "The description reads as {family}.",
-      "jdSwitch": "Switch"
+      "jdSwitch": "Switch",
+      "jdUrlLabel": "Or paste the job posting link (optional)",
+      "jdUrlPlaceholder": "boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com",
+      "jdFetch": "Import",
+      "jdImported": "Imported {title} from {source}",
+      "jdUnsupported": "That link is not from a supported job board (Greenhouse, Lever, or Ashby). Paste the description instead.",
+      "jdNotFound": "That job posting could not be found. It may have closed. Paste the description instead.",
+      "jdNetwork": "The job board could not be reached from your browser. Paste the description instead."
     },
     "pay": {
       "title": "Your current pay",
@@ -242,7 +249,7 @@
     "analyticsTitle": "Analytics",
     "analyticsBody": "We use Cloudflare Web Analytics, which is cookie-free and reports only aggregate, anonymous page views. No consent banner is needed because no identifiers are stored.",
     "externalTitle": "External requests",
-    "externalBody": "The page fetches live currency rates from open.er-api.com (with frankfurter.dev as fallback). Those requests carry no personal data. That is the only third party that receives anything."
+    "externalBody": "The page fetches live currency rates from open.er-api.com (with frankfurter.dev as fallback), and if you paste a job posting link, your browser fetches that posting directly from the job board's own public API (Greenhouse, Lever, or Ashby). Those requests carry no personal data. Those are the only third parties that receive anything."
   },
   "options": {
     "families": {

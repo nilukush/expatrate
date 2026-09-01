@@ -8,6 +8,7 @@ import fxSnapshotJson from '../data/fx-snapshot.json';
 import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, formatCurrency, getLocale, type Locale } from '../i18n';
 import { suggestFamily, suggestYears, extractJdSalary, extractTextFromFile } from './parse';
+import { fetchJobPosting, JobImportError } from './jobs';
 import { toEngineInputs, bandToLevel } from './derive';
 import { clearState, decodeState, encodeState, loadResumeStep, loadState, saveResumeStep, saveState } from './state';
 import { DEFAULT_STATE } from './types';
@@ -183,6 +184,14 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             <label for="companyType">${escapeHtml(t('steps.role.companyType'))} <span class="wz-optional">(${escapeHtml(t('wizard.optional'))})</span></label>
             <select id="companyType" class="wz-select">${selectOptions(COMPANY_OPTION_VALUES.map((v) => ({ value: v, label: t(`options.company.${v}`) })), state.companyType, t('steps.role.companyTypePlaceholder'))}</select>
           </div>
+        </div>
+        <div class="wz-field">
+          <label for="jdUrl">${escapeHtml(t('steps.role.jdUrlLabel'))}</label>
+          <div class="wz-url-row">
+            <input type="text" id="jdUrl" class="wz-input" inputmode="url" autocomplete="off" placeholder="${escapeHtml(t('steps.role.jdUrlPlaceholder'))}" />
+            <button type="button" id="jdFetch" class="wz-btn wz-btn-secondary">${escapeHtml(t('steps.role.jdFetch'))}</button>
+          </div>
+          <p class="wz-note" id="jdImportNote" hidden></p>
         </div>
         <div class="wz-field">
           <label for="jdText">${escapeHtml(t('steps.role.jd'))}</label>
@@ -620,6 +629,37 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       jd?.addEventListener('input', () => {
         clearTimeout(jdTimer);
         jdTimer = setTimeout(applyJdSuggestion, 400);
+      });
+
+      const jdUrlInput = wizardEl.querySelector<HTMLInputElement>('#jdUrl');
+      const jdFetchBtn = wizardEl.querySelector<HTMLButtonElement>('#jdFetch');
+      const jdImportNote = wizardEl.querySelector<HTMLElement>('#jdImportNote');
+      const showJdImportNote = (message: string): void => {
+        if (!jdImportNote) return;
+        jdImportNote.textContent = message;
+        jdImportNote.hidden = false;
+      };
+      jdFetchBtn?.addEventListener('click', async () => {
+        if (!jd) return;
+        const raw = jdUrlInput?.value.trim() ?? '';
+        jdImportNote?.setAttribute('hidden', '');
+        if (!raw) return;
+        jdFetchBtn.disabled = true;
+        try {
+          // The fetch goes from the user's browser straight to the job board's
+          // public API; ExpatRate has no server in the middle.
+          const job = await fetchJobPosting(raw);
+          jd.value = job.text;
+          showJdImportNote(t('steps.role.jdImported', { title: job.title, source: job.source }));
+          applyJdSuggestion();
+        } catch (error) {
+          const code = error instanceof JobImportError ? error.code : 'network';
+          const key =
+            code === 'unsupported' ? 'jdUnsupported' : code === 'notfound' ? 'jdNotFound' : 'jdNetwork';
+          showJdImportNote(t(`steps.role.${key}`));
+        } finally {
+          jdFetchBtn.disabled = false;
+        }
       });
     }
 

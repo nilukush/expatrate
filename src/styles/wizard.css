@@ -497,6 +497,21 @@ textarea.wz-input {
   border-color: var(--input);
 }
 
+.wz-url-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.wz-url-row .wz-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.wz-url-row .wz-btn {
+  flex-shrink: 0;
+}
+
 .wz-btn-secondary:hover {
   background-color: var(--secondary);
   border-color: var(--muted-foreground);

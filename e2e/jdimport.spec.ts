@@ -17,8 +17,10 @@ test.describe('job URL import', () => {
     await page.goto('/');
     await page.fill('#jdUrl', 'https://boards.greenhouse.io/cloudflare/jobs/7695702');
     await page.click('#jdFetch');
+    await expect
+      .poll(async () => page.inputValue('#jdText'))
+      .toContain('Account Executive, FedCiv');
     const value = await page.inputValue('#jdText');
-    expect(value).toContain('Account Executive, FedCiv');
     expect(value).toContain('$269,000');
     await expect(page.locator('#jdImportNote')).toBeVisible();
     await expect(page.locator('#jdImportNote')).toContainText('Greenhouse');

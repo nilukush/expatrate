@@ -64,3 +64,35 @@ test('stylelint rejects raw hex colors and physical direction properties', () =>
 test('stylelint accepts token-based logical-property styles', () => {
   expect(() => run('pnpm exec stylelint tests/fixtures/good.css')).not.toThrow();
 });
+
+const wcagLuminance = (hex6: string) => {
+  const [r, g, b] = [0, 2, 4].map((i) => parseInt(hex6.slice(i, i + 2), 16) / 255);
+  const f = (c: number) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+  return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+};
+
+const contrastRatio = (a: string, b: string) => {
+  const la = wcagLuminance(a);
+  const lb = wcagLuminance(b);
+  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05);
+};
+
+const channelMidpoint = (a: string, b: string) =>
+  [0, 2, 4]
+    .map((i) =>
+      Math.round(
+        (parseInt(a.slice(i, i + 2), 16) + parseInt(b.slice(i, i + 2), 16)) / 2,
+      ),
+    )
+    .map((v) => v.toString(16).padStart(2, '0'))
+    .join('');
+
+test('white text on the primary button clears AA at rest, on hover, and mid-transition', () => {
+  const light = tokensJson().color.semantic.light;
+  const rest = light['primary'].hex.slice(1);
+  const hover = light['primary-hover'].hex.slice(1);
+  // axe sampled the 150ms hover transition mid-flight in CI; every frame must pass.
+  expect(contrastRatio('ffffff', rest)).toBeGreaterThanOrEqual(4.5);
+  expect(contrastRatio('ffffff', hover)).toBeGreaterThanOrEqual(4.5);
+  expect(contrastRatio('ffffff', channelMidpoint(rest, hover))).toBeGreaterThanOrEqual(4.5);
+});

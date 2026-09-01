@@ -479,7 +479,7 @@ textarea.wz-input {
 }
 
 .wz-btn-primary:hover {
-  background-color: var(--primary-display);
+  background-color: var(--primary-hover);
 }
 
 .wz-btn-primary:active {

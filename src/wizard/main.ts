@@ -307,6 +307,26 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     return target ? ['USD', target.currency] : ['USD'];
   }
 
+
+  function remotePolicyRows(): string {
+    const pick = (pattern: string) =>
+      datasets.remotePolicies.filter((p) => p.pattern === pattern);
+    const lines: string[] = [];
+    const nber = pick('localize-to-worker-country').find((p) => p.note.includes('100,023') || p.note.includes('NBER'));
+    if (nber) {
+      lines.push(`<li>${escapeHtml(t('results.remotePolicyLocal'))} <span class="wz-note">(${escapeHtml(nber.date)} - <a href="${nber.sourceUrl}" rel="noopener">${escapeHtml(t('results.sourceLabel'))}</a>)</span></li>`);
+    }
+    const agnostic = pick('location-agnostic-global-bands').find((p) => p.prevalencePct !== null);
+    if (agnostic) {
+      lines.push(`<li>${escapeHtml(t('results.remotePolicyAgnostic', { pct: agnostic.prevalencePct as number }))} <span class="wz-note">(${escapeHtml(agnostic.date)} - <a href="${agnostic.sourceUrl}" rel="noopener">${escapeHtml(t('results.sourceLabel'))}</a>)</span></li>`);
+    }
+    const magnitude = pick('location-adjustment-magnitude').find((p) => p.adjustmentPct !== null || p.note.includes('tier'));
+    if (magnitude) {
+      lines.push(`<li>${escapeHtml(t('results.remotePolicyMagnitude'))} <span class="wz-note">(${escapeHtml(magnitude.date)} - <a href="${magnitude.sourceUrl}" rel="noopener">${escapeHtml(t('results.sourceLabel'))}</a>)</span></li>`);
+    }
+    return `<ul>${lines.join('')}</ul><p class="wz-note">${escapeHtml(t('results.remotePolicyAdvice'))}</p>`;
+  }
+
   function bindHardship(): void {
     const hMode = wizardEl.querySelector<HTMLInputElement>('#hardshipMode');
     hMode?.addEventListener('change', () => {
@@ -965,6 +985,11 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     resultsEl.innerHTML = `
       <h2 id="resultsHeading" class="wz-heading" tabindex="-1">${escapeHtml(t('results.heading'))}</h2>
       <div class="wz-grid-results">${sections.join('')}</div>
+      ${result.dualAnchors ? `<div class="wz-card" id="remotePolicyCard">
+        <h3>${escapeHtml(t('results.remotePolicyTitle'))}</h3>
+        <p>${escapeHtml(t('results.remotePolicyLead'))}</p>
+        ${remotePolicyRows()}
+      </div>` : ''}
       ${result.hardship ? `<div class="wz-card" id="hardshipCard">
         <h3>${escapeHtml(t('results.hardshipTitle'))}</h3>
         <p>${escapeHtml(t('results.hardshipBody', { city: result.hardship.city, pct: result.hardship.differentialPct }))}</p>

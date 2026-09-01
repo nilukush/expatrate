@@ -1,0 +1,170 @@
+[
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.nber.org/system/files/working_papers/w29437/w29437.pdf",
+    "date": "2021-10 (revised 2022-11)",
+    "note": "Brinatti, Cavallo, Cravino and Drenik, 'The International Price of Remote Work' (NBER WP 29437), data from a large web-based remote job platform: 100,023 workers (88 pct of employers in OECD, 70 pct of workers in non-OECD; snapshots Jan 2019, Oct 2020, Mar 2021). The worker's country accounts for about 31 pct of the variance in remote wages (more than all other worker controls combined, 24 pct), while the employer's country accounts for only 0.04 pct; remote wage gaps track the worker-country GDP per capita (slope 0.22, R2 0.58) and are about one-fifth the size of GDP-per-capita gaps. Strongest available evidence that market-rate remote pay follows the worker's location, not the employer's."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 57,
+    "adjustmentPct": null,
+    "sourceUrl": "https://worldatwork.org/about/press-room/simplifying-geographic-pay",
+    "date": "2022-05-24 (survey fielded 2022-03-14)",
+    "note": "WorldatWork Geographic Pay Policies press release, n=858 US organizations (plus 312 employees via Schlesinger panel): 57 pct have existing US geographic pay policies; 45 pct apply pay differentials as a premium or discount to a baseline structure; 24 pct create separate base pay structures per location; 56 pct base differentials on city or metro area; cost of labor outweighs cost of living; over half of full-time remote workers have pay tied to residence. US-only but a large employer-side sample with a free public summary."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 60,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.hrdive.com/news/employers-with-geographic-pay-policies-weigh-changes-as-remote-workers-move/600216/",
+    "date": "2021-05-14 (survey February 2021)",
+    "note": "HR Dive coverage of a WorldatWork survey of 1,063 employers: more than 60 pct said they used a geography-based pay policy; 44 pct of those were considering or had recently modified the policy as remote workers relocate; one-third created separate pay structures per geographic location; 55 pct used city or metro area as the basis for differentials. Earlier edition of the WorldatWork series, press coverage is free."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 81,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.deel.com/deel-works/geographic-pay-comeback",
+    "date": "2026-08-20",
+    "note": "Deel article 'Geographic pay is back, and it's more granular than before' citing a survey by the Economic Research Institute of n=158 organizations: 81 pct of organizations now factor geographic pay differences into their salary structures, and most respondents apply a 5 to 10 pct differential band. FLAG: verified in Deel's free article naming ERI; the ERI whitepaper itself sits behind a form, so cite the Deel URL with this attribution."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 35,
+    "adjustmentPct": null,
+    "sourceUrl": "https://buffer.com/state-of-remote-work/2023",
+    "date": "2023 (data collected 2022-10-10 to 2022-11-28)",
+    "note": "Buffer State of Remote Work 2023, n=3,000 remote workers worldwide (top countries US 19 pct, Nigeria 7 pct, India 7 pct, Brazil 6 pct): 35 pct of remote workers say their pay IS tied to a location, 43 pct say it is not, 22 pct unsure. Worker-reported rather than employer-reported, and the share paying location-based pay fell from 40 pct (tied) in the 2022 edition."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 88,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.pave.com/blog-posts/compensating-distributed-employees-how-a-location-based-pay-strategy-can-help",
+    "date": "undated blog (accessed 2026-09-01)",
+    "note": "Pave (compensation benchmarking platform) states that per Pave data 88 pct of companies take location into account when determining compensation. FLAG: no sample size or date published with the figure, and Pave's benchmark pool skews to venture-backed technology companies, so treat as a tech-sector signal rather than an economy-wide prevalence."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": 46,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.deel.com/deel-works/geographic-pay-comeback",
+    "date": "2026-08-20 (survey September 2021)",
+    "note": "Deel's 2026 article cites a September 2021 Blind survey of more than 4,000 verified professionals: 46 pct said their company had already adjusted pay for employees who relocated outside their metro area, 24 pct expected it soon, and only 30 pct believed their employer would make no geography-based change. FLAG: Blind respondents skew big-tech; verified via Deel's free article naming the Blind survey."
+  },
+  {
+    "pattern": "localize-to-worker-country",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://remote.com/blog/insights-center/remote-compensation",
+    "date": "undated blog (accessed 2026-09-01)",
+    "note": "Named-employer example: Remote.com sets pay at the 65th percentile of the worker's local market as a floor ('salary considerations at Remote start at 15 pct above the market median'), i.e. localization with a deliberate premium over the local median. Single-employer policy example, not a prevalence figure."
+  },
+  {
+    "pattern": "employer-hq-rate",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.cnbc.com/2020/10/28/reddit-wont-cut-pay-for-workers-who-leave-san-francisco-new-york.html",
+    "date": "2020-10-28",
+    "note": "CNBC reporting on Reddit's announcement (600+ US employees): Reddit eliminated its US geographic compensation zones and now ties US pay to San Francisco and New York pay ranges no matter where employees live, and already used one pay range per country internationally. Named-employer example of HQ-market-rate pay; no reliable prevalence figure for this pattern across employers was found."
+  },
+  {
+    "pattern": "employer-hq-rate",
+    "prevalencePct": 56.5,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.shrm.org/topics-tools/news/benefits-compensation/googles-salary-cuts-remote-workers-renew-location-based-pay-debate",
+    "date": "2021-08-18",
+    "note": "SHRM (free article) citing a Pearl Meyer survey of 349 US companies: although one-third apply geographic differentials to salary structures, only 4.3 pct said they would cut cash pay for employees who move to cheaper areas and 56.5 pct said they would not (rest case-by-case or unsure). Shows that keeping pay unchanged after a move to a cheaper location, the practical no-adjustment stance, was the majority behavior. The 56.5 pct measures refusal to cut, not a formal HQ-rate policy."
+  },
+  {
+    "pattern": "location-agnostic-global-bands",
+    "prevalencePct": 43,
+    "adjustmentPct": null,
+    "sourceUrl": "https://buffer.com/state-of-remote-work/2023",
+    "date": "2023 (data collected 2022-10-10 to 2022-11-28)",
+    "note": "Buffer State of Remote Work 2023, n=3,000 remote workers worldwide: 43 pct report their pay is NOT tied to a specific location, up from 38 pct in the 2022 edition (n=2,100+ across 16 countries), i.e. worker-reported location-agnostic pay was growing in that window rather than shrinking."
+  },
+  {
+    "pattern": "location-agnostic-global-bands",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.deel.com/deel-works/geographic-pay-comeback",
+    "date": "2026-08-20",
+    "note": "Deel's 2026 article argues location-blind pay peaked in 2020 (Reddit, Gumroad, Basecamp and Sourcegraph eliminated geographic zones around October 2020) and has since reversed, with 81 pct of organizations (ERI survey, n=158) now factoring geography into salary structures and getting more granular (a Culpepper survey cited in the same piece finds that among employers that adjust, 60 pct price by individual city and only 24 pct by pay zone). Direction conflicts with Buffer's 2022-2023 worker data, so present both rather than a single trend."
+  },
+  {
+    "pattern": "location-agnostic-global-bands",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://worldatwork.org/about/press-room/simplifying-geographic-pay",
+    "date": "2022-05-24 (survey fielded 2022-03-14)",
+    "note": "WorldatWork 2022, n=858 US organizations: the share using a single pay structure not differentiated by geography rose six percentage points from 2021 (absolute level not published in the free release); 28 pct of organizations plan to consolidate pay differentials and 13 pct are considering eliminating geographic differentials altogether. No absolute prevalence figure for single-structure pay is free, so prevalence is null."
+  },
+  {
+    "pattern": "location-adjustment-magnitude",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://buffer.com/resources/salary-formula-changes-2019/",
+    "date": "2019-02-25",
+    "note": "Published tier system: Buffer's public salary formula paid 100 pct of the San Francisco 50th-percentile benchmark for high cost-of-living areas, 85 pct for average areas, and 75 pct for low-cost areas, i.e. an explicit 100/85/75 tier system of HQ-market pay by location zone. Post is kept online by Buffer as an archive; it confirms the tier design even though the formula has since evolved."
+  },
+  {
+    "pattern": "location-adjustment-magnitude",
+    "prevalencePct": null,
+    "adjustmentPct": 25,
+    "sourceUrl": "https://www.shrm.org/topics-tools/news/benefits-compensation/googles-salary-cuts-remote-workers-renew-location-based-pay-debate",
+    "date": "2021-08-18 (Reuters investigation 2021-08-10)",
+    "note": "SHRM's free coverage of Reuters' investigation into Google's Work Location Tool: a Stamford, Connecticut employee (one hour from NYC by train) would be paid 15 pct less working from home while a NYC-based colleague would see no cut, and other employees reported cuts of about 10 pct for going fully remote; Reuters reported cuts as high as 25 pct in the Seattle/Bay Area examples (up-to-25 pct figure is in the Reuters piece at reuters.com, verified here via SHRM's summary). Google pays top of the local market, so cuts apply by metro, not by remote status."
+  },
+  {
+    "pattern": "location-adjustment-magnitude",
+    "prevalencePct": null,
+    "adjustmentPct": 10,
+    "sourceUrl": "https://www.deel.com/deel-works/geographic-pay-comeback",
+    "date": "2026-08-20",
+    "note": "Magnitude band from the ERI survey (n=158 organizations) as reported in Deel's free article: most organizations that apply geographic differentials use a 5 to 10 pct differential band relative to their baseline pay structure. Recorded as a typical central range rather than a single point; FLAG: original ERI whitepaper is form-gated, cite Deel's article naming ERI."
+  },
+  {
+    "pattern": "location-adjustment-magnitude",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.nber.org/system/files/working_papers/w29437/w29437.pdf",
+    "date": "2021-10 (revised 2022-11)",
+    "note": "Brinatti et al. (NBER WP 29437, n=100,023 platform workers): cross-country gaps in remote wages are about one-fifth the size of cross-country GDP-per-capita gaps (remote wages regressed on country GDP per capita give a slope of 0.22 with R2 0.58), i.e. market-set remote pay compresses but does not eliminate local-market differences. Useful as an empirical cross-country adjustment intensity, distinct from single-company policy tiers."
+  },
+  {
+    "pattern": "location-adjustment-magnitude",
+    "prevalencePct": 8,
+    "adjustmentPct": null,
+    "sourceUrl": "https://buffer.com/state-of-remote-work/2023",
+    "date": "2023 (data collected 2022-10-10 to 2022-11-28)",
+    "note": "Worker-side prevalence of adjustments: in Buffer's 2023 survey (n=3,000 remote workers), 70 pct say they are not paid less for working remotely, 8 pct say they are paid less (up from 6 pct in 2022), 22 pct unsure. Suggests outright pay reductions tied to remote work or cheaper locations remained rare from the worker's perspective as of late 2022."
+  },
+  {
+    "pattern": "role-specific-or-threshold-nuances",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://about.gitlab.com/blog/why-we-pay-local-rates/",
+    "date": "undated GitLab blog (accessed 2026-09-01)",
+    "note": "Threshold example, GitLab's public local-rates policy: employees living within 90 minutes of a large city have pay calculated using the higher metropolitan location factor, a proximity threshold that pulls suburbs into the metro pay zone. Same post documents benchmark accuracy ('right 95 percent of the time') and that GitLab dropped salary-history questions; exact location-factor percentages are no longer public (calculator moved internal)."
+  },
+  {
+    "pattern": "role-specific-or-threshold-nuances",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://remote.com/blog/insights-center/remote-compensation",
+    "date": "undated blog (accessed 2026-09-01)",
+    "note": "Contract-type nuance: Remote.com's compensation guide describes GitLab's formula as San Francisco benchmark multiplied by location, level, experience, contract type and exchange-rate factors, where contractors get a distinct factor because they cover their own equipment, taxes and benefits. Secondary description of a named employer's public handbook formula; no prevalence figure exists for how many employers differ by contract type."
+  },
+  {
+    "pattern": "role-specific-or-threshold-nuances",
+    "prevalencePct": null,
+    "adjustmentPct": null,
+    "sourceUrl": "https://www.shrm.org/topics-tools/news/benefits-compensation/googles-salary-cuts-remote-workers-renew-location-based-pay-debate",
+    "date": "2021-08-18",
+    "note": "Adjustment-by-circumstance nuance: in Pearl Meyer's 2021 survey (n=349 US companies), even among the one-third of firms with geographic differentials in their salary structures, only 4.3 pct would actually cut cash pay when someone moves to a cheaper area, implying adjustments mostly bind at hire or at range-setting rather than being imposed on existing salaries mid-tenure. No reliable public figure was found for adjustments differing by role level or seniority."
+  }
+]

@@ -181,7 +181,14 @@
     "hardshipBody": "The post differential at {city} is {pct}% (US State Department DSSR).",
     "hardshipRange": "Adjusted band: {low} to {stretch} per month.",
     "hardshipSource": "Table effective {date}.",
-    "hardshipDssr": "DSSR 500"
+    "hardshipDssr": "DSSR 500",
+    "remotePolicyTitle": "How employers set remote pay",
+    "remotePolicyLead": "Your result shows two anchors. Research on real remote pay tells you which one to argue from.",
+    "remotePolicyLocal": "Pay tracks the worker country far more than the employer country: in a 100,023-worker platform study, the worker country explained 31 percent of wage variance against 0.04 percent for the employer country.",
+    "remotePolicyAgnostic": "Still, {pct} percent of remote workers report location-independent pay bands.",
+    "remotePolicyMagnitude": "Where employers do adjust for location, published systems use tiers of roughly 15 to 25 percent off the HQ rate, not full localization.",
+    "remotePolicyAdvice": "Argue from the employer-market anchor only if the role is explicitly location-agnostic or global-banded; otherwise anchor to your local market, which is where most offers land.",
+    "sourceLabel": "source"
   },
   "parse": {
     "resumeLabel": "Resume (PDF or DOCX, optional)",

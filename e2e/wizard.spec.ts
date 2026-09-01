@@ -348,3 +348,25 @@ test('hardship mode: relocation toggle adds an advisory card without moving the 
   const adjustedRun = await page.locator('#quoteTarget').textContent();
   expect(adjustedRun).toBe(plain);
 });
+
+test('remote for a foreign company shows the pay-policy advisory card', async ({ page }) => {
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'it-executive');
+  await page.selectOption('#experienceBand', '15+');
+  await page.click('#nextBtn');
+  await page.selectOption('#originCountry', 'GBR');
+  await page.fill('#salaryAmount', '120000');
+  await page.check('input[name="salaryBasis"][value="annual"]');
+  await page.check('#salaryConfirmed');
+  await page.click('#nextBtn');
+  await page.selectOption('#targetCountry', 'IND');
+  await page.check('#wrRemoteForeign');
+  await page.selectOption('#employerCountry', 'USA');
+  await page.click('#nextBtn');
+  await page.click('#skipFamily');
+  await page.click('#seeQuote');
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+  await expect(page.locator('#remotePolicyCard')).toBeVisible();
+  await expect(page.locator('#remotePolicyCard')).toContainText('31');
+  await expect(page.locator('#remotePolicyCard a')).toHaveCount(3);
+});

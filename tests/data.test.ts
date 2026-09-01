@@ -283,3 +283,23 @@ test('hardship posts: DSSR rows for target countries only, valid schema', () => 
   }
   expect(rows.every((r: { effectiveDate: string }) => r.effectiveDate === rows[0].effectiveDate)).toBe(true);
 });
+
+test('remote pay policies: curated rows, valid percentages, sources dated', () => {
+  const rows = load('remote-policies.json');
+  expect(rows.length).toBeGreaterThanOrEqual(15);
+  const patterns = new Set(rows.map((r: { pattern: string }) => r.pattern));
+  expect(patterns.has('localize-to-worker-country')).toBe(true);
+  expect(patterns.has('location-agnostic-global-bands')).toBe(true);
+  expect(patterns.has('location-adjustment-magnitude')).toBe(true);
+  for (const r of rows) {
+    for (const k of ['prevalencePct', 'adjustmentPct'] as const) {
+      if (r[k] !== null) {
+        expect(r[k]).toBeGreaterThanOrEqual(0);
+        expect(r[k]).toBeLessThanOrEqual(100);
+      }
+    }
+    expect(r.sourceUrl.startsWith('https://')).toBe(true);
+    expect(r.note.length).toBeGreaterThan(20);
+    expect(r.date.length).toBeGreaterThan(3);
+  }
+});

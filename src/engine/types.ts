@@ -181,6 +181,15 @@ export interface BracketTable {
   lastReviewed: string;
 }
 
+export interface RemotePolicyRow {
+  pattern: string;
+  prevalencePct: number | null;
+  adjustmentPct: number | null;
+  sourceUrl: string;
+  date: string;
+  note: string;
+}
+
 export interface HardshipPost {
   iso3: string;
   city: string;
@@ -207,6 +216,7 @@ export interface Datasets {
   tax: TaxRow[];
   taxBrackets: BracketTable[];
   hardshipPosts: HardshipPost[];
+  remotePolicies: RemotePolicyRow[];
   benchmarks: BenchmarkEntry[];
   packageConventions: PackageConvention[];
   employment: EmploymentConventions;

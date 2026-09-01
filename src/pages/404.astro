@@ -1,0 +1,34 @@
+---
+import '../styles/global.css';
+import '../styles/wizard.css';
+import '../styles/seo.css';
+import { t, setLocale } from '../i18n';
+
+setLocale('en');
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found | ExpatRate</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class="min-h-screen bg-background font-base text-foreground">
+    <main class="page-shell">
+      <article class="seo-shell">
+        <p class="seo-breadcrumb"><a href="/">ExpatRate</a></p>
+        <h1 class="seo-h1">Page not found</h1>
+        <p class="seo-answer">The page you asked for does not exist. The address may be mistyped, or the page may have moved.</p>
+        <p class="seo-answer"><a href="/">Start a new salary check</a>.</p>
+      </article>
+      <footer class="site-footer">
+        <p>{t('home.footerAdvice')}</p>
+        <p>{t('home.footerRights', { year })}</p>
+      </footer>
+    </main>
+  </body>
+</html>

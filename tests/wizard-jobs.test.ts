@@ -173,3 +173,20 @@ describe('fetchJobPosting', () => {
     ).rejects.toMatchObject({ code: 'network' });
   });
 });
+
+test('a hanging board fetch is aborted by the timeout', async () => {
+  vi.useFakeTimers();
+  try {
+    // A real fetch rejects on abort; the mock honors the signal the same way.
+    const hung = (_url: string | URL | Request, init?: RequestInit) =>
+      new Promise<Response>((_resolve, reject) => {
+        init?.signal?.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')));
+      });
+    const promise = fetchJobPosting('https://jobs.lever.co/acme/123', hung, { timeoutMs: 25 });
+    const expectation = expect(promise).rejects.toMatchObject({ code: 'network' });
+    await vi.advanceTimersByTimeAsync(40);
+    await expectation;
+  } finally {
+    vi.useRealTimers();
+  }
+});

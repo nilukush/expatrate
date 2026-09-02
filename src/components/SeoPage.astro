@@ -100,7 +100,8 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
     {kind === 'methodology' && <script type="application/ld+json" set:html={JSON.stringify(datasetLd())} />}
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
-    <main class="page-shell">
+    <div class="page-shell">
+      <a class="skip-link" href="#main">{t('home.skip')}</a>
       <header class="site-header">
         <a class="brand" href={`${localePath}/`}><span class="brand-mark" aria-hidden="true">%</span><span class="brand-name" dir="ltr">ExpatRate</span></a>
         <nav class="lang-switch" aria-label={t('home.langLabel')}>
@@ -109,6 +110,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
           <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
         </nav>
       </header>
+    <main id="main">
       <article class="seo-shell">
         {kind === 'detail' && page && (
           <>
@@ -176,10 +178,11 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
           </>
         )}
       </article>
-      <footer class="site-footer">
+      </main>
+    <footer class="site-footer">
         <p>{t('home.footerAdvice')}</p>
         <p>{t('home.footerRights', { year: new Date().getFullYear() })}</p>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

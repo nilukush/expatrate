@@ -185,7 +185,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             <span class="wz-file-size" id="fileSize"></span>
             <button type="button" id="clearFile" class="wz-file-remove" aria-label="${escapeHtml(t('parse.removeFile'))}">&times;</button>
           </div>
-          <p class="wz-note wz-note-ok" id="resumeNote" hidden></p>
+          <p class="wz-note wz-note-ok" id="resumeNote" aria-live="polite" hidden></p>
         </div>
         <div class="wz-divider">${escapeHtml(t('wizard.dividerManual'))}</div>
         <div class="wz-grid">
@@ -212,7 +212,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             <input type="text" id="jdUrl" class="wz-input" inputmode="url" autocomplete="off" placeholder="${escapeHtml(t('steps.role.jdUrlPlaceholder'))}" />
             <button type="button" id="jdFetch" class="wz-btn wz-btn-secondary">${escapeHtml(t('steps.role.jdFetch'))}</button>
           </div>
-          <p class="wz-note" id="jdImportNote" hidden></p>
+          <p class="wz-note" id="jdImportNote" aria-live="polite" hidden></p>
           <p class="wz-note" id="jdFieldBoards">${escapeHtml(t('steps.role.jdBoards'))}</p>
         </div>
         <div class="wz-field">
@@ -251,7 +251,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           <label><input type="radio" id="payBasisGross" name="payBasis" value="gross"${state.salaryGross ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.gross'))}</label>
           <label><input type="radio" id="payBasisNet" name="payBasis" value="net"${!state.salaryGross ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.net'))}</label>
         </fieldset>
-        <p class="wz-interpretation" id="interpretation">${escapeHtml(interpretation)}</p>
+        <p class="wz-interpretation" id="interpretation" aria-live="polite">${escapeHtml(interpretation)}</p>
         <div class="wz-field">
           <label class="wz-check"><input type="checkbox" id="entryMode"${state.entryMode ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.entryToggle'))}</label>
           <label class="wz-check"><input type="checkbox" id="salaryConfirmed"${state.salaryConfirmed ? ' checked' : ''} /> ${escapeHtml(t('steps.pay.confirm'))}</label>
@@ -825,16 +825,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
     try {
       const datasets = loadDatasets();
-      let fx: FxResult;
-      try {
-        fx = await getFxRates({ snapshot: fxSnapshotJson as unknown as FxSnapshot });
-      } catch {
-        fx = {
-          rates: (fxSnapshotJson as unknown as FxSnapshot).rates,
-          asOf: (fxSnapshotJson as unknown as FxSnapshot).asOf,
-          source: 'snapshot',
-        };
-      }
+      // getFxRates never throws: it degrades to the snapshot internally.
+      const fx = await getFxRates({ snapshot: fxSnapshotJson as unknown as FxSnapshot });
       let result: EngineResult;
       try {
         result = calculate(inputs, { datasets, fx: { base: 'USD', asOf: fx.asOf, rates: fx.rates } });
@@ -844,7 +836,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         ]);
         return;
       }
-      renderResults(result, fx);
+      renderResults(result, fx, shareAdoption);
     } finally {
       if (seeQuoteBtn) {
         seeQuoteBtn.disabled = false;
@@ -884,7 +876,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     });
   }
 
-  function renderResults(result: EngineResult, fx: FxResult): void {
+  function renderResults(result: EngineResult, fx: FxResult, fromShare = false): void {
     wizardEl.hidden = true;
     resultsEl.hidden = false;
 
@@ -909,7 +901,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     };
 
     if (result.status === 'insufficient_data') {
-      sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.insufficientTitle'))}</h3><p>${escapeHtml(t('results.insufficientBody'))}</p></div>`);
+      const entryInsufficient = result.confidence.reasons.some((r) => r.key === 'entryMode');
+      sections.push(`<div class="wz-card" id="insufficientCard"><h3>${escapeHtml(t('results.insufficientTitle'))}</h3><p>${escapeHtml(t(entryInsufficient ? 'results.insufficientEntryBody' : 'results.insufficientBody'))}</p></div>`);
     } else if (result.status === 'floor-only' && result.floor) {
       sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.floorOnlyTitle'))}</h3><p>${escapeHtml(t('results.floorOnlyBody'))}</p><p class="wz-label wz-floor-label">${escapeHtml(t('results.floorOnlyLabel'))}</p><p class="wz-hero">${escapeHtml(fmt(result.floor.monthlyGross, result.floor.currency))} <span class="wz-unit">${escapeHtml(t('results.perMonth'))}</span></p>${floorMath(result.floor)}<p class="wz-note">${escapeHtml(t('results.floorGuidance'))}</p></div>`);
     }
@@ -979,6 +972,10 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         ? `<p>${escapeHtml(t('results.floorMathOnTop', { pct: Math.round(result.floor.derivation.onTopShare * 100) }))}</p>`
         : '';
       const mathWithOnTop = floorMath(result.floor).replace('</div>', `${onTopLine}</div>`);
+      const mixedCurrencies = quote && result.floor.currency !== quote.currency;
+      const currencyNote = mixedCurrencies
+        ? `<p class="wz-note">${escapeHtml(t('results.floorCurrencyNote', { quote: quote!.currency, floor: result.floor.currency }))}</p>`
+        : '';
       if (amounts) {
         const floorAnnual = amounts.floor.amount * 12;
         const ceilingAnnual = amounts.ceiling.amount * 12;
@@ -987,9 +984,9 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           pct: cut,
           ceiling: fmt(ceilingAnnual, amounts.ceiling.currency),
           floor: fmt(floorAnnual, amounts.floor.currency),
-        })))}</p>${mathWithOnTop}</div>`);
+        })))}</p>${mathWithOnTop}${currencyNote}</div>`);
       } else {
-        sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.floorTitle'))}</h3><p id="floorLine">${escapeHtml(t('results.floorBody', { amount: fmt(result.floor.monthlyGross, result.floor.currency) }))}</p>${mathWithOnTop}</div>`);
+        sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.floorTitle'))}</h3><p id="floorLine">${escapeHtml(t('results.floorBody', { amount: fmt(result.floor.monthlyGross, result.floor.currency) }))}</p>${mathWithOnTop}${currencyNote}</div>`);
       }
     }
 
@@ -1018,7 +1015,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
 
     if (result.confidence) {
-      sections.push(`<div class="wz-card"><p id="confidenceLine"><strong>${escapeHtml(t('results.confidence', { level: result.confidence.level }))}</strong></p><ul class="wz-reasons">${result.confidence.reasons.map((reason) => `<li>${escapeHtml(engineMessage(reason))}</li>`).join('')}</ul></div>`);
+      sections.push(`<div class="wz-card"><p id="confidenceLine"><span class="wz-badge wz-badge-${result.confidence.level.toLowerCase()}"><strong>${escapeHtml(t('results.confidence', { level: result.confidence.level }))}</strong></span></p><ul class="wz-reasons">${result.confidence.reasons.map((reason) => `<li>${escapeHtml(engineMessage(reason))}</li>`).join('')}</ul></div>`);
     }
 
     if (result.dualAnchors) {
@@ -1045,6 +1042,10 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         ? fmt(usd.targetMonthlyUsd, 'USD')
         : usd.floorMonthlyUsd !== undefined ? fmt(usd.floorMonthlyUsd, 'USD') : '';
       sections.push(`<div class="wz-card wz-card-warning"><h3>${escapeHtml(t('results.currencyRiskTitle'))}</h3><p>${escapeHtml(t(`engine.${result.currencyRisk.noticeKey}`))}</p>${usdText ? `<p><strong>${escapeHtml(usdText)} USD</strong> ${escapeHtml(t('results.perMonth'))}</p>` : ''}</div>`);
+    }
+
+    if (fromShare) {
+      sections.push(`<div class="wz-card" id="sharedNote"><p class="wz-note">${escapeHtml(t('results.sharedRatesNote'))}</p></div>`);
     }
 
     const warnings: Array<{ key: string; params?: Record<string, unknown> }> = [...result.warnings];
@@ -1092,18 +1093,18 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       <div class="wz-card" id="offerCard">
         <h3>${escapeHtml(t('results.offerTitle'))}</h3>
         <p class="wz-note">${escapeHtml(t('results.offerHelp'))}</p>
-        <div class="wz-row">
+        <div>
           <input type="text" id="offerAmount" class="wz-input" inputmode="decimal" autocomplete="off" placeholder="${escapeHtml(t('results.offerPlaceholder'))}" />
           <select id="offerCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), result.quote?.currency ?? 'USD', '')}</select>
-          <select id="offerBasis" class="wz-select"><option value="monthly">${escapeHtml(t('options.grossNet') ? '' : '')}${escapeHtml(t('results.perMonth'))}</option><option value="annual">${escapeHtml(t('results.perYear'))}</option></select>
+          <select id="offerBasis" class="wz-select"><option value="monthly">${escapeHtml(t('results.perMonth'))}</option><option value="annual">${escapeHtml(t('results.perYear'))}</option></select>
           <button type="button" id="offerEval" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.offerEval'))}</button>
         </div>
-        <p id="offerVerdict" class="wz-interpretation" hidden></p>
+        <p id="offerVerdict" class="wz-interpretation" aria-live="polite" hidden></p>
       </div>
       <div class="wz-actions">
-        <button type="button" id="shareBtn" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.share'))}</button>
+        <button type="button" id="shareBtn" class="wz-btn wz-btn-primary">${escapeHtml(t('results.share'))}</button>
         <button type="button" id="printBtn" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.print'))}</button>
-        <button type="button" id="startOver" class="wz-btn wz-btn-primary">${escapeHtml(t('results.startOver'))}</button>
+        <button type="button" id="startOver" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.startOver'))}</button>
       </div>
       <p class="wz-note">${escapeHtml(t('results.notAdvice'))}</p>`;
 

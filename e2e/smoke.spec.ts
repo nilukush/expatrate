@@ -21,3 +21,13 @@ test('the home trust strip states the data dates', async ({ page }) => {
   await expect(page.locator('.hero-trust')).toContainText('Data as of');
   await expect(page.locator('.hero-trust')).toContainText('2026');
 });
+
+test('hub pages carry og:url and a real og:description', async ({ page }) => {
+  await page.goto('/salaries/');
+  const ogUrl = await page.getAttribute('meta[property="og:url"]', 'content');
+  const ogDesc = await page.getAttribute('meta[property="og:description"]', 'content');
+  const ogTitle = await page.getAttribute('meta[property="og:title"]', 'content');
+  expect(ogUrl).toContain('/salaries/');
+  expect(ogDesc).toBeTruthy();
+  expect(ogDesc).not.toBe(ogTitle);
+});

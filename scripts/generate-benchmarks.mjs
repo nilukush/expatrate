@@ -14,7 +14,8 @@ const countries = allCountries.filter(
   (c) => c.tier === 1 || seededCountries.has(c.iso3),
 );
 
-const CURATION_DATE = '2026-08-30';
+// Derived from the seeds so new curation never ships a stale matrix date.
+const CURATION_DATE = seeds.reduce((max, s) => (s.lastReviewed > max ? s.lastReviewed : max), '1970-01-01');
 
 // Curated rows live in src/data/benchmark-seeds.json. Every row carries a
 // source and quality rating (see docs/RESEARCH/benchmark-curation-2026-08-30.md).

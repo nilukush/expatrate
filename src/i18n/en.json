@@ -1,13 +1,13 @@
 {
   "home": {
     "title": "ExpatRate: Know what to quote",
-    "description": "ExpatRate tells expat job seekers what salary to quote in any country, monthly and annually, in any currency. Free, no login, transparent methodology.",
+    "description": "ExpatRate tells expat job seekers what salary to quote in any country, monthly and annually, in your currency. Free, no login, transparent methodology.",
     "eyebrow": "Expat salary intelligence",
     "titleLine": "Know what to {word}.",
     "titleWord": "quote",
-    "sub": "Moving countries for work? Portals ask for your expected salary in their currency. ExpatRate gives you a defensible range, a walk-away floor, and the local package structure, from public data with every source shown.",
+    "sub": "Moving countries for work? Portals ask for your expected salary in their currency. ExpatRate gives you a defensible band, a walk-away floor, and the local package structure, from public data with every source shown.",
     "trust1": "Your resume never leaves this device",
-    "trust2": "Floor for {n} countries · 16 role families",
+    "trust2": "Floor for {n} countries · {f} role families",
     "trust3": "Every number cites its source",
     "footerData": "A purchasing-power floor for {n} countries; verified market benchmarks for {b} destination countries. Data: World Bank PPP, national statistics offices, recruiter surveys. Rates: open.er-api.com with frankfurter.dev fallback.",
     "footerAdvice": "Estimates are indicative only and are not financial, tax, or legal advice.",
@@ -16,7 +16,8 @@
     "langLabel": "Language",
     "linkMethodology": "Methodology",
     "linkSalaries": "Salary benchmarks",
-    "trustData": "Data as of: benchmarks {benchmarks}, World Bank PPP {ppp}, exchange rates {fx}, allowances {allowances}"
+    "trustData": "Data as of: benchmarks {benchmarks}, World Bank PPP {ppp}, exchange rates {fx}, allowances {allowances}",
+    "skip": "Skip to content"
   },
   "wizard": {
     "progress": "Step {n} of {total}",
@@ -35,7 +36,7 @@
   "steps": {
     "role": {
       "title": "Your role",
-      "help": "Choose the role you are quoting for, not necessarily the one you hold today. Your resume fills your current role; switch it if you are applying in a different field. Your years of experience set your band.",
+      "help": "Choose the role you are quoting for, not necessarily the one you hold today. Your resume fills your current role; switch it if you are applying in a different field. Your years of experience set your band. Bands map to levels: 0-5 years senior, 6-14 lead, 15+ executive.",
       "roleFamily": "Role family",
       "roleFamilyPlaceholder": "Choose a role family",
       "experience": "Experience",
@@ -129,7 +130,7 @@
     "quoteThis": "Quote this",
     "perMonth": "per month",
     "perYear": "per year",
-    "range": "Market range: {low} to {stretch} per month",
+    "range": "Market band: {low} to {stretch} per month",
     "legendQuote": "your quote",
     "legendYou": "you today: {amount}",
     "priorBelow": "(below the P25 start of this band)",
@@ -200,7 +201,10 @@
     "remotePolicyAdvice": "Argue from the employer-market anchor only if the role is explicitly location-agnostic or global-banded; otherwise anchor to your local market, which is where most offers land.",
     "sourceLabel": "source",
     "fxTitle": "Using stored exchange rates",
-    "fxBody": "Live exchange rates could not be fetched, so figures use the snapshot from {date}. Treat converted amounts as close, not exact."
+    "fxBody": "Live exchange rates could not be fetched, so figures use the snapshot from {date}. Treat converted amounts as close, not exact.",
+    "insufficientEntryBody": "This pair has no verified market benchmark yet. Add a current salary to get the purchasing-power floor, or pick another country.",
+    "floorCurrencyNote": "The market band is quoted in {quote}; the floor above is in {floor}. Convert before comparing offers.",
+    "sharedRatesNote": "Shared result: figures are recomputed at today's exchange rates, so they may differ slightly from what the sharer saw."
   },
   "parse": {
     "resumeLabel": "Resume (PDF or DOCX, optional)",
@@ -279,11 +283,11 @@
       "education-and-teaching": "Education and Teaching"
     },
     "bands": {
-      "0-2": "0-2 years (senior band)",
-      "3-5": "3-5 years (senior band)",
-      "6-9": "6-9 years (lead band)",
-      "10-14": "10-14 years (lead band)",
-      "15+": "15+ years (executive band)"
+      "0-2": "0-2 years",
+      "3-5": "3-5 years",
+      "6-9": "6-9 years",
+      "10-14": "10-14 years",
+      "15+": "15+ years"
     },
     "employment": {
       "full-time": "Full time",

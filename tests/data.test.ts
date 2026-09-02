@@ -125,7 +125,12 @@ test('benchmarks: full curated matrix, honest insufficient-data markers, curated
   expect(dataRows.length).toBeGreaterThanOrEqual(189);
   for (const marker of markers) {
     expect(marker.reason.length).toBeGreaterThan(10);
-    expect(marker.lastReviewed).toBe('2026-08-30');
+    const seeds = load('benchmark-seeds.json').rows;
+    const maxReviewed = seeds.reduce(
+      (m: string, r: { lastReviewed: string }) => (r.lastReviewed > m ? r.lastReviewed : m),
+      '1970-01-01',
+    );
+    expect(marker.lastReviewed).toBe(maxReviewed);
   }
   for (const row of dataRows) {
     // Zero p25 with zero p75 encodes "median only" (SEEK averages, some ATO rows).
@@ -314,5 +319,31 @@ test('remote pay policies: curated rows, valid percentages, sources dated', () =
     expect(r.sourceUrl.startsWith('https://')).toBe(true);
     expect(r.note.length).toBeGreaterThan(20);
     expect(r.date.length).toBeGreaterThan(3);
+  }
+});
+
+test('tax bracket notes disclose the representativeCheck savings convention', () => {
+  const rows = load('tax-brackets.json');
+  for (const code of ['SGP', 'MYS']) {
+    const row = rows.find((r: { iso3: string }) => r.iso3 === code);
+    expect(row.note, code).toMatch(/representativeCheck|production excludes/);
+  }
+});
+
+test('the benchmark matrix date is derived from the seeds, not hardcoded', () => {
+  const seeds = load('benchmark-seeds.json').rows;
+  const max = seeds.reduce(
+    (m: string, r: { lastReviewed: string }) => (r.lastReviewed > m ? r.lastReviewed : m),
+    '1970-01-01',
+  );
+  expect(load('benchmarks.json').meta.lastReviewed).toBe(max);
+});
+
+test('seed sources cite publishers, not scribd rehosts', () => {
+  const seeds = load('benchmark-seeds.json').rows;
+  for (const row of seeds) {
+    for (const url of (row.sources ?? []) as string[]) {
+      expect(String(url)).not.toContain('scribd');
+    }
   }
 });

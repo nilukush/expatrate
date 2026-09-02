@@ -128,12 +128,21 @@ export function htmlToText(html: string): string {
     .trim();
 }
 
-const requestJson = async (endpoint: string, fetchFn: typeof fetch): Promise<unknown> => {
+const requestJson = async (
+  endpoint: string,
+  fetchFn: typeof fetch,
+  timeoutMs = 6000,
+): Promise<unknown> => {
+  // A hanging board request must not disable the import button forever.
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   let response: Response;
   try {
-    response = await fetchFn(endpoint, { headers: { Accept: 'application/json' } });
+    response = await fetchFn(endpoint, { headers: { Accept: 'application/json' }, signal: controller.signal });
   } catch {
     throw new JobImportError('network');
+  } finally {
+    clearTimeout(timer);
   }
   if (!response.ok) throw new JobImportError('notfound');
   try {
@@ -151,11 +160,15 @@ const assemble = (title: string, location: string | null, body: string, comp: st
   return { title, location, text: `${header.join('\n')}\n\n${body}`.trim(), source };
 };
 
-export async function fetchJobPosting(raw: string, fetchFn: typeof fetch = fetch): Promise<ImportedJob> {
+export async function fetchJobPosting(
+  raw: string,
+  fetchFn: typeof fetch = fetch,
+  opts: { timeoutMs?: number } = {},
+): Promise<ImportedJob> {
   const source = detectJobSource(raw);
   if (!source) throw new JobImportError('unsupported');
 
-  const data = record(await requestJson(source.endpoint, fetchFn));
+  const data = record(await requestJson(source.endpoint, fetchFn, opts.timeoutMs));
 
   if (source.provider === 'greenhouse') {
     const location = record(data.location).name ?? (typeof data.location === 'string' ? data.location : null);

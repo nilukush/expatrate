@@ -70,7 +70,7 @@ test.describe('locales', () => {
     expect(roleOptions).toContain('هندسة البرمجيات');
     expect(roleOptions).not.toContain('Software Engineering');
     const expOptions = await page.$$eval('#experienceBand option', (nodes) => nodes.map((n) => n.textContent ?? ''));
-    expect(expOptions).toContain('+15 سنوات (نطاق تنفيذي)');
+    expect(expOptions).toContain('+15 سنوات');
     await page.selectOption('#roleFamily', 'it-executive');
     await page.selectOption('#experienceBand', '15+');
     await page.click('#nextBtn');

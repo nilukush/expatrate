@@ -4397,8 +4397,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey",
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html",
         "https://businessmirror.com.ph/2025/11/26/psa-data-industry-wages-show-3-fold-gap-in-2024/"
       ],
       "note": "Michael Page PH 2025 guide, Senior Backend Developer: 1,440/1,800/2,160 PHP'000 per 12 months = 120k/150k/180k monthly (min/avg/max for 200M-USD+ companies; excludes 13th month/bonus). Robert Walters PH survey shows Senior Software Developer 60k-90k monthly (broader market, temp/contract-weighted, lower). Official anchor: PSA 2024 OWS software developers all-level mean 66,180/month (Basic Pay plus allowances; excludes 13th month), confirming the family range. Philippine wages are monthly by convention; 13th month not included in any figure."
@@ -4415,8 +4415,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Lead Backend/Frontend Developer (identical bands): 2,160/2,580/3,000 PHP'000 annual = 180k/215k/250k monthly, min/avg/max. RW PH Lead Developer 100k-180k monthly (contract-weighted, SME skew) sits below the MP band; divergence noted. Base salary only, excludes 13th month/bonus."
     },
@@ -4432,8 +4432,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey",
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html",
         "https://psa.gov.ph/system/files/lsredsd/2-%28ons-cleared%29-2022%20OWS%20Tables-signed.pdf"
       ],
       "note": "Michael Page PH 2025, Head of Software Engineering: 4,200/5,100/6,000 PHP'000 annual = 350k/425k/500k monthly. MP Director of Software Engineering at 200M-USD+ companies: 4,000/5,500/7,800 PHP'000 (333k/458k/650k monthly), upside to p75 at large MNCs. RW PH Head of Technology 180k-280k monthly (SME/contract end). Official anchor: PSA 2022 OWS ICT Service Managers mean 42,161/month (telecom, all establishment sizes, all levels, a much broader definition). Excludes 13th month/bonus."
@@ -4450,8 +4450,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey",
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html",
         "https://psa.gov.ph/system/files/lsredsd/2-%28ons-cleared%29-2022%20OWS%20Tables-signed.pdf"
       ],
       "note": "Dual-source band. Michael Page PH 2025 CIO 5,500/8,000/10,400 PHP'000 annual (458k/667k/867k monthly) and CTO 4,550/7,480/10,400 (379k/623k/867k monthly), for 200M-USD+ companies; p50 is the midpoint of CIO/CTO averages. RW PH CIO 500k-700k and CTO 600k-1.0M monthly overlap the band. Official anchor: PSA 2022 OWS Information and Communications Technology Service Managers mean 42,161/month (telecom, all levels/sizes, not C-level). Excludes 13th month/bonus."
@@ -4468,8 +4468,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey",
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html",
         "https://businessmirror.com.ph/2025/11/26/psa-data-industry-wages-show-3-fold-gap-in-2024/"
       ],
       "note": "Michael Page PH 2025, Senior Data Scientist: 1,800/2,400/3,000 PHP'000 annual = 150k/200k/250k monthly (Senior Data Engineer 1,800/2,100/2,400). RW PH Data Scientist 100k-180k monthly (broader market). Official anchor: PSA 2024 OWS mathematicians and actuaries all-level mean 99,154/month. Excludes 13th month/bonus."
@@ -4486,7 +4486,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Data Architect 2,500/3,200/4,200 PHP'000 annual = 208k/267k/350k monthly (min/avg/max). No second allowed source found at this level (RW PH has no data-architect row). Excludes 13th month/bonus."
     },
@@ -4502,8 +4502,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Head of Data: 3,800/4,800/5,500 PHP'000 annual = 317k/400k/458k monthly. RW PH Chief Data Officer 700k-1.2M monthly, materially higher at large-enterprise CDO scope; quote the MP band for mid-market and treat RW CDO as large-MNC upside. Excludes 13th month/bonus."
     },
@@ -4519,7 +4519,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Cybersecurity Manager: 1,800/2,160/2,400 PHP'000 annual = 150k/180k/200k monthly (min/avg/max; SOC Manager 1,560/1,860/2,160). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4535,7 +4535,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, CISO: 4,550/6,830/9,100 PHP'000 annual = 379k/569k/758k monthly (min/avg/max, 200M-USD+ companies). Information Security Director 3,000/3,600/4,500 (250k/300k/375k monthly) is the mid-market variant. No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4551,7 +4551,7 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
+        "https://www.michaelpage.com.ph/salary-guide",
         "https://psa.gov.ph/system/files/lsredsd/2-%28ons-cleared%29-2022%20OWS%20Tables-signed.pdf"
       ],
       "note": "Michael Page PH 2025, Senior Finance Manager: 2,280/2,820/3,360 PHP'000 annual = 190k/235k/280k monthly. Official anchor: PSA 2022 OWS Accountants (incl. auditors) all-level mean 41,852/month in financial-service activities and 48,982 in insurance (establishments 20+ workers). Excludes 13th month/bonus."
@@ -4568,7 +4568,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Controller: 3,600/4,050/4,500 PHP'000 annual = 300k/338k/375k monthly (min/avg/max). RW PH Finance Manager 180k-250k monthly is the mid-market counterpart, below controller scope. Excludes 13th month/bonus."
     },
@@ -4584,8 +4584,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Finance Director and CFO (identical bands): 6,000/7,200/8,400 PHP'000 annual = 500k/600k/700k monthly (200M-USD+ companies). RW PH Finance Director 300k-450k monthly (SME/contract-weighted) brackets the lower end. Excludes 13th month/bonus."
     },
@@ -4618,7 +4618,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025 healthcare and life sciences, Healthcare Director: 4,800/5,650/6,550 PHP'000 annual = 400k/471k/546k monthly (min/avg/max; mostly private-hospital/pharma sector). MP Physician (senior clinician reference): 650/780/910 PHP'000 = 54k/65k/76k monthly. Excludes 13th month/bonus."
     },
@@ -4634,8 +4634,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Supply Chain Manager: 2,050/2,280/2,510 PHP'000 annual = 171k/190k/209k monthly (Supply Chain Ecommerce/Program Manager identical; Logistics Manager 1,940/2,160/2,380). RW PH Supply Chain Manager 150k-250k monthly brackets the band (Operations Manager RW 140k-200k; MP 190k/211k/233k). Excludes 13th month/bonus."
     },
@@ -4651,8 +4651,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Senior IT Project Manager: 1,920/2,460/3,000 PHP'000 annual = 160k/205k/250k monthly. RW PH IT Project Manager 100k-160k monthly (all levels, contract-weighted) sits below the senior band as expected for a mixed-level figure. Excludes 13th month/bonus."
     },
@@ -4668,7 +4668,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Head of IT Project Management: 3,000/3,900/4,800 PHP'000 annual = 250k/325k/400k monthly (min/avg/max). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4684,7 +4684,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, PMO Director: 3,600/4,600/5,600 PHP'000 annual = 300k/383k/467k monthly (min/avg/max). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4700,8 +4700,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Sales Manager: 980/1,240/1,350 PHP'000 annual = 82k/103k/113k monthly, base salary only, excludes commissions (total OTE materially higher). RW PH Sales Manager 100k-180k monthly base corroborates/overlaps. PSA 2022 OWS reference points: Commercial Sales Representatives mean 20,972; Insurance Representatives 31,469 (all levels). Excludes 13th month/bonus."
     },
@@ -4717,8 +4717,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Sales Director: 5,200/6,500/7,800 PHP'000 annual = 433k/542k/650k monthly (base only; 200M-USD+ companies). RW PH Sales Director 250k-450k monthly is lower (SME/contract skew); divergence noted, quote MP for large MNCs. Excludes commissions, 13th month, bonus."
     },
@@ -4734,8 +4734,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, Marketing Manager: 1,930/2,150/2,360 PHP'000 annual = 161k/179k/197k monthly. RW PH Marketing Manager 120k-190k monthly overlaps the band. PSA 2022 OWS Advertising and Marketing Professionals mean 33,951 (real-estate industry, all levels). Excludes 13th month/bonus."
     },
@@ -4751,7 +4751,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Marketing Director: 5,850/6,500/7,800 PHP'000 annual = 488k/542k/650k monthly (min/avg/max; Head of Marketing 5,620/6,240/6,860 is the adjacent row). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4767,8 +4767,8 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey"
+        "https://www.michaelpage.com.ph/salary-guide",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Michael Page PH 2025, HR Manager: 1,500/2,000/2,500 PHP'000 annual = 125k/167k/208k monthly (min/avg/max). RW PH HR Manager 120k-180k monthly overlaps. PSA 2022 OWS Personnel and Careers Professionals mean 21,081 (education industry, all levels). Excludes 13th month/bonus."
     },
@@ -4784,7 +4784,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Head of Human Resources: 3,000/4,000/8,000 PHP'000 annual = 250k/333k/667k monthly. Unusually wide max: the top of range is large-MNC HRD scope; quote the mid value with caution. No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4800,7 +4800,7 @@
       "quality": "Medium",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines",
+        "https://www.michaelpage.com.ph/salary-guide",
         "https://psa.gov.ph/system/files/lsredsd/2-%28ons-cleared%29-2022%20OWS%20Tables-signed.pdf"
       ],
       "note": "Michael Page PH 2025, Senior Electrical Engineer: 910/1,010/1,110 PHP'000 annual = 76k/84k/93k monthly. Official anchor: PSA 2022 OWS Electrical Engineers all-level mean 40,735 and Civil Engineers 39,267/month (architectural and engineering consultancy, 20+ worker establishments), consistent with a senior premium over the all-level mean. Excludes 13th month/bonus."
@@ -4817,7 +4817,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Engineering Manager: 1,730/1,930/2,120 PHP'000 annual = 144k/161k/177k monthly (min/avg/max). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4833,7 +4833,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/827448647/2025-Philippines-Salary-Guide-Michael-Page-Philippines"
+        "https://www.michaelpage.com.ph/salary-guide"
       ],
       "note": "Single recruiter source: Michael Page PH 2025, Engineering Director: 4,080/4,540/4,990 PHP'000 annual = 340k/378k/416k monthly (min/avg/max). No allowed second source at this level. Excludes 13th month/bonus."
     },
@@ -4866,7 +4866,7 @@
       "quality": "Low",
       "lastReviewed": "2026-08-31",
       "sources": [
-        "https://www.scribd.com/document/623182450/Robert-Walters-Salary-Survey",
+        "https://www.robertwalters.com.ph/our-services/salary-survey.html",
         "https://www.robertwalters.com.ph/our-services/salary-survey.html"
       ],
       "note": "Single recruiter source: Robert Walters PH salary survey, General Manager (permanent): 250k-450k PHP monthly; p50 is the midpoint of the published min-max (RW publishes ranges only, no median). No allowed second source at this level. Excludes 13th month/bonus."

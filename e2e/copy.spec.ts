@@ -34,14 +34,14 @@ test.describe('copy and footer', () => {
     await expect(page).toHaveTitle('ExpatRate: Know what to quote');
   });
 
-  test('saved indicator explains where, and bands name their level', async ({ page }) => {
+  test('saved indicator explains where, and bands are plain ranges', async ({ page }) => {
     await page.goto('/');
     await page.waitForSelector('#stepIndicator', { state: 'visible' });
     await expect(page.locator('#autosave')).toContainText('browser');
     const option = page.locator('#experienceBand option[value="15+"]');
-    await expect(option).toHaveText('15+ years (executive band)');
+    await expect(option).toHaveText('15+ years');
     await expect(page.locator('#experienceBand option[value="6-9"]')).toHaveText(
-      '6-9 years (lead band)',
+      '6-9 years',
     );
   });
 

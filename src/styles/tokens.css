@@ -137,6 +137,9 @@
   --text-display-heading: clamp(1.75rem, 3.5vw, 2.5rem);
   --text-display-heading--line-height: 1.15;
   --text-display-heading--font-weight: 700;
+  --text-display-hero: clamp(2.25rem, 5vw, 3.25rem);
+  --text-display-hero--line-height: 1.05;
+  --text-display-hero--font-weight: 700;
   --text-h2: 1.5rem;
   --text-h2--line-height: 1.25;
   --text-h2--font-weight: 650;

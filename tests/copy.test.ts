@@ -25,14 +25,14 @@ test('resume upload is marked optional in its visible title and hidden label', (
   }
 });
 
-test('band option labels name the engine level that bandToLevel assigns', () => {
+test('band option labels are plain ranges; the step help carries the level mapping', () => {
   for (const loc of locales) {
     const words = dict(loc).seo.levelWord;
     const bands = dict(loc).options.bands;
     for (const band of BANDS) {
       const level = bandToLevel(band);
       expect(level, band).not.toBeNull();
-      expect(bands[band], `${loc} ${band}`).toContain(words[level as string]);
+      expect(bands[band], `${loc} ${band}`).not.toContain(words[level as string]);
     }
   }
 });
@@ -143,5 +143,50 @@ test('the home trust line states the data dates in every locale', () => {
     for (const param of ['{benchmarks}', '{ppp}', '{fx}', '{allowances}']) {
       expect(dict(loc).home.trustData, `${loc} ${param}`).toContain(param);
     }
+  }
+});
+
+test('experience band labels carry no level jargon in any locale', () => {
+  const banned = { en: 'band', ar: 'نطاق', hi: 'बैंड' } as const;
+  for (const loc of locales) {
+    for (const value of Object.values(dict(loc).options.bands as Record<string, string>)) {
+      expect(value, loc).not.toContain(banned[loc]);
+    }
+  }
+});
+
+test('the role step help explains the band-to-level mapping in every locale', () => {
+  const markers = { en: 'senior', ar: 'خبير', hi: 'वरिष्ठ' } as const;
+  for (const loc of locales) {
+    expect(dict(loc).steps.role.help, loc).toMatch(new RegExp(markers[loc]));
+  }
+});
+
+test('entry mode, mixed currencies, and shared views get their own copy in every locale', () => {
+  for (const loc of locales) {
+    const r = dict(loc).results;
+    expect(typeof r.insufficientEntryBody, `${loc} insufficientEntryBody`).toBe('string');
+    expect(typeof r.floorCurrencyNote, `${loc} floorCurrencyNote`).toBe('string');
+    expect(typeof r.sharedRatesNote, `${loc} sharedRatesNote`).toBe('string');
+    expect(typeof dict(loc).home.skip, `${loc} skip`).toBe('string');
+  }
+});
+
+test('the meta description claims your currency, not any currency', () => {
+  expect(dict('en').home.description).toContain('in your currency');
+  expect(dict('ar').home.description).toContain('بعملتك');
+  expect(dict('hi').home.description).toContain('आपकी मुद्रा');
+});
+
+test('English user copy says band, not a range-band mix', () => {
+  expect(dict('en').results.range).toContain('band');
+  expect(dict('en').home.sub).toContain('band');
+  expect(dict('en').home.sub).not.toContain('range');
+});
+
+test('no locale hardcodes the role family count', () => {
+  for (const loc of locales) {
+    expect(JSON.stringify(dict(loc)), loc).not.toContain('16 role');
+    expect(dict(loc).home.trust2, loc).toContain('{f}');
   }
 });

@@ -464,10 +464,32 @@ test('a shared link strips its parameter and leaves the visitor draft alone', as
   await page.goto(`/?w=${token}`);
   await expect(page.locator('#resultsHeading')).toBeVisible();
   await expect(page).toHaveURL(/\/[^?]*$/);
+  await expect(page.locator('#sharedNote')).toBeVisible();
   const stored = await page.evaluate(() => localStorage.getItem('expatrate.wizard.v1'));
   expect(stored).toContain('design');
   await page.click('#startOver');
   await page.reload();
   await page.waitForSelector('#stepIndicator', { state: 'visible' });
   await expect(page.locator('#roleFamily')).toHaveValue('design');
+});
+
+test('entry mode to a floor-only country explains itself', async ({ page }) => {
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'it-executive');
+  await page.selectOption('#experienceBand', '15+');
+  await page.click('#nextBtn');
+  await page.check('#entryMode');
+  await page.click('#nextBtn');
+  await page.selectOption('#targetCountry', 'PAK');
+  await page.click('#nextBtn');
+  await page.click('#skipFamily');
+  await page.click('#seeQuote');
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+  await expect(page.locator('#insufficientCard')).toContainText('purchasing-power floor');
+});
+
+test('Share is the primary action in the results footer', async ({ page }) => {
+  await fillHappyPathToResults(page);
+  await expect(page.locator('#shareBtn')).toHaveClass(/wz-btn-primary/);
+  await expect(page.locator('#startOver')).toHaveClass(/wz-btn-secondary/);
 });

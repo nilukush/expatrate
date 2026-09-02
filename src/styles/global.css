@@ -60,7 +60,7 @@
   color: var(--primary-foreground);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: var(--text-body-lg);
   line-height: 1;
 }
 
@@ -96,7 +96,7 @@
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-size: var(--text-display-hero);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -267,4 +267,21 @@ html[lang='hi'] body {
   .wz-grid-results {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  inset-inline-start: 1rem;
+  inset-block-start: 1rem;
+  z-index: 100;
 }

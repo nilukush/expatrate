@@ -526,7 +526,7 @@
       }
     ],
     "sourceUrl": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
-    "note": "Resident rates for YA 2027 (income earned in calendar 2026); the 0-24% schedule has applied since YA 2024 with no change announced through 2026. Relief shown is the 1,000 earned income relief (under 55); CPF is a statutory retirement-savings contribution to the worker's own accounts for citizens/PRs only. Totals (income tax + CPF / gross): 70,000 = 2,580 + 14,000 = 16,580 (23.69%); 120,000 = 7,835 + 20,400 = 28,235 (23.53%); 220,000 = 24,760 + 20,400 = 45,160 (20.53%) - an expat on an EP would pay only the income tax (3.7% / 6.5% / 11.3% respectively).",
+    "note": "Resident rates for YA 2027 (income earned in calendar 2026); the 0-24% schedule has applied since YA 2024 with no change announced through 2026. Relief shown is the 1,000 earned income relief (under 55); CPF is a statutory retirement-savings contribution to the worker's own accounts for citizens/PRs only. Totals (income tax + CPF / gross): 70,000 = 2,580 + 14,000 = 16,580 (23.69%); 120,000 = 7,835 + 20,400 = 28,235 (23.53%); 220,000 = 24,760 + 20,400 = 45,160 (20.53%) - an expat on an EP would pay only the income tax (3.7% / 6.5% / 11.3% respectively). representativeCheck includes employee CPF savings; the production deduction excludes them.",
     "lastReviewed": "2026-08-31"
   },
   {
@@ -1202,7 +1202,7 @@
       }
     ],
     "sourceUrl": "https://taxsummaries.pwc.com/malaysia/individual/taxes-on-personal-income",
-    "note": "YA 2026 resident scale (unchanged from YA 2025; top 30% above RM2m). EPF is SAVINGS, not a tax: the engine should exclude it from deductions (it is employee-owned). Statutory employee EPF is 11% for citizens and permanent residents (9% by election above RM5,000/month); non-citizen non-PR employees have a 2% statutory rate. Computed effectives below INCLUDE the 11% EPF.",
+    "note": "YA 2026 resident scale (unchanged from YA 2025; top 30% above RM2m). EPF is SAVINGS, not a tax: the engine should exclude it from deductions (it is employee-owned). Statutory employee EPF is 11% for citizens and permanent residents (9% by election above RM5,000/month); non-citizen non-PR employees have a 2% statutory rate. Computed effectives below INCLUDE the 11% EPF. representativeCheck includes employee EPF savings; the production deduction excludes them.",
     "lastReviewed": "2026-08-31"
   },
   {

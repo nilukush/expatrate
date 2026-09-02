@@ -111,7 +111,8 @@ export function detailPages(): SeoDetailPage[] {
     const levels = [...cells].sort(
       (a, b) => LEVEL_ORDER.indexOf(a.level as (typeof LEVEL_ORDER)[number]) - LEVEL_ORDER.indexOf(b.level as (typeof LEVEL_ORDER)[number]),
     );
-    const lead = levels[0];
+    // The answer leads with the most junior band readers aim for first: senior.
+    const lead = levels[levels.length - 1] ?? levels[0];
     const medianAnnual = toAnnual(lead, lead.p50);
     const lowAnnual = lead.p25 > 0 ? toAnnual(lead, lead.p25) : medianAnnual;
     const highAnnual = lead.p75 > 0 ? toAnnual(lead, lead.p75) : medianAnnual;

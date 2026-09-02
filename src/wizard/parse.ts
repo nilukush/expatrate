@@ -129,7 +129,7 @@ export function suggestYears(text: string): ExperienceBand | '' {
   const bareYears = /(?:^|\s)(\d{1,2})\s+years?(?:\s|,|\.)/.exec(lower);
   if (bareYears) {
     const value = Number.parseInt(bareYears[1], 10);
-    if (EXPERIENCE_BANDS.some(() => value >= 0 && value <= 60)) return bandFromYears(value);
+    if (value >= 0 && value <= 60) return bandFromYears(value);
   }
   return '';
 }

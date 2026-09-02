@@ -43,7 +43,8 @@ const crumbs = [
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
-    <main class="page-shell">
+    <div class="page-shell">
+      <a class="skip-link" href="#main">{t('home.skip')}</a>
       <header class="site-header">
         <a class="brand" href="/">
           <span class="brand-mark" aria-hidden="true">%</span>
@@ -51,6 +52,7 @@ const crumbs = [
         </a>
         <p class="site-header-tag">Free · No sign-up · Runs in your browser</p>
       </header>
+    <main id="main">
 
       <article class="seo-shell">
         <nav class="seo-breadcrumb" aria-label="Breadcrumb">
@@ -102,10 +104,11 @@ const crumbs = [
         </p>
       </article>
 
-      <footer class="site-footer">
+      </main>
+    <footer class="site-footer">
         <p>ExpatRate. Free, no sign-up, resumes never leave your device.</p>
         <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

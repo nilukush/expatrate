@@ -133,3 +133,11 @@ it('alternateLinks builds the reciprocal four-way set for any path', () => {
     { hreflang: 'x-default', href: 'https://expatrate.pages.dev/salaries/australia/' },
   ]);
 });
+
+it('the detail answer leads with the most senior level available', () => {
+  const withSenior = detailPages().find((p) =>
+    (p.levels as unknown as Array<{ level: string }>).some((c) => c.level === 'senior'),
+  );
+  expect(withSenior).toBeDefined();
+  expect(String(withSenior!.answer.level).toLowerCase()).toBe('senior');
+});

@@ -40,7 +40,9 @@ const altPath = (l: string) => (l === 'en' ? '' : `/${l}`);
     <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
-    <main class="page-shell">
+    <div class="page-shell">
+      <a class="skip-link" href="#main">{t('home.skip')}</a>
+    <main id="main">
       <article class="seo-shell">
         <p class="seo-breadcrumb"><a href={`${altPath(locale)}/`}>ExpatRate</a></p>
         <h1 class="seo-h1">{t('privacy.title')}</h1>
@@ -52,10 +54,11 @@ const altPath = (l: string) => (l === 'en' ? '' : `/${l}`);
         <h2 class="seo-h2">{t('privacy.externalTitle')}</h2>
         <p class="seo-answer">{t('privacy.externalBody')}</p>
       </article>
-      <footer class="site-footer">
+      </main>
+    <footer class="site-footer">
         <p>{t('home.footerAdvice')}</p>
         <p>{t('home.footerRights', { year: new Date().getFullYear() })}</p>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

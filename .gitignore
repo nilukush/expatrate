@@ -30,3 +30,6 @@ Thumbs.db
 
 # Local tooling artifacts
 .playwright-mcp/
+
+# Local planning and research documents (kept local, never committed)
+/docs/

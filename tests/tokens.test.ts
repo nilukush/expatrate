@@ -57,6 +57,26 @@ test('typography, radius, and font tokens are emitted', () => {
   expect(css).toContain('--radius-xl:');
 });
 
+test('font stacks name only loaded faces and cover Arabic and Devanagari in both roles', () => {
+  const css = tokensCss();
+  const base = css.match(/--font-base:([^;]+);/)?.[1] ?? '';
+  const display = css.match(/--font-display:([^;]+);/)?.[1] ?? '';
+  for (const stack of [base, display]) {
+    expect(stack, `stack ${stack} must load the Arabic face`).toContain("'Noto Sans Arabic'");
+    expect(stack, `stack ${stack} must load the Devanagari face`).toContain("'Noto Sans Devanagari'");
+    expect(stack).not.toContain('Noto Sans Arabic UI');
+  }
+  // Every family a stack names must actually be declared by fonts.css.
+  const fonts = readFileSync(`${root}src/styles/fonts.css`, 'utf8');
+  const loaded = new Set<string>(['Inter']);
+  for (const m of fonts.matchAll(/font-family:\s*'([^']+)'/g)) loaded.add(m[1]);
+  for (const stack of [base, display]) {
+    for (const m of stack.matchAll(/'([^']+)'/g)) {
+      expect(loaded.has(m[1]), `family ${m[1]} is named in a stack but never loaded`).toBe(true);
+    }
+  }
+});
+
 test('stylelint rejects raw hex colors and physical direction properties', () => {
   expect(() => run('pnpm exec stylelint tests/fixtures/bad.css')).toThrow();
 });

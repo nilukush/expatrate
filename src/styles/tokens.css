@@ -127,8 +127,8 @@
 }
 
 @theme {
-  --font-base: 'Inter', 'Noto Sans Arabic UI', 'Noto Sans Devanagari', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-base: 'Inter', 'Noto Sans Arabic', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Noto Sans Arabic', 'Noto Sans Devanagari', 'Inter', system-ui, sans-serif;
 
   --text-display-numeral: clamp(2.5rem, 6vw, 4.5rem);
   --text-display-numeral--line-height: 1.05;

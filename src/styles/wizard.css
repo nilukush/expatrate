@@ -14,9 +14,7 @@
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  box-shadow:
-    0 1px 2px rgb(0 0 0 / 4%),
-    0 12px 32px rgb(15 23 42 / 7%);
+  box-shadow: var(--shadow-hero);
   padding: clamp(1.5rem, 4vw, 2.25rem);
 }
 
@@ -534,7 +532,7 @@ textarea.wz-input {
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   margin-block-end: 1rem;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 3%);
+  box-shadow: var(--shadow-1);
 }
 
 .wz-card h3 {
@@ -551,7 +549,7 @@ textarea.wz-input {
   color: var(--hero-foreground);
   border-radius: var(--radius-xl);
   padding: clamp(1.75rem, 4vw, 2.25rem);
-  box-shadow: 0 12px 32px rgb(4 47 46 / 25%);
+  box-shadow: var(--shadow-hero-raised);
 }
 
 .wz-card-warning {
@@ -680,9 +678,15 @@ textarea.wz-input {
 }
 
 .wz-range-tick-prior {
-  inset-block: -0.4375rem;
-  inline-size: 0.3125rem;
+  /* Shape, not just color, separates the prior-pay marker: a diamond. */
+  inset-block: auto;
+  inset-block-start: 50%;
+  block-size: 0.4375rem;
+  inline-size: 0.4375rem;
+  margin-block-start: -0.2188rem;
+  border-radius: var(--radius-sm);
   background-color: var(--marker-prior);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .wz-range-legend {

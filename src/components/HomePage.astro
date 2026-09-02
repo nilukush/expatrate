@@ -3,6 +3,9 @@ import '../styles/global.css';
 import '../styles/wizard.css';
 import countries from '../data/countries.json';
 import benchmarks from '../data/benchmarks.json';
+import ppp from '../data/ppp.json';
+import fxSnapshot from '../data/fx-snapshot.json';
+import hardshipPosts from '../data/hardship-posts.json';
 import { t, setLocale, type Locale } from '../i18n';
 
 interface Props {
@@ -19,6 +22,15 @@ const benchmarkCountries = new Set(
     .filter((e) => e.status !== 'insufficient_data')
     .map((e) => e.country),
 ).size;
+const dataDates = {
+  benchmarks: String(benchmarks.meta.lastReviewed),
+  ppp: String(ppp.meta.retrievedAt),
+  fx: String(fxSnapshot.asOf),
+  allowances: hardshipPosts.reduce(
+    (max: string, post: { effectiveDate: string }) => (post.effectiveDate > max ? post.effectiveDate : max),
+    '1970-01-01',
+  ),
+};
 const year = new Date().getFullYear();
 const fontPreload =
   locale === 'ar'
@@ -91,6 +103,10 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 0 2 2h13"/><path d="M9 7h6"/></svg>
             {t('home.trust3')}
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            {t('home.trustData', dataDates)}
           </li>
         </ul>
       </section>

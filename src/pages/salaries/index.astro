@@ -2,7 +2,7 @@
 import '../../styles/global.css';
 import '../../styles/wizard.css';
 import '../../styles/seo.css';
-import { seoCountries, countryHubUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL } from '../../lib/seo';
+import { seoCountries, countryHubUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
 import { t } from '../../i18n';
 
 const countries = seoCountries();
@@ -23,6 +23,7 @@ const crumbs = [
     <title>Salary benchmarks by country</title>
     <meta name="description" content={`Verified salary benchmarks for ${countries.length} countries, every number cited. For every other country, a purchasing-power floor.`} />
     <link rel="canonical" href={`${SITE_URL}/salaries/`} />
+    {alternateLinks('/salaries/').map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
     <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />

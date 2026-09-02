@@ -42,6 +42,7 @@
   --hero-track: rgb(255 255 255 / 16%);
 }
 
+/* Dark set: planned, not shipped; no toggle or media query applies it yet. */
 .dark {
   --background: #0C1220;
   --foreground: #F1F5F9;
@@ -160,6 +161,11 @@
   --radius-lg: 10px;
   --radius-xl: 16px;
   --radius-full: 9999px;
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 5%), 0 4px 12px rgb(0 0 0 / 6%);
+  --shadow-2: 0 4px 8px rgb(0 0 0 / 8%), 0 12px 28px rgb(0 0 0 / 12%);
+  --shadow-hero: 0 1px 2px rgb(0 0 0 / 4%), 0 12px 32px rgb(15 23 42 / 7%);
+  --shadow-hero-raised: 0 12px 32px rgb(4 47 46 / 25%);
 }
 
 /* Primitive reference palette. Not exposed as utilities; components use semantic tokens only. */

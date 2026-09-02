@@ -291,3 +291,14 @@ export function allSiteUrls(): string[] {
 }
 
 export { localName };
+
+/** Reciprocal hreflang set for any locale-neutral path (leading slash). */
+export function alternateLinks(path: string): Array<{ hreflang: string; href: string }> {
+  const clean = path.startsWith('/') ? path : `/${path}`;
+  return [
+    { hreflang: 'en', href: `${SITE_URL}${clean}` },
+    { hreflang: 'ar', href: `${SITE_URL}/ar${clean}` },
+    { hreflang: 'hi', href: `${SITE_URL}/hi${clean}` },
+    { hreflang: 'x-default', href: `${SITE_URL}${clean}` },
+  ];
+}

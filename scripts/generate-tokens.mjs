@@ -41,12 +41,17 @@ const radiusLines = Object.entries(tokens.radius.scale).map(([key, spec]) => {
   return `  --radius-${key}: ${match ? `${match[1]}px` : '9999px'};`;
 });
 
+const shadowLines = Object.entries(tokens.elevation?.shadows ?? {}).map(
+  ([key, spec]) => `  --shadow-${key}: ${spec};`,
+);
+
 const css = `/* Generated from design-system/tokens.json by scripts/generate-tokens.mjs. Do not edit by hand. */
 
 :root {
 ${themeVarLines(tokens.color.semantic.light).join('\n')}
 }
 
+/* Dark set: planned, not shipped; no toggle or media query applies it yet. */
 .dark {
 ${themeVarLines(tokens.color.semantic.dark).join('\n')}
 }
@@ -61,6 +66,8 @@ ${fontLines.join('\n')}
 ${textLines.join('\n')}
 
 ${radiusLines.join('\n')}
+
+${shadowLines.join('\n')}
 }
 
 /* Primitive reference palette. Not exposed as utilities; components use semantic tokens only. */

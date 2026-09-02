@@ -120,3 +120,28 @@ test('the English methodology page discloses the 20 percent default tax gross-up
   expect(page).toMatch(/20 percent|20%/);
   expect(page).toMatch(/default/i);
 });
+
+test('every locale carries the full localized methodology, including the 20 percent default', () => {
+  const markers = {
+    en: { market: /P25/i, floor: /PPP/i, tax: /20 percent/ },
+    ar: { market: /المرتبين 25/, floor: /البنك الدولي/, tax: /20 بالمئة/ },
+    hi: { market: /P25/, floor: /PPP/, tax: /20 प्रतिशत/ },
+  } as const;
+  for (const loc of locales) {
+    const seo = dict(loc).seo;
+    expect(typeof seo.methodologyMarket, loc).toBe('string');
+    expect(seo.methodologyMarket, loc).toMatch(markers[loc].market);
+    expect(seo.methodologyFloor, loc).toMatch(markers[loc].floor);
+    expect(seo.methodologyTax, loc).toMatch(markers[loc].tax);
+  }
+});
+
+test('the home trust line states the data dates in every locale', () => {
+  const markers = { en: /Data as of/i, ar: /البيانات حتى/, hi: /आँकड़े अद्यतन/ } as const;
+  for (const loc of locales) {
+    expect(dict(loc).home.trustData, loc).toMatch(new RegExp(markers[loc] as RegExp));
+    for (const param of ['{benchmarks}', '{ppp}', '{fx}', '{allowances}']) {
+      expect(dict(loc).home.trustData, `${loc} ${param}`).toContain(param);
+    }
+  }
+});

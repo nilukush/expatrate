@@ -15,3 +15,9 @@ test.describe('smoke', () => {
     expect(results.violations).toEqual([]);
   });
 });
+
+test('the home trust strip states the data dates', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.hero-trust')).toContainText('Data as of');
+  await expect(page.locator('.hero-trust')).toContainText('2026');
+});

@@ -100,3 +100,15 @@ test('the EN switcher on the Arabic methodology page stays on methodology', asyn
   await page.click('.lang-switch:has-text("EN") >> text=EN');
   await expect(page).toHaveURL(/\/methodology\/$/);
 });
+
+test('EN programmatic pages emit the reciprocal hreflang set', async ({ page }) => {
+  await page.goto('/salaries/australia/');
+  const alts = await page.$$eval('link[rel=alternate]', (nodes) =>
+    nodes.map((n) => ({ hreflang: n.getAttribute('hreflang'), href: n.getAttribute('href') })));
+  expect(alts).toEqual(expect.arrayContaining([
+    { hreflang: 'en', href: expect.stringContaining('/salaries/australia/') },
+    { hreflang: 'ar', href: expect.stringContaining('/ar/salaries/australia/') },
+    { hreflang: 'hi', href: expect.stringContaining('/hi/salaries/australia/') },
+    { hreflang: 'x-default', href: expect.stringContaining('/salaries/australia/') },
+  ]));
+});

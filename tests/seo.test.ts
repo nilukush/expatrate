@@ -9,6 +9,7 @@ import {
   organizationLd,
   datasetLd,
   sitemapXml,
+  alternateLinks,
 } from '../src/lib/seo';
 import benchmarks from '../src/data/benchmarks.json';
 
@@ -121,4 +122,14 @@ describe('sitemap', () => {
     const enToAr = xml.match(new RegExp(`hreflang="en" href="${SITE_URL}/ar/`, 'g'));
     expect(enToAr).toBeNull();
   });
+});
+
+it('alternateLinks builds the reciprocal four-way set for any path', () => {
+  const links = alternateLinks('/salaries/australia/');
+  expect(links).toEqual([
+    { hreflang: 'en', href: 'https://expatrate.pages.dev/salaries/australia/' },
+    { hreflang: 'ar', href: 'https://expatrate.pages.dev/ar/salaries/australia/' },
+    { hreflang: 'hi', href: 'https://expatrate.pages.dev/hi/salaries/australia/' },
+    { hreflang: 'x-default', href: 'https://expatrate.pages.dev/salaries/australia/' },
+  ]);
 });

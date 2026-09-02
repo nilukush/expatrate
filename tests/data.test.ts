@@ -86,6 +86,18 @@ test('tax: shape valid, UK executive tier verified at 0.417, zero-tax countries 
   expect(ukExec.effectiveDeduction).toBeCloseTo(0.417, 3);
   expect(ukExec.quality).toBe('High');
   expect(byCountry.get('ARE').tiers[0].effectiveDeduction).toBe(0);
+  // The rest of the GCC levies no personal income tax on salaries (PwC 2026).
+  // Bahrain folds in the 1 percent SIO share expatriate employees pay.
+  for (const code of ['SAU', 'QAT', 'OMN', 'KWT'] as const) {
+    const gcc = byCountry.get(code) as { tiers: Array<{ label: string; effectiveDeduction: number }> };
+    expect(gcc, `tax row for ${code}`).toBeDefined();
+    expect(gcc.tiers[0].label).toBe('any-income');
+    expect(gcc.tiers[0].effectiveDeduction).toBe(0);
+  }
+  const bhr = byCountry.get('BHR') as { tiers: Array<{ label: string; effectiveDeduction: number }> };
+  expect(bhr, 'tax row for BHR').toBeDefined();
+  expect(bhr.tiers[0].label).toBe('any-income');
+  expect(bhr.tiers[0].effectiveDeduction).toBeCloseTo(0.01, 4);
   for (const code of TIER_1) {
     expect(byCountry.has(code)).toBe(true);
   }

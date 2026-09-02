@@ -131,7 +131,7 @@
     "currency": "BHD",
     "region": "GCC",
     "tier": 3,
-    "taxRegime": "",
+    "taxRegime": "zero-personal",
     "packageConvention": ""
   },
   {
@@ -905,7 +905,7 @@
     "currency": "KWD",
     "region": "GCC",
     "tier": 3,
-    "taxRegime": "",
+    "taxRegime": "zero-personal",
     "packageConvention": ""
   },
   {
@@ -1265,7 +1265,7 @@
     "currency": "OMR",
     "region": "GCC",
     "tier": 3,
-    "taxRegime": "",
+    "taxRegime": "zero-personal",
     "packageConvention": ""
   },
   {

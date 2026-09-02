@@ -482,5 +482,41 @@
         "sourceUrl": "https://www.elcontribuyente.mx/tablas-isr/2026/"
       }
     ]
+  },
+  {
+    "iso3": "KWT",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0,
+        "quality": "High",
+        "note": "0% personal income tax in Kuwait (PwC, reviewed 22 July 2026). Social security applies to Kuwaiti nationals only; there are no social security obligations for expatriate workers, whose end-of-service indemnity is employer-paid.",
+        "sourceUrl": "https://taxsummaries.pwc.com/kuwait/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "OMN",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0,
+        "quality": "High",
+        "note": "0% personal income tax in Oman through 2027; a 5% rate above OMR 42,000 of annual income takes effect 1 January 2028 (PwC 2026). Social insurance applies to Omani nationals only (employee share 8%), not to expatriate employees.",
+        "sourceUrl": "https://taxsummaries.pwc.com/oman/individual/taxes-on-personal-income"
+      }
+    ]
+  },
+  {
+    "iso3": "BHR",
+    "tiers": [
+      {
+        "label": "any-income",
+        "effectiveDeduction": 0.01,
+        "quality": "High",
+        "note": "0% personal income tax in Bahrain (PwC 2026). Expatriate employees pay their 1% Social Insurance Organisation share (employer pays 3%); the 8% Bahraini-national employee share is out of scope for this expat-focused tier.",
+        "sourceUrl": "https://taxsummaries.pwc.com/bahrain/individual/taxes-on-personal-income"
+      }
+    ]
   }
 ]

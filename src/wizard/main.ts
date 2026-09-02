@@ -930,19 +930,25 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
 
     if (result.floor) {
-      const floorAnnual = result.floor.annualGross;
-      const ceilingAnnual = quote ? quote.stretchMonthly * 12 : null;
-      const floorAboveMarket = ceilingAnnual !== null && floorAnnual > ceilingAnnual;
+      // The engine already compared the floor with the market band in the
+      // anchor currency (Lebanon quotes USD while the floor is LBP); reuse
+      // its verdict instead of re-deriving a mixed-currency comparison here.
+      const fam = result.warnings.find((w) => w.key === 'floorAboveMarket');
+      const amounts = fam?.params as
+        | { floor: { amount: number; currency: string }; ceiling: { amount: number; currency: string } }
+        | undefined;
       const onTopLine = result.floor.derivation.onTopShare > 0
         ? `<p>${escapeHtml(t('results.floorMathOnTop', { pct: Math.round(result.floor.derivation.onTopShare * 100) }))}</p>`
         : '';
       const mathWithOnTop = floorMath(result.floor).replace('</div>', `${onTopLine}</div>`);
-      if (floorAboveMarket) {
-        const cut = Math.round((1 - (ceilingAnnual as number) / floorAnnual) * 100);
+      if (amounts) {
+        const floorAnnual = amounts.floor.amount * 12;
+        const ceilingAnnual = amounts.ceiling.amount * 12;
+        const cut = Math.round((1 - ceilingAnnual / floorAnnual) * 100);
         sections.push(`<div class="wz-card wz-card-warning"><h3>${escapeHtml(t('results.floorAboveTitle'))}</h3><p id="floorLine">${escapeHtml(fmtNumbersIn(t('results.floorAboveBody', {
           pct: cut,
-          ceiling: fmt(ceilingAnnual as number, result.floor.currency),
-          floor: fmt(floorAnnual, result.floor.currency),
+          ceiling: fmt(ceilingAnnual, amounts.ceiling.currency),
+          floor: fmt(floorAnnual, amounts.floor.currency),
         })))}</p>${mathWithOnTop}</div>`);
       } else {
         sections.push(`<div class="wz-card"><h3>${escapeHtml(t('results.floorTitle'))}</h3><p id="floorLine">${escapeHtml(t('results.floorBody', { amount: fmt(result.floor.monthlyGross, result.floor.currency) }))}</p>${mathWithOnTop}</div>`);

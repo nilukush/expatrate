@@ -67,6 +67,13 @@ function fromUsd(amountUsd: number, currency: string, fx: FxRates): number {
   return amountUsd * rate;
 }
 
+function convertOrUndefined(amount: number, from: string, to: string, fx: FxRates): number | undefined {
+  const fromRate = fx.rates[from];
+  const toRate = fx.rates[to];
+  if (fromRate === undefined || toRate === undefined) return undefined;
+  return (amount / fromRate) * toRate;
+}
+
 function effectiveDeduction(
   datasets: Datasets,
   iso3: string,
@@ -323,19 +330,28 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
 
   let quote: EngineResult['quote'] = null;
   if (anchor) {
-    const floorAboveMarket = floor !== null && floor.monthlyGross > anchor.p75Monthly;
+    // Market benchmarks quote the market currency (USD rows for Lebanon and
+    // Panama) while the floor is denominated in the target's local currency.
+    // Every floor-to-band comparison happens in the anchor currency so a
+    // mixed-quote target cannot corrupt the band.
+    const floorMonthlyInAnchor = floor
+      ? floor.currency === anchor.currency
+        ? floor.monthlyGross
+        : convertOrUndefined(floor.monthlyGross, floor.currency, anchor.currency, fx)
+      : undefined;
+    const floorAboveMarket = floorMonthlyInAnchor !== undefined && floorMonthlyInAnchor > anchor.p75Monthly;
     if (floorAboveMarket) {
       warnings.push({
         key: 'floorAboveMarket',
         params: {
-          floor: { amount: Math.round(floor.monthlyGross), currency: floor.currency },
+          floor: { amount: Math.round(floorMonthlyInAnchor), currency: anchor.currency },
           ceiling: { amount: Math.round(anchor.p75Monthly), currency: anchor.currency },
         },
       });
     }
     const lowMonthly = floorAboveMarket
       ? anchor.p25Monthly
-      : Math.max(anchor.p25Monthly, floor ? floor.monthlyGross : 0);
+      : Math.max(anchor.p25Monthly, floorMonthlyInAnchor ?? 0);
     const targetMonthly = Math.min(
       Math.max(anchor.targetMonthly, lowMonthly),
       anchor.p75Monthly,
@@ -457,8 +473,15 @@ export function evaluateOffer(offer: SalaryInput, result: EngineResult, fx: FxRa
     : monthly >= p75
       ? 75
       : 25;
-  const floorGapPct = result.floor
-    ? Math.round(((monthly - result.floor.monthlyGross) / result.floor.monthlyGross) * 100)
+  // The floor is denominated in the target currency (LBP for Lebanon) while
+  // the band and this offer are in the quote currency; convert before the gap.
+  const floorMonthly = result.floor
+    ? result.floor.currency === quote.currency
+      ? result.floor.monthlyGross
+      : convertOrUndefined(result.floor.monthlyGross, result.floor.currency, quote.currency, fx)
+    : undefined;
+  const floorGapPct = floorMonthly !== undefined && floorMonthly > 0
+    ? Math.round(((monthly - floorMonthly) / floorMonthly) * 100)
     : null;
   return { bandPosition, percentileInBand, floorGapPct, monthlyGrossInQuoteCurrency: monthly };
 }

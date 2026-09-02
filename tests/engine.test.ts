@@ -405,6 +405,97 @@ test('origin tax uses the bracket table when available', () => {
   expect(result.status).not.toBe('insufficient_data');
 });
 
+describe('market-currency anchors (Lebanon rows quote USD while the floor is LBP)', () => {
+  const usaToLbn: EngineInputs = {
+    roleFamily: 'general-management',
+    level: 'executive',
+    originCountry: 'USA',
+    currentSalary: { amount: 120000, currency: 'USD', basis: 'annual', gross: true },
+    targetCountry: 'LBN',
+    workArrangement: 'onsite',
+    employmentType: 'full-time',
+  };
+
+  test('the floor is converted into the anchor currency before it meets the band', () => {
+    const result = calculate(usaToLbn, { datasets, fx });
+    expect(result.status).toBe('ok');
+    expect(result.anchor!.currency).toBe('USD');
+    expect(result.floor!.currency).toBe('LBP');
+    // 120k USD gross nets near 90k; the PPP transfer lands the floor near
+    // USD 5.5k per month, inside the 4,000 to 8,000 general-management band.
+    // Compared raw in LBP the floor dwarfed every USD figure and the
+    // floor-above-market warning fired on essentially every Lebanon run.
+    expect(result.warnings.some((w) => w.key === 'floorAboveMarket')).toBe(false);
+    expect(result.quote!.lowMonthly).toBeGreaterThan(result.anchor!.p25Monthly);
+    expect(result.quote!.lowMonthly).toBeLessThan(result.anchor!.p75Monthly);
+    // The lifted low end IS the converted floor, not an independent number.
+    const lbp = fx.rates.LBP;
+    expect(
+      Math.abs(result.quote!.lowMonthly * lbp - result.floor!.monthlyGross) /
+        result.floor!.monthlyGross,
+    ).toBeLessThan(0.005);
+  });
+
+  test('offer evaluation converts the floor before computing the gap', () => {
+    const result = calculate(usaToLbn, { datasets, fx });
+    const verdict = evaluateOffer(
+      { amount: 6500, currency: 'USD', basis: 'monthly', gross: true },
+      result,
+      fx,
+    );
+    // The offer clears the converted floor by a modest margin; the raw-LBP
+    // comparison used to report about minus 100 percent on every offer.
+    expect(verdict.floorGapPct!).toBeGreaterThan(-50);
+    expect(verdict.floorGapPct!).toBeLessThan(100);
+  });
+});
+
+describe('Gulf zero-personal-income-tax targets', () => {
+  test('Kuwait: the verified 0 percent tier replaces the 20 percent default', () => {
+    const result = calculate(
+      {
+        roleFamily: 'finance-and-accounting',
+        level: 'lead',
+        originCountry: 'USA',
+        currentSalary: { amount: 120000, currency: 'USD', basis: 'annual', gross: true },
+        targetCountry: 'KWT',
+        workArrangement: 'onsite',
+        employmentType: 'full-time',
+      },
+      { datasets, fx },
+    );
+    expect(result.status).toBe('ok');
+    expect(result.floor!.derivation.taxRate).toBe(0);
+    expect(result.floor!.derivation.taxLabel).toBe('any-income');
+    // Gross equals net with no tax; the 20 percent default inflated the
+    // gross-up by exactly 1.25 (audit worked example: KWD 543 vs 434).
+    expect(
+      result.floor!.annualGross / (result.floor!.derivation.netMonthlyTarget * 12),
+    ).toBeCloseTo(1, 6);
+    expect(result.warnings.some((w) => w.key === 'targetTaxDefault')).toBe(false);
+  });
+
+  test('Kuwait origin: no silent 20 percent cut of the net salary', () => {
+    const result = calculate(
+      {
+        roleFamily: 'it-executive',
+        level: 'executive',
+        originCountry: 'KWT',
+        currentSalary: { amount: 2000, currency: 'KWD', basis: 'monthly', gross: true },
+        targetCountry: 'SAU',
+        workArrangement: 'onsite',
+        employmentType: 'full-time',
+      },
+      { datasets, fx },
+    );
+    expect(result.confidence.reasons.some((r) => r.key === 'originTaxEstimate')).toBe(false);
+    // 24,000 KWD gross is 24,000 KWD net; the PPP transfer to Saudi Arabia
+    // lands near SAR 20,400 per month (the old default cut it near 16,300).
+    expect(result.floor!.monthlyGross).toBeGreaterThan(19_500);
+    expect(result.floor!.monthlyGross).toBeLessThan(21_500);
+  });
+});
+
 describe('hardship differential (corporate relocation mode)', () => {
   const posts = [
     { iso3: 'KEN', city: 'Nairobi', differentialPct: 10, effectiveDate: '2026-07-01', sourceUrl: 'https://travel.state.gov/dssr' },

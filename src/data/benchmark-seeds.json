@@ -9663,6 +9663,453 @@
         "https://www.buk.mx/blog/guia-salarial-salarios-en-mexico"
       ],
       "note": "Buk Guia Salarial 2026: CEO median MXN 233,000 per month, from 3,400 real payroll records across 166 private organizations (post updated 6 August 2026). Median only published, so p25 and p75 are 0; sample skews to small and mid-size companies, so large-company CEO pay runs well above this figure."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/browse/accounting"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Finance Manager, derived from full-time salary ranges employers disclose in job ads. Single published average so p25=p50=p75; monthly as published, treat as gross or CTC-equivalent since JobStreet says some listings include benefits. Head of Finance shows the same 17,500,000 on the same pages. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 43500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/browse/accounting",
+        "https://id.jobstreet.com/career-advice/explore-salaries"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Chief Financial Officer, from employer-disclosed salary ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent with a benefits caveat stated by JobStreet. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 80000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=IT%20Enterprise"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Head of IT in the IT Enterprise specialisation; the same page shows IT Manager at 45,000,000, far above the JobStreet ad average of 15,750,000, reflecting Michael Page's more senior placement sample. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. JobStreet ad-market alternative for the same cell: IDR 15,750,000 per month (https://id.jobstreet.com/career-advice/browse/high-salary/https://id.jobstreet.com/career-advice/browse/information-communication-technology). Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 80000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Product%20and%20Project%20Manager"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Head of Product Manager in the Product and Project Manager specialisation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. JobStreet ad-market alternative for the same cell: IDR 12,500,000 per month (https://id.jobstreet.com/career-advice/browse/high-salary/https://id.jobstreet.com/career-advice/browse/information-communication-technology). Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Project Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; the technology category page shows 10,250,000 for the same title, a small variance between snapshots. Monthly as published, gross or CTC-equivalent. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 16000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/browse/engineering",
+        "https://id.jobstreet.com/career-advice/role/engineering-manager/salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Engineering Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Construction Manager at 17,000,000 and Technical Manager at 17,500,000 appear on the same pages for adjacent titles. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/browse/manufacturing-transport-logistics"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Operations Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Same family on the same pages: Logistics Manager 12,500,000, Production Manager 12,500,000, Procurement Manager 17,250,000. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/browse/manufacturing-transport-logistics"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Operations Director, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/sales",
+        "https://id.jobstreet.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Sales Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent, and sales figures usually exclude commission. Same pages: Business Development Manager 16,500,000 and Key Account Manager 17,500,000. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/sales",
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/explore-salaries"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for National Sales Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent, commission likely excluded. Regional Sales Manager shows 18,500,000 on the same pages. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/marketing-communications",
+        "https://id.jobstreet.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Marketing Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Brand Manager shows 14,880,000 on the same category page for a adjacent senior brand role. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13400000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for Human Resources Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Training Manager shows 15,250,000 on the same page. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/browse/high-salary",
+        "https://id.jobstreet.com/career-advice/role/engineering-manager/salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for General Manager, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 27500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://id.jobstreet.com/career-advice/explore-salaries",
+        "https://id.jobstreet.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobStreet Indonesia Typical monthly salary for the generic Director title, from employer-disclosed ranges in job ads. Single average so p25=p50=p75; monthly as published, gross or CTC-equivalent. Vice President shows 27,750,000, while the Chief Executive Officer average of 17,395,500 is dragged down by SME-heavy listings and is not a reliable multinational anchor. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Product%20and%20Project%20Manager"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for User Experience / User Interface Designer Manager in the Product and Project Manager specialisation; coexists with the JobStreet Design Manager row of 15,000,000 for merge-time reconciliation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. JobStreet ad-market alternative for the same cell: IDR 15,000,000 per month (https://id.jobstreet.com/career-advice/browse/design-architecture/https://id.jobstreet.com/career-advice/browse/high-salary). Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Development"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Principal Engineer in the Development specialisation, from placements and advertised roles in the past 12 months. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75; figures exclude bonuses and benefits per the site FAQ, treated as gross base. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Development"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Engineering Manager in the Development specialisation; Head of Engineering shows 80,000,000 on the same page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 110000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Development"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Vice President Engineering in the Development specialisation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but IDR 110,000,000 per year would be about USD 568 per month, under twice Jakarta minimum wage and impossible for an executive, while IDR 110M per month is a premium but real Jakarta figure. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Analytics"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for AI / Machine Learning Engineer in the Analytics specialisation; it is the only non-lead individual contributor title in that table, so it anchors the senior level. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Analytics"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Data Science Manager in the Analytics specialisation; Lead Data Scientist 40,000,000, Lead Data Engineer 35,000,000 and Lead Data Analyst 30,000,000 sit alongside on the same page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 110000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Analytics"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Vice President Data in the Analytics specialisation; Head of Data shows 80,000,000 on the same page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Cybersecurity"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for IT Security Manager in the Cybersecurity specialisation; IT Governance, Risk and Compliance Manager shows 45,000,000 on the same page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Executive",
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Cybersecurity"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Cybersecurity Director in the Technology Executive specialisation; Vice President Security shows 100,000,000 on the Cybersecurity page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 40000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Product%20and%20Project%20Manager"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Senior Product Manager in the Product and Project Manager specialisation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Product%20and%20Project%20Manager"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Vice President Product Manager in the Product and Project Manager specialisation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 130000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=IT%20Enterprise",
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Executive"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for IT Director in the IT Enterprise specialisation; Technology Director shows 150,000,000 on the Technology Executive page. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "IDN",
+      "currency": "IDR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 45000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.michaelpage.co.id/salary-benchmark-tool?discipline=Technology&sector=Product%20and%20Project%20Manager"
+      ],
+      "note": "Michael Page Indonesia Salary Benchmark Tool 2026, average for Senior Project Manager in the Product and Project Manager specialisation. Period ruled monthly: the tool states no period and its on-site article is contradictory, but an annual reading would put a VP Engineering at about USD 568 per month, impossible, while monthly fits Jakarta norms. Single average so p25=p50=p75, gross base excluding bonuses and benefits. Single published average, so the band collapses to the median and the result says so."
     }
   ]
 }

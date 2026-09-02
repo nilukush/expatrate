@@ -347,3 +347,21 @@ test('seed sources cite publishers, not scribd rehosts', () => {
     }
   }
 });
+
+test('Indonesia curation: the last tier-1 gap now carries verified rows', () => {
+  const rows = load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === 'IDN' && e.status === undefined,
+  );
+  // JobStreet ad-market averages plus Michael Page placement averages, 2026-09-02.
+  expect(rows.length).toBeGreaterThanOrEqual(20);
+  for (const row of rows) {
+    expect(row.currency).toBe('IDR');
+    // Every source publishes a single average: the band collapses to the median.
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+  }
+  const itLead = rows.find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'lead');
+  expect(itLead.p50).toBe(80_000_000);
+  const swExec = rows.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'executive');
+  expect(swExec.p50).toBe(110_000_000);
+});

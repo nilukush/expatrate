@@ -365,3 +365,36 @@ test('Indonesia curation: the last tier-1 gap now carries verified rows', () => 
   const swExec = rows.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'executive');
   expect(swExec.p50).toBe(110_000_000);
 });
+
+test('expansion wave 2: China, Korea, Hong Kong, Brazil, Switzerland carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency = { CHN: 'CNH', KOR: 'KRW', HKG: 'HKD', BRA: 'BRL', CHE: 'CHF' };
+  const counts = { CHN: 30, KOR: 3, HKG: 32, BRA: 24, CHE: 19 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+    }
+  }
+  // Spot anchors verified against the cited pages on 2026-09-02.
+  const chnIt = by('CHN').find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'executive');
+  expect(chnIt.p50).toBe(1_600_000);
+  expect(chnIt.basis).toBe('annual-gross');
+  const korSw = by('KOR').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(korSw.p50).toBe(77_540_000);
+  const hkgCeo = by('HKG').find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive');
+  expect(hkgCeo.p50).toBe(135_000);
+  const braSw = by('BRA').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(braSw.p25).toBe(12_450);
+  expect(braSw.p75).toBe(20_950);
+  const cheFin = by('CHE').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'lead');
+  expect(cheFin.p25).toBe(117_750);
+  expect(cheFin.p75).toBe(142_250);
+  expect(cheFin.quality).toBe('Medium');
+  // Self-reported crowd sources stay Low even with big n.
+  const cheSw = by('CHE').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(cheSw.quality).toBe('Low');
+});

@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-02",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 30,
-    "dataRows": 605,
+    "tier1CountriesCount": 35,
+    "dataRows": 713,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -38,6 +38,22 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 12450,
+      "p50": 16250,
+      "p75": 20950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/desenvolvedora-full-stack-senior"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Desenvolvedor(a) Full-Stack Sênior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Back-End Sênior range 12400 to 20900 confirms level."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -51,6 +67,23 @@
         "https://www.roberthalf.com/ca/en/job-details/senior-software-engineerdeveloper"
       ],
       "note": "Job Bank NOC 21232 Software developers and programmers, Canada national, LFS 2023-2024, updated 2025-11-19, n not stated: low/median/high $30.00/$48.08/$76.92 per hour (=p10/p50/p90). Annualized x2080h (p50=$100,006). p25/p75 linearly interpolated between p10-p50 and p50-p90. RH 2026 Canada guide Senior Software Engineer/Developer national band $119,750-$162,500 corroborates the upper half. NOC distribution spans all experience levels; senior proxied by the occupation median."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 850000,
+      "p50": 960000,
+      "p75": 1450000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Java Architect, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "software-engineering",
@@ -83,6 +116,14 @@
         "https://www.stepstone.de/gehalt/Software-Entwickler-in.html"
       ],
       "note": "Stepstone Gehalt page for Softwareentwickler/in (Stepstone salary dataset, full-time, Germany). Publishes Min 44,100, Median 51,200, Max 62,000 EUR gross per year, mapped to P25/P50/P75. The title page covers all experience levels within the title; treated as the senior benchmark for this family."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "HKG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "software-engineering",
@@ -400,6 +441,39 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "KOR",
+      "currency": "KRW",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 77540000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://zdnet.co.kr/view/?no=20251031165659",
+        "https://www.etnews.com/20251031000354"
+      ],
+      "note": "Jumpit 2025 developer salary report via ZDNet and ET News, based on about 10,000 developers who changed jobs in 2025. Senior bracket is 10 or more years of experience. Cross-platform app developer average; blockchain tops the bracket at 84.81M and DBA at 73.53M KRW. Yeonbong annual salary convention is gross pay. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 103557,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=software%20engineer"
+      ],
+      "note": "jobs.ch crowd data, 7615 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Only an average is published per band, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -509,6 +583,23 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 20900,
+      "p50": 27100,
+      "p75": 35000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-desenvolvimento",
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Desenvolvimento, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -521,6 +612,23 @@
         "https://www.roberthalf.com/ca/en/job-details/senior-software-engineerdeveloper"
       ],
       "note": "Robert Half Canada 2026 Salary Guide job-details page, national band for Senior Software Engineer/Developer, stated as low/mid/high by experience tier (limited/moderate/extensive); mapped directly to p25/p50/p75. Single recruiter source, no official NOC separates lead from senior software developers."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 670000,
+      "p50": 880000,
+      "p75": 1250000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Engineering Lead, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "software-engineering",
@@ -553,6 +661,23 @@
         "https://www.stepstone.de/gehalt/Teamleiter-in-IT.html"
       ],
       "note": "Stepstone Gehalt page for Teamleiter/in IT, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Technical Lead from employer disclosed ad ranges. Other published titles mapping to this cell: Software Development Manager, engineering people lead at 55,000. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "software-engineering",
@@ -820,6 +945,22 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -932,6 +1073,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -945,6 +1094,23 @@
         "https://www.roberthalf.com/ca/en/job-details/chief-technology-officer"
       ],
       "note": "Job Bank NOC 00012 Senior managers - financial, communications and other business services (incl. tech-company senior management), Canada national, LFS 2023-2024: low/median/high $51.28/$96.15/$153.85/hr; annualized x2080 (p50=$199,992); p25/p75 interpolated from p10/p50/p90. Cross-checked vs Robert Half Canada 2026 CTO national band $185,000-$244,750 (mid $220,500), which falls between p50 and p75, consistent."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 950000,
+      "p50": 1500000,
+      "p75": 2000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Technical Director, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "software-engineering",
@@ -969,6 +1135,14 @@
         "https://www.stepstone.de/gehalt/Head-of-Engineering.html"
       ],
       "note": "Stepstone Gehalt page for Head of Engineering. Publishes Min 80,200, Median 89,500, Max 103,800 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "HKG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "software-engineering",
@@ -1176,6 +1350,22 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -1269,6 +1459,22 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 14700,
+      "p50": 19100,
+      "p75": 24600,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/especialistacientista-de-dados"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Especialista/Cientista de Dados, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -1282,6 +1488,23 @@
         "https://www.roberthalf.com/ca/en/insights/salary-guide/technology"
       ],
       "note": "Job Bank NOC 21211 Data scientists, Canada national, LFS 2023-2024: low/median/high $30.00/$46.15/$69.74/hr; annualized x2080 (p50=$95,992); p25/p75 interpolated. Corroborated by Robert Half Canada 2026 Technology salary guide Data Scientist $104,250-$156,750 (mid $131,250, senior-market skew). Related NOC 21223 Database analysts (Ontario row $24.58/$40.87/$61.54) supports the band."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 730000,
+      "p50": 860000,
+      "p75": 1160000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Data Architect, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "data-and-ai",
@@ -1314,6 +1537,22 @@
         "https://www.stepstone.de/gehalt/Data-Scientist.html"
       ],
       "note": "Stepstone Gehalt page for Data Scientist. Publishes Min 49,200, Median 57,200, Max 68,100 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 38000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Data Scientist. Data Engineer is HK$42,500 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "data-and-ai",
@@ -1606,6 +1845,39 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "KOR",
+      "currency": "KRW",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 79230000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://zdnet.co.kr/view/?no=20251031165659",
+        "https://www.etnews.com/20251031000354"
+      ],
+      "note": "Jumpit 2025 developer salary report via ZDNet and ET News, based on about 10,000 developers who changed jobs in 2025. Senior bracket is 10 or more years of experience. AI and machine learning engineer average; big data engineer averages 77.76M KRW in the same bracket. Yeonbong annual salary convention is gross pay. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 120000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=data%20scientist"
+      ],
+      "note": "jobs.ch crowd data, 1363 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -1716,10 +1988,44 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 22700,
+      "p50": 29450,
+      "p75": 37950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-dados",
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Dados, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Gerente de BI median 25250 is the adjacent lower role."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 650000,
+      "p50": 770000,
+      "p75": 950000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Data Engineering Lead, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "data-and-ai",
@@ -1744,6 +2050,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 55000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology",
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Data Architect, senior data platform leadership role. Other published titles mapping to this cell: Data Manager at 51,000. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "data-and-ai",
@@ -1990,6 +2313,22 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -2075,10 +2414,35 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1300000,
+      "p50": 1600000,
+      "p75": 2300000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Data Director, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "data-and-ai",
@@ -2092,6 +2456,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -2317,6 +2689,22 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2402,6 +2790,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -2419,6 +2815,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2428,6 +2832,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -2655,6 +3067,22 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2757,7 +3185,23 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -2785,6 +3229,22 @@
         "https://www.stepstone.de/gehalt/Abteilungsleiter-in-IT.html"
       ],
       "note": "Stepstone Gehalt page for Abteilungsleiter/in IT, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 45000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Information Technology Manager. Technology Manager is HK$58,000 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "it-executive",
@@ -3010,6 +3470,30 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 135000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20it"
+      ],
+      "note": "jobs.ch crowd data, 2144 entries, gross annual incl bonuses and 13th salary. Head of IT treated as IT function lead, overall average used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -3123,6 +3607,22 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 32000,
+      "p50": 41550,
+      "p75": 53600,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for CIO, Chief Information Officer, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. CTO median 38350 and Gerente de TI Generalista median 27200 sit below."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -3136,6 +3636,23 @@
         "https://www.roberthalf.com/ca/en/job-details/chief-information-officer"
       ],
       "note": "Job Bank NOC 00012 Senior managers - financial, communications and other business services (closest official series for CIO-level), Canada national, LFS 2023-2024: low/median/high $51.28/$96.15/$153.85/hr; annualized x2080 (p50=$199,992); p25/p75 interpolated. Cross-checked vs Robert Half Canada 2026 CIO national band $204,250-$296,750 (mid $250,250), consistent with p50-p75 of the official distribution."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1350000,
+      "p50": 1600000,
+      "p75": 2700000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Tech VP, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "it-executive",
@@ -3160,6 +3677,23 @@
         "https://www.stepstone.de/gehalt/IT-Leiter-in.html"
       ],
       "note": "Stepstone Gehalt page for IT-Leiter/in. Publishes Min 63,500, Median 71,300, Max 84,700 EUR gross per year, mapped to P25/P50/P75. Sample spans all company sizes, which pulls the band below dedicated IT executive search benchmarks."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 73000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Chief Technology Officer from employer disclosed ad ranges. Other published titles mapping to this cell: Information Technology Director, listed on both browse pages at 70,500. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "it-executive",
@@ -3460,6 +3994,30 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 100100,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=cto"
+      ],
+      "note": "jobs.ch crowd data, 2801 entries, gross annual incl bonuses and 13th salary. Self-reported CTO entries likely skew to startups and SMEs, so this understates large-company CIO pay. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -3573,6 +4131,22 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 7850,
+      "p50": 11200,
+      "p75": 14000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/product-owner-po"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Product Owner, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Agile Coach median 13250 is the adjacent role."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -3589,6 +4163,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -3601,6 +4183,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 40000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Product Manager. Digital Product Manager is HK$43,500 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "product-management",
@@ -3831,6 +4429,30 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 107924,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=product%20manager"
+      ],
+      "note": "jobs.ch crowd data, 6332 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -3912,7 +4534,31 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 16050,
+      "p50": 22600,
+      "p75": 27950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-produtos-digitais-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Produtos Digitais, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. (P/M) median is 18200."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -3929,6 +4575,14 @@
       "family": "product-management",
       "level": "lead",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -4137,6 +4791,22 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -4202,10 +4872,35 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1400000,
+      "p50": 1800000,
+      "p75": 2200000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row Product VP, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "product-management",
@@ -4219,6 +4914,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -4411,6 +5114,22 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -4485,6 +5204,22 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 11300,
+      "p50": 14750,
+      "p75": 19000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/analista-de-seguranca-senior"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Analista de Segurança Sênior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. PenTester median 15400 sits at the same level."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -4501,6 +5236,14 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -4513,6 +5256,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 42000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Information Security Analyst. Security Consultant is HK$46,000 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "cybersecurity",
@@ -4711,6 +5470,30 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 122250,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=security%20engineer"
+      ],
+      "note": "jobs.ch crowd data, 1261 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -4785,7 +5568,32 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 22250,
+      "p50": 28900,
+      "p75": 37250,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-seguranca-da-informacao",
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Segurança da Informação, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -4802,6 +5610,14 @@
       "family": "cybersecurity",
       "level": "lead",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -5029,6 +5845,22 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -5104,7 +5936,31 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 31300,
+      "p50": 40650,
+      "p75": 52500,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for CSO, Chief Security Officer, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -5121,6 +5977,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -5340,6 +6204,22 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5406,6 +6286,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -5422,6 +6310,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5434,6 +6330,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 34000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/design-architecture"
+      ],
+      "note": "JobsDB typical monthly salary for User Experience Designer, the senior IC design benchmark. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "design",
@@ -5649,6 +6561,30 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 103501,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=ux%20designer"
+      ],
+      "note": "jobs.ch crowd data, 1110 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -5723,7 +6659,23 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -5743,6 +6695,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 47000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/design-architecture"
+      ],
+      "note": "JobsDB typical monthly salary for Design Manager from employer disclosed ad ranges. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "design",
@@ -5949,6 +6917,22 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -6013,7 +6997,23 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -6033,6 +7033,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 58000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/design-architecture",
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Design Director, listed on both browse pages. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "design",
@@ -6197,6 +7214,22 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6261,6 +7294,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 10900,
+      "p50": 13850,
+      "p75": 17600,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/scrum-master"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Scrum Master, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -6277,6 +7326,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6289,6 +7346,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 43000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Project Manager. Scrum Master is HK$57,000 on the high salary page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "delivery-and-project-management",
@@ -6528,6 +7601,31 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "KOR",
+      "currency": "KRW",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 74260000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://zdnet.co.kr/view/?no=20251031165659",
+        "https://www.etnews.com/20251031000354"
+      ],
+      "note": "Jumpit 2025 developer salary report via ZDNet and ET News, based on about 10,000 developers who changed jobs in 2025. Senior bracket is 10 or more years of experience. Development project management average annual salary. Yeonbong annual salary convention is gross pay. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -6610,10 +7708,43 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 13850,
+      "p50": 18100,
+      "p75": 23300,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-projetos"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Projetos, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. PMO manager (P/M) median is 19150."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 500000,
+      "p50": 1500000,
+      "p75": 1800000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/strategy-projects-change/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, strategy-projects-change table, row Project Manager (management consulting firm), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "delivery-and-project-management",
@@ -6630,6 +7761,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 68000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Infrastructure Project Manager. PMO Manager is HK$71,500 on the ICT page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "delivery-and-project-management",
@@ -6854,6 +8002,30 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 110711,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20it%20project%20management"
+      ],
+      "note": "jobs.ch crowd data, 2334 entries, gross annual incl bonuses and 13th salary. Role title itself is a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -6918,10 +8090,35 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1500000,
+      "p50": 2000000,
+      "p75": 2300000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/strategy-projects-change/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, strategy-projects-change table, row Principal (management consulting firm), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "delivery-and-project-management",
@@ -6938,6 +8135,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 75000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/information-communication-technology"
+      ],
+      "note": "JobsDB typical monthly salary for Project Director. Program Director is HK$59,760 on same pages. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "delivery-and-project-management",
@@ -7135,6 +8349,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -7201,10 +8431,35 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 500000,
+      "p50": 650000,
+      "p75": 800000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/sales-marketing/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, sales-marketing table, row Sales Senior Manager / Associate Director (Industrial), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "sales-and-business-development",
@@ -7229,6 +8484,22 @@
         "https://www.stepstone.de/gehalt/Key-Account-Manager.html"
       ],
       "note": "Stepstone Gehalt page for Key Account Manager. Publishes Min 54,400, Median 62,300, Max 74,100 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 42500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/role/product-manager/salary"
+      ],
+      "note": "JobsDB typical monthly salary for Regional Sales Manager from the similar careers list. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "sales-and-business-development",
@@ -7493,6 +8764,22 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -7595,10 +8882,43 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 21100,
+      "p50": 29650,
+      "p75": 36800,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-nacional-de-vendas-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente Nacional de Vendas, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Regional sales manager (G) median is 20400."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 540000,
+      "p50": 696000,
+      "p75": 950000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/banking-financial-services/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, banking-financial-services table, row VP/SVP Corporate Relationship Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "sales-and-business-development",
@@ -7623,6 +8943,22 @@
         "https://www.stepstone.de/gehalt/Vertriebsleiter-in.html"
       ],
       "note": "Stepstone Gehalt page for Vertriebsleiter/in. Publishes Min 62,800, Median 71,200, Max 83,900 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 48000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Assistant Director of Sales from the high salary browse page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "sales-and-business-development",
@@ -7864,6 +9200,30 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 130000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20sales"
+      ],
+      "note": "jobs.ch crowd data, 4677 entries, gross annual incl bonuses and 13th salary. Role title itself is a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -7956,6 +9316,22 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 33050,
+      "p50": 45000,
+      "p75": 56150,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-comercial-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) Comercial, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. (P/M) median is 31650."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -7968,6 +9344,23 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/26635"
       ],
       "note": "Job Bank NOC 60010 Corporate sales managers (incl. sales and account managers), Canada national, LFS 2023-2024: low/median/high $36.54/$60.10/$112.00/hr; annualized x2080 (p50=$125,008); p25/p75 interpolated. Base only; excludes commission/variable pay, which is material for this family."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 600000,
+      "p50": 1300000,
+      "p75": 2000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/sales-marketing/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, sales-marketing table, row Sales Director (Industrial), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "sales-and-business-development",
@@ -7992,6 +9385,22 @@
         "https://www.stepstone.de/gehalt/Head-of-Sales.html"
       ],
       "note": "Stepstone Gehalt page for Head of Sales. Publishes Min 73,500, Median 81,800, Max 96,200 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 85000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Head of Sales. Commercial Director is HK$71,500 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "sales-and-business-development",
@@ -8261,6 +9670,22 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -8362,6 +9787,14 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -8378,6 +9811,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 600000,
+      "p50": 700000,
+      "p75": 900000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/sales-marketing/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, sales-marketing table, row Digital Marketing Senior Manager / Associate Director, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -8387,6 +9837,14 @@
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -8648,6 +10106,30 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 90300,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=marketing%20manager"
+      ],
+      "note": "jobs.ch crowd data, 4500 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -8722,10 +10204,43 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 21750,
+      "p50": 31700,
+      "p75": 39350,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/head-of-growth-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Head of Growth, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Gerente de Marketing (G) median is 27950."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 700000,
+      "p50": 1000000,
+      "p75": 1200000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/sales-marketing/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, sales-marketing table, row Marketing Manager / Associate Director (Consumer Retail), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "marketing-and-growth",
@@ -8742,6 +10257,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Digital Manager, digital marketing leadership role. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "marketing-and-growth",
@@ -8983,6 +10514,22 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -9049,6 +10596,22 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 32000,
+      "p50": 41300,
+      "p75": 51650,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-de-marketing-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) de Marketing, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -9065,6 +10628,23 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1500000,
+      "p50": 2000000,
+      "p75": 2500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/sales-marketing/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, sales-marketing table, row Marketing VP / CMO (Consumer Retail), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9077,6 +10657,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Head of Marketing. Marketing Director is HK$54,000 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "marketing-and-growth",
@@ -9285,6 +10881,22 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -9368,6 +10980,14 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -9380,6 +11000,23 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/116"
       ],
       "note": "Job Bank NOC 11100 Financial auditors and accountants, Canada national, LFS 2023-2024: low/median/high $25.00/$40.36/$71.43/hr; annualized x2080 (p50=$83,949); p25/p75 interpolated from p10/p50/p90. NOC spans all tenure; senior proxied by occupation median."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 500000,
+      "p50": 650000,
+      "p75": 800000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/accounting-finance/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, accounting-finance table, row Senior Finance Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "finance-and-accounting",
@@ -9404,6 +11041,14 @@
         "https://www.stepstone.de/gehalt/Senior-Controller.html"
       ],
       "note": "Stepstone Gehalt page for Senior Controller/in. Publishes Min 61,500, Median 70,300, Max 82,500 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "HKG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "finance-and-accounting",
@@ -9716,6 +11361,22 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -9817,10 +11478,44 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 25700,
+      "p50": 32000,
+      "p75": 39850,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/controller-g",
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/financas-contabilidade"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Controller, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Financial planning manager (G) median is 28450."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 800000,
+      "p50": 1000000,
+      "p75": 1200000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/accounting-finance/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, accounting-finance table, row Financial Controller, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "finance-and-accounting",
@@ -9845,6 +11540,22 @@
         "https://www.stepstone.de/gehalt/Leiter-in-Controlling.html"
       ],
       "note": "Stepstone Gehalt page for Leiter/in Controlling. Publishes Min 73,600, Median 82,100, Max 96,200 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 68000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Financial Controller, the senior accounting control role. Other published titles mapping to this cell: Treasury Manager, also shown on Accounting Manager similar careers at 52,000. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "finance-and-accounting",
@@ -10146,6 +11857,31 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 117750,
+      "p50": 129000,
+      "p75": 142250,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/ch/en/insights/salary-guide/finance-and-accounting",
+        "https://www.roberthalf.com/ch/en/insights/salary-guide"
+      ],
+      "note": "Robert Half Switzerland 2026 Salary Guide, national, base starting salary excluding bonuses, CHF per guide FAQ, method is actual Robert Half placements. Period unlabeled on page, annual because CHF 129000 per month would be over 1.5M per year, impossible for an accounting manager. Published percentile table maps directly to p25, p50, p75."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -10230,6 +11966,23 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 54400,
+      "p50": 69150,
+      "p75": 86950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-financeiro-cfo-g",
+        "https://www.roberthalf.com/br/pt/insights/guia-salarial/financas-contabilidade"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) Financeiro CFO, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. CFO (P/M) median is 42400."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -10242,6 +11995,23 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/1225"
       ],
       "note": "Job Bank NOC 10010 Financial managers (finance director/CFO office tier), Canada national, LFS 2023-2024: low/median/high $38.50/$59.48/$91.76/hr; annualized x2080 (p50=$123,718); p25/p75 interpolated."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1500000,
+      "p50": 2000000,
+      "p75": 3000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/accounting-finance/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, accounting-finance table, row VP / CFO, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "finance-and-accounting",
@@ -10266,6 +12036,22 @@
         "https://www.stepstone.de/gehalt/CFO.html"
       ],
       "note": "Stepstone Gehalt page for CFO. Publishes Min 105,200, Median 114,400, Max 132,000 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 73000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Chief Financial Officer from employer disclosed ad ranges. Other published titles mapping to this cell: Finance Director at 54,500. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "finance-and-accounting",
@@ -10553,6 +12339,30 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 151100,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=cfo"
+      ],
+      "note": "jobs.ch crowd data, 3749 entries, gross annual incl bonuses and 13th salary. CFO is an executive role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -10655,6 +12465,14 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -10667,6 +12485,14 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/274"
       ],
       "note": "Job Bank NOC 11200 Human resources professionals, Canada national, LFS 2023-2024: low/median/high $26.00/$40.87/$59.77/hr; annualized x2080 (p50=$85,010); p25/p75 interpolated."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "hr-and-people",
@@ -10691,6 +12517,14 @@
         "https://www.stepstone.de/gehalt/Personalmanager-in.html"
       ],
       "note": "Stepstone Gehalt page for Personalmanager/in, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "HKG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "hr-and-people",
@@ -10957,6 +12791,22 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -11058,10 +12908,43 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 24150,
+      "p50": 29500,
+      "p75": 34550,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-recursos-humanos-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Recursos Humanos, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 450000,
+      "p50": 600000,
+      "p75": 800000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/human-resources/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, human-resources table, row HRBP Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "hr-and-people",
@@ -11086,6 +12969,22 @@
         "https://www.stepstone.de/gehalt/Head-of-HR.html"
       ],
       "note": "Stepstone Gehalt page for Head of HR. Publishes Min 72,300, Median 80,500, Max 94,700 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 43000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/human-resources-recruitment"
+      ],
+      "note": "JobsDB typical monthly salary for Human Resources Manager. Talent Acquisition Manager is HK$45,000 same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "hr-and-people",
@@ -11333,6 +13232,30 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 117000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20human%20resources"
+      ],
+      "note": "jobs.ch crowd data, 3655 entries, gross annual incl bonuses and 13th salary. Role title itself is a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -11416,6 +13339,22 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 38650,
+      "p50": 46950,
+      "p75": 54850,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-de-recursos-humanos-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) de Recursos Humanos, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -11428,6 +13367,23 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/17414"
       ],
       "note": "Job Bank NOC 10011 Human resources managers, Canada national, LFS 2023-2024: low/median/high $37.94/$57.69/$87.18/hr; annualized x2080 (p50=$119,995); p25/p75 interpolated."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 2000000,
+      "p50": 2500000,
+      "p75": 3500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/human-resources/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, human-resources table, row CHRO / HRVP, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "hr-and-people",
@@ -11452,6 +13408,23 @@
         "https://www.stepstone.de/gehalt/HR-Director.html"
       ],
       "note": "Stepstone Gehalt page for HR Director. Publishes Min 93,800, Median 104,800, Max 119,400 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 57000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/human-resources-recruitment"
+      ],
+      "note": "JobsDB typical monthly salary for Human Resources Director, listed on both browse pages. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "hr-and-people",
@@ -11708,6 +13681,22 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -11809,10 +13798,35 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 500000,
+      "p50": 650000,
+      "p75": 800000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row Senior Manager / Associate Director QA/QC (Industrial), Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "operations-and-supply-chain",
@@ -11837,6 +13851,22 @@
         "https://www.stepstone.de/gehalt/Supply-Chain-Manager.html"
       ],
       "note": "Stepstone Gehalt page for Supply Chain Manager. Publishes Min 48,900, Median 56,700, Max 67,700 EUR gross per year, mapped to P25/P50/P75."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 38500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/role/product-manager/salary"
+      ],
+      "note": "JobsDB typical monthly salary for Logistics Manager from the similar careers list. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12101,6 +14131,30 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 101683,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=operations%20manager"
+      ],
+      "note": "jobs.ch crowd data, 1119 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -12210,10 +14264,43 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 17800,
+      "p50": 23100,
+      "p75": 28950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-logistica-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Logística, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Plant manager (G) median is 31050."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 300000,
+      "p50": 450000,
+      "p75": 600000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row Supply Chain Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12238,6 +14325,22 @@
         "https://www.stepstone.de/gehalt/Logistik-Leiter-in.html"
       ],
       "note": "Stepstone Gehalt page for Logistik-Leiter/in, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Operations Lead. Factory Manager is HK$66,000 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12477,6 +14580,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -12588,6 +14707,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 36050,
+      "p50": 46650,
+      "p75": 54950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-de-supply-chainsuprimentos-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) de Supply Chain/Suprimentos, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Operations director (G) median is 41950."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -12600,6 +14735,23 @@
         "https://www.jobbank.gc.ca/wagereport/occupation/25047"
       ],
       "note": "Job Bank NOC 10012 Purchasing managers (purchasing/supply-chain management tier; no standalone supply-chain-manager NOC exists in NOC 2021), Canada national, LFS 2023-2024: low/median/high $39.34/$56.11/$86.54/hr; annualized x2080 (p50=$116,709); p25/p75 interpolated."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 800000,
+      "p50": 1100000,
+      "p75": 1400000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row Supply Chain Director, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12624,6 +14776,22 @@
         "https://www.stepstone.de/gehalt/Bereichsleiter-in-Logistik.html"
       ],
       "note": "Stepstone Gehalt page for Bereichsleiter/in Logistik, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Operations Director. Head of Operations is HK$60,000 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12873,6 +15041,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -12974,7 +15158,23 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -12991,6 +15191,14 @@
       "family": "general-management",
       "level": "senior",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -13177,6 +15385,22 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13243,10 +15467,35 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 700000,
+      "p50": 800000,
+      "p75": 900000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/strategy-projects-change/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, strategy-projects-change table, row Senior Strategy Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "general-management",
@@ -13260,6 +15509,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -13455,6 +15712,22 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -13529,6 +15802,22 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 46300,
+      "p50": 64700,
+      "p75": 80950,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-geral-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente Geral, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. (P/M) median is 47900."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -13545,6 +15834,23 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1100000,
+      "p50": 1600000,
+      "p75": 2650000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/technology/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, technology table, row COO, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13557,6 +15863,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 135000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/role/chief-executive-officer/salary"
+      ],
+      "note": "JobsDB typical monthly salary for Chief Executive Officer, from employer disclosed full time ad ranges. Other published titles mapping to this cell: Chief Operating Officer at 73,000; General Manager, confirmed on CEO page similar careers list at 65,000. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "general-management",
@@ -13844,6 +16167,30 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 140000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=ceo"
+      ],
+      "note": "jobs.ch crowd data, 10574 entries, gross annual incl bonuses and 13th salary. CEO is an executive role so the overall average is used, it skews to SME pay. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -13929,6 +16276,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -13947,6 +16302,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 600000,
+      "p50": 800000,
+      "p75": 1000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row Senior Product Engineer, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13959,6 +16331,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 57000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/browse/design-architecture"
+      ],
+      "note": "JobsDB typical monthly salary for BIM Coordinator. Architect is HK$55,000 on the same pages. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -14233,6 +16622,30 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 98273,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=civil%20engineer"
+      ],
+      "note": "jobs.ch crowd data, 1619 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -14315,10 +16728,35 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 400000,
+      "p50": 500000,
+      "p75": 600000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row Engineering Manager, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -14335,6 +16773,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 75000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Construction Manager. Construction Project Manager is HK$73,000 same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -14569,6 +17023,30 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 90000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=construction%20site%20supervisor"
+      ],
+      "note": "jobs.ch crowd data, 5263 entries, gross annual incl bonuses and 13th salary. Site supervisor is itself a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -14634,10 +17112,43 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "BRA",
+      "currency": "BRL",
+      "basis": "monthly-gross",
+      "p25": 30650,
+      "p50": 37750,
+      "p75": 46500,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.roberthalf.com/br/pt/vagas-detalhes/diretora-de-engenharia-g"
+      ],
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Diretor(a) de Engenharia, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "CAN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 1600000,
+      "p50": 1800000,
+      "p75": 3000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.morganmckinley.com.cn/en/salary-guide/supply-chain-engineering/permanent-salaries",
+        "https://www.morganmckinley.com.cn/en/salary-guide"
+      ],
+      "note": "Morgan McKinley 2026 Mainland China Salary Guide, supply-chain-engineering table, row VP / Engineering VP, Shanghai only. Published CNY treated as CNH at near parity. Annual per guide FAQ (base salary). Low/avg/high mapped to p25/p50/p75. Method: thousands of job offers and placements plus consultant intel and annual surveys."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -14651,6 +17162,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -14864,6 +17383,22 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -14938,6 +17473,14 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -14954,6 +17497,22 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "CHN",
+      "currency": "CNH",
+      "basis": "annual-gross",
+      "p25": 300000,
+      "p50": 500000,
+      "p75": 800000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.hiredchina.com/articles/2026-china-expat-salary-guide/"
+      ],
+      "note": "HiredChina 2026 expat salary guide article, publisher estimate table for foreign specialist doctors at international hospitals, gross annual total compensation stated on page. Published CNY treated as CNH at near parity. Range and median mapped to p25/p50/p75. Publisher says public data was unavailable so these are estimates, hence Low."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14966,6 +17525,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 125000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary",
+        "https://hk.jobsdb.com/career-advice/explore-salaries"
+      ],
+      "note": "JobsDB typical monthly salary for General Practitioner, consistent on both pages. Other published titles mapping to this cell: Pharmacist at 55,000. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "healthcare",
@@ -15208,6 +17784,22 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15274,7 +17866,23 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "CAN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "CHN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -15291,6 +17899,14 @@
       "family": "healthcare",
       "level": "lead",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -15509,6 +18125,30 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 100496,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20nurse"
+      ],
+      "note": "jobs.ch crowd data, 337 entries, gross annual incl bonuses and 13th salary. Head nurse is itself a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15574,6 +18214,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -15590,6 +18238,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15599,6 +18255,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "DEU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "HKG",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
@@ -15827,6 +18491,22 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15893,6 +18573,14 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -15909,6 +18597,14 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15921,6 +18617,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 39000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/role/software-engineer/salary"
+      ],
+      "note": "JobsDB typical monthly salary for Lecturer from the similar careers list. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "education-and-teaching",
@@ -16163,6 +18875,30 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CHE",
+      "currency": "CHF",
+      "basis": "annual-gross",
+      "p25": 0,
+      "p50": 90000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://www.jobs.ch/en/salary/?canton=ch&term=teacher"
+      ],
+      "note": "jobs.ch crowd data, 1628 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16228,6 +18964,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -16244,6 +18988,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16256,6 +19008,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for Professor. Assistant Professor is HK$60,500 on same page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "education-and-teaching",
@@ -16471,6 +19239,22 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16537,6 +19321,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "BRA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "CAN",
       "currency": "CAD",
       "basis": "annual-gross",
@@ -16553,6 +19345,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "CHN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "EGY",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16565,6 +19365,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "HKG",
+      "currency": "HKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 93000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-02",
+      "sources": [
+        "https://hk.jobsdb.com/career-advice/browse/high-salary"
+      ],
+      "note": "JobsDB typical monthly salary for school Principal from the high salary browse page. Single published average, so the band collapses to the median and the result says so."
     },
     {
       "family": "education-and-teaching",
@@ -16751,6 +19567,22 @@
         "https://www.dpsa.gov.za/policy-updates/nlrrm/remuneration_policy/annual_cost_of_living_adjustments/"
       ],
       "note": "DBE gazetted tables effective 1 April 2026: Principal P5 (largest schools) R892,764-R1,326,822. Medium."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "KOR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-02"
     },
     {
       "family": "education-and-teaching",

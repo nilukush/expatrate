@@ -158,3 +158,31 @@ export async function extractTextFromFile(file: File): Promise<string> {
   }
   return '';
 }
+
+/**
+ * Parses a user-typed amount in either decimal convention. "5,387.12" and
+ * "5.387,12" both read 5387.12; the other separator is treated as thousands
+ * grouping. A single dot stays a decimal point (US bias). Returns null for
+ * empty or non-numeric input so callers keep the field invalid instead of
+ * storing NaN.
+ */
+export function parseAmount(raw: string): number | null {
+  const s = raw.trim().replace(/\s+/g, '');
+  if (!/^[\d.,]+$/.test(s) || !/\d/.test(s)) return null;
+  const hasComma = s.includes(',');
+  const hasDot = s.includes('.');
+  let normalized: string;
+  if (hasComma && hasDot) {
+    const decimalDot = s.lastIndexOf('.') > s.lastIndexOf(',');
+    normalized = decimalDot ? s.replace(/,/g, '') : s.replace(/\./g, '').replace(',', '.');
+  } else if (hasComma) {
+    const parts = s.split(',');
+    const decimal = parts.length === 2 && parts[1].length > 0 && parts[1].length <= 2;
+    normalized = decimal ? s.replace(',', '.') : s.replace(/,/g, '');
+  } else {
+    normalized = s.split('.').length > 2 ? s.replace(/\./g, '') : s;
+  }
+  if (!/^\d+(\.\d+)?$/.test(normalized)) return null;
+  const value = Number.parseFloat(normalized);
+  return Number.isFinite(value) ? value : null;
+}

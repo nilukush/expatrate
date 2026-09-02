@@ -102,6 +102,27 @@ test.describe('wizard', () => {
     await expect(page.locator('#floorLine')).toContainText('% less than your life today');
   });
 
+  test('the salary and offer currency selects expose no empty duplicate option', async ({ page }) => {
+    await waitForWizard(page);
+    await page.selectOption('#roleFamily', 'it-executive');
+    await page.selectOption('#experienceBand', '15+');
+    await page.click('#nextBtn');
+    await expect(page.locator('#salaryCurrency option[value=""]')).toHaveCount(0);
+    await page.selectOption('#originCountry', 'GBR');
+    await expect(page.locator('#salaryCurrency')).toHaveValue('GBP');
+    await page.fill('#salaryAmount', '120000');
+    await page.check('input[name="salaryBasis"][value="annual"]');
+    await page.check('#salaryConfirmed');
+    await page.click('#nextBtn');
+    await page.selectOption('#targetCountry', 'USA');
+    await page.click('#nextBtn');
+    await page.click('#skipFamily');
+    await page.click('#seeQuote');
+    await expect(page.locator('#resultsHeading')).toBeVisible();
+    await expect(page.locator('#offerCurrency option[value=""]')).toHaveCount(0);
+    await expect(page.locator('#offerCurrency')).toHaveValue('USD');
+  });
+
   test('the salary confirmation step blocks progression until confirmed', async ({ page }) => {
     await waitForWizard(page);
     await page.selectOption('#roleFamily', 'it-executive');

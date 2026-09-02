@@ -212,9 +212,10 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
     annual = salary.basis === 'monthly' ? salary.amount * months : salary.amount;
     if (salary.currency !== origin.currency) {
       annual = fromUsd(toUsd(annual, salary.currency, fx), origin.currency, fx);
-      warnings.push(
-        `Salary currency ${salary.currency} differs from ${origin.name}; converted at the ${fx.asOf} rate.`,
-      );
+      warnings.push({
+        key: 'salaryCurrencyDiff',
+        params: { from: salary.currency, country: origin.name },
+      });
     }
 
     // USD plausibility check tolerates a missing FX rate: PPP gives an equivalent scale.
@@ -224,6 +225,10 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
         : annual / (datasets.ppp.find((p) => p.iso3 === inputs.originCountry)?.value ?? 1) / months;
     if (salary.basis === 'monthly' && usdMonthly > 100_000) {
       throw new Error('This monthly amount is implausibly high. It looks like an annual figure; switch the basis to annual.');
+    }
+    if (salary.basis === 'monthly' && usdMonthly < 2_000 / 12) {
+      // Same bar as the annual check below: USD 2,000 per year.
+      throw new Error('Implausibly low monthly salary. Check the amount and the monthly or annual basis.');
     }
     if (salary.basis === 'annual' && usdMonthly * months < 2_000) {
       throw new Error('Implausibly low annual salary. Check the amount and the monthly or annual basis.');

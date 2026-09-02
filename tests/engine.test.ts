@@ -44,6 +44,30 @@ describe('normalizeSalary', () => {
     };
     expect(() => calculate(input, { datasets, fx })).toThrow(/low/i);
   });
+
+  test('refuses an implausibly low monthly amount', () => {
+    const input: EngineInputs = {
+      ...PERSONA,
+      currentSalary: { amount: 45, currency: 'USD', basis: 'monthly', gross: true },
+    };
+    expect(() => calculate(input, { datasets, fx })).toThrow(/low/i);
+  });
+
+  test('a salary currency that differs from the origin warns with the keyed message', () => {
+    const result = calculate(
+      { ...PERSONA, currentSalary: { amount: 120000, currency: 'USD', basis: 'annual', gross: true } },
+      { datasets, fx },
+    );
+    // Every warning must be a keyed EngineMessage; a plain string renders
+    // literally as "engine.undefined" in the warnings card.
+    for (const w of result.warnings) {
+      expect(typeof w.key).toBe('string');
+    }
+    const diff = result.warnings.find((w) => w.key === 'salaryCurrencyDiff');
+    expect(diff).toBeDefined();
+    expect(String((diff?.params as { from?: string })?.from)).toBe('USD');
+    expect(String((diff?.params as { country?: string })?.country)).toContain('Emirates');
+  });
 });
 
 describe('marketAnchor', () => {

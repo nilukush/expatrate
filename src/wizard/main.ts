@@ -7,8 +7,9 @@ import { getFxRates } from '../fx';
 import fxSnapshotJson from '../data/fx-snapshot.json';
 import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, formatCurrency, getLocale, type Locale } from '../i18n';
-import { suggestFamily, suggestYears, extractJdSalary, extractTextFromFile } from './parse';
+import { suggestFamily, suggestYears, extractJdSalary, extractTextFromFile, parseAmount } from './parse';
 import { fetchJobPosting, JobImportError } from './jobs';
+import { compareEmployerOffer } from './employer';
 import { toEngineInputs, bandToLevel } from './derive';
 import { clearState, decodeState, encodeState, loadResumeStep, loadState, saveResumeStep, saveState } from './state';
 import { DEFAULT_STATE } from './types';
@@ -213,7 +214,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           </div>
           <div class="wz-field">
             <label for="salaryCurrency">${escapeHtml(t('steps.pay.currency'))}</label>
-            <select id="salaryCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), state.salaryCurrency, 'USD')}</select>
+            <select id="salaryCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), state.salaryCurrency || countries.find((c) => c.iso3 === state.originCountry)?.currency || 'USD', '')}</select>
           </div>
         </div>
         <div class="wz-field">
@@ -387,11 +388,13 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
   }
 
   function interpretationLine(state: WizardState): string {
-    if (state.salaryAmount === null || state.salaryAmount <= 0 || !state.salaryCurrency) {
+    // The select shows the origin currency whenever the user has not picked
+    // one; the interpretation must say what the dropdown shows.
+    const currency = state.salaryCurrency || countries.find((c) => c.iso3 === state.originCountry)?.currency;
+    if (state.salaryAmount === null || state.salaryAmount <= 0 || !currency) {
       return '';
     }
     const months = 12;
-    const currency = state.salaryCurrency;
     const basisWord = t(`options.grossNet.${state.salaryGross ? 'gross' : 'net'}`);
     if (state.salaryBasis === 'monthly') {
       const annual = state.salaryAmount * months;
@@ -694,7 +697,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       });
       const amount = wizardEl.querySelector<HTMLInputElement>('#salaryAmount');
       amount?.addEventListener('input', () => {
-        state.salaryAmount = amount.value.trim() === '' ? null : Number.parseFloat(amount.value.replace(/,/g, ''));
+        state.salaryAmount = parseAmount(amount.value);
         updateInterpretation();
         saveState(state);
       });
@@ -956,25 +959,26 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
 
     const jdSalary = state.jdSalary;
-    if (jdSalary && (result.floor || quote)) {
+    const employer = jdSalary
+      ? compareEmployerOffer(jdSalary, result.floor, quote, fx.rates)
+      : { kind: 'hidden' as const };
+    if (jdSalary && employer.kind !== 'hidden') {
       const localCurrency = jdSalary.currency || quote?.currency || result.floor?.currency || 'USD';
       const stated =
         jdSalary.min === jdSalary.max
           ? fmt(jdSalary.min, localCurrency)
           : `${fmt(jdSalary.min, localCurrency)} to ${fmt(jdSalary.max, localCurrency)}`;
-      const floorAnnual = result.floor ? result.floor.annualGross : null;
       let body: string;
-      if (floorAnnual !== null && jdSalary.max < floorAnnual) {
-        const shortfall = Math.round((1 - jdSalary.max / floorAnnual) * 100);
-        body = t('results.employerBelow', { stated, floor: fmt(floorAnnual, result.floor!.currency), pct: shortfall });
-      } else if (floorAnnual !== null && jdSalary.min < floorAnnual && floorAnnual <= jdSalary.max) {
-        body = t('results.employerOverlap', { stated, floor: fmt(floorAnnual, result.floor!.currency), top: fmt(jdSalary.max, localCurrency) });
-      } else if (floorAnnual !== null) {
-        body = t('results.employerAbove', { stated, floor: fmt(floorAnnual, result.floor!.currency) });
+      if (employer.kind === 'below') {
+        body = t('results.employerBelow', { stated, floor: fmt(employer.floorAnnual, employer.floorCurrency), pct: employer.shortfallPct });
+      } else if (employer.kind === 'overlap') {
+        body = t('results.employerOverlap', { stated, floor: fmt(employer.floorAnnual, employer.floorCurrency), top: fmt(jdSalary.max, localCurrency) });
+      } else if (employer.kind === 'above') {
+        body = t('results.employerAbove', { stated, floor: fmt(employer.floorAnnual, employer.floorCurrency) });
       } else {
         body = t('results.employerVsQuote', { stated, quote: fmt(quote!.annualTarget, quote!.currency) });
       }
-      const isBelow = floorAnnual !== null && jdSalary.max < floorAnnual;
+      const isBelow = employer.kind === 'below';
       sections.push(`<div class="wz-card${isBelow ? ' wz-card-warning' : ''}" id="employerCard"><h3>${escapeHtml(t('results.employerTitle'))}</h3><p>${escapeHtml(fmtNumbersIn(body))}</p><p class="wz-note">${escapeHtml(t('results.employerNote', { cur: localCurrency }))}</p></div>`);
     }
 
@@ -1052,7 +1056,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         <p class="wz-note">${escapeHtml(t('results.offerHelp'))}</p>
         <div class="wz-row">
           <input type="text" id="offerAmount" class="wz-input" inputmode="decimal" autocomplete="off" placeholder="${escapeHtml(t('results.offerPlaceholder'))}" />
-          <select id="offerCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), result.quote?.currency ?? 'USD', 'USD')}</select>
+          <select id="offerCurrency" class="wz-select">${selectOptions(currencyCodes().map((c) => ({ value: c, label: c })), result.quote?.currency ?? 'USD', '')}</select>
           <select id="offerBasis" class="wz-select"><option value="monthly">${escapeHtml(t('options.grossNet') ? '' : '')}${escapeHtml(t('results.perMonth'))}</option><option value="annual">${escapeHtml(t('results.perYear'))}</option></select>
           <button type="button" id="offerEval" class="wz-btn wz-btn-secondary">${escapeHtml(t('results.offerEval'))}</button>
         </div>
@@ -1070,9 +1074,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     resultsEl.querySelector('#offerEval')?.addEventListener('click', () => {
       const verdictEl = resultsEl.querySelector<HTMLElement>('#offerVerdict');
       if (!verdictEl || !result.quote) return;
-      const raw = (resultsEl.querySelector<HTMLInputElement>('#offerAmount')?.value ?? '').replace(/,/g, '');
-      const amount = Number.parseFloat(raw);
-      if (!Number.isFinite(amount) || amount <= 0) {
+      const amount = parseAmount(resultsEl.querySelector<HTMLInputElement>('#offerAmount')?.value ?? '');
+      if (amount === null || amount <= 0) {
         verdictEl.textContent = t('results.offerNeedAmount');
         verdictEl.hidden = false;
         return;

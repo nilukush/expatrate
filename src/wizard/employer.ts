@@ -1,9 +1,19 @@
-import type { EngineResult } from '../engine/types';
-
 export interface JdSalaryRange {
   min: number;
   max: number;
   currency: string | null;
+}
+
+/** The only floor fields the comparison needs; full FloorResult satisfies it. */
+export interface FloorLike {
+  annualGross: number;
+  currency: string;
+}
+
+/** The only quote fields the comparison needs; full QuoteResult satisfies it. */
+export interface QuoteLike {
+  annualTarget: number;
+  currency: string;
 }
 
 export type EmployerComparison =
@@ -22,8 +32,8 @@ export type EmployerComparison =
  */
 export function compareEmployerOffer(
   jd: JdSalaryRange,
-  floor: EngineResult['floor'],
-  quote: EngineResult['quote'],
+  floor: FloorLike | null,
+  quote: QuoteLike | null,
   rates: Record<string, number>,
 ): EmployerComparison {
   if (!floor && !quote) return { kind: 'hidden' };

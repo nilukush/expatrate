@@ -81,11 +81,12 @@ test('tax: shape valid, UK executive tier verified at 0.417, zero-tax countries 
       expect(tier.sourceUrl).toMatch(/^https:/);
     }
   }
-  const uk = byCountry.get('GBR');
-  const ukExec = uk.tiers.find((t: { label: string }) => t.label === 'executive');
+  const uk = byCountry.get('GBR') as { tiers: Array<{ label: string; effectiveDeduction: number; quality: string }> };
+  const ukExec = uk.tiers.find((t: { label: string }) => t.label === 'executive') as { effectiveDeduction: number; quality: string };
   expect(ukExec.effectiveDeduction).toBeCloseTo(0.417, 3);
   expect(ukExec.quality).toBe('High');
-  expect(byCountry.get('ARE').tiers[0].effectiveDeduction).toBe(0);
+  const areTiers = (byCountry.get('ARE') as { tiers: Array<{ effectiveDeduction: number }> }).tiers;
+  expect(areTiers[0].effectiveDeduction).toBe(0);
   // The rest of the GCC levies no personal income tax on salaries (PwC 2026).
   // Bahrain folds in the 1 percent SIO share expatriate employees pay.
   for (const code of ['SAU', 'QAT', 'OMN', 'KWT'] as const) {
@@ -198,13 +199,13 @@ test('benchmarks: full curated matrix, honest insufficient-data markers, curated
 test('package conventions: GCC splits with legal basis, western single gross', () => {
   const rows = load('package-conventions.json');
   const byCountry = new Map(rows.map((r: { country: string }) => [r.country, r]));
-  const are = byCountry.get('ARE');
+  const are = byCountry.get('ARE') as { style: string; basicPercent: { min: number }; housingPercent: { max: number }; gratuity: string };
   expect(are.style).toBe('gcc-split');
   expect(are.basicPercent.min).toBe(50);
   expect(are.housingPercent.max).toBe(30);
   expect(are.gratuity).toContain('basic');
   for (const code of ['GBR', 'USA', 'DEU', 'SGP', 'IND']) {
-    expect(byCountry.get(code).style).toBe('single-gross');
+    expect((byCountry.get(code) as { style: string }).style).toBe('single-gross');
   }
   for (const row of rows) {
     expect(row.sourceUrls.length).toBeGreaterThan(0);
@@ -228,8 +229,8 @@ test('family context: allowance prevalence and school fee ranges sourced', () =>
   const prevalence = new Map(
     data.educationAllowancePrevalence.map((p: { country: string }) => [p.country, p]),
   );
-  expect(prevalence.get('ARE').shareOfEmployers).toBeCloseTo(0.75, 2);
-  expect(prevalence.get('QAT').shareOfEmployers).toBeCloseTo(0.30, 2);
+  expect((prevalence.get('ARE') as { shareOfEmployers: number }).shareOfEmployers).toBeCloseTo(0.75, 2);
+  expect((prevalence.get('QAT') as { shareOfEmployers: number }).shareOfEmployers).toBeCloseTo(0.30, 2);
   expect(data.prevalenceSource).toMatch(/^https:/);
   const are = data.schoolFees.find((f: { country: string }) => f.country === 'ARE');
   expect(are.currency).toBe('AED');

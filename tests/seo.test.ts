@@ -66,10 +66,11 @@ describe('seo structured data', () => {
       { name: 'Salaries in Australia', url: SITE_URL + '/salaries/australia/' },
     ]);
     expect(ld['@type']).toBe('BreadcrumbList');
-    expect(ld.itemListElement).toHaveLength(2);
-    expect(ld.itemListElement[0].position).toBe(1);
-    expect(ld.itemListElement[0].item).toBe(SITE_URL + '/');
-    expect(ld.itemListElement[1].item).toBe(SITE_URL + '/salaries/australia/');
+    const items = ld.itemListElement as Array<{ position: number; item: string }>;
+    expect(items).toHaveLength(2);
+    expect(items[0].position).toBe(1);
+    expect(items[0].item).toBe(SITE_URL + '/');
+    expect(items[1].item).toBe(SITE_URL + '/salaries/australia/');
   });
 
   it('dataset JSON-LD describes the benchmark data with license and variables', () => {

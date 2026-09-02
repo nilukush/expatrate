@@ -26,6 +26,7 @@ export interface WizardState {
   employmentType: EmploymentType;
   companyType: string;
   originCountry: string;
+  entryMode: boolean;
   salaryAmount: number | null;
   salaryCurrency: string;
   salaryBasis: SalaryBasis;
@@ -40,6 +41,8 @@ export interface WizardState {
   schoolAgeChildren: string;
   displayCurrencies: string[];
   jdSalary: JdSalaryHint | null;
+  hardshipMode: boolean;
+  hardshipPost: string | null;
 }
 
 export const DEFAULT_STATE: WizardState = {
@@ -49,6 +52,7 @@ export const DEFAULT_STATE: WizardState = {
   employmentType: 'full-time',
   companyType: '',
   originCountry: '',
+  entryMode: false,
   salaryAmount: null,
   salaryCurrency: '',
   salaryBasis: 'monthly',
@@ -63,4 +67,6 @@ export const DEFAULT_STATE: WizardState = {
   schoolAgeChildren: '',
   displayCurrencies: [],
   jdSalary: null,
+  hardshipMode: false,
+  hardshipPost: null,
 };

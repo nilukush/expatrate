@@ -808,7 +808,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     }
     let result: EngineResult;
     try {
-      result = calculate(inputs, { datasets, fx });
+      result = calculate(inputs, { datasets, fx: { base: 'USD', asOf: fx.asOf, rates: fx.rates } });
     } catch (error) {
       showErrorSummary([
         { fieldId: 'salaryAmount', message: error instanceof Error ? error.message : t('errors.salaryAmount') },
@@ -1083,7 +1083,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       const currency = resultsEl.querySelector<HTMLSelectElement>('#offerCurrency')?.value ?? 'USD';
       const basis = resultsEl.querySelector<HTMLSelectElement>('#offerBasis')?.value === 'annual' ? 'annual' : 'monthly';
       try {
-        const verdict = evaluateOffer({ amount, currency, basis, gross: true }, result, fx.rates);
+        const verdict = evaluateOffer({ amount, currency, basis, gross: true }, result, { base: 'USD', asOf: fx.asOf, rates: fx.rates });
         const band = t(`results.offerBand.${verdict.bandPosition}`);
         const floorLine = verdict.floorGapPct === null ? '' : ' ' + (verdict.floorGapPct >= 0
           ? t('results.offerAboveFloor', { pct: verdict.floorGapPct })

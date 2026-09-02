@@ -417,7 +417,7 @@ test('floor uses the bracket table when the target country has one', () => {
 });
 
 test('origin tax uses the bracket table when available', () => {
-  const gbrPersona = {
+  const gbrPersona: EngineInputs = {
     ...PERSONA,
     originCountry: 'GBR',
     currentSalary: { amount: 8000, currency: 'GBP', basis: 'monthly', gross: true },

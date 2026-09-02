@@ -6,6 +6,7 @@ import type {
   Datasets,
   EngineContext,
   EngineInputs,
+  EngineMessage,
   EngineResult,
   FxRates,
   FloorResult,
@@ -158,7 +159,7 @@ function confidenceScore(
   datasets: Datasets,
   stalePpp: PppRow[] = [],
 ): ConfidenceResult {
-  const reasons: string[] = [];
+  const reasons: EngineMessage[] = [];
   let level: 'High' | 'Medium' | 'Low';
   if (anchor) {
     level = anchor.quality === 'High' ? 'High' : anchor.quality === 'Medium' ? 'Medium' : 'Low';
@@ -183,7 +184,7 @@ function confidenceScore(
     if (level === 'High') level = 'Medium';
     reasons.push({ key: 'volatileCurrency' });
   }
-  const originTax = effectiveDeduction(datasets, inputs.originCountry, inputs.level);
+  const originTax = effectiveDeduction(datasets, inputs.originCountry ?? '', inputs.level);
   if (originTax.quality === 'Low' || originTax.label === 'default') {
     reasons.push({ key: 'originTaxEstimate' });
   }
@@ -200,7 +201,7 @@ export function calculate(inputs: EngineInputs, ctx: EngineContext): EngineResul
   const entryMode = !inputs.currentSalary || !inputs.originCountry;
   const origin = entryMode ? null : findCountry(datasets, inputs.originCountry as string);
   const target = findCountry(datasets, inputs.targetCountry);
-  const warnings: string[] = [];
+  const warnings: EngineMessage[] = [];
 
   let annual = 0;
   let basisLine: string | null = null;

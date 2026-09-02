@@ -42,12 +42,11 @@ test('primitive scale steps are emitted as reference variables', () => {
   const css = tokensCss();
   const tokens = tokensJson();
   for (const [hue, scale] of Object.entries(tokens.color.primitives)) {
-    for (const step of Object.keys(scale)) {
+    for (const step of Object.keys(scale as object)) {
       expect(css).toContain(`--${hue}-${step}:`);
     }
   }
 });
-
 test('typography, radius, and font tokens are emitted', () => {
   const css = tokensCss();
   expect(css).toContain('--font-base:');

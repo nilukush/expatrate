@@ -28,7 +28,8 @@
     "privacy": "Parsed in your browser. Never uploaded.",
     "optional": "optional",
     "dividerManual": "or tell us your role",
-    "resume": "Continue where you left off (Step {n} of {total})"
+    "resume": "Continue where you left off (Step {n} of {total})",
+    "calculating": "Calculating..."
   },
   "steps": {
     "role": {
@@ -196,7 +197,9 @@
     "remotePolicyAgnostic": "Still, {pct} percent of remote workers report location-independent pay bands.",
     "remotePolicyMagnitude": "Where employers do adjust for location, published systems use tiers of roughly 15 to 25 percent off the HQ rate, not full localization.",
     "remotePolicyAdvice": "Argue from the employer-market anchor only if the role is explicitly location-agnostic or global-banded; otherwise anchor to your local market, which is where most offers land.",
-    "sourceLabel": "source"
+    "sourceLabel": "source",
+    "fxTitle": "Using stored exchange rates",
+    "fxBody": "Live exchange rates could not be fetched, so figures use the snapshot from {date}. Treat converted amounts as close, not exact."
   },
   "parse": {
     "resumeLabel": "Resume (PDF or DOCX, optional)",

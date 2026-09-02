@@ -124,11 +124,12 @@ export async function getFxRates(options: FxOptions): Promise<FxResult> {
     // fall through to the embedded snapshot
   }
 
-  sessionCache = {
+  // The snapshot is a per-call fallback, never a session-wide pin: the next
+  // submit retries live rates instead of silently serving stale ones.
+  return {
     rates: options.snapshot.rates,
     asOf: options.snapshot.asOf,
     source: 'snapshot',
     warning: 'Live rates are unavailable right now; figures use the embedded snapshot. Check the date shown.',
   };
-  return sessionCache;
 }

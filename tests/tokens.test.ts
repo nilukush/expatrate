@@ -115,3 +115,9 @@ test('white text on the primary button clears AA at rest, on hover, and mid-tran
   expect(contrastRatio('ffffff', hover)).toBeGreaterThanOrEqual(4.5);
   expect(contrastRatio('ffffff', channelMidpoint(rest, hover))).toBeGreaterThanOrEqual(4.5);
 });
+
+test('the input border token clears the 3:1 non-text contrast floor on cards', () => {
+  const light = tokensJson().color.semantic.light;
+  const hexOf = (token: { hex?: string; value: string }) => (token.hex ?? token.value).slice(1);
+  expect(contrastRatio(hexOf(light.input), hexOf(light.card))).toBeGreaterThanOrEqual(3);
+});

@@ -391,3 +391,83 @@ test('remote for a foreign company shows the pay-policy advisory card', async ({
   await expect(page.locator('#remotePolicyCard')).toContainText('31');
   await expect(page.locator('#remotePolicyCard a')).toHaveCount(3);
 });
+
+test('the Philippines interpretation uses the 13-month convention', async ({ page }) => {
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'it-executive');
+  await page.selectOption('#experienceBand', '15+');
+  await page.click('#nextBtn');
+  await page.selectOption('#originCountry', 'PHL');
+  await page.fill('#salaryAmount', '100000');
+  await expect(page.locator('#interpretation')).toContainText('1,300,000');
+});
+
+test('pasted job description text survives back navigation', async ({ page }) => {
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'it-executive');
+  await page.selectOption('#experienceBand', '15+');
+  const text = 'Dabble hires a CTO. Salary AUD 350,000 per annum plus super.';
+  await page.fill('#jdText', text);
+  await page.click('#nextBtn');
+  await page.click('#backBtn');
+  await expect(page.locator('#jdText')).toHaveValue(text);
+});
+
+test('an offline rate fetch shows the snapshot warning card', async ({ page }) => {
+  await page.route('**/open.er-api.com/**', (route) => route.abort());
+  await page.route('**/api.frankfurter.dev/**', (route) => route.abort());
+  await fillHappyPathToResults(page);
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+  await expect(page.locator('#fxWarning')).toBeVisible();
+});
+
+test('the quote button is disabled while rates are fetched', async ({ page }) => {
+  await page.route('**/open.er-api.com/**', async (route) => {
+    await page.waitForTimeout(600);
+    await route.abort();
+  });
+  await page.route('**/api.frankfurter.dev/**', (route) => route.abort());
+  await waitForWizard(page);
+  await page.selectOption('#roleFamily', 'it-executive');
+  await page.selectOption('#experienceBand', '15+');
+  await page.click('#nextBtn');
+  await page.selectOption('#originCountry', 'ARE');
+  await page.fill('#salaryAmount', '53871');
+  await page.check('#salaryConfirmed');
+  await page.click('#nextBtn');
+  await page.selectOption('#targetCountry', 'ARE');
+  await page.click('#nextBtn');
+  await page.click('#skipFamily');
+  await page.click('#seeQuote');
+  await expect(page.locator('#seeQuote')).toBeDisabled();
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+});
+
+test('a shared link strips its parameter and leaves the visitor draft alone', async ({ page }) => {
+  const token = Buffer.from(
+    JSON.stringify({
+      step: 1,
+      roleFamily: 'it-executive',
+      experienceBand: '15+',
+      originCountry: 'GBR',
+      salaryAmount: 120000,
+      salaryCurrency: 'GBP',
+      salaryBasis: 'annual',
+      salaryGross: true,
+      salaryConfirmed: true,
+      targetCountry: 'USA',
+    }),
+  ).toString('base64url');
+  await page.addInitScript(() => {
+    localStorage.setItem('expatrate.wizard.v1', JSON.stringify({ roleFamily: 'design', experienceBand: '3-5' }));
+  });
+  await page.goto(`/?w=${token}`);
+  await expect(page.locator('#resultsHeading')).toBeVisible();
+  await expect(page).toHaveURL(/\/[^?]*$/);
+  const stored = await page.evaluate(() => localStorage.getItem('expatrate.wizard.v1'));
+  expect(stored).toContain('design');
+  await page.click('#startOver');
+  await page.reload();
+  await page.waitForSelector('#stepIndicator', { state: 'visible' });
+  await expect(page.locator('#roleFamily')).toHaveValue('design');
+});

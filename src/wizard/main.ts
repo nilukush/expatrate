@@ -1,4 +1,4 @@
-import { calculate, evaluateOffer } from '../engine/engine';
+import { calculate, evaluateOffer, monthsPerYear } from '../engine/engine';
 import { loadDatasets } from '../engine/data';
 import type { CountryRow } from '../engine/types';
 import type { EngineResult } from '../engine/types';
@@ -104,6 +104,14 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
   let resumeStep: WizardState['step'] | null = loadResumeStep() as WizardState['step'] | null;
   state.step = 1;
 
+  // While a shared link is being adopted, autosave stays off so the visitor's
+  // own draft is not overwritten by merely opening someone's results.
+  let shareAdoption = false;
+  const persist = (): void => {
+    if (shareAdoption) return;
+    saveState(state);
+  };
+
   const sharedParams = new URLSearchParams(window.location.search);
   const shared = sharedParams.get('w');
   if (shared) {
@@ -111,8 +119,20 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     if (decoded && toEngineInputs(decoded)) {
       state = { ...decoded, step: 5 };
       resumeStep = null;
+      shareAdoption = true;
+      // The share parameter must not survive navigation: a reload or Start
+      // Over would otherwise resurrect the shared state over the visitor's.
+      window.history.replaceState({}, '', window.location.pathname);
       void submit();
     }
+  }
+  if (shareAdoption) {
+    // The visitor owns their storage again at the first real interaction.
+    const ownAgain = (): void => {
+      shareAdoption = false;
+    };
+    window.addEventListener('pointerdown', ownAgain, { once: true });
+    window.addEventListener('keydown', ownAgain, { once: true });
   }
 
   function render(): void {
@@ -120,8 +140,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     resultsEl.hidden = true;
     wizardEl.innerHTML = `<div class="wz-step wz-shell">${stepHtml(state.step)}</div>`;
     wireStep(state.step);
-    saveState(state);
-    saveResumeStep(state.step);
+    persist();
+    if (!shareAdoption) saveResumeStep(state.step);
   }
 
   function stepHtml(step: WizardState['step']): string {
@@ -197,7 +217,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         </div>
         <div class="wz-field">
           <label for="jdText">${escapeHtml(t('steps.role.jd'))}</label>
-          <textarea id="jdText" class="wz-input" rows="4">${escapeHtml('')}</textarea>
+          <textarea id="jdText" class="wz-input" rows="4">${escapeHtml(state.jdText)}</textarea>
           <p class="wz-note">${escapeHtml(t('steps.role.jdHelp'))}</p>
           <p class="wz-note" id="jdSuggestion" hidden></p>
         </div>
@@ -345,12 +365,12 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       const wrap = wizardEl.querySelector<HTMLElement>('#hardshipPostWrap');
       if (wrap && !hMode.checked) wrap.setAttribute('hidden', '');
       else if (wrap) wrap.removeAttribute('hidden');
-      saveState(state);
+      persist();
     });
     const hPost = wizardEl.querySelector<HTMLSelectElement>('#hardshipPost');
     hPost?.addEventListener('change', () => {
       state.hardshipPost = hPost.value;
-      saveState(state);
+      persist();
     });
   }
 
@@ -394,7 +414,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     if (state.salaryAmount === null || state.salaryAmount <= 0 || !currency) {
       return '';
     }
-    const months = 12;
+    const months = monthsPerYear(datasets, state.originCountry);
     const basisWord = t(`options.grossNet.${state.salaryGross ? 'gross' : 'net'}`);
     if (state.salaryBasis === 'monthly') {
       const annual = state.salaryAmount * months;
@@ -487,7 +507,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       // Skip is the escape hatch: it drops the optional answers entirely.
       state.dependents = '';
       state.schoolAgeChildren = '';
-      saveState(state);
+      persist();
       goNext();
     });
     wizardEl.querySelector('#backBtn')?.addEventListener('click', goBack);
@@ -496,7 +516,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       const element = wizardEl.querySelector<HTMLSelectElement>(`#${id}`);
       element?.addEventListener('change', () => {
         apply(element.value);
-        saveState(state);
+        persist();
       });
     };
 
@@ -542,7 +562,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
             if (select) select.value = band;
             applied.push('experience');
           }
-          saveState(state);
+          persist();
           resumeNote.className = 'wz-note wz-note-ok';
           resumeNote.textContent = applied.length > 0
             ? `${t('parse.applied', { what: applied.join(', ') })}${applied.includes('role family') ? ` ${t('parse.appliedSwitchNote')}` : ''} ${t('wizard.privacy')}`
@@ -599,7 +619,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         // Silent when there is nothing new to say: same family, or nothing detected.
         if (!family || family === state.roleFamily) {
           jdSuggestion.hidden = true;
-          saveState(state);
+          persist();
           return;
         }
         const label = roleFamilies.find((f) => f.id === family)?.name ?? family;
@@ -608,7 +628,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           state.roleFamily = family;
           const select = wizardEl.querySelector<HTMLSelectElement>('#roleFamily');
           if (select) select.value = family;
-          saveState(state);
+          persist();
           jdSuggestion.hidden = true;
           return;
         }
@@ -620,7 +640,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           state.roleFamily = family;
           const select = wizardEl.querySelector<HTMLSelectElement>('#roleFamily');
           if (select) select.value = family;
-          saveState(state);
+          persist();
           jdSuggestion.hidden = true;
           jdSuggestion.replaceChildren();
         });
@@ -631,6 +651,8 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       // React while typing (debounced) so the layout settles long before any button click:
       // a suggestion appearing on blur used to shift the row and swallow the first Continue click.
       jd?.addEventListener('input', () => {
+        state.jdText = jd.value;
+        persist();
         clearTimeout(jdTimer);
         jdTimer = setTimeout(applyJdSuggestion, 400);
       });
@@ -675,7 +697,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           state.salaryAmount = null;
           state.salaryConfirmed = false;
         }
-        saveState(state);
+        persist();
         render();
       });
       const origin = wizardEl.querySelector<HTMLSelectElement>('#originCountry');
@@ -688,18 +710,18 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           currencySelect.value = country.currency;
         }
         updateInterpretation();
-        saveState(state);
+        persist();
       });
       currencySelect?.addEventListener('change', () => {
         state.salaryCurrency = currencySelect.value;
         updateInterpretation();
-        saveState(state);
+        persist();
       });
       const amount = wizardEl.querySelector<HTMLInputElement>('#salaryAmount');
       amount?.addEventListener('input', () => {
         state.salaryAmount = parseAmount(amount.value);
         updateInterpretation();
-        saveState(state);
+        persist();
       });
       wizardEl.querySelectorAll<HTMLInputElement>('input[name="salaryBasis"]').forEach((radio) => {
         radio.addEventListener('change', () => {
@@ -708,26 +730,26 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           const confirmBox = wizardEl.querySelector<HTMLInputElement>('#salaryConfirmed');
           if (confirmBox) confirmBox.checked = false;
           updateInterpretation();
-          saveState(state);
+          persist();
         });
       });
       wizardEl.querySelectorAll<HTMLInputElement>('input[name="payBasis"]').forEach((radio) => {
         radio.addEventListener('change', () => {
           state.salaryGross = radio.value === 'gross';
           updateInterpretation();
-          saveState(state);
+          persist();
         });
       });
       const confirmBox = wizardEl.querySelector<HTMLInputElement>('#salaryConfirmed');
       confirmBox?.addEventListener('change', () => {
         state.salaryConfirmed = confirmBox.checked;
-        saveState(state);
+        persist();
       });
       wizardEl.querySelectorAll<HTMLInputElement>('input[data-package]').forEach((box) => {
         box.addEventListener('change', () => {
           const key = box.dataset.package as keyof WizardState['packageOnTop'];
           state.packageOnTop[key] = box.checked;
-          saveState(state);
+          persist();
         });
       });
     }
@@ -755,12 +777,12 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         radio.addEventListener('change', () => {
           state.workArrangement = radio.value as WizardState['workArrangement'];
           if (wrap) wrap.hidden = state.workArrangement !== 'remote-foreign';
-          saveState(state);
+          persist();
         });
       });
       employer?.addEventListener('change', () => {
         state.employerCountry = employer.value;
-        saveState(state);
+        persist();
       });
       readSelection('sponsorshipSelect', (value) => { state.sponsorship = value; });
     }
@@ -777,7 +799,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
           if (box.checked) set.add(box.value);
           else set.delete(box.value);
           state.displayCurrencies = [...set];
-          saveState(state);
+          persist();
         });
       });
     }
@@ -794,28 +816,41 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
       showErrorSummary([{ fieldId: 'salaryAmount', message: t('errors.salaryAmount') }]);
       return;
     }
-    const datasets = loadDatasets();
-    let fx: FxResult;
-    try {
-      fx = await getFxRates({ snapshot: fxSnapshotJson as unknown as FxSnapshot });
-    } catch {
-      fx = {
-        rates: (fxSnapshotJson as unknown as FxSnapshot).rates,
-        asOf: (fxSnapshotJson as unknown as FxSnapshot).asOf,
-        source: 'snapshot',
-        warning: t('results.fx', { source: 'snapshot', date: (fxSnapshotJson as unknown as FxSnapshot).asOf }),
-      };
+    // The rate fetch can take seconds; the submit button must not look idle.
+    const seeQuoteBtn = wizardEl.querySelector<HTMLButtonElement>('#seeQuote');
+    const seeQuoteLabel = seeQuoteBtn?.textContent ?? null;
+    if (seeQuoteBtn) {
+      seeQuoteBtn.disabled = true;
+      seeQuoteBtn.textContent = t('wizard.calculating');
     }
-    let result: EngineResult;
     try {
-      result = calculate(inputs, { datasets, fx: { base: 'USD', asOf: fx.asOf, rates: fx.rates } });
-    } catch (error) {
-      showErrorSummary([
-        { fieldId: 'salaryAmount', message: error instanceof Error ? error.message : t('errors.salaryAmount') },
-      ]);
-      return;
+      const datasets = loadDatasets();
+      let fx: FxResult;
+      try {
+        fx = await getFxRates({ snapshot: fxSnapshotJson as unknown as FxSnapshot });
+      } catch {
+        fx = {
+          rates: (fxSnapshotJson as unknown as FxSnapshot).rates,
+          asOf: (fxSnapshotJson as unknown as FxSnapshot).asOf,
+          source: 'snapshot',
+        };
+      }
+      let result: EngineResult;
+      try {
+        result = calculate(inputs, { datasets, fx: { base: 'USD', asOf: fx.asOf, rates: fx.rates } });
+      } catch (error) {
+        showErrorSummary([
+          { fieldId: 'salaryAmount', message: error instanceof Error ? error.message : t('errors.salaryAmount') },
+        ]);
+        return;
+      }
+      renderResults(result, fx);
+    } finally {
+      if (seeQuoteBtn) {
+        seeQuoteBtn.disabled = false;
+        if (seeQuoteLabel !== null) seeQuoteBtn.textContent = seeQuoteLabel;
+      }
     }
-    renderResults(result, fx);
   }
 
 
@@ -837,7 +872,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     const origin = countries.find((c) => c.iso3 === state.originCountry);
     if (!origin) return engineLine;
     const currency = state.salaryCurrency || origin.currency;
-    const months = 12;
+    const months = monthsPerYear(datasets, state.originCountry);
     const amount = state.salaryAmount ?? 0;
     const monthly = state.salaryBasis === 'monthly' ? amount : amount / months;
     const annual = state.salaryBasis === 'monthly' ? amount * months : amount;
@@ -891,7 +926,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         const fromRate = fx.rates[state.salaryCurrency];
         const toRate = fx.rates[quote.currency];
         if (fromRate !== undefined && toRate !== undefined) {
-          const annual = state.salaryAmount * (state.salaryBasis === 'monthly' ? 12 : 1);
+          const annual = state.salaryAmount * (state.salaryBasis === 'monthly' ? monthsPerYear(datasets, state.originCountry) : 1);
           priorMonthly = ((annual / fromRate) * toRate) / 12;
         }
       }
@@ -1015,6 +1050,9 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
     const warnings: Array<{ key: string; params?: Record<string, unknown> }> = [...result.warnings];
     if (warnings.length > 0) {
       sections.push(`<div class="wz-card wz-card-warning"><h3>${escapeHtml(t('results.warningsTitle'))}</h3><ul id="warningsList">${warnings.map((warning) => `<li>${escapeHtml(engineMessage(warning))}</li>`).join('')}</ul></div>`);
+    }
+    if (fx.source === 'snapshot') {
+      sections.push(`<div class="wz-card wz-card-warning" id="fxWarning"><h3>${escapeHtml(t('results.fxTitle'))}</h3><p>${escapeHtml(fmtNumbersIn(t('results.fxBody', { date: fx.asOf })))}</p></div>`);
     }
 
     if (quote) {

@@ -114,3 +114,9 @@ test('the job link hint names the boards and the no-server promise in every loca
     expect(hint as string, loc).toMatch(new RegExp(promiseMarker[loc] as RegExp));
   }
 });
+
+test('the English methodology page discloses the 20 percent default tax gross-up', () => {
+  const page = readFileSync(`${root}src/pages/methodology.astro`, 'utf8');
+  expect(page).toMatch(/20 percent|20%/);
+  expect(page).toMatch(/default/i);
+});

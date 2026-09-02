@@ -94,3 +94,9 @@ test.describe('locales', () => {
     await expect(page.locator('#nextBtn')).toContainText('Continue');
   });
 });
+
+test('the EN switcher on the Arabic methodology page stays on methodology', async ({ page }) => {
+  await page.goto('/ar/methodology/');
+  await page.click('.lang-switch:has-text("EN") >> text=EN');
+  await expect(page).toHaveURL(/\/methodology\/$/);
+});

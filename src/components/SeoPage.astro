@@ -104,7 +104,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
       <header class="site-header">
         <a class="brand" href={`${localePath}/`}><span class="brand-mark" aria-hidden="true">%</span><span class="brand-name" dir="ltr">ExpatRate</span></a>
         <nav class="lang-switch" aria-label={t('home.langLabel')}>
-          <a href={hrefFor('en') === `${SITE_URL}/methodology/` ? '/' : hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
+          <a href={hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
           <a href={hrefFor('ar').replace(SITE_URL, '') || '/'}>عربي</a>
           <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
         </nav>

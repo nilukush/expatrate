@@ -110,4 +110,16 @@ describe('getFxRates fallback chain', () => {
     await getFxRates({ fetchImpl, snapshot: SNAPSHOT });
     expect(fetchImpl).toHaveBeenCalledTimes(1);
   });
+
+  test('a snapshot fallback is not pinned for the session: the next call retries live', async () => {
+    let call = 0;
+    const fetchImpl = () => {
+      call += 1;
+      return call <= 2 ? failure() : erApiSuccess();
+    };
+    const first = await getFxRates({ fetchImpl, snapshot: SNAPSHOT });
+    expect(first.source).toBe('snapshot');
+    const second = await getFxRates({ fetchImpl, snapshot: SNAPSHOT });
+    expect(second.source).toBe('open.er-api.com');
+  });
 });

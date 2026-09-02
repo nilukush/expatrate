@@ -40,6 +40,7 @@ export interface WizardState {
   dependents: string;
   schoolAgeChildren: string;
   displayCurrencies: string[];
+  jdText: string;
   jdSalary: JdSalaryHint | null;
   hardshipMode: boolean;
   hardshipPost: string | null;
@@ -66,6 +67,7 @@ export const DEFAULT_STATE: WizardState = {
   dependents: '',
   schoolAgeChildren: '',
   displayCurrencies: [],
+  jdText: '',
   jdSalary: null,
   hardshipMode: false,
   hardshipPost: null,

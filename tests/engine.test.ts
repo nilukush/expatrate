@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test, describe } from 'vitest';
 import { calculate, evaluateOffer, loadDatasets } from '../src/engine/index';
+import { monthsPerYear } from '../src/engine/engine';
 import type { EngineInputs, FxRates } from '../src/engine/types';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
@@ -427,6 +428,12 @@ test('origin tax uses the bracket table when available', () => {
   const basis = result.basisLine ?? '';
   expect(basis).toContain('GBP');
   expect(result.status).not.toBe('insufficient_data');
+});
+
+test('monthsPerYear applies the 13-month conventions for the Philippines and Indonesia', () => {
+  expect(monthsPerYear(datasets, 'PHL')).toBe(13);
+  expect(monthsPerYear(datasets, 'IDN')).toBe(13);
+  expect(monthsPerYear(datasets, 'ARE')).toBe(12);
 });
 
 describe('market-currency anchors (Lebanon rows quote USD while the floor is LBP)', () => {

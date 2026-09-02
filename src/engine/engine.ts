@@ -96,7 +96,7 @@ function effectiveDeduction(
   };
 }
 
-function monthsPerYear(datasets: Datasets, iso3: string): number {
+export function monthsPerYear(datasets: Datasets, iso3: string): number {
   const override = datasets.employment.countryOverrides.find((o) => o.country === iso3);
   const pending = override?.thirteenthMonthMandatory === true || override?.religiousAllowanceTHR === true;
   return pending ? 13 : datasets.employment.defaultMonthsPerYear;

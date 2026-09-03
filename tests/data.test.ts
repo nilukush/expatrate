@@ -534,3 +534,50 @@ test('expansion wave 5: Finland, Austria, Belgium, Romania, Greece carry verifie
   expect(grcDesign.p50).toBeGreaterThan(0);
   expect(grcDesign.note).toContain('midpoint');
 });
+
+test('expansion wave 6: Israel, Chile, Colombia, Argentina carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  // Taiwan had 46 verified rows curated but is not in the 206-country list (the World Bank PPP
+  // pipeline has no Taiwan data); shipping it needs a product decision, not a curation merge.
+  const currency = { ISR: 'ILS', CHL: 'CLP', COL: 'COP', ARG: 'ARS' };
+  const counts = { ISR: 38, CHL: 28, COL: 23, ARG: 31 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+    }
+  }
+  // Spot anchors verified against the cited pages on 2026-09-03.
+  const isrEdu = by('ISR').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(isrEdu.p25).toBe(12_236);
+  expect(isrEdu.p50).toBe(16_716);
+  expect(isrEdu.p75).toBe(22_314);
+  expect(isrEdu.basis).toBe('monthly-gross');
+  expect(isrEdu.quality).toBe('High');
+  const chlEdu = by('CHL').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(chlEdu.p50).toBe(936_585);
+  expect(chlEdu.p25).toBe(0);
+  expect(chlEdu.p75).toBe(0);
+  expect(chlEdu.note).toContain('floor');
+  const colEdu = by('COL').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(colEdu.p25).toBe(4_506_804);
+  expect(colEdu.p75).toBe(6_758_592);
+  expect(colEdu.p50).toBe(5_632_698);
+  expect(colEdu.note).toContain('midpoint');
+  const colGm = by('COL').find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive');
+  expect(colGm.p25).toBe(12_800_000);
+  expect(colGm.p50).toBe(24_198_000);
+  expect(colGm.p75).toBe(37_158_000);
+  const argSw = by('ARG').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(argSw.p50).toBe(3_500_000);
+  expect(argSw.basis).toBe('monthly-gross');
+  expect(argSw.quality).toBe('Low');
+  // Statutory scale spans become disclosed midpoints.
+  const argHealth = by('ARG').find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'senior');
+  expect(argHealth.p50).toBe(1_800_583);
+  expect(argHealth.note).toContain('midpoint');
+  expect(argHealth.quality).toBe('High');
+});

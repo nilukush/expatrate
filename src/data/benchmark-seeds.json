@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-02",
+  "lastReviewed": "2026-09-03",
   "curationLog": [
     "Rows curated 2026-08-30 by three research agents (docs/RESEARCH/benchmark-curation-2026-08-30.md): US and UK from official statistics (BLS OEWS public API, ONS ASHE 2025 provisional), GCC from GulfTalent public salary pages, India from Instahyre public reports, Singapore from Morgan McKinley 2026 public tables, Germany from Stepstone Gehalt pages.",
     "Conflict rule: when two sources cover the same cell, the higher-quality row wins and the alternative is recorded in the row note. ARE it-executive executive: the enterprise recruiter-band row (Medium) was kept over the GulfTalent CTO page (n=15, Low); the GulfTalent figures are noted on the row.",
@@ -8,7 +8,8 @@
     "Second Asia/EU pass (duplicate agent) added 18 cells the first pass missed: Singapore non-tech sectors, Egypt tech bands (egytech.fyi 2025 community survey, 1,413 responses, EGP 2025 data with currency caveat), and German lead titles. Overlapping cells kept the first-pass rows per the conflict rule (SGP it-executive executive stays as Head of Infrastructure rather than the CISO mapping).",
     "Expansion wave 3 (2026-09-02, docs/RESEARCH/benchmark-curation-2026-08-30.md): France 22 rows (Robert Half France 2026 guide grids verified verbatim, guide FAQ states figures are starting fixed gross annual pay; TPC Recrutement 2026 medians with stated samples; Capital.fr reproducing the LHH 2025 marketing grid), Spain 16 rows (INE Cuatrienal Estructura Salarial 2022 quartile series via wstempus JSON, quality capped at Medium for the 2022 vintage; Tecnoempleo Sept 2026 gross annual bands; InfoJobs 2024 offered averages), Poland 22 rows (Just Join IT 2026 report UoP gross medians from 2025 postings; Sedlak and Sedlak Ogolnopolskie Badanie Wynagrodzen quartiles updated January 2026 with stated samples), Turkey 7 rows all Low (SalaryExpert ERI pages, senior 8+ years average annual gross, ERI publishes averages not percentiles). All anchors independently re-fetched and matched verbatim before merge.",
     "Expansion wave 4 (2026-09-02, docs/RESEARCH/benchmark-curation-2026-08-30.md): Italy 37 rows (Manageritalia-JobPricing dirigenti RAL via free press reproductions, Orizzonte Scuola statutory CCNL teacher tables, TechCompenso crowd data held Low), Sweden 39 rows (SCB wage structure statistics 2025 with true percentiles, Unionen market-salary spans with disclosed midpoints), Norway 25 rows (SSB statbank 11418 occupation monthly earnings median and quartiles from the a-meldingen registry, all High), Denmark 32 rows (DST LONS20 register quartiles converted with DST's own 160.33-hour factor, PROSA payslip statistics), Czechia 38 rows (ISPV national wage survey 2025 XLSX quartiles, platy.cz decile spans with disclosed midpoints), Portugal 17 rows (PORDATA republication of Quadros de Pessoal 2024 official means, Landing.jobs 2025 tech report with stated method). All anchors independently re-fetched and matched verbatim before merge; SCB's suppressed finance-executive quartile collapsed to median-only.",
-    "Expansion wave 5 (2026-09-02, docs/RESEARCH/benchmark-curation-2026-08-30.md): Finland 34 rows (Statistics Finland Structure of Earnings 2024 via PxWeb deciles and median by 4-digit occupation, decile convention disclosed per row; TEK survey; koodaripula.fi Duunitori job-ad quartiles), Austria 48 rows (Statistik Austria Allgemeiner Einkommensbericht 2024 ODS with true quartiles by OEISCO group; karriere.at job-ad levels; kununu held Low), Belgium 25 rows (Statbel SES occupation means, Onderwijs Vlaanderen official teacher scales, Jobat nurse scales), Romania 17 rows (INS sector means via salariile.ro republication, statutory medic primar scale span, Paylab decile spans held Low), Greece 39 rows (Eurostat SES 2022 occupation-by-sector means, Greek Ministry of Finance statutory public-sector examples, Paylab crowd spans held Low). All anchors independently re-fetched and matched verbatim before merge; span rows carry disclosed midpoints."
+    "Expansion wave 5 (2026-09-02, docs/RESEARCH/benchmark-curation-2026-08-30.md): Finland 34 rows (Statistics Finland Structure of Earnings 2024 via PxWeb deciles and median by 4-digit occupation, decile convention disclosed per row; TEK survey; koodaripula.fi Duunitori job-ad quartiles), Austria 48 rows (Statistik Austria Allgemeiner Einkommensbericht 2024 ODS with true quartiles by OEISCO group; karriere.at job-ad levels; kununu held Low), Belgium 25 rows (Statbel SES occupation means, Onderwijs Vlaanderen official teacher scales, Jobat nurse scales), Romania 17 rows (INS sector means via salariile.ro republication, statutory medic primar scale span, Paylab decile spans held Low), Greece 39 rows (Eurostat SES 2022 occupation-by-sector means, Greek Ministry of Finance statutory public-sector examples, Paylab crowd spans held Low). All anchors independently re-fetched and matched verbatim before merge; span rows carry disclosed midpoints.",
+    "Expansion wave 6 (2026-09-03, docs/RESEARCH/benchmark-curation-2026-08-30.md): Israel 38 rows (Manpower Israel salary tables with stated gross basis, Knesset Research Center teacher data via Calcalist, Ministry of Finance physician data via Bizportal; Avodata official portal bot-blocked), Chile 28 rows (Buk Guia Salarial real-payroll bands via press reproduction, IT Workers headhunting guide, Lota municipal statutory scale; INE ESI rejected for net basis), Colombia 23 rows (Buk Colombia payroll percentile bands, Michael Page Colombia free tool, El Tiempo statutory teacher table), Argentina 31 rows (sysarmy/OpenQube 2026.01 survey medians with the peso subset identified, ATE Decreto 1133/09 statutory health scale, iProfesional press synthesis held Low). New floor-only convention: cells with a single published floor store it as a median-only row with the floor disclosed. Taiwan had 46 verified rows curated (104 Salary Guide published P25/P50/P75 by title and tenure with sample counts) but is NOT in the 206-country list because the World Bank PPP pipeline has no Taiwan data; those rows stay parked in the research file pending an owner decision on extending the country list. All anchors independently re-fetched and matched verbatim before merge."
   ],
   "rows": [
     {
@@ -19084,6 +19085,1986 @@
         "https://www.esos.gr/arthra/98307/oi-neoi-misthoi-ekpaideytikon-kai-stelehon-apo-1i-aprili-analytikoi-pinakes-molis-24"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Greek public school leadership, statutory basic gross monthly pay as of 1 April 2024 per esos.gr (education sector portal reproducing the unified payroll tables): school principals (didaskaloi-diefthintes) 1630 to 2460 EUR basic plus a school-leadership allowance of 330 to 450 EUR, and directors of education 1740 to 2580 EUR basic plus a special allowance of 700 EUR; the SPAN endpoints take the lowest principal basic and the highest director-of-education basic, excluding allowances. Basis: monthly gross basic (vasikos misthos, mikta). Figures predate the April 2025 and April 2026 increases (the unified payroll rose by 70 EUR in 2025 and a further 40 EUR in 2026), so current statutory amounts are somewhat higher; 14 payments per year is the public-sector convention."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 35000,
+      "p50": 40000,
+      "p75": 45000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.bizportal.co.il/career/news/article/20015996",
+        "https://en.globes.co.il/en/article-tech-salaries-in-israel-falling-with-jobs-harder-to-find-1001502891",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehandes tochna (software engineer), Manpower Israel salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max range, not percentiles). Basis authority: page states the tables include gross salary for a full-time monthly position, amounts in thousands of NIS per month (translated from Hebrew). Recruiter range data, sample size not stated. Same-cell alternatives: GotFriends placement data seniors (5+ years experience) average 38,183 ILS per month Q1 2025 and 37,071 in 2024; CBS average wage of all software developers 31,100 ILS per month in late 2024, all seniorities combined (via Globes Feb 2025); Ethosa placement data full-stack engineers signing at 34,000 to 35,000 in early 2025; AllJobs software engineer 6+ years band 20,000 to 30,000 (whole market, weighted job-board data)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51258,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bizportal.co.il/career/news/article/20015996",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "Published title: menahel pituach ve roshei kvutsot (development managers and team leaders) in hi-tech. GotFriends placement data reproduced by Bizportal Apr 2025 with attribution (data: GotFriends), described as average monthly salary in positions placed over the last year. Single published average placed in the p50 slot; gross not explicitly labeled on page, figure consistent with gross monthly convention for hi-tech placements. Q1 2025: 51,258 ILS per month; 2024: 46,815 (up 9 percent). Sample size not stated. Same-cell alternatives: AllJobs software engineer managerial and senior band 20,000 to 32,000 (whole market); AllJobs executives table VP R&D band 31,000 to 45,000."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 30000,
+      "p50": 42000,
+      "p75": 54000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: samnach technologiote (VP Technologies, CTO), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max range). Basis authority: AllJobs states salaries are gross for a full-time position, in thousands of shekels per month, based on weighted data from the AllJobs site (translated from Hebrew); sample size not stated. Same-cell alternatives from the same page: VP R&D 31,000 to 45,000; software R&D manager 25,000 to 30,000."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 35000,
+      "p50": 40000,
+      "p75": 45000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.bizportal.co.il/career/news/article/20015996",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: madai netunim (data scientist), Manpower Israel hi-tech salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample size not stated. Same-cell alternatives: Manpower data analyst 7+ years 40,000 to 45,000; GotFriends data analysts average 27,430 ILS per month Q1 2025 (2024: 26,375); GotFriends algorithm engineers average 45,259 ILS per month (2024: 43,118); AllJobs algorithm developer 6+ years 26,000 to 36,000."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 29000,
+      "p50": 33000,
+      "p75": 37000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehaken algoritmim (algorithm developer), AllJobs exact sciences salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: AllJobs states gross for a full-time position, thousands of NIS per month, weighted data from the AllJobs site; sample size not stated. No stronger free source found for data team management roles; executive level left empty."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 32000,
+      "p50": 38500,
+      "p75": 45000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.bizportal.co.il/career/news/article/20015996",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehandes bituach meida (information security engineer), Manpower Israel hi-tech salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample size not stated. Same-cell alternatives: GotFriends information security researchers average 47,204 ILS per month Q1 2025 (2024: 45,012); AllJobs information security engineer 6+ years 20,000 to 26,000 (whole market)."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 26000,
+      "p50": 28000,
+      "p75": 30000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx",
+        "https://www.bizportal.co.il/career/news/article/20015996"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehandes bituach meida (information security engineer), AllJobs computers and networks table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated. Caveat: this whole-market band sits far below hi-tech placement figures for senior security roles (GotFriends security researchers average 47,204 in Q1 2025); treat as a conservative lower bound."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 20000,
+      "p50": 22000,
+      "p75": 24000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel maarechet meida (information systems manager, CIO), AllJobs software salary table, 6+ years experience column. SPAN endpoints (published min to max). Basis authority: AllJobs states gross for a full-time position, thousands of NIS per month, weighted site data; sample size not stated. Cell represents a senior IT manager on the CIO track."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 24000,
+      "p50": 27000,
+      "p75": 30000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel maarechet meida (information systems manager, CIO), AllJobs software salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 31000,
+      "p50": 38000,
+      "p75": 45000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach maarechet meida (VP Information Systems, CIO), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives from the same page: VP Technologies CTO 30,000 to 54,000."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 40000,
+      "p50": 42500,
+      "p75": 45000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel proyect tochna (software project manager), Manpower Israel hi-tech salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: AllJobs software project manager 6+ years 16,000 to 27,000 (whole market, weighted job-board data); AllJobs hardware project manager 6+ years 25,000 to 32,000."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 25000,
+      "p50": 27500,
+      "p75": 30000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx",
+        "https://www.manpower.co.il/salary-tables"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel proyect tochna (software project manager), AllJobs software table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives: AllJobs hardware project manager managerial 29,000 to 35,000; AllJobs marketing project manager managerial 28,000 to 35,000; Manpower software project manager 7+ years 40,000 to 45,000 (hi-tech experience band, sits above the whole-market band)."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 40000,
+      "p50": 45000,
+      "p75": 50000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.bizportal.co.il/career/news/article/20015996",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel muchar (product manager), Manpower Israel hi-tech salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: GotFriends product managers (in the seniors table, 5+ years experience) average 41,525 ILS per month Q1 2025 (2024: 37,878); AllJobs software product manager 6+ years 25,000 to 32,000 (whole market)."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 28000,
+      "p50": 33000,
+      "p75": 38000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx",
+        "https://www.bizportal.co.il/career/news/article/20015996"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel muchar (product manager), AllJobs marketing table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives: AllJobs hardware product manager managerial 25,000 to 30,000. Caveat: hi-tech placement data for senior product managers (GotFriends average 41,525) sits well above this whole-market band. No VP Product row exists in free tables, so the executive cell is empty."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 23000,
+      "p50": 25000,
+      "p75": 27000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: meanen UI / UX (UI/UX designer), AllJobs design salary table, 6+ years experience column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs site data; sample size not stated. No stronger free source found for senior product or UX designers in Israel."
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 17000,
+      "p50": 18500,
+      "p75": 20000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: meanen atan (web designer), AllJobs design salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Caveat: weak proxy. The UI/UX designer managerial cell is empty in the AllJobs 2025-2026 tables, so the web design management band is the closest published design management figure."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 20000,
+      "p50": 22000,
+      "p75": 24000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: roe hashbon CPA (CPA senior accountant), Manpower Israel accounting and economics tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: Manpower controller 7+ years 20,000 to 24,000; Manpower economic analyst 7+ years 20,000 to 24,000; AllJobs finance manager 6+ years 18,000 to 26,000 (whole market)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 25000,
+      "p50": 32500,
+      "p75": 40000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel kesafim (finance manager), AllJobs finance salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated. Same-cell alternatives: AllJobs cheshban (controller) 6+ years 14,000 to 26,000; AllJobs financial analyst managerial 18,000 to 29,000."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 33000,
+      "p50": 42500,
+      "p75": 52000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach kesafim (VP Finance, CFO), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 23000,
+      "p50": 25500,
+      "p75": 28000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel cheshbonot lakoach ikari (key client account manager), Manpower Israel sales tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: Manpower salesperson 7+ years 17,000 to 22,000; AllJobs business development 6+ years 22,000 to 28,000; AllJobs international sales 6+ years 19,000 to 25,000."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 26000,
+      "p50": 29000,
+      "p75": 32000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel mechirut (sales manager), Manpower Israel sales tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: AllJobs international sales managerial 25,000 to 40,000; AllJobs sales manager managerial 15,000 to 38,000; AllJobs business development managerial 26,000 to 37,000."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 30000,
+      "p50": 39500,
+      "p75": 49000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach mechirut (VP Sales), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives from the same page: VP business development 32,000 to 51,000."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 18000,
+      "p50": 22500,
+      "p75": 27000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel shivuk (marketing manager), AllJobs marketing salary table, 6+ years experience column. SPAN endpoints (published min to max). Basis authority: AllJobs states gross for a full-time position, thousands of NIS per month, weighted site data; sample size not stated."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 23000,
+      "p50": 28000,
+      "p75": 33000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel shivuk (marketing manager), AllJobs marketing salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives from the same page: marketing communications manager managerial 22,000 to 28,000; SEO managerial 17,000 to 25,000."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 30000,
+      "p50": 38000,
+      "p75": 46000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach shivuk (VP Marketing), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 25000,
+      "p50": 27500,
+      "p75": 30000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel mashabei enosh (HR manager), Manpower Israel salary tables 2025, 4 to 7 years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: Manpower HR manager 2 to 4 years 20,000 to 25,000; AllJobs HR manager 6+ years 16,000 to 30,000 (whole market)."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 30000,
+      "p50": 32500,
+      "p75": 35000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel mashabei enosh (HR manager), Manpower Israel salary tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: AllJobs HR manager managerial 15,000 to 36,000 (whole market); AllJobs compensation and benefits manager 26,000 to 31,000."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 25000,
+      "p50": 33500,
+      "p75": 42000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach mashabei enosh (VP Human Resources), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data; sample not stated."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 22000,
+      "p50": 24000,
+      "p75": 26000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel rekaz (procurement manager), Manpower Israel industry and management tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: Manpower buyer 7+ years 19,000 to 22,000; Manpower supply chain manager 7+ years 26,000 to 30,000; AllJobs procurement manager 6+ years 17,000 to 20,000 (whole market)."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 26000,
+      "p50": 28000,
+      "p75": 30000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: menahel sharsharat hashpara (supply chain manager), Manpower Israel industry and management tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: AllJobs procurement manager managerial 16,000 to 30,000 (whole market); AllJobs production manager managerial 20,000 to 32,000."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 28000,
+      "p50": 36000,
+      "p75": 44000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: smach tafuala (VP Operations), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives from the same page: VP Logistics 28,000 to 44,000."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 40000,
+      "p50": 62500,
+      "p75": 85000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: manahl (CEO, general director), AllJobs executives salary table, 2025-2026 edition. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs site data; sample size not stated. No free published bands found for senior or lead general management cells in Israel."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 25000,
+      "p50": 27500,
+      "p75": 30000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.manpower.co.il/salary-tables",
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehandes machonot (mechanical engineer), Manpower Israel industry and management tables 2025, 7+ years experience column. SPAN endpoints (published min to max). Basis authority: gross salary for a full-time monthly position, thousands of NIS per month, per the Manpower page statement. Sample not stated. Same-cell alternatives: Manpower electrical engineer 7+ years 25,000 to 30,000; Manpower production engineer 7+ years 24,000 to 28,000; AllJobs mechanical engineer 6+ years 19,000 to 29,000 (whole market). Civil engineering is not covered by the free tables checked, so the family leans mechanical and electrical."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 28000,
+      "p50": 30500,
+      "p75": 33000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.alljobs.co.il/User/SalaryCompound/SalarySurvey.aspx",
+        "https://www.manpower.co.il/salary-tables"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title: mehandes machonot (mechanical engineer), AllJobs engineering salary table, managerial and senior column. SPAN endpoints (published min to max). Basis authority: gross for a full-time position, thousands of NIS per month, weighted AllJobs data. Same-cell alternatives: AllJobs process engineer managerial 21,000 to 28,000; Manpower NPI engineer 7+ years 28,000 to 32,000 (experience band)."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 37183,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bizportal.co.il/general/news/article/827793",
+        "https://www.calcalist.co.il/local_news/article/bydezmhbml"
+      ],
+      "note": "Published title: rofe mumche refae pnim (specialist physician, internal medicine), government hospitals. Ministry of Finance Wage and Labor Agreements Division data reproduced by Bizportal, May 2024, data year 2023: average monthly wage 37,183 ILS. Basis authority: monthly payroll averages for government hospitals including on-call quotas; the page states the average position scope of public physicians is 84.6 percent; gross is not explicitly labeled on the page (payroll report convention, treated as monthly gross). Population: government hospital physicians; count not stated. Single published average in the p50 slot, not a median. Same-cell alternatives from the same source: physician average 38,282 and median 28,976 (2022 data); general surgery 47,950; diagnostic radiology 44,008; gynecology 39,190; psychiatry 39,116; orthopedics 32,000; pediatrics 31,500 (2023). Ministry of Finance Chief Economist 2023 study of 4,636 physicians: average specialist total income 772,000 ILS per year, about 64,300 per month, including about 32 percent from private medicine (via Calcalist Jun 2026)."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 54783,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bizportal.co.il/general/news/article/827793"
+      ],
+      "note": "Published title: physicians near retirement age, government hospitals. Ministry of Finance Wage and Labor Agreements Commissioner (Efi Malkin) data, data year 2022, reproduced by Bizportal May 2024: average monthly wage 54,783 ILS. Used as a proxy for the senior physician rank (rofe bachir), the senior non-executive hospital rank. Basis authority: monthly payroll averages; gross not explicitly labeled on page (payroll convention). Single published average in the p50 slot. Same-cell alternatives from the same source: intensive care specialties average 64,000 to 78,000 per month (2023 data, highest specialties)."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 12236,
+      "p50": 16716,
+      "p75": 22314,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.calcalist.co.il/local_news/article/syj0odvn0",
+        "https://www.study.co.il/P43660/"
+      ],
+      "note": "Published title: more bechinuch alyesodi (upper secondary school teacher). Knesset Research and Information Center data, data year 2022, reproduced by Calcalist May 2024. Basis authority: the article states figures are gross per a full-time position, in ILS per month (translated from Hebrew). Full ordered band built from three published career-stage points, not true percentiles: p25 = teacher with 1 to 10 years tenure 12,236; p50 = all upper secondary teachers average 16,716; p75 = teacher with 31 years tenure 22,314. Population: all upper secondary teachers in Israel (count not stated). Same-cell alternatives: the 2022 wage agreement set the starting teacher full-time salary at 9,000 ILS per month (reported by study.co.il, a commercial education portal)."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "ISR",
+      "currency": "ILS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22314,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.calcalist.co.il/local_news/article/syj0odvn0",
+        "https://www.study.co.il/P43660/"
+      ],
+      "note": "Published title: veteran upper secondary teacher with 31 years tenure. Knesset Research and Information Center data, 2022, gross per full-time position, reproduced by Calcalist May 2024: 22,314 ILS per month average. Single published average in the p50 slot. This is a top-of-scale individual contributor, not a management role. No free verified band was found for school principals with an explicit gross basis: study.co.il reports 2022 agreement figures of 19,000 for a new principal and 20,000 to 26,000 for experienced principals, but its experience tables are labeled net, so basis confidence is low. Executive cell left empty."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 3200000,
+      "p50": 4100000,
+      "p75": 5000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Fullstack Developer, Senior (5+ yrs). IT Workers guide Chile 2026, published March 2026. Basis authority: page states figures are CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026 (not self-report surveys). Sample size not disclosed. SPAN shape: endpoints are the published low-high placement band, not percentiles. Same-cell alternatives: Python/Backend Developer Senior 3,500,000 to 5,500,000; Buk 2025 (via ESGHoy) places Arquitecto de Software around 4,500,000 to 6,500,000."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 5500000,
+      "p50": 6750000,
+      "p75": 8000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Python/Backend Developer, Tech Lead. IT Workers guide Chile 2026 (March 2026). Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles; upper endpoint published as open-ended (8,000,000+). No published figure for a software-engineering executive cell; VP Engineering 8,000,000 to 18,000,000+ is catalogued under it-executive."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 4200000,
+      "p50": 5350000,
+      "p75": 6500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Data Scientist, Senior. IT Workers guide Chile 2026 (March 2026). Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Same-cell alternatives on the same page: ML Engineer Senior 5,000,000 to 7,500,000; Data Engineer Senior 4,000,000 to 6,000,000; MLOps/LLMOps Senior 4,800,000 to 7,000,000; Analytics Engineer/BI Senior 3,500,000 to 5,500,000."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 6500000,
+      "p50": 7750000,
+      "p75": 9000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Data Scientist, Staff/Lead. IT Workers guide Chile 2026 (March 2026). Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles; upper endpoint published as open-ended (9,000,000+). Same-cell alternatives: ML Engineer Staff/Lead 7,500,000 to 11,000,000+ (upper exceeds the curation rail and is recorded here only); MLOps Staff/Lead 7,000,000 to 10,000,000+; Data Engineer Staff/Lead 6,000,000 to 8,500,000+."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 7000000,
+      "p50": 11000000,
+      "p75": 15000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Head of Data / CDO, leadership table of the IT Workers guide Chile 2026 (March 2026), flagged high demand 2026. Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles; upper endpoint published as open-ended (15,000,000+). AI Engineer Staff/Lead runs 8,500,000 to 12,000,000+ on the same page."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 4800000,
+      "p50": 6150000,
+      "p75": 7500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Ingeniero de Ciberseguridad, Senior. IT Workers guide Chile 2026 (March 2026). Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Same-cell alternative: Pentester / Ethical Hacker Senior 4,500,000 to 7,000,000; SOC Analyst mid 2,500,000 to 3,800,000 (below this cell)."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 4500000,
+      "p50": 5500000,
+      "p75": 6500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Jefe de Ciberseguridad. Figure from the Buk Guia Salarial 2025 as reproduced by ESGHoy with attribution. Basis authority: Buk states its figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, window November 2024 to April 2025. Caution: ESGHoy prints this as one grouped 4,500,000 to 6,500,000 band shared by Arquitecto de Software, Jefe de Ciberseguridad and Subgerente TI. SPAN shape: grouped band endpoints, not percentiles."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 8000000,
+      "p50": 11500000,
+      "p75": 15000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: CISO, level Ejecutivo. IT Workers guide Chile 2026 (March 2026). Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. SPAN shape: published low-high band, not percentiles; upper endpoint published as open-ended (15,000,000+)."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3382000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Jefatura de Tecnologias de la Informacion. Buk Guia Salarial 2025 (first edition), figure seen on Buk's own blog: median 3,382,000 pesos brutos in medium-sized companies; median 3,759,000 in the tech industry. Basis authority: page labels the figure pesos brutos and states the guide uses P25/P50/P75 bands from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published median (medium-sized companies). Same-cell alternative: IT Workers guide lists IT Manager 3,500,000 to 6,500,000 monthly gross."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html",
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/"
+      ],
+      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Archetype: CTO. IT Workers guide Chile 2026 (March 2026) publishes 8,000,000 to 20,000,000+ monthly gross by company size. Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026. Sample not disclosed. One tail zero: the published upper endpoint (open-ended above 20,000,000) is suppressed here because it exceeds the 15,000,000 CLP monthly plausibility rail; only the floor is carried. Corroboration: Buk 2025 (via ESGHoy) places Gerente TI above 7,000,000 monthly. VP Engineering 8,000,000 to 18,000,000+ is a same-cell alternative whose upper end is also above the rail."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 2800000,
+      "p50": 3900000,
+      "p75": 5000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/guia-salarial-tech-chile-2026.html",
+        "https://www.itworkers.cl/blog/sueldo-product-manager-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: IT Project Manager. IT Workers guide Chile 2026 (March 2026) publishes a single 2,800,000 to 5,000,000 band without a seniority split, so it is seated in the senior cell. Basis authority: CLP brutos mensuales, sin bonos ni beneficios, from IT Workers headhunting processes 2025-2026; the page notes PMP certification adds about 15 percent. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Same-cell alternative: the IT Workers product page lists senior Project Manager at 2,800,000 to 4,800,000. No separate lead or executive figures found for this family."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 4200000,
+      "p50": 5350000,
+      "p75": 6500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/sueldo-product-manager-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Senior Product Manager (5-8 yrs). IT Workers Product Manager page, published April 2026. Basis authority: ranges estimated from IT Workers internal processes 2024-2026, published as monthly gross CLP. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Page summary shows a slightly tighter variant (4,800,000 to 6,500,000); industry cuts for Senior PM run 3,800,000 to 7,500,000. Same-cell alternative: Product Owner senior 2,800,000 to 4,200,000."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 5500000,
+      "p50": 7000000,
+      "p75": 8500000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/sueldo-product-manager-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Group PM / Staff PM (7-10 yrs). IT Workers Product Manager page, April 2026. Basis authority: ranges estimated from IT Workers internal processes 2024-2026, published as monthly gross CLP. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Summary variant on the same page: 6,500,000 to 7,500,000."
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 7500000,
+      "p50": 9750000,
+      "p75": 12000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/blog/sueldo-product-manager-tech-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Director of Product (9-14 yrs). IT Workers Product Manager page, April 2026. Basis authority: ranges estimated from IT Workers internal processes 2024-2026, published as monthly gross CLP. Sample not disclosed. SPAN shape: published low-high band, not percentiles. Same-cell alternative: VP Product / CPO 10,000,000 to 18,000,000+ (upper end exceeds the curation monthly rail, recorded here only); the page notes total packages can add 60 percent over base at VP level."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 3800000,
+      "p50": 4900000,
+      "p75": 6000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.itworkers.cl/sueldos/sueldo-product-designer-chile-2026.html",
+        "https://www.itworkers.cl/sueldos/sueldo-ux-designer-chile-2026.html"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Product Designer (UX/UI), Senior (5+ yrs), Santiago. IT Workers page updated April 2026. Basis authority: page states Sueldos brutos mensuales en CLP, datos de procesos de headhunting IT Workers (2025-2026). Sample not disclosed. SPAN shape: published low-high band, not percentiles. Same-cell alternative: UX Designer Senior 3,500,000 to 5,500,000. Caveat: each IT Workers design page contains a pull quote whose numbers match the semi-senior row (2,500,000 to 3,800,000), likely a labeling slip; the table values are used here. No lead or executive figures found for this family."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Subgerente de Control de Gestion. Figure from the Buk Guia Salarial 2025 as reproduced by ESGHoy with attribution: average 5,500,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published figure, and it is an average (promedio), not a median. Context on the same page: Analista Contable / Auditor Interno 1,900,000 to 2,400,000 (junior-mid, below this cell)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Gerente de Administracion y Finanzas, large organizations. Buk Guia Salarial 2025 via ESGHoy: median 6,100,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published median (large organizations). No senior-level figure met the bar for this family."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Ejecutivo de Cuentas B2B. Buk Guia Salarial 2025 via ESGHoy: around 2,500,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single approximate figure (alrededor de 2,5 millones). Buk also publishes a Business Developer median of 2,861,000 in large companies on its own blog, a close same-cell alternative."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3400000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Jefe de Ventas. Buk Guia Salarial 2025 via ESGHoy: around 3,400,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single approximate figure (alrededor de 3,4 millones)."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6700000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Gerente Comercial, large companies. Buk Guia Salarial 2025 via ESGHoy: median 6,700,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published median (large-company segment). Buk notes the Comercial area has the widest top-to-bottom spread (over 8x)."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7900000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Archetype: Gerente de Marketing, large companies. Buk Guia Salarial 2025 via ESGHoy: can exceed 7,900,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. One tail zero: the source publishes only a floor for the large-company segment; no median or upper bound given. Context: Especialista en Marketing Digital / Community Manager 1,100,000 to 2,000,000 (mid level, below this cell). No defensible senior or lead figures found for this family."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Gerente de Recursos Humanos. Buk Guia Salarial 2025 via ESGHoy: average 6,000,000 monthly, with peaks of 8,500,000 in finance and mining. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published figure, an average (promedio) not a median. Context: Analista de RRHH near 1,500,000 (below this cell). No defensible senior or lead figures found for this family."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3300000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Jefe de Mantencion, mining and energy industries. Buk Guia Salarial 2025 via ESGHoy: around 3,300,000 monthly. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single approximate figure (alrededor de 3,3 millones)."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5200000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.buk.cl/blog/guia-salarial-de-buk"
+      ],
+      "note": "Archetype: Gerente de Operaciones, overall median. Buk Guia Salarial 2025 via ESGHoy: median 5,200,000 monthly, higher in infrastructure and transport. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published median. Same-cell alternative: Gerente de Produccion median 9,600,000 in large companies (11,900,000+ in small ones). No defensible senior figure found for this family."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10900000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.esghoy.cl/guia-salarial-buk-2025-cargos-mejor-pagados-brechas-salariales-chile/",
+        "https://www.robertwalters.cl/insights/consejos-de-contratacion/blog/cuanto-ganan-gerentes-generales-chile-2025.html"
+      ],
+      "note": "Archetype: Gerente General / CEO. Buk Guia Salarial 2025 via ESGHoy: median 10,900,000 monthly in median-size companies, above 14,000,000 in large companies. Basis authority: Buk states figures are pesos brutos from real payroll records of 31,700 workers at 3,270 organizations, November 2024 to April 2025. Median-only shape: single published median (median-size segment). Corroboration: Robert Walters Chile (recruiter blog, 30 Sep 2025, no sample disclosed, page inconsistently calls figures brutos and liquidos) publishes CEO base of 7 to 20 million in mid-size and 13 to 30 million in large companies; those upper ends exceed the curation rail and are kept to this note. No defensible senior or lead figures found for this family."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2730598,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.meganoticias.cl/dato-util/461465-sueldo-ingeniero-civil-industrial-cuanto-gana-ingresos-mifuturo-pdp-9-10-2024.html"
+      ],
+      "note": "Archetype: Ingeniero Civil Industrial, fifth year after graduation (about 5 years of experience, mapped to senior). Meganoticias (9 Oct 2024) reproduces the official MiFuturo (MINEDUC) platform figures: fifth-year average 2,730,598; the article states these are los ingresos brutos mensuales promedio. Data collected to September 2023. Median-only shape: single published average (mean, not median); the 1st to 5th year progression 1,719,151 / 2,012,959 / 2,275,888 / 2,561,289 / 2,730,598 brackets this cell. Primary MiFuturo tool is a JavaScript app not fetchable here, so the press reproduction with attribution is cited. No defensible lead or executive figures found for this family."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 1603224,
+      "p50": 2605283,
+      "p75": 3607342,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.lotatransparente.cl/index.php?action=plantillas_selec_archivo&ig=201&a=2025"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Medico Cirujano (physician), public municipal health sector statutory scale. Escala de Remuneraciones 2025 published by the Municipalidad de Lota under transparency law: REMUNERACION column (sueldo base + asignacion) runs from 1,603,224 at grado 15 to 3,607,342 at grado 1, monthly CLP. Basis authority: no explicit gross/net wording on the table, but the columns are pre-deduction statutory remuneration components (sueldo base plus asignacion) in pesos, i.e., gross. Population: all physician grades on one municipal scale; weekly hours not stated on the table (full-time grade scale). SPAN shape: endpoints are the lowest and highest statutory grade totals, not percentiles. Data year 2025. The equivalent redsalud.gov.cl national scale PDF was blocked by Cloudflare and could not be verified."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CHL",
+      "currency": "CLP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 936585,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.eldinamo.cl/buen-dato/2025/06/12/cual-es-el-sueldo-minimo-de-los-profesores-en-chile/"
+      ],
+      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Archetype: Profesor de aula, municipal and subsidized sector (44 weekly hours). The Remuneracion Total Minima (RTM) for 2025, fixed by Decreto 16 of MINEDUC (24 May 2025, Diario Oficial), is 936,585 CLP; El Dinamo reproduces the decree table and states the figure incluye todas las asignaciones y no solo el sueldo base. Basis authority: RTM is a statutory total remuneration floor, i.e., pre-deduction (gross), monthly for a 44-hour contract. One tail zero: only the floor is published; senior teachers earn more via experiencia and desempeno allowances (CPEIP: 3.38 percent of the national basic rent per seniority bienio), and no upper bound is published. Seated in the senior cell as the only citable teacher figure; no lead or executive figures found."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 9000000,
+      "p50": 12500000,
+      "p75": 16000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.magneto365.com/co/blog/profesiones-mejor-pagadas-colombia",
+        "https://unir.edu.co/revista/ingenieria-y-tecnologia/desarrollador-software/",
+        "https://www.larepublica.co/alta-gerencia/desarrolladores-que-trabajan-para-empresas-extranjeras-ganan-us-49-700-anuales-3960107"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Desarrolladores de software senior (published as senior with accent on page), ranked 4 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 9 million to 16 million COP per month, oriented to 2026, no attributed study (opaque method, hence Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternatives seen on fetched pages: UNIR magazine (published 17 June 2026) senior developer 5+ years earns 7,000,000 or more monthly, up to 15,000,000 or more, monthly basis explicit; La Republica (25 Sep 2024) citing Deel Salary Insights (500,000+ contracts): Colombian developers hired by foreign companies average USD 49,700 per year, near USD 98,000 per year in specialized roles, annual USD, foreign-employer niche."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://trabajaconmigo.info/guia-de-sueldos-en-tecnologia-colombia/"
+      ],
+      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Shape d: floor only, upper bound suppressed by the source. Published statement: FAQ on trabajaconmigo.info tech salary guide says a lider tecnico o CTO earns over 20 million COP per month; page quotes millones de pesos mensuales for roles. Personal blog citing Michael Page 2026 guide and BeBee without reproducing their bands, no method or sample, so Low. Gross shown by worked example (10M gross to 8.2M net). Overlaps it-executive family at CTO level; CISO over 25M monthly appears on the same page."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 10500000,
+      "p50": 14250000,
+      "p75": 18000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.magneto365.com/co/blog/profesiones-mejor-pagadas-colombia",
+        "https://www.datapath.ai/salarios/data-engineer-colombia"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Ingenieros y especialistas de datos, ranked 3 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 10.5 million to 18 million COP per month, oriented to 2026, no attributed study (Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternative on fetched page: DataPath (training company, updated March 2026, no method stated, page says valores en pesos colombianos COP mensuales) data engineer Bogota senior 4+ years 15 million to 25 million per month."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 25000000,
+      "p50": 32500000,
+      "p75": 40000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.datapath.ai/salarios/data-engineer-colombia"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Data Engineer level Lead/Staff, Bogota column, 25 million to 40 million COP per month. Basis authority: page states valores en pesos colombianos (COP) mensuales; gross not stated, treated as gross. Publisher is a data bootcamp company claiming datos reales de sueldos 2026, updated March 2026; no methodology or sample stated, hence Low. Same page: remote-Colombia Lead/Staff 35 million to 55 million; company bands junior to senior such as Nubank 13M to 25M and Rappi 12M to 22M."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 8000000,
+      "p50": 12000000,
+      "p75": 16000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.magneto365.com/co/blog/profesiones-mejor-pagadas-colombia",
+        "https://trabajaconmigo.info/guia-de-sueldos-en-tecnologia-colombia/"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Especialistas en ciberseguridad, ranked 5 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 8 million to 16 million COP per month, oriented to 2026, no attributed study (Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternative on fetched page: trabajaconmigo.info lists analista de seguridad ofensiva / pentesting at 9 million to 16 million monthly and a CISO (director de seguridad) at over 25 million monthly, blog with opaque method."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 30000000,
+      "p50": 37500000,
+      "p75": 45000000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.larepublica.co/alta-gerencia/page-group-revela-los-retos-y-sueldos-de-los-ejecutvos-c-level-en-colombia-3819779",
+        "https://www.magneto365.com/co/blog/profesiones-mejor-pagadas-colombia",
+        "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published band endpoints by company size, not percentiles. Published study: Page Executive (PageGroup) Estudio de Remuneracion C-level 2024, reproduced by La Republica (13 March 2024): companies with monthly billing under US$30 million pay C-level executives 30 to 45 million COP; roles named include CEO, CFO, COO, CDO, CCO. Basis not labeled monthly or annual on the page; monthly resolved by arithmetic: as annual figures they would imply 2.5M to 3.75M per month for C-level, inconsistent with Buk CEO median 24.2M monthly and Michael Page CFO average 42.5M monthly; as monthly they are consistent. The same article says companies with sales over US$201 million pay 75 million and up, which exceeds the 50M plausibility rail and is recorded here only. Same-cell alternatives seen on fetched pages: Magneto365 ranking 1 Directores de tecnologia, CTO, CIO at 18 million to over 30 million monthly (Low); Portafolio (19 Feb 2023) citing Page Executive Estudio de Remuneracion 2023 Latam, survey of over 2,000 executives: CTO 35 to 70 million monthly (top exceeds rail)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5128922,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://co.computrabajo.com/salarios/gerente-de-proyectos"
+      ],
+      "note": "Median-only shape: source publishes a single average. On-page statement: el sueldo medio para el puesto de Gerente de proyectos en Colombia es de 5.128.922 al mes, based on 476 salarios (sample stated on page), last update 15 June 2025; method is an estimate from fuentes obtenidas de las empresas, usuarios y empleados in the last 12 months (mixed job-ad and self-reported data, hence Low). Average spans all experience levels of the project management family, so it is a conservative senior-row figure; management level is captured in the lead row. Gross not stated; treated as gross per Colombian monthly convention."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-de-proyectos-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: el salario promedio del cargo Gerencia de Proyectos en Colombia es COP25,000,000, tool framed around Salario Base Mensual. Basis authority: page states el promedio salarial se calcula utilizando los titulos de cargo de las colocaciones de Michael Page y los roles publicitados en los ultimos 12 meses, and en todas las muestras son sueldos brutos excepto en algunas posiciones de TI; data updated every three months per one section (FAQ says yearly); no sample size stated. Recruiter placement data with stated method, hence Medium."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11366670,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-de-producto-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Gerencia de Producto en Colombia es COP11,366,670. Basis authority: calculated from titulos de cargo de las colocaciones de Michael Page y los roles publicitados en los ultimos 12 meses; sueldos brutos (all samples gross except some IT positions); monthly base per tool framing; updated every three months per one section; no sample size stated. Functional gerente (management) archetype mapped to lead."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6500000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.coderhouse.com/us/sueldos/sueldo-disenador-ux-ui-colombia-2025"
+      ],
+      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Shape d: floor only, upper bound suppressed by the source. Published role: Disenador UX/UI, senior level 6,500,000 COP con componente variable, data year 2026. Page does not state periodicity; monthly resolved by arithmetic: as an annual figure it would imply about 542,000 per month, impossible for a senior designer, while monthly fits the sanity zone. Sources linked by the page: Computrabajo, Talent.com, El Empleo, LinkedIn Salary; edtech blog, opaque method, hence Low."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-financiera-finance-controller-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Gerencia Financiera / Finance Controller en Colombia es COP20,000,000. Basis authority: titulos de cargo de las colocaciones de Michael Page y roles publicitados en los ultimos 12 meses; sueldos brutos; monthly base per tool framing; no sample size stated. Functional finance gerente archetype mapped to lead."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 42500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/cfo-salaries",
+        "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: el salario promedio del cargo CFO en Colombia es COP42,500,000; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. Same-cell alternatives seen on fetched page: Portafolio (19 Feb 2023) citing Page Executive Estudio de Remuneracion 2023 Latam (survey of over 2,000 executives): CFO (director, gerente y VP de finanzas) 35 to 60 million monthly, top exceeds the 50M rail; Magneto365 Directivos financieros y gerenciales 12 million to over 25 million monthly (Low)."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/kam-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo KAM (Key Account Manager) en Colombia es COP12,000,000; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. KAM is the senior individual-contributor archetype with major accounts, mapped to senior."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17544120,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-comercial-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Gerencia Comercial en Colombia es COP17,544,120; monthly base per tool framing (Salario Base Mensual); sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. Same-cell data point seen on the fetched page: a Michael Page vacancy Gerencia Comercial de Medicamentos in Bogota at 30,000,000 to 33,000,000 per month, an upper-market niche indication."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 18665670,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-de-mercadeo-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Gerencia de Mercadeo en Colombia es COP18,656,670; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. Functional marketing gerente archetype mapped to lead."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20040000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/talent-acquisition-manager-salaries"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Talent Acquisition Manager en Colombia es COP20,040,000; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. TA manager is the HR management archetype best published for this cell, mapped to lead."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/direcci%C3%B3n-de-recursos-humanos-salaries",
+        "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Direccion de Recursos Humanos en Colombia es COP30,000,000; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. Same-cell alternative seen on fetched page: Portafolio (19 Feb 2023) citing Page Executive Estudio de Remuneracion 2023 Latam (n over 2,000 executives): CHRO (director o gerente de Recursos Humanos) 30 to 55 million monthly, top exceeds the 50M rail."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22187500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-de-operaciones-salaries",
+        "https://www.michaelpage.com.co/salary-comparison-tool/gerencia-de-log%C3%ADstica-supply-chain-salaries",
+        "https://www.buk.co/recursos/estudios-de-gestion-de-personas/guia-salarial-colombia-2026"
+      ],
+      "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo Gerencia de Operaciones en Colombia es COP22,187,500; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. Same-cell alternatives seen on fetched pages: Michael Page Gerencia de Logistica / Supply Chain average COP23,000,000; Buk Guia Salarial 2026 (real payroll records, 1,002 companies, 78,326 employees, Jan to Jun 2026) transport-operations department manager P25 4,682,000, P50 6,625,000, P75 9,749,000 monthly, transport sector only."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 12800000,
+      "p50": 24198000,
+      "p75": 37158000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.buk.co/recursos/estudios-de-gestion-de-personas/guia-salarial-colombia-2026",
+        "https://www.larepublica.co/alta-gerencia/page-group-revela-los-retos-y-sueldos-de-los-ejecutvos-c-level-en-colombia-3819779",
+        "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
+      ],
+      "note": "Full ordered band shape: true published P25, P50 and P75 from percentile bands. Published role: Gerente general (CEO), Direccion de Empresas table of the Buk Guia Salarial Colombia 2026. Basis authority: page states the CEO median ronda los 24,2 millones mensuales and figures come from registros reales del modulo de nomina (payroll records) of 1,002 empresas and 78,326 colaboradores, private formal sector, January to June 2026 payroll data, guide dated August 2026; payroll remuneration implies gross. Same-cell alternatives seen on fetched pages: Buk Presidente de directorio P25 14,762,000, P50 22,762,000, P75 31,506,000; Page Executive Estudio C-level 2024 via La Republica 30 to 45 million monthly, 75 million and up in companies with sales over US$201 million (exceeds rail); Page Executive 2023 Latam via Portafolio (n over 2,000): CEO 40 to 70 million and Country Manager 30 to 50 million monthly (CEO top exceeds rail)."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 3152950,
+      "p50": 5076475,
+      "p75": 7000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://ingenieria.javeriana.edu.co/w/blog/cuanto-gana-un-ingeniero-civil"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published roles: residente senior, jefe de obra, coordinador (civil engineering, 5 to 8 years of experience) earn 3,152,950 to 7,000,000 COP al mes; blog of the Pontificia Universidad Javeriana Faculty of Engineering citing job portals, no sample stated, hence Low. Gross not stated; treated as gross per Colombian monthly convention. Archetype is civil; mechanical and electrical specializations are not broken out on the page."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 7000000,
+      "p50": 9500000,
+      "p75": 12000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://ingenieria.javeriana.edu.co/w/blog/cuanto-gana-un-ingeniero-civil"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published roles: direccion de obra, gerente de proyectos, consultor senior (8 or more years, managerial and directional posts in civil engineering) earn 7,000,000 to 12,000,000 COP al mes; Javeriana Faculty of Engineering blog citing job portals, no sample stated, hence Low. Gross not stated; treated as gross per Colombian monthly convention."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 7000000,
+      "p50": 12500000,
+      "p75": 18000000,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.magneto365.com/co/blog/profesiones-mejor-pagadas-colombia",
+        "https://www.portafolio.co/economia/empleo/cuanto-gana-un-medico-en-colombia-en-2025-627595",
+        "https://co.computrabajo.com/salarios/medico-especialista"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles; upper endpoint published as mas de 18 million (open ended). Published role: Medicos especialistas, ranked 9 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 7 million to over 18 million COP per month, oriented to 2026, no attributed study (Low); the same page carries an inconsistent comparison table showing a 4.5 million average, flagged here. Same-cell alternatives seen on fetched pages: Portafolio (April 2025) citing talent.com data via UNIR: pediatra about 8,074,200 monthly and anestesiologo above 12,500,000 monthly (96,890,400 per year for pediatra, monthly basis explicit); Computrabajo Medico especialista average 6,004,999 al mes from 63 salarios (updated 2025, mixed job-ad and user data). Specialist physician is the senior archetype; general physicians earn 3,793,080 monthly per the Portafolio piece."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "COL",
+      "currency": "COP",
+      "basis": "monthly-gross",
+      "p25": 4506804,
+      "p50": 5632698,
+      "p75": 6758592,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.eltiempo.com/economia/finanzas-personales/asi-quedo-salario-para-profesores-publicos-tras-decretos-del-gobierno-el-listado-completo-con-cifras-exactas-3460423"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: band built from two published official scale points, not percentiles. Official 2025 teacher salary table (Estatuto 2277, updated by the June 2025 decretos 0596 to 0617) reproduced by El Tiempo: grado 11 base salary 4,506,804 and grado 14 base salary 6,758,592 per month; band covers late-career escalafon grades 11 to 14, the senior-teacher zone. Basis authority: article states the escalafon grades determinan el salario mensual; figures are statutory gross base amounts and exclude the 1.6 percent bonificacion (grado 14 adds 101,064). Same-cell alternative on the page: Estatuto 1278 grado 2 nivel 2D con especializacion 7,164,089 monthly. Public-sector statutory scale, hence High quality. Rector and directive-cargo tables were embedded as images and could not be read, so lead and executive cells are empty."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3500000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Developer, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01 states all figures are monthly gross (bruto) salary. Data window December 2025 to February 2026, published 2026-03-04. Sample: 5074 surveyed, 4939 analyzed; Developer is 33.7 percent of sample; figure is from the non-dollarized (peso paid) subset; cells with n under 20 are suppressed by the survey and this cell passed. Self-selected community survey, use with caution. Same-cell alternatives on the page: SysAdmin/DevOps/SRE Senior 5450000 (dollarized subset only); QA/Tester Senior 2600000 (non-dollarized). Survey-wide IT median 3253581."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6743000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Technical Leader, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Technical Leader is 7.2 percent of sample. CAVEAT: the survey publishes this role only for the dollarized-salary subset (about 32 percent of respondents collect fully or partly in USD); no peso-only median was published for it. Same-cell alternatives: Manager/Director Semi-Senior 3647029 (non-dollarized, first-line manager archetype); Scrum Master Senior 4560000 (non-dollarized)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4647791,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/",
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "Published role: Manager / Director, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026. Sample 5074 surveyed, 4939 analyzed; Manager/Director is 9.0 percent of sample; figure is the non-dollarized (peso paid) median across all company sizes. Same-cell alternatives: dollarized-subset median 6400000 on the same survey; iProfesional 2026-01-08 review of major salary surveys gives large-company CABA/GBA Gerente de IT/Sistemas span 8195200 to 11388568 gross monthly."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3990000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Data Engineer, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Data Engineer is 2.9 percent of sample; non-dollarized subset. Same-cell alternatives on the page: Data Scientist Senior 5000000; BI Analyst / Data Analyst Senior 3382000 (both non-dollarized); AI Engineer figures suppressed for n under 20."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4619596,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Data Governance / GRC, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; role share under 1 percent but the cell passed the survey's n-20 reliability cutoff; non-dollarized subset. This is the closest published lead-level data-role archetype (data governance lead). Same-cell alternative: Data Scientist Senior 5000000 as the most senior data IC archetype."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4300000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Infosec, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Infosec is 2.4 percent of sample; non-dollarized subset. Same-cell alternative: Infosec Semi-Senior 2759000; dollarized-subset Infosec Senior 6043198. No lead or executive security figure passed the survey cutoff, so those cells left empty."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3647029,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Manager / Director, Semi-Senior (used as the senior IT-management cell: managers below the top step). Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Manager/Director is 9.0 percent of sample; non-dollarized subset, all company sizes. Same-cell alternative: Bumeran Technology and Systems area average expected salary for Semi Senior/Senior 2042308 (June 2026, asked not paid)."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6400000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Manager / Director, Senior, dollarized-salary subset. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed. CAVEAT: this is the median for IT managers who collect fully or partly in USD (about 32 percent of respondents); the peso-paid median for the same role is 4647791 (used in the software-engineering executive cell). Same-cell alternative: Technical Leader Senior 6743000 (also dollarized subset)."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 8195200,
+      "p50": 9791884,
+      "p75": 11388568,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente de IT/Sistemas (IT manager) in large companies, CABA and GBA. SPAN shape: p25 and p75 are the published minimum and maximum across sectors (Manufactura minimum, maximum sector not stated per role), not percentiles. Basis authority: iProfesional article 2026-01-08, figures stated as gross monthly (bruto), described as an analysis of the main salary surveys (surveys not named). Data month January 2026. Same-cell alternative: sysarmy Manager/Director Senior 4647791 non-dollarized / 6400000 dollarized (all company sizes, Dec 2025 to Feb 2026)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4560000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Scrum Master, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; role share 0.6 percent but cell passed the n-20 cutoff; non-dollarized subset; tech industry. Same-cell alternatives: Business Analyst Senior 3175877; Product Owner Semi-Senior 3750000 (Product Owner Senior suppressed for small n)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3500000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Liderazgo de Proyecto (project leadership), Semi Senior/Senior bucket. Median-only (the source publishes a single average). Basis authority: Bumeran labor-market index, June 2026; figures are gross monthly SALARY EXPECTATIONS declared by candidates applying on the platform, not observed pay. Sample: platform-wide index, millions of applications (454481 to 599152 declared salaries per area on the companion page). Data month June 2026. Note this lead figure is below the senior-row median because sources differ (asked vs paid, all industries vs tech); same-cell alternative: sysarmy Scrum Master Senior 4560000 gross paid."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Producto (product role), Semi Senior/Senior bucket, ranked fourth among best-paid puestos. Median-only (published average). Basis authority: Bumeran labor-market index, June 2026; gross monthly salary expectations declared in applications, not observed pay. Data month June 2026. Same-cell alternative: sysarmy Product Owner Semi-Senior 3750000 gross paid, tech industry, December 2025 to February 2026 (Product Owner Senior suppressed for small n). No citable lead or executive product figures found."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1982895,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Administracion y Finanzas area, Semi Senior/Senior bucket. Median-only (published average). Basis authority: Bumeran labor-market index, June 2026; gross monthly salary expectations declared in applications, not observed pay; area database holds around 454481 declared salaries. Data month June 2026. Same-cell alternatives: sysarmy Auditor Senior 3000000 and Finance Semi-Senior 2129683, gross paid, tech-industry accountants, December 2025 to February 2026."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 5967829,
+      "p50": 8592401,
+      "p75": 11216973,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente de Administracion y Finanzas, large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum (Consumo Masivo) and maximum across sectors, not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternatives: Gerente de Contabilidad span 5162601 to 9701422; Bumeran June 2026 Planeamiento Economico-Financiero Jefe/Supervisor average expected salary 4125000."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 12163767,
+      "p50": 15630328,
+      "p75": 19096888,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Director de Finanzas, large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum (Retail) and maximum (Bancos, Oil and Gas, IT), not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Context: article states annual bonuses add 3 to 5 salaries or more on top."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 4177742,
+      "p50": 5924502,
+      "p75": 7671262,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026",
+        "https://www.iproup.com/empleo/67244-salarios-2026-cuanto-gana-un-gerente-de-ventas-en-la-argentina"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente Comercial (sales manager), large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum across sectors, not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Michael Page Argentina Salaries Guide 2026 figures reproduced by iProUP 2026-04-27: sales manager B2C 7500000 to 10000000 in SMEs and 9000000 to 14000000 in large companies, B2B 8000000 to 13000000 small and 11000000 to 15000000 multinational; that article does not state gross or net. No citable senior-level (IC) sales figure found; Bumeran June 2026 all-level Comercial rubro average expectation was 1321005."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 10801080,
+      "p50": 14506841,
+      "p75": 18212602,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Director Comercial (commercial director), large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum (top sectors: Bancos, Oil and Gas, IT, Lab and Pharma), not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3550000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
+      ],
+      "note": "Published role: Marketing, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Marketing role share 0.6 percent, tech-industry marketers only, non-dollarized subset; cell passed the n-20 cutoff. Same-cell alternative: Bumeran/Infobae Marketing y Publicidad rubro average expectation 1508023 (June 2026, all seniority levels, cross-industry)."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 3870940,
+      "p50": 5894114,
+      "p75": 7917288,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente de Marketing, large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum across sectors, not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. No executive-level marketing director figure was published in this set, cell left empty."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2190000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Recursos Humanos area, Semi Senior/Senior bucket. Median-only (published average). Basis authority: Bumeran labor-market index, June 2026; gross monthly salary expectations declared in applications, not observed pay. Data month June 2026. Same-cell alternatives: sysarmy HRBP Semi-Senior 1925000 and Recruiter Junior 1291000, gross paid, tech industry, December 2025 to February 2026."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 5392748,
+      "p50": 7183208,
+      "p75": 8973667,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente de RRHH (HR manager), large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum across sectors, not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 9385601,
+      "p50": 13533870,
+      "p75": 17682138,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Director de RRHH (HR director), large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum (top sectors: Bancos, Oil and Gas, IT, Lab and Pharma), not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2118750,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Produccion, Abastecimiento y Logistica area, Semi Senior/Senior bucket. Median-only (published average). Basis authority: Bumeran labor-market index, June 2026; gross monthly salary expectations declared in applications, not observed pay. Data month June 2026. Same-cell context: Infobae/Bumeran June 2026 rubro averages, Abastecimiento y Logistica 1353148 and Produccion y Manufactura 1502409 (all levels)."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 7100000,
+      "p50": 10106627,
+      "p75": 13113254,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Gerente de Supply Chain, large companies. SPAN shape: p25 and p75 are the published minimum (Manufactura) and maximum across sectors, not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Gerente de Compras span 6155829 to 13122262."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 9957184,
+      "p50": 14358082,
+      "p75": 18758980,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Director de Operaciones, large companies CABA/GBA. SPAN shape: p25 and p75 are the published minimum and maximum (top sectors: Bancos, Oil and Gas, IT, Lab and Pharma), not percentiles. Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Gerente de Planta/Produccion span 5436027 to 15136011."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6500000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026"
+      ],
+      "note": "Published role: Gerente (Gerente Senior y de Area), senior and area managers, large companies CABA/GBA. Median-only (published approximate average). Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Bumeran June 2026 all-areas Jefe/Supervisor average expected salary 2686899."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12100000,
+      "p75": 0,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.iprofesional.com/impuestos/445575-sueldos-directores-y-gerentes-superan-19-millones-pesos-enero-2026",
+        "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
+      ],
+      "note": "Published role: Director (company directors), large companies CABA/GBA. Median-only (published approximate average across the director roles listed). Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Bumeran June 2026 Gerencia y Direccion General Semi Senior/Senior average expected salary 3750000 (all company sizes, asked not paid); Infobae/Bumeran June 2026 all-level rubro average expectation 2802540."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 1459690,
+      "p50": 1800583,
+      "p75": 2141475,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://convenios.ate.org.ar/escala-salarial-ccts-de-los-profesionales-de-la-salud-enero-mayo-2026/",
+        "https://convenios.ate.org.ar/wp-content/uploads/2026/03/salud-enero-26_merged.pdf"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Profesional Adjunto (AD) rank, national public hospital health professional career, Decreto 1133/09, Ministerio de Salud. SPAN shape: p25 and p75 are the rank's published entry (Inicial) and step-10 remuneration, not percentiles. Basis authority: statutory pay scale labeled Remuneraciones en pesos (gross), effective 1 May 2026. Population: all professionals (physicians, pharmacists, biochemists and similar) in national public hospitals and institutes. Same-cell alternative: Profesional Asistente rank span 1165368 to 1856839 (entry rank). Private-sector FATSA basics are lower (see sources doc)."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 1992451,
+      "p50": 2281185,
+      "p75": 2569919,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://convenios.ate.org.ar/escala-salarial-ccts-de-los-profesionales-de-la-salud-enero-mayo-2026/",
+        "https://convenios.ate.org.ar/wp-content/uploads/2026/03/salud-enero-26_merged.pdf"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Profesional Principal (PR) rank, national public hospital professional career, Decreto 1133/09. SPAN shape: p25 and p75 are the rank's published entry (Inicial) and step-10 remuneration, not percentiles. Basis authority: statutory scale labeled Remuneraciones en pesos (gross), effective 1 May 2026. Service-chief roles add the Funcion de Jefatura supplement on top: level I 425464, level II 319656, level III 255576."
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 2910439,
+      "p50": 3084797,
+      "p75": 3259155,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://convenios.ate.org.ar/escala-salarial-ccts-de-los-profesionales-de-la-salud-enero-mayo-2026/",
+        "https://convenios.ate.org.ar/wp-content/uploads/2026/03/salud-enero-26_merged.pdf"
+      ],
+      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Profesional Superior (SU), top rank of the national public hospital professional career, Decreto 1133/09. SPAN shape: p25 and p75 are the rank's published entry (Inicial) and step-10 remuneration, not percentiles. Basis authority: statutory scale labeled Remuneraciones en pesos (gross), effective 1 May 2026. Executive hospital roles add the Funcion Directiva supplement on top of base: level I 1675775, level II 1579654, level III 1382943, level IV 1168348, level V 1044658."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "ARG",
+      "currency": "ARS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2614442,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://www.ute.org.ar/mesa-salarial-abril-2026/"
+      ],
+      "note": "Published role: Maestro/a de grado, Jornada Completa (full-day classroom teacher), maxima antiguedad (top seniority step), CABA public schools. Median-only. Basis authority: UTE union bulletin of the 2026-04-17 paritaria outcome; statutory collective-bargaining scale, amounts labeled Salario Inicial / sums described as remunerativas (gross by paritaria convention). Data month: April 2026 salary (4 percent rise on March 2026 base). Same-figure alternatives in the same source: Jornada Completa initial 1870814; Jornada Simple max seniority 1350164; Jornada Simple initial 935407; preceptor initial 794907. Context: Bumeran/Infobae June 2026 Educacion rubro expectation average 1189845; no citable lead or executive figure, cells left empty."
     }
   ]
 }

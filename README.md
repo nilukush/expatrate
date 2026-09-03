@@ -6,7 +6,7 @@ Built for a real problem: when you apply for jobs across borders, portals ask fo
 
 ## Status
 
-Launched 31 August 2026 at https://expatrate.pages.dev. Live coverage: 30 countries with verified market benchmarks (605 curated rows) and 2026 tax treatment (statutory brackets for 24 regimes), a purchasing-power floor for all 206 supported countries, English, Arabic, and Hindi locales with full RTL. The gate (typecheck, 156 unit tests, 60 Playwright end to end tests, build) runs in CI on every push.
+Launched 31 August 2026 at https://expatrate.pages.dev. Live coverage: 39 countries with verified market benchmarks (780 curated rows) and 2026 tax treatment (statutory brackets for 24 regimes), a purchasing-power floor for all 206 supported countries, English, Arabic, and Hindi locales with full RTL. The gate (typecheck, 158 unit tests, 60 Playwright end to end tests, build) runs in CI on every push.
 
 Beyond the core quote the site offers: offer evaluation against your band and floor, an opt-in relocation hardship view built on official DSSR allowances, remote-pay policy advisories from published research, and job description import by link from Greenhouse, Lever, and Ashby boards (fetched by your browser; no server involved).
 

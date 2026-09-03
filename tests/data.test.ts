@@ -398,3 +398,39 @@ test('expansion wave 2: China, Korea, Hong Kong, Brazil, Switzerland carry verif
   const cheSw = by('CHE').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
   expect(cheSw.quality).toBe('Low');
 });
+
+test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency = { FRA: 'EUR', ESP: 'EUR', POL: 'PLN', TUR: 'TRY' };
+  const counts = { FRA: 22, ESP: 16, POL: 22, TUR: 7 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+    }
+  }
+  // Spot anchors verified against the cited pages on 2026-09-02.
+  const fraIt = by('FRA').find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'executive');
+  expect(fraIt.p50).toBe(150_000);
+  expect(fraIt.p75).toBe(180_000);
+  expect(fraIt.basis).toBe('annual-gross');
+  const espSw = by('ESP').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(espSw.p25).toBe(32_763);
+  expect(espSw.p50).toBe(41_846);
+  expect(espSw.p75).toBe(54_731);
+  // INE rows carry 2022 survey vintage, so quality caps at Medium with the year disclosed.
+  expect(espSw.quality).toBe('Medium');
+  expect(espSw.note).toContain('2022');
+  const polSw = by('POL').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(polSw.p50).toBe(23_250);
+  expect(polSw.basis).toBe('monthly-gross');
+  expect(polSw.p25).toBe(0);
+  expect(polSw.p75).toBe(0);
+  const turSw = by('TUR').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(turSw.p50).toBe(1_851_540);
+  expect(turSw.basis).toBe('annual-gross');
+  expect(turSw.quality).toBe('Low');
+});

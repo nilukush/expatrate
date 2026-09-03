@@ -434,3 +434,54 @@ test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () =
   expect(turSw.basis).toBe('annual-gross');
   expect(turSw.quality).toBe('Low');
 });
+
+test('expansion wave 4: Italy, Sweden, Norway, Denmark, Czechia, Portugal carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency = { ITA: 'EUR', SWE: 'SEK', NOR: 'NOK', DNK: 'DKK', CZE: 'CZK', PRT: 'EUR' };
+  const counts = { ITA: 37, SWE: 39, NOR: 25, DNK: 32, CZE: 38, PRT: 17 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+    }
+  }
+  // Spot anchors verified against the cited statistical agency pages on 2026-09-02.
+  const sweSw = by('SWE').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(sweSw.p25).toBe(46_200);
+  expect(sweSw.p50).toBe(53_500);
+  expect(sweSw.p75).toBe(62_600);
+  expect(sweSw.quality).toBe('High');
+  const norSw = by('NOR').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(norSw.p25).toBe(63_330);
+  expect(norSw.p50).toBe(77_420);
+  expect(norSw.p75).toBe(93_820);
+  const dnkSw = by('DNK').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(dnkSw.p25).toBe(52_834);
+  expect(dnkSw.p50).toBe(64_499);
+  expect(dnkSw.p75).toBe(78_185);
+  const czeSw = by('CZE').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(czeSw.p25).toBe(71_536);
+  expect(czeSw.p50).toBe(101_103);
+  expect(czeSw.p75).toBe(141_956);
+  const itaEdu = by('ITA').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(itaEdu.p25).toBe(28_867);
+  expect(itaEdu.p50).toBe(31_590);
+  expect(itaEdu.p75).toBe(35_112);
+  expect(itaEdu.basis).toBe('annual-gross');
+  const prtGm = by('PRT').find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'senior');
+  expect(prtGm.p50).toBe(3_295.9);
+  expect(prtGm.basis).toBe('monthly-gross');
+  // Span sources (published 10th to 90th percentiles) become a disclosed midpoint, never a zero median.
+  const czeDesign = by('CZE').find((r: { family: string; level: string }) => r.family === 'design' && r.level === 'senior');
+  expect(czeDesign.p50).toBeGreaterThan(0);
+  expect(czeDesign.note).toContain('midpoint');
+  // A suppressed quartile collapses to the median-only convention, disclosed.
+  const sweFinExec = by('SWE').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'executive');
+  expect(sweFinExec.p25).toBe(0);
+  expect(sweFinExec.p75).toBe(0);
+  expect(sweFinExec.p50).toBe(77_800);
+  expect(sweFinExec.note).toContain('uppressed');
+});

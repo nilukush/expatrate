@@ -485,3 +485,52 @@ test('expansion wave 4: Italy, Sweden, Norway, Denmark, Czechia, Portugal carry 
   expect(sweFinExec.p50).toBe(77_800);
   expect(sweFinExec.note).toContain('uppressed');
 });
+
+test('expansion wave 5: Finland, Austria, Belgium, Romania, Greece carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency = { FIN: 'EUR', AUT: 'EUR', BEL: 'EUR', ROU: 'RON', GRC: 'EUR' };
+  const counts = { FIN: 34, AUT: 48, BEL: 25, ROU: 17, GRC: 39 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+    }
+  }
+  // Spot anchors verified against the cited official sources on 2026-09-02.
+  const finEdu = by('FIN').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(finEdu.p25).toBe(3_509);
+  expect(finEdu.p50).toBe(4_681);
+  expect(finEdu.p75).toBe(5_736);
+  expect(finEdu.basis).toBe('monthly-gross');
+  expect(finEdu.note).toContain('decile');
+  const autSw = by('AUT').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(autSw.p25).toBe(39_263);
+  expect(autSw.p50).toBe(59_352);
+  expect(autSw.p75).toBe(79_770);
+  expect(autSw.basis).toBe('annual-gross');
+  const autGm = by('AUT').find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive');
+  expect(autGm.p50).toBe(107_866);
+  expect(autGm.p75).toBe(188_000);
+  const belEdu = by('BEL').find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior');
+  expect(belEdu.p50).toBe(4_736.73);
+  expect(belEdu.basis).toBe('monthly-gross');
+  const rouSw = by('ROU').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(rouSw.p50).toBe(22_689);
+  expect(rouSw.basis).toBe('monthly-gross');
+  expect(rouSw.note).toContain('CAEN 62');
+  const grcGm = by('GRC').find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'senior');
+  expect(grcGm.p50).toBe(2_199);
+  expect(grcGm.basis).toBe('monthly-gross');
+  // Statutory and decile spans become disclosed midpoints, never zero medians.
+  const rouHealth = by('ROU').find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'senior');
+  expect(rouHealth.p50).toBe(15_542);
+  expect(rouHealth.p25).toBe(13_843);
+  expect(rouHealth.p75).toBe(17_241);
+  expect(rouHealth.note).toContain('midpoint');
+  const grcDesign = by('GRC').find((r: { family: string; level: string }) => r.family === 'design' && r.level === 'senior');
+  expect(grcDesign.p50).toBeGreaterThan(0);
+  expect(grcDesign.note).toContain('midpoint');
+});

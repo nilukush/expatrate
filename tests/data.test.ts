@@ -3,8 +3,15 @@ import { fileURLToPath } from 'node:url';
 import { expect, test } from 'vitest';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-const load = (name: string) =>
-  JSON.parse(readFileSync(`${root}src/data/${name}`, 'utf8'));
+// Memoized: benchmarks.json is several MB and every wave test loads it; re-parsing per
+// call pushed the matrix validation over the 5s default timeout on slower CI runners.
+const fileCache = new Map<string, any>();
+const load = (name: string) => {
+  if (!fileCache.has(name)) {
+    fileCache.set(name, JSON.parse(readFileSync(`${root}src/data/${name}`, 'utf8')));
+  }
+  return fileCache.get(name);
+};
 
 const TIER_1 = ['ARE', 'DEU', 'EGY', 'GBR', 'IDN', 'IND', 'QAT', 'SAU', 'SGP', 'USA'];
 const CURATED_TIER_2 = ['VNM', 'PHL', 'THA', 'ZAF', 'KEN', 'NGA', 'LBN', 'MAR', 'PAN', 'MEX', 'CAN', 'AUS', 'NLD'];
@@ -112,7 +119,7 @@ test('role families: 16 families and 3 levels defined', () => {
   expect(families.some((f: { id: string }) => f.id === 'finance-and-accounting')).toBe(true);
 });
 
-test('benchmarks: full curated matrix, honest insufficient-data markers, curated rows valid', () => {
+test('benchmarks: full curated matrix, honest insufficient-data markers, curated rows valid', { timeout: 20_000 }, () => {
   const { meta, entries } = load('benchmarks.json');
   const { families, levels } = load('role-families.json');
   const countryCurrency = new Map(load('countries.json').map((c: { iso3: string; currency: string }) => [c.iso3, c.currency]));

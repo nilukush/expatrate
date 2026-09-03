@@ -250,7 +250,7 @@
     "breadcrumbRole": "Salary by role",
     "methodologyMarket": "The market quote takes P25, median, and P75 for your role family and seniority from official statistics and cited recruiter sources; every row lists its sources and review date. Where no verified source exists, the cell stays an explicit gap.",
     "methodologyFloor": "The purchasing-power floor transfers your net salary at World Bank PPP rates and grosses it up at the target country's effective tax rate, so you know the gross needed to live as well as today.",
-    "methodologyTax": "Tax comes from 2026 legislated schedules where verified; 179 of 206 countries currently use a conservative 20 percent default instead, and results say so."
+    "methodologyTax": "Tax comes from 2026 legislated schedules where verified; 181 of 207 countries currently use a conservative 20 percent default instead, and results say so."
   },
   "privacy": {
     "title": "Privacy",

@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-03",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 54,
-    "dataRows": 1251,
+    "tier1CountriesCount": 55,
+    "dataRows": 1297,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -789,6 +789,23 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50000,
+      "p50": 60000,
+      "p75": 75000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007001004?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: ruan ti gong cheng shi (software engineer), 5 to 10 years experience band, 104 Salary Guide experience table, data updated 2026-08-31. Band is published P25/P50/P75 of monthly pay; bucket sample n=4548, page total valid sample 13285. Basis authority: page labels the figures yue xin (monthly pay); self-reported by 104 members; monthly figures exclude year-end and performance bonuses, which the site reports separately on its annual tab. Official crosscheck: MOL 114 nian occupational wage survey, ICT professionals group (xi tong fen xi, cheng shi she ji, shu ju ku ji wang lu zhuan ye ren yuan) average monthly regular pay 75442 TWD (n=159804)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -1560,6 +1577,22 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 55000,
+      "p50": 68002,
+      "p75": 83000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007001004?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: ruan ti gong cheng shi (software engineer), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=3886, page total valid sample 13285. Basis authority: page label yue xin (monthly pay); self-reported by 104 members; excludes year-end and performance bonuses (annual pay shown separately). Page displays the median rounded as 6.8 wan TWD."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -2157,6 +2190,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 74000,
+      "p50": 90000,
+      "p75": 110000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2007001000?type=catjobs&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: ruan ti zhuan an zhu guan (software project supervisor), all-experience band from the 104 Salary Guide software and engineering category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=2321 from the category page JSON payload, category valid sample 26440. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives: dian zi shang wu ji shu zhu guan (e-commerce technology supervisor) 71200/86500/117500 n=161. Official crosscheck: MOL survey, publishing/video/ICT industry managers and supervisors average monthly regular pay 101000 TWD."
     },
     {
       "family": "software-engineering",
@@ -2986,6 +3036,22 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 65000,
+      "p50": 80000,
+      "p75": 96900,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007001012?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: yan suan fa gong cheng shi (algorithm engineer), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=205, page total valid sample 516. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternatives: AI gong cheng shi (AI engineer) all-experience 58000/70000/82000 n=379; zi liao ke xue jia (data scientist) all-experience 63000/73950/84000 n=137."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -3687,6 +3753,22 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 69000,
+      "p50": 88050,
+      "p75": 117500,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007001012?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: yan suan fa gong cheng shi (algorithm engineer), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=86, page total valid sample 516. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Quality marked Low for the small bucket sample. Same-cell alternative: ji qi xue xi gong cheng shi (machine learning engineer) all-experience 55550/76500/105625 n=20."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -4238,6 +4320,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "TWN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
@@ -4828,6 +4918,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 48451,
+      "p50": 60000,
+      "p75": 78000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007002001?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: MIS wang guan zhu guan (MIS and network administration supervisor, i.e. IT manager), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=469, page total valid sample 2047. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: MIS zhu guan 3 to 5 years band 45000/57500/72000 n=195."
     },
     {
       "family": "it-executive",
@@ -5501,6 +5607,22 @@
         "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20it"
       ],
       "note": "jobs.ch crowd data, 2144 entries, gross annual incl bonuses and 13th salary. Head of IT treated as IT function lead, overall average used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 54000,
+      "p50": 69000,
+      "p75": 90000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007002001?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: MIS wang guan zhu guan (MIS and network administration supervisor, i.e. IT manager), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=1323, page total valid sample 2047. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: all-experience MIS supervisor band 50000/65000/84000 n=2219."
     },
     {
       "family": "it-executive",
@@ -6326,6 +6448,23 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 71200,
+      "p50": 86500,
+      "p75": 117500,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2007001000?type=catjobs&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: dian zi shang wu ji shu zhu guan (e-commerce technology supervisor), all-experience band from the 104 Salary Guide software and engineering category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=161 from the category page JSON payload, category valid sample 26440. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. The source has no CIO-specific title; this is the highest published pure-IT management band. Official crosscheck: MOL survey, publishing/video/ICT industry managers and supervisors average monthly regular pay 101000 TWD."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -7039,6 +7178,22 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 56000,
+      "p50": 76500,
+      "p75": 97050,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2004003009?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: chan pin jing li (product manager), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=120, page total valid sample 688. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: chan pin guan li shi (product management specialist) all-experience 47700/57400/70000 n=2110."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -7637,6 +7792,22 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 62500,
+      "p50": 86600,
+      "p75": 107950,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2004003009?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: chan pin jing li (product manager), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=70, page total valid sample 688. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Quality marked Low for the small bucket sample."
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -8125,6 +8296,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 58000,
+      "p50": 75000,
+      "p75": 100000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2004002000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: chan pin qi hua zhu guan (product planning supervisor), all-experience band from the 104 Salary Guide product planning category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=707 from the category page JSON payload, category valid sample 2533. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: chan pin shi ye chu zhu guan (product business unit head) 65000/90000/120000 n=164 on the sales category page."
     },
     {
       "family": "product-management",
@@ -8809,6 +8996,22 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50000,
+      "p50": 57060,
+      "p75": 71000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007002009?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: zi an gong cheng shi (cybersecurity engineer), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=101, page total valid sample 481. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: wang lu an quan fen xi shi (network security analyst) all-experience 55000/68000/80600 n=175."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -9383,6 +9586,22 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 54900,
+      "p50": 71860,
+      "p75": 88500,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2007002009?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: zi an gong cheng shi (cybersecurity engineer), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=35, page total valid sample 481. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Quality marked Low for the small bucket sample; treat as indicative."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -9918,6 +10137,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 72000,
+      "p50": 86500,
+      "p75": 101300,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2007002000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: zi an zhu guan (cybersecurity supervisor), all-experience band from the 104 Salary Guide MIS and network administration category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=185 from the category page JSON payload, category valid sample 9444. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: MIS wang guan zhu guan (MIS supervisor) over 10 years band 54000/69000/90000 n=1323."
     },
     {
       "family": "cybersecurity",
@@ -10575,6 +10810,22 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50500,
+      "p50": 58000,
+      "p75": 72250,
+      "quality": "Low",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2013001015?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: UI she ji shi (UI designer), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=58, page total valid sample 259. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Quality marked Low for the small bucket sample. Same-cell alternative: UX she ji shi (UX designer) 5 to 10 years band 54000/69400/76000 n=30."
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -11117,6 +11368,22 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 46500,
+      "p50": 54000,
+      "p75": 60500,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2013001017?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: shi jue she ji shi (visual designer), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=82, page total valid sample 726. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Used for the lead cell because the UI designer over-10-years bucket is suppressed as insufficient sample on its page. Same-cell alternative: shi jue she ji shi 5 to 10 years band 42000/47500/57400 n=211."
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -11571,6 +11838,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50000,
+      "p50": 60000,
+      "p75": 81350,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2013002000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: yi shu zhi dao / yi shu zong jian (art director), all-experience band from the 104 Salary Guide media and arts category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=89 from the category page JSON payload, category valid sample 2581. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: duo mei ti kai fa zhu guan (multimedia development supervisor) 50000/66000/84500 n=127 on the design category page."
     },
     {
       "family": "design",
@@ -12274,6 +12557,23 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 52250,
+      "p50": 65000,
+      "p75": 80000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2004003006?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: zhuan an jing li (project manager), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=965, page total valid sample 4484. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Official crosscheck: MOL survey, zhuan an guan li shi han jing ying guan li gu wen (project managers incl. management consultants) average monthly regular pay 67709 TWD (n=39732)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -12930,6 +13230,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 59700,
+      "p50": 75250,
+      "p75": 89000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2004003006?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: zhuan an jing li (project manager), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=424, page total valid sample 4484. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: ruan ti zhuan an guan li shi (software project manager) all-experience 48000/60000/72550 n=772."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -13427,6 +13743,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 56950,
+      "p50": 72000,
+      "p75": 91774,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2004003000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: zhuan an guan li zhu guan (project management supervisor), all-experience band from the 104 Salary Guide project and product management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=3152 from the category page JSON payload, category valid sample 16399. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Page displays the band rounded as 5.6/7.2/9.1 wan TWD."
     },
     {
       "family": "delivery-and-project-management",
@@ -14147,6 +14479,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 43000,
+      "p50": 50000,
+      "p75": 62000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2005003005?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: guo wai ye wu (overseas/international sales), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=1507, page total valid sample 4570. Basis authority: page label yue xin (monthly pay), self-reported by 104 members; monthly pay excludes commissions settleable as year-end or performance bonuses, which the site reports separately as annual pay. Same-cell alternative: guo nei ye wu (domestic sales) all-experience 40000/50000/60000 n=14623."
     },
     {
       "family": "sales-and-business-development",
@@ -14874,6 +15222,22 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 60000,
+      "p50": 75000,
+      "p75": 100000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2005003000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: guo wai ye wu zhu guan (overseas sales supervisor), all-experience band from the 104 Salary Guide sales category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=1675 from the category page JSON payload, category valid sample 37870. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: guo nei ye wu zhu guan (domestic sales supervisor) all-experience 50000/65000/82500 n=5808."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -15591,6 +15955,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 65000,
+      "p50": 90000,
+      "p75": 120000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2005003000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: chan pin shi ye chu zhu guan (product business unit head), all-experience band from the 104 Salary Guide sales category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=164 from the category page JSON payload, category valid sample 37870. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. This P&L-carrying BU head is the closest published sales-side executive title. Same-cell alternative: zhuan an ye wu zhu guan (project sales supervisor) all-experience 51000/65000/80000 n=1039."
     },
     {
       "family": "sales-and-business-development",
@@ -16319,6 +16699,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 38000,
+      "p50": 46000,
+      "p75": 60000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2004001004?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: chan pin xing xiao qi hua (product marketing planner), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=542, page total valid sample 1398. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternatives: shu wei xing xiao (digital marketing) all-experience 41000/50000/60000 n=484; pin pai jing li (brand manager) all-experience 55000/65000/81300 n=98. Official crosscheck: MOL survey, guang gao ji xing xiao zhuan ye ren yuan (advertising and marketing professionals) average monthly regular pay 53609 TWD (n=74743)."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -16979,6 +17376,22 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50000,
+      "p50": 63000,
+      "p75": 80000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2004001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: xing xiao zhu guan (marketing supervisor), all-experience band from the 104 Salary Guide marketing category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=2327 from the category page JSON payload, category valid sample 13574. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: guang gao qi hua zhu guan (advertising planning supervisor) all-experience 50000/61500/77750 n=208."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -17593,6 +18006,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 69000,
+      "p50": 80000,
+      "p75": 100000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2004001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: xing xiao zong jian (marketing director / CMO), all-experience band from the 104 Salary Guide marketing category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=193 from the category page JSON payload, category valid sample 13574. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: mei ti huo chu ban zhu guan (media or publishing supervisor) all-experience 52750/60000/73000 n=32."
     },
     {
       "family": "marketing-and-growth",
@@ -18354,6 +18783,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 43250,
+      "p50": 53000,
+      "p75": 65000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2003001003?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: cai wu fen xi / cai wu ren yuan (financial analysis and finance staff), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=653, page total valid sample 2155. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternatives: zhu ban kuai ji (chief accountant) all-experience 42000/48000/58000 n=2570; cha zhang shen ji ren yuan (auditors) all-experience 43000/51200/62000 n=1627. Official crosscheck: MOL survey, kuai ji ren yuan (accountants) average monthly regular pay 51493 TWD (n=41597)."
     },
     {
       "family": "finance-and-accounting",
@@ -19141,6 +19587,22 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 56000,
+      "p50": 71000,
+      "p75": 92000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2003001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: cai wu huo kuai ji zhu guan (finance or accounting supervisor), all-experience band from the 104 Salary Guide finance, accounting and tax category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=3037 from the category page JSON payload, category valid sample 20477. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: ji he zhu guan (audit supervisor) all-experience 63000/75000/91200 n=283."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -19912,6 +20374,23 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 90000,
+      "p50": 110000,
+      "p75": 150000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2003001000?type=catjobs&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: cai wu zhang (chief financial officer), all-experience band from the 104 Salary Guide finance, accounting and tax category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=156 from the category page JSON payload, category valid sample 20477. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Official crosscheck: MOL survey, cai wu ji tou zi gui hua fen xi ren yuan (financial and investment planning analysts) average monthly regular pay 78073 TWD and 2024 annual pay 1.468 million TWD (n=11620); hui shen ji shi (accountants and auditors) 65569 TWD (n=5025)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -20613,6 +21092,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 40000,
+      "p50": 46925,
+      "p75": 58000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2001002002?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: ren li zi yuan ren yuan (human resources specialist), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=1919, page total valid sample 6397. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses; page displays the median rounded as 4.6 wan TWD. Official crosscheck: MOL survey, ren li zi yuan guan li shi (human resource management professionals) average monthly regular pay 60074 TWD (n=18107)."
     },
     {
       "family": "hr-and-people",
@@ -21336,6 +21832,22 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50800,
+      "p50": 65000,
+      "p75": 82500,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2001002001?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: ren li zi yuan zhu guan (human resources supervisor), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=527, page total valid sample 1891. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: HR supervisor all-experience band 50600/65550/85000 n=1849."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -22033,6 +22545,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 57000,
+      "p50": 73000,
+      "p75": 95000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2001002001?analyze=workexp&salary=monthly"
+      ],
+      "note": "Published title: ren li zi yuan zhu guan (human resources supervisor), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=721, page total valid sample 1891. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. The source publishes no HR-specific C-suite title, so the long-tenure HR supervisor band is the top published HR leadership data."
     },
     {
       "family": "hr-and-people",
@@ -22756,6 +23284,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 43000,
+      "p50": 52660,
+      "p75": 65000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2009001003?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: gong ye gong cheng shi / sheng chan xian gui hua (industrial engineer and production line planning), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=510, page total valid sample 1621. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternatives: gong ying lian guan li ren yuan (supply chain staff) all-experience 47350/57000/70581 n=254; MOL crosscheck: pin guan gong guan ji sheng guan gong cheng shi (quality, industrial and production engineers) average monthly regular pay 60621 TWD (n=53809)."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -23466,6 +24011,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 45000,
+      "p50": 55000,
+      "p75": 70000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2009001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: sheng chan guan li zhu guan (production management supervisor), all-experience band from the 104 Salary Guide production management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=4980 from the category page JSON payload, category valid sample 12945. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives: cai gou zhu guan (procurement supervisor) all-experience 50000/65000/82750 n=1366; gong chang zhu guan (factory supervisor) all-experience 50000/63000/82000 n=2173."
     },
     {
       "family": "operations-and-supply-chain",
@@ -24202,6 +24763,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 55000,
+      "p50": 72000,
+      "p75": 98000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2009001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: chang zhang (plant manager / factory director), all-experience band from the 104 Salary Guide production management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=349 from the category page JSON payload, category valid sample 12945. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Official crosscheck available: MOL survey manufacturing industry managers and supervisors average monthly regular pay 85000 TWD."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -24749,6 +25326,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 50000,
+      "p50": 64000,
+      "p75": 90000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2001001001?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: jing ying guan li zhu guan (business management supervisor, general manager track), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=2702, page total valid sample 8666. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Official crosscheck: MOL survey, jian du ren yuan (supervisors incl. site and office chiefs) average monthly regular pay 62981 TWD (n=617012)."
     },
     {
       "family": "general-management",
@@ -25301,6 +25895,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 55000,
+      "p50": 71000,
+      "p75": 100000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2001001001?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: jing ying guan li zhu guan (business management supervisor), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=3397, page total valid sample 8666. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Official crosscheck: MOL survey, zhong jie zhu guan jing li (middle managers) average monthly regular pay 98774 TWD and 2024 annual pay 1.625 million TWD (n=268963)."
     },
     {
       "family": "general-management",
@@ -26069,6 +26680,23 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 81500,
+      "p50": 120000,
+      "p75": 164000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2001001000?type=catjobs&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: fu zong jing li (vice president), all-experience band from the 104 Salary Guide corporate management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=305 from the category page JSON payload, category valid sample 14376. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives on the same page: zong jing li (general manager) 70000/110000/170000 n=263; ying zhang chang (CEO, mostly small firms) 50000/70000/100000 n=265; ying yun zhang (COO) 55000/80000/100000 n=332. Official crosscheck: MOL survey, gao jie zhu guan (top executives, general managers and CEOs) average monthly regular pay 159736 TWD and 2024 annual pay 2.765 million TWD (n=83221)."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -26815,6 +27443,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 43000,
+      "p50": 50000,
+      "p75": 61850,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2008001006?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: ji xie gong cheng shi (mechanical engineer), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=736, page total valid sample 2124. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Official crosscheck: MOL survey average monthly regular pay: ji xie gong cheng shi (mechanical engineers, incl. shipbuilding and foundry) 63098 TWD (n=48684); tu mu ji shui li gong cheng shi (civil and water engineers) 61722 TWD (n=13656); dian ji dian zi gong cheng shi (electrical and electronics engineers) 75649 TWD (n=143816)."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -27479,6 +28124,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 46000,
+      "p50": 57800,
+      "p75": 70000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2008001006?analyze=workexp&salary=monthly",
+        "https://guide.104.com.tw/salary/cat/2012001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: ji xie gong cheng shi (mechanical engineer), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=853, page total valid sample 2124. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternatives: tu mu ji shi / gong cheng shi (civil engineers) all-experience 50000/60000/75000 n=898; dian ji ji shi / gong cheng shi (electrical engineers) all-experience 45000/51000/64000 n=1232; ji dian ji shi (electromechanical engineers) all-experience 44000/51100/65000 n=815."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "THA",
       "currency": "THB",
       "basis": "monthly-gross",
@@ -28042,6 +28704,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 68650,
+      "p50": 80000,
+      "p75": 95000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2012001000?type=catjobs&salary=monthly",
+        "https://guide.104.com.tw/salary/cat/2008001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: ying jian zhu guan (construction supervisor), all-experience band from the 104 Salary Guide construction planning category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=1448 from the category page JSON payload, category valid sample 7183. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives on the engineering R&D category page: ying ti gong cheng yan fa zhu guan (hardware engineering R&D supervisor) 80000/100000/120000 n=1006; qi ta gong cheng yan fa zhu guan (other engineering R&D supervisors) 70000/90000/113000 n=1575."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -28757,6 +29436,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 40000,
+      "p50": 48000,
+      "p75": 55000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2015001004?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: hu li shi ji hu shi (registered nurses and practical nurses), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=1783, page total valid sample 3329. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses; nursing shift allowances may be inside reported take-home. Official crosscheck: MOL survey, hu li ren yuan (nursing staff) average monthly regular pay 53166 TWD and 2024 annual pay 775000 TWD (n=175401)."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -29350,6 +30046,22 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 55000,
+      "p50": 60000,
+      "p75": 72000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2015001000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: hu li zhang (head nurse), all-experience band from the 104 Salary Guide medical professionals category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=69 from the category page JSON payload, category valid sample 9031. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: zhuan ke hu li shi (nurse practitioner) all-experience 54000/60000/65000 n=275."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -29923,6 +30635,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 97500,
+      "p50": 150000,
+      "p75": 250000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2015001000?type=catjobs&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: yi shi (physician), all-experience band from the 104 Salary Guide medical professionals category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=170 from the category page JSON payload, category valid sample 9031. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Caveat: the source publishes no hospital-director band, so physicians, the top clinical pay band, stand in for the executive cell; they are senior clinicians, not managers. Official crosscheck: MOL survey, yi shi (physicians) average monthly regular pay 180007 TWD and 2024 annual pay 2.497 million TWD (n=56063)."
     },
     {
       "family": "healthcare",
@@ -30615,6 +31344,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 43450,
+      "p50": 50087,
+      "p75": 60000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/job/2016002004?analyze=workexp&salary=monthly",
+        "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
+      ],
+      "note": "Published title: zhong deng xue xiao jiao shi (secondary school teacher), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=94, page total valid sample 426. Basis authority: page label yue xin (monthly pay), self-reported by 104 members; public-school teacher pay is scale-based (12 monthly payments plus 1 to 1.5 month year-end bonus), private and cram-school pay is more variable. Official crosscheck: MOL survey, bu jiao ye jiao shi (cram school teachers) average monthly regular pay 37254 TWD (n=26103); xue qian jiao yu ren yuan (early childhood staff) 42007 TWD (n=51561); the MOL survey excludes public schools."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31198,6 +31944,22 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "TWN",
+      "currency": "TWD",
+      "basis": "monthly-gross",
+      "p25": 75000,
+      "p50": 85000,
+      "p75": 100000,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-03",
+      "sources": [
+        "https://guide.104.com.tw/salary/cat/2016002000?type=catjobs&salary=monthly"
+      ],
+      "note": "Published title: jiao shou / fu jiao shou / zhu li jiao shou (professor, associate professor, assistant professor), all-experience band from the 104 Salary Guide education and tutoring category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=107 from the category page JSON payload, category valid sample 7161. Basis authority: page label yue xin (monthly pay), self-reported by 104 members; university pay is a 12-month scale plus 1 to 2 months year-end pay, excluded here. Same-cell alternative: zhong deng xue xiao jiao shi (secondary school teacher) over 10 years band 49000/62543/75000 n=147."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "THA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31739,6 +32501,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "CHE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-03"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "TWN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-03"

@@ -1647,6 +1647,15 @@
     "packageConvention": ""
   },
   {
+    "iso3": "TWN",
+    "name": "Taiwan",
+    "currency": "TWD",
+    "region": "Asia",
+    "tier": 3,
+    "taxRegime": "",
+    "packageConvention": ""
+  },
+  {
     "iso3": "TJK",
     "name": "Tajikistan",
     "currency": "TJS",

@@ -4,7 +4,7 @@
     "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
     "license": "CC BY 4.0",
     "retrievedAt": "2026-08-30",
-    "note": "World Bank PA.NUS.PRVT.PP (PPP conversion factor, private consumption, LCU per international USD), most recent non-empty year per economy. All supported countries are covered, so the purchasing-power floor always computes. The original 9 tier-1 rows were hand-verified by the Verifier agent on 2026-08-30; 14 more were fetched the same day; the remainder were added by scripts/sync-world-data.mjs on 2026-08-30 (vintage year recorded per row)."
+    "note": "World Bank PA.NUS.PRVT.PP (PPP conversion factor, private consumption, LCU per international USD), most recent non-empty year per economy. All supported countries are covered, so the purchasing-power floor always computes. The original 9 tier-1 rows were hand-verified by the Verifier agent on 2026-08-30; 14 more were fetched the same day; the remainder were added by scripts/sync-world-data.mjs on 2026-08-30 (vintage year recorded per row). Taiwan is the one exception: the World Bank publishes no Taiwan PPP series, so its factor is the IMF World Economic Outlook implied PPP conversion rate (GDP basis, 2025), cited per row."
   },
   "rows": [
     {
@@ -1502,6 +1502,14 @@
       "license": "CC BY 4.0",
       "sourceUrl": "https://api.worldbank.org/v2/indicator/PA.NUS.PRVT.PP",
       "retrievedAt": "2026-08-30"
+    },
+    {
+      "iso3": "TWN",
+      "year": 2025,
+      "value": 13.651,
+      "license": "IMF WEO, open use with attribution",
+      "sourceUrl": "https://www.imf.org/external/datamapper/api/v1/PPPEX/TWN",
+      "retrievedAt": "2026-09-03"
     },
     {
       "iso3": "TTO",

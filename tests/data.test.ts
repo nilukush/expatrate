@@ -19,8 +19,9 @@ const CURATED_TIER_2 = ['VNM', 'PHL', 'THA', 'ZAF', 'KEN', 'NGA', 'LBN', 'MAR', 
 test('countries: world-wide coverage, unique iso3, valid shape, tier 1 set exact', () => {
   const rows = load('countries.json');
   // World-wide coverage: every World Bank economy with usable PPP data (9 excluded for
-  // missing or non-comparable data: CHI CUB GIB IMN LIE MAF MCO PRK YEM, plus VEN ZWE).
-  expect(rows.length).toBeGreaterThanOrEqual(190);
+  // missing or non-comparable data: CHI CUB GIB IMN LIE MAF MCO PRK YEM, plus VEN ZWE),
+  // plus Taiwan, whose PPP comes from the IMF (the World Bank has no Taiwan series).
+  expect(rows.length).toBe(207);
   const iso3 = rows.map((r: { iso3: string }) => r.iso3);
   expect(new Set(iso3).size).toBe(rows.length);
   for (const row of rows) {
@@ -32,6 +33,14 @@ test('countries: world-wide coverage, unique iso3, valid shape, tier 1 set exact
     expect(typeof row.taxRegime).toBe('string');
     expect(typeof row.packageConvention).toBe('string');
   }
+  // Taiwan joined 2026-09-03 as the 207th country: tier 3, TWD, no statutory tax regime
+  // (the disclosed 20 percent default applies), PPP via IMF WEO.
+  const taiwan = rows.find((r: { iso3: string }) => r.iso3 === 'TWN') as { name: string; currency: string; region: string; tier: number } | undefined;
+  expect(taiwan).toBeDefined();
+  expect(taiwan!.name).toBe('Taiwan');
+  expect(taiwan!.currency).toBe('TWD');
+  expect(taiwan!.region).toBe('Asia');
+  expect(taiwan!.tier).toBe(3);
   const byTier = (tier: number) => rows.filter((r: { tier: number }) => r.tier === tier).map((r: { iso3: string }) => r.iso3).sort();
   expect(byTier(1)).toEqual([...TIER_1].sort());
   expect(byTier(2)).toEqual([...CURATED_TIER_2].sort());
@@ -51,11 +60,20 @@ test('ppp: every supported country covered, exact Verifier values, full provenan
     ARE: 2.527, DEU: 0.719, EGY: 7.722, GBR: 0.702, IND: 19.839,
     SAU: 1.871, SGP: 1.024, USA: 1.0, ZAF: 7.740,
     QAT: 2.7555, IDN: 5065.969, VNM: 7203.3696, PHL: 20.5335,
+    TWN: 13.651,
   };
   for (const row of rows) {
     expect(row.year).toBeGreaterThanOrEqual(2020);
     expect(row.value).toBeGreaterThan(0);
-    expect(row.license).toBe('CC BY 4.0');
+    if (row.iso3 === 'TWN') {
+      // Taiwan: the World Bank publishes no Taiwan PPP, so this one row uses the IMF WEO
+      // implied PPP conversion rate (GDP basis, 2025) under IMF open-use-with-attribution terms.
+      expect(row.license).toBe('IMF WEO, open use with attribution');
+      expect(row.sourceUrl).toContain('imf.org');
+      expect(row.year).toBe(2025);
+    } else {
+      expect(row.license).toBe('CC BY 4.0');
+    }
     expect(row.sourceUrl).toMatch(/^https:/);
     expect(countries).toContain(row.iso3);
     if (expected[row.iso3] !== undefined) {
@@ -587,4 +605,26 @@ test('expansion wave 6: Israel, Chile, Colombia, Argentina carry verified rows',
   expect(argHealth.p50).toBe(1_800_583);
   expect(argHealth.note).toContain('midpoint');
   expect(argHealth.quality).toBe('High');
+});
+
+test('Taiwan: the 207th country ships with its parked and verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('TWN');
+  expect(rows.length).toBeGreaterThanOrEqual(46);
+  for (const row of rows) {
+    expect(row.currency).toBe('TWD');
+    expect(row.basis).toBe('monthly-gross');
+  }
+  // Anchor verified verbatim against 104's public JSON on 2026-09-03:
+  // salary25/50/75 = 50000/60000/75000 for the 5-to-10-year band, n 4548.
+  const sw = rows.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(sw.p25).toBe(50_000);
+  expect(sw.p50).toBe(60_000);
+  expect(sw.p75).toBe(75_000);
+  expect(sw.quality).toBe('Medium');
+  // Cells with sample under 100 stay Low per the curation rubric.
+  const cyberLead = rows.find((r: { family: string; level: string }) => r.family === 'cybersecurity' && r.level === 'lead');
+  expect(cyberLead.quality).toBe('Low');
 });

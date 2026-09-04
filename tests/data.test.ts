@@ -628,3 +628,65 @@ test('Taiwan: the 207th country ships with its parked and verified rows', () => 
   const cyberLead = rows.find((r: { family: string; level: string }) => r.family === 'cybersecurity' && r.level === 'lead');
   expect(cyberLead.quality).toBe('Low');
 });
+
+test('expansion wave 7: the remaining EEA markets and Peru carry verified rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency: Record<string, string> = {
+    BGR: 'EUR', HRV: 'EUR', CYP: 'EUR', EST: 'EUR', ISL: 'ISK', LTU: 'EUR', LUX: 'EUR',
+    MLT: 'EUR', SVK: 'EUR', SVN: 'EUR', PER: 'PEN', HUN: 'HUF', LVA: 'EUR',
+  };
+  const counts: Record<string, number> = {
+    BGR: 46, HRV: 34, CYP: 30, EST: 23, ISL: 39, LTU: 39, LUX: 23, MLT: 29,
+    SVK: 40, SVN: 37, PER: 28, HUN: 25, LVA: 25,
+  };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc]);
+    }
+  }
+  // Spot anchors verified against the cited sources on 2026-09-04.
+  const bgrSw = by('BGR').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(bgrSw.p50).toBe(2_270);
+  expect(bgrSw.currency).toBe('EUR');
+  const hrvSw = by('HRV').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(hrvSw.p50).toBe(2_729);
+  const cypSw = by('CYP').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(cypSw.p50).toBe(3_489);
+  const estSw = by('EST').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(estSw.p50).toBe(4_614);
+  const islSw = by('ISL').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(islSw.p25).toBe(1_138_000);
+  expect(islSw.p75).toBe(1_341_000);
+  expect(islSw.p50).toBe(1_239_500);
+  expect(islSw.note).toContain('midpoint');
+  const ltuSw = by('LTU').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(ltuSw.p25).toBe(1_707);
+  expect(ltuSw.p75).toBe(8_641);
+  expect(ltuSw.p50).toBe(5_174);
+  expect(ltuSw.quality).toBe('Low');
+  const luxLead = by('LUX').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'lead');
+  expect(luxLead.p50).toBe(8_355);
+  const mltFin = by('MLT').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'senior');
+  expect(mltFin.p50).toBe(2_795);
+  const svkIt = by('SVK').find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'lead');
+  expect(svkIt.p25).toBe(2_545);
+  expect(svkIt.p75).toBe(6_423);
+  const svnSw = by('SVN').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(svnSw.p25).toBe(2_556.13);
+  expect(svnSw.p50).toBe(3_400.01);
+  expect(svnSw.p75).toBe(4_414.03);
+  expect(svnSw.quality).toBe('High');
+  const perHealth = by('PER').find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'senior');
+  expect(perHealth.p50).toBe(8_312);
+  // Hungary and Latvia were built directly from the reviewer's own Eurostat pull.
+  const hunSw = by('HUN').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(hunSw.p50).toBe(883_381);
+  expect(hunSw.quality).toBe('High');
+  const lvaSw = by('LVA').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(lvaSw.p50).toBe(3_023);
+  expect(lvaSw.quality).toBe('High');
+});

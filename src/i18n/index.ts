@@ -2,10 +2,11 @@ import en from './en.json';
 import ar from './ar.json';
 import hi from './hi.json';
 import id from './id.json';
+import es from './es.json';
 
-export type Locale = 'en' | 'ar' | 'hi' | 'id';
+export type Locale = 'en' | 'ar' | 'hi' | 'id' | 'es';
 
-const DICTIONARIES: Record<Locale, unknown> = { en, ar, hi, id };
+const DICTIONARIES: Record<Locale, unknown> = { en, ar, hi, id, es };
 
 let currentLocale: Locale = 'en';
 
@@ -42,7 +43,7 @@ export function t(key: string, vars?: Record<string, string | number>): string {
 
 /* Locale-aware currency formatting: hi-IN lakh grouping, Eastern Arabic digits on ar. */
 export function formatCurrency(amount: number, currency: string, locale: Locale = currentLocale): string {
-  const intlLocale = locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : 'en';
+  const intlLocale = locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : locale === 'es' ? 'es' : 'en';
   return new Intl.NumberFormat(intlLocale, {
     style: 'currency',
     currency,
@@ -50,4 +51,4 @@ export function formatCurrency(amount: number, currency: string, locale: Locale 
   }).format(amount);
 }
 
-export { en, ar, hi, id };
+export { en, ar, hi, id, es };

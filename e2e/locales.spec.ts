@@ -23,6 +23,7 @@ test.describe('locales', () => {
       { hreflang: 'ar', href: expect.stringContaining('/ar/') },
       { hreflang: 'hi', href: expect.stringContaining('/hi/') },
       { hreflang: 'id', href: expect.stringContaining('/id/') },
+      { hreflang: 'es', href: expect.stringContaining('/es/') },
       { hreflang: 'x-default', href: expect.stringMatching(/pages\.dev\/$/) },
     ]));
     // RTL layout uses logical properties: no horizontal overflow.
@@ -72,6 +73,23 @@ test.describe('locales', () => {
     await expect(page.locator('#autosave')).toContainText('Tersimpan di browser ini');
     const roleOptions = await page.$$eval('#roleFamily option', (nodes) => nodes.map((n) => n.textContent ?? ''));
     expect(roleOptions).toContain('Rekayasa Perangkat Lunak');
+    expect(roleOptions).not.toContain('Software Engineering');
+  });
+
+  test('the Spanish home renders with Spanish UI strings and the Latin font', async ({ page }) => {
+    const response = await page.goto('/es/');
+    expect(response?.status()).toBe(200);
+    expect(await page.getAttribute('html', 'lang')).toBe('es');
+    expect(await page.getAttribute('html', 'dir')).toBe('ltr');
+    const preloads = await page.$$eval('link[rel=preload][as=font]', (nodes) => nodes.map((n) => n.getAttribute('href')));
+    expect(preloads).toContain('/fonts/inter-latin-var.woff2');
+    await page.waitForSelector('#stepIndicator');
+    await expect(page.locator('#stepIndicator')).toContainText('Paso 1 de 5');
+    await expect(page.locator('#nextBtn')).toContainText('Continuar');
+    await expect(page.locator('.hero-title')).toContainText('pedir');
+    await expect(page.locator('#autosave')).toContainText('Guardado en este navegador');
+    const roleOptions = await page.$$eval('#roleFamily option', (nodes) => nodes.map((n) => n.textContent ?? ''));
+    expect(roleOptions).toContain('Ingeniería de Software');
     expect(roleOptions).not.toContain('Software Engineering');
   });
 
@@ -129,6 +147,7 @@ test('EN programmatic pages emit the reciprocal hreflang set', async ({ page }) 
     { hreflang: 'ar', href: expect.stringContaining('/ar/salaries/australia/') },
     { hreflang: 'hi', href: expect.stringContaining('/hi/salaries/australia/') },
     { hreflang: 'id', href: expect.stringContaining('/id/salaries/australia/') },
+    { hreflang: 'es', href: expect.stringContaining('/es/salaries/australia/') },
     { hreflang: 'x-default', href: expect.stringContaining('/salaries/australia/') },
   ]));
   await expect(page.locator('.seo-answer').first()).not.toContainText('{');

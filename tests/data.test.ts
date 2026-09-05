@@ -690,3 +690,41 @@ test('expansion wave 7: the remaining EEA markets and Peru carry verified rows',
   expect(lvaSw.p50).toBe(3_023);
   expect(lvaSw.quality).toBe('High');
 });
+
+test('Western Balkans pass (2026-09-05): SES 2022 backbone rows with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const currency = { SRB: 'RSD', ALB: 'ALL', MKD: 'MKD', BIH: 'BAM' };
+  // Montenegro and Kosovo publish nothing in SES 2022, so they stay marker-only.
+  const counts = { SRB: 25, ALB: 21, MKD: 24, BIH: 25 };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, `${cc} row count`).toBe(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(currency[cc as keyof typeof currency]);
+      expect(row.basis, cc).toBe('monthly-gross');
+    }
+  }
+  // Anchors re-fetched from the exact filtered API cells on 2026-09-05.
+  const anchor = (cc: string, family: string, level: string, value: number) => {
+    const row = by(cc).find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `${cc} ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.p25).toBe(0);
+    expect(row!.p75).toBe(0);
+  };
+  anchor('SRB', 'software-engineering', 'senior', 339_846);
+  anchor('SRB', 'healthcare', 'lead', 148_145);
+  anchor('ALB', 'software-engineering', 'senior', 119_638);
+  anchor('ALB', 'finance-and-accounting', 'lead', 291_869);
+  anchor('MKD', 'software-engineering', 'senior', 117_002);
+  anchor('MKD', 'healthcare', 'lead', 124_997);
+  anchor('BIH', 'software-engineering', 'senior', 3_459);
+  anchor('BIH', 'healthcare', 'lead', 4_598);
+  // Albania has no economy-wide managers cell, so no executive rows may exist there.
+  expect(by('ALB').filter((r: { level: string }) => r.level === 'executive')).toHaveLength(0);
+  // Ten lead cells planned; North Macedonia misses the finance managers cell only.
+  expect(by('MKD').filter((r: { level: string }) => r.level === 'lead')).toHaveLength(9);
+  expect(by('SRB').filter((r: { level: string }) => r.level === 'lead')).toHaveLength(10);
+});

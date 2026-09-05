@@ -11,7 +11,8 @@
     "Expansion wave 5 (2026-09-02, docs/RESEARCH/benchmark-curation-2026-08-30.md): Finland 34 rows (Statistics Finland Structure of Earnings 2024 via PxWeb deciles and median by 4-digit occupation, decile convention disclosed per row; TEK survey; koodaripula.fi Duunitori job-ad quartiles), Austria 48 rows (Statistik Austria Allgemeiner Einkommensbericht 2024 ODS with true quartiles by OEISCO group; karriere.at job-ad levels; kununu held Low), Belgium 25 rows (Statbel SES occupation means, Onderwijs Vlaanderen official teacher scales, Jobat nurse scales), Romania 17 rows (INS sector means via salariile.ro republication, statutory medic primar scale span, Paylab decile spans held Low), Greece 39 rows (Eurostat SES 2022 occupation-by-sector means, Greek Ministry of Finance statutory public-sector examples, Paylab crowd spans held Low). All anchors independently re-fetched and matched verbatim before merge; span rows carry disclosed midpoints.",
     "Expansion wave 6 (2026-09-03, docs/RESEARCH/benchmark-curation-2026-08-30.md): Israel 38 rows (Manpower Israel salary tables with stated gross basis, Knesset Research Center teacher data via Calcalist, Ministry of Finance physician data via Bizportal; Avodata official portal bot-blocked), Chile 28 rows (Buk Guia Salarial real-payroll bands via press reproduction, IT Workers headhunting guide, Lota municipal statutory scale; INE ESI rejected for net basis), Colombia 23 rows (Buk Colombia payroll percentile bands, Michael Page Colombia free tool, El Tiempo statutory teacher table), Argentina 31 rows (sysarmy/OpenQube 2026.01 survey medians with the peso subset identified, ATE Decreto 1133/09 statutory health scale, iProfesional press synthesis held Low). New floor-only convention: cells with a single published floor store it as a median-only row with the floor disclosed. Taiwan had 46 verified rows curated (104 Salary Guide published P25/P50/P75 by title and tenure with sample counts) but is NOT in the 206-country list because the World Bank PPP pipeline has no Taiwan data; those rows stay parked in the research file pending an owner decision on extending the country list. All anchors independently re-fetched and matched verbatim before merge.",
     "Taiwan addition (2026-09-03): the owner approved Taiwan as the 207th supported country, so the 46 rows parked from wave 6 now merge. Rows are 104 Salary Guide published P25/P50/P75 monthly bands by title and tenure with per-band sample counts (Medium, n under 100 held Low), corroborated by the MOL 2025 occupational wage survey; every figure verified against 104's public JSON. Taiwan PPP is the IMF WEO implied conversion rate (GDP basis, 2025) since the World Bank has no Taiwan series; no statutory tax regime, so the disclosed 20 percent default applies.",
-    "Expansion wave 7 (2026-09-04, docs/RESEARCH/benchmark-curation-2026-08-30.md): the remaining EEA markets plus Peru, 13 countries, 418 rows, closing out Europe. Bulgaria 46 (Eurostat SES 2022 backbone plus State Gazette statutory teacher minima), Croatia 34 all-High (Eurostat plus Croatian public-service coefficients on the verified 2026 base), Cyprus 30 (Eurostat plus CYSTAT via attributed reproduction plus CareerFinders), Estonia 23 (Statistics Estonia register-based palgad.stat.ee medians), Iceland 39 all-High (Statistics Iceland VIN02001 quartiles with a disclosed seniority proxy), Lithuania 39 (manoalga.lt self-reported spans, all Low, official sources Cloudflare-blocked), Luxembourg 23 (Eurostat, Eurydice statutory teachers, ITM social-sector grid, Robert Half), Malta 29 (gov.mt 2026 payscales, Eurostat, Archer guide), Slovakia 40 (platy.sk spans mostly Low, Health Ministry statutory physician tables), Slovenia 37 all-High (SURS quartiles by occupation), Peru 28 (gob.pe statutory comunicado, MTPE Planilla Electronica physician averages, Buk Peru payroll bands), Hungary 25 and Latvia 25 built directly by the reviewer from the same verified Eurostat SES pull when the research agents hit an account usage limit. One Slovak rolling-survey row re-verified and updated to the page's current endpoints. All anchors independently verified; Iceland and Estonia anchors corroborated exactly against Eurostat because their national APIs block this network."
+    "Expansion wave 7 (2026-09-04, docs/RESEARCH/benchmark-curation-2026-08-30.md): the remaining EEA markets plus Peru, 13 countries, 418 rows, closing out Europe. Bulgaria 46 (Eurostat SES 2022 backbone plus State Gazette statutory teacher minima), Croatia 34 all-High (Eurostat plus Croatian public-service coefficients on the verified 2026 base), Cyprus 30 (Eurostat plus CYSTAT via attributed reproduction plus CareerFinders), Estonia 23 (Statistics Estonia register-based palgad.stat.ee medians), Iceland 39 all-High (Statistics Iceland VIN02001 quartiles with a disclosed seniority proxy), Lithuania 39 (manoalga.lt self-reported spans, all Low, official sources Cloudflare-blocked), Luxembourg 23 (Eurostat, Eurydice statutory teachers, ITM social-sector grid, Robert Half), Malta 29 (gov.mt 2026 payscales, Eurostat, Archer guide), Slovakia 40 (platy.sk spans mostly Low, Health Ministry statutory physician tables), Slovenia 37 all-High (SURS quartiles by occupation), Peru 28 (gob.pe statutory comunicado, MTPE Planilla Electronica physician averages, Buk Peru payroll bands), Hungary 25 and Latvia 25 built directly by the reviewer from the same verified Eurostat SES pull when the research agents hit an account usage limit. One Slovak rolling-survey row re-verified and updated to the page's current endpoints. All anchors independently verified; Iceland and Estonia anchors corroborated exactly against Eurostat because their national APIs block this network.",
+    "Western Balkans pass (2026-09-05): Serbia 25, Bosnia and Herzegovina 25, North Macedonia 24, and Albania 21 rows, built directly by the reviewer from Eurostat SES 2022 (earn_ses22_48, mean monthly gross, enterprises with 10 or more employees, total sex) on the exact Hungary and Latvia recipe: senior cells are ISCO major group 2 professionals in the family's NACE sector, lead cells are ISCO major group 1 managers in the same sector, and executive cells share the economy-wide managers pool. Albania publishes no economy-wide managers cell (so no executive rows) and North Macedonia misses only the finance managers cell. Montenegro and Kosovo publish nothing in this dataset and stay marker-only. Median-only rows carrying published means, with the all-seniority-mean disclosure in every note; each source URL is the exact filtered API cell. Every value is verbatim from the API response captured on merge day."
   ],
   "rows": [
     {
@@ -8803,7 +8804,7 @@
         "https://xpertize.africa/en/articles/2026-04-27-morocco-salary-grid-2026-complete-guide",
         "https://fr.linkedin.com/pulse/salaires-au-maroc-2026-grille-de-r%C3%A9f%C3%A9rence-par-secteur-et-niveau-rsjwf"
       ],
-      "note": "Xpertize Africa 2026 grid (2026-04-27) gives 22,000 to 38,000 MAD gross monthly for a management controller (contr\u00f4leur de gestion) in middle management; AfricaWork (2026-06-08) gives 25,000 to 45,000 gross monthly for an experienced financial controller, corroborating the level. p25 is the low end of the Xpertize band, p75 the high end of the AfricaWork band, p50 the midpoint of the combined 22,000-45,000 span; no percentiles or sample size published."
+      "note": "Xpertize Africa 2026 grid (2026-04-27) gives 22,000 to 38,000 MAD gross monthly for a management controller (contrôleur de gestion) in middle management; AfricaWork (2026-06-08) gives 25,000 to 45,000 gross monthly for an experienced financial controller, corroborating the level. p25 is the low end of the Xpertize band, p75 the high end of the AfricaWork band, p50 the midpoint of the combined 22,000-45,000 span; no percentiles or sample size published."
     },
     {
       "family": "finance-and-accounting",
@@ -11213,7 +11214,7 @@
       "sources": [
         "https://www.roberthalf.com/br/pt/vagas-detalhes/desenvolvedora-full-stack-senior"
       ],
-      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Desenvolvedor(a) Full-Stack S\u00eanior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Back-End S\u00eanior range 12400 to 20900 confirms level."
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Desenvolvedor(a) Full-Stack Sênior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Back-End Sênior range 12400 to 20900 confirms level."
     },
     {
       "family": "software-engineering",
@@ -11327,7 +11328,7 @@
       "sources": [
         "https://www.roberthalf.com/br/pt/vagas-detalhes/analista-de-seguranca-senior"
       ],
-      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Analista de Seguran\u00e7a S\u00eanior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. PenTester median 15400 sits at the same level."
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Analista de Segurança Sênior, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. PenTester median 15400 sits at the same level."
     },
     {
       "family": "cybersecurity",
@@ -11344,7 +11345,7 @@
         "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-seguranca-da-informacao",
         "https://www.roberthalf.com/br/pt/insights/guia-salarial/tecnologia"
       ],
-      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Seguran\u00e7a da Informa\u00e7\u00e3o, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Segurança da Informação, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits."
     },
     {
       "family": "cybersecurity",
@@ -11538,7 +11539,7 @@
       "sources": [
         "https://www.roberthalf.com/br/pt/vagas-detalhes/gerente-de-logistica-g"
       ],
-      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Log\u00edstica, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Plant manager (G) median is 31050."
+      "note": "Robert Half Brazil Guia Salarial 2026 starting salary percentiles for Gerente de Logística, large companies, national average of guide cities. Period unlabeled on page; annual reading is impossible since it implies implausible for executive roles pay, so monthly applies. Gross base pay from real Robert Half placements, excludes bonus and benefits. Plant manager (G) median is 31050."
     },
     {
       "family": "operations-and-supply-chain",
@@ -28918,6 +28919,1526 @@
       "lastReviewed": "2026-09-04",
       "sources": [
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=en&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 339846,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in information and communication (NACE J), the ICT professionals pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 318549,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J), the ICT managers pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 339846,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 339846,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 318549,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J). This cell shares the software-engineering lead pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 175013,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 194592,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 289963,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 175013,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 181046,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 167189,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 175013,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 209749,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 265011,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 158432,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 147922,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 139849,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 149287,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 175013,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 125334,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 145324,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 170002,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 148145,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 112752,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "SRB",
+      "currency": "RSD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 160938,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RS&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 119638,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in information and communication (NACE J), the ICT professionals pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 237413,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J), the ICT managers pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 119638,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 119638,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 237413,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J). This cell shares the software-engineering lead pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117623,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 291869,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 76648,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 123533,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 90776,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 177948,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 92173,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 144095,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 85560,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 123068,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 74559,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 107652,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77233,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 132830,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 76999,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "ALB",
+      "currency": "ALL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 110895,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AL&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117002,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in information and communication (NACE J), the ICT professionals pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 151225,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J), the ICT managers pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117002,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117002,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 151225,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J). This cell shares the software-engineering lead pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77733,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 67783,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77733,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 76500,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 93994,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77733,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 73589,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 102828,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 61271,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 80171,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 108771,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71763,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77733,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64835,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 82383,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 78590,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 124997,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51445,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "MKD",
+      "currency": "MKD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 94680,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MK&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3459,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in information and communication (NACE J), the ICT professionals pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4300,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J), the ICT managers pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3459,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3459,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: the ICT professionals pool (NACE J); no separate official occupation series exists. This cell shares the software-engineering senior pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4300,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in information and communication (NACE J). This cell shares the software-engineering lead pool. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3289,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3331,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6257,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3289,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2213,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2409,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3289,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2513,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3561,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2905,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3327,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2994,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2442,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3289,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: all managers economy-wide (NACE B-S), the chief-managers pool. This cell is shared by all executive cells in this country; no finer official split is published. MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2037,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2108,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3464,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4598,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2698,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Professionals in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "BIH",
+      "currency": "BAM",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2937,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-05",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=P&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
     }

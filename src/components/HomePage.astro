@@ -46,6 +46,7 @@ const langs: Array<{ code: Locale; label: string; href: string }> = [
   { code: 'hi', label: 'हिन्दी', href: '/hi/' },
   { code: 'id', label: 'ID', href: '/id/' },
   { code: 'es', label: 'ES', href: '/es/' },
+  { code: 'fr', label: 'FR', href: '/fr/' },
 ];
 const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
   '__HL__',
@@ -69,6 +70,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/`} />
     <link rel="alternate" hreflang="id" href={`${SITE_URL}/id/`} />
     <link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`} />
+    <link rel="alternate" hreflang="fr" href={`${SITE_URL}/fr/`} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
     <meta property="og:title" content={t('home.title')} />
     <meta property="og:description" content={t('home.description')} />
@@ -138,7 +140,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
       const wizard = document.getElementById('wizard');
       const results = document.getElementById('results');
       if (wizard && results) {
-        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : 'en');
+        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : document.documentElement.lang === 'fr' ? 'fr' : 'en');
       }
     </script>
   </body>

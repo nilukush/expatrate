@@ -252,22 +252,22 @@ export function sitemapXml(urls: string[]): string {
   // Group URLs by their locale-independent path so each entry can declare the
   // full reciprocal alternate set. A URL may never claim a hreflang whose
   // href points at a different locale (Google rejects such files).
-  const groups = new Map<string, { en?: string; ar?: string; hi?: string; id?: string; es?: string }>();
+  const groups = new Map<string, { en?: string; ar?: string; hi?: string; id?: string; es?: string; fr?: string }>();
   for (const url of urls) {
-    const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi|id|es))(\/.*)?$/);
+    const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi|id|es|fr))(\/.*)?$/);
     const locale = match ? match[2] : 'en';
     const path = match ? match[3] ?? '/' : url.replace(/^https?:\/\/[^/]+/, '') || '/';
     const group = groups.get(path) ?? {};
-    group[locale as 'en' | 'ar' | 'hi' | 'id' | 'es'] = url;
+    group[locale as 'en' | 'ar' | 'hi' | 'id' | 'es' | 'fr'] = url;
     groups.set(path, group);
   }
   const entries = urls
     .map((url) => {
-      const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi|id|es))(\/.*)?$/);
+      const match = url.match(/^https?:\/\/[^/]+(\/(ar|hi|id|es|fr))(\/.*)?$/);
       const locale = match ? match[2] : 'en';
       const path = match ? match[3] ?? '/' : url.replace(/^https?:\/\/[^/]+/, '') || '/';
       const group = groups.get(path) ?? { [locale]: url };
-      const alternates = (['en', 'ar', 'hi', 'id', 'es'] as const)
+      const alternates = (['en', 'ar', 'hi', 'id', 'es', 'fr'] as const)
         .filter((l) => group[l])
         .map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${group[l]}"/>`)
         .join('');
@@ -280,7 +280,7 @@ export function sitemapXml(urls: string[]): string {
 
 export function allSiteUrls(): string[] {
   const urls = [`${SITE_URL}/`, `${SITE_URL}/methodology/`, `${SITE_URL}/salaries/`];
-  for (const locale of ['', '/ar', '/hi', '/id', '/es']) {
+  for (const locale of ['', '/ar', '/hi', '/id', '/es', '/fr']) {
     urls.push(`${SITE_URL}${locale}/`);
     for (const country of seoCountries()) urls.push(`${SITE_URL}${locale}${countryHubUrl(country.slug)}`);
     for (const family of families) urls.push(`${SITE_URL}${locale}/salary/${family.id}/`);
@@ -302,6 +302,7 @@ export function alternateLinks(path: string): Array<{ hreflang: string; href: st
     { hreflang: 'hi', href: `${SITE_URL}/hi${clean}` },
     { hreflang: 'id', href: `${SITE_URL}/id${clean}` },
     { hreflang: 'es', href: `${SITE_URL}/es${clean}` },
+    { hreflang: 'fr', href: `${SITE_URL}/fr${clean}` },
     { hreflang: 'x-default', href: `${SITE_URL}${clean}` },
   ];
 }

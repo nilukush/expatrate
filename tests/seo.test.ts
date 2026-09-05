@@ -113,14 +113,16 @@ describe('sitemap', () => {
       SITE_URL + '/hi/salary/it-executive/in/australia/',
       SITE_URL + '/id/salary/it-executive/in/australia/',
       SITE_URL + '/es/salary/it-executive/in/australia/',
+      SITE_URL + '/fr/salary/it-executive/in/australia/',
     ]);
-    // The Arabic entry must declare itself as ar and link its en/hi/id/es siblings.
+    // The Arabic entry must declare itself as ar and link its siblings.
     const arEntry = xml.split('<url>').find((chunk) => chunk.includes('/ar/salary/it-executive/in/australia/')) ?? '';
     expect(arEntry).toContain(`hreflang="ar" href="${SITE_URL}/ar/salary/it-executive/in/australia/"`);
     expect(arEntry).toContain(`hreflang="en" href="${SITE_URL}/salary/it-executive/in/australia/"`);
     expect(arEntry).toContain(`hreflang="hi" href="${SITE_URL}/hi/salary/it-executive/in/australia/"`);
     expect(arEntry).toContain(`hreflang="id" href="${SITE_URL}/id/salary/it-executive/in/australia/"`);
     expect(arEntry).toContain(`hreflang="es" href="${SITE_URL}/es/salary/it-executive/in/australia/"`);
+    expect(arEntry).toContain(`hreflang="fr" href="${SITE_URL}/fr/salary/it-executive/in/australia/"`);
     expect(arEntry).toContain(`hreflang="x-default" href="${SITE_URL}/salary/it-executive/in/australia/"`);
     // No URL may ever claim the en alternate with a non-English href.
     const enToAr = xml.match(new RegExp(`hreflang="en" href="${SITE_URL}/ar/`, 'g'));
@@ -128,7 +130,7 @@ describe('sitemap', () => {
   });
 });
 
-it('alternateLinks builds the reciprocal six-way set for any path', () => {
+it('alternateLinks builds the reciprocal seven-way set for any path', () => {
   const links = alternateLinks('/salaries/australia/');
   expect(links).toEqual([
     { hreflang: 'en', href: 'https://expatrate.pages.dev/salaries/australia/' },
@@ -136,6 +138,7 @@ it('alternateLinks builds the reciprocal six-way set for any path', () => {
     { hreflang: 'hi', href: 'https://expatrate.pages.dev/hi/salaries/australia/' },
     { hreflang: 'id', href: 'https://expatrate.pages.dev/id/salaries/australia/' },
     { hreflang: 'es', href: 'https://expatrate.pages.dev/es/salaries/australia/' },
+    { hreflang: 'fr', href: 'https://expatrate.pages.dev/fr/salaries/australia/' },
     { hreflang: 'x-default', href: 'https://expatrate.pages.dev/salaries/australia/' },
   ]);
 });

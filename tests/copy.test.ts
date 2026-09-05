@@ -7,18 +7,18 @@ import type { ExperienceBand } from '../src/wizard/types';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dict = (loc: string) =>
   JSON.parse(readFileSync(`${root}src/i18n/${loc}.json`, 'utf8'));
-const locales = ['en', 'ar', 'hi', 'id', 'es'] as const;
+const locales = ['en', 'ar', 'hi', 'id', 'es', 'fr'] as const;
 const BANDS: ExperienceBand[] = ['0-2', '3-5', '6-9', '10-14', '15+'];
 
 test('saved indicator says where the data is saved, in every locale', () => {
-  const markers = { en: /browser/i, ar: 'المتصفح', hi: 'ब्राउज़र', id: /browser/i, es: /navegador/i } as const;
+  const markers = { en: /browser/i, ar: 'المتصفح', hi: 'ब्राउज़र', id: /browser/i, es: /navegador/i, fr: /navigateur/i } as const;
   for (const loc of locales) {
     expect(dict(loc).wizard.saved, loc).toMatch(new RegExp(markers[loc] as RegExp));
   }
 });
 
 test('resume upload is marked optional in its visible title and hidden label', () => {
-  const markers = { en: 'optional', ar: 'اختياري', hi: 'वैकल्पिक', id: 'opsional', es: 'opcional' } as const;
+  const markers = { en: 'optional', ar: 'اختياري', hi: 'वैकल्पिक', id: 'opsional', es: 'opcional', fr: 'facultatif' } as const;
   for (const loc of locales) {
     expect(dict(loc).parse.dropTitle, `${loc} dropTitle`).toContain(markers[loc]);
     expect(dict(loc).parse.resumeLabel, `${loc} resumeLabel`).toContain(markers[loc]);
@@ -44,7 +44,7 @@ test('role family label drops the redundant parenthetical', () => {
 });
 
 test('step help explains the band instead of a bare seniority sentence', () => {
-  const markers = { en: 'band', ar: 'نطاق', hi: 'बैंड', id: 'rentang', es: 'banda' } as const;
+  const markers = { en: 'band', ar: 'نطاق', hi: 'बैंड', id: 'rentang', es: 'banda', fr: 'bande' } as const;
   for (const loc of locales) {
     expect(dict(loc).steps.role.help, loc).toContain(markers[loc]);
   }
@@ -52,7 +52,7 @@ test('step help explains the band instead of a bare seniority sentence', () => {
 });
 
 test('trust bullet scopes the country count to the floor', () => {
-  const markers = { en: /floor/i, ar: 'حد', hi: 'सीमा', id: /batas/i, es: /suelo/i } as const;
+  const markers = { en: /floor/i, ar: 'حد', hi: 'सीमा', id: /batas/i, es: /suelo/i, fr: /plancher/i } as const;
   for (const loc of locales) {
     expect(dict(loc).home.trust2, loc).toMatch(new RegExp(markers[loc] as RegExp));
   }
@@ -74,6 +74,8 @@ test('footer data line names a benchmark country count, not corridors', () => {
   expect(dict('id').home.footerData).toContain('negara tujuan');
   expect(dict('es').home.footerData).not.toContain('corredores');
   expect(dict('es').home.footerData).toContain('países de destino');
+  expect(dict('fr').home.footerData).not.toContain('corridors');
+  expect(dict('fr').home.footerData).toContain('pays de destination');
 });
 
 test('footer disclaimer is a complete sentence', () => {
@@ -110,7 +112,7 @@ test('privacy copy exists in every locale with the three core promises', () => {
 
 test('the job link hint names the boards and the no-server promise in every locale', () => {
   const boardMarker = 'Greenhouse';
-  const promiseMarker = { en: /never sees it|no server/i, ar: 'دون أن يمر', hi: 'नहीं गुजरती', id: /tidak pernah melihat/i, es: /nunca lo ve/i } as const;
+  const promiseMarker = { en: /never sees it|no server/i, ar: 'دون أن يمر', hi: 'नहीं गुजरती', id: /tidak pernah melihat/i, es: /nunca lo ve/i, fr: /ne le voit jamais/i } as const;
   for (const loc of locales) {
     const hint: unknown = dict(loc).steps.role.jdBoards;
     expect(typeof hint, `${loc} jdBoards is a string`).toBe('string');
@@ -132,6 +134,7 @@ test('every locale carries the full localized methodology, including the 20 perc
     hi: { market: /P25/, floor: /PPP/, tax: /20 प्रतिशत/ },
     id: { market: /P25/, floor: /Bank Dunia/, tax: /20 persen/ },
     es: { market: /P25/, floor: /Banco Mundial/, tax: /20 por ciento/ },
+    fr: { market: /P25/, floor: /Banque mondiale/, tax: /20 pour cent/ },
   } as const;
   for (const loc of locales) {
     const seo = dict(loc).seo;
@@ -143,7 +146,7 @@ test('every locale carries the full localized methodology, including the 20 perc
 });
 
 test('the home trust line states the data dates in every locale', () => {
-  const markers = { en: /Data as of/i, ar: /البيانات حتى/, hi: /आँकड़े अद्यतन/, id: /Data per/i, es: /Datos a/i } as const;
+  const markers = { en: /Data as of/i, ar: /البيانات حتى/, hi: /आँकड़े अद्यतन/, id: /Data per/i, es: /Datos a/i, fr: /Données au/i } as const;
   for (const loc of locales) {
     expect(dict(loc).home.trustData, loc).toMatch(new RegExp(markers[loc] as RegExp));
     for (const param of ['{benchmarks}', '{ppp}', '{fx}', '{allowances}']) {
@@ -153,7 +156,7 @@ test('the home trust line states the data dates in every locale', () => {
 });
 
 test('experience band labels carry no level jargon in any locale', () => {
-  const banned = { en: 'band', ar: 'نطاق', hi: 'बैंड', id: 'rentang', es: 'banda' } as const;
+  const banned = { en: 'band', ar: 'نطاق', hi: 'बैंड', id: 'rentang', es: 'banda', fr: 'bande' } as const;
   for (const loc of locales) {
     for (const value of Object.values(dict(loc).options.bands as Record<string, string>)) {
       expect(value, loc).not.toContain(banned[loc]);
@@ -162,7 +165,7 @@ test('experience band labels carry no level jargon in any locale', () => {
 });
 
 test('the role step help explains the band-to-level mapping in every locale', () => {
-  const markers = { en: 'senior', ar: 'خبير', hi: 'वरिष्ठ', id: 'senior', es: 'senior' } as const;
+  const markers = { en: 'senior', ar: 'خبير', hi: 'वरिष्ठ', id: 'senior', es: 'senior', fr: 'senior' } as const;
   for (const loc of locales) {
     expect(dict(loc).steps.role.help, loc).toMatch(new RegExp(markers[loc]));
   }
@@ -184,6 +187,7 @@ test('the meta description claims your currency, not any currency', () => {
   expect(dict('hi').home.description).toContain('आपकी मुद्रा');
   expect(dict('id').home.description).toContain('dalam mata uang Anda');
   expect(dict('es').home.description).toContain('en tu moneda');
+  expect(dict('fr').home.description).toContain('dans votre monnaie');
 });
 
 test('English user copy says band, not a range-band mix', () => {
@@ -200,7 +204,7 @@ test('no locale hardcodes the role family count', () => {
 });
 
 test('returning visitors get a welcome-back note and an action-named resume chip in every locale', () => {
-  const browserWord = { en: /browser/i, ar: 'المتصفح', hi: 'ब्राउज़र', id: /browser/i, es: /navegador/i } as const;
+  const browserWord = { en: /browser/i, ar: 'المتصفح', hi: 'ब्राउज़र', id: /browser/i, es: /navegador/i, fr: /navigateur/i } as const;
   for (const loc of locales) {
     const welcome: unknown = dict(loc).wizard.welcomeBack;
     expect(typeof welcome, `${loc} welcomeBack is a string`).toBe('string');
@@ -229,6 +233,7 @@ test('the tax-default count in user copy derives from the data', () => {
     hi: `${countries.length} में से ${onDefault}`,
     id: `${onDefault} dari ${countries.length}`,
     es: `${onDefault} de ${countries.length}`,
+    fr: `${onDefault} des ${countries.length}`,
   } as const;
   for (const loc of locales) {
     expect(dict(loc).seo.methodologyTax, loc).toContain(expected[loc]);

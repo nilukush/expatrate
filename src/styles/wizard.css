@@ -533,12 +533,18 @@ textarea.wz-input {
 }
 
 .wz-btn-chip {
-  min-block-size: 1.75rem;
-  padding-inline: 0.75rem;
+  min-block-size: 2rem;
+  padding-inline: 0.9rem;
   font-size: var(--text-body-sm);
-  background-color: var(--accent);
-  color: var(--accent-foreground);
-  border-radius: var(--radius-full);
+  background-color: var(--card);
+  color: var(--foreground);
+  border-color: var(--input);
+  border-radius: var(--radius-md);
+}
+
+.wz-btn-chip:hover {
+  background-color: var(--secondary);
+  border-color: var(--muted-foreground);
 }
 
 /* Result cards */

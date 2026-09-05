@@ -71,6 +71,11 @@ test.describe('wizard', () => {
     await waitForWizard(page);
     await expect(page.locator('#autosave')).toContainText('Welcome back');
     await expect(page.locator('#resumeBtn')).toContainText('Pick up at step 2 of 5');
+    // It must visibly be a button, not a status message.
+    const chip = page.locator('#resumeBtn');
+    expect(await chip.evaluate((el) => getComputedStyle(el).cursor)).toBe('pointer');
+    expect(await chip.evaluate((el) => getComputedStyle(el).backgroundColor)).not.toBe('rgba(0, 0, 0, 0)');
+    expect(await chip.evaluate((el) => parseFloat(getComputedStyle(el).borderWidth))).toBeGreaterThan(0);
     await expect(page.locator('#stepIndicator')).toContainText('Step 1 of 5');
     await expect(page.locator('#roleFamily')).toHaveValue('software-engineering');
     await expect(page.locator('#experienceBand')).toHaveValue('6-9');

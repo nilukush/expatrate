@@ -32,6 +32,15 @@ test('small controls expand their hit area', () => {
   expect(wizardCss).toMatch(/\.wz-check::after/s);
 });
 
+test('the resume chip reads as an action button, not a status pill', () => {
+  const rule = wizardCss.match(/\.wz-btn-chip\s*{[^}]*}/s)?.[0] ?? '';
+  expect(rule, 'chip uses the button card surface').toContain('var(--card)');
+  expect(rule, 'chip carries a visible border').toContain('var(--input)');
+  expect(rule, 'chip uses the button radius, not the tag pill').toContain('var(--radius-md)');
+  expect(wizardCss).toMatch(/\.wz-btn-chip:hover\s*{[^}]*var\(--secondary\)/s);
+  expect(mainTs).toMatch(/id="resumeBtn"[^>]*><svg/);
+});
+
 test('the confidence badge uses the confidence tokens', () => {
   expect(wizardCss).toContain('--confidence-high');
   expect(mainTs).toContain('wz-badge');

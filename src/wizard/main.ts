@@ -164,7 +164,7 @@ export function mountWizard(wizardEl: HTMLElement, resultsEl: HTMLElement, local
         <div class="wz-bar" aria-hidden="true">${[1, 2, 3, 4, 5]
           .map((segment) => `<span${segment <= step ? ' class="is-on"' : ''}></span>`)
           .join('')}</div>
-        <span class="wz-saved" id="autosave">${escapeHtml(t('wizard.saved'))}</span>
+        <span class="wz-saved" id="autosave">${escapeHtml(resumeStep !== null && step === 1 ? t('wizard.welcomeBack') : t('wizard.saved'))}</span>
         ${resumeStep !== null && step === 1 ? `<button type="button" id="resumeBtn" class="wz-btn wz-btn-chip">${escapeHtml(t('wizard.resume', { n: resumeStep, total: 5 }))}</button>` : ''}
       </div>`;
 

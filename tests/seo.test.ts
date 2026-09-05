@@ -141,3 +141,12 @@ it('the detail answer leads with the most senior level available', () => {
   expect(withSenior).toBeDefined();
   expect(String(withSenior!.answer.level).toLowerCase()).toBe('senior');
 });
+
+it('llms.txt states the live supported-country count', async () => {
+  const { readFileSync } = await import('node:fs');
+  const { fileURLToPath } = await import('node:url');
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  const llms = readFileSync(`${root}public/llms.txt`, 'utf8');
+  const countries = JSON.parse(readFileSync(`${root}src/data/countries.json`, 'utf8')) as unknown[];
+  expect(llms).toContain(`${countries.length} countries`);
+});

@@ -54,9 +54,14 @@ test.describe('copy and footer', () => {
     await expect(page.locator('label[for="roleFamily"]')).toHaveText('Role family');
   });
 
-  test('trust bullet scopes coverage to the floor', async ({ page }) => {
+  test('trust bullet scopes coverage to the floor and renders its counts', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('.hero-trust li').nth(1)).toContainText(/floor/i);
+    const bullet = page.locator('.hero-trust li').nth(1);
+    await expect(bullet).toContainText(/floor/i);
+    await expect(bullet).toContainText('role families');
+    await expect(bullet).not.toContainText('{');
+    await page.goto('/ar/');
+    await expect(page.locator('.hero-trust li').nth(1)).not.toContainText('{');
   });
 
   test('arabic footer keeps the structure, stays in locale, drops corridor jargon', async ({

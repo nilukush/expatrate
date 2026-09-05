@@ -61,6 +61,7 @@ test.describe('wizard', () => {
 
   test('a reload lands on step 1 with values kept and a one-click resume', async ({ page }) => {
     await waitForWizard(page);
+    await expect(page.locator('#autosave')).toContainText('Saved in this browser');
     await page.selectOption('#roleFamily', 'software-engineering');
     await page.selectOption('#experienceBand', '6-9');
     await page.click('#nextBtn');
@@ -68,6 +69,8 @@ test.describe('wizard', () => {
     await page.fill('#salaryAmount', '120000');
     await page.reload();
     await waitForWizard(page);
+    await expect(page.locator('#autosave')).toContainText('Welcome back');
+    await expect(page.locator('#resumeBtn')).toContainText('Pick up at step 2 of 5');
     await expect(page.locator('#stepIndicator')).toContainText('Step 1 of 5');
     await expect(page.locator('#roleFamily')).toHaveValue('software-engineering');
     await expect(page.locator('#experienceBand')).toHaveValue('6-9');

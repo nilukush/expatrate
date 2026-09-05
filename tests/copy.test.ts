@@ -190,3 +190,39 @@ test('no locale hardcodes the role family count', () => {
     expect(dict(loc).home.trust2, loc).toContain('{f}');
   }
 });
+
+test('returning visitors get a welcome-back note and an action-named resume chip in every locale', () => {
+  const browserWord = { en: /browser/i, ar: 'المتصفح', hi: 'ब्राउज़र' } as const;
+  for (const loc of locales) {
+    const welcome: unknown = dict(loc).wizard.welcomeBack;
+    expect(typeof welcome, `${loc} welcomeBack is a string`).toBe('string');
+    expect(welcome as string, loc).toMatch(new RegExp(browserWord[loc] as RegExp));
+    expect(dict(loc).wizard.resume, `${loc} resume carries the step`).toContain('{n}');
+    expect(dict(loc).wizard.resume, `${loc} resume carries the total`).toContain('{total}');
+  }
+  expect(dict('en').wizard.resume, 'names the destination step, not a past-tense status').toContain('step {n}');
+});
+
+test('the home trust bullet passes every placeholder it declares', () => {
+  const home = readFileSync(`${root}src/components/HomePage.astro`, 'utf8');
+  const call = home.match(/t\('home\.trust2',\s*\{([^}]*)\}/);
+  expect(call, 'HomePage calls home.trust2 with a params object').not.toBeNull();
+  expect(call?.[1] ?? '', 'passes the country count').toContain('n:');
+  expect(call?.[1] ?? '', 'passes the role family count').toContain('f:');
+});
+
+test('the tax-default count in user copy derives from the data', () => {
+  const tax = JSON.parse(readFileSync(`${root}src/data/tax-effective.json`, 'utf8')) as Array<{ iso3: string }>;
+  const countries = JSON.parse(readFileSync(`${root}src/data/countries.json`, 'utf8')) as unknown[];
+  const onDefault = countries.length - new Set(tax.map((entry) => entry.iso3)).size;
+  const expected = {
+    en: `${onDefault} of ${countries.length}`,
+    ar: `${onDefault} من ${countries.length}`,
+    hi: `${countries.length} में से ${onDefault}`,
+  } as const;
+  for (const loc of locales) {
+    expect(dict(loc).seo.methodologyTax, loc).toContain(expected[loc]);
+  }
+  const page = readFileSync(`${root}src/pages/methodology.astro`, 'utf8');
+  expect(page, 'the methodology page states the same count').toContain(`${onDefault} of ${countries.length}`);
+});

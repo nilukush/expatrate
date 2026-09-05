@@ -6,6 +6,7 @@ import benchmarks from '../data/benchmarks.json';
 import ppp from '../data/ppp.json';
 import fxSnapshot from '../data/fx-snapshot.json';
 import hardshipPosts from '../data/hardship-posts.json';
+import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, type Locale } from '../i18n';
 
 interface Props {
@@ -100,7 +101,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
-            {t('home.trust2', { n: countries.length })}
+            {t('home.trust2', { n: countries.length, f: roleFamiliesJson.families.length })}
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 0 2 2h13"/><path d="M9 7h6"/></svg>

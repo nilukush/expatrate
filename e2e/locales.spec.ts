@@ -22,6 +22,7 @@ test.describe('locales', () => {
       { hreflang: 'en', href: expect.stringContaining('/') },
       { hreflang: 'ar', href: expect.stringContaining('/ar/') },
       { hreflang: 'hi', href: expect.stringContaining('/hi/') },
+      { hreflang: 'id', href: expect.stringContaining('/id/') },
       { hreflang: 'x-default', href: expect.stringMatching(/pages\.dev\/$/) },
     ]));
     // RTL layout uses logical properties: no horizontal overflow.
@@ -54,6 +55,24 @@ test.describe('locales', () => {
     expect(basis).toMatch(/3,00,000/);
     const hero = await page.locator('#quoteTarget').textContent();
     expect(hero).toMatch(/[\d,]{6,}/);
+  });
+
+  test('the Indonesian home renders with Indonesian UI strings and Latin font', async ({ page }) => {
+    const response = await page.goto('/id/');
+    expect(response?.status()).toBe(200);
+    expect(await page.getAttribute('html', 'lang')).toBe('id');
+    expect(await page.getAttribute('html', 'dir')).toBe('ltr');
+    // Indonesian uses the Latin subset, the same as English.
+    const preloads = await page.$$eval('link[rel=preload][as=font]', (nodes) => nodes.map((n) => n.getAttribute('href')));
+    expect(preloads).toContain('/fonts/inter-latin-var.woff2');
+    await page.waitForSelector('#stepIndicator');
+    await expect(page.locator('#stepIndicator')).toContainText('Langkah 1 dari 5');
+    await expect(page.locator('#nextBtn')).toContainText('Lanjut');
+    await expect(page.locator('.hero-title')).toContainText('ajukan');
+    await expect(page.locator('#autosave')).toContainText('Tersimpan di browser ini');
+    const roleOptions = await page.$$eval('#roleFamily option', (nodes) => nodes.map((n) => n.textContent ?? ''));
+    expect(roleOptions).toContain('Rekayasa Perangkat Lunak');
+    expect(roleOptions).not.toContain('Software Engineering');
   });
 
   test('the Arabic home has no axe violations in RTL', async ({ page }) => {
@@ -109,6 +128,8 @@ test('EN programmatic pages emit the reciprocal hreflang set', async ({ page }) 
     { hreflang: 'en', href: expect.stringContaining('/salaries/australia/') },
     { hreflang: 'ar', href: expect.stringContaining('/ar/salaries/australia/') },
     { hreflang: 'hi', href: expect.stringContaining('/hi/salaries/australia/') },
+    { hreflang: 'id', href: expect.stringContaining('/id/salaries/australia/') },
     { hreflang: 'x-default', href: expect.stringContaining('/salaries/australia/') },
   ]));
+  await expect(page.locator('.seo-answer').first()).not.toContainText('{');
 });

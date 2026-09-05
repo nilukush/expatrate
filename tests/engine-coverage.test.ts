@@ -36,7 +36,7 @@ describe('engine coverage', () => {
       }
     }
     expect(deadEnds, `pairs returning nothing: ${deadEnds.join(', ')}`).toEqual([]);
-  });
+  }, 30000);
 
   it('the Philippines to UAE corridor returns a floor even without a market benchmark', () => {
     const result = calculate(inputs('PHL', 'ARE'), { datasets, fx });

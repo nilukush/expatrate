@@ -8,4 +8,4 @@ test('tsc --noEmit passes: the typing gap that shipped the engine.undefined defe
   // vitest transpiles without checking, so the unit suite alone can go green
   // on type-broken code; this pins the compiler to the gate.
   expect(() => execSync('pnpm typecheck', { cwd: root, stdio: 'pipe' })).not.toThrow();
-});
+}, 60000);

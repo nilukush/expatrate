@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You are offline | ExpatRate</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0F766E" />
+    <!--
+      Deliberately self-contained: this page is served by the service worker with
+      no network, so it loads no stylesheet or font. Colors mirror design-system
+      tokens.json (primary, background, foreground); update both if tokens change.
+    -->
+    <style is:inline>
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #F8FAFC; color: #0F172A; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      main { max-width: 32rem; padding: 2.5rem 1.5rem; text-align: center; }
+      .mark { font-size: 1.9rem; font-weight: 700; color: #0F766E; letter-spacing: -0.02em; }
+      h1 { font-size: 1.6rem; margin: 0.75rem 0 0.5rem; }
+      p { line-height: 1.6; margin: 0 0 1.5rem; color: #334155; }
+      a { display: inline-block; background: #0F766E; color: #FFFFFF; padding: 0.7rem 1.4rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="mark">ExpatRate</p>
+      <h1>You are offline</h1>
+      <p>This page needs the internet. Your saved answers stay safe in this browser, and everything works again once you are back online.</p>
+      <a href="/">Try again</a>
+    </main>
+  </body>
+</html>

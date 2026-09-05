@@ -8,6 +8,7 @@ import {
 } from '../lib/seo';
 import { t, setLocale, type Locale } from '../i18n';
 import { localName } from '../lib/seo';
+import Pwa from './Pwa.astro';
 
 interface Props {
   locale: Locale;
@@ -20,7 +21,7 @@ setLocale(locale);
 const dir = locale === 'ar' ? 'rtl' : 'ltr';
 const localePath = locale === 'en' ? '' : `/${locale}`;
 const fontPreload = locale === 'ar' ? '/fonts/noto-sans-arabic-var.woff2' : locale === 'hi' ? '/fonts/noto-sans-devanagari-var.woff2' : '/fonts/inter-latin-var.woff2';
-const fmt = (amount: number, currency: string) => new Intl.NumberFormat(locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : 'en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
+const fmt = (amount: number, currency: string) => new Intl.NumberFormat(locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : 'en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
 const monthly = (amount: number, currency: string) => fmt(amount / 12, currency);
 const levelCells = (level: { p25: number; p50: number; p75: number; currency: string }) => {
   const cells = [{ label: 'P50', value: fmt(level.p50, level.currency) }];
@@ -98,6 +99,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
     <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
     {kind === 'methodology' && <script type="application/ld+json" set:html={JSON.stringify(datasetLd())} />}
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-shell">
@@ -108,6 +110,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
           <a href={hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
           <a href={hrefFor('ar').replace(SITE_URL, '') || '/'}>عربي</a>
           <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
+          <a href={hrefFor('id').replace(SITE_URL, '') || '/'}>ID</a>
         </nav>
       </header>
     <main id="main">
@@ -141,7 +144,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
         {kind === 'country' && country && (
           <>
             <h1 class="seo-h1">{title}</h1>
-            <p class="seo-answer">{t('seo.countryHubAnswer', { n: detailPages().filter((p) => p.countryIso3 === country.iso3).length })}</p>
+            <p class="seo-answer">{t('seo.countryHubAnswer', { n: detailPages().filter((p) => p.countryIso3 === country.iso3).length, country: country.name })}</p>
             <h2 class="seo-h2">{t('seo.countryHubH2')}</h2>
             <ul class="seo-list">
               {detailPages().filter((p) => p.countryIso3 === country.iso3).map((p) => <li><a href={`${localePath}${detailUrl(p.familyId, country.slug)}`}>{p.familyLocal}</a></li>)}
@@ -162,7 +165,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
         {kind === 'salaries' && (
           <>
             <h1 class="seo-h1">{t('seo.breadcrumbSalaries')}</h1>
-            <p class="seo-answer">{t('seo.countryHubAnswer', { n: countries.length })}</p>
+            <p class="seo-answer">{t('seo.salariesAnswer', { n: countries.length })}</p>
             <ul class="seo-list">
               {countries.map((c) => <li><a href={`${localePath}${countryHubUrl(c.slug)}`}>{localName(c.iso3, c.name)}</a></li>)}
             </ul>

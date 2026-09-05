@@ -4,6 +4,7 @@ import '../../../styles/wizard.css';
 import '../../../styles/seo.css';
 import { detailPages, breadcrumbLd, webAppLd, organizationLd, SITE_URL, countrySlug, alternateLinks } from '../../../lib/seo';
 import { t } from '../../../i18n';
+import Pwa from '../../../components/Pwa.astro';
 
 export function getStaticPaths() {
   const families = new Map<string, string>();
@@ -45,6 +46,7 @@ const crumbs = [
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-shell">

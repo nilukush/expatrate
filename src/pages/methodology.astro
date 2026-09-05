@@ -4,6 +4,7 @@ import '../styles/wizard.css';
 import '../styles/seo.css';
 import { detailPages, breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL } from '../lib/seo';
 import { t } from '../i18n';
+import Pwa from '../components/Pwa.astro';
 
 const pages = detailPages();
 const sourceCounts = new Map<string, number>();
@@ -41,6 +42,7 @@ const crumbs = [
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-shell">

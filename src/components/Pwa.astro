@@ -1,0 +1,14 @@
+---
+import tokens from '../../design-system/tokens.json';
+
+/* PWA head tags + registration for every full HTML template. */
+const themeColor = tokens.color.semantic.light.primary.hex;
+---
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content={themeColor} />
+<meta name="mobile-web-app-capable" content="yes" />
+<script is:inline>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); });
+  }
+</script>

@@ -17,7 +17,7 @@ All five green before handoff. CI runs the same gate on every push, and local gr
 
 - Test first. Every behavior change starts with a failing test; the suite is the product's memory.
 - Tokens only. Components use semantic tokens from `design-system/tokens.json`; raw colors, ad hoc shadows, and off-scale sizes do not ship. After editing tokens, run `pnpm tokens` (the CSS is generated).
-- All three locales. Every user-facing string lands in English, Arabic, and Hindi together; the copy test enforces key parity. No em dashes anywhere. Write plain, concrete sentences; avoid machine-sounding filler.
+- All locales together. Every user-facing string lands in English, Arabic, Hindi, and Indonesian together; the copy test enforces key parity. No em dashes anywhere. Write plain, concrete sentences; avoid machine-sounding filler.
 - Nationality never changes a calculated number. Context notes only.
 - Privacy holds. Resume parsing stays in the browser. New integrations must not introduce a server or upload user files.
 - Zero paid dependencies or services.

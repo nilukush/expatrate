@@ -8,6 +8,7 @@ import fxSnapshot from '../data/fx-snapshot.json';
 import hardshipPosts from '../data/hardship-posts.json';
 import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, type Locale } from '../i18n';
+import Pwa from './Pwa.astro';
 
 interface Props {
   locale: Locale;
@@ -43,6 +44,7 @@ const langs: Array<{ code: Locale; label: string; href: string }> = [
   { code: 'en', label: 'EN', href: '/' },
   { code: 'ar', label: 'عربي', href: '/ar/' },
   { code: 'hi', label: 'हिन्दी', href: '/hi/' },
+  { code: 'id', label: 'ID', href: '/id/' },
 ];
 const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
   '__HL__',
@@ -64,6 +66,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <link rel="alternate" hreflang="en" href={`${SITE_URL}/`} />
     <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/`} />
     <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/`} />
+    <link rel="alternate" hreflang="id" href={`${SITE_URL}/id/`} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
     <meta property="og:title" content={t('home.title')} />
     <meta property="og:description" content={t('home.description')} />
@@ -72,6 +75,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <meta property="og:image" content={`${SITE_URL}/og-default.png`} />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-glow" aria-hidden="true"></div>
@@ -132,7 +136,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
       const wizard = document.getElementById('wizard');
       const results = document.getElementById('results');
       if (wizard && results) {
-        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : 'en');
+        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : 'en');
       }
     </script>
   </body>

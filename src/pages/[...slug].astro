@@ -3,12 +3,12 @@ import SeoPage from '../components/SeoPage.astro';
 import PrivacyPage from '../components/PrivacyPage.astro';
 import { detailPages, seoCountries, countrySlug, type Locale } from '../lib/seo';
 
-// Localized variants of the SEO pages live under /ar/ and /hi/. English pages
-// are served by their own, more specific routes, which win over this catch-all.
+// Localized variants of the SEO pages live under /ar/, /hi/, and /id/. English
+// pages are served by their own, more specific routes, which win over this catch-all.
 type Kind = 'detail' | 'country' | 'role' | 'salaries' | 'methodology' | 'privacy';
 
 export function getStaticPaths() {
-  const locales: Locale[] = ['ar', 'hi'];
+  const locales: Locale[] = ['ar', 'hi', 'id'];
   const paths: Array<{ params: { slug: string | undefined }; props: { locale: Locale; kind: Kind; familyId?: string; countrySlugParam?: string } }> = [];
   for (const locale of locales) {
     for (const page of detailPages()) {

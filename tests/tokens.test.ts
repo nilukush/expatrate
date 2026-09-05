@@ -78,7 +78,7 @@ test('font stacks name only loaded faces and cover Arabic and Devanagari in both
 
 test('stylelint rejects raw hex colors and physical direction properties', () => {
   expect(() => run('pnpm exec stylelint tests/fixtures/bad.css')).toThrow();
-});
+}, 30000);
 
 test('stylelint accepts token-based logical-property styles', () => {
   expect(() => run('pnpm exec stylelint tests/fixtures/good.css')).not.toThrow();

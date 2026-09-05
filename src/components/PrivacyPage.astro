@@ -3,6 +3,7 @@ import '../styles/global.css';
 import '../styles/wizard.css';
 import '../styles/seo.css';
 import { t, setLocale, type Locale } from '../i18n';
+import Pwa from './Pwa.astro';
 
 interface Props {
   locale: Locale;
@@ -36,8 +37,10 @@ const altPath = (l: string) => (l === 'en' ? '' : `/${l}`);
     <link rel="alternate" hreflang="en" href={`${SITE_URL}/privacy/`} />
     <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/privacy/`} />
     <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/privacy/`} />
+    <link rel="alternate" hreflang="id" href={`${SITE_URL}/id/privacy/`} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/privacy/`} />
     <link rel="preload" href={fontPreload} as="font" type="font/woff2" crossorigin />
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-shell">

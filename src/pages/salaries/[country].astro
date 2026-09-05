@@ -4,6 +4,7 @@ import '../../styles/wizard.css';
 import '../../styles/seo.css';
 import { detailPages, seoCountries, countryHubUrl, detailUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
 import { t } from '../../i18n';
+import Pwa from '../../components/Pwa.astro';
 
 export function getStaticPaths() {
   return seoCountries().map((country) => ({
@@ -33,7 +34,7 @@ const crumbs = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content={t('seo.countryHubAnswer', { n: familiesHere.length })} />
+    <meta name="description" content={t('seo.countryHubAnswer', { n: familiesHere.length, country: country.name })} />
     <link rel="canonical" href={`${SITE_URL}${countryHubUrl(country.slug)}`} />
     {alternateLinks(countryHubUrl(country.slug)).map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
@@ -41,10 +42,11 @@ const crumbs = [
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd(crumbs))} />
     <meta property="og:title" content={title} />
     <meta property="og:url" content={`${SITE_URL}${countryHubUrl(country.slug)}`} />
-    <meta property="og:description" content={t('seo.countryHubAnswer', { n: familiesHere.length })} />
+    <meta property="og:description" content={t('seo.countryHubAnswer', { n: familiesHere.length, country: country.name })} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://expatrate.pages.dev/og-default.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <Pwa />
   </head>
   <body class="min-h-screen bg-background font-base text-foreground">
     <div class="page-shell">
@@ -66,7 +68,7 @@ const crumbs = [
         </nav>
 
         <h1 class="seo-h1">{title}</h1>
-        <p class="seo-answer">{t('seo.countryHubAnswer', { n: familiesHere.length })}</p>
+        <p class="seo-answer">{t('seo.countryHubAnswer', { n: familiesHere.length, country: country.name })}</p>
 
         <h2 class="seo-h2">{t('seo.countryHubH2')}</h2>
         <ul class="seo-list">

@@ -41,6 +41,18 @@ test('the resume chip reads as an action button, not a status pill', () => {
   expect(mainTs).toMatch(/id="resumeBtn"[^>]*><svg/);
 });
 
+test('the language switcher is a dropdown, not a growing row of pills', () => {
+  const globalCss = readFileSync(`${root}src/styles/global.css`, 'utf8');
+  expect(globalCss).toMatch(/\.lang-menu\s*\{[^}]*position:\s*relative/s);
+  expect(globalCss).toMatch(/\.lang-menu-list\s*\{[^}]*var\(--shadow-2\)/s);
+  const home = readFileSync(`${root}src/components/HomePage.astro`, 'utf8');
+  const seo = readFileSync(`${root}src/components/SeoPage.astro`, 'utf8');
+  for (const tpl of [home, seo]) {
+    expect(tpl, 'switcher uses the details dropdown').toContain('<details class="lang-menu">');
+    expect(tpl).toContain('lang-menu-list');
+  }
+});
+
 test('the confidence badge uses the confidence tokens', () => {
   expect(wizardCss).toContain('--confidence-high');
   expect(mainTs).toContain('wz-badge');

@@ -25,6 +25,7 @@ test.describe('locales', () => {
       { hreflang: 'id', href: expect.stringContaining('/id/') },
       { hreflang: 'es', href: expect.stringContaining('/es/') },
       { hreflang: 'fr', href: expect.stringContaining('/fr/') },
+      { hreflang: 'pt', href: expect.stringContaining('/pt/') },
       { hreflang: 'x-default', href: expect.stringMatching(/pages\.dev\/$/) },
     ]));
     // RTL layout uses logical properties: no horizontal overflow.
@@ -111,6 +112,23 @@ test.describe('locales', () => {
     expect(roleOptions).not.toContain('Software Engineering');
   });
 
+  test('the Portuguese home renders with Portuguese UI strings and the Latin font', async ({ page }) => {
+    const response = await page.goto('/pt/');
+    expect(response?.status()).toBe(200);
+    expect(await page.getAttribute('html', 'lang')).toBe('pt');
+    expect(await page.getAttribute('html', 'dir')).toBe('ltr');
+    const preloads = await page.$$eval('link[rel=preload][as=font]', (nodes) => nodes.map((n) => n.getAttribute('href')));
+    expect(preloads).toContain('/fonts/inter-latin-var.woff2');
+    await page.waitForSelector('#stepIndicator');
+    await expect(page.locator('#stepIndicator')).toContainText('Etapa 1 de 5');
+    await expect(page.locator('#nextBtn')).toContainText('Continuar');
+    await expect(page.locator('.hero-title')).toContainText('pedir');
+    await expect(page.locator('#autosave')).toContainText('Salvo neste navegador');
+    const roleOptions = await page.$$eval('#roleFamily option', (nodes) => nodes.map((n) => n.textContent ?? ''));
+    expect(roleOptions).toContain('Engenharia de Software');
+    expect(roleOptions).not.toContain('Software Engineering');
+  });
+
   test('the Arabic home has no axe violations in RTL', async ({ page }) => {
     await page.goto('/ar/');
     await page.waitForSelector('#stepIndicator');
@@ -140,10 +158,12 @@ test.describe('locales', () => {
 
   test('the language switcher navigates between locales', async ({ page }) => {
     await page.goto('/ar/');
-    await page.click('.lang-switch a[href="/hi/"]');
+    await page.click('.lang-menu summary');
+    await page.click('.lang-menu a[href="/hi/"]');
     await page.waitForSelector('#stepIndicator');
     expect(await page.getAttribute('html', 'lang')).toBe('hi');
-    await page.click('.lang-switch a[href="/"]');
+    await page.click('.lang-menu summary');
+    await page.click('.lang-menu a[href="/"]');
     await page.waitForSelector('#stepIndicator');
     expect(await page.getAttribute('html', 'lang')).toBe('en');
     await expect(page.locator('#nextBtn')).toContainText('Continue');
@@ -152,7 +172,8 @@ test.describe('locales', () => {
 
 test('the EN switcher on the Arabic methodology page stays on methodology', async ({ page }) => {
   await page.goto('/ar/methodology/');
-  await page.click('.lang-switch:has-text("EN") >> text=EN');
+  await page.click('.lang-menu summary');
+  await page.click('.lang-menu a[href="/methodology/"]');
   await expect(page).toHaveURL(/\/methodology\/$/);
 });
 
@@ -167,6 +188,7 @@ test('EN programmatic pages emit the reciprocal hreflang set', async ({ page }) 
     { hreflang: 'id', href: expect.stringContaining('/id/salaries/australia/') },
     { hreflang: 'es', href: expect.stringContaining('/es/salaries/australia/') },
     { hreflang: 'fr', href: expect.stringContaining('/fr/salaries/australia/') },
+    { hreflang: 'pt', href: expect.stringContaining('/pt/salaries/australia/') },
     { hreflang: 'x-default', href: expect.stringContaining('/salaries/australia/') },
   ]));
   await expect(page.locator('.seo-answer').first()).not.toContainText('{');

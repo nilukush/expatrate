@@ -3,8 +3,9 @@ import '../../styles/global.css';
 import '../../styles/wizard.css';
 import '../../styles/seo.css';
 import { detailPages, seoCountries, countryHubUrl, detailUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
-import { t } from '../../i18n';
+import { t, setLocale } from '../../i18n';
 import Pwa from '../../components/Pwa.astro';
+setLocale('en');
 
 export function getStaticPaths() {
   return seoCountries().map((country) => ({

@@ -4,10 +4,11 @@ import hi from './hi.json';
 import id from './id.json';
 import es from './es.json';
 import fr from './fr.json';
+import pt from './pt.json';
 
-export type Locale = 'en' | 'ar' | 'hi' | 'id' | 'es' | 'fr';
+export type Locale = 'en' | 'ar' | 'hi' | 'id' | 'es' | 'fr' | 'pt';
 
-const DICTIONARIES: Record<Locale, unknown> = { en, ar, hi, id, es, fr };
+const DICTIONARIES: Record<Locale, unknown> = { en, ar, hi, id, es, fr, pt };
 
 let currentLocale: Locale = 'en';
 
@@ -44,7 +45,7 @@ export function t(key: string, vars?: Record<string, string | number>): string {
 
 /* Locale-aware currency formatting: hi-IN lakh grouping, Eastern Arabic digits on ar. */
 export function formatCurrency(amount: number, currency: string, locale: Locale = currentLocale): string {
-  const intlLocale = locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : locale === 'es' ? 'es' : locale === 'fr' ? 'fr-FR' : 'en';
+  const intlLocale = locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : locale === 'es' ? 'es' : locale === 'fr' ? 'fr-FR' : locale === 'pt' ? 'pt-BR' : 'en';
   return new Intl.NumberFormat(intlLocale, {
     style: 'currency',
     currency,
@@ -52,4 +53,4 @@ export function formatCurrency(amount: number, currency: string, locale: Locale 
   }).format(amount);
 }
 
-export { en, ar, hi, id, es, fr };
+export { en, ar, hi, id, es, fr, pt };

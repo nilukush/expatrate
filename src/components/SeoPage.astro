@@ -21,7 +21,7 @@ setLocale(locale);
 const dir = locale === 'ar' ? 'rtl' : 'ltr';
 const localePath = locale === 'en' ? '' : `/${locale}`;
 const fontPreload = locale === 'ar' ? '/fonts/noto-sans-arabic-var.woff2' : locale === 'hi' ? '/fonts/noto-sans-devanagari-var.woff2' : '/fonts/inter-latin-var.woff2';
-const fmt = (amount: number, currency: string) => new Intl.NumberFormat(locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : locale === 'es' ? 'es' : locale === 'fr' ? 'fr-FR' : 'en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
+const fmt = (amount: number, currency: string) => new Intl.NumberFormat(locale === 'hi' ? 'hi-IN' : locale === 'ar' ? 'ar' : locale === 'id' ? 'id-ID' : locale === 'es' ? 'es' : locale === 'fr' ? 'fr-FR' : locale === 'pt' ? 'pt-BR' : 'en', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
 const monthly = (amount: number, currency: string) => fmt(amount / 12, currency);
 const levelCells = (level: { p25: number; p50: number; p75: number; currency: string }) => {
   const cells = [{ label: 'P50', value: fmt(level.p50, level.currency) }];
@@ -106,14 +106,21 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
       <a class="skip-link" href="#main">{t('home.skip')}</a>
       <header class="site-header">
         <a class="brand" href={`${localePath}/`}><span class="brand-mark" aria-hidden="true">%</span><span class="brand-name" dir="ltr">ExpatRate</span></a>
-        <nav class="lang-switch" aria-label={t('home.langLabel')}>
-          <a href={hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
-          <a href={hrefFor('ar').replace(SITE_URL, '') || '/'}>عربي</a>
-          <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
-          <a href={hrefFor('id').replace(SITE_URL, '') || '/'}>ID</a>
-          <a href={hrefFor('es').replace(SITE_URL, '') || '/'}>ES</a>
-          <a href={hrefFor('fr').replace(SITE_URL, '') || '/'}>FR</a>
-        </nav>
+        <details class="lang-menu">
+          <summary aria-label={t('home.langLabel')}>
+            {locale === 'ar' ? 'عربي' : locale === 'hi' ? 'हिन्दी' : locale.toUpperCase()}
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <nav class="lang-menu-list" aria-label={t('home.langLabel')}>
+            <a href={hrefFor('en').replace(SITE_URL, '') || '/'}>EN</a>
+            <a href={hrefFor('ar').replace(SITE_URL, '') || '/'}>عربي</a>
+            <a href={hrefFor('hi').replace(SITE_URL, '') || '/'}>हिन्दी</a>
+            <a href={hrefFor('id').replace(SITE_URL, '') || '/'}>ID</a>
+            <a href={hrefFor('es').replace(SITE_URL, '') || '/'}>ES</a>
+            <a href={hrefFor('fr').replace(SITE_URL, '') || '/'}>FR</a>
+            <a href={hrefFor('pt').replace(SITE_URL, '') || '/'}>PT</a>
+          </nav>
+        </details>
       </header>
     <main id="main">
       <article class="seo-shell">

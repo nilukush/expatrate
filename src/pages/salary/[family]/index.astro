@@ -3,8 +3,9 @@ import '../../../styles/global.css';
 import '../../../styles/wizard.css';
 import '../../../styles/seo.css';
 import { detailPages, breadcrumbLd, webAppLd, organizationLd, SITE_URL, countrySlug, alternateLinks } from '../../../lib/seo';
-import { t } from '../../../i18n';
+import { t, setLocale } from '../../../i18n';
 import Pwa from '../../../components/Pwa.astro';
+setLocale('en');
 
 export function getStaticPaths() {
   const families = new Map<string, string>();

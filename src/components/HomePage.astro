@@ -47,6 +47,7 @@ const langs: Array<{ code: Locale; label: string; href: string }> = [
   { code: 'id', label: 'ID', href: '/id/' },
   { code: 'es', label: 'ES', href: '/es/' },
   { code: 'fr', label: 'FR', href: '/fr/' },
+  { code: 'pt', label: 'PT', href: '/pt/' },
 ];
 const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
   '__HL__',
@@ -71,6 +72,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <link rel="alternate" hreflang="id" href={`${SITE_URL}/id/`} />
     <link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`} />
     <link rel="alternate" hreflang="fr" href={`${SITE_URL}/fr/`} />
+    <link rel="alternate" hreflang="pt" href={`${SITE_URL}/pt/`} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
     <meta property="og:title" content={t('home.title')} />
     <meta property="og:description" content={t('home.description')} />
@@ -90,11 +92,17 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
           <span class="brand-mark" aria-hidden="true">%</span>
           <span class="brand-name" dir="ltr">ExpatRate</span>
         </a>
-        <nav class="lang-switch" aria-label={t('home.langLabel')}>
-          {langs.map((lang) => (
-            <a href={lang.href} aria-current={lang.code === locale ? 'page' : undefined}>{lang.label}</a>
-          ))}
-        </nav>
+        <details class="lang-menu">
+          <summary aria-label={t('home.langLabel')}>
+            {langs.find((lang) => lang.code === locale)?.label ?? 'EN'}
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <nav class="lang-menu-list" aria-label={t('home.langLabel')}>
+            {langs.map((lang) => (
+              <a href={lang.href} aria-current={lang.code === locale ? 'page' : undefined}>{lang.label}</a>
+            ))}
+          </nav>
+        </details>
       </header>
     <main id="main">
 
@@ -140,7 +148,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
       const wizard = document.getElementById('wizard');
       const results = document.getElementById('results');
       if (wizard && results) {
-        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : document.documentElement.lang === 'fr' ? 'fr' : 'en');
+        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : document.documentElement.lang === 'fr' ? 'fr' : document.documentElement.lang === 'pt' ? 'pt' : 'en');
       }
     </script>
   </body>

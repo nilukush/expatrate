@@ -1052,7 +1052,7 @@ test('Turkey level upgrade (2026-09-06): TUIK SES 2023 managers anchor the lead 
   }
 });
 
-test('Belarus pass (2026-09-06): Belstat quarterly by-activity spine with an IT sub-aggregate anchor', () => {
+test('Belarus pass (2026-09-06): Belstat medians by activity with an IT sub-aggregate anchor', () => {
   const by = (cc: string) => load('benchmarks.json').entries.filter(
     (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
   );
@@ -1064,8 +1064,18 @@ test('Belarus pass (2026-09-06): Belstat quarterly by-activity spine with an IT 
     expect(row.p25).toBe(0);
     expect(row.p75).toBe(0);
     expect(row.quality, 'Belstat official figures stay Medium').toBe('Medium');
-    expect(row.note).toContain('second quarter of 2026');
     expect(row.note).toContain('Belstat');
+  }
+  // Eight cells carry the published May 2026 sector MEDIANS.
+  for (const row of rows.filter((r: { family: string }) => r.family !== 'software-engineering' && r.family !== 'data-and-ai' && r.family !== 'cybersecurity')) {
+    expect(row.note).toContain('May 2026');
+    expect(row.note).toContain('MEDIAN');
+    expect(row.note).toContain('fewer than 50 employees');
+  }
+  // The tech trio keeps the Q2 2026 IT sub-aggregate mean, the only tech-specific figure published.
+  for (const row of rows.filter((r: { family: string }) => ['software-engineering', 'data-and-ai', 'cybersecurity'].includes(r.family))) {
+    expect(row.note).toContain('second quarter of 2026');
+    expect(row.note).toContain('4,072.1');
   }
   expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
   expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
@@ -1078,14 +1088,14 @@ test('Belarus pass (2026-09-06): Belstat quarterly by-activity spine with an IT 
   anchor('software-engineering', 7_285.6);
   anchor('data-and-ai', 7_285.6);
   anchor('cybersecurity', 7_285.6);
-  anchor('finance-and-accounting', 4_427.9);
-  anchor('marketing-and-growth', 3_634);
-  anchor('hr-and-people', 2_352.2);
-  anchor('sales-and-business-development', 2_744.5);
-  anchor('operations-and-supply-chain', 2_930.3);
-  anchor('engineering-civil-mechanical-electrical', 3_872.4);
-  anchor('healthcare', 2_464.2);
-  anchor('education-and-teaching', 2_222.1);
+  anchor('finance-and-accounting', 2_905.9);
+  anchor('marketing-and-growth', 2_666.9);
+  anchor('hr-and-people', 1_990.7);
+  anchor('sales-and-business-development', 2_145.9);
+  anchor('operations-and-supply-chain', 2_440.8);
+  anchor('engineering-civil-mechanical-electrical', 3_197.7);
+  anchor('healthcare', 1_932.6);
+  anchor('education-and-teaching', 1_757.4);
   const sw = rows.find((r: { family: string }) => r.family === 'software-engineering')!;
   expect(sw.note).toContain('information technology');
   expect(sw.note).toContain('6,164.5');

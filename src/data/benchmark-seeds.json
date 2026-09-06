@@ -41,6 +41,11 @@
       "date": "2026-09-06",
       "pass": "Belarus pass",
       "summary": "Belarus joins as the 82nd benchmarked country with 11 senior cells from the Belstat quarterly by-activity file (2026 Q2, the freshest quarter of any market in the matrix): the IT sub-aggregate inside NACE J at 7,285.6 BYN anchors the tech pool with all-of-J 6,164.5 corroborating, finance 4,427.9, construction 3,872.4, professional services 3,634.0, down to education 2,222.1. Venezuela is not in the 207-country list (no World Bank PPP). Turkmenistan stat.gov.tm probe ran this round."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Belarus median upgrade",
+      "summary": "Eight of the eleven Belarus cells now carry the published May 2026 sector MEDIANS from the Belstat median-by-activity file (median_zarplata_2605.xlsx): finance 2,905.9, construction 3,197.7, professional services 2,666.9, transport 2,440.8, trade 2,145.9, health 1,932.6, admin support 1,990.7, education 1,757.4 BYN, with the economy-wide median 2,314.9 against the 3,022.0 quarterly mean disclosed as the skew and the file footnote (independent entities under 50 employees excluded) on every row. The tech trio keeps the Q2 2026 IT sub-aggregate mean 7,285.6 because the median file publishes no IT split; the J-section median 4,072.1 is disclosed in those notes. Lithuania probed again this round and stays deferred: the statistics portal answers only a Cloudflare interstitial to every non-browser fetcher."
     }
   ],
   "rows": [
@@ -32405,7 +32410,7 @@
         "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
         "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in information technology and information service activities (the IT sub-aggregate inside NACE J). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in information technology and information service activities (the IT sub-aggregate inside NACE J). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. The May 2026 median for all of information and communication reads 4,072.1 BYN, so the IT sub-aggregate mean sits well above the section median. MEDIAN-ONLY shape carrying a published sub-sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -32422,7 +32427,7 @@
         "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
         "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official data series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official data series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. The May 2026 median for all of information and communication reads 4,072.1 BYN, so the IT sub-aggregate mean sits well above the section median. MEDIAN-ONLY shape carrying a published sub-sector MEAN."
     },
     {
       "family": "cybersecurity",
@@ -32439,7 +32444,7 @@
         "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
         "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official security series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official security series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. The May 2026 median for all of information and communication reads 4,072.1 BYN, so the IT sub-aggregate mean sits well above the section median. MEDIAN-ONLY shape carrying a published sub-sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -32448,15 +32453,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 4427.9,
+      "p50": 2905.9,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Financial and insurance activities (NACE K). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Financial and insurance activities (NACE K). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "marketing-and-growth",
@@ -32465,15 +32470,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 3634.0,
+      "p50": 2666.9,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Professional, scientific and technical activities (NACE M). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Professional, scientific and technical activities (NACE M). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "hr-and-people",
@@ -32482,15 +32487,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2352.2,
+      "p50": 1990.7,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Administrative and support service activities (NACE N). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Administrative and support service activities (NACE N). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "sales-and-business-development",
@@ -32499,15 +32504,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2744.5,
+      "p50": 2145.9,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Wholesale and retail trade (NACE G). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Wholesale and retail trade (NACE G). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "operations-and-supply-chain",
@@ -32516,15 +32521,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2930.3,
+      "p50": 2440.8,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Transportation, storage, postal and courier activities (NACE H). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Transportation, storage, postal and courier activities (NACE H). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -32533,15 +32538,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 3872.4,
+      "p50": 3197.7,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Construction (NACE F). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Construction (NACE F). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "healthcare",
@@ -32550,15 +32555,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2464.2,
+      "p50": 1932.6,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Health and social work activities (NACE Q). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Health and social work activities (NACE Q). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     },
     {
       "family": "education-and-teaching",
@@ -32567,15 +32572,15 @@
       "currency": "BYN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2222.1,
+      "p50": 1757.4,
       "p75": 0,
       "quality": "Medium",
       "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
-        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/median_zarplata_2605.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
-      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Education (NACE P). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+      "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Education (NACE P). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
     }
   ]
 }

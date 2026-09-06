@@ -853,7 +853,7 @@ test('Turkey upgrade (2026-09-06): TUIK NACE Rev.2 spine replaces the ERI rows w
     (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
   );
   const rows = by('TUR');
-  expect(rows.length, 'TUR row count').toBe(11);
+  expect(rows.length, 'TUR row count').toBe(14);
   for (const row of rows) {
     expect(row.currency, 'TUR currency').toBe('TRY');
     expect(row.basis, 'TUR basis').toBe('monthly-gross');
@@ -864,7 +864,7 @@ test('Turkey upgrade (2026-09-06): TUIK NACE Rev.2 spine replaces the ERI rows w
     expect(row.note).toContain('10 or more employees');
   }
   expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
-  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(3);
   const anchor = (family: string, value: number) => {
     const row = rows.find((r: { family: string }) => r.family === family);
     expect(row, `TUR ${family}`).toBeDefined();
@@ -989,7 +989,7 @@ test('Uzbekistan and Mongolia pass (2026-09-06): national statistics agency sect
   uzbAnchor('education-and-teaching', 4_372_000);
 
   const mng = by('MNG');
-  expect(mng.length, 'MNG row count').toBe(11);
+  expect(mng.length, 'MNG row count').toBe(14);
   for (const row of mng) {
     expect(row.currency, 'MNG currency').toBe('MNT');
     expect(row.basis, 'MNG basis').toBe('monthly-gross');
@@ -1000,21 +1000,54 @@ test('Uzbekistan and Mongolia pass (2026-09-06): national statistics agency sect
     expect(row.note).toContain('2025');
   }
   expect(mng.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
-  expect(mng.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
-  const mngAnchor = (family: string, value: number) => {
-    const row = mng.find((r: { family: string }) => r.family === family);
-    expect(row, `MNG ${family}`).toBeDefined();
+  expect(mng.filter((r: { level: string }) => r.level === 'lead')).toHaveLength(3);
+  // No chief-executives split is published, so no executive rows may exist.
+  expect(mng.filter((r: { level: string }) => r.level === 'executive')).toHaveLength(0);
+  const mngAnchor = (family: string, level: string, value: number) => {
+    const row = mng.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `MNG ${family} ${level}`).toBeDefined();
     expect(row!.p50).toBe(value);
   };
-  mngAnchor('software-engineering', 2_870_100);
-  mngAnchor('data-and-ai', 2_870_100);
-  mngAnchor('cybersecurity', 2_870_100);
-  mngAnchor('finance-and-accounting', 3_263_400);
-  mngAnchor('marketing-and-growth', 3_086_200);
-  mngAnchor('hr-and-people', 2_489_900);
-  mngAnchor('sales-and-business-development', 2_148_500);
-  mngAnchor('operations-and-supply-chain', 3_128_600);
-  mngAnchor('engineering-civil-mechanical-electrical', 2_426_200);
-  mngAnchor('healthcare', 2_498_100);
-  mngAnchor('education-and-teaching', 2_360_700);
+  mngAnchor('software-engineering', 'senior', 2_870_100);
+  mngAnchor('data-and-ai', 'senior', 2_870_100);
+  mngAnchor('cybersecurity', 'senior', 2_870_100);
+  mngAnchor('finance-and-accounting', 'senior', 3_263_400);
+  mngAnchor('marketing-and-growth', 'senior', 3_086_200);
+  mngAnchor('hr-and-people', 'senior', 2_489_900);
+  mngAnchor('sales-and-business-development', 'senior', 2_148_500);
+  mngAnchor('operations-and-supply-chain', 'senior', 3_128_600);
+  mngAnchor('engineering-civil-mechanical-electrical', 'senior', 2_426_200);
+  mngAnchor('healthcare', 'senior', 2_498_100);
+  mngAnchor('education-and-teaching', 'senior', 2_360_700);
+  // The ISCO major-group-1 managers pool anchors the three lead cells (2025).
+  mngAnchor('it-executive', 'lead', 3_091_800);
+  mngAnchor('finance-and-accounting', 'lead', 3_091_800);
+  mngAnchor('general-management', 'lead', 3_091_800);
+  for (const row of mng.filter((r: { level: string }) => r.level === 'lead')) {
+    expect(row.note).toContain('ISCO');
+  }
+});
+
+test('Turkey level upgrade (2026-09-06): TUIK SES 2023 managers anchor the lead cells', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('TUR');
+  expect(rows.length, 'TUR row count').toBe(14);
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(rows.filter((r: { level: string }) => r.level === 'lead')).toHaveLength(3);
+  expect(rows.filter((r: { level: string }) => r.level === 'executive')).toHaveLength(0);
+  const lead = rows.filter((r: { level: string }) => r.level === 'lead');
+  expect(lead.map((r: { family: string }) => r.family).sort()).toEqual(
+    ['finance-and-accounting', 'general-management', 'it-executive'],
+  );
+  for (const row of lead) {
+    expect(row.p50).toBe(54_949.87);
+    expect(row.currency).toBe('TRY');
+    expect(row.basis).toBe('monthly-gross');
+    expect(row.quality).toBe('Medium');
+    expect(row.note).toContain('SES');
+    expect(row.note).toContain('2023');
+    expect(row.note).toContain('Kazanç Yapısı');
+  }
 });

@@ -31,6 +31,11 @@
       "date": "2026-09-06",
       "pass": "Uzbekistan and Mongolia pass",
       "summary": "Uzbekistan joins as the 80th benchmarked country on the Statistics Agency annual 2025 press release (section III by-activity table, thousand soums, preliminary): information and communication at 15,298,100 UZS anchors the tech pool, banking-finance 17,597,500, and seven more cells; no professional or administrative rows exist because the release publishes none (absence pinned in the test). Mongolia joins as the 81st on the NSO PxWeb table DT_NSO_0400_022V1 (2025 annual, thousand MNT, both sexes), reached after the browser MCP revealed the API host data.1212.mn behind the JS site: full 11-cell spine with ICT 2,870,100, finance 3,263,400, professional 3,086,200. Uruguay probed a third time and deferred again: the IMS page links only methodology PDFs and index splices; by-branch levels remain inside bulletin PDFs without file links."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Mongolia and Turkey level upgrade",
+      "summary": "Level cuts for two markets on the Georgia managers recipe. Mongolia gains 3 lead cells from NSO occupation table DT_NSO_0400_025V1 (ISCO major group 1, 2025, both sexes, 3,091,800 MNT; no chief-executives split published, so no executive rows, absence pinned in the test). Turkey gains 3 lead cells from the TUIK SES 2023 occupation table (ISCO 1 Yöneticiler, monthly gross earnings 54,949.87 TRY) with the 2023 vintage and the 10,068.68 to 39,252.88 economy-wide inflation path disclosed on every row. Both pool-sharing disclosures follow the Georgia convention; professionals groups at 1-digit carry no family attribution and were not used."
     }
   ],
   "rows": [
@@ -32277,6 +32282,108 @@
         "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
       ],
       "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Education (division P). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3091800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20occupation%20and%20gender/DT_NSO_0400_025V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_025V1 \"Monthly average nominal wages, by occupation and gender, annual\" (data.1212.mn API), 2025 year, both sexes, ISCO 08 major group 1 Manajer (Managers), all sectors. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. No chief-executives split is published, so this economy-wide managers pool anchors the lead cells and no executive rows exist. Economy-wide 2025 pay averaged 2,726.9 thousand MNT, so managers run about 13 percent above the national average. MEDIAN-ONLY shape carrying a published occupation-group MEAN. Archetype: economy-wide managers."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3091800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20occupation%20and%20gender/DT_NSO_0400_025V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_025V1 \"Monthly average nominal wages, by occupation and gender, annual\" (data.1212.mn API), 2025 year, both sexes, ISCO 08 major group 1 Manajer (Managers), all sectors. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. No chief-executives split is published, so this economy-wide managers pool anchors the lead cells and no executive rows exist. Economy-wide 2025 pay averaged 2,726.9 thousand MNT, so managers run about 13 percent above the national average. MEDIAN-ONLY shape carrying a published occupation-group MEAN. Archetype: economy-wide managers, shared across the lead cells."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3091800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20occupation%20and%20gender/DT_NSO_0400_025V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_025V1 \"Monthly average nominal wages, by occupation and gender, annual\" (data.1212.mn API), 2025 year, both sexes, ISCO 08 major group 1 Manajer (Managers), all sectors. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. No chief-executives split is published, so this economy-wide managers pool anchors the lead cells and no executive rows exist. Economy-wide 2025 pay averaged 2,726.9 thousand MNT, so managers run about 13 percent above the national average. MEDIAN-ONLY shape carrying a published occupation-group MEAN. Archetype: economy-wide managers, shared across the lead cells."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "TUR",
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 54949.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/press/53700",
+        "https://veriportali.tuik.gov.tr/tr"
+      ],
+      "note": "Curated directly by the reviewer from the TUIK Kazanç Yapısı İstatistikleri 2023 (Structure of Earnings Survey, press release 53700), table \"Meslek grubuna göre aylık ortalama ücretli çalışılan saat, brüt ücret ve kazanç, 2023\", ISCO 08 major group 1 Yöneticiler (Managers), both sexes, monthly average per-person gross earnings (aylık ortalama kişi başı brüt kazanç). SES covers local units with 10 or more employees in NACE Rev.2 sections B-S. No chief-executives split is published at this cut, so the economy-wide managers pool anchors the lead cells and no executive rows exist. 2023 VINTAGE DISCLOSURE: the same TUIK earnings programme shows economy-wide monthly averages rising from 10,068.68 TRY (2022) to 39,252.88 TRY (2024), so wages inflated steeply after 2023; treat this figure as a floor and expect current offers well above it. MEDIAN-ONLY shape carrying a published occupation-group MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "TUR",
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 54949.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/press/53700",
+        "https://veriportali.tuik.gov.tr/tr"
+      ],
+      "note": "Curated directly by the reviewer from the TUIK Kazanç Yapısı İstatistikleri 2023 (Structure of Earnings Survey, press release 53700), table \"Meslek grubuna göre aylık ortalama ücretli çalışılan saat, brüt ücret ve kazanç, 2023\", ISCO 08 major group 1 Yöneticiler (Managers), both sexes, monthly average per-person gross earnings (aylık ortalama kişi başı brüt kazanç). SES covers local units with 10 or more employees in NACE Rev.2 sections B-S. No chief-executives split is published at this cut, so the economy-wide managers pool anchors the lead cells and no executive rows exist. 2023 VINTAGE DISCLOSURE: the same TUIK earnings programme shows economy-wide monthly averages rising from 10,068.68 TRY (2022) to 39,252.88 TRY (2024), so wages inflated steeply after 2023; treat this figure as a floor and expect current offers well above it. MEDIAN-ONLY shape carrying a published occupation-group MEAN."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "TUR",
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 54949.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/press/53700",
+        "https://veriportali.tuik.gov.tr/tr"
+      ],
+      "note": "Curated directly by the reviewer from the TUIK Kazanç Yapısı İstatistikleri 2023 (Structure of Earnings Survey, press release 53700), table \"Meslek grubuna göre aylık ortalama ücretli çalışılan saat, brüt ücret ve kazanç, 2023\", ISCO 08 major group 1 Yöneticiler (Managers), both sexes, monthly average per-person gross earnings (aylık ortalama kişi başı brüt kazanç). SES covers local units with 10 or more employees in NACE Rev.2 sections B-S. No chief-executives split is published at this cut, so the economy-wide managers pool anchors the lead cells and no executive rows exist. 2023 VINTAGE DISCLOSURE: the same TUIK earnings programme shows economy-wide monthly averages rising from 10,068.68 TRY (2022) to 39,252.88 TRY (2024), so wages inflated steeply after 2023; treat this figure as a floor and expect current offers well above it. MEDIAN-ONLY shape carrying a published occupation-group MEAN."
     }
   ]
 }

@@ -12,7 +12,8 @@
     "Expansion wave 6 (2026-09-03, docs/RESEARCH/benchmark-curation-2026-08-30.md): Israel 38 rows (Manpower Israel salary tables with stated gross basis, Knesset Research Center teacher data via Calcalist, Ministry of Finance physician data via Bizportal; Avodata official portal bot-blocked), Chile 28 rows (Buk Guia Salarial real-payroll bands via press reproduction, IT Workers headhunting guide, Lota municipal statutory scale; INE ESI rejected for net basis), Colombia 23 rows (Buk Colombia payroll percentile bands, Michael Page Colombia free tool, El Tiempo statutory teacher table), Argentina 31 rows (sysarmy/OpenQube 2026.01 survey medians with the peso subset identified, ATE Decreto 1133/09 statutory health scale, iProfesional press synthesis held Low). New floor-only convention: cells with a single published floor store it as a median-only row with the floor disclosed. Taiwan had 46 verified rows curated (104 Salary Guide published P25/P50/P75 by title and tenure with sample counts) but is NOT in the 206-country list because the World Bank PPP pipeline has no Taiwan data; those rows stay parked in the research file pending an owner decision on extending the country list. All anchors independently re-fetched and matched verbatim before merge.",
     "Taiwan addition (2026-09-03): the owner approved Taiwan as the 207th supported country, so the 46 rows parked from wave 6 now merge. Rows are 104 Salary Guide published P25/P50/P75 monthly bands by title and tenure with per-band sample counts (Medium, n under 100 held Low), corroborated by the MOL 2025 occupational wage survey; every figure verified against 104's public JSON. Taiwan PPP is the IMF WEO implied conversion rate (GDP basis, 2025) since the World Bank has no Taiwan series; no statutory tax regime, so the disclosed 20 percent default applies.",
     "Expansion wave 7 (2026-09-04, docs/RESEARCH/benchmark-curation-2026-08-30.md): the remaining EEA markets plus Peru, 13 countries, 418 rows, closing out Europe. Bulgaria 46 (Eurostat SES 2022 backbone plus State Gazette statutory teacher minima), Croatia 34 all-High (Eurostat plus Croatian public-service coefficients on the verified 2026 base), Cyprus 30 (Eurostat plus CYSTAT via attributed reproduction plus CareerFinders), Estonia 23 (Statistics Estonia register-based palgad.stat.ee medians), Iceland 39 all-High (Statistics Iceland VIN02001 quartiles with a disclosed seniority proxy), Lithuania 39 (manoalga.lt self-reported spans, all Low, official sources Cloudflare-blocked), Luxembourg 23 (Eurostat, Eurydice statutory teachers, ITM social-sector grid, Robert Half), Malta 29 (gov.mt 2026 payscales, Eurostat, Archer guide), Slovakia 40 (platy.sk spans mostly Low, Health Ministry statutory physician tables), Slovenia 37 all-High (SURS quartiles by occupation), Peru 28 (gob.pe statutory comunicado, MTPE Planilla Electronica physician averages, Buk Peru payroll bands), Hungary 25 and Latvia 25 built directly by the reviewer from the same verified Eurostat SES pull when the research agents hit an account usage limit. One Slovak rolling-survey row re-verified and updated to the page's current endpoints. All anchors independently verified; Iceland and Estonia anchors corroborated exactly against Eurostat because their national APIs block this network.",
-    "Western Balkans pass (2026-09-05): Serbia 25, Bosnia and Herzegovina 25, North Macedonia 24, and Albania 21 rows, built directly by the reviewer from Eurostat SES 2022 (earn_ses22_48, mean monthly gross, enterprises with 10 or more employees, total sex) on the exact Hungary and Latvia recipe: senior cells are ISCO major group 2 professionals in the family's NACE sector, lead cells are ISCO major group 1 managers in the same sector, and executive cells share the economy-wide managers pool. Albania publishes no economy-wide managers cell (so no executive rows) and North Macedonia misses only the finance managers cell. Montenegro and Kosovo publish nothing in this dataset and stay marker-only. Median-only rows carrying published means, with the all-seniority-mean disclosure in every note; each source URL is the exact filtered API cell. Every value is verbatim from the API response captured on merge day."
+    "Western Balkans pass (2026-09-05): Serbia 25, Bosnia and Herzegovina 25, North Macedonia 24, and Albania 21 rows, built directly by the reviewer from Eurostat SES 2022 (earn_ses22_48, mean monthly gross, enterprises with 10 or more employees, total sex) on the exact Hungary and Latvia recipe: senior cells are ISCO major group 2 professionals in the family's NACE sector, lead cells are ISCO major group 1 managers in the same sector, and executive cells share the economy-wide managers pool. Albania publishes no economy-wide managers cell (so no executive rows) and North Macedonia misses only the finance managers cell. Montenegro and Kosovo publish nothing in this dataset and stay marker-only. Median-only rows carrying published means, with the all-seniority-mean disclosure in every note; each source URL is the exact filtered API cell. Every value is verbatim from the API response captured on merge day.",
+    "Georgia pass (2026-09-06): 16 rows, the first national-source pass beyond Eurostat. Spine: Geostat Average monthly nominal earnings by occupation, 2021 sheet (the latest official occupation cut, ISCO-08 two-digit, all sectors, mean monthly gross) with the ICT professionals cell (ISCO 25, 2,268.39 GEL) anchoring software, data, and cybersecurity senior; managers (ISCO 1) and chief executives (ISCO 11) anchor lead and executive cells. Because the occupation cut is five years old, every occupation note discloses that economy-wide average earnings rose from 1,304.52 GEL in 2021 to 2,282.70 GEL in 2025 and directs readers to treat the figure as a floor. Sector families without an occupation series use the 2024 Revenue Service median by activity (marketing M 1,786; sales G 1,256; operations H 1,553; engineering F 1,943, all-occupations sector medians, disclosed per row), and the same file corroborates the occupation rows in notes. All quality Medium: mixed-vintage official data. Every value verbatim from the cited spreadsheets, downloaded and re-read on merge day."
   ],
   "rows": [
     {
@@ -30441,6 +30442,286 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BA&nace_r2=P&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, enterprises with 10 or more employees, total sex). Archetype: Managers in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES 2022 publishes no median here, and the figure is an all-seniority mean, so it understates senior and lead pay; treat it as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2268.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Information and Communications Technology Professionals (ISCO 25). economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Information and communication were 1,983 GEL in 2024 (all employees in the sector)."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2268.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: the ICT professionals pool (ISCO 25); no separate official data occupation series exists. This cell shares the software-engineering senior pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2268.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: the ICT professionals pool (ISCO 25); no separate official security series exists. This cell shares the software-engineering senior pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2414.72,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Managers, all sectors (ISCO major group 1); no ICT-specific manager series is published. This cell shares the economy-wide managers pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3848.86,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Chief Executives, Senior Officials and Legislators (ISCO 11), all sectors. This cell is shared by all executive cells. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3848.86,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Chief Executives, Senior Officials and Legislators (ISCO 11), all sectors. This cell is shared by all executive cells. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1422.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Business and Administration Professionals (ISCO 24), all sectors; finance and HR share this pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Financial and insurance activities were 1,919 GEL in 2024 (all employees in the sector)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2414.72,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Managers, all sectors (ISCO major group 1). This cell shares the economy-wide managers pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3848.86,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Chief Executives, Senior Officials and Legislators (ISCO 11), all sectors. This cell is shared by all executive cells. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1422.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Business and Administration Professionals (ISCO 24), all sectors; finance and HR share this pool. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Administrative and support service activities were 1,000 GEL in 2024 (all employees in the sector)."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1786,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat Median Monthly Earnings by economic activity (source: LEPL Revenue Service of the Ministry of Finance of Georgia, administrative data), 2024 column, median monthly gross. Archetype: all employees in Professional, scientific and technical activities (NACE M); no occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-occupations sector MEDIAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1256,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat Median Monthly Earnings by economic activity (source: LEPL Revenue Service of the Ministry of Finance of Georgia, administrative data), 2024 column, median monthly gross. Archetype: all employees in Wholesale and retail trade (NACE G); no occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-occupations sector MEDIAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1553,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat Median Monthly Earnings by economic activity (source: LEPL Revenue Service of the Ministry of Finance of Georgia, administrative data), 2024 column, median monthly gross. Archetype: all employees in Transportation and storage (NACE H); no occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-occupations sector MEDIAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1943,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat Median Monthly Earnings by economic activity (source: LEPL Revenue Service of the Ministry of Finance of Georgia, administrative data), 2024 column, median monthly gross. Archetype: all employees in Construction (NACE F); no occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-occupations sector MEDIAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1446.74,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Health Professionals (ISCO 22), all sectors. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Human health and social work were 1,019 GEL in 2024 (all employees in the sector)."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "GEO",
+      "currency": "GEL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 994.43,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://geostat.ge/media/49168/11--wages-by-occupation-T.xlsx",
+        "https://geostat.ge/media/73905/Median-Monthly-Earnings.xlsx",
+        "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
+      ],
+      "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Teaching Professionals (ISCO 23), all sectors. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Education were 969 GEL in 2024 (all employees in the sector)."
     }
   ]
 }

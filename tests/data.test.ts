@@ -728,3 +728,31 @@ test('Western Balkans pass (2026-09-05): SES 2022 backbone rows with verbatim an
   expect(by('MKD').filter((r: { level: string }) => r.level === 'lead')).toHaveLength(9);
   expect(by('SRB').filter((r: { level: string }) => r.level === 'lead')).toHaveLength(10);
 });
+
+test('Georgia pass (2026-09-06): Geostat occupation spine with Revenue Service median corroboration', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('GEO');
+  expect(rows.length, 'GEO row count').toBe(16);
+  for (const row of rows) {
+    expect(row.currency, 'GEO currency').toBe('GEL');
+    expect(row.basis, 'GEO basis').toBe('monthly-gross');
+    expect(row.p25, 'GEO median-only shape').toBe(0);
+    expect(row.p75, 'GEO median-only shape').toBe(0);
+    expect(row.quality, 'GEO mixed-vintage official data stays Medium').toBe('Medium');
+  }
+  // Anchors verbatim from the Geostat 2021 occupation sheet and the 2024 median file.
+  const anchor = (family: string, level: string, value: number) => {
+    const row = rows.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `GEO ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 'senior', 2_268.39);
+  anchor('it-executive', 'executive', 3_848.86);
+  anchor('finance-and-accounting', 'senior', 1_422.44);
+  anchor('healthcare', 'senior', 1_446.74);
+  anchor('education-and-teaching', 'senior', 994.43);
+  anchor('marketing-and-growth', 'senior', 1_786);
+  anchor('operations-and-supply-chain', 'senior', 1_553);
+});

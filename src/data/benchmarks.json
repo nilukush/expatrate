@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 78,
-    "dataRows": 1885,
+    "tier1CountriesCount": 79,
+    "dataRows": 1896,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -769,6 +769,23 @@
         "https://www.buk.mx/blog/guia-salarial-salarios-en-mexico"
       ],
       "note": "Desarrollador Backend median monthly gross of about MXN 50,000 from the Buk Guia Salarial 2026 (medians from 3,400 payroll records across 166 private organizations), as reported by RRHH Digital on 3 June 2026. The source publishes a median only, so p25 and p75 are 0. The figure covers backend developers of mixed seniority, which makes it a conservative value for a senior hire."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Information and communications (CAEM J). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "software-engineering",
@@ -1978,6 +1995,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2880,6 +2905,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -3946,6 +3979,23 @@
         "https://bebee.com/mx/salaries/ingeniero-de-datos"
       ],
       "note": "beBee Mexico salary page for Ingeniero de Datos, based on 6,371 active job postings (2026), publishes annual percentiles of MXN 480,000 (P25), 750,000 (median) and 1,000,000 (P75), converted to monthly by dividing by 12. Job-ad data from a single aggregator, hence Low quality; the page also shows an inconsistent MXN 975,000 median figure elsewhere, so the internally consistent percentile table was used."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in CAEM J. This cell shares the software-engineering senior pool; no separate official data series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -5027,6 +5077,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5838,6 +5896,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6622,6 +6688,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -7563,6 +7637,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -8682,6 +8764,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -9743,6 +9833,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -10634,6 +10732,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11379,6 +11485,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -12346,6 +12460,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in CAEM J. This cell shares the software-engineering senior pool; no separate official security series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13242,6 +13373,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14018,6 +14157,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14887,6 +15034,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15735,6 +15890,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16420,6 +16583,14 @@
       "family": "design",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -17297,6 +17468,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -18259,6 +18438,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -19023,6 +19210,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -19982,6 +20177,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13774.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Wholesale and retail trade (CAEM G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "sales-and-business-development",
@@ -21096,6 +21308,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22105,6 +22325,14 @@
         "https://www.michaelpage.com.mx/salary-comparison-tool/director-comercial-salarios"
       ],
       "note": "Michael Page Mexico salary comparison tool (2026 edition, averages from placements over the last 12 months, gross, excluding bonus): Director Comercial average MXN 157,290 per month. Average only published, so p25 and p75 are 0; base salary only, commercial director packages normally add variable pay."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "sales-and-business-development",
@@ -23193,6 +23421,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17709.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Professional, scientific and technical activities (CAEM M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -24243,6 +24488,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -25153,6 +25406,14 @@
         "https://www.buk.mx/blog/guia-salarial-salarios-en-mexico"
       ],
       "note": "Buk Guia Salarial 2026: CMO median of about MXN 110,000 per month, from 3,400 real payroll records across 166 private organizations (post updated 6 August 2026). Median only published, so p25 and p75 are 0; the sample skews to small and mid-size employers, so large-company CMO pay runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "marketing-and-growth",
@@ -26201,6 +26462,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 28485.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Financial and insurance activities (CAEM K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -27367,6 +27645,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -28493,6 +28779,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -29573,6 +29867,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13125.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Administrative and support service activities (CAEM N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "hr-and-people",
@@ -30678,6 +30989,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -31644,6 +31963,14 @@
         "https://www.michaelpage.com.mx/salary-comparison-tool/director-de-recursos-humanos-salarios"
       ],
       "note": "Michael Page Mexico salary comparison tool (2026 edition, averages from placements over the last 12 months, gross, excluding bonus): Director de Recursos Humanos average MXN 183,750 per month. Average only published, so p25 and p75 are 0; sample size not disclosed."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "hr-and-people",
@@ -32713,6 +33040,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13225.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Transportation and storage (CAEM H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "operations-and-supply-chain",
@@ -33831,6 +34175,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34814,6 +35166,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -35653,6 +36013,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -36471,6 +36839,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -37470,6 +37846,14 @@
         "https://www.buk.mx/blog/guia-salarial-salarios-en-mexico"
       ],
       "note": "Buk Guia Salarial 2026: CEO median MXN 233,000 per month, from 3,400 real payroll records across 166 private organizations (post updated 6 August 2026). Median only published, so p25 and p75 are 0; sample skews to small and mid-size companies, so large-company CEO pay runs well above this figure."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -38610,6 +38994,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13231.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Construction (CAEM F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -39685,6 +40086,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40540,6 +40949,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -41588,6 +42005,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17166.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Health and social work (CAEM Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42576,6 +43010,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -43417,6 +43859,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -44439,6 +44889,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13011.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Education (CAEM P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -45424,6 +45891,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "MDA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -46273,6 +46748,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "MEX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "MDA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

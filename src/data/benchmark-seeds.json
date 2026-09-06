@@ -21,6 +21,11 @@
       "date": "2026-09-06",
       "pass": "Turkey upgrade and Russia pass",
       "summary": "Replaced the 7 Low-quality ERI Turkey rows with 11 Medium senior cells from the TUIK Labour Cost table of monthly gross earnings by NACE Rev.2 activity (2024 column, NACE 62 anchoring software and cybersecurity, 63 data, sector spine K M N G H F Q P) and added Russia as the 78th benchmarked country with 11 senior cells from the Rosstat annual by-activity wage table (2025, OKVED sections). Both are mean-as-floor median-only rows; TUIK scope is 10+ employee local units in B-S; Rosstat excludes the four annexed regions from 2022."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Moldova pass",
+      "summary": "Moldova joins as the 79th benchmarked country with 11 senior cells from the NBS quarterly earnings annex (SAL_CAEM Total sheet, published 2025 annual column, MDL monthly gross): information and communications 35,745.6 anchors the tech pool, finance 28,485.8, and the sector spine follows the house convention. Scope disclosed per the file footnote: units with 4+ employees plus all budgetary institutions, excluding the left-bank Nistru districts and Bender. Same round probes: Ecuador deferred (published by-branch income is only five coarse branches, CIIU detail exists only in microdata), Uruguay deferred (ECH published series split by employment category, not by activity; branch levels stay inside IMS bulletin annexes), Mongolia and Costa Rica unreachable (JS-only tables; TLS handshake rejected from two networks)."
     }
   ],
   "rows": [
@@ -31740,6 +31745,193 @@
         "https://rosstat.gov.ru/labor_market_employment_salaries"
       ],
       "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Education (OKVED P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Information and communications (CAEM J). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in CAEM J. This cell shares the software-engineering senior pool; no separate official data series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35745.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in CAEM J. This cell shares the software-engineering senior pool; no separate official security series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 28485.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Financial and insurance activities (CAEM K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17709.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Professional, scientific and technical activities (CAEM M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13125.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Administrative and support service activities (CAEM N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13774.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Wholesale and retail trade (CAEM G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13225.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Transportation and storage (CAEM H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13231.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Construction (CAEM F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17166.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Health and social work (CAEM Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MDA",
+      "currency": "MDL",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13011.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://statistica.gov.md/files/files/ComPresa/Statistica_salarizarii/Anexa_castig_sal_tr_II_2026.xlsx",
+        "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
+      ],
+      "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Education (CAEM P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
     }
   ]
 }

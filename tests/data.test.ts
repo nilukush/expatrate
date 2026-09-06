@@ -917,3 +917,39 @@ test('Russia pass (2026-09-06): Rosstat by-activity spine with verbatim anchors'
   anchor('healthcare', 82_183.7);
   anchor('education-and-teaching', 71_344.3);
 });
+
+test('Moldova pass (2026-09-06): NBS CAEM sector spine with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('MDA');
+  expect(rows.length, 'MDA row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'MDA currency').toBe('MDL');
+    expect(row.basis, 'MDA basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'NBS official sector means stay Medium').toBe('Medium');
+    expect(row.note).toContain('CAEM');
+    expect(row.note).toContain('4 or more employees');
+    expect(row.note).toContain('left bank of the Nistru');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `MDA ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 35_745.6);
+  anchor('data-and-ai', 35_745.6);
+  anchor('cybersecurity', 35_745.6);
+  anchor('finance-and-accounting', 28_485.8);
+  anchor('marketing-and-growth', 17_709.6);
+  anchor('hr-and-people', 13_125.2);
+  anchor('sales-and-business-development', 13_774.8);
+  anchor('operations-and-supply-chain', 13_225.6);
+  anchor('engineering-civil-mechanical-electrical', 13_231.4);
+  anchor('healthcare', 17_166.1);
+  anchor('education-and-teaching', 13_011.7);
+});

@@ -46,6 +46,11 @@
       "date": "2026-09-06",
       "pass": "Belarus median upgrade",
       "summary": "Eight of the eleven Belarus cells now carry the published May 2026 sector MEDIANS from the Belstat median-by-activity file (median_zarplata_2605.xlsx): finance 2,905.9, construction 3,197.7, professional services 2,666.9, transport 2,440.8, trade 2,145.9, health 1,932.6, admin support 1,990.7, education 1,757.4 BYN, with the economy-wide median 2,314.9 against the 3,022.0 quarterly mean disclosed as the skew and the file footnote (independent entities under 50 employees excluded) on every row. The tech trio keeps the Q2 2026 IT sub-aggregate mean 7,285.6 because the median file publishes no IT split; the J-section median 4,072.1 is disclosed in those notes. Lithuania probed again this round and stays deferred: the statistics portal answers only a Cloudflare interstitial to every non-browser fetcher."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Slovakia SES upgrade",
+      "summary": "24 platy.sk survey rows (10 senior, 10 lead, 4 executive) replaced with Eurostat SES 2022 cells on the Hungary recipe after every Slovak official portal proved unreachable to non-browser fetchers (slovak.statistics.sk behind Cloudflare, data.stat.sk TLS-broken, sosr.sk dead): senior cells are ISCO professionals in the family NACE (ICT 2,385 EUR), leads are ISCO managers in the family NACE (ICT 3,626, finance 3,994), executives share the economy-wide B-S managers pool at 2,708. All High with the 2022 vintage disclosed. The statutory physician scale stays (4,219), and platy.sk survives for design, product, delivery, general-management senior/lead, and the it-executive senior cells where no SES archetype exists."
     }
   ],
   "rows": [
@@ -26231,74 +26236,6 @@
       "note": "MEDIAN-ONLY (single-point statutory scale). Published title: Head of School, Government Gazette call dated 21/08/2026. Salary Scale 4: 42,916.00 EUR per annum in 2026 (single point, no increments). Basis authority: call states per annum amount (basic gross). Statutory scale, not a sample. Data year 2026. Same-cell alternatives: the same call cites Salary Scale 5 (35,837.98 rising to 39,682.00) for appointees credited with 25 years service in grade; Eurostat SES 2022 education managers (NACE M, ISCO 1) mean 4,024 EUR per month reflects the wider leadership population including higher education."
     },
     {
-      "family": "software-engineering",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2008,
-      "p50": 3397,
-      "p75": 4786,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/informacne-technologie/softverovy-inzinier",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Softverovy inzinier (software engineer), Platy.sk position page. SPAN shape: p25/p75 are the p10-p90 endpoints, site says 80 percent of people earn between these values. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=896 checked respondents, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 3,877 EUR. Same-cell alternative: category listing band 2,111 to 4,816 EUR. Method page: cleaned of extremes, regression models."
-    },
-    {
-      "family": "software-engineering",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2949,
-      "p50": 4433,
-      "p75": 5917,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/informacne-technologie",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Lead developer, Platy.sk IT category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown on category page, data updated 2026. Same-cell alternatives: IT architekt 2,418 to 5,590 EUR used for the it-executive senior cell."
-    },
-    {
-      "family": "data-and-ai",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1971,
-      "p50": 3217,
-      "p75": 4463,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/informacne-technologie",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Data scientist, Platy.sk IT category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown on category page, data updated 2026. Same-cell alternatives: AI inzinier 1,926 to 4,372 EUR, BI Specialist 1,950 to 4,503 EUR, Cloud specialist 2,046 to 4,625 EUR."
-    },
-    {
-      "family": "cybersecurity",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2021,
-      "p50": 3258,
-      "p75": 4494,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/informacne-technologie/specialista-it-bezpecnosti",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Specialista IT bezpecnosti (IT security specialist), Platy.sk position page. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=378, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 3,899 EUR. Same-cell alternative: Data Protection Officer 2,240 to 4,868 EUR, IT auditor 1,968 to 4,559 EUR."
-    },
-    {
       "family": "it-executive",
       "level": "senior",
       "country": "SVK",
@@ -26314,40 +26251,6 @@
         "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title IT architekt (IT architect), Platy.sk IT category listing, chosen as the principal-level IC archetype for this family. SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternatives: IT konzultant 2,178 to 5,035 EUR."
-    },
-    {
-      "family": "it-executive",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2545,
-      "p50": 4484,
-      "p75": 6423,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title IT manazer (IT manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the page's published salary range for the role (a rolling survey; endpoints re-verified 2026-09-04). Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: IT projektovy manazer 2,214 to 4,618 EUR."
-    },
-    {
-      "family": "it-executive",
-      "level": "executive",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2483,
-      "p50": 5220,
-      "p75": 7957,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/en/salaryinfo/top-management",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Riaditel IT / IT Director, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. Corroboration: Eurostat SES 2022 mean monthly gross earnings for managers in NACE J information and communication, Slovakia = 3,249 EUR (dataset earn_ses22_48)."
     },
     {
       "family": "delivery-and-project-management",
@@ -26452,142 +26355,6 @@
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Design manazer (design manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. No other verified design leadership band for this cell."
     },
     {
-      "family": "finance-and-accounting",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1743,
-      "p50": 2665,
-      "p75": 3587,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/ekonomika-financie-uctovnictvo/financny-analytik",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Financny analytik (financial analyst), Platy.sk position page. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=270, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 2,926 EUR. Same-cell alternative: Financny manazer 2,242 to 6,001 EUR (management listing)."
-    },
-    {
-      "family": "finance-and-accounting",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1278,
-      "p50": 2120,
-      "p75": 2961,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/ekonomika-financie-uctovnictvo/hlavny-uctovnik",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Hlavny uctovnik (chief accountant), Platy.sk position page, lead archetype for the accounting track. SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=821, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 2,070 EUR. Same-cell alternatives: Veduci controllingu 1,977 to 5,714 EUR, Financny manazer 2,242 to 6,001 EUR for a higher lead band."
-    },
-    {
-      "family": "finance-and-accounting",
-      "level": "executive",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2282,
-      "p50": 4472,
-      "p75": 6661,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/en/salaryinfo/top-management",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Ekonomicky / financny riaditel (Economic and Financial Director), Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. Corroboration: Eurostat SES 2022 mean monthly gross earnings for managers in NACE K financial and insurance activities, Slovakia = 3,995 EUR (dataset earn_ses22_48)."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1636,
-      "p50": 2683,
-      "p75": 3730,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/obchod/senior-obchodny-zastupca",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Senior obchodny zastupca (senior sales representative), Platy.sk position page. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=269, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 2,665 EUR. Same-cell alternative: Manazer obchodu 1,493 to 3,798 EUR (logistics category listing)."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1487,
-      "p50": 2777,
-      "p75": 4067,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Obchodny manazer (sales manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Manazer obchodu 1,493 to 3,798 EUR."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "executive",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2090,
-      "p50": 4690,
-      "p75": 7289,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/en/salaryinfo/top-management",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Riaditel obchodu / Sales Director, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. No other verified sales executive band for this cell."
-    },
-    {
-      "family": "marketing-and-growth",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1393,
-      "p50": 1930,
-      "p75": 2466,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/marketing-reklama-pr",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Marketingovy specialista (marketing specialist), Platy.sk Marketing, reklama, PR category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternatives: Digital marketing specialist 1,326 to 2,825 EUR, Grafik 1,254 to 2,167 EUR."
-    },
-    {
-      "family": "marketing-and-growth",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1437,
-      "p50": 2521,
-      "p75": 3604,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Marketingovy manazer (marketing manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Digital marketing manager 1,532 to 3,789 EUR (marketing category listing)."
-    },
-    {
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "SVK",
@@ -26606,40 +26373,6 @@
     },
     {
       "family": "hr-and-people",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1840,
-      "p50": 2579,
-      "p75": 3317,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/ludske-zdroje-a-personalistika",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title HR Business Partner, Platy.sk HR category listing (Ludske zdroje a personalistika). SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Personalista 1,304 to 2,302 EUR."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1609,
-      "p50": 2983,
-      "p75": 4356,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Personalny manazer (HR manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Coach 1,357 to 3,580 EUR (HR category listing)."
-    },
-    {
-      "family": "hr-and-people",
       "level": "executive",
       "country": "SVK",
       "currency": "EUR",
@@ -26654,40 +26387,6 @@
         "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Personalny riaditel / Personnel Director, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. No other verified HR executive band for this cell."
-    },
-    {
-      "family": "operations-and-supply-chain",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1614,
-      "p50": 2401,
-      "p75": 3187,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/doprava-spedicia-logistika",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Supply Chain Specialist, Platy.sk Doprava, spedicia, logistika category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternatives: Logistik 1,305 to 2,457 EUR, Nakladac 1,010 to 1,900 EUR."
-    },
-    {
-      "family": "operations-and-supply-chain",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1744,
-      "p50": 3187,
-      "p75": 4629,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Manazer logistiky (logistics manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Veduci logistiky (head of logistics) 1,423 to 3,432 EUR (logistics category listing)."
     },
     {
       "family": "operations-and-supply-chain",
@@ -26741,57 +26440,6 @@
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Riaditel pobocky / Branch Director, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. Same-cell alternative: Managing Director 1,944 to 6,721 EUR listed on the same page."
     },
     {
-      "family": "general-management",
-      "level": "executive",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1967,
-      "p50": 6813,
-      "p75": 11659,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/en/salaryinfo/top-management",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Generalny riaditel / CEO, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints; wide band reflects equity-linked pay at the top. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. Corroboration: Eurostat SES 2022 mean monthly gross earnings, all managers in Slovakia (NACE B-S) = 2,451 EUR (dataset earn_ses22_48). Same-cell alternative: Country Manager 2,185 to 9,097 EUR."
-    },
-    {
-      "family": "engineering-civil-mechanical-electrical",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1659,
-      "p50": 2418,
-      "p75": 3177,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/strojarstvo/strojny-inzinier",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Strojny inzinier (mechanical engineer), Platy.sk position page, mechanical archetype for this combined family. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: site states salaries are expressed gross, total monthly salary including bonuses. Sample size n=136, updated 01/08/2026, data year 2026. Respondents with 5+ years experience average 2,564 EUR. Same-cell alternative: Letecky inzinier 2,341 to 5,094 EUR. Civil and electrical bands were not separately verified, so only the mechanical archetype is used."
-    },
-    {
-      "family": "engineering-civil-mechanical-electrical",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1783,
-      "p50": 3431,
-      "p75": 5079,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/manazment",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Technicky manazer (technical manager), Platy.sk Management category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Same-cell alternative: Majster vyroby 1,329 to 2,661 EUR for production floor lead."
-    },
-    {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "SVK",
@@ -26827,23 +26475,6 @@
     },
     {
       "family": "healthcare",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1654,
-      "p50": 2361,
-      "p75": 3068,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/zdravotnictvo-a-socialna-starostlivost",
-        "https://www.health.gov.sk/Zdroje?/Sources/clanky/platy-3-2025/sestra.pdf"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Vrchny zdravotny brat / vrchna sestra (head nurse), Platy.sk Healthcare category listing, lead archetype for clinical nursing leadership. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Statutory context: Ministry of Health PDF 2025 sets nurse base gross monthly (sestra s specializaciou, UZS) 1,573.00 to 2,002.00 EUR by years. Same-cell alternative: Hlavny zdravotny brat 1,267 to 3,237 EUR."
-    },
-    {
-      "family": "healthcare",
       "level": "executive",
       "country": "SVK",
       "currency": "EUR",
@@ -26858,40 +26489,6 @@
         "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Riaditel zdravotnickeho zariadenia / Medical Institution Manager, Platy.sk Top Management page (English mirror, updated 2026-08-01). SPAN shape: p25/p75 are the p10-p90 endpoints. Basis authority: page states total monthly salary including bonuses, gross survey. Sample size not shown, data year 2026. Corroboration anchor: Eurostat SES 2022 mean monthly gross managers in NACE Q health, Slovakia = 2,582 EUR (dataset earn_ses22_48)."
-    },
-    {
-      "family": "education-and-teaching",
-      "level": "senior",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1272,
-      "p50": 1814,
-      "p75": 2356,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/skolstvo-vzdelavanie-veda-vyskum",
-        "https://www.minedu.sk/43312-sk/platove-tarify-pedagogickych-zamestnancov-a-odbornych-zamestnancov-a-zvysenie-platovych-tarif-v-zavislosti-od-dlzky-zapocitanej-praxe-ucinne-od-192025-a-od-112026/"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Ucitel strednej skoly (secondary school teacher), Platy.sk Education category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. Statutory context: Ministry of Education tariff table effective 1.9.2025 sets base monthly gross salary tariff 1,004.00 to 1,700.50 EUR for work class 1 pedagogical employees at zero years practice across salary classes 4 to 9. Same-cell alternatives: Vysokoskolsky pedagog 1,470 to 2,882 EUR, Specialny pedagog 1,260 to 2,043 EUR."
-    },
-    {
-      "family": "education-and-teaching",
-      "level": "lead",
-      "country": "SVK",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1569,
-      "p50": 2378,
-      "p75": 3186,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://www.platy.sk/platy/skolstvo-vzdelavanie-veda-vyskum",
-        "https://intercom.help/platysk/cs/articles/8380277-aka-je-metodika-platy-sk"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published title Zastupca riaditela skoly (deputy school principal), Platy.sk Education category listing. SPAN shape: p25/p75 are the p10-p90 endpoints, 80 percent earn between these values. Basis authority: category page states gross, total monthly salary including bonuses. Sample size not shown, data updated 2026. No other verified education lead band for this cell."
     },
     {
       "family": "education-and-teaching",
@@ -32581,6 +32178,390 @@
         "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/mediannaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-vidam-ekonomicheskoy-deyatelnosti/"
       ],
       "note": "Curated directly by the reviewer from the Belstat file \"Median wages of employees of the Republic of Belarus by economic activity for May 2026\" (median_zarplata_2605.xlsx), BYN, median monthly wage. Archetype: all employees in Education (NACE P). The p50 cell carries a published sector MEDIAN, the more typical figure in a right-skewed market: the economy-wide median reads 2,314.9 BYN against a 3,022.0 BYN quarterly mean. Per the file footnote the data cover legal entities of all ownership forms except independent entities with fewer than 50 employees (holding members included). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2385,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2385,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2385,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2251,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in financial and insurance activities (NACE K), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2198,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2210,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2088,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1791,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1724,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in construction (NACE F), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1407,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in education (NACE P), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Slovak pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3626,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3626,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3994,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3245,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2578,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2605,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2351,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2094,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1911,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2832,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in human health and social work (NACE Q). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2708,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2708,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2708,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "SVK",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2708,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     }
   ]
 }

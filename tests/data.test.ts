@@ -673,8 +673,11 @@ test('expansion wave 7: the remaining EEA markets and Peru carry verified rows',
   const mltFin = by('MLT').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'senior');
   expect(mltFin.p50).toBe(2_795);
   const svkIt = by('SVK').find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'lead');
-  expect(svkIt.p25).toBe(2_545);
-  expect(svkIt.p75).toBe(6_423);
+  // Upgraded to the Eurostat SES 2022 managers-in-ICT mean in the Slovakia pass (2026-09-06).
+  expect(svkIt.p25).toBe(0);
+  expect(svkIt.p50).toBe(3_626);
+  expect(svkIt.p75).toBe(0);
+  expect(svkIt.quality).toBe('High');
   const svnSw = by('SVN').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
   expect(svnSw.p25).toBe(2_556.13);
   expect(svnSw.p50).toBe(3_400.01);
@@ -1099,4 +1102,60 @@ test('Belarus pass (2026-09-06): Belstat medians by activity with an IT sub-aggr
   const sw = rows.find((r: { family: string }) => r.family === 'software-engineering')!;
   expect(sw.note).toContain('information technology');
   expect(sw.note).toContain('6,164.5');
+});
+
+test('Slovakia upgrade (2026-09-06): Eurostat SES 2022 replaces the platy.sk sector-family cells', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('SVK');
+  expect(rows.length, 'SVK row count').toBe(40);
+  // 24 official SES cells (10 senior + 10 lead + 4 executive), all High with the 2022 vintage disclosed.
+  const ses = rows.filter((r: { sources: string[] }) => r.sources[0].includes('earn_ses22_48'));
+  expect(ses.length).toBe(24);
+  for (const row of ses) {
+    expect(row.quality).toBe('High');
+    expect(row.note).toContain('2022');
+    expect(row.currency).toBe('EUR');
+    expect(row.basis).toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+  }
+  const anchor = (family: string, level: string, value: number) => {
+    const row = rows.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `SVK ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 'senior', 2_385);
+  anchor('data-and-ai', 'senior', 2_385);
+  anchor('cybersecurity', 'senior', 2_385);
+  anchor('finance-and-accounting', 'senior', 2_251);
+  anchor('marketing-and-growth', 'senior', 2_198);
+  anchor('hr-and-people', 'senior', 2_210);
+  anchor('sales-and-business-development', 'senior', 2_088);
+  anchor('operations-and-supply-chain', 'senior', 1_791);
+  anchor('engineering-civil-mechanical-electrical', 'senior', 1_724);
+  anchor('education-and-teaching', 'senior', 1_407);
+  anchor('software-engineering', 'lead', 3_626);
+  anchor('it-executive', 'lead', 3_626);
+  anchor('finance-and-accounting', 'lead', 3_994);
+  anchor('marketing-and-growth', 'lead', 3_245);
+  anchor('hr-and-people', 'lead', 2_578);
+  anchor('sales-and-business-development', 'lead', 2_605);
+  anchor('operations-and-supply-chain', 'lead', 2_351);
+  anchor('engineering-civil-mechanical-electrical', 'lead', 2_094);
+  anchor('education-and-teaching', 'lead', 1_911);
+  anchor('healthcare', 'lead', 2_832);
+  anchor('it-executive', 'executive', 2_708);
+  anchor('finance-and-accounting', 'executive', 2_708);
+  anchor('general-management', 'executive', 2_708);
+  anchor('sales-and-business-development', 'executive', 2_708);
+  // The statutory physician scale and the platy.sk-only families survive untouched.
+  const health = rows.find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'senior');
+  expect(health!.p50).toBe(4_219);
+  expect(health!.quality).toBe('High');
+  expect(rows.find((r: { family: string }) => r.family === 'design')?.level).toBeDefined();
+  // No family+level may exist twice.
+  const keys = new Set(rows.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+  expect(keys.size).toBe(rows.length);
 });

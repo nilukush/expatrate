@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 79,
-    "dataRows": 1896,
+    "tier1CountriesCount": 81,
+    "dataRows": 1916,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -790,6 +790,23 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Information and communication (division J, Medeelel kholboo). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -1298,6 +1315,23 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-1252 Software Developers, BLS OEWS national May 2025 annual wage percentiles (retrieved via BLS public API time series). Senior band is P25 to P50 of the occupation; row reports P25/P50/P75."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "software-engineering",
@@ -2003,6 +2037,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2396,6 +2438,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-1252 Software Developers, BLS OEWS national May 2025. Lead band is P50 to P75 of the occupation; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "software-engineering",
@@ -2920,6 +2970,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -3227,6 +3285,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3021 Computer and Information Systems Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "software-engineering",
@@ -4000,6 +4066,23 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in division J. This cell shares the software-engineering senior pool; no separate official data series exists. No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -4489,6 +4572,23 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-2051 Data Scientists, BLS OEWS national May 2025 annual wage percentiles. Senior band is P25 to P50 of the occupation; row reports P25/P50/P75."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. This cell shares the software-engineering senior pool; no separate official data series exists. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -5085,6 +5185,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5437,6 +5545,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-2051 Data Scientists, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "data-and-ai",
@@ -5904,6 +6020,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6203,6 +6327,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3021 Computer and Information Systems Managers, BLS OEWS national May 2025, used as the executive mapping for data and AI leadership. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "data-and-ai",
@@ -6703,6 +6835,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -7043,6 +7183,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-1241 Computer Network Architects (the senior professional occupation on this family track; the manager SOC is 11-3021). BLS OEWS national May 2025. Senior band is P25 to P50; row reports P25/P50/P75."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -7652,6 +7800,14 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -8056,6 +8212,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 15-1241 Computer Network Architects, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -8772,6 +8936,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -9230,6 +9402,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3021 Computer and Information Systems Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -9841,6 +10021,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -10183,6 +10371,14 @@
       "family": "product-management",
       "level": "senior",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -10740,6 +10936,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11041,6 +11245,14 @@
       "family": "product-management",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -11500,6 +11712,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11765,6 +11985,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -12477,6 +12705,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in division J. This cell shares the software-engineering senior pool; no separate official security series exists. No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -12876,6 +13121,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. This cell shares the software-engineering senior pool; no separate official security series exists. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "cybersecurity",
@@ -13381,6 +13643,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13683,6 +13953,14 @@
       "family": "cybersecurity",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14172,6 +14450,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14438,6 +14724,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -15042,6 +15336,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15395,6 +15697,14 @@
       "family": "design",
       "level": "senior",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -15898,6 +16208,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16181,6 +16499,14 @@
       "family": "design",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -16598,6 +16924,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16847,6 +17181,14 @@
       "family": "design",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -17483,6 +17825,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17862,6 +18212,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -18446,6 +18804,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -18771,6 +19137,14 @@
       "family": "delivery-and-project-management",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -19225,6 +19599,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -19490,6 +19872,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -20198,6 +20588,23 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2148500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Wholesale and retail trade (division G). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20657,6 +21064,23 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 41-4011 Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products, BLS OEWS national May 2025. Senior band is P25 to P50; row reports P25/P50/P75."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6961200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Trade. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "sales-and-business-development",
@@ -21316,6 +21740,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -21728,6 +22160,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 41-4011 Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "sales-and-business-development",
@@ -22337,6 +22777,14 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -22758,6 +23206,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-2022 Sales Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "sales-and-business-development",
@@ -23438,6 +23894,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3086200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Professional, scientific and technical activities (division M). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -23853,6 +24326,14 @@
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -24496,6 +24977,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -24853,6 +25342,14 @@
       "family": "marketing-and-growth",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -25418,6 +25915,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -25740,6 +26245,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -26483,6 +26996,23 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3263400,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Financial and insurance activities (division K). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -26955,6 +27485,23 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-2011 Accountants and Auditors, BLS OEWS national May 2025 annual wage percentiles. Senior band is P25 to P50; row reports P25/P50/P75."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17597500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Banking, insurance, leasing, lending, and intermediary services. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -27653,6 +28200,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -28088,6 +28643,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-2011 Accountants and Auditors, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "finance-and-accounting",
@@ -28787,6 +29350,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -29216,6 +29787,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3031 Financial Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "finance-and-accounting",
@@ -29888,6 +30467,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2489900,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Administrative and support service activities (division N). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30332,6 +30928,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-1071 Human Resources Specialists, BLS OEWS national May 2025 annual wage percentiles. Senior band is P25 to P50; row reports P25/P50/P75."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "hr-and-people",
@@ -30997,6 +31601,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -31397,6 +32009,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-1071 Human Resources Specialists, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "hr-and-people",
@@ -31975,6 +32595,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -32376,6 +33004,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3121 Human Resources Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "hr-and-people",
@@ -33061,6 +33697,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3128600,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Transportation and storage (division H). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -33504,6 +34157,23 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-1081 Logisticians, the supply chain professional occupation, BLS OEWS national May 2025. Senior band is P25 to P50; row reports P25/P50/P75."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9659100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Transportation and storage. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "operations-and-supply-chain",
@@ -34183,6 +34853,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34576,6 +35254,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 13-1081 Logisticians, BLS OEWS national May 2025. Lead band is P50 to P75; row p25 is the occupation P50, p50 is P75, p75 is P90."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "operations-and-supply-chain",
@@ -35174,6 +35860,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -35568,6 +36262,14 @@
         "https://www.bls.gov/oes/tables.htm"
       ],
       "note": "SOC 11-3071 Transportation, Storage, and Distribution Managers, BLS OEWS national May 2025. Executive row reports the management occupation P25/P50/P75 directly."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "UZB",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "operations-and-supply-chain",
@@ -36021,6 +36723,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -36316,6 +37026,14 @@
       "family": "general-management",
       "level": "senior",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -36854,6 +37572,14 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -37159,6 +37885,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -37858,6 +38592,14 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -38279,6 +39021,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -39011,6 +39761,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2426200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Construction (division F). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "MAR",
       "currency": "MAD",
       "basis": "monthly-gross",
@@ -39447,6 +40214,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6548800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Construction. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -40094,6 +40878,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40466,6 +41258,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -40964,6 +41764,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -41294,6 +42102,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -42022,6 +42838,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2498100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Human health and social work (division Q). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42435,6 +43268,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3909300,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Healthcare and provision of social services. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "healthcare",
@@ -43018,6 +43868,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -43356,6 +44214,14 @@
       "family": "healthcare",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -43874,6 +44740,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -44198,6 +45072,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -44906,6 +45788,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2360700,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Education (division P). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -45327,6 +46226,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4372000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Education. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "education-and-teaching",
@@ -45899,6 +46815,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -46246,6 +47170,14 @@
       "family": "education-and-teaching",
       "level": "lead",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -46763,6 +47695,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "MNG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "MAR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -47069,6 +48009,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "USA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "UZB",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

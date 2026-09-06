@@ -26,6 +26,11 @@
       "date": "2026-09-06",
       "pass": "Moldova pass",
       "summary": "Moldova joins as the 79th benchmarked country with 11 senior cells from the NBS quarterly earnings annex (SAL_CAEM Total sheet, published 2025 annual column, MDL monthly gross): information and communications 35,745.6 anchors the tech pool, finance 28,485.8, and the sector spine follows the house convention. Scope disclosed per the file footnote: units with 4+ employees plus all budgetary institutions, excluding the left-bank Nistru districts and Bender. Same round probes: Ecuador deferred (published by-branch income is only five coarse branches, CIIU detail exists only in microdata), Uruguay deferred (ECH published series split by employment category, not by activity; branch levels stay inside IMS bulletin annexes), Mongolia and Costa Rica unreachable (JS-only tables; TLS handshake rejected from two networks)."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Uzbekistan and Mongolia pass",
+      "summary": "Uzbekistan joins as the 80th benchmarked country on the Statistics Agency annual 2025 press release (section III by-activity table, thousand soums, preliminary): information and communication at 15,298,100 UZS anchors the tech pool, banking-finance 17,597,500, and seven more cells; no professional or administrative rows exist because the release publishes none (absence pinned in the test). Mongolia joins as the 81st on the NSO PxWeb table DT_NSO_0400_022V1 (2025 annual, thousand MNT, both sexes), reached after the browser MCP revealed the API host data.1212.mn behind the JS site: full 11-cell spine with ICT 2,870,100, finance 3,263,400, professional 3,086,200. Uruguay probed a third time and deferred again: the IMS page links only methodology PDFs and index splices; by-branch levels remain inside bulletin PDFs without file links."
     }
   ],
   "rows": [
@@ -31932,6 +31937,346 @@
         "https://statistica.gov.md/ro/castigul-salarial-mediu-lunar-brut-si-indicele-numarului-mediu-9436_62609.html"
       ],
       "note": "Curated directly by the reviewer from the National Bureau of Statistics of the Republic of Moldova, quarterly earnings release annex \"Anexa_castig_sal_tr_II_2026.xlsx\", sheet SAL_CAEM(Total) (Table 3, average monthly gross earnings by economic activity, CAEM), Anul 2025 column, MDL, mean monthly gross. Per the file footnote, the data cover economic and social units with 4 or more employees plus all budgetary institutions regardless of size, and exclude the districts on the left bank of the Nistru and the municipality of Bender. Archetype: all employees in Education (CAEM P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 15,472.1 MDL a month; the Q2 2026 quarter reads 16,895.7 overall and 41,009.6 in information and communications, so 2026 offers run above these floors. Administrative services jumped to about 20,000 MDL in the 2026 quarters, so the 2025 annual figure for that cell is conservative. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. This cell shares the software-engineering senior pool; no separate official data series exists. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15298100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Information and communication. This cell shares the software-engineering senior pool; no separate official security series exists. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17597500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Banking, insurance, leasing, lending, and intermediary services. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6961200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Trade. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9659100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Transportation and storage. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6548800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Construction. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3909300,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Healthcare and provision of social services. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "UZB",
+      "currency": "UZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4372000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.uz/img/news/ish-haqi--eng-21_01_p73184.pdf",
+        "https://stat.uz/img/press-relizlar/ish-haqi--eng_p52701.pdf"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Committee of the Republic of Uzbekistan press release \"Average monthly nominal accrued wages in the Republic of Uzbekistan for January-December 2025 (preliminary data)\" (released 26 January 2026), section III, by type of economic activity. The release expresses values in thousand soums; converted to soums at the trivial thousand-step. Archetype: all employees in Education. No occupation or seniority split is published, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 6,376.7 thousand soums; the January-March 2026 release reads 16,525.4 thousand soums in information and communication, so 2026 offers run above these floors. Professional-scientific and administrative-support activities are not published in this release, so no marketing or HR cells exist for Uzbekistan. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Information and communication (division J, Medeelel kholboo). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in division J. This cell shares the software-engineering senior pool; no separate official data series exists. No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2870100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in division J. This cell shares the software-engineering senior pool; no separate official security series exists. No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3263400,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Financial and insurance activities (division K). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3086200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Professional, scientific and technical activities (division M). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2489900,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Administrative and support service activities (division N). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2148500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Wholesale and retail trade (division G). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3128600,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Transportation and storage (division H). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2426200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Construction (division F). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2498100,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Human health and social work (division Q). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MNG",
+      "currency": "MNT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2360700,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://data.1212.mn/api/v1/mn/NSO/Labour,%20business/Wages/MONTHLY%20AVERAGE%20NOMINAL%20WAGES,%20by%20division%20of%20economic%20activities/DT_NSO_0400_022V1.px",
+        "https://www.nso.mn/mn/statcate/table/Labour,%20business/Wages"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistics Office of Mongolia PxWeb table DT_NSO_0400_022V1 \"Monthly average nominal wages, by division of economic activities, annual\" (served by the data.1212.mn API, table updated 17 August 2026), 2025 year, both sexes combined, all employees. Values are published in thousand MNT and converted to MNT at the trivial thousand-step. Archetype: all employees in Education (division P). No seniority split is applied, so treat as a floor for senior quoting; an economy-wide by-occupation table also exists and is a future upgrade path. Economy-wide 2025 pay averaged 2,726.9 thousand MNT with mining highest at 5,273.9 thousand; information and communication sits close to the national average at the all-employee level, so specialist roles can quote above this floor. MEDIAN-ONLY shape carrying a published sector MEAN."
     }
   ]
 }

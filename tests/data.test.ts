@@ -953,3 +953,68 @@ test('Moldova pass (2026-09-06): NBS CAEM sector spine with verbatim anchors', (
   anchor('healthcare', 17_166.1);
   anchor('education-and-teaching', 13_011.7);
 });
+
+test('Uzbekistan and Mongolia pass (2026-09-06): national statistics agency sector spines with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const uzb = by('UZB');
+  expect(uzb.length, 'UZB row count').toBe(9);
+  for (const row of uzb) {
+    expect(row.currency, 'UZB currency').toBe('UZS');
+    expect(row.basis, 'UZB basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'official sector means stay Medium').toBe('Medium');
+    expect(row.note).toContain('thousand soums');
+    expect(row.note).toContain('preliminary');
+  }
+  expect(uzb.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(9);
+  // The release publishes no professional-scientific or administrative cells, so marketing and HR rows must not exist.
+  expect(uzb.filter((r: { family: string }) => r.family === 'marketing-and-growth')).toHaveLength(0);
+  expect(uzb.filter((r: { family: string }) => r.family === 'hr-and-people')).toHaveLength(0);
+  const uzbAnchor = (family: string, value: number) => {
+    const row = uzb.find((r: { family: string }) => r.family === family);
+    expect(row, `UZB ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  uzbAnchor('software-engineering', 15_298_100);
+  uzbAnchor('data-and-ai', 15_298_100);
+  uzbAnchor('cybersecurity', 15_298_100);
+  uzbAnchor('finance-and-accounting', 17_597_500);
+  uzbAnchor('sales-and-business-development', 6_961_200);
+  uzbAnchor('operations-and-supply-chain', 9_659_100);
+  uzbAnchor('engineering-civil-mechanical-electrical', 6_548_800);
+  uzbAnchor('healthcare', 3_909_300);
+  uzbAnchor('education-and-teaching', 4_372_000);
+
+  const mng = by('MNG');
+  expect(mng.length, 'MNG row count').toBe(11);
+  for (const row of mng) {
+    expect(row.currency, 'MNG currency').toBe('MNT');
+    expect(row.basis, 'MNG basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'NSO official sector means stay Medium').toBe('Medium');
+    expect(row.note).toContain('thousand MNT');
+    expect(row.note).toContain('2025');
+  }
+  expect(mng.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(mng.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  const mngAnchor = (family: string, value: number) => {
+    const row = mng.find((r: { family: string }) => r.family === family);
+    expect(row, `MNG ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  mngAnchor('software-engineering', 2_870_100);
+  mngAnchor('data-and-ai', 2_870_100);
+  mngAnchor('cybersecurity', 2_870_100);
+  mngAnchor('finance-and-accounting', 3_263_400);
+  mngAnchor('marketing-and-growth', 3_086_200);
+  mngAnchor('hr-and-people', 2_489_900);
+  mngAnchor('sales-and-business-development', 2_148_500);
+  mngAnchor('operations-and-supply-chain', 3_128_600);
+  mngAnchor('engineering-civil-mechanical-electrical', 2_426_200);
+  mngAnchor('healthcare', 2_498_100);
+  mngAnchor('education-and-teaching', 2_360_700);
+});

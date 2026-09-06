@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 76,
-    "dataRows": 1859,
+    "tier1CountriesCount": 77,
+    "dataRows": 1870,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -632,6 +632,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64126,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Information and communication (NACE J); no ICT sub-aggregate is published. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "software-engineering",
@@ -1828,6 +1845,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -2764,6 +2789,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -3764,6 +3797,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64126,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -4852,6 +4902,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5656,6 +5714,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6414,6 +6480,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -7322,6 +7396,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -8401,6 +8483,14 @@
       "family": "it-executive",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -9488,6 +9578,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10363,6 +10461,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11108,6 +11214,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -12024,6 +12138,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64126,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -12920,6 +13051,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13679,6 +13818,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14534,6 +14681,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15382,6 +15537,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16059,6 +16222,14 @@
       "family": "design",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -16878,6 +17049,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -17847,6 +18026,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18605,6 +18792,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -19524,6 +19719,23 @@
         "https://www.gulftalent.com/kuwait/salaries/sales-manager"
       ],
       "note": "GulfTalent Kuwait Sales Manager page, n=14 individuals from 14 companies, updated Aug 2026. p50 is the source average; p25/p75 are source lowest/highest (not quartiles). Manager title mapped to senior level. Sales roles often add commission on top of base."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 34654,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Wholesale and retail trade; repair of motor vehicles (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "sales-and-business-development",
@@ -20586,6 +20798,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -21577,6 +21797,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -22651,6 +22879,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 42349,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -23659,6 +23904,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -24565,6 +24818,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -25565,6 +25826,23 @@
         "https://www.gulftalent.com/kuwait/salaries/senior-accountant"
       ],
       "note": "GulfTalent Kuwait Senior Accountant page, self-reported by 24 recently registered registrants from 24 companies, last updated Aug 2026. p50 is the source average monthly compensation; p25/p75 are the source-reported lowest and highest observed salaries (extremes, not true quartiles). Title already denotes senior level. Kuwait has no personal income tax; expat packages typically add housing and transport allowances on top of the quoted monthly figure."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71973,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Financial intermediation and insurance (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -26695,6 +26973,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -27798,6 +28084,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -28885,6 +29179,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 26813,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -29935,6 +30246,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -30908,6 +31227,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -31938,6 +32265,23 @@
         "https://www.gulftalent.com/kuwait/salaries/operations-manager"
       ],
       "note": "GulfTalent Kuwait Operations Manager page, n=21 individuals from 20 companies, updated Aug 2026. p50 is the source average; p25/p75 are source-reported lowest/highest observed (not quartiles). Manager title mapped to senior level. Tax-free; monthly convention."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 46670,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "operations-and-supply-chain",
@@ -33011,6 +33355,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -34005,6 +34357,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34845,6 +35205,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "LVA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -35628,6 +35996,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -36585,6 +36961,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -37702,6 +38086,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30582,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -38750,6 +39151,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -39614,6 +40023,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -40604,6 +41021,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 23353,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Human health and social work activities (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -41576,6 +42010,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -42418,6 +42860,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -43383,6 +43833,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "KGZ",
+      "currency": "KGS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25786,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kg/media/category/c8f4d627-19a5-4885-b239-9bbda01ac1c7.xlsx",
+        "https://stat.gov.kg/ru/opendata/category/858/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Kyrgyz Republic, Wages by type of economic activity (open data category 858, trilingual XLSX), 2024 column, soms, mean monthly gross, and per the file footnote EXCLUDING SMALL ENTERPRISES (excluding small enterprises), so figures sit above the full-economy average. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "education-and-teaching",
@@ -44358,6 +44825,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "KGZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "LVA",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -45199,6 +45674,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "KWT",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "KGZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

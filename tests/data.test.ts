@@ -818,3 +818,32 @@ test('Azerbaijan pass (2026-09-06): sector-spine rows with verbatim anchors', ()
   anchor('healthcare', 847.3);
   anchor('education-and-teaching', 754.2);
 });
+
+test('Kyrgyzstan pass (2026-09-06): sector-spine rows with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('KGZ');
+  expect(rows.length, 'KGZ row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'KGZ currency').toBe('KGS');
+    expect(row.basis, 'KGZ basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality).toBe('Medium');
+    // The published series excludes small enterprises; every note must say so.
+    expect(row.note).toContain('excluding small enterprises');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `KGZ ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 64_126);
+  anchor('finance-and-accounting', 71_973);
+  anchor('marketing-and-growth', 42_349);
+  anchor('operations-and-supply-chain', 46_670);
+  anchor('healthcare', 23_353);
+  anchor('education-and-teaching', 25_786);
+});

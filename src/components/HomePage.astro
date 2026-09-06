@@ -39,7 +39,9 @@ const fontPreload =
     ? '/fonts/noto-sans-arabic-var.woff2'
     : locale === 'hi'
       ? '/fonts/noto-sans-devanagari-var.woff2'
-      : '/fonts/inter-latin-var.woff2';
+      : locale === 'ru'
+        ? '/fonts/inter-cyrillic-var.woff2'
+        : '/fonts/inter-latin-var.woff2';
 const langs: Array<{ code: Locale; label: string; href: string }> = [
   { code: 'en', label: 'EN', href: '/' },
   { code: 'ar', label: 'عربي', href: '/ar/' },
@@ -48,6 +50,7 @@ const langs: Array<{ code: Locale; label: string; href: string }> = [
   { code: 'es', label: 'ES', href: '/es/' },
   { code: 'fr', label: 'FR', href: '/fr/' },
   { code: 'pt', label: 'PT', href: '/pt/' },
+  { code: 'ru', label: 'RU', href: '/ru/' },
 ];
 const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
   '__HL__',
@@ -73,6 +76,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`} />
     <link rel="alternate" hreflang="fr" href={`${SITE_URL}/fr/`} />
     <link rel="alternate" hreflang="pt" href={`${SITE_URL}/pt/`} />
+    <link rel="alternate" hreflang="ru" href={`${SITE_URL}/ru/`} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
     <meta property="og:title" content={t('home.title')} />
     <meta property="og:description" content={t('home.description')} />
@@ -148,7 +152,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
       const wizard = document.getElementById('wizard');
       const results = document.getElementById('results');
       if (wizard && results) {
-        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : document.documentElement.lang === 'fr' ? 'fr' : document.documentElement.lang === 'pt' ? 'pt' : 'en');
+        mountWizard(wizard, results, document.documentElement.lang === 'ar' ? 'ar' : document.documentElement.lang === 'hi' ? 'hi' : document.documentElement.lang === 'id' ? 'id' : document.documentElement.lang === 'es' ? 'es' : document.documentElement.lang === 'fr' ? 'fr' : document.documentElement.lang === 'pt' ? 'pt' : document.documentElement.lang === 'ru' ? 'ru' : 'en');
       }
     </script>
   </body>

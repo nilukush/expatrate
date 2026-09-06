@@ -26,6 +26,7 @@ test.describe('locales', () => {
       { hreflang: 'es', href: expect.stringContaining('/es/') },
       { hreflang: 'fr', href: expect.stringContaining('/fr/') },
       { hreflang: 'pt', href: expect.stringContaining('/pt/') },
+      { hreflang: 'ru', href: expect.stringContaining('/ru/') },
       { hreflang: 'x-default', href: expect.stringMatching(/pages\.dev\/$/) },
     ]));
     // RTL layout uses logical properties: no horizontal overflow.
@@ -129,6 +130,25 @@ test.describe('locales', () => {
     expect(roleOptions).not.toContain('Software Engineering');
   });
 
+  test('the Russian home renders with Russian UI strings and the Cyrillic font', async ({ page }) => {
+    const response = await page.goto('/ru/');
+    expect(response?.status()).toBe(200);
+    expect(await page.getAttribute('html', 'lang')).toBe('ru');
+    expect(await page.getAttribute('html', 'dir')).toBe('ltr');
+    // The Cyrillic subset preloads and the Latin preload is absent.
+    const preloads = await page.$$eval('link[rel=preload][as=font]', (nodes) => nodes.map((n) => n.getAttribute('href')));
+    expect(preloads).toContain('/fonts/inter-cyrillic-var.woff2');
+    expect(preloads.some((href) => href?.includes('inter-latin'))).toBe(false);
+    await page.waitForSelector('#stepIndicator');
+    await expect(page.locator('#stepIndicator')).toContainText('Шаг 1 из 5');
+    await expect(page.locator('#nextBtn')).toContainText('Продолжить');
+    await expect(page.locator('.hero-title')).toContainText('назвать');
+    await expect(page.locator('#autosave')).toContainText('Сохранено в этом браузере');
+    const roleOptions = await page.$$eval('#roleFamily option', (nodes) => nodes.map((n) => n.textContent ?? ''));
+    expect(roleOptions).toContain('Разработка ПО');
+    expect(roleOptions).not.toContain('Software Engineering');
+  });
+
   test('the Arabic home has no axe violations in RTL', async ({ page }) => {
     await page.goto('/ar/');
     await page.waitForSelector('#stepIndicator');
@@ -189,6 +209,7 @@ test('EN programmatic pages emit the reciprocal hreflang set', async ({ page }) 
     { hreflang: 'es', href: expect.stringContaining('/es/salaries/australia/') },
     { hreflang: 'fr', href: expect.stringContaining('/fr/salaries/australia/') },
     { hreflang: 'pt', href: expect.stringContaining('/pt/salaries/australia/') },
+    { hreflang: 'ru', href: expect.stringContaining('/ru/salaries/australia/') },
     { hreflang: 'x-default', href: expect.stringContaining('/salaries/australia/') },
   ]));
   await expect(page.locator('.seo-answer').first()).not.toContainText('{');

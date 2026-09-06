@@ -11,6 +11,7 @@ import {
   sitemapXml,
   alternateLinks,
 } from '../src/lib/seo';
+import { getLocale, setLocale } from '../src/i18n';
 import benchmarks from '../src/data/benchmarks.json';
 
 const entries = benchmarks.entries as Array<Record<string, unknown>>;
@@ -164,4 +165,15 @@ it('llms.txt states the live supported-country count', async () => {
   const llms = readFileSync(`${root}public/llms.txt`, 'utf8');
   const countries = JSON.parse(readFileSync(`${root}src/data/countries.json`, 'utf8')) as unknown[];
   expect(llms).toContain(`${countries.length} countries`);
+});
+
+it('detailPages computes once per locale: the build must not regroup 3,500 cells per page', () => {
+  const original = getLocale();
+  const first = detailPages();
+  expect(detailPages(), 'same locale returns the cached array').toBe(first);
+  setLocale('ar');
+  const arabic = detailPages();
+  expect(arabic, 'a new locale recomputes').not.toBe(first);
+  expect(detailPages(), 'and then caches per locale').toBe(arabic);
+  setLocale(original);
 });

@@ -96,7 +96,20 @@ export interface SeoDetailPage {
   };
 }
 
+/* Cached per locale: detailPages bakes translated strings and regrouping all
+   cells per call was the dominant SSG build cost at 8,000+ rendered pages. */
+const detailPagesCache = new Map<string, SeoDetailPage[]>();
+
 export function detailPages(): SeoDetailPage[] {
+  const cacheKey = getLocale();
+  const cached = detailPagesCache.get(cacheKey);
+  if (cached) return cached;
+  const computed = buildDetailPages();
+  detailPagesCache.set(cacheKey, computed);
+  return computed;
+}
+
+function buildDetailPages(): SeoDetailPage[] {
   const byPair = new Map<string, BenchmarkCell[]>();
   for (const cell of dataCells) {
     const key = `${cell.family}|${cell.country}`;

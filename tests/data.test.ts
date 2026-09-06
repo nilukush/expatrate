@@ -756,3 +756,38 @@ test('Georgia pass (2026-09-06): Geostat occupation spine with Revenue Service m
   anchor('marketing-and-growth', 'senior', 1_786);
   anchor('operations-and-supply-chain', 'senior', 1_553);
 });
+
+test('Caucasus-Central Asia pass (2026-09-06): Armenia and Kazakhstan sector-spine rows with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const expected = { ARM: 'AMD', KAZ: 'KZT' };
+  for (const cc of Object.keys(expected)) {
+    const rows = by(cc);
+    expect(rows.length, `${cc} row count`).toBe(11);
+    for (const row of rows) {
+      expect(row.currency, cc).toBe(expected[cc as keyof typeof expected]);
+      expect(row.basis, cc).toBe('monthly-gross');
+      expect(row.p25, cc).toBe(0);
+      expect(row.p75, cc).toBe(0);
+      expect(row.quality, cc).toBe('Medium');
+    }
+    // Senior-only by design: no occupation or manager cuts exist in these sources.
+    expect(by(cc).filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  }
+  const anchor = (cc: string, family: string, value: number) => {
+    const row = by(cc).find((r: { family: string }) => r.family === family);
+    expect(row, `${cc} ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  // Armenia: ArmStat 2025 annual column; the ICT sub-aggregate sits inside NACE J.
+  anchor('ARM', 'software-engineering', 1_052_774);
+  anchor('ARM', 'finance-and-accounting', 956_061);
+  anchor('ARM', 'healthcare', 261_687);
+  anchor('ARM', 'education-and-teaching', 174_424);
+  // Kazakhstan: BNS 2025 by activity, small enterprises included.
+  anchor('KAZ', 'software-engineering', 674_113);
+  anchor('KAZ', 'finance-and-accounting', 854_440);
+  anchor('KAZ', 'operations-and-supply-chain', 524_638);
+  anchor('KAZ', 'healthcare', 334_195);
+});

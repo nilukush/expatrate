@@ -13,7 +13,8 @@
     "Taiwan addition (2026-09-03): the owner approved Taiwan as the 207th supported country, so the 46 rows parked from wave 6 now merge. Rows are 104 Salary Guide published P25/P50/P75 monthly bands by title and tenure with per-band sample counts (Medium, n under 100 held Low), corroborated by the MOL 2025 occupational wage survey; every figure verified against 104's public JSON. Taiwan PPP is the IMF WEO implied conversion rate (GDP basis, 2025) since the World Bank has no Taiwan series; no statutory tax regime, so the disclosed 20 percent default applies.",
     "Expansion wave 7 (2026-09-04, docs/RESEARCH/benchmark-curation-2026-08-30.md): the remaining EEA markets plus Peru, 13 countries, 418 rows, closing out Europe. Bulgaria 46 (Eurostat SES 2022 backbone plus State Gazette statutory teacher minima), Croatia 34 all-High (Eurostat plus Croatian public-service coefficients on the verified 2026 base), Cyprus 30 (Eurostat plus CYSTAT via attributed reproduction plus CareerFinders), Estonia 23 (Statistics Estonia register-based palgad.stat.ee medians), Iceland 39 all-High (Statistics Iceland VIN02001 quartiles with a disclosed seniority proxy), Lithuania 39 (manoalga.lt self-reported spans, all Low, official sources Cloudflare-blocked), Luxembourg 23 (Eurostat, Eurydice statutory teachers, ITM social-sector grid, Robert Half), Malta 29 (gov.mt 2026 payscales, Eurostat, Archer guide), Slovakia 40 (platy.sk spans mostly Low, Health Ministry statutory physician tables), Slovenia 37 all-High (SURS quartiles by occupation), Peru 28 (gob.pe statutory comunicado, MTPE Planilla Electronica physician averages, Buk Peru payroll bands), Hungary 25 and Latvia 25 built directly by the reviewer from the same verified Eurostat SES pull when the research agents hit an account usage limit. One Slovak rolling-survey row re-verified and updated to the page's current endpoints. All anchors independently verified; Iceland and Estonia anchors corroborated exactly against Eurostat because their national APIs block this network.",
     "Western Balkans pass (2026-09-05): Serbia 25, Bosnia and Herzegovina 25, North Macedonia 24, and Albania 21 rows, built directly by the reviewer from Eurostat SES 2022 (earn_ses22_48, mean monthly gross, enterprises with 10 or more employees, total sex) on the exact Hungary and Latvia recipe: senior cells are ISCO major group 2 professionals in the family's NACE sector, lead cells are ISCO major group 1 managers in the same sector, and executive cells share the economy-wide managers pool. Albania publishes no economy-wide managers cell (so no executive rows) and North Macedonia misses only the finance managers cell. Montenegro and Kosovo publish nothing in this dataset and stay marker-only. Median-only rows carrying published means, with the all-seniority-mean disclosure in every note; each source URL is the exact filtered API cell. Every value is verbatim from the API response captured on merge day.",
-    "Georgia pass (2026-09-06): 16 rows, the first national-source pass beyond Eurostat. Spine: Geostat Average monthly nominal earnings by occupation, 2021 sheet (the latest official occupation cut, ISCO-08 two-digit, all sectors, mean monthly gross) with the ICT professionals cell (ISCO 25, 2,268.39 GEL) anchoring software, data, and cybersecurity senior; managers (ISCO 1) and chief executives (ISCO 11) anchor lead and executive cells. Because the occupation cut is five years old, every occupation note discloses that economy-wide average earnings rose from 1,304.52 GEL in 2021 to 2,282.70 GEL in 2025 and directs readers to treat the figure as a floor. Sector families without an occupation series use the 2024 Revenue Service median by activity (marketing M 1,786; sales G 1,256; operations H 1,553; engineering F 1,943, all-occupations sector medians, disclosed per row), and the same file corroborates the occupation rows in notes. All quality Medium: mixed-vintage official data. Every value verbatim from the cited spreadsheets, downloaded and re-read on merge day."
+    "Georgia pass (2026-09-06): 16 rows, the first national-source pass beyond Eurostat. Spine: Geostat Average monthly nominal earnings by occupation, 2021 sheet (the latest official occupation cut, ISCO-08 two-digit, all sectors, mean monthly gross) with the ICT professionals cell (ISCO 25, 2,268.39 GEL) anchoring software, data, and cybersecurity senior; managers (ISCO 1) and chief executives (ISCO 11) anchor lead and executive cells. Because the occupation cut is five years old, every occupation note discloses that economy-wide average earnings rose from 1,304.52 GEL in 2021 to 2,282.70 GEL in 2025 and directs readers to treat the figure as a floor. Sector families without an occupation series use the 2024 Revenue Service median by activity (marketing M 1,786; sales G 1,256; operations H 1,553; engineering F 1,943, all-occupations sector medians, disclosed per row), and the same file corroborates the occupation rows in notes. All quality Medium: mixed-vintage official data. Every value verbatim from the cited spreadsheets, downloaded and re-read on merge day.",
+    "Caucasus-Central Asia pass (2026-09-06): Armenia and Kazakhstan, 11 senior rows each, lifting coverage to 75 of 207. Armenia runs on the ArmStat Average Monthly Nominal Wages by Industries file (NACE rev.2, annual 2025, mean monthly gross, all employees; underlying source base is the State Revenue Committee personalized tax and social-contribution register): the information-technologies sub-aggregate inside NACE J (58.2, 62, 63.1; 1,052,774 AMD) anchors software, data, and cybersecurity senior, with all-of-J at 869,661 AMD as corroboration. Kazakhstan runs on the Bureau of National Statistics Wages of employees taking into account small enterprises, 2025, average monthly nominal wage by activity: Information and communication at 674,113 KZT anchors the tech pool, with finance 854,440 and the remaining sector archetypes mapped as in the Georgia sector convention. Both sources publish no occupation or seniority split, so every row is senior-level with the all-employee mean-as-floor disclosure; no lead or executive rows were invented. All values verbatim from the spreadsheets downloaded and re-read on merge day."
   ],
   "rows": [
     {
@@ -30722,6 +30723,380 @@
         "https://geostat.ge/media/77569/01_Earnings_annual.xlsx"
       ],
       "note": "Curated directly by the reviewer from Geostat (National Statistics Office of Georgia), Average monthly nominal earnings of employees by occupation, 2021 sheet (ISCO-08 two-digit), mean monthly gross, all sectors, total sex; the 2021 sheet is the latest official occupation cut. Archetype: Teaching Professionals (ISCO 23), all sectors. economy-wide average earnings rose from 1,304.52 GEL (2021) to 2,282.70 GEL (2025, Geostat annual series), so treat this figure as a floor for senior quoting. MEDIAN-ONLY shape carrying a published MEAN, all-seniority. Corroboration: median earnings in Education were 969 GEL in 2024 (all employees in the sector)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate inside Information and communication (NACE 58.2, 62, 63.1), the closest official proxy for the ICT professionals pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. Corroboration: all of Information and communication averaged 869,661 AMD in 2025."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate (NACE 58.2, 62, 63.1); no separate official data occupation series exists. This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate (NACE 58.2, 62, 63.1); no separate official security series exists. This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 956061,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 303624,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 217682,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 223255,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Wholesale and retail trade (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 320440,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 267580,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 261687,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Human health and social work activities (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 174424,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J); no occupation or ICT sub-aggregate is published. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 854440,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 532306,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 300723,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 401099,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Wholesale and retail trade (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 524638,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 358183,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 334195,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Health and social services (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 322678,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     }
   ]
 }

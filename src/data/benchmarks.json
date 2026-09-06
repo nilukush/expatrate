@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 73,
-    "dataRows": 1826,
+    "tier1CountriesCount": 75,
+    "dataRows": 1848,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -40,6 +40,23 @@
         "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
       ],
       "note": "Published role: Developer, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01 states all figures are monthly gross (bruto) salary. Data window December 2025 to February 2026, published 2026-03-04. Sample: 5074 surveyed, 4939 analyzed; Developer is 33.7 percent of sample; figure is from the non-dollarized (peso paid) subset; cells with n under 20 are suppressed by the survey and this cell passed. Self-selected community survey, use with caution. Same-cell alternatives on the page: SysAdmin/DevOps/SRE Senior 5450000 (dollarized subset only); QA/Tester Senior 2600000 (non-dollarized). Survey-wide IT median 3253581."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate inside Information and communication (NACE 58.2, 62, 63.1), the closest official proxy for the ICT professionals pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. Corroboration: all of Information and communication averaged 869,661 AMD in 2025."
     },
     {
       "family": "software-engineering",
@@ -556,6 +573,23 @@
         "https://www.daijob.com/en/guide/expat-essentials/2026-salary-benchmarks-in-japan/"
       ],
       "note": "e-Stat Basic Survey on Wage Structure 2025, Table 5, occupation 'software creators', age 45-49: contractual cash earnings 473.6k JPY/mo x 12 + annual bonus 1,608.9k = 7,292.1k p50; n=78,270 in band (occupation total n=817,860). p25/p75 derived from Table 17 official percentiles of monthly scheduled earnings for the occupation (P25 273.7k / median 329.5k / P75 403.4k): P25/median 0.831 and P75/median 1.224 applied to the age-band annual center. Cross-checks: Robert Walters Japan public page: mid-level IT 6-10M, senior listings 7-12M; Daijob: international software engineer Tokyo median 8-12M (bilingual/Tokyo premium above national mean)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J); no occupation or ICT sub-aggregate is published. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "software-engineering",
@@ -1247,6 +1281,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -1724,6 +1766,14 @@
         "https://www.robertwalters.co.jp/en/expertise/technology-and-transformation/development-jobs.html"
       ],
       "note": "e-Stat 2025 Table 5, software creators, age 50-54: 474.4k/mo x 12 + 1,531.3k bonus = 7,224.1k p50; n=63,250 in band. p25/p75 from Table 17 percentile ratios (0.831/1.224) applied to band center. Lead band sits marginally below 45-49 in the source data (bonus volatility); nominal difference is within rounding."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "software-engineering",
@@ -2298,6 +2348,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -2649,6 +2707,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -3076,6 +3142,23 @@
         "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
       ],
       "note": "Published role: Data Engineer, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Data Engineer is 2.9 percent of sample; non-dollarized subset. Same-cell alternatives on the page: Data Scientist Senior 5000000; BI Analyst / Data Analyst Senior 3382000 (both non-dollarized); AI Engineer figures suppressed for n under 20."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate (NACE 58.2, 62, 63.1); no separate official data occupation series exists. This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "data-and-ai",
@@ -3589,6 +3672,23 @@
         "https://www.daijob.com/en/guide/expat-essentials/2026-salary-benchmarks-in-japan/"
       ],
       "note": "No AI/data-science occupation exists in official statistics. Single recruiter source: Daijob 2026 Salary Benchmarks (published 2026-01-19): AI/ML Specialist Tokyo 10-15M JPY; band endpoints used as p25/p75, midpoint as p50. Context from e-Stat 2025: nearest official IT occupations at 45-49 are 'other information processing/communications engineers' 7.02M and 'systems consultants/designers' 12.26M annualized; the recruiter band is Tokyo/international-market skewed. Treat as Low."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "data-and-ai",
@@ -4239,6 +4339,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -4647,6 +4755,14 @@
       "family": "data-and-ai",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -5123,6 +5239,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5435,6 +5559,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -5849,6 +5981,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -6176,6 +6316,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -6658,6 +6806,14 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -7060,6 +7216,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -7614,6 +7778,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -8109,6 +8281,14 @@
         "https://www.robertwalters.co.jp/en/expertise/technology-and-transformation/development-jobs.html"
       ],
       "note": "e-Stat Basic Survey on Wage Structure 2025 (Reiwa 7, surveyed June 2025, published 2026), Table 20: managerial-occupation workers in Information and Communications industry: contractual cash earnings 677.0k JPY/mo x 12 + annual special earnings (bonus) 3,134.5k = 11,258.5k p50; n=141,290 (firms 10+ employees, regular workers, all Japan). p25/p75 derived by applying official P25/median (0.811) and P75/median (1.247) dispersion ratios of managerial occupations from Table 17 (n=1,758,300). Cross-checks: MHLW by-position table bucho-level (dept head) 635.8k/mo = about 10.1M annualized with mean managerial bonus 2,471.2k; Daijob IT Director 12-25M (Tokyo/international skew); Robert Walters states IT leadership at global firms exceeds 20M. Recruiter bands sit above the national official mean as expected for foreign-capital/Tokyo roles."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -8749,6 +8929,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -9162,6 +9350,14 @@
       "family": "product-management",
       "level": "senior",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -9656,6 +9852,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -10022,6 +10226,14 @@
       "family": "product-management",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -10458,6 +10670,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10750,6 +10970,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -11146,6 +11374,23 @@
         "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
       ],
       "note": "Published role: Infosec, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; Infosec is 2.4 percent of sample; non-dollarized subset. Same-cell alternative: Infosec Semi-Senior 2759000; dollarized-subset Infosec Senior 6043198. No lead or executive security figure passed the survey cutoff, so those cells left empty."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1052774,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: the information technologies sub-aggregate (NACE 58.2, 62, 63.1); no separate official security series exists. This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "cybersecurity",
@@ -11611,6 +11856,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 674113,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "cybersecurity",
@@ -12139,6 +12401,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -12480,6 +12750,14 @@
       "family": "cybersecurity",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -12901,6 +13179,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -13225,6 +13511,14 @@
         "https://www.daijob.com/en/guide/expat-essentials/2026-salary-benchmarks-in-japan/"
       ],
       "note": "No cybersecurity occupation exists in official statistics. Single recruiter source: Daijob 2026 Salary Benchmarks (2026-01-19): Cybersecurity Director 9-14M JPY; endpoints as p25/p75, midpoint as p50. Treat as Low; Tokyo/international-market skew."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "cybersecurity",
@@ -13601,6 +13895,14 @@
       "family": "design",
       "level": "senior",
       "country": "ARG",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "ARM",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14033,6 +14335,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, designers, age 45-49: 420.1k/mo x 12 + 981.1k bonus = 6,022.3k p50; n=14,290 in band (occupation n=91,450). p25/p75 from Table 17 designer percentiles (P25 266.1k / median 326.5k / P75 421.5k; ratios 0.815/1.291)."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "design",
@@ -14525,6 +14835,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -14873,6 +15191,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, designers, age 50-54: 423.6k/mo x 12 + 1,223.9k bonus = 6,307.1k p50; n=7,550 in band. Percentile-ratio spread 0.815/1.291."
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "design",
@@ -15263,6 +15589,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15530,6 +15864,14 @@
       "family": "design",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -15885,6 +16227,14 @@
         "https://sueldos.openqube.io/encuesta-sueldos-2026.01/"
       ],
       "note": "Published role: Scrum Master, Senior. Median-only. Basis authority: sysarmy/OpenQube survey 2026.01, monthly gross (bruto). Data window December 2025 to February 2026, published 2026-03-04. Sample 5074 surveyed, 4939 analyzed; role share 0.6 percent but cell passed the n-20 cutoff; non-dollarized subset; tech industry. Same-cell alternatives: Business Analyst Senior 3175877; Product Owner Semi-Senior 3750000 (Product Owner Senior suppressed for small n)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "delivery-and-project-management",
@@ -16325,6 +16675,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -16864,6 +17222,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -17263,6 +17629,14 @@
       "family": "delivery-and-project-management",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -17709,6 +18083,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18004,6 +18386,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -18384,6 +18774,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 223255,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Wholesale and retail trade (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "sales-and-business-development",
@@ -18855,6 +19262,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, machinery/ICT/systems sales workers, the main professional B2B sales classification, age 45-49: 497.8k/mo x 12 + 1,842.0k bonus = 7,815.6k p50; n=29,630 in band (occupation n=236,130). p25/p75 from Table 17 percentiles (P25 294.0k / median 358.0k / P75 447.3k; ratios 0.821/1.249). Financial-products sales at 45-49 are similar (8,738k)."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 401099,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Wholesale and retail trade (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "sales-and-business-development",
@@ -19450,6 +19874,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -19906,6 +20338,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, machinery/ICT/systems sales workers, age 50-54: 501.8k/mo x 12 + 1,892.5k bonus = 7,914.1k p50; n=31,540 in band. Percentile-ratio spread 0.821/1.249."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "sales-and-business-development",
@@ -20464,6 +20904,14 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20869,6 +21317,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -21454,6 +21910,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 303624,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -21887,6 +22360,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Proxy occupation: e-Stat 2025 Table 5, sales-related occupations (includes marketing/sales-promotion specialists; the survey has no distinct marketing classification), age 45-49: 511.0k/mo x 12 + 1,827.2k bonus = 7,959.2k p50; n=10,320 in band (occupation n=88,650). p25/p75 from Table 17 percentiles (P25 279.1k / median 350.6k / P75 460.3k; ratios 0.796/1.313)."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 532306,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "marketing-and-growth",
@@ -22441,6 +22931,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -22880,6 +23378,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Proxy as the senior row: sales-related occupations, age 50-54: 493.3k/mo x 12 + 1,883.6k bonus = 7,803.2k p50; n=8,990 in band. Percentile-ratio spread 0.796/1.313."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "marketing-and-growth",
@@ -23377,6 +23883,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23766,6 +24280,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -24228,6 +24750,23 @@
         "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
       ],
       "note": "Published role: Administracion y Finanzas area, Semi Senior/Senior bucket. Median-only (published average). Basis authority: Bumeran labor-market index, June 2026; gross monthly salary expectations declared in applications, not observed pay; area database holds around 454481 declared salaries. Data month June 2026. Same-cell alternatives: sysarmy Auditor Senior 3000000 and Finance Semi-Senior 2129683, gross paid, tech-industry accountants, December 2025 to February 2026."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 956061,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "finance-and-accounting",
@@ -24697,6 +25236,23 @@
         "https://www.daijob.com/en/guide/expat-essentials/2026-salary-benchmarks-in-japan/"
       ],
       "note": "e-Stat 2025 Table 5, occupation 'certified public accountants and tax attorneys', age 45-49: 676.5k/mo x 12 + 1,840.4k bonus = 9,958.4k p50; n=3,260 in band (occupation n=26,640). p25/p75 from Table 17 occupation percentiles (P25 344.3k / median 434.1k / P75 593.3k; ratios 0.793/1.367) applied to band center. Daijob corroborates: finance professional Tokyo 6-12M (below CPA-qualified senior level)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 854440,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "finance-and-accounting",
@@ -25333,6 +25889,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -25809,6 +26373,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, CPAs and tax attorneys, age 50-54: 597.3k/mo x 12 + 1,922.2k bonus = 9,089.8k p50; n=3,250. p25/p75 via Table 17 percentile ratios (0.793/1.367). Source shows 55-59 band rising to 12.5M; the 50-54 dip reflects small n and bonus volatility."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "finance-and-accounting",
@@ -26410,6 +26982,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -26887,6 +27467,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 20, managerial-occupation workers in Finance and Insurance industry: 745.1k/mo x 12 + 3,869.4k bonus = 12,810.6k p50; n=128,190. p25/p75 via managerial-occupation percentile ratios from Table 17 (0.811/1.247). Daijob CFO benchmark 20-30M is for listed-company CFOs, above the industry-managerial population."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "finance-and-accounting",
@@ -27498,6 +28086,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 217682,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -27923,6 +28528,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, general-affairs/HR clerical workers, age 45-49: 361.7k/mo x 12 + 1,105.7k bonus = 5,446.1k p50; n=110,750 in band (occupation n=787,910; the survey mixes general affairs with HR, and HR specialists typically sit above). p25/p75 from Table 17 percentiles (P25 240.2k / median 293.5k / P75 378.1k; ratios 0.818/1.288)."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 300723,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "hr-and-people",
@@ -28503,6 +29125,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -28958,6 +29588,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, general-affairs/HR clerical workers, age 50-54: 386.3k/mo x 12 + 1,354.4k bonus = 5,990.0k p50; n=119,320 in band. Percentile-ratio spread 0.818/1.288."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "hr-and-people",
@@ -29512,6 +30150,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -29911,6 +30557,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -30451,6 +31105,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 320440,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -30873,6 +31544,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 524638,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "operations-and-supply-chain",
@@ -31476,6 +32164,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -31932,6 +32628,14 @@
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -32492,6 +33196,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -32902,6 +33614,14 @@
       "family": "operations-and-supply-chain",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -33420,6 +34140,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -33721,6 +34449,14 @@
         "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/dl/08.pdf"
       ],
       "note": "e-Stat 2025 Table 5, managerial-occupation workers (bucho/kacho/kakaricho levels combined), age 45-49: 605.0k/mo x 12 + 2,504.4k bonus = 9,764.4k p50; n=358,630 in band (occupation n=1,758,300). p25/p75 from Table 17 managerial percentiles (P25 446.9k / median 551.3k / P75 687.3k; ratios 0.811/1.247). At 45-49 most managers are kacho-level (MHLW by-position: kacho 529.2k/mo mean, age 49.5)."
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -34131,6 +34867,14 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -34487,6 +35231,14 @@
         "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/dl/08.pdf"
       ],
       "note": "e-Stat 2025 Table 5, managerial occupations, age 50-54: 613.9k/mo x 12 + 2,770.1k bonus = 10,136.9k p50; n=478,880 in band. Percentile-ratio spread 0.811/1.247. Mix of kacho/bucho; MHLW by-position: kakaricho 399.2k/mo, kacho 529.2k/mo, bucho 635.8k/mo (all-industry monthly contractual, June 2025)."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -34923,6 +35675,14 @@
         "https://www.bumeran.com.ar/blog/mercado-laboral/index-de-salarios-pretendidos-en-argentina/"
       ],
       "note": "Published role: Director (company directors), large companies CABA/GBA. Median-only (published approximate average across the director roles listed). Basis authority: iProfesional article 2026-01-08, gross monthly (bruto), synthesis of the main salary surveys (unnamed). Data month January 2026. Same-cell alternative: Bumeran June 2026 Gerencia y Direccion General Semi Senior/Senior average expected salary 3750000 (all company sizes, asked not paid); Infobae/Bumeran June 2026 all-level rubro average expectation 2802540."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -35411,6 +36171,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "MHLW Basic Survey on Wage Structure 2025, by-position table (indefinite-contract regular workers, all industries): bucho-level (department head) contractual cash earnings 635.8k JPY/mo (mean age 53.1). The position table publishes no bonus figure, so annual = 635.8k x 12 + managerial-occupation mean annual bonus 2,471.2k (e-Stat Table 5) = 10,100.8k p50; n not stated in the overview table. p25/p75 via managerial percentile ratios (0.811/1.247). Excludes board-level executives, whose pay is outside the survey scope."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -35998,6 +36766,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 267580,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -36469,6 +37254,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Composite of four e-Stat 2025 Table 5 occupations at age 45-49 (annual = contractual/mo x 12 + bonus): electrical/electronic/telecom engineers 8,305.0k (n=37,890); mechanical engineers 7,749.2k (n=42,810); civil engineers 6,857.6k (n=36,300); architectural engineers 7,649.3k (n=37,490). Simple average center 7,640.3k; combined band n=154,490. p25/p75 use the average of the four occupations' Table 17 percentile ratios (avg 0.799/1.281)."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 358183,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -37060,6 +37862,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -37503,6 +38313,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Same four occupations at age 50-54 (e-Stat 2025 Table 5): electrical/electronic/telecom 8,506.4k (n=41,660); mechanical 8,053.4k (n=49,610); civil 7,264.1k (n=42,050); architectural 8,084.1k (n=47,910). Average center 7,977.0k; combined band n=181,230; percentile-ratio spread as the senior row."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -38018,6 +38836,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "AUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -38347,6 +39173,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -38811,6 +39645,23 @@
         "https://convenios.ate.org.ar/wp-content/uploads/2026/03/salud-enero-26_merged.pdf"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Published role: Profesional Adjunto (AD) rank, national public hospital health professional career, Decreto 1133/09, Ministerio de Salud. SPAN shape: p25 and p75 are the rank's published entry (Inicial) and step-10 remuneration, not percentiles. Basis authority: statutory pay scale labeled Remuneraciones en pesos (gross), effective 1 May 2026. Population: all professionals (physicians, pharmacists, biochemists and similar) in national public hospitals and institutes. Same-cell alternative: Profesional Asistente rank span 1165368 to 1856839 (entry rank). Private-sector FATSA basics are lower (see sources doc)."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 261687,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Human health and social work activities (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "healthcare",
@@ -39282,6 +40133,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, physicians, age 45-49: 1,286.7k/mo x 12 + 1,593.6k bonus = 17,034.0k p50; n=14,550 in band (occupation n=145,170). p25/p75 from Table 17 physician percentiles (P25 666.6k / median 971.3k / P75 1,338k; ratios 0.686/1.377), the widest official spread of any occupation surveyed. Nurses, the other large healthcare occupation, sit far lower (45-49: 5,612k annualized)."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 334195,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Health and social services (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "healthcare",
@@ -39842,6 +40710,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -40230,6 +41106,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "e-Stat 2025 Table 5, physicians, age 50-54: 1,351.8k/mo x 12 + 1,577.6k bonus = 17,799.2k p50; n=15,980 in band. Percentile-ratio spread as the senior row (0.686/1.377)."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "healthcare",
@@ -40710,6 +41594,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -41052,6 +41944,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -41511,6 +42411,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "ARM",
+      "currency": "AMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 174424,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.armstat.am/file/doc/99570268.xlsx",
+        "https://www.armstat.am/en/?nid=964"
+      ],
+      "note": "Curated directly by the reviewer from the Statistical Committee of Armenia (ArmStat), Average Monthly Nominal Wages/Salaries by Industries (NACE rev.2), annual 2025 column, mean monthly gross, all employees, total economy; source base is the State Revenue Committee personalized income-tax and social-contribution register. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -41966,6 +42883,23 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Average of e-Stat 2025 Table 5 at age 45-49: elementary/junior-high teachers 8,577.7k (n=3,210) and high-school teachers 7,725.7k (n=9,820); center 8,151.7k, combined n=13,030. Public-school pay is standardized, so the spread is narrow: p25/p75 via Table 17 percentile ratios averaged (0.778/1.242). Private-sector and university pay differ (university professors 50-54: 11,297k annualized)."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "KAZ",
+      "currency": "KZT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 322678,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://stat.gov.kz/api/iblock/element/411479/file/en/",
+        "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
+      ],
+      "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "education-and-teaching",
@@ -42518,6 +43452,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -42913,6 +43855,14 @@
         "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421132&fileKind=4"
       ],
       "note": "Average of e-Stat 2025 Table 5 at age 50-54: elementary/junior-high teachers 8,956.3k (n=2,550), high-school teachers 7,999.0k (n=9,180); center 8,477.7k, combined n=11,730. Percentile-ratio spread as the senior row."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "KAZ",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "education-and-teaching",
@@ -43384,6 +44334,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "ARM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "AUS",
       "currency": "AUD",
       "basis": "annual-gross",
@@ -43734,6 +44692,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "JPN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "KAZ",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

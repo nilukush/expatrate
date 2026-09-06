@@ -429,7 +429,7 @@ test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () =
     (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
   );
   const currency = { FRA: 'EUR', ESP: 'EUR', POL: 'PLN', TUR: 'TRY' };
-  const counts = { FRA: 22, ESP: 16, POL: 22, TUR: 7 };
+  const counts = { FRA: 22, ESP: 16, POL: 22, TUR: 11 };
   for (const cc of Object.keys(counts)) {
     const rows = by(cc);
     expect(rows.length, cc).toBeGreaterThanOrEqual(counts[cc as keyof typeof counts]);
@@ -455,9 +455,9 @@ test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () =
   expect(polSw.p25).toBe(0);
   expect(polSw.p75).toBe(0);
   const turSw = by('TUR').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
-  expect(turSw.p50).toBe(1_851_540);
-  expect(turSw.basis).toBe('annual-gross');
-  expect(turSw.quality).toBe('Low');
+  expect(turSw.p50).toBe(91_799.62);
+  expect(turSw.basis).toBe('monthly-gross');
+  expect(turSw.quality).toBe('Medium');
 });
 
 test('expansion wave 4: Italy, Sweden, Norway, Denmark, Czechia, Portugal carry verified rows', () => {
@@ -846,4 +846,74 @@ test('Kyrgyzstan pass (2026-09-06): sector-spine rows with verbatim anchors', ()
   anchor('operations-and-supply-chain', 46_670);
   anchor('healthcare', 23_353);
   anchor('education-and-teaching', 25_786);
+});
+
+test('Turkey upgrade (2026-09-06): TUIK NACE Rev.2 spine replaces the ERI rows with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('TUR');
+  expect(rows.length, 'TUR row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'TUR currency').toBe('TRY');
+    expect(row.basis, 'TUR basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'TUIK official sector means stay Medium').toBe('Medium');
+    expect(row.note).toContain('NACE Rev.2');
+    expect(row.note).toContain('10 or more employees');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `TUR ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 91_799.62);
+  anchor('data-and-ai', 80_826.88);
+  anchor('cybersecurity', 91_799.62);
+  anchor('finance-and-accounting', 104_715.47);
+  anchor('marketing-and-growth', 35_567.52);
+  anchor('hr-and-people', 34_626.62);
+  anchor('sales-and-business-development', 30_714.11);
+  anchor('operations-and-supply-chain', 36_307.63);
+  anchor('engineering-civil-mechanical-electrical', 21_498.68);
+  anchor('healthcare', 56_417.81);
+  anchor('education-and-teaching', 62_846.07);
+});
+
+test('Russia pass (2026-09-06): Rosstat by-activity spine with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('RUS');
+  expect(rows.length, 'RUS row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'RUS currency').toBe('RUB');
+    expect(row.basis, 'RUS basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'Rosstat official sector means stay Medium').toBe('Medium');
+    expect(row.note).toContain('Rosstat');
+    expect(row.note).toContain('Zaporozhye and Kherson');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `RUS ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 184_338.9);
+  anchor('data-and-ai', 184_338.9);
+  anchor('cybersecurity', 184_338.9);
+  anchor('finance-and-accounting', 216_870.4);
+  anchor('marketing-and-growth', 145_842.6);
+  anchor('hr-and-people', 71_525.4);
+  anchor('sales-and-business-development', 89_444.1);
+  anchor('operations-and-supply-chain', 103_763.7);
+  anchor('engineering-civil-mechanical-electrical', 100_853);
+  anchor('healthcare', 82_183.7);
+  anchor('education-and-teaching', 71_344.3);
 });

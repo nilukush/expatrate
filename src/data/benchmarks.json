@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 77,
-    "dataRows": 1870,
+    "tier1CountriesCount": 78,
+    "dataRows": 1885,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -992,6 +992,23 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 184338.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Information and communication (OKVED J). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -1202,16 +1219,17 @@
       "level": "senior",
       "country": "TUR",
       "currency": "TRY",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 1851540,
+      "p50": 91799.62,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.salaryexpert.com/salary/job/software-engineer/turkey"
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
       ],
-      "note": "SalaryExpert (ERI) page last updated 5 Aug 2026. Senior level 8+ years average annual gross for software engineers; ERI publishes averages by experience band, not percentiles. All-experience median 1,580,320 TRY, entry 1,136,235 TRY."
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Computer programming, consultancy and related activities (NACE Rev.2 62). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "software-engineering",
@@ -2114,6 +2132,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2291,17 +2317,9 @@
       "family": "software-engineering",
       "level": "lead",
       "country": "TUR",
-      "currency": "TRY",
-      "basis": "annual-gross",
-      "p25": 0,
-      "p50": 2502847,
-      "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.salaryexpert.com/salary/job/software-engineering-manager/turkey"
-      ],
-      "note": "SalaryExpert (ERI) page last updated 17 Nov 2025. Software Engineering Manager senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall average 1,980,511 TRY."
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "software-engineering",
@@ -2993,6 +3011,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -4131,6 +4157,23 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 184338.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in OKVED J. This cell shares the software-engineering senior pool; no separate official data series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -4334,16 +4377,17 @@
       "level": "senior",
       "country": "TUR",
       "currency": "TRY",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 1857476,
+      "p50": 80826.88,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.salaryexpert.com/salary/job/data-scientist/turkey"
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
       ],
-      "note": "SalaryExpert (ERI) page last updated 26 Aug 2026. Data Scientist senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall median 1,583,755 TRY, entry 1,143,511 TRY."
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Information service activities (NACE Rev.2 63), which includes data processing and hosting. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -5121,6 +5165,14 @@
       "family": "data-and-ai",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -5915,6 +5967,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6700,6 +6760,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -7668,6 +7736,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -8812,6 +8888,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9001,17 +9085,9 @@
       "family": "it-executive",
       "level": "executive",
       "country": "TUR",
-      "currency": "TRY",
-      "basis": "annual-gross",
-      "p25": 0,
-      "p50": 4461350,
-      "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.salaryexpert.com/salary/job/chief-information-officer/turkey"
-      ],
-      "note": "SalaryExpert (ERI) page last updated 26 Aug 2026. Chief Information Officer senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall median 3,299,599 TRY, entry 2,295,512 TRY."
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -9828,6 +9904,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9977,17 +10061,9 @@
       "family": "product-management",
       "level": "senior",
       "country": "TUR",
-      "currency": "TRY",
-      "basis": "annual-gross",
-      "p25": 0,
-      "p50": 1599635,
-      "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.salaryexpert.com/salary/job/product-manager/turkey"
-      ],
-      "note": "SalaryExpert (ERI) page last updated 19 Nov 2025. Product Manager senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall average 1,276,215 TRY, entry 921,600 TRY."
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "product-management",
@@ -10688,6 +10764,14 @@
       "family": "product-management",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -11415,6 +11499,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -12433,6 +12525,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 184338.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in OKVED J. This cell shares the software-engineering senior pool; no separate official security series exists. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -12601,16 +12710,17 @@
       "level": "senior",
       "country": "TUR",
       "currency": "TRY",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 1650532,
+      "p50": 91799.62,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
       "sources": [
-        "https://www.salaryexpert.com/salary/job/cyber-security-analyst/turkey"
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
       ],
-      "note": "SalaryExpert (ERI) page dated 2026. Cyber Security Analyst senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall average 1,425,460 TRY, entry 1,008,494 TRY."
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in NACE Rev.2 62; no separate official security series exists. This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "cybersecurity",
@@ -13272,6 +13382,14 @@
       "family": "cybersecurity",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14029,6 +14147,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -14932,6 +15058,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15082,17 +15216,9 @@
       "family": "design",
       "level": "senior",
       "country": "TUR",
-      "currency": "TRY",
-      "basis": "annual-gross",
-      "p25": 0,
-      "p50": 1367335,
-      "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.salaryexpert.com/salary/job/ux-designer/turkey"
-      ],
-      "note": "SalaryExpert (ERI) page dated 2026. UX Designer senior level 8+ years average annual gross; ERI publishes averages by experience band, not percentiles. Overall average 1,086,411 TRY, entry 772,208 TRY."
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "design",
@@ -15731,6 +15857,14 @@
       "family": "design",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -16398,6 +16532,14 @@
       "family": "design",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -17359,6 +17501,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18255,6 +18405,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18993,6 +19151,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -20023,6 +20189,23 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 89444.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Wholesale and retail trade (OKVED G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -20199,9 +20382,18 @@
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30714.11,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Wholesale and retail trade (NACE Rev.2 G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "sales-and-business-development",
@@ -21070,6 +21262,14 @@
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -22083,6 +22283,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -23181,6 +23389,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 145842.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Professional, scientific and technical activities (OKVED M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23350,9 +23575,18 @@
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35567.52,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Professional, scientific and technical activities (NACE Rev.2 M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "marketing-and-growth",
@@ -24174,6 +24408,14 @@
       "family": "marketing-and-growth",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -25054,6 +25296,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -26171,6 +26421,23 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 216870.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Financial and insurance activities (OKVED K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -26347,9 +26614,18 @@
       "family": "finance-and-accounting",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 104715.47,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Financial and insurance activities (NACE Rev.2 K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -27279,6 +27555,14 @@
       "family": "finance-and-accounting",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -28390,6 +28674,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -29482,6 +29774,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71525.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Administrative and support service activities (OKVED N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -29649,9 +29958,18 @@
       "family": "hr-and-people",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 34626.62,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Administrative and support service activities (NACE Rev.2 N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "hr-and-people",
@@ -30523,6 +30841,14 @@
       "family": "hr-and-people",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -31486,6 +31812,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -32571,6 +32905,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 103763.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Transportation and storage (OKVED H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -32746,9 +33097,18 @@
       "family": "operations-and-supply-chain",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 36307.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Transportation and storage (NACE Rev.2 H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "operations-and-supply-chain",
@@ -33626,6 +33986,14 @@
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -34609,6 +34977,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "SAU",
       "currency": "SAR",
       "basis": "monthly-gross",
@@ -35402,6 +35778,14 @@
         "https://salariile.ro/salarii/femei-barbati"
       ],
       "note": "Archetype: senior general management proxied by CAEN 70 (head offices, centralized administration, management consultancy). Figure is the mean average gross monthly earning for CAEN 70 in June 2026, stated on page as: media sectorului la iunie 2026 - 18.157 lei brut. INS Tempo-Online FOM107G republished by salariile.ro; mean across all seniorities and includes consultants, so treat as an upper-ish proxy for senior general management. Alternative official anchor: INS October 2024 occupation survey (FOM121B, ISCO major group 1 Conducatori si functionari superiori, 426,810 employees) realized gross was 12,414 lei for men and 12,036 lei for women (no combined figure published); that mean includes public-sector directors and understates private executives."
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -36208,6 +36592,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -37285,6 +37677,14 @@
         "https://www.paylab.ro/informatii-calculator-salarii/conducere-management-de-nivel-superior/director-general"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Director General (CEO / general manager). SPAN row: p25 is the 10th percentile and p75 is the 90th percentile, the merge derives a midpoint. Page states 80% of people earn between 9,993 and 35,747 RON, survey salaries expressed in gross (Salariile din sondaj sunt exprimate in brut); the band sentence reuses lunar net, a site wording inconsistency disclosed here. Crowd survey, n not published; dividend-heavy owner compensation is not captured, so the upper tail understates true executive take."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -38415,6 +38815,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100853,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Construction (OKVED F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -38593,9 +39010,18 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 21498.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Construction (NACE Rev.2 F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -39429,6 +39855,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "RUS",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40251,6 +40685,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -41344,6 +41786,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 82183.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Healthcare and social services (OKVED Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -41506,9 +41965,18 @@
       "family": "healthcare",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 56417.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Human health and social work activities (NACE Rev.2 Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "healthcare",
@@ -42247,6 +42715,14 @@
       "family": "healthcare",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -43088,6 +43564,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -44153,6 +44637,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "RUS",
+      "currency": "RUB",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71344.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://rosstat.gov.ru/storage/mediabank/tab3-zpl-2025.xlsx",
+        "https://rosstat.gov.ru/labor_market_employment_salaries"
+      ],
+      "note": "Curated directly by the reviewer from Rosstat (Federal State Statistics Service), annual table \"Srednemesyachnaya nominalnaya nachislennaya zarabotnaya plata rabotnikov organizatsiy po vidam ekonomicheskoy deyatelnosti\" (Average monthly nominal accrued wages of organization employees by economic activity), 2025 column, rubles, mean monthly gross, full circle of organizations. Per the file footnote, from 2022 the series excludes statistical information for the Donetsk and Luhansk People's Republics and the Zaporozhye and Kherson regions. Archetype: all employees in Education (OKVED P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide 2025 pay averaged 101,784 rubles a month, and the June 2026 monthly update shows the same scale. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "SAU",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -44323,9 +44824,18 @@
       "family": "education-and-teaching",
       "level": "senior",
       "country": "TUR",
-      "status": "insufficient_data",
-      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
-      "lastReviewed": "2026-09-06"
+      "currency": "TRY",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62846.07,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://veriportali.tuik.gov.tr/tr/search?text=Ekonomik%20faaliyete%20g%C3%B6re%20ayl%C4%B1k%20ortalama%20br%C3%BCt%20kazan%C3%A7",
+        "https://data.tuik.gov.tr/Bulten/Index?p=Istihdam-ve-Kazanclar-Istatistigi-Aralik-2025-53796"
+      ],
+      "note": "Curated directly by the reviewer from TUIK (Turkish Statistical Institute), table \"Ekonomik faaliyete göre aylık ortalama brüt kazanç ve bileşenleri\" (Monthly average gross earnings and components by economic activity), 2024 column, TRY, mean monthly gross for all employees. The table footer attributes it to the TUIK Labour Cost Statistics programme (İşgüçü Maliyeti İstatistikleri), which covers local units with 10 or more employees in NACE Rev.2 sections B-S. Archetype: all employees in Education (NACE Rev.2 P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. The 2024 annual average was published in December 2025 and economy-wide B-S pay averaged 39,252.88 TRY a month; Turkish wages have been rising fast since, so verify against current offers. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "education-and-teaching",
@@ -45070,6 +45580,14 @@
       "family": "education-and-teaching",
       "level": "lead",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -45893,6 +46411,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "ROU",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "RUS",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

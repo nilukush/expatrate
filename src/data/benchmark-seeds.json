@@ -14,7 +14,8 @@
     "Expansion wave 7 (2026-09-04, docs/RESEARCH/benchmark-curation-2026-08-30.md): the remaining EEA markets plus Peru, 13 countries, 418 rows, closing out Europe. Bulgaria 46 (Eurostat SES 2022 backbone plus State Gazette statutory teacher minima), Croatia 34 all-High (Eurostat plus Croatian public-service coefficients on the verified 2026 base), Cyprus 30 (Eurostat plus CYSTAT via attributed reproduction plus CareerFinders), Estonia 23 (Statistics Estonia register-based palgad.stat.ee medians), Iceland 39 all-High (Statistics Iceland VIN02001 quartiles with a disclosed seniority proxy), Lithuania 39 (manoalga.lt self-reported spans, all Low, official sources Cloudflare-blocked), Luxembourg 23 (Eurostat, Eurydice statutory teachers, ITM social-sector grid, Robert Half), Malta 29 (gov.mt 2026 payscales, Eurostat, Archer guide), Slovakia 40 (platy.sk spans mostly Low, Health Ministry statutory physician tables), Slovenia 37 all-High (SURS quartiles by occupation), Peru 28 (gob.pe statutory comunicado, MTPE Planilla Electronica physician averages, Buk Peru payroll bands), Hungary 25 and Latvia 25 built directly by the reviewer from the same verified Eurostat SES pull when the research agents hit an account usage limit. One Slovak rolling-survey row re-verified and updated to the page's current endpoints. All anchors independently verified; Iceland and Estonia anchors corroborated exactly against Eurostat because their national APIs block this network.",
     "Western Balkans pass (2026-09-05): Serbia 25, Bosnia and Herzegovina 25, North Macedonia 24, and Albania 21 rows, built directly by the reviewer from Eurostat SES 2022 (earn_ses22_48, mean monthly gross, enterprises with 10 or more employees, total sex) on the exact Hungary and Latvia recipe: senior cells are ISCO major group 2 professionals in the family's NACE sector, lead cells are ISCO major group 1 managers in the same sector, and executive cells share the economy-wide managers pool. Albania publishes no economy-wide managers cell (so no executive rows) and North Macedonia misses only the finance managers cell. Montenegro and Kosovo publish nothing in this dataset and stay marker-only. Median-only rows carrying published means, with the all-seniority-mean disclosure in every note; each source URL is the exact filtered API cell. Every value is verbatim from the API response captured on merge day.",
     "Georgia pass (2026-09-06): 16 rows, the first national-source pass beyond Eurostat. Spine: Geostat Average monthly nominal earnings by occupation, 2021 sheet (the latest official occupation cut, ISCO-08 two-digit, all sectors, mean monthly gross) with the ICT professionals cell (ISCO 25, 2,268.39 GEL) anchoring software, data, and cybersecurity senior; managers (ISCO 1) and chief executives (ISCO 11) anchor lead and executive cells. Because the occupation cut is five years old, every occupation note discloses that economy-wide average earnings rose from 1,304.52 GEL in 2021 to 2,282.70 GEL in 2025 and directs readers to treat the figure as a floor. Sector families without an occupation series use the 2024 Revenue Service median by activity (marketing M 1,786; sales G 1,256; operations H 1,553; engineering F 1,943, all-occupations sector medians, disclosed per row), and the same file corroborates the occupation rows in notes. All quality Medium: mixed-vintage official data. Every value verbatim from the cited spreadsheets, downloaded and re-read on merge day.",
-    "Caucasus-Central Asia pass (2026-09-06): Armenia and Kazakhstan, 11 senior rows each, lifting coverage to 75 of 207. Armenia runs on the ArmStat Average Monthly Nominal Wages by Industries file (NACE rev.2, annual 2025, mean monthly gross, all employees; underlying source base is the State Revenue Committee personalized tax and social-contribution register): the information-technologies sub-aggregate inside NACE J (58.2, 62, 63.1; 1,052,774 AMD) anchors software, data, and cybersecurity senior, with all-of-J at 869,661 AMD as corroboration. Kazakhstan runs on the Bureau of National Statistics Wages of employees taking into account small enterprises, 2025, average monthly nominal wage by activity: Information and communication at 674,113 KZT anchors the tech pool, with finance 854,440 and the remaining sector archetypes mapped as in the Georgia sector convention. Both sources publish no occupation or seniority split, so every row is senior-level with the all-employee mean-as-floor disclosure; no lead or executive rows were invented. All values verbatim from the spreadsheets downloaded and re-read on merge day."
+    "Caucasus-Central Asia pass (2026-09-06): Armenia and Kazakhstan, 11 senior rows each, lifting coverage to 75 of 207. Armenia runs on the ArmStat Average Monthly Nominal Wages by Industries file (NACE rev.2, annual 2025, mean monthly gross, all employees; underlying source base is the State Revenue Committee personalized tax and social-contribution register): the information-technologies sub-aggregate inside NACE J (58.2, 62, 63.1; 1,052,774 AMD) anchors software, data, and cybersecurity senior, with all-of-J at 869,661 AMD as corroboration. Kazakhstan runs on the Bureau of National Statistics Wages of employees taking into account small enterprises, 2025, average monthly nominal wage by activity: Information and communication at 674,113 KZT anchors the tech pool, with finance 854,440 and the remaining sector archetypes mapped as in the Georgia sector convention. Both sources publish no occupation or seniority split, so every row is senior-level with the all-employee mean-as-floor disclosure; no lead or executive rows were invented. All values verbatim from the spreadsheets downloaded and re-read on merge day.",
+    "Azerbaijan pass (2026-09-06): 11 senior rows, coverage 76 of 207, from the State Statistical Committee table 4.2 (Average monthly nominal wages and salaries by economic activity, 2024 column, manat, all employees): Information and communication at 1,672.1 AZN anchors the tech pool (software, data, cybersecurity share it), finance 2,687.4, professional-scientific 1,711.2, transport 1,392.5, construction 1,087.1, and the remaining sector archetypes as in the Georgia convention. The file is legacy .xls (parsed with xlrd), served from the labour section at stat.gov.az/source/labour. Senior-only with the all-employee mean-as-floor disclosure; no occupation or seniority split is published. Values verbatim from the spreadsheet re-read on merge day; anchors pinned in the data test."
   ],
   "rows": [
     {
@@ -31097,6 +31098,193 @@
         "https://stat.gov.kz/en/industries/labor-and-income/stat-wags/"
       ],
       "note": "Curated directly by the reviewer from the Bureau of National Statistics of the Republic of Kazakhstan, Wages of employees taking into account small enterprises (2025 year), average monthly nominal wage by type of economic activity, all employees. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J); no ICT sub-aggregate is published. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2687.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1711.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 621.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 691.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Trade; repair of transport means (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1392.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1087.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 847.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Human health and social work activities (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 754.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     }
   ]
 }

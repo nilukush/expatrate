@@ -791,3 +791,30 @@ test('Caucasus-Central Asia pass (2026-09-06): Armenia and Kazakhstan sector-spi
   anchor('KAZ', 'operations-and-supply-chain', 524_638);
   anchor('KAZ', 'healthcare', 334_195);
 });
+
+test('Azerbaijan pass (2026-09-06): sector-spine rows with verbatim anchors', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('AZE');
+  expect(rows.length, 'AZE row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'AZE currency').toBe('AZN');
+    expect(row.basis, 'AZE basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality).toBe('Medium');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `AZE ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('software-engineering', 1_672.1);
+  anchor('finance-and-accounting', 2_687.4);
+  anchor('marketing-and-growth', 1_711.2);
+  anchor('operations-and-supply-chain', 1_392.5);
+  anchor('healthcare', 847.3);
+  anchor('education-and-teaching', 754.2);
+});

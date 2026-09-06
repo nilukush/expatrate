@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 75,
-    "dataRows": 1848,
+    "tier1CountriesCount": 76,
+    "dataRows": 1859,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -94,6 +94,23 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 sub-major 25 'Akademische und vergleichbare Fachkraefte in der Informations- und Kommunikationstechnologie', n=99,300. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels and includes part-time earners, so the senior zone is roughly p50 to p75. Same-cell alternatives: kununu Softwareentwickler (self-reported, n=8,569, updated 2026) average 57,200 and after 10 years 72,200 gross per year, span 41,000 to 86,000; VSE 2022 private-sector full-time median for all professionals 64,061."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J); no ICT sub-aggregate is published. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "software-engineering",
@@ -1324,6 +1341,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2395,6 +2420,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -3195,6 +3228,23 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 sub-major 21 'Naturwissenschaftler, Mathematiker und Ingenieure', where statisticians, mathematicians (data science) and engineers are classified, n=112,200. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: ISCO 25 ICT professionals (data engineers) band 39,263/59,352/79,770; kununu Softwareentwickler after 10 years 72,200."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "data-and-ai",
@@ -4384,6 +4434,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5274,6 +5332,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6022,6 +6088,14 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 13 'Fuehrungskraefte in der Produktion und bei speziellen Dienstleistungen'; ISCO-08 unit 135 ICT services directors is part of this sub-major, n=68,100. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Best official proxy for senior IT leadership (head of IT). Same-cell alternatives: ISCO 25 ICT professionals band 39,263/59,352/79,770; Stepstone 2025 IT and internet sector median 69,000; kununu IT-Projektmanager after 10 years 79,900 (n=1,747)."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -6847,6 +6921,14 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: AEB function 'Fuehrende Taetigkeiten' (leadership activities) among Angestellte (white-collar employees), n=148,200. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Funktionen 2023'; payroll tax/SV/microcensus data. Cross-industry leadership band used as the lead anchor. Same-cell alternatives: Stepstone 2025 median with personnel responsibility 63,000 (vs 52,000 without); kununu Teamleiter average 65,900; ISCO 13 band 52,682/76,171/100,150."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -7821,6 +7903,14 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 11 chief executives and board members, n=24,500. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. CIO/CTO at board level sits here. Same-cell alternatives: VSE 2022 private-sector managers (Fuehrungskraefte) full-time median 91,840; Stepstone Management median 72,750; ISCO 13 band 52,682/76,171/100,150."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "it-executive",
@@ -8972,6 +9062,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9893,6 +9991,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10703,6 +10809,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11428,6 +11542,23 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "No separate security occupation exists in official statistics; security professionals are inside OEISCO-08 25 'Akademische und vergleichbare Fachkraefte in der ICT', n=99,300. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: ISCO 35 'Informations- und Kommunikationstechniker' band 33,898/52,675/71,701, n=36,200 (ops-heavy security roles); kununu Softwareentwickler after 10 years 72,200 as adjacent proxy."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1672.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Information and communication (NACE J). This cell shares the software-engineering senior pool. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "cybersecurity",
@@ -12446,6 +12577,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13223,6 +13362,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13941,6 +14088,14 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 sub-major 21; per ISCO-08 structure unit 216 'architects, planners, surveyors and designers' (incl graphic and multimedia designers, 2166) is part of sub-major 21 'Naturwissenschaftler, Mathematiker und Ingenieure', n=112,200. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: ISCO 26 'Juristen, Sozialwissenschaftler und Kulturberufe' (creative and performing artists, authors) band 23,160/45,800/65,408, n=97,600."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "design",
@@ -14878,6 +15033,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15622,6 +15785,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16261,6 +16432,14 @@
         "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods"
       ],
       "note": "Occupation: kununu 'Projektmanager:in', self-reported, total sample n=10,605. Figure is the page average after 10 years of experience: 74,100 gross per year (page also states overall average 60,200, span 40,600 to 94,300, entry under 3 years 49,500). Basis authority: kununu states 'brutto jaehrlich' with monthly equivalent 'bei 14 Gehaeltern'. Same-cell alternatives: kununu IT-Projektmanager after 10 years 79,900 (n=1,747, span 43,700 to 101,700); AEB ISCO 24 'Betriebswirte' band 38,764/60,357/84,657 (n=112,000, High)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "delivery-and-project-management",
@@ -17267,6 +17446,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18117,6 +18304,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18827,6 +19022,23 @@
         "https://www.karriere.at/c/a/gehaltsreport"
       ],
       "note": "Occupation: kununu 'Sales Manager:in', self-reported, total sample n=2,466. Figure is the page average after 10 years of experience: 82,000 gross per year (overall average 64,200, span 35,000 to 110,000, entry under 3 years 48,900). Basis authority: kununu 'brutto jaehrlich'. Same-cell alternatives: key account manager average 69,200 (shown in kununu career module); OEISCO 52 'Verkaufskraefte' band 8,233/20,260/31,402, n=323,300 (retail-heavy and part-time-heavy, p25 below the 1,800 per month plausibility floor, so listed here instead of as fields); karriere.at H2-2021 Verkauf experience level 2,502.56 gross per month."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 691.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Trade; repair of transport means (NACE G). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "sales-and-business-development",
@@ -19917,6 +20129,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20933,6 +21153,14 @@
         "https://www.ots.at/presseaussendung/OTS_20250113_OTS0043/fuer-mehr-gehaltstransparenz-stepstone-veroeffentlicht-gehaltsreport-2025"
       ],
       "note": "Occupation: OEISCO-08 11 chief executives and board members (CRO/CCO at board level), n=24,500. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Same-cell alternatives: ISCO 12 commercial executives band 47,141/74,353/106,412; Stepstone Management median 72,750."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "sales-and-business-development",
@@ -21963,6 +22191,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1711.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Professional, scientific and technical activities (NACE M). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22975,6 +23220,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23916,6 +24169,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -24802,6 +25063,23 @@
         "https://www.karriere.at/c/a/gehaltsreport"
       ],
       "note": "Occupation: OEISCO-08 24 'Betriebswirte und vergleichbare akademische Berufe' (business graduates: controllers, financial analysts), n=112,000. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: ISCO 43 'Buerokraefte im Finanz- und Rechnungswesen...' band 23,795/38,400/51,679, n=136,800 (accounting clerks); ISCO 33 non-academic business clerks band 25,444/41,394/60,911, n=333,800; karriere.at H2-2021 job ads Rechnungswesen/Controlling experience level 2,720.05 gross per month."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2687.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Financial and insurance activities (NACE K). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "finance-and-accounting",
@@ -25933,6 +26211,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27011,6 +27297,14 @@
         "https://www.ots.at/presseaussendung/OTS_20250113_OTS0043/fuer-mehr-gehaltstransparenz-stepstone-veroeffentlicht-gehaltsreport-2025"
       ],
       "note": "Occupation: OEISCO-08 11 chief executives and board members (CFO roles), n=24,500. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Same-cell alternatives: ISCO 12 commercial executives band 47,141/74,353/106,412; Stepstone Management median 72,750."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "finance-and-accounting",
@@ -28138,6 +28432,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 621.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Administrative and support service activities (NACE N). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -29169,6 +29480,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30183,6 +30502,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31153,6 +31480,23 @@
         "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/einkommen-und-soziale-lage/allgemeiner-einkommensbericht"
       ],
       "note": "Occupation: OEISCO-08 43 'Buerokraefte im Finanz- und Rechnungswesen, in der Statistik und in der Materialwirtschaft'; the label explicitly includes materials management (supply chain clerks/planners), n=136,800. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: ISCO 31 'Ingenieurtechnische und vergleichbare Fachkraefte' band 39,424/54,684/73,742, n=204,400; ISCO 33 band 25,444/41,394/60,911."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1392.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Transportation and storage (NACE H). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "operations-and-supply-chain",
@@ -32208,6 +32552,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -33239,6 +33591,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34184,6 +34544,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34906,6 +35274,14 @@
         "https://www.ots.at/presseaussendung/OTS_20250113_OTS0043/fuer-mehr-gehaltstransparenz-stepstone-veroeffentlicht-gehaltsreport-2025"
       ],
       "note": "Occupation: AEB function 'Fuehrende Taetigkeiten' (leadership activities) among Angestellte, n=148,200, 2023. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Funktionen 2023'; payroll tax/SV/microcensus. Same-cell alternatives: Stepstone 2025 median with personnel responsibility 63,000 (vs 52,000 without, all professions, full-time); kununu Teamleiter average 65,900; public sector leadership band 61,691/78,227/90,173, n=21,700."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -35719,6 +36095,14 @@
         "https://www.ots.at/presseaussendung/OTS_20250113_OTS0043/fuer-mehr-gehaltstransparenz-stepstone-veroeffentlicht-gehaltsreport-2025"
       ],
       "note": "Occupation: OEISCO-08 11 'Geschaeftsfuehrerinnen und Geschaeftsfuehrer, Vorstaende, leitende Verwaltungsbedienstete und Angehoerige gesetzgebender Koerperschaften', n=24,500. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Same-cell alternatives: VSE 2022 private-sector managers full-time median 91,840 (annual gross incl special payments, enterprises 10+ employees); Stepstone Management median 72,750; ISCO 12 band 47,141/74,353/106,412."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "general-management",
@@ -36818,6 +37202,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1087.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Construction (NACE F). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "BHR",
       "currency": "BHD",
       "basis": "monthly-gross",
@@ -37906,6 +38307,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -38869,6 +39278,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -39698,6 +40115,23 @@
         "https://www.karriere.at/c/a/gehaltsreport"
       ],
       "note": "Occupation: OEISCO-08 22 'Akademische und verwandte Gesundheitsberufe' (physicians and allied academic health professions), n=164,600, all sectors. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels incl part-time; senior zone roughly p50 to p75. Same-cell alternatives: Stepstone 2025 physicians median 109,750 (57,200 datasets, 2024 salary level, full-time, Medium); ISCO 32 health associate professions band 16,763/34,071/49,135, n=63,800; karriere.at H2-2021 Pharma/Gesundheit experience level 3,055.52 gross per month."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 847.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Human health and social work activities (NACE Q). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "healthcare",
@@ -40753,6 +41187,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -41637,6 +42079,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42459,6 +42909,23 @@
         "https://www.statistik.at/fileadmin/pages/334/4_Unselbststaendig_Erwerbstaetige_Funktionen.ods"
       ],
       "note": "Occupation: OEISCO-08 23 'Lehrkraefte' (teaching professionals), n=294,600, all sectors. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Band spans all experience levels and includes many part-time teachers, which pulls p25 down; senior full-time teachers sit near p75. Same-cell alternatives: AEB public sector highly qualified activities band 37,725/55,176/74,614, n=276,400 (most teachers are public servants); VSE 2022 excludes public administration units, so its teacher figures are not representative."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "AZE",
+      "currency": "AZN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 754.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.stat.gov.az/source/labour/en/004_2-3en.xls",
+        "https://www.stat.gov.az/source/labour/?lang=en"
+      ],
+      "note": "Curated directly by the reviewer from the State Statistical Committee of the Republic of Azerbaijan, Average monthly nominal wages and salaries by economic activity (table 4.2), 2024 column, manat, all employees, mean monthly gross. Archetype: all employees in Education (NACE P). No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. MEDIAN-ONLY shape carrying a published all-employee sector MEAN. "
     },
     {
       "family": "education-and-teaching",
@@ -43494,6 +43961,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "BHR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -44373,6 +44848,14 @@
         "https://www.statistik.at/fileadmin/pages/334/4_Unselbststaendig_Erwerbstaetige_Funktionen.ods"
       ],
       "note": "Occupation: OEISCO-08 11; the Austrian label explicitly includes 'leitende Verwaltungsbedienstete' (senior civil servants, i.e. education system leadership), n=24,500. Basis authority: Statistik Austria table 'Bruttojahreseinkommen der unselbststaendig Erwerbstaetigen nach Berufsgruppen 2023', quartile header '... verdienen weniger als ... EUR'; payroll tax, social insurance and microcensus data, employees 15+ resident in Austria, apprentices excluded. Published Dec 2024. Same-cell alternatives: public sector leadership band 61,691/78,227/90,173, n=21,700; ISCO 12 band 47,141/74,353/106,412."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "AZE",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "education-and-teaching",

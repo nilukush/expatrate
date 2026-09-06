@@ -36,6 +36,11 @@
       "date": "2026-09-06",
       "pass": "Mongolia and Turkey level upgrade",
       "summary": "Level cuts for two markets on the Georgia managers recipe. Mongolia gains 3 lead cells from NSO occupation table DT_NSO_0400_025V1 (ISCO major group 1, 2025, both sexes, 3,091,800 MNT; no chief-executives split published, so no executive rows, absence pinned in the test). Turkey gains 3 lead cells from the TUIK SES 2023 occupation table (ISCO 1 Yöneticiler, monthly gross earnings 54,949.87 TRY) with the 2023 vintage and the 10,068.68 to 39,252.88 economy-wide inflation path disclosed on every row. Both pool-sharing disclosures follow the Georgia convention; professionals groups at 1-digit carry no family attribution and were not used."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Belarus pass",
+      "summary": "Belarus joins as the 82nd benchmarked country with 11 senior cells from the Belstat quarterly by-activity file (2026 Q2, the freshest quarter of any market in the matrix): the IT sub-aggregate inside NACE J at 7,285.6 BYN anchors the tech pool with all-of-J 6,164.5 corroborating, finance 4,427.9, construction 3,872.4, professional services 3,634.0, down to education 2,222.1. Venezuela is not in the 207-country list (no World Bank PPP). Turkmenistan stat.gov.tm probe ran this round."
     }
   ],
   "rows": [
@@ -32384,6 +32389,193 @@
         "https://veriportali.tuik.gov.tr/tr"
       ],
       "note": "Curated directly by the reviewer from the TUIK Kazanç Yapısı İstatistikleri 2023 (Structure of Earnings Survey, press release 53700), table \"Meslek grubuna göre aylık ortalama ücretli çalışılan saat, brüt ücret ve kazanç, 2023\", ISCO 08 major group 1 Yöneticiler (Managers), both sexes, monthly average per-person gross earnings (aylık ortalama kişi başı brüt kazanç). SES covers local units with 10 or more employees in NACE Rev.2 sections B-S. No chief-executives split is published at this cut, so the economy-wide managers pool anchors the lead cells and no executive rows exist. 2023 VINTAGE DISCLOSURE: the same TUIK earnings programme shows economy-wide monthly averages rising from 10,068.68 TRY (2022) to 39,252.88 TRY (2024), so wages inflated steeply after 2023; treat this figure as a floor and expect current offers well above it. MEDIAN-ONLY shape carrying a published occupation-group MEAN."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in information technology and information service activities (the IT sub-aggregate inside NACE J). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official data series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official security series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4427.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Financial and insurance activities (NACE K). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3634.0,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Professional, scientific and technical activities (NACE M). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2352.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Administrative and support service activities (NACE N). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2744.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Wholesale and retail trade (NACE G). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2930.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Transportation, storage, postal and courier activities (NACE H). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3872.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Construction (NACE F). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2464.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Health and social work activities (NACE Q). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2222.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Education (NACE P). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     }
   ]
 }

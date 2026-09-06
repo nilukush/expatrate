@@ -1051,3 +1051,42 @@ test('Turkey level upgrade (2026-09-06): TUIK SES 2023 managers anchor the lead 
     expect(row.note).toContain('Kazanç Yapısı');
   }
 });
+
+test('Belarus pass (2026-09-06): Belstat quarterly by-activity spine with an IT sub-aggregate anchor', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rows = by('BLR');
+  expect(rows.length, 'BLR row count').toBe(11);
+  for (const row of rows) {
+    expect(row.currency, 'BLR currency').toBe('BYN');
+    expect(row.basis, 'BLR basis').toBe('monthly-gross');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.quality, 'Belstat official figures stay Medium').toBe('Medium');
+    expect(row.note).toContain('second quarter of 2026');
+    expect(row.note).toContain('Belstat');
+  }
+  expect(rows.filter((r: { level: string }) => r.level === 'senior')).toHaveLength(11);
+  expect(rows.filter((r: { level: string }) => r.level !== 'senior')).toHaveLength(0);
+  const anchor = (family: string, value: number) => {
+    const row = rows.find((r: { family: string }) => r.family === family);
+    expect(row, `BLR ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  // The IT sub-aggregate inside NACE J anchors the tech pool; all-of-J corroborates in the note.
+  anchor('software-engineering', 7_285.6);
+  anchor('data-and-ai', 7_285.6);
+  anchor('cybersecurity', 7_285.6);
+  anchor('finance-and-accounting', 4_427.9);
+  anchor('marketing-and-growth', 3_634);
+  anchor('hr-and-people', 2_352.2);
+  anchor('sales-and-business-development', 2_744.5);
+  anchor('operations-and-supply-chain', 2_930.3);
+  anchor('engineering-civil-mechanical-electrical', 3_872.4);
+  anchor('healthcare', 2_464.2);
+  anchor('education-and-teaching', 2_222.1);
+  const sw = rows.find((r: { family: string }) => r.family === 'software-engineering')!;
+  expect(sw.note).toContain('information technology');
+  expect(sw.note).toContain('6,164.5');
+});

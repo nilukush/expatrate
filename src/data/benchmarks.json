@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-06",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 81,
-    "dataRows": 1922,
+    "tier1CountriesCount": 82,
+    "dataRows": 1933,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -119,6 +119,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in information technology and information service activities (the IT sub-aggregate inside NACE J). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "software-engineering",
@@ -1443,6 +1460,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2554,6 +2579,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -3411,6 +3444,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official data series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "data-and-ai",
@@ -4694,6 +4744,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5632,6 +5690,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6425,6 +6491,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -7298,6 +7372,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -8338,6 +8420,14 @@
       "family": "it-executive",
       "level": "executive",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -9532,6 +9622,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -10493,6 +10591,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11351,6 +11457,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -12133,6 +12247,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7285.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in the IT sub-aggregate. This cell shares the software-engineering senior pool; no separate official security series exists. All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "cybersecurity",
@@ -13245,6 +13376,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14070,6 +14209,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14833,6 +14980,14 @@
       "family": "design",
       "level": "senior",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -15813,6 +15968,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16605,6 +16768,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17300,6 +17471,14 @@
         "https://www.gulftalent.com/bahrain/salaries/project-engineer"
       ],
       "note": "GulfTalent Bahrain Project Engineer page, n=15 individuals from 13 companies, 1 industry, updated Aug 2026. p50 is the source average; p25/p75 are source lowest/highest (not quartiles). Project Engineer used as the delivery and project management proxy; no Project Manager page exists for Bahrain. Wide observed band suggests mixed seniority."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
     },
     {
       "family": "delivery-and-project-management",
@@ -18346,6 +18525,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -19244,6 +19431,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20011,6 +20206,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2744.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Wholesale and retail trade (NACE G). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "sales-and-business-development",
@@ -21203,6 +21415,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22264,6 +22484,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -23350,6 +23578,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3634,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Professional, scientific and technical activities (NACE M). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "marketing-and-growth",
@@ -24459,6 +24704,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -25448,6 +25701,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -26399,6 +26660,23 @@
         "https://www.gulftalent.com/bahrain/salaries/senior-accountant"
       ],
       "note": "GulfTalent Bahrain Senior Accountant page, n=19 individuals from 19 companies, 2 industries, updated Aug 2026. p50 is the source average; p25/p75 are source lowest/highest (not quartiles). Title denotes senior level. Tax-free; monthly convention."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4427.9,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Financial and insurance activities (NACE K). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "finance-and-accounting",
@@ -27624,6 +27902,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -28765,6 +29051,14 @@
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -29952,6 +30246,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2352.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Administrative and support service activities (NACE N). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -31076,6 +31387,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -32138,6 +32457,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -33165,6 +33492,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2930.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Transportation, storage, postal and courier activities (NACE H). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "operations-and-supply-chain",
@@ -34322,6 +34666,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -35401,6 +35753,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -36394,6 +36754,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -37161,6 +37529,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -38040,6 +38416,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
@@ -39204,6 +39588,23 @@
         "https://www.gulftalent.com/bahrain/salaries/electrical-engineer"
       ],
       "note": "Row figures are GulfTalent Bahrain Civil Engineer (n=15, 2 industries, updated Aug 2026). Companion page Electrical Engineer avg BHD 750 (400 to 1000, n=12). Titles average all experience levels, so p50 understates a strictly senior engineer. p25/p75 are source lowest/highest, not quartiles."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3872.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Construction (NACE F). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -40389,6 +40790,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -41400,6 +41809,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42286,6 +42703,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2464.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Health and social work activities (NACE Q). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "healthcare",
@@ -43443,6 +43877,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -44375,6 +44817,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "BEL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -45254,6 +45704,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BLR",
+      "currency": "BYN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2222.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://www.belstat.gov.by/upload-belstat/upload-belstat-excel/Oficial_statistika/2026/nach_sr_zarplata_kvartal-26q2.xlsx",
+        "https://www.belstat.gov.by/ofitsialnaya-statistika/realny-sector-ekonomiki/stoimost-rabochey-sily/operativnye-dannye/nominalnaya-nachislennaya-srednemesyachnaya-zarabotnaya-plata-rabotnikov-respubliki-belarus-po-kvart/"
+      ],
+      "note": "Curated directly by the reviewer from the National Statistical Committee of the Republic of Belarus (Belstat) file \"Nominal gross average earnings in the Republic of Belarus by economic activity by quarter of 2026\", second quarter of 2026 column, BYN, nominal gross monthly average per employee. Archetype: all employees in Education (NACE P). All of information and communication reads 6,164.5 BYN the same quarter. No occupation or seniority split is published for this cut, so treat as a floor for senior quoting. Economy-wide pay averaged 3,022.0 BYN in the quarter and the July 2026 express release reads 3,104.1 BYN, so the trend runs slightly above these figures. MEDIAN-ONLY shape carrying a published sector MEAN."
     },
     {
       "family": "education-and-teaching",
@@ -46391,6 +46858,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "BLR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "BEL",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -47315,6 +47790,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "BHR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-06"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "BLR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-06"

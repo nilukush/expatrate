@@ -1231,3 +1231,66 @@ test('Romania and Greece SES upgrade (2026-09-06): official cells replace the Pa
     expect(keys.size).toBe(rs.length);
   }
 });
+
+test('Czechia, Malta, Luxembourg SES fill (2026-09-07): official lead and executive cells close the gaps', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  // Czechia: the software-engineering lead moves from the platy.cz survey to official SES managers-in-ICT.
+  const cze = by('CZE');
+  expect(cze.length).toBe(38);
+  const czeSwLead = cze.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'lead')!;
+  expect(czeSwLead.p50).toBe(124_036);
+  expect(czeSwLead.quality).toBe('High');
+  expect(czeSwLead.p25).toBe(0);
+  expect(czeSwLead.p75).toBe(0);
+  expect(czeSwLead.note).toContain('Eurostat');
+  // The remaining platy.cz rows (design, product, delivery lead) are the unarchetyped survivors.
+  expect(cze.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(5);
+
+  // Malta gains seven official cells (marketing both levels, sales and operations seniors, education lead,
+  // and the general-management and sales executives); the admin-professionals cell is unpublished, so no HR senior.
+  const mlt = by('MLT');
+  expect(mlt.length).toBe(36);
+  const mltAnchor = (family: string, level: string, value: number) => {
+    const row = mlt.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `MLT ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.quality).toBe('High');
+    expect(row!.note).toContain('2022');
+  };
+  mltAnchor('marketing-and-growth', 'senior', 2_718);
+  mltAnchor('marketing-and-growth', 'lead', 4_024);
+  mltAnchor('sales-and-business-development', 'senior', 2_643);
+  mltAnchor('operations-and-supply-chain', 'senior', 2_670);
+  mltAnchor('education-and-teaching', 'lead', 2_938);
+  mltAnchor('general-management', 'executive', 3_682);
+  mltAnchor('sales-and-business-development', 'executive', 3_682);
+  expect(mlt.find((r: { family: string; level: string }) => r.family === 'hr-and-people' && r.level === 'senior')).toBeUndefined();
+
+  // Luxembourg: the three alleyesonme Low rows go official, and marketing, healthcare lead, and it-executive
+  // lead cells are added.
+  const lux = by('LUX');
+  expect(lux.length).toBe(27);
+  expect(lux.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(1);
+  const luxAnchor = (family: string, level: string, value: number) => {
+    const row = lux.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `LUX ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.quality).toBe('High');
+    expect(row!.currency).toBe('EUR');
+    expect(row!.basis).toBe('monthly-gross');
+  };
+  luxAnchor('data-and-ai', 'senior', 5_818);
+  luxAnchor('hr-and-people', 'senior', 5_344);
+  luxAnchor('hr-and-people', 'lead', 8_687);
+  luxAnchor('marketing-and-growth', 'senior', 6_108);
+  luxAnchor('marketing-and-growth', 'lead', 10_986);
+  luxAnchor('healthcare', 'lead', 10_002);
+  luxAnchor('it-executive', 'lead', 8_355);
+  for (const cc of ['CZE', 'MLT', 'LUX']) {
+    const rs = by(cc);
+    const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+    expect(keys.size).toBe(rs.length);
+  }
+});

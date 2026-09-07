@@ -56,6 +56,11 @@
       "date": "2026-09-06",
       "pass": "Romania and Greece SES upgrade",
       "summary": "Romania gains ten official lead cells from Eurostat SES 2022 (managers in the family NACE: ICT 17,392 RON, finance 15,985, health 14,800) and its two Paylab executives go official on the economy-wide managers pool 11,246 RON; cybersecurity senior now shares the INS CAEN 62 software pool at 22,689 instead of the crowd source, leaving only delivery and product on Paylab. Greece swaps 23 Paylab and attributed-press rows for official SES cells on the same recipe (ICT professionals 2,299 EUR, finance managers 5,302, healthcare managers 3,305 replacing the press lead), with eight executive cells sharing the all-managers pool 3,437 that already anchored the general-management lead; only the six unarchetyped design, product, and delivery Paylab rows remain Low. Geo codes EL and RO were the trap: ISO3 codes return empty from the SES API."
+    },
+    {
+      "date": "2026-09-07",
+      "pass": "Czechia Malta Luxembourg SES fill",
+      "summary": "Czechia software-engineering lead moves from platy.cz to official SES managers-in-ICT at 124,036 CZK. Malta gains seven official cells (marketing senior 2,718 and lead 4,024, sales senior 2,643, operations senior 2,670, education lead 2,938, and the general-management and sales executives on the economy-wide managers pool 3,682 EUR); the admin-professionals cell is unpublished in SES so no HR senior was invented. Luxembourg replaces its three alleyesonme Low rows (data senior 5,818, HR senior 5,344, HR lead 8,687) and adds marketing both levels (6,108 / 10,986), healthcare lead 10,002, and it-executive lead 8,355 sharing the ICT managers pool. All High, 2022 vintage disclosed; sanity anchors matched the existing MLT and LUX SES values exactly before merge."
     }
   ],
   "rows": [
@@ -15292,23 +15297,6 @@
       "note": "ISPV national wage survey, year 2025, published 25 Mar 2026. Published occupation: CZ-ISCO 2512 Vyvojari software (software developers). Basis authority: table M8 header 'Hruba mesicni mzda podle podskupin a kategorii zamestnani CZ-ISCO', values in 'Kc/mes', columns 'median', '1. kvartil', '3. kvartil'. p25/p50/p75 = published 1st quartile / median / 3rd quartile. Sample: 25.6 thousand employees (ISPV recalculated employee count, wage sphere mzdova = private sector unless noted platova = public sector). The published band spans ALL seniority levels within the occupation; no seniority split is published. Same-cell alternatives: CZ-ISCO 2511 Systemovi analytici median 91532 Q1 68382 Q3 118359; 2514 Programatori pocitacovych aplikaci median 87817; 2519 software testing specialists median 83431. Corroboration: CZSO ICT page states 2025 average gross monthly wage of software developers 117.8 thousand CZK (developers avg, all seniorities). platy.cz Softwarovy inzenyr decile band 60876 to 167084 CZK gross/month (https://www.platy.cz/platy/informacni-technologie/softwarovy-inzenyr)."
     },
     {
-      "family": "software-engineering",
-      "level": "lead",
-      "country": "CZE",
-      "currency": "CZK",
-      "basis": "monthly-gross",
-      "p25": 63241,
-      "p50": 117123,
-      "p75": 171004,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.platy.cz/platy/informacni-technologie/hlavni-vyvojar",
-        "https://www.platy.cz/metodika"
-      ],
-      "note": "p50 is the midpoint of the source's published 10th to 90th percentile span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Platy.cz position report (self-reported salary survey by Alma Career Czechia / Paylab network, database of 65,024 verified salaries, updated monthly; figures cleaned and modelled by quantile regression per platy.cz/metodika). Published position: Hlavni vyvojar (lead developer). Basis authority: page states 'Mzdy v pruzkumu vyjadrujeme v hrubem' (survey salaries expressed gross) and shows a MONTHLY band in CZK. The public page publishes only the 10th and 90th percentile band ('80% lidi vydelava od X do Y'); p25 and p75 fields carry those DECILE endpoints, p50 is 0 because no median is published publicly. Data fetched 2 Sep 2026. Official-survey context: ISPV has no lead-developer split; nearest official codes are 2512 software developers (median 101103) and 13302 IT managers (median 146951), both ISPV 2025. "
-    },
-    {
       "family": "data-and-ai",
       "level": "senior",
       "country": "CZE",
@@ -24970,22 +24958,6 @@
       "note": "Median-only shape carries the published mean. Published series: mean monthly gross earnings, ISCO major group 1 managers, NACE J information and communication, Luxembourg, SES 2022, enterprises with 10 or more employees, total sex, value 8355 EUR. Basis authority: Eurostat dataset label Mean monthly earnings by sex, occupation and economic activity (2022). Covers all ICT management ranks from team lead up and all seniorities, 2022 vintage, not indexed forward."
     },
     {
-      "family": "data-and-ai",
-      "level": "senior",
-      "country": "LUX",
-      "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 100000,
-      "p50": 115000,
-      "p75": 130000,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://luxembourg.alleyesonme.jobs/en/articles/salary-guide-for-luxembourg-in-2026-how-much-do-people-really-earn-in-finance-it-and-human-resources"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN endpoints as published. Published title: senior engineers in cybersecurity, data engineering and cloud architecture, 100000 to 130000 EUR gross. Publisher Alleyesonme jobs Luxembourg salary guide 2026 article, dated 4 June 2026. Basis authority: article states gross per year. Method: editorial compilation citing STATEC, Hays and Michael Page, no sample size, therefore rated Low. Same-cell alternative: Tokenomics Analyst 3 to 5 years 80000 to 110000 (CLM, niche)."
-    },
-    {
       "family": "cybersecurity",
       "level": "senior",
       "country": "LUX",
@@ -25134,39 +25106,6 @@
         "https://delano.lu/article/are-you-well-paid-luxembourg-s"
       ],
       "note": "Median-only shape carries the single published figure. Published title: sales director in IT, 150000 EUR. Hays Luxembourg 2023 guide via Delano; method: over 10000 CVs and placements; note Hays includes variable pay for sales, marketing and communications roles. Same-cell alternative: sales director in construction 125000. Junior band for the family: 29000 to 53000."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "senior",
-      "country": "LUX",
-      "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 70000,
-      "p50": 85000,
-      "p75": 100000,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://luxembourg.alleyesonme.jobs/en/articles/salary-guide-for-luxembourg-in-2026-how-much-do-people-really-earn-in-finance-it-and-human-resources",
-        "https://delano.lu/article/are-you-well-paid-luxembourg-s"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN endpoints as published. Published title: Compensation and Benefits specialist, 70000 to 100000 EUR gross depending on seniority. Alleyesonme jobs 2026 article, compilation method, no sample, rated Low. Basis authority: gross per annum. Same-cell alternative: Hays 2023 via Delano gives HR seniors up to 138000, a ceiling, kept as context rather than a point estimate."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "lead",
-      "country": "LUX",
-      "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 0,
-      "p50": 120000,
-      "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-04",
-      "sources": [
-        "https://luxembourg.alleyesonme.jobs/en/articles/salary-guide-for-luxembourg-in-2026-how-much-do-people-really-earn-in-finance-it-and-human-resources"
-      ],
-      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. FLOOR-only shape: HR Directors at international groups can reach or exceed 120000 EUR gross. Alleyesonme jobs 2026 article, compilation method, no sample, rated Low. Basis authority: gross per annum. Same-cell alternative: HR Business Partner mid level 55000 to 80000 (same source)."
     },
     {
       "family": "operations-and-supply-chain",
@@ -32723,6 +32662,246 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "CZE",
+      "currency": "CZK",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 124036,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CZ&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CZK, enterprises with 10 or more employees, total sex, 2022 vintage, geo CZ). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2718,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4024,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2643,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2670,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2938,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). Archetype: Managers (ISCO major group 1) in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3682,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). The economy-wide managers pool shared by the executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "MLT",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3682,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo MT). The economy-wide managers pool shared by the executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5818,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5344,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8687,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6108,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10986,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10002,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Managers (ISCO major group 1) in human health and social work (NACE Q). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "LUX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8355,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
     }
   ]
 }

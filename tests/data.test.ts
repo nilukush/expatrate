@@ -451,7 +451,8 @@ test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () =
   expect(espSw.quality).toBe('Medium');
   expect(espSw.note).toContain('2022');
   const polSw = by('POL').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
-  expect(polSw.p50).toBe(23_250);
+  // Replaced by the 2026-09-07 SES spine: the justjoin job-ad median became the official ICT-professionals mean.
+  expect(polSw.p50).toBe(11_710);
   expect(polSw.basis).toBe('monthly-gross');
   expect(polSw.p25).toBe(0);
   expect(polSw.p75).toBe(0);
@@ -1393,5 +1394,115 @@ test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland m
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(1_995);
+  // Total moved to 2,012 by the southern-and-central SES round; the live count lives in the newest test.
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_012);
+});
+
+test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta move off private survey and recruiter sources', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const ses48 = (rs: { sources: string[] }[]) => rs.filter((r) => r.sources[0].includes('earn_ses22_48')).length;
+
+  // Poland: 20 wynagrodzenia.pl and justjoin.it cells swap and 11 archetype cells are added; the last
+  // two Low rows (private-survey healthcare senior and education executive) go official.
+  const pol = by('POL');
+  expect(pol.length).toBe(33);
+  expect(ses48(pol)).toBe(31);
+  expect(pol.every((r: { quality: string }) => r.quality !== 'Low')).toBe(true);
+  const polAnchor = (family: string, level: string, value: number) => {
+    const row = pol.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `POL ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+    expect(row!.currency).toBe('PLN');
+  };
+  polAnchor('software-engineering', 'senior', 11_710);
+  polAnchor('software-engineering', 'lead', 18_129);
+  polAnchor('finance-and-accounting', 'lead', 17_932);
+  polAnchor('general-management', 'executive', 11_745);
+  polAnchor('healthcare', 'senior', 8_877);
+  polAnchor('education-and-teaching', 'senior', 6_039);
+  polAnchor('marketing-and-growth', 'senior', 9_440);
+
+  // Italy: 27 manageritalia, techcompenso, and press cells swap and 4 are added; the statutory CCNL
+  // education and healthcare rows stay untouched. Italy's 13th and 14th salaries sit outside the SES
+  // monthly concept, disclosed on every swapped row.
+  const ita = by('ITA');
+  expect(ita.length).toBe(41);
+  expect(ses48(ita)).toBe(31);
+  const itaAnchor = (family: string, level: string, value: number) => {
+    const row = ita.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `ITA ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+  };
+  itaAnchor('software-engineering', 'senior', 3_409);
+  itaAnchor('software-engineering', 'lead', 9_167);
+  itaAnchor('it-executive', 'lead', 9_167);
+  itaAnchor('finance-and-accounting', 'lead', 10_978);
+  itaAnchor('marketing-and-growth', 'lead', 10_652);
+  itaAnchor('general-management', 'lead', 7_606);
+  itaAnchor('hr-and-people', 'senior', 2_962);
+  itaAnchor('operations-and-supply-chain', 'senior', 3_423);
+  const itaEdu = ita.find((r: { family: string; level: string }) => r.family === 'education-and-teaching' && r.level === 'senior')!;
+  expect(itaEdu.p50).toBe(31_590);
+  expect(itaEdu.sources[0]).toContain('orizzontescuola');
+  const itaHealth = ita.find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'senior')!;
+  expect(itaHealth.p50).toBe(80_000);
+  expect(itaHealth.sources[0]).toContain('fanpage');
+  expect(ita.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(6);
+
+  // Cyprus: 16 CareerFinders cells swap onto the all-enterprise-sizes SES convention the country
+  // already runs on, and two executive cells are added. The HR lead keeps CareerFinders because
+  // the N OC1 cell is unpublished even at all sizes; the CYSTAT chief-executive row stays.
+  const cyp = by('CYP');
+  expect(cyp.length).toBe(32);
+  expect(ses48(cyp)).toBe(27);
+  const cypAnchor = (family: string, level: string, value: number) => {
+    const row = cyp.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `CYP ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+  };
+  cypAnchor('cybersecurity', 'senior', 3_489);
+  cypAnchor('software-engineering', 'lead', 5_778);
+  cypAnchor('marketing-and-growth', 'lead', 7_577);
+  cypAnchor('operations-and-supply-chain', 'lead', 6_731);
+  cypAnchor('hr-and-people', 'senior', 2_542);
+  cypAnchor('finance-and-accounting', 'executive', 5_282);
+  const cypHrLead = cyp.find((r: { family: string; level: string }) => r.family === 'hr-and-people' && r.level === 'lead')!;
+  expect(cypHrLead.p50).toBe(3_750);
+  expect(cypHrLead.sources[0]).toContain('careerfinders');
+  const cypGm = cyp.find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive')!;
+  expect(cypGm.p50).toBe(107_400);
+  expect(cypGm.sources[0]).toContain('stoixeia');
+
+  // Malta: the ten Archer recruiter cells swap (executives onto the earn_ses22_21 all-managers pool
+  // that already anchors the country's executives); delivery, product, and the IT-appointments
+  // senior keep their recruitment-market rows because no SES archetype exists for them.
+  const mlt = by('MLT');
+  expect(mlt.length).toBe(36);
+  const mltAnchor = (family: string, level: string, value: number, src: string) => {
+    const row = mlt.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `MLT ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.sources[0]).toContain(src);
+  };
+  mltAnchor('software-engineering', 'senior', 2_857, 'earn_ses22_48');
+  mltAnchor('software-engineering', 'lead', 4_179, 'earn_ses22_48');
+  mltAnchor('cybersecurity', 'senior', 2_857, 'earn_ses22_48');
+  mltAnchor('data-and-ai', 'lead', 4_179, 'earn_ses22_48');
+  mltAnchor('cybersecurity', 'executive', 3_682, 'earn_ses22_21');
+  mltAnchor('it-executive', 'executive', 3_682, 'earn_ses22_21');
+  mltAnchor('software-engineering', 'executive', 3_682, 'earn_ses22_21');
+  expect(mlt.filter((r: { sources: string[] }) => r.sources[0].includes('archer')).length).toBe(6);
+  expect(mlt.find((r: { family: string; level: string }) => r.family === 'hr-and-people' && r.level === 'senior')).toBeUndefined();
+
+  for (const cc of ['POL', 'ITA', 'CYP', 'MLT']) {
+    const rs = by(cc);
+    const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+    expect(keys.size).toBe(rs.length);
+  }
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_012);
 });

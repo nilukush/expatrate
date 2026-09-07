@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-06",
   "curationLog": [
+    "Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta join the official Eurostat Structure of Earnings Survey 2022 backbone. Poland: 20 wynagrodzenia.pl and justjoin.it cells swap and 11 archetype cells are added, clearing the last two Low rows. Italy: 27 manageritalia, techcompenso, and attributed-press cells swap and 4 cells are added; the statutory CCNL education and healthcare rows stay untouched, and every swapped row discloses that SES monthly earnings exclude the 13th and 14th payments. Cyprus: 16 CareerFinders cells swap onto the all-enterprise-sizes SES convention the country already runs on (verified by reproducing the eight existing Cypriot cells exactly before merge) and two executive cells are added; the HR lead keeps CareerFinders because N OC1 is unpublished even at all sizes. Malta: the ten Archer recruiter cells swap, executives onto the earn_ses22_21 all-managers pool 3,682 that already anchors the country's executives; delivery, product, and the IT-appointments senior keep their recruitment-market rows because no SES archetype exists. Every anchor was re-fetched and matched verbatim before merge.",
     "Big-market SES spine (2026-09-07): Germany, France, Ireland, and Switzerland move onto the official Eurostat Structure of Earnings Survey 2022 backbone (datasets earn_ses22_48 cells plus the NACE B-S managers pool for executives), the same recipe already carrying twelve countries. Germany: all 18 Stepstone cells swap and 12 archetype cells are added, making it a fully official 30-row market. France: 17 Robert Half, capital.fr, and tpc-recrutement cells swap and 14 cells are added; the finance professionals mean (6,822) exceeding the finance managers mean (5,954) is published verbatim, and the remaining Robert Half and tpc cells (delivery, design, product) stay as the unarchetyped survivors. Ireland: 28 Morgan McKinley and Robert Half cells swap and the general-management lead is added; the HSE and TUI statutory rows are untouched, the finance lead keeps Morgan McKinley because SES publishes no K OC1 for Ireland, and delivery, design, and product keep their Low rows. Switzerland: 15 jobs.ch and Robert Half cells swap to CHF-denominated SES means and 14 cells are added, leaving three unarchetyped jobs.ch rows. Every anchor was re-fetched and matched verbatim before merge. Uruguay was re-probed and stays deferred: the IMS C2 series is index numbers by CIIU division (no peso levels), the quarterly ECH income report tabulates household and per-capita income only, BPS Comentarios N 133 publishes economy-wide averages by gender, and the Shiny labor visualizer has no income or branch domain. Lithuania stays on the fresher Sodra-registry rows; the osp.stat.gov.lt upgrade path remains Cloudflare-blocked for curl and the remote reader alike.",
     "Rows curated 2026-08-30 by three research agents (docs/RESEARCH/benchmark-curation-2026-08-30.md): US and UK from official statistics (BLS OEWS public API, ONS ASHE 2025 provisional), GCC from GulfTalent public salary pages, India from Instahyre public reports, Singapore from Morgan McKinley 2026 public tables, Germany from Stepstone Gehalt pages.",
     "Conflict rule: when two sources cover the same cell, the higher-quality row wins and the alternative is recorded in the row note. ARE it-executive executive: the enterprise recruiter-band row (Medium) was kept over the GulfTalent CTO page (n=15, Low); the GulfTalent figures are noted on the row.",
@@ -12573,16 +12574,14 @@
       "currency": "PLN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 23250,
+      "p50": 11710,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://justjoin.it/salary-report/category-statistics",
-        "https://justjoin.it/salary-report/salary-statistics",
-        "https://nofluffjobs.com/insights/zarobki-w-it-2026/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Java senior median on UoP gross, monthly, 2025 postings; B2B invoicing 25,200 netto+VAT. Other stacks: Python 23,488, JavaScript 21,953, .NET 20,500, Mobile 22,053, Scala 25,750, PHP 18,588."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
@@ -12591,15 +12590,14 @@
       "currency": "PLN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 23000,
+      "p50": 11710,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://justjoin.it/salary-report/category-statistics",
-        "https://nofluffjobs.com/insights/zarobki-w-it-2026/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Data senior median UoP gross, monthly, 2025 postings; B2B 26,880 netto+VAT. AI/ML senior 23,500 UoP and 27,000 B2B; Analytics senior 18,000; NFJ H1 2026 AI UoP upper median 26,000."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
@@ -12608,15 +12606,14 @@
       "currency": "PLN",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 24250,
+      "p50": 11710,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://justjoin.it/salary-report/category-statistics",
-        "https://nofluffjobs.com/insights/zarobki-w-it-2026/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Security senior median UoP gross, monthly, 2025 postings; B2B 27,300 netto+VAT. NFJ H1 2026 senior Security B2B upper median 31,920 netto+VAT."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "design",
@@ -12658,15 +12655,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 12370,
-      "p50": 15480,
-      "p75": 19210,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 18129,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-kierownik-dzialu-it"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=J&isco08=OC1"
       ],
-      "note": "IT department manager (kierownik dzialu IT), total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=451, page updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
@@ -12674,15 +12671,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 20000,
-      "p50": 26350,
-      "p75": 36500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-it-director"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "IT director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=305, updated January 2026, combines IT director and IT department director titles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
@@ -12690,15 +12687,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 9210,
-      "p50": 12050,
-      "p75": 16070,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 17932,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-glowny-ksiegowy"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=K&isco08=OC1"
       ],
-      "note": "Chief accountant (glowny ksiegowy), total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=3,693, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
@@ -12706,15 +12703,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 17840,
-      "p50": 24630,
-      "p75": 33300,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-finansowy"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Finance director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=985, updated January 2026, combines finance and controlling director titles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
@@ -12722,15 +12719,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 10240,
-      "p50": 13460,
-      "p75": 17680,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 8209,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-key-account-manager"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=G&isco08=OC2"
       ],
-      "note": "Key account manager as senior individual contributor sales role, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=1,560, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
@@ -12738,15 +12735,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 8330,
-      "p50": 11310,
-      "p75": 15820,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 10036,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-kierownik-sprzedazy"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=G&isco08=OC1"
       ],
-      "note": "Sales manager, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=1,156, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
@@ -12754,15 +12751,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 15190,
-      "p50": 21610,
-      "p75": 29960,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-sprzedazy"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Sales director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=1,456, updated January 2026, combines commercial director titles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
@@ -12770,15 +12767,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 9000,
-      "p50": 11250,
-      "p75": 14940,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 16231,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-kierownik-marketingu"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=M&isco08=OC1"
       ],
-      "note": "Marketing manager, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=1,291, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
@@ -12786,15 +12783,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 15050,
-      "p50": 21470,
-      "p75": 30300,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-marketingu"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Marketing director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=352, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "hr-and-people",
@@ -12802,15 +12799,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 10510,
-      "p50": 13600,
-      "p75": 17330,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 10442,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-kierownik-dzialu-personalnego"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=N&isco08=OC1"
       ],
-      "note": "HR department manager, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=515, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
@@ -12818,15 +12815,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 17300,
-      "p50": 23950,
-      "p75": 32860,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-personalny"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "HR director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=301, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
@@ -12834,15 +12831,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 16690,
-      "p50": 22890,
-      "p75": 30210,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-operacyjny"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Operations director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=735, updated January 2026, position group management board."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "general-management",
@@ -12850,15 +12847,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 14930,
-      "p50": 22270,
-      "p75": 35000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-generalny"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "General director or CEO, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=1,141, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -12866,15 +12863,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 10390,
-      "p50": 12490,
-      "p75": 15660,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11498,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-kierownik-budowy"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=F&isco08=OC1"
       ],
-      "note": "Construction manager, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=930, updated January 2026, combines site manager titles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -12882,15 +12879,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 14640,
-      "p50": 19030,
-      "p75": 25700,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-techniczny"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Technical director, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=319, updated January 2026."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "education-and-teaching",
@@ -12898,15 +12895,15 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 8890,
-      "p50": 10650,
-      "p75": 12850,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-dyrektor-szkoly"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "School principal, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=189, updated January 2026, mostly public school pay scales."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "healthcare",
@@ -12914,127 +12911,127 @@
       "country": "POL",
       "currency": "PLN",
       "basis": "monthly-gross",
-      "p25": 9120,
-      "p50": 12000,
-      "p75": 16350,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "p25": 0,
+      "p50": 8877,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://wynagrodzenia.pl/moja-placa/ile-zarabia-lekarz"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=Q&isco08=OC2"
       ],
-      "note": "Physician, total monthly pay gross, Ogolnopolskie Badanie Wynagrodzen sample n=124, updated January 2026. Page aggregates all physicians including residents, so it understates board-certified specialists."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 70000,
+      "p50": 3409,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Published role title: Ingegnere del software (software engineer), listed at 70,000 EUR in ISTAT profession data reproduced with attribution by PMI.it (data year 2021, described as ISTAT figures; page presents annual gross salary figures for top professions). Median-only convention: p25 and p75 set to 0. Basis authority: page lists annual salary figures in the profession ranking; the same page's JobPricing section states RAL (annual gross). Sample size for the ISTAT profession figure not stated on page. Caution: this is a profession-level figure and likely skews to experienced profiles. Same-cell alternative on the page: none for senior. Crowd-data alternative (different source, all seniorities, 2026): TechCompenso Software Engineer average RAL 37,833 EUR at https://techcompenso.com/ruoli-stipendi-medi/Software%20Engineer. Range guidance: treat 70,000 as the upper anchor for seniors in top firms and the crowd average as the floor."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "software-engineering",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 59265,
+      "p50": 9167,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/ruoli-stipendi-medi/Engineering%20Manager"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Published role title: Engineering Manager. Figure: average annual RAL 59,265 EUR per the TechCompenso role page (dataset updated 2026; site states RAL, Retribuzione Annua Lorda). Median-only convention: p25 and p75 set to 0. Quality Low: self-reported community salary data (49,343 site-wide benchmarks per the Osservatorio page; per-role sample not shown on this page; methodology page states duplicate checks, outlier exclusion, segments under 10 observations suppressed). Same-cell alternative: TechCompenso classifica lists Tech Leader as a role but no separate verified figure was captured."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "software-engineering",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 66667,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/ruoli-stipendi-medi/CTO"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: CTO (Chief Technology Officer). Figure: average annual RAL 66,667 EUR per the TechCompenso role page (2026, RAL). Median-only convention. Quality Low: self-reported community data, per-role sample not shown. Same-cell alternative from a recruiter-grade source: Osservatorio JobPricing per Manageritalia gives IT/Technology function dirigenti (executives) at 98,332 EUR average RAL in 2024 at https://www.manageritalia.it/economia/retribuzioni-in-italia/ (used in the it-executive family); the crowd CTO figure skews to startup-scale companies."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 55102,
+      "p50": 3409,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/blog/data-scientist-vs-ml-engineer-stipendio-responsabilit-e-prospettive-in-italia"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Published role title: Data Scientist. Figure: Data Scientists with 7-9 years of experience average 55,102 EUR RAL according to the TechCompenso database (article 2026; page states RAL). Median-only convention: p25 and p75 set to 0. Quality Low: self-reported community data (site-wide 49,343 benchmarks; per-segment sample not stated). Same-cell alternative on the TechCompenso role page: Data Scientist all-seniority average RAL 39,419 EUR at https://techcompenso.com/ruoli-stipendi-medi/Data%20Scientist."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "data-and-ai",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 55306,
+      "p50": 9167,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/blog/data-scientist-vs-ml-engineer-stipendio-responsabilit-e-prospettive-in-italia"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Published role title: ML Engineer. Figure: ML Engineers at 10+ years of experience average 55,306 EUR RAL per the TechCompenso database (article 2026; page states RAL); the article notes ML Engineer pay progresses more strongly past 10 years, making this the closest lead-level archetype in the family. Median-only convention. Quality Low: self-reported community data, per-segment sample not stated. Same-cell alternative: none verified at lead level."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "cybersecurity",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 42584,
+      "p50": 3409,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/ruoli-stipendi-medi/Security%20Engineer"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Published role title: Security Engineer. Figure: average annual RAL 42,584 EUR per the TechCompenso role page (2026, RAL). Median-only convention. Quality Low: self-reported community data; per-role sample not shown; page notes the average varies significantly by seniority. Same-cell alternatives (same source, verified): Cybersecurity Specialist average 39,500 EUR at https://techcompenso.com/ruoli-stipendi-medi/Cybersecurity%20Specialist and Cybersecurity Analyst average 35,253 EUR at https://techcompenso.com/ruoli-stipendi-medi/Cybersecurity%20Analyst. These are all-seniority averages, so treat as a floor for senior profiles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "cybersecurity",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 54880,
+      "p50": 9167,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/osservatorio-stipendi"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Published role title: Cybersecurity Operation Manager. Figure: average 54,880 EUR, rank 12 in the Osservatorio highest-paid roles ranking (page updated 2 September 2026; site-wide sample 49,343 community benchmarks; RAL base). Median-only convention. Quality Low: self-reported crowd data with stated moderation and outlier checks, per-role sample not shown. Same-cell alternative: none verified at CISO level. Executive level left empty: no free, non-gated CISO figure found."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "it-executive",
@@ -13059,32 +13056,32 @@
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 55539,
+      "p50": 9167,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Published role title: IT/Technology function quadri (middle management, mapped to lead). Figure: 55,539 EUR average RAL in 2024, from the Osservatorio JobPricing per Manageritalia function table (page presents average gross annual retribution, RAL, by function and qualifica; JP Analytics database described as 2,000+ positions across 35 sectors; per-cell sample not disclosed). Median-only convention: p25 and p75 set to 0. Same-cell alternative: TechCompenso IT Manager crowd average 55,625 EUR RAL (2026) at https://techcompenso.com/ruoli-stipendi-medi/IT%20Manager, which lands within 100 EUR of the JobPricing figure."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 98332,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: IT/Technology function dirigenti (executives, e.g. CIO). Figure: 98,332 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database of 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: TechCompenso CTO crowd average 66,667 EUR RAL (2026) at https://techcompenso.com/ruoli-stipendi-medi/CTO; the gap reflects different populations (large-company dirigenti vs startup-heavy crowd data)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "delivery-and-project-management",
@@ -13171,291 +13168,288 @@
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 45461,
+      "p50": 4752,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=K&isco08=OC2"
       ],
-      "note": "Published role proxy: financial services sector employees. Figure: 45,461 EUR average RAL in the financial services sector in 2025, from the JP Salary Outlook 2026 (JobPricing Osservatorio) as reproduced by PMI.it (published 2026-04-24). Median-only convention. Basis authority: the article presents the figure as average gross annual retribution (RAL media). Caveat: sector-wide average across all roles and levels, so it is a conservative floor for senior finance professionals; use alongside the lead row for orientation. Same-cell alternative: ISTAT 2021 profession data on the same page lists Consulente finanziario (financial consultant, often self-employed) at 80,000 EUR."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "finance-and-accounting",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 57487,
+      "p50": 10978,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=K&isco08=OC1"
       ],
-      "note": "Published role title: Amministrazione Finanza e Controllo function quadri (finance middle management, mapped to lead). Figure: 57,487 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; JP Analytics database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 102699,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/",
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Amministrazione Finanza e Controllo function dirigenti (CFO-track finance executives). Figure: 102,699 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternatives: ISTAT 2021 profession data via PMI.it lists Direttore finanziario (CFO) at 100,000 EUR; TechCompenso crowd data shows Chief Financial Officer at 78,500 EUR average but based on only 4 salaries (https://techcompenso.com/ruoli-stipendi-medi), so it was not used as the primary."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 45514,
+      "p50": 3801,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://techcompenso.com/ruoli-stipendi-medi/Business%20Developer"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=G&isco08=OC2"
       ],
-      "note": "Published role title: Business Developer. Figure: average annual RAL 45,514 EUR per the TechCompenso role page (2026; RAL). Median-only convention. Quality Low: self-reported community data, per-role sample not shown. Caveat: all-seniority average, so a floor for senior profiles; commission-heavy sales roles vary widely around this base."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 60559,
+      "p50": 6014,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=G&isco08=OC1"
       ],
-      "note": "Published role title: Vendite (sales) function quadri (middle management, mapped to lead). Figure: 60,559 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table; the Vendite quadri figure is the highest of all functions in the table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 104924,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Vendite (sales) function dirigenti (sales executives, e.g. commercial director). Figure: 104,924 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: TechCompenso Head of Sales crowd average 81,149 EUR but based on only 11 salaries (https://techcompenso.com/ruoli-stipendi-medi), not used as primary."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 40000,
-      "p50": 57000,
-      "p75": 65000,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3750,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=M&isco08=OC2"
       ],
-      "note": "Published role titles: Digital marketing manager and Web marketing manager. Band from three on-page figures (annual RAL): digital marketing manager 40,000 to 65,000 EUR; web marketing manager average 57,000 EUR. Mapping: p25 = 40,000, p50 = 57,000, p75 = 65,000. Same-cell alternative on the page: web analytics manager 35,000 to 55,000 EUR. Quality Low: the article reproduces salary listings without naming the underlying survey; treat as indicative."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "marketing-and-growth",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 56925,
+      "p50": 10652,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=M&isco08=OC1"
       ],
-      "note": "Published role title: Marketing e Comunicazione function quadri (middle management, mapped to lead). Figure: 56,925 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: Digital function quadri at 54,884 EUR in the same table."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 101892,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Marketing e Comunicazione function dirigenti (CMO-track executives). Figure: 101,892 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: Digital function dirigenti at 101,687 EUR in the same table."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "hr-and-people",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 56449,
+      "p50": 6823,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=N&isco08=OC1"
       ],
-      "note": "Published role title: Risorse umane/Organizzazione function quadri (HR middle management, mapped to lead). Figure: 56,449 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Senior level left empty: the only crowd figure found (HR Recruiter average 27,246 EUR) measures a junior support role, not a senior HR professional."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "hr-and-people",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 103417,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/",
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Risorse umane/Organizzazione function dirigenti (HR executives, e.g. HR director). Figure: 103,417 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: ISTAT 2021 profession data via PMI.it lists Manager risorse umane (HR manager) at 80,000 EUR, which sits between this executive figure and the lead row."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 56541,
+      "p50": 7770,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=H&isco08=OC1"
       ],
-      "note": "Published role title: Acquisti/Logistica/Supply chain function quadri (middle management, mapped to lead). Figure: 56,541 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternative: Produzione (production) quadri at 57,843 EUR in the same table; TechCompenso Operation manager crowd average 53,900 EUR (small sample)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 106073,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Acquisti/Logistica/Supply chain function dirigenti (supply chain executives). Figure: 106,073 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention. Same-cell alternatives: Produzione dirigenti at 106,585 EUR in the same table; TechCompenso Chief Operating Officer crowd average 71,750 EUR but based on only 8 salaries (https://techcompenso.com/ruoli-stipendi-medi), not used as primary. Senior level left empty: no free, verified IC-level operations figure found."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "general-management",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 70000,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://dirigentindustria.it/management/la-consistenza-e-i-trend-del-management.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role proxy: quadri (middle management) in industry. Figure: 70,000 EUR average RAL nationally as of December 2023, from an analysis of INPS archive data by Dirigenti Industria (method stated on page: total remuneration divided by number of contracts; population 130,000 private-industry dirigenti covered by the same source). Median-only convention. Caveat: cross-functional average across all industry quadri, used as the lead-level anchor for general management. Senior level left empty: no role-specific general management IC figure found."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "general-management",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 150000,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html",
-        "https://dirigentindustria.it/management/la-consistenza-e-i-trend-del-management.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Direttore generale (managing director / CEO). Figure: 150,000 EUR in ISTAT 2021 profession data reproduced with attribution by PMI.it (published 2026-04-24; page presents annual salary figures for top professions). Median-only convention. Corroboration: Dirigenti Industria's INPS-archive analysis gives industry dirigenti an average RAL of exactly 150,000 EUR as of December 2023 (157,000 EUR in Lombardy; method: total remuneration divided by contracts; population 93,000 industry dirigenti). Two independent sources converge on 150,000."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 80000,
+      "p50": 3381,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.pmi.it/economia/lavoro/404244/stipendi-classifica-italiana-delle-retribuzioni.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=F&isco08=OC2"
       ],
-      "note": "Published role proxy: engineers and architects. PMI.it reports an average of about 38,000 EUR RAL across the profession, with senior profiles exceeding 80,000 EUR (salary survey recap, 2026 article). Mapping: the senior-level figure is the over-80,000 anchor, recorded as p50 = 80,000 (median-only convention, p25 and p75 set to 0; the source states senior profiles exceed this value). Quality Low: the underlying survey is not named on the page. The all-level mean of about 38,000 EUR is the junior-to-mid anchor and should not be quoted for seniors."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 57310,
+      "p50": 8768,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=F&isco08=OC1"
       ],
-      "note": "Published role title: Area tecnica e R&S (technical area and R&D) function quadri (middle management, mapped to lead). Figure: 57,310 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "ITA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 103219,
+      "p50": 7606,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.manageritalia.it/economia/retribuzioni-in-italia/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "Published role title: Area tecnica e R&S (technical area and R&D) function dirigenti (engineering executives). Figure: 103,219 EUR average RAL in 2024 from the Osservatorio JobPricing per Manageritalia function table (average gross annual retribution; database 2,000+ positions, 35 sectors; per-cell sample not disclosed). Median-only convention."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
     },
     {
       "family": "healthcare",
@@ -22657,15 +22651,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 3000,
-      "p50": 4500,
-      "p75": 6000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5778,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=J&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title IT Manager, publisher categories Low / Average / Above Average = 3000 / 4500 / 6000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Eurostat OC1 Managers x NACE J Information and communication mean 5778 EUR per month all seniorities, cited in the it-executive lead row."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "data-and-ai",
@@ -22673,15 +22667,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 1700,
-      "p50": 2500,
-      "p75": 3500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 3489,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=J&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Data Analyst (listed by the guide under its Accounting and Finance section), publisher categories Low / Average / Above Average = 1700 / 2500 / 3500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: band spans mixed seniority; no free source separates data engineer or machine learning roles for Cyprus; Eurostat OC2 x NACE J mean 3489 covers ICT professionals generally."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "cybersecurity",
@@ -22689,15 +22683,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 2000,
-      "p50": 3000,
-      "p75": 4500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 3489,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=J&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Information Security Officer, publisher categories Low / Average / Above Average = 2000 / 3000 / 4500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: no separate cybersecurity lead or executive band published in free sources; Eurostat OC2 x NACE J mean 3489 covers all ICT professionals."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "it-executive",
@@ -22722,16 +22716,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 6000,
-      "p50": 8000,
-      "p75": 10000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/",
-        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=en&geo=CY"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title CTO, publisher categories Low / Average / Above Average = 6000 / 8000 / 10000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Eurostat OC1 Managers x NACE J mean 5778 EUR per month all seniorities sits below this band as expected for a mean over all manager grades."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "delivery-and-project-management",
@@ -22804,15 +22797,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 3750,
-      "p50": 4500,
-      "p75": 6000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5589,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=K&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Financial Controller, publisher categories Low / Average / Above Average = 3750 / 4500 / 6000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Eurostat OC1 Managers x NACE K mean 5589 EUR per month all seniorities."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "finance-and-accounting",
@@ -22820,15 +22813,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 5000,
-      "p50": 7000,
-      "p75": 10000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title CFO/Finance Director, publisher categories Low / Average / Above Average = 5000 / 7000 / 10000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: no official statistics separate finance directors; Eurostat OC1 x NACE K mean 5589 covers all manager grades."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "sales-and-business-development",
@@ -22836,15 +22829,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 1500,
-      "p50": 1800,
-      "p75": 2500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 2158,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=G&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Sales Executive, excluding commission, publisher categories Low / Average / Above Average = 1500 / 1800 / 2500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: title is IC salesperson in Cyprus usage; Banking Relationship Manager 2000 to 3500 avg 2500 also in guide; commission typically adds variable pay on top."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "sales-and-business-development",
@@ -22852,15 +22845,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 2500,
-      "p50": 3500,
-      "p75": 4500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 3521,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=G&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Sales Manager/Business Development Manager, excluding commission, publisher categories Low / Average / Above Average = 2500 / 3500 / 4500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Real Estate Sales 1200 to 2500 avg 1800 for that sector; no generic sales director band published; iGaming Executive Director band 5000 to 9000 is sector specific and excluded."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "marketing-and-growth",
@@ -22868,15 +22861,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 2000,
-      "p50": 2500,
-      "p75": 3500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 2296,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=M&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Digital Marketer, publisher categories Low / Average / Above Average = 2000 / 2500 / 3500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Forex/PSP/gaming Marketing category 2000 to 4500 avg 3000 for that sector; Graphic Designer and Content/Copywriter 1500 to 3000 sit in the design row."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "marketing-and-growth",
@@ -22884,15 +22877,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 3000,
-      "p50": 3500,
-      "p75": 4500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 7577,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=M&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Marketing Manager, publisher categories Low / Average / Above Average = 3000 / 3500 / 4500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: none closer published."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "marketing-and-growth",
@@ -22900,15 +22893,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 4500,
-      "p50": 5500,
-      "p75": 6500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Head of Marketing/Marketing Director, publisher categories Low / Average / Above Average = 4500 / 5500 / 6500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: none closer published."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "hr-and-people",
@@ -22916,15 +22909,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 2000,
-      "p50": 2300,
-      "p75": 2500,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 2542,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=N&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title HR Executive, publisher categories Low / Average / Above Average = 2000 / 2300 / 2500 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: title means officer level IC in Cyprus usage; HR Assistant 1500 to 2200 avg 1800 also in guide."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "hr-and-people",
@@ -22948,15 +22941,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 4500,
-      "p50": 5500,
-      "p75": 8000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title HR Director, publisher categories Low / Average / Above Average = 4500 / 5500 / 8000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: none closer published."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "operations-and-supply-chain",
@@ -22964,15 +22957,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 1500,
-      "p50": 2000,
-      "p75": 3000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 3667,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=H&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Logistics/Purchasing Specialist, publisher categories Low / Average / Above Average = 1500 / 2000 / 3000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Eurostat OC2 x NACE H professionals mean 3667 all seniorities for transport professionals."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "operations-and-supply-chain",
@@ -22980,15 +22973,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 3000,
-      "p50": 4000,
-      "p75": 5000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 6731,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=H&isco08=OC1"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Operations Manager, publisher categories Low / Average / Above Average = 3000 / 4000 / 5000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Eurostat OC1 Managers x NACE H Transportation and storage mean 6731 EUR per month all seniorities."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "general-management",
@@ -23029,16 +23022,15 @@
       "country": "CYP",
       "currency": "EUR",
       "basis": "monthly-gross",
-      "p25": 1800,
-      "p50": 2750,
-      "p75": 4000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "p25": 0,
+      "p50": 2217,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://careerfinders.com.cy/salary-guide/",
-        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=en&geo=CY"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=F&isco08=OC2"
       ],
-      "note": "CareerFinders Cyprus salary guide, published title Civil Engineer, publisher categories Low / Average / Above Average = 1800 / 2750 / 4000 EUR per month, entered as an ordered full band in p25/p50/p75. Basis authority: guide states monthly and annual gross amounts quoted, annual figures based on 12 salary payments. Method stated by publisher: current and historic salary information for job vacancies handled by the CareerFinders team within the last 18 months; sample count not stated. Data year: rolling 18 month window, page copyright 2026, retrieved 2026-09-03. Same-cell alternatives: Mechanical Engineer 1800 to 3500 avg 2500; Electrical Engineer 1500 to 3500 avg 2500; Eurostat OC2 x B-F industry and construction professionals mean 2325 all seniorities."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Cypriot pay has risen since, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -25227,136 +25219,128 @@
       "level": "senior",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 65000,
-      "p50": 72500,
-      "p75": 80000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2857,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC2"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN (published endpoints, midpoint derived on merge). Published title: Java Developer, 5 to 9 years experience, 65k to 80k. Basis authority: guide prints annual ranges in EUR (annual confirmed by arithmetic: a PHP developer at 40 to 50k equals 3,333 to 4,167 EUR per month, inside Malta developer pay levels). Sample size: not disclosed, recruiter consultant market data, data year 2025. Same-cell alternatives: .NET Developer 50 to 60k, Full Stack Node.js Developer 60 to 75k, PHP Developer 50 to 60k (same source)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "lead",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 65000,
-      "p50": 72500,
-      "p75": 80000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4179,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC1"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Team Lead (Java table), 65k to 80k. Basis authority: annual ranges in EUR per guide tables (arithmetic check as in senior row). Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: .NET Team Lead 65 to 75k, JavaScript Lead 75k+ floor, PHP Team Lead 65k+ floor, Software Architect 65 to 75k."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "executive",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80000,
-      "p50": 95000,
-      "p75": 110000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3682,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&isco08=OC1&age=TOTAL"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Software Development Manager (Senior IT Appointments, fixed salaries), 80k to 110k. Basis authority: annual fixed salary in EUR (guide table). Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: CTO / CIO 110k+ floor (same table)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells, the same series already anchoring Malta's general-management and sales executives. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 60000,
-      "p50": 67500,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2857,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC2"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Data Engineer, 5 to 9 years experience, 60k to 75k (Business Intelligence and Data Analytics table). Basis authority: annual ranges in EUR per guide tables. Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: Data Scientist 55 to 65k, BI Specialist / Developer 55 to 65k+, Data Analyst 50 to 65k."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "lead",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 65000,
-      "p50": 72500,
-      "p75": 80000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4179,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC1"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Data Engineer / BI Manager, 65k to 80k (single lead row in the BI and Data Analytics table). Basis authority: annual ranges in EUR per guide tables. Sample size not disclosed, recruiter data, 2025. No same-cell alternative published; executive level not published for this family."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "senior",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 55000,
-      "p50": 65000,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2857,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC2"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: IT Security Engineer, 5 to 9 years experience, 55k to 75k (IT Security table). Basis authority: annual ranges in EUR per guide tables. Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: Information Security Officer 55 to 70k, Penetration Tester 42 to 58k (3 to 5 years)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "lead",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 85000,
-      "p50": 90000,
-      "p75": 95000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4179,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC1"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Head of Security, 85k to 95k at 3 to 5 years tenure in role. Basis authority: annual ranges in EUR per guide tables. Sample size not disclosed, recruiter data, 2025. Same-cell alternative: Head of Security with under 3 years tenure 75 to 85k (same row)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "executive",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 120000,
-      "p50": 130000,
-      "p75": 140000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3682,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&isco08=OC1&age=TOTAL"
       ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN. Published title: Chief Information Security Officer (CISO), 120k to 140k at 5 to 9 years tenure in role. Basis authority: annual ranges in EUR per guide tables. Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: CISO at 3 to 5 years 100 to 120k, CISO at 10+ years 140k+ (same row)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells, the same series already anchoring Malta's general-management and sales executives. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
     },
     {
       "family": "it-executive",
@@ -25380,34 +25364,32 @@
       "level": "lead",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 80000,
+      "p50": 4179,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. FLOOR ONLY (disclosed floor; p25 carries the floor, p50 and p75 are 0). Published title: Infrastructure Manager, 80k+ (Senior IT Appointments, fixed salaries). Basis authority: annual fixed salary in EUR. Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: Software Development Manager 80 to 110k, Head of Security 75 to 95k."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Maltese pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "MLT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 110000,
+      "p50": 3682,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-04",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.archer.mt/wp-content/uploads/2025/03/Archer-IT-Recruitment-Malta-Salary-Guide-2025.pdf",
-        "https://www.archer.mt/it-data-salary-guide-malta-2025/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=MT&isco08=OC1&age=TOTAL"
       ],
-      "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. FLOOR ONLY. Published title: CTO / CIO, 110k+ (Senior IT Appointments, fixed salaries). Basis authority: annual fixed salary in EUR. Sample size not disclosed, recruiter data, 2025. Same-cell alternatives: CISO 120 to 140k (IT Security table) for security-side executives."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells, the same series already anchoring Malta's general-management and sales executives. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
     },
     {
       "family": "delivery-and-project-management",
@@ -33521,6 +33503,278 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in the whole business economy (NACE BS), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 9807,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 9440,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 7779,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 7752,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "POL",
+      "p25": 0,
+      "p50": 10723,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 7998,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "POL",
+      "p25": 0,
+      "p50": 6039,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "POL",
+      "p25": 0,
+      "p50": 8120,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "POL",
+      "p25": 0,
+      "p50": 10776,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "POL",
+      "p25": 0,
+      "p50": 18129,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Polish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "POL",
+      "p25": 0,
+      "p50": 11745,
+      "p75": 0,
+      "currency": "PLN",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PL&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, PLN, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ITA",
+      "p25": 0,
+      "p50": 2962,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ITA",
+      "p25": 0,
+      "p50": 3423,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "ITA",
+      "p25": 0,
+      "p50": 5154,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ITA",
+      "p25": 0,
+      "p50": 6625,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IT&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Italian pay has risen since, so treat as a floor. SES monthly earnings exclude Italy's 13th and 14th monthly payments, so a full Italian package runs roughly 15 percent above these figures."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "CYP",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CYP",
+      "p25": 0,
+      "p50": 5282,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
     }
   ]
 }

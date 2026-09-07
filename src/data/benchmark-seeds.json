@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-06",
   "curationLog": [
+    "Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close out the private-source gaps on the official Eurostat Structure of Earnings Survey 2022 backbone. Spain: the six tecnoempleo and infojobs cells swap and 16 archetype cells are added while the official INE rows stay untouched; Spain is the only one of the four whose B-S managers pool is published inside earn_ses22_48 (4,355). Portugal: the five landing.jobs cells swap and 17 cells are added onto the PORDATA seniors, with executives on the earn_ses22_21 economy-wide managers pool (3,543) because the B-S cell is unpublished there. Austria: the seven kununu and karriere.at cells swap to official means, leaving only three unarchetyped crowd rows in the country. Belgium: the two jobat cells swap and 10 archetype cells are added; the finance lead is not added because K OC1 is unpublished for Belgium, and the gap is pinned rather than papered over. Every swapped row discloses that SES monthly earnings exclude the customary extra payments. Every anchor was re-fetched and matched verbatim before merge. This completes the SES campaign: every EU/EEA market now runs on official earnings statistics except those on fresher national registers (EST DNK NLD NOR SWE ISL SVN FIN) and Liechtenstein, which SES does not cover.",
     "Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta join the official Eurostat Structure of Earnings Survey 2022 backbone. Poland: 20 wynagrodzenia.pl and justjoin.it cells swap and 11 archetype cells are added, clearing the last two Low rows. Italy: 27 manageritalia, techcompenso, and attributed-press cells swap and 4 cells are added; the statutory CCNL education and healthcare rows stay untouched, and every swapped row discloses that SES monthly earnings exclude the 13th and 14th payments. Cyprus: 16 CareerFinders cells swap onto the all-enterprise-sizes SES convention the country already runs on (verified by reproducing the eight existing Cypriot cells exactly before merge) and two executive cells are added; the HR lead keeps CareerFinders because N OC1 is unpublished even at all sizes. Malta: the ten Archer recruiter cells swap, executives onto the earn_ses22_21 all-managers pool 3,682 that already anchors the country's executives; delivery, product, and the IT-appointments senior keep their recruitment-market rows because no SES archetype exists. Every anchor was re-fetched and matched verbatim before merge.",
     "Big-market SES spine (2026-09-07): Germany, France, Ireland, and Switzerland move onto the official Eurostat Structure of Earnings Survey 2022 backbone (datasets earn_ses22_48 cells plus the NACE B-S managers pool for executives), the same recipe already carrying twelve countries. Germany: all 18 Stepstone cells swap and 12 archetype cells are added, making it a fully official 30-row market. France: 17 Robert Half, capital.fr, and tpc-recrutement cells swap and 14 cells are added; the finance professionals mean (6,822) exceeding the finance managers mean (5,954) is published verbatim, and the remaining Robert Half and tpc cells (delivery, design, product) stay as the unarchetyped survivors. Ireland: 28 Morgan McKinley and Robert Half cells swap and the general-management lead is added; the HSE and TUI statutory rows are untouched, the finance lead keeps Morgan McKinley because SES publishes no K OC1 for Ireland, and delivery, design, and product keep their Low rows. Switzerland: 15 jobs.ch and Robert Half cells swap to CHF-denominated SES means and 14 cells are added, leaving three unarchetyped jobs.ch rows. Every anchor was re-fetched and matched verbatim before merge. Uruguay was re-probed and stays deferred: the IMS C2 series is index numbers by CIIU division (no peso levels), the quarterly ECH income report tabulates household and per-capita income only, BPS Comentarios N 133 publishes economy-wide averages by gender, and the Shiny labor visualizer has no income or branch domain. Lithuania stays on the fresher Sodra-registry rows; the osp.stat.gov.lt upgrade path remains Cloudflare-blocked for curl and the remote reader alike.",
     "Rows curated 2026-08-30 by three research agents (docs/RESEARCH/benchmark-curation-2026-08-30.md): US and UK from official statistics (BLS OEWS public API, ONS ASHE 2025 provisional), GCC from GulfTalent public salary pages, India from Instahyre public reports, Singapore from Morgan McKinley 2026 public tables, Germany from Stepstone Gehalt pages.",
@@ -12310,51 +12311,48 @@
       "level": "lead",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 45800,
-      "p50": 50500,
-      "p75": 55200,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4633,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.tecnoempleo.com/informe-empleo-informatica.php",
-        "https://orientacion-laboral.infojobs.net/puestos-con-mejores-salarios-2024/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=J&isco08=OC1"
       ],
-      "note": "Tecnoempleo report Sept 2026, Salario Bruto/Ano, Arquitecto TIC band 45,800 to 55,200 from active postings with visible pay; p50 is the band midpoint. Same cell: InfoJobs 2024 offered average Arquitecto de software 51,464 and Arquitecto de sistemas TIC 49,924."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 41575,
+      "p50": 4355,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://orientacion-laboral.infojobs.net/puestos-con-mejores-salarios-2024/",
-        "https://nosotros.infojobs.net/la-oferta-de-empleo-en-infojobs-se-estabiliza-en-2025-con-casi-25-millones-de-vacantes-mientras-aumenta-la-demanda-de-trabajo/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
       ],
-      "note": "InfoJobs 2024 average offered salary for Director tecnico (CTO archetype), 508 vacancies. Gross annual basis stated on the companion InfoJobs release which labels offered salaries brutos anuales. Tecnoempleo has no director row; its Jefe de Equipo 42,900 to 51,400 is team lead, not executive."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 42400,
-      "p50": 47900,
-      "p75": 53400,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3303,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.tecnoempleo.com/informe-empleo-informatica.php",
-        "https://orientacion-laboral.infojobs.net/puestos-con-mejores-salarios-2024/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=J&isco08=OC2"
       ],
-      "note": "Tecnoempleo Sept 2026 gross annual band for Inteligencia Artificial / Machine Learning 42,400 to 53,400; p50 is the band midpoint. Same cell: InfoJobs 2024 offered average Cientifico de datos 41,684 (1,814 vacancies); Tecnoempleo Big Data 30,800 to 37,600 for data engineering profiles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "delivery-and-project-management",
@@ -12395,51 +12393,48 @@
       "level": "senior",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 37800,
-      "p50": 44200,
-      "p75": 50600,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3303,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.tecnoempleo.com/informe-empleo-informatica.php",
-        "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/EAES5767?nult=1"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=J&isco08=OC2"
       ],
-      "note": "Tecnoempleo Sept 2026 gross annual band Ciberseguridad 37,800 to 50,600 from active postings with visible pay; p50 is the band midpoint. INE 2022 median 41,846 for the wider ICT professionals occupation (includes security roles) corroborates."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 39221,
+      "p50": 3273,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://orientacion-laboral.infojobs.net/puestos-con-mejores-salarios-2024/",
-        "https://nosotros.infojobs.net/la-oferta-de-empleo-en-infojobs-se-estabiliza-en-2025-con-casi-25-millones-de-vacantes-mientras-aumenta-la-demanda-de-trabajo/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=G&isco08=OC2"
       ],
-      "note": "InfoJobs 2024 average offered salary for Responsable de cuentas estrategicas (key account manager archetype), 1,291 vacancies; gross basis per companion InfoJobs release labeling offered salaries brutos anuales. Agente comercial 37,073 sits lower in the same family."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "ESP",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 41287,
+      "p50": 4253,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://orientacion-laboral.infojobs.net/puestos-con-mejores-salarios-2024/",
-        "https://nosotros.infojobs.net/la-oferta-de-empleo-en-infojobs-se-estabiliza-en-2025-con-casi-25-millones-de-vacantes-mientras-aumenta-la-demanda-de-trabajo/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=G&isco08=OC1"
       ],
-      "note": "InfoJobs 2024 average offered salary for Director de ventas, 6,681 vacancies; gross basis per companion InfoJobs release labeling offered salaries brutos anuales. Offered averages run below paid-market medians, see executive row."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "sales-and-business-development",
@@ -15901,80 +15896,80 @@
       "level": "senior",
       "country": "PRT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 52880,
+      "p50": 2478,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://campaign.landing.jobs/hubfs/Tech%20Talent%20Trends%20Report%202025.pdf"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Landing.jobs Tech Talent Trends Report 2025 (Portugal), role 'Full-Stack Developer', full-time employees, experience column 'More than 6 years'. Basis authority: report note under each table states 'All salary values displayed represent gross annual salaries'. Self-reported community survey open December 2024 to March 2025; 1516 of 2116 respondents residing in Portugal were used. Single-figure convention, p25 and p75 set to 0. Same-cell alternatives from the same table (all 'More than 6 years'): Back-End Developer 56771, Front-End Developer 55102, Mobile Apps Developer 60909, DevOps Engineer 61551, Solutions Architect 63561. Official cross-check: mean monthly gross earnings of all ICT specialists (all seniorities) was 2778.9 EUR in 2024 per Quadros de Pessoal via PORDATA, so this survey figure reflects a senior and remote-heavy cohort and should be treated as an upper anchor."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "software-engineering",
       "level": "lead",
       "country": "PRT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 63427,
+      "p50": 4105,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://campaign.landing.jobs/hubfs/Tech%20Talent%20Trends%20Report%202025.pdf"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Landing.jobs Tech Talent Trends Report 2025 (Portugal), management roles table, role 'Technical Team Leader', full-time employees, experience column 'More than 6 years'. Basis authority: 'All salary values displayed represent gross annual salaries'. Survey Dec 2024 to Mar 2025, 1516 Portugal respondents. Context from same table: Technical Team Leader 3 to 6 years was 46875 EUR. Single-figure convention, p25 and p75 set to 0. Per-cell sample sizes are not published."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "PRT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 55000,
+      "p50": 2478,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://campaign.landing.jobs/hubfs/Tech%20Talent%20Trends%20Report%202025.pdf"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Landing.jobs Tech Talent Trends Report 2025 (Portugal), role 'Data Scientist/Data Engineer', full-time employees, experience column 'More than 6 years'. Basis authority: 'All salary values displayed represent gross annual salaries'. Survey Dec 2024 to Mar 2025, 1516 Portugal respondents. Same-cell alternative: 'Business Applications (BI/CRM/ERP)' 6+ years 43068 EUR. Single-figure convention, p25 and p75 set to 0."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "cybersecurity",
       "level": "senior",
       "country": "PRT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 63846,
+      "p50": 2478,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://campaign.landing.jobs/hubfs/Tech%20Talent%20Trends%20Report%202025.pdf"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=J&isco08=OC2"
       ],
-      "note": "Landing.jobs Tech Talent Trends Report 2025 (Portugal), role 'Computer & Network Security', full-time employees, experience column 'More than 6 years'. Basis authority: 'All salary values displayed represent gross annual salaries'. Survey Dec 2024 to Mar 2025, 1516 Portugal respondents. Caution: the same role in the 3 to 6 years column was 33750 EUR, a wide gap that suggests a thin per-cell sample; per-cell n is not published. Single-figure convention, p25 and p75 set to 0."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "PRT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 88968,
+      "p50": 3543,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://campaign.landing.jobs/hubfs/Tech%20Talent%20Trends%20Report%202025.pdf"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
       ],
-      "note": "Landing.jobs Tech Talent Trends Report 2025 (Portugal), management roles table, role 'CTO/Head of IT', full-time employees, experience column 'More than 6 years'; the report calls CTOs/Heads of IT 'the IT salary kings'. Basis authority: 'All salary values displayed represent gross annual salaries'. Survey Dec 2024 to Mar 2025, 1516 Portugal respondents. Same table context: CTO/Head of IT with 3 to 6 years was 37500 EUR after a 28.6 percent drop, so treat mid-level cells as volatile; per-cell n is not published. Official cross-check: mean monthly gross earnings of all managers and executives (all seniorities) was 3295.9 EUR in 2024 per Quadros de Pessoal via PORDATA. Single-figure convention, p25 and p75 set to 0."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "delivery-and-project-management",
@@ -16785,19 +16780,16 @@
       "level": "lead",
       "country": "AUT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 83800,
+      "p50": 6985,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.kununu.com/at/gehalt/leiter-in-software-entwicklung-45364",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods",
-        "https://www.kununu.com/at/gehalt/softwareentwickler-in-15019",
-        "https://www.karriere.at/c/a/gehaltsreport"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=J&isco08=OC1"
       ],
-      "note": "Occupation: kununu 'Leiter:in Software Entwicklung' (head of software development), n=154 self-reported salary entries, page updated 28 Aug 2026. Figure is the page average, 83,800 gross per year (about 5,986 per month at 14 salaries); stated span 59,000 to 125,700. Same-cell alternatives: AEB ISCO 13 managers in production and specialized services (includes ICT services directors) p25/p50/p75 52,682/76,171/100,150, n=68,100, 2023, High; kununu software developers after 10 years with personnel responsibility 76,000; karriere.at job ads H2-2021 IT lead level 3,729.08 gross per month."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "software-engineering",
@@ -17201,35 +17193,32 @@
       "level": "senior",
       "country": "AUT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 82000,
+      "p50": 4823,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.kununu.com/at/gehalt/sales-manager-in-4969",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods",
-        "https://www.karriere.at/c/a/gehaltsreport"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=G&isco08=OC2"
       ],
-      "note": "Occupation: kununu 'Sales Manager:in', self-reported, total sample n=2,466. Figure is the page average after 10 years of experience: 82,000 gross per year (overall average 64,200, span 35,000 to 110,000, entry under 3 years 48,900). Basis authority: kununu 'brutto jaehrlich'. Same-cell alternatives: key account manager average 69,200 (shown in kununu career module); OEISCO 52 'Verkaufskraefte' band 8,233/20,260/31,402, n=323,300 (retail-heavy and part-time-heavy, p25 below the 1,800 per month plausibility floor, so listed here instead of as fields); karriere.at H2-2021 Verkauf experience level 2,502.56 gross per month."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "AUT",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 77800,
+      "p50": 6382,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.kununu.com/at/gehalt/sales-manager-in-4969",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=G&isco08=OC1"
       ],
-      "note": "Occupation: kununu 'Vertriebsleiter:in' (head of sales), average 77,800 gross per year; figure taken from the kununu Sales Manager page career-step module (dedicated page fetch was blocked). Sales Manager total sample n=2,466 self-reported. Basis authority: kununu 'brutto jaehrlich'. Same-cell alternatives: sales managers after 10 years with personnel responsibility 96,100 (without 76,300); ISCO 12 commercial managers band 47,141/74,353/106,412 (n=77,700, High)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "sales-and-business-development",
@@ -17255,16 +17244,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2704.87,
+      "p50": 4548,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.karriere.at/c/a/gehaltsreport",
-        "https://www.kununu.com/at/gehalt/marketing-manager-in-40403",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=M&isco08=OC2"
       ],
-      "note": "Occupation: karriere.at Gehaltsreport field 'Marketing, PR' at level 'Berufserfahrung' (experienced): 2,704.87 average gross per month, full-time. Basis authority: karriere.at states 'durchschnittlichen Bruttomonatsgehaelter auf Vollzeitbasis' from about 200,000 job ads in H2 2021 (published 22 Mar 2022); advertised salaries are typically collective-agreement minimums and 10 to 30 percent more is possible. Annualized at the Austrian 14-pay convention this is about 37,868. Same-cell alternatives: kununu Marketing Manager after 10 years 60,900 gross per year (n=5,966, self-reported, average); ISCO 24 band 38,764/60,357/84,657."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "marketing-and-growth",
@@ -17273,16 +17260,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 3727.02,
+      "p50": 8945,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.karriere.at/c/a/gehaltsreport",
-        "https://www.kununu.com/at/gehalt/marketing-manager-in-40403",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=M&isco08=OC1"
       ],
-      "note": "Occupation: karriere.at Gehaltsreport field 'Marketing, PR' at level 'Projekt-, Bereichsleitung' (project/department lead): 3,727.02 average gross per month, full-time, from job ads H2 2021 (about 200,000 ads); basis authority as stated by karriere.at 'Bruttomonatsgehaelter auf Vollzeitbasis'; annualized about 52,178 at 14 salaries. Same-cell alternatives: kununu Marketing Manager after 10 years with personnel responsibility 65,100 (n=5,966); ISCO 12 band 47,141/74,353/106,412 (High)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "marketing-and-growth",
@@ -17308,15 +17293,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 2674.49,
+      "p50": 3890,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.karriere.at/c/a/gehaltsreport",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=N&isco08=OC2"
       ],
-      "note": "Occupation: karriere.at Gehaltsreport field 'Personalwesen' (HR) at level 'Berufserfahrung': 2,674.49 average gross per month, full-time. Basis authority: karriere.at 'durchschnittlichen Bruttomonatsgehaelter auf Vollzeitbasis' from about 200,000 job ads H2 2021; ads skew to collective-agreement minimums (10 to 30 percent more possible). Annualized about 37,443 at 14 salaries. Same-cell alternatives: ISCO 33 non-academic business/administrative specialists band 25,444/41,394/60,911, n=333,800 (High); ISCO 24 for graduate HR roles 38,764/60,357/84,657."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "hr-and-people",
@@ -17325,16 +17309,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 4033.06,
+      "p50": 6033,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.karriere.at/c/a/gehaltsreport",
-        "https://www.statistik.at/fileadmin/pages/334/3_Unselbststaendig_Erwerbstaetige_Berufsgruppen.ods",
-        "https://www.statistik.at/fileadmin/pages/334/4_Unselbststaendig_Erwerbstaetige_Funktionen.ods"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=AT&nace_r2=N&isco08=OC1"
       ],
-      "note": "Occupation: karriere.at Gehaltsreport field 'Personalwesen' at level 'Projekt-, Bereichsleitung': 4,033.06 average gross per month, full-time, job ads H2 2021 (about 200,000 ads); annualized about 56,463 at 14 salaries. Same-cell alternatives: ISCO 12 commercial managers band 47,141/74,353/106,412 (High); AEB 'Fuehrende Taetigkeiten' band 50,723/77,214/113,521."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Austrian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "hr-and-people",
@@ -17979,15 +17961,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 4367.7,
+      "p50": 5327,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobat.be/nl/art/hoeveel-verdienen-verpleegkundigen",
-        "https://www.thebulletin.be/pay-essential-workers-far-less-average-belgian-salary"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=Q&isco08=OC2"
       ],
-      "note": "Published archetype: hospital nurse with bachelor degree (IFIC classification), 10 years of service, 4367.70 EUR gross per month; Jobat reproduces the hospital sector IFIC scales and states amounts apply since 1 January 2026. Basis: page labels all amounts as bruto (gross) per month for hospital nurses. Progression from same table: start 3379.85, 5 years 3936.94, 10 years 4367.70, 25 years 5124.53 EUR. Same-cell alternative: medical doctors 7091 EUR gross per month (2018, Statbel essential occupations analysis, reproduced with attribution by The Bulletin)."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "healthcare",
@@ -17996,14 +17977,14 @@
       "currency": "EUR",
       "basis": "monthly-gross",
       "p25": 0,
-      "p50": 4678.33,
+      "p50": 7275,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobat.be/nl/art/hoeveel-verdienen-verpleegkundigen"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=Q&isco08=OC1"
       ],
-      "note": "Published archetype: referentieverpleegkundige (expert nurse with specific expertise, the lead clinical role in the hospital IFIC classification), 10 years of service, 4678.33 EUR gross per month; amounts apply since 1 January 2026. Basis: page labels all amounts as bruto (gross) per month for hospital nurses. Progression from same table: start 3620.23, 5 years 4216.94, 10 years 4678.33, 25 years 5488.99 EUR. No free citable figure was found for hospital or nursing directors, so the executive cell is left empty."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     },
     {
       "family": "education-and-teaching",
@@ -33775,6 +33756,694 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&unit=NAC&time=2022&geo=CY&nace_r2=B-S&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, all enterprise sizes, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the 13th salary, so a Cypriot 13-payment package runs about 8 percent higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 3653,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4647,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 2932,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4150,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4959,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 3436,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2), the all-seniority pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4012,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4734,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 3535,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 3992,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Spanish pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "ESP",
+      "p25": 0,
+      "p50": 4355,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=ES&nace_r2=B-S&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3926,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3080,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 4465,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3893,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3679,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 2316,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 2551,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in human health and social work activities (NACE Q). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3051,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 4105,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Portuguese pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "PRT",
+      "p25": 0,
+      "p50": 3543,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=PT&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8570,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8270,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8570,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8570,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 9581,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 10130,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8059,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8207,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8570,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1), the all-management-ranks pool in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Belgian pay has risen since, so treat as a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BEL",
+      "p25": 0,
+      "p50": 8270,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&isco08=OC1&age=TOTAL"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
     }
   ]
 }

@@ -1395,7 +1395,7 @@ test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland m
     expect(keys.size).toBe(rs.length);
   }
   // Total moved to 2,012 by the southern-and-central SES round; the live count lives in the newest test.
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_012);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
 });
 
 test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta move off private survey and recruiter sources', () => {
@@ -1504,5 +1504,99 @@ test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Ma
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_012);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
+});
+
+test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close the private-source gaps', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const ses48 = (rs: { sources: string[] }[]) => rs.filter((r) => r.sources[0].includes('earn_ses22_48')).length;
+  const ses21 = (rs: { sources: string[] }[]) => rs.filter((r) => r.sources[0].includes('earn_ses22_21')).length;
+
+  // Spain: the six tecnoempleo and infojobs cells swap to official means and 16 archetype cells are
+  // added; the official INE rows stay untouched. Spain keeps its B-S managers pool inside dataset 48.
+  const esp = by('ESP');
+  expect(esp.length).toBe(32);
+  expect(ses48(esp)).toBe(22);
+  const espAnchor = (family: string, level: string, value: number) => {
+    const row = esp.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `ESP ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+    expect(row!.currency).toBe('EUR');
+  };
+  espAnchor('cybersecurity', 'senior', 3_303);
+  espAnchor('software-engineering', 'lead', 4_633);
+  espAnchor('sales-and-business-development', 'lead', 4_253);
+  espAnchor('finance-and-accounting', 'lead', 4_647);
+  espAnchor('marketing-and-growth', 'lead', 4_959);
+  espAnchor('general-management', 'lead', 4_355);
+  const espSw = esp.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior')!;
+  expect(espSw.p50).toBe(41_846);
+  expect(espSw.sources[0]).toContain('ine.es');
+
+  // Portugal: the five landing.jobs cells swap and 17 cells are added onto the PORDATA seniors; the
+  // executives use the earn_ses22_21 economy-wide managers pool because B-S OC1 is unpublished.
+  const prt = by('PRT');
+  expect(prt.length).toBe(34);
+  expect(ses48(prt)).toBe(13);
+  expect(ses21(prt)).toBe(9);
+  const prtAnchor = (family: string, level: string, value: number) => {
+    const row = prt.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `PRT ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  prtAnchor('software-engineering', 'senior', 2_478);
+  prtAnchor('software-engineering', 'lead', 4_105);
+  prtAnchor('it-executive', 'lead', 4_105);
+  prtAnchor('it-executive', 'executive', 3_543);
+  prtAnchor('finance-and-accounting', 'lead', 3_926);
+  prtAnchor('healthcare', 'lead', 2_551);
+  const prtGm = prt.find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'senior')!;
+  expect(prtGm.p50).toBe(3_295.9);
+
+  // Austria: the seven kununu and karriere.at cells swap to official means; the Statistik Austria
+  // grid stays untouched and only three unarchetyped crowd rows remain.
+  const aut = by('AUT');
+  expect(aut.length).toBe(48);
+  expect(ses48(aut)).toBe(7);
+  expect(aut.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(3);
+  const autAnchor = (family: string, level: string, value: number) => {
+    const row = aut.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `AUT ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+  };
+  autAnchor('software-engineering', 'lead', 6_985);
+  autAnchor('hr-and-people', 'senior', 3_890);
+  autAnchor('hr-and-people', 'lead', 6_033);
+  autAnchor('marketing-and-growth', 'lead', 8_945);
+  autAnchor('marketing-and-growth', 'senior', 4_548);
+  autAnchor('sales-and-business-development', 'lead', 6_382);
+
+  // Belgium: the two jobat cells swap and 10 archetype cells are added; the finance lead add is
+  // skipped because K OC1 is unpublished for Belgium, and the absence is not papered over.
+  const bel = by('BEL');
+  expect(bel.length).toBe(35);
+  expect(ses48(bel)).toBe(10);
+  expect(ses21(bel)).toBe(2);
+  const belAnchor = (family: string, level: string, value: number) => {
+    const row = bel.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `BEL ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  belAnchor('healthcare', 'lead', 7_275);
+  belAnchor('healthcare', 'senior', 5_327);
+  belAnchor('software-engineering', 'lead', 8_570);
+  belAnchor('marketing-and-growth', 'lead', 10_130);
+  belAnchor('general-management', 'lead', 8_270);
+  expect(bel.find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'lead')).toBeUndefined();
+
+  for (const cc of ['ESP', 'PRT', 'AUT', 'BEL']) {
+    const rs = by(cc);
+    const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+    expect(keys.size).toBe(rs.length);
+  }
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
 });

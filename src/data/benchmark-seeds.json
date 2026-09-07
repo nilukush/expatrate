@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-06",
   "curationLog": [
+    "Big-market SES spine (2026-09-07): Germany, France, Ireland, and Switzerland move onto the official Eurostat Structure of Earnings Survey 2022 backbone (datasets earn_ses22_48 cells plus the NACE B-S managers pool for executives), the same recipe already carrying twelve countries. Germany: all 18 Stepstone cells swap and 12 archetype cells are added, making it a fully official 30-row market. France: 17 Robert Half, capital.fr, and tpc-recrutement cells swap and 14 cells are added; the finance professionals mean (6,822) exceeding the finance managers mean (5,954) is published verbatim, and the remaining Robert Half and tpc cells (delivery, design, product) stay as the unarchetyped survivors. Ireland: 28 Morgan McKinley and Robert Half cells swap and the general-management lead is added; the HSE and TUI statutory rows are untouched, the finance lead keeps Morgan McKinley because SES publishes no K OC1 for Ireland, and delivery, design, and product keep their Low rows. Switzerland: 15 jobs.ch and Robert Half cells swap to CHF-denominated SES means and 14 cells are added, leaving three unarchetyped jobs.ch rows. Every anchor was re-fetched and matched verbatim before merge. Uruguay was re-probed and stays deferred: the IMS C2 series is index numbers by CIIU division (no peso levels), the quarterly ECH income report tabulates household and per-capita income only, BPS Comentarios N 133 publishes economy-wide averages by gender, and the Shiny labor visualizer has no income or branch domain. Lithuania stays on the fresher Sodra-registry rows; the osp.stat.gov.lt upgrade path remains Cloudflare-blocked for curl and the remote reader alike.",
     "Rows curated 2026-08-30 by three research agents (docs/RESEARCH/benchmark-curation-2026-08-30.md): US and UK from official statistics (BLS OEWS public API, ONS ASHE 2025 provisional), GCC from GulfTalent public salary pages, India from Instahyre public reports, Singapore from Morgan McKinley 2026 public tables, Germany from Stepstone Gehalt pages.",
     "Conflict rule: when two sources cover the same cell, the higher-quality row wins and the alternative is recorded in the row note. ARE it-executive executive: the enterprise recruiter-band row (Medium) was kept over the GulfTalent CTO page (n=15, Low); the GulfTalent figures are noted on the row.",
     "Countries use ISO3 codes; UK rows are recorded as GBR.",
@@ -1669,208 +1670,208 @@
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 44100,
-      "p50": 51200,
-      "p75": 62000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5623,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Software-Entwickler-in.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=J&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Softwareentwickler/in (Stepstone salary dataset, full-time, Germany). Publishes Min 44,100, Median 51,200, Max 62,000 EUR gross per year, mapped to P25/P50/P75. The title page covers all experience levels within the title; treated as the senior benchmark for this family."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80200,
-      "p50": 89500,
-      "p75": 103800,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Head-of-Engineering.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Head of Engineering. Publishes Min 80,200, Median 89,500, Max 103,800 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 49200,
-      "p50": 57200,
-      "p75": 68100,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5623,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Data-Scientist.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=J&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Data Scientist. Publishes Min 49,200, Median 57,200, Max 68,100 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 63500,
-      "p50": 71300,
-      "p75": 84700,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/IT-Leiter-in.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for IT-Leiter/in. Publishes Min 63,500, Median 71,300, Max 84,700 EUR gross per year, mapped to P25/P50/P75. Sample spans all company sizes, which pulls the band below dedicated IT executive search benchmarks."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 61500,
-      "p50": 70300,
-      "p75": 82500,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6901,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Senior-Controller.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=K&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Senior Controller/in. Publishes Min 61,500, Median 70,300, Max 82,500 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in financial and insurance activities (NACE K), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 73600,
-      "p50": 82100,
-      "p75": 96200,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10353,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Leiter-in-Controlling.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=K&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Leiter/in Controlling. Publishes Min 73,600, Median 82,100, Max 96,200 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 105200,
-      "p50": 114400,
-      "p75": 132000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/CFO.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for CFO. Publishes Min 105,200, Median 114,400, Max 132,000 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 72300,
-      "p50": 80500,
-      "p75": 94700,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7101,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Head-of-HR.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=N&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Head of HR. Publishes Min 72,300, Median 80,500, Max 94,700 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 93800,
-      "p50": 104800,
-      "p75": 119400,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/HR-Director.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for HR Director. Publishes Min 93,800, Median 104,800, Max 119,400 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 54400,
-      "p50": 62300,
-      "p75": 74100,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5784,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Key-Account-Manager.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=G&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Key Account Manager. Publishes Min 54,400, Median 62,300, Max 74,100 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 62800,
-      "p50": 71200,
-      "p75": 83900,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7092,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Vertriebsleiter-in.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=G&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Vertriebsleiter/in. Publishes Min 62,800, Median 71,200, Max 83,900 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 73500,
-      "p50": 81800,
-      "p75": 96200,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Head-of-Sales.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Head of Sales. Publishes Min 73,500, Median 81,800, Max 96,200 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 48900,
-      "p50": 56700,
-      "p75": 67700,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5485,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Supply-Chain-Manager.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=H&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Supply Chain Manager. Publishes Min 48,900, Median 56,700, Max 67,700 EUR gross per year, mapped to P25/P50/P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
@@ -2085,80 +2086,80 @@
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 58200,
-      "p50": 66400,
-      "p75": 78600,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9752,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Teamleiter-in-IT.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=J&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Teamleiter/in IT, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 75500,
-      "p50": 83600,
-      "p75": 98300,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9752,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Abteilungsleiter-in-IT.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=J&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Abteilungsleiter/in IT, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "senior",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 42800,
-      "p50": 50600,
-      "p75": 60600,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5112,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Personalmanager-in.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=N&isco08=OC2"
       ],
-      "note": "Stepstone Gehalt page for Personalmanager/in, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 45600,
-      "p50": 53700,
-      "p75": 63900,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7066,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Logistik-Leiter-in.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=H&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Logistik-Leiter/in, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
       "country": "DEU",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 55400,
-      "p50": 65000,
-      "p75": 75600,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-30",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.stepstone.de/gehalt/Bereichsleiter-in-Logistik.html"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Stepstone Gehalt page for Bereichsleiter/in Logistik, Bruttogehalt per year table. Min to P25, Median to P50, Max to P75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "it-executive",
@@ -5382,167 +5383,160 @@
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 125750,
-      "p50": 144500,
-      "p75": 166000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13811,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ie/en/insights/salary-guide/technology",
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC1"
       ],
-      "note": "Robert Half 2026 IT Director starting-salary percentiles, Dublin/Greater Dublin. Corroborated by Morgan McKinley 2026 IT Director 5+ years band EUR135,000-150,000 (Dublin); Head of IT RH p50 EUR123,000. Dual source."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 157250,
-      "p50": 211000,
-      "p75": 263750,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ie/en/insights/salary-guide/technology",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half 2026 CIO percentiles, Dublin/Greater Dublin. Cross-checked: Morgan McKinley 2026 Executive Search CIO EUR200,000-350,000 (Ireland-wide); MM Technology guide CTO EUR150,000-250,000 and CISO EUR140,000-300,000 (Dublin). All three bands overlap RH p50-p75. Dual publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 70000,
-      "p50": 80000,
-      "p75": 90000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7510,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries",
-        "https://www.cso.ie/en/releasesandpublications/ep/p-eaads/earningsanalysisusingadministrativedatasources2024/annualearnings/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Software Engineer 5+ years band EUR70,000-90,000, Dublin; band endpoints treated as p25/p75, midpoint as p50. Corroborated by CSO EAADS 2024: median annual earnings in Information and Communication sector EUR80,147 (all employees, PAYE records). Sector median not occupation-specific."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 90000,
-      "p50": 100000,
-      "p75": 110000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13811,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Principal/Lead/Staff Software Engineer 5+ years band EUR90,000-110,000, Dublin; endpoints as p25/p75, midpoint p50. Software Development Manager 5+ band EUR120,000-145,000 on same guide. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80000,
-      "p50": 95000,
-      "p75": 110000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7510,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries",
-        "https://www.cso.ie/en/releasesandpublications/ep/p-eaads/earningsanalysisusingadministrativedatasources2024/annualearnings/"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Data Scientist 5+ years band EUR80,000-110,000, Dublin; Data Engineer 5+ EUR80,000-100,000 and ML Engineer 5+ EUR85,000-110,000 on same page. Context: CSO EAADS 2024 median NACE J sector EUR80,147."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 120000,
-      "p50": 127500,
-      "p75": 135000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13811,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Head of Data Science 5+ years band EUR120,000-135,000, Dublin; Data Analytics Manager 5+ EUR95,000-115,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 180000,
-      "p50": 240000,
-      "p75": 300000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Executive Search Chief Data Officer EUR180,000-300,000 (Ireland-wide); Technology guide CDO EUR150,000-220,000 (Dublin). Same publisher, two datasets; consistent range."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80000,
-      "p50": 90000,
-      "p75": 100000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7510,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Security Engineer 5+ years band EUR80,000-100,000, Dublin; Security Analyst 5+ EUR70,000-85,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 110000,
-      "p50": 125000,
-      "p75": 140000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13811,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/technology/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=J&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Head of Security 5+ years band EUR110,000-140,000, Dublin; Security Manager 5+ EUR100,000-110,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 145250,
-      "p50": 204750,
-      "p75": 229750,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ie/en/insights/salary-guide/technology",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half 2026 CISO starting-salary percentiles, Dublin/Greater Dublin. Cross-checked: Morgan McKinley 2026 Executive Search CISO EUR180,000-280,000 (Ireland-wide); MM Technology guide CISO EUR140,000-300,000. Dual publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "product-management",
@@ -5678,17 +5672,16 @@
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 84500,
-      "p50": 92000,
-      "p75": 99000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7370,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ie/en/insights/salary-guide/finance-and-accounting",
-        "https://www.morganmckinley.com/ie/salary-guide/accounting-finance/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=K&isco08=OC2"
       ],
-      "note": "Robert Half 2026 Finance Business Partner starting-salary percentiles, Dublin/Greater Dublin. Corroborated by Morgan McKinley 2026 Financial Analyst 5+ EUR75,000-85,000 and Senior Financial Analyst EUR80,000-90,000 (Dublin). Dual publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in financial and insurance activities (NACE K), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
@@ -5712,263 +5705,256 @@
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 192250,
-      "p50": 261500,
-      "p75": 308000,
-      "quality": "Medium",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ie/en/insights/salary-guide/finance-and-accounting",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half 2026 CFO percentiles, Dublin/Greater Dublin. Cross-checked: Morgan McKinley 2026 Executive Search CFO EUR180,000-250,000 (Ireland-wide); MM Financial Director 5+ EUR140,000-180,000 (smaller-company scope). Dual publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 55000,
-      "p50": 60000,
-      "p75": 65000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6138,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=G&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 IT Sales / Inside Sales Account Manager 5+ years base band EUR55,000-65,000, Dublin; OTE EUR79,000-93,000 at same level. Base only, excludes commission. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 90000,
-      "p50": 95000,
-      "p75": 100000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5642,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=G&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 IT Sales Manager 5+ years base band EUR90,000-100,000, Dublin; OTE EUR120,000-160,000. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 130000,
-      "p50": 145000,
-      "p75": 160000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 IT Sales Director 5+ years base band EUR130,000-160,000, Dublin; OTE EUR150,000-180,000. Executive Search VP/Director of Sales EUR170,000-230,000 (Ireland-wide). Same publisher, two datasets."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 90000,
-      "p50": 105000,
-      "p75": 120000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5542,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=M&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Marketing Manager 5+ years band EUR90,000-120,000, Dublin; Digital Marketing Manager 5+ EUR75,000-90,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 115000,
-      "p50": 120000,
-      "p75": 125000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10095,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=M&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Head of Marketing 5+ years band EUR115,000-125,000, Dublin; Marketing Director 5+ EUR150,000-180,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 150000,
-      "p50": 225000,
-      "p75": 300000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/sales-marketing/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Executive Search CMO EUR150,000-300,000 (Ireland-wide); Sales and Marketing guide CMO EUR150,000-220,000 (Dublin). Same publisher, two datasets."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 85000,
-      "p50": 92500,
-      "p75": 100000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5368,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/hr/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=N&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 HR Business Partner 5+ years band EUR85,000-100,000, Dublin; Employee Relations Manager 5+ EUR85,000-100,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 130000,
-      "p50": 140000,
-      "p75": 150000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7020,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/hr/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=N&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Head of HR 5+ years band EUR130,000-150,000, Dublin; HR Manager 5+ EUR85,000-100,000 and HR Director 5+ EUR160,000-180,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 160000,
-      "p50": 200000,
-      "p75": 240000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/hr/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Chief People Officer EUR160,000-240,000 (HR guide, Dublin); Executive Search CPO EUR150,000-260,000 (Ireland-wide). Same publisher, two datasets, consistent."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 70000,
-      "p50": 72500,
-      "p75": 75000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6538,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/supply-chain-procurement/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=H&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Supply Chain Specialist 5+ years band EUR70,000-75,000, Dublin; Supply Chain Analyst 5+ EUR65,000-80,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 91000,
-      "p50": 98500,
-      "p75": 106000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5833,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/supply-chain-procurement/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=H&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Supply Chain Manager 5+ years band EUR91,000-106,000, Dublin; Logistics Manager 5+ EUR75,000-95,000 on same page. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 145000,
-      "p50": 155000,
-      "p75": 165000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/supply-chain-procurement/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Supply Chain Director 5+ years band EUR145,000-165,000, Dublin; Executive Search VP/Director of Supply Chain EUR110,000-200,000 (Ireland-wide). Same publisher, two datasets."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 65000,
-      "p50": 77500,
-      "p75": 90000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5195,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/construction/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/life-sciences-engineering/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=F&isco08=OC2"
       ],
-      "note": "Morgan McKinley 2026 Dublin 5+ years bands: Civil Engineer EUR65,000-90,000 and Structural Engineer EUR65,000-100,000 (Construction guide); Mechanical EUR65,000-75,000, Electrical EUR70,000-85,000, Process EUR70,000-80,000 (Life Sciences guide). Envelope of the five bands used; p50 is the Civil band midpoint. Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in construction (NACE F), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 115000,
-      "p50": 120000,
-      "p75": 125000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7892,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/life-sciences-engineering/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=F&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Engineering Manager (Manufacturing) 5+ years band EUR115,000-125,000, Dublin; Construction guide Design Manager 5+ EUR75,000-80,000 (civil scope is lower). Single publisher."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in construction (NACE F), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 140000,
-      "p50": 152500,
-      "p75": 165000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/life-sciences-engineering/permanent-salaries",
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Engineering Director (Manufacturing) 5+ years band EUR140,000-165,000, Dublin; Executive Search VP/Director of Engineering EUR120,000-170,000 and VP Engineering EUR140,000-200,000 (Ireland-wide). Same publisher, two datasets."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "healthcare",
@@ -6071,16 +6057,16 @@
       "level": "executive",
       "country": "IRL",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 180000,
-      "p50": 240000,
-      "p75": 300000,
-      "quality": "Low",
-      "lastReviewed": "2026-08-31",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.morganmckinley.com/ie/salary-guide/executive-search/permanent-salaries"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Morgan McKinley 2026 Executive Search Managing Director EUR180,000-300,000 (Ireland-wide, 5+ years column); General Manager EUR180,000-300,000 and CEO EUR250,000-450,000 on the same page. Single publisher. Banking-sector PCF CEO EUR160,000-350,000 (MM Banking guide) corroborates CEO range."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "software-engineering",
@@ -11643,32 +11629,32 @@
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 103557,
+      "p50": 10551,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=software%20engineer"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=J&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 7615 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Only an average is published per band, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "data-and-ai",
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 120000,
+      "p50": 10551,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=data%20scientist"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=J&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 1363 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "product-management",
@@ -11691,16 +11677,16 @@
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 122250,
+      "p50": 10551,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=security%20engineer"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=J&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 1261 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "design",
@@ -11739,335 +11725,320 @@
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 135000,
+      "p50": 14055,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20it"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=J&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 2144 entries, gross annual incl bonuses and 13th salary. Head of IT treated as IT function lead, overall average used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 100100,
+      "p50": 13065,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=cto"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 2801 entries, gross annual incl bonuses and 13th salary. Self-reported CTO entries likely skew to startups and SMEs, so this understates large-company CIO pay. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 130000,
+      "p50": 13257,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20sales"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=G&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 4677 entries, gross annual incl bonuses and 13th salary. Role title itself is a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "marketing-and-growth",
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 90300,
+      "p50": 10691,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=marketing%20manager"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=M&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 4500 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 151100,
+      "p50": 13065,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=cfo"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 3749 entries, gross annual incl bonuses and 13th salary. CFO is an executive role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
-      "p25": 117750,
-      "p50": 129000,
-      "p75": 142250,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 18392,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/ch/en/insights/salary-guide/finance-and-accounting",
-        "https://www.roberthalf.com/ch/en/insights/salary-guide"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=K&isco08=OC1"
       ],
-      "note": "Robert Half Switzerland 2026 Salary Guide, national, base starting salary excluding bonuses, CHF per guide FAQ, method is actual Robert Half placements. Period unlabeled on page, annual because CHF 129000 per month would be over 1.5M per year, impossible for an accounting manager. Published percentile table maps directly to p25, p50, p75."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 117000,
+      "p50": 11229,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20of%20human%20resources"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=N&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 3655 entries, gross annual incl bonuses and 13th salary. Role title itself is a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 101683,
+      "p50": 9522,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=operations%20manager"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=H&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 1119 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "general-management",
       "level": "executive",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 140000,
+      "p50": 13065,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=ceo"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 10574 entries, gross annual incl bonuses and 13th salary. CEO is an executive role so the overall average is used, it skews to SME pay. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 98273,
+      "p50": 8475,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=civil%20engineer"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=F&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 1619 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in construction (NACE F), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 90000,
+      "p50": 11961,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=construction%20site%20supervisor"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=F&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 5263 entries, gross annual incl bonuses and 13th salary. Site supervisor is itself a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in construction (NACE F), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "healthcare",
       "level": "lead",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 100496,
+      "p50": 10297,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=head%20nurse"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=Q&isco08=OC1"
       ],
-      "note": "jobs.ch crowd data, 337 entries, gross annual incl bonuses and 13th salary. Head nurse is itself a lead role so the overall average is used. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in human health and social work activities (NACE Q), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "education-and-teaching",
       "level": "senior",
       "country": "CHE",
       "currency": "CHF",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 90000,
+      "p50": 9612,
       "p75": 0,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.jobs.ch/en/salary/?canton=ch&term=teacher"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=P&isco08=OC2"
       ],
-      "note": "jobs.ch crowd data, 1628 entries, gross annual incl bonuses and 13th salary. Senior mapped to the on-page 9-11 years experience band. Average only published, so p25 and p75 are zero. Source is self-reported user entries with no stated validation, hence Low quality. Single published average, so the band collapses to the median and the result says so."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in education (NACE P), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "senior",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 42000,
-      "p50": 55000,
-      "p75": 65000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4713,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC2"
       ],
-      "note": "Robert Half Guide 2026 national band for Developpeur; percentiles reflect in-role experience so p75 marks experienced profiles. Basis is fixed gross annual per the guide methodology page. Other published titles for this cell: Ingenieur DevOps 60000/72000/80000, QA Tester/Lead QA 45000/55000/65000. TPC 2026 Paris medians: backend senior 64000, fullstack senior 59000. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "software-engineering",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 55000,
-      "p50": 65000,
-      "p75": 80000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5986,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Lead Developpeur, fixed gross annual starting salaries per guide methodology. Same-cell published comparators: Ingenieur Systemes et Reseaux 50000/60000/68000 sits below, Responsable Infrastructure IT 62000/70000/80000 overlaps."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 50000,
-      "p50": 60000,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5986,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Responsable informatique / IT Manager, fixed gross annual per guide methodology. Responsable Infrastructure IT 62000/70000/80000 also maps to this cell. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "it-executive",
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 95000,
-      "p50": 150000,
-      "p75": 180000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Directeur des Systemes d'Information, fixed gross annual per guide methodology. Corroborating published titles: TPC 2026 CTO medians by company size 78000/100000/130000, Apec 2025 median 77000 fixe plus variable for the direction informatique family. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "senior",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 52000,
-      "p50": 65000,
-      "p75": 80000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4713,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC2"
       ],
-      "note": "Robert Half Guide 2026 national band for Expert cybersecurity, fixed gross annual starting salaries per guide methodology; p75 corresponds to experienced profiles."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80000,
-      "p50": 90000,
-      "p75": 110000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5986,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Responsable Securite des SI (RSSI), fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "cybersecurity",
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 100000,
-      "p50": 130000,
-      "p75": 170000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-de-projet",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/it-digital",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Directeur Securite des SI (DSSI), fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "delivery-and-project-management",
@@ -12109,136 +12080,128 @@
       "level": "senior",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 45000,
-      "p50": 55000,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6822,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/controleur-de-gestion",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=K&isco08=OC2"
       ],
-      "note": "Robert Half Guide 2026 national band for Controleur de Gestion, page updated 2026; p75 marks experienced profiles. Basis is fixed gross annual per the guide methodology page. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in financial and insurance activities (NACE K), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 65000,
-      "p50": 75000,
-      "p75": 90000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5954,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/responsable-du-controle-de-gestion",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=K&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Responsable du Controle de Gestion, page updated 2026. Same-cell published titles: Responsable Comptable / Chef Comptable 65000/75000/85000, Responsable Consolideur 70000/80000/110000. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 110000,
-      "p50": 140000,
-      "p75": 200000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires/finance-comptabilite",
-        "https://www.roberthalf.com/fr/fr/details-emploi/controleur-de-gestion",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national percentiles for Directeur Comptable from the finance grid. Same-cell published title: Directeur du Controle de Gestion 100000/120000/175000. Basis is fixed gross annual per the guide methodology page. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "senior",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 45000,
-      "p50": 58000,
-      "p75": 70000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5174,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-commercial",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=G&isco08=OC2"
       ],
-      "note": "Robert Half Guide 2026 national band for Sales Executive. Other published titles for this cell: Business Developer 36000/45000/60000. Apec 2025 median for the administration des ventes family is 49000 brut. Basis is fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 90000,
-      "p50": 120000,
-      "p75": 150000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-commercial"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026, Directeur commercial national band explicitly labeled brut/an on the page, updated 2026. Page also publishes fixe plus variable by company size: 70000 to 100000 in PME, 120000 to 200000 in large groups."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 55000,
-      "p50": 65000,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5872,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-des-ressources-humaines",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=N&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Responsable RH / HRBP. Same-cell published titles: Responsable Remunerations et Avantages sociaux 60000/70000/80000, Responsable du Recrutement 48000/55000/65000, Responsable Paie 55000/70000/85000. Basis is fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "hr-and-people",
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 80000,
-      "p50": 110000,
-      "p75": 130000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/directeur-des-ressources-humaines",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Directeur des ressources humaines (DRH); its p25 exceeds the p75 of every other HR figure published on the page. Basis is fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
-      "p25": 45000,
-      "p50": 60000,
-      "p75": 75000,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4506,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.roberthalf.com/fr/fr/details-emploi/responsable-supply-chain",
-        "https://www.roberthalf.com/fr/fr/tendances/guide-salaires"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=H&isco08=OC1"
       ],
-      "note": "Robert Half Guide 2026 national band for Responsable Supply Chain, page updated 2026. Same-cell published titles: Responsable Achats 55000/70000/85000, Responsable exploitation 40000/48000/55000. Basis is fixed gross annual per guide methodology. Guide figures are starting salaries excluding variable pay."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "product-management",
@@ -12277,16 +12240,16 @@
       "level": "senior",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 80000,
+      "p50": 4713,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://tpc-recrutement.com/ressources/salaires/data"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=J&isco08=OC2"
       ],
-      "note": "TPC annual study updated March 2026, 2495 Data respondents; median brut annuel fixe plus variable for Data Scientist senior, Paris/IDF, 303 respondents. Other published titles: Data Engineer senior 68000, Data Analyst senior 63000."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
     },
     {
       "family": "design",
@@ -12309,16 +12272,16 @@
       "level": "executive",
       "country": "FRA",
       "currency": "EUR",
-      "basis": "annual-gross",
+      "basis": "monthly-gross",
       "p25": 0,
-      "p50": 140489,
+      "p50": 5580,
       "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
       "sources": [
-        "https://www.capital.fr/votre-carriere/salaires-voici-les-remunerations-des-metiers-de-la-communication-et-du-marketing-en-2025-1517419"
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
       ],
-      "note": "Capital article of 22 August 2025 reproducing the LHH grid built from LHH recruitment missions, 2025 edition; median brut/an for Directeur de la communication, the closest published executive archetype for this cell. Other published figures: Responsable affaires publiques 114522, Specialiste marketing e-commerce 48275."
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
     },
     {
       "family": "software-engineering",
@@ -32902,6 +32865,662 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=LU&nace_r2=J&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo LU). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 5623,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 5581,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 9849,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 5995,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in construction (NACE F), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 6806,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in construction (NACE F), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 5020,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in human health and social work activities (NACE Q), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 8339,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in human health and social work activities (NACE Q), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 4812,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in education (NACE P), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 6457,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in education (NACE P), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "DEU",
+      "p25": 0,
+      "p50": 8008,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=DEU&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in the whole business economy (NACE BS), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; German pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 4586,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 4556,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 6085,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 3806,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 5699,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 4507,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=F&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in construction (NACE F), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 5295,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in construction (NACE F), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 3864,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in human health and social work activities (NACE Q), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 4348,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in human health and social work activities (NACE Q), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 3403,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=P&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in education (NACE P), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 3948,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in education (NACE P), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "FRA",
+      "p25": 0,
+      "p50": 5580,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=FRA&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in the whole business economy (NACE BS), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; French pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "IRL",
+      "p25": 0,
+      "p50": 7352,
+      "p75": 0,
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=IRL&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in the whole business economy (NACE BS), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Irish pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 14055,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in information and communication (NACE J), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13232,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=K&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in financial and insurance activities (NACE K), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 10813,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 16260,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 8778,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 10520,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 9169,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=Q&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Professionals (ISCO major group 2) in human health and social work activities (NACE Q), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 10981,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in education (NACE P), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CHE",
+      "p25": 0,
+      "p50": 13065,
+      "p75": 0,
+      "currency": "CHF",
+      "basis": "monthly-gross",
+      "quality": "High",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=CHE&nace_r2=BS&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, CHF, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) in the whole business economy (NACE BS), the all-management-ranks pool. MEDIAN-ONLY shape carrying a published MEAN: SES publishes no median here. The 2022 vintage predates current offers; Swiss pay has risen since, so treat as a floor."
     }
   ]
 }

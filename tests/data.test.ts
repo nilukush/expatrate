@@ -416,12 +416,12 @@ test('expansion wave 2: China, Korea, Hong Kong, Brazil, Switzerland carry verif
   expect(braSw.p25).toBe(12_450);
   expect(braSw.p75).toBe(20_950);
   const cheFin = by('CHE').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'lead');
-  expect(cheFin.p25).toBe(117_750);
-  expect(cheFin.p75).toBe(142_250);
-  expect(cheFin.quality).toBe('Medium');
+  // Replaced by the 2026-09-07 SES spine: the Robert Half span became the official finance-managers mean.
+  expect(cheFin.p50).toBe(18_392);
+  expect(cheFin.quality).toBe('High');
   // Self-reported crowd sources stay Low even with big n.
-  const cheSw = by('CHE').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
-  expect(cheSw.quality).toBe('Low');
+  const cheDelivery = by('CHE').find((r: { family: string; level: string }) => r.family === 'delivery-and-project-management' && r.level === 'lead');
+  expect(cheDelivery.quality).toBe('Low');
 });
 
 test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () => {
@@ -439,9 +439,10 @@ test('expansion wave 3: France, Spain, Poland, Turkey carry verified rows', () =
   }
   // Spot anchors verified against the cited pages on 2026-09-02.
   const fraIt = by('FRA').find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'executive');
-  expect(fraIt.p50).toBe(150_000);
-  expect(fraIt.p75).toBe(180_000);
-  expect(fraIt.basis).toBe('annual-gross');
+  // Replaced by the 2026-09-07 SES spine: the Robert Half span became the economy-wide managers mean.
+  expect(fraIt.p50).toBe(5_580);
+  expect(fraIt.p75).toBe(0);
+  expect(fraIt.basis).toBe('monthly-gross');
   const espSw = by('ESP').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
   expect(espSw.p25).toBe(32_763);
   expect(espSw.p50).toBe(41_846);
@@ -1293,4 +1294,104 @@ test('Czechia, Malta, Luxembourg SES fill (2026-09-07): official lead and execut
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
+});
+
+test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland move off recruiter and job-board sources', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const ses = (rs: { sources: string[] }[]) => rs.filter((r) => r.sources[0].includes('earn_ses22_48')).length;
+
+  // Germany: all 18 Stepstone cells swap to official SES means and 12 archetype cells are added; the
+  // market becomes 30 High rows with no Stepstone survivor.
+  const deu = by('DEU');
+  expect(deu.length).toBe(30);
+  expect(ses(deu)).toBe(30);
+  expect(deu.every((r: { quality: string }) => r.quality === 'High')).toBe(true);
+  const deuAnchor = (family: string, level: string, value: number) => {
+    const row = deu.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `DEU ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.basis).toBe('monthly-gross');
+  };
+  deuAnchor('software-engineering', 'senior', 5_623);
+  deuAnchor('software-engineering', 'lead', 9_752);
+  deuAnchor('finance-and-accounting', 'lead', 10_353);
+  deuAnchor('finance-and-accounting', 'executive', 8_008);
+  deuAnchor('marketing-and-growth', 'lead', 9_849);
+  deuAnchor('engineering-civil-mechanical-electrical', 'senior', 5_995);
+  deuAnchor('healthcare', 'lead', 8_339);
+  deuAnchor('education-and-teaching', 'senior', 4_812);
+  deuAnchor('general-management', 'lead', 8_008);
+
+  // France: 17 recruiter cells swap and 14 are added. The finance professionals mean (6,822) exceeds the
+  // finance managers mean (5,954); both ship verbatim as published.
+  const fra = by('FRA');
+  expect(fra.length).toBe(36);
+  expect(ses(fra)).toBe(31);
+  const fraAnchor = (family: string, level: string, value: number) => {
+    const row = fra.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `FRA ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  fraAnchor('software-engineering', 'senior', 4_713);
+  fraAnchor('software-engineering', 'lead', 5_986);
+  fraAnchor('cybersecurity', 'lead', 5_986);
+  fraAnchor('finance-and-accounting', 'senior', 6_822);
+  fraAnchor('finance-and-accounting', 'lead', 5_954);
+  fraAnchor('finance-and-accounting', 'executive', 5_580);
+  fraAnchor('healthcare', 'lead', 4_348);
+  fraAnchor('education-and-teaching', 'senior', 3_403);
+
+  // Ireland: 28 recruiter cells swap and the economy-wide managers pool anchors the executives. The
+  // finance lead keeps Morgan McKinley because SES publishes no K OC1 for Ireland; HSE and TUI statutory
+  // rows stay untouched.
+  const irl = by('IRL');
+  expect(irl.length).toBe(45);
+  expect(ses(irl)).toBe(29);
+  expect(irl.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(8);
+  const irlAnchor = (family: string, level: string, value: number) => {
+    const row = irl.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `IRL ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  irlAnchor('software-engineering', 'senior', 7_510);
+  irlAnchor('software-engineering', 'lead', 13_811);
+  irlAnchor('it-executive', 'lead', 13_811);
+  irlAnchor('cybersecurity', 'lead', 13_811);
+  irlAnchor('finance-and-accounting', 'senior', 7_370);
+  irlAnchor('finance-and-accounting', 'executive', 7_352);
+  irlAnchor('operations-and-supply-chain', 'senior', 6_538);
+  irlAnchor('general-management', 'lead', 7_352);
+  const irlFinLead = irl.find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'lead')!;
+  expect(irlFinLead.p50).toBe(124_500);
+  expect(irlFinLead.sources[0]).toContain('roberthalf');
+  const irlHealthLead = irl.find((r: { family: string; level: string }) => r.family === 'healthcare' && r.level === 'lead')!;
+  expect(irlHealthLead.p50).toBe(69_189);
+  expect(irlHealthLead.sources[0]).toContain('hse.ie');
+
+  // Switzerland: 15 job-board cells swap and 14 are added; SES publishes in CHF, so the official rows
+  // carry francs. Only three unarchetyped jobs.ch rows survive.
+  const che = by('CHE');
+  expect(che.length).toBe(33);
+  expect(ses(che)).toBe(30);
+  expect(che.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(3);
+  const cheAnchor = (family: string, level: string, value: number) => {
+    const row = che.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `CHE ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.currency).toBe('CHF');
+  };
+  cheAnchor('software-engineering', 'senior', 10_551);
+  cheAnchor('software-engineering', 'lead', 14_055);
+  cheAnchor('finance-and-accounting', 'lead', 18_392);
+  cheAnchor('finance-and-accounting', 'executive', 13_065);
+  cheAnchor('education-and-teaching', 'lead', 10_981);
+
+  for (const cc of ['DEU', 'FRA', 'IRL', 'CHE']) {
+    const rs = by(cc);
+    const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+    expect(keys.size).toBe(rs.length);
+  }
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(1_995);
 });

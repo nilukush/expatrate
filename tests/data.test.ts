@@ -1395,7 +1395,7 @@ test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland m
     expect(keys.size).toBe(rs.length);
   }
   // Total moved to 2,012 by the southern-and-central SES round; the live count lives in the newest test.
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
 });
 
 test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta move off private survey and recruiter sources', () => {
@@ -1504,7 +1504,7 @@ test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Ma
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
 });
 
 test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close the private-source gaps', () => {
@@ -1598,5 +1598,45 @@ test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, 
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_055);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
+});
+
+test('Costa Rica joins the benchmark matrix (2026-09-07): INEC ECE branch means after the source-access unblock', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const cri = by('CRI');
+  expect(cri.length).toBe(11);
+  for (const row of cri) {
+    expect(row.currency, 'CRI currency').toBe('CRC');
+    expect(row.basis, 'CRI basis').toBe('monthly-gross');
+    expect(row.quality, 'CRI quality').toBe('Medium');
+    expect(row.p25).toBe(0);
+    expect(row.p75).toBe(0);
+    expect(row.level).toBe('senior');
+  }
+  const anchor = (family: string, value: number) => {
+    const row = cri.find((r: { family: string }) => r.family === family);
+    expect(row, `CRI ${family}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  // Anchors are the AMJ 2026 (April-June moving quarter) branch means from cuadro 4 of the
+  // INEC ECE historical-series workbook on the NADA catalog, re-fetched verbatim before merge.
+  anchor('finance-and-accounting', 929_313.95);
+  anchor('sales-and-business-development', 441_767.00);
+  anchor('operations-and-supply-chain', 444_937.44);
+  anchor('engineering-civil-mechanical-electrical', 447_126.78);
+  anchor('healthcare', 938_053.68);
+  anchor('education-and-teaching', 938_053.68);
+  anchor('marketing-and-growth', 554_000.21);
+  anchor('hr-and-people', 554_000.21);
+  anchor('software-engineering', 460_511.33);
+  anchor('data-and-ai', 460_511.33);
+  anchor('cybersecurity', 460_511.33);
+  // ECE publishes no manager-only cut (three combined skill bands only), so executive and
+  // general-management stay absent rather than approximated; unarchetyped families stay out.
+  expect(cri.find((r: { family: string }) => r.family === 'general-management')).toBeUndefined();
+  expect(cri.find((r: { family: string }) => r.family === 'it-executive')).toBeUndefined();
+  expect(cri.find((r: { family: string }) => r.family === 'product-management')).toBeUndefined();
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
 });

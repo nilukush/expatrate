@@ -1,6 +1,7 @@
 {
-  "lastReviewed": "2026-09-06",
+  "lastReviewed": "2026-09-07",
   "curationLog": [
+    "Costa Rica joins as the 83rd benchmarked market (2026-09-07). The old access block on www.inec.go.cr (TLS alert from this network) is bypassed entirely: INEC also publishes through the NADA microdata catalog at sistemas.inec.cr and the file host admin.inec.cr, both curl-reachable, and the historical-series workbook of the Encuesta Continua de Empleo carries cuadro 4, average monthly income from the main job by branch. Eleven senior rows from the moving quarter April to June 2026 (gross, colones): finance 929,313.95; the combined education-and-health branch 938,053.68 shared by both families; the professional-and-administrative branch 554,000.21 shared by marketing and hr; the ICT-mixed communications branch 460,511.33 shared by all three technology families with the understatement disclosed; sales 441,767.00; operations 444,937.44; construction 447,126.78. ENAHO 2025 was checked and publishes household income only (quintiles and zones, no occupational cut), and ECE publishes no manager-only cut (three combined skill bands), so executive, general-management, it-executive, and the unarchetyped families stay absent rather than approximated. Every anchor re-fetched from the catalog URL and matched verbatim before merge.",
     "Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close out the private-source gaps on the official Eurostat Structure of Earnings Survey 2022 backbone. Spain: the six tecnoempleo and infojobs cells swap and 16 archetype cells are added while the official INE rows stay untouched; Spain is the only one of the four whose B-S managers pool is published inside earn_ses22_48 (4,355). Portugal: the five landing.jobs cells swap and 17 cells are added onto the PORDATA seniors, with executives on the earn_ses22_21 economy-wide managers pool (3,543) because the B-S cell is unpublished there. Austria: the seven kununu and karriere.at cells swap to official means, leaving only three unarchetyped crowd rows in the country. Belgium: the two jobat cells swap and 10 archetype cells are added; the finance lead is not added because K OC1 is unpublished for Belgium, and the gap is pinned rather than papered over. Every swapped row discloses that SES monthly earnings exclude the customary extra payments. Every anchor was re-fetched and matched verbatim before merge. This completes the SES campaign: every EU/EEA market now runs on official earnings statistics except those on fresher national registers (EST DNK NLD NOR SWE ISL SVN FIN) and Liechtenstein, which SES does not cover.",
     "Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta join the official Eurostat Structure of Earnings Survey 2022 backbone. Poland: 20 wynagrodzenia.pl and justjoin.it cells swap and 11 archetype cells are added, clearing the last two Low rows. Italy: 27 manageritalia, techcompenso, and attributed-press cells swap and 4 cells are added; the statutory CCNL education and healthcare rows stay untouched, and every swapped row discloses that SES monthly earnings exclude the 13th and 14th payments. Cyprus: 16 CareerFinders cells swap onto the all-enterprise-sizes SES convention the country already runs on (verified by reproducing the eight existing Cypriot cells exactly before merge) and two executive cells are added; the HR lead keeps CareerFinders because N OC1 is unpublished even at all sizes. Malta: the ten Archer recruiter cells swap, executives onto the earn_ses22_21 all-managers pool 3,682 that already anchors the country's executives; delivery, product, and the IT-appointments senior keep their recruitment-market rows because no SES archetype exists. Every anchor was re-fetched and matched verbatim before merge.",
     "Big-market SES spine (2026-09-07): Germany, France, Ireland, and Switzerland move onto the official Eurostat Structure of Earnings Survey 2022 backbone (datasets earn_ses22_48 cells plus the NACE B-S managers pool for executives), the same recipe already carrying twelve countries. Germany: all 18 Stepstone cells swap and 12 archetype cells are added, making it a fully official 30-row market. France: 17 Robert Half, capital.fr, and tpc-recrutement cells swap and 14 cells are added; the finance professionals mean (6,822) exceeding the finance managers mean (5,954) is published verbatim, and the remaining Robert Half and tpc cells (delivery, design, product) stay as the unarchetyped survivors. Ireland: 28 Morgan McKinley and Robert Half cells swap and the general-management lead is added; the HSE and TUI statutory rows are untouched, the finance lead keeps Morgan McKinley because SES publishes no K OC1 for Ireland, and delivery, design, and product keep their Low rows. Switzerland: 15 jobs.ch and Robert Half cells swap to CHF-denominated SES means and 14 cells are added, leaving three unarchetyped jobs.ch rows. Every anchor was re-fetched and matched verbatim before merge. Uruguay was re-probed and stays deferred: the IMS C2 series is index numbers by CIIU division (no peso levels), the quarterly ECH income report tabulates household and per-capita income only, BPS Comentarios N 133 publishes economy-wide averages by gender, and the Shiny labor visualizer has no income or branch domain. Lithuania stays on the fresher Sodra-registry rows; the osp.stat.gov.lt upgrade path remains Cloudflare-blocked for curl and the remote reader alike.",
@@ -34444,6 +34445,193 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=BE&isco08=OC1&age=TOTAL"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). The economy-wide managers pool shared by all executive cells; used because the NACE B-S managers cell is unpublished for this country in earn_ses22_48. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor. SES monthly earnings exclude the customary extra payments (13th month and similar), so a full local package runs higher."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 929313.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Financial and insurance activities (Intermediación financiera y de seguros). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 441767.0,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Wholesale and retail trade and repair (Comercio y reparación). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 444937.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Transportation and storage (Transporte y almacenamiento). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 447126.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Construction (Construcción). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 938053.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Education and health (Enseñanza y salud). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. INEC publishes the two sectors only as a combined branch, so healthcare and education share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 938053.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Education and health (Enseñanza y salud). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. INEC publishes the two sectors only as a combined branch, so healthcare and education share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 554000.21,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Professional, scientific, technical, and administrative support activities (Actividades profesionales y administrativas de apoyo). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. Marketing and people roles share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 554000.21,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Professional, scientific, technical, and administrative support activities (Actividades profesionales y administrativas de apoyo). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. Marketing and people roles share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     }
   ]
 }

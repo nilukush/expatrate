@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-07",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 82,
-    "dataRows": 2055,
+    "tier1CountriesCount": 83,
+    "dataRows": 2066,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -271,6 +271,23 @@
         "https://www.larepublica.co/alta-gerencia/desarrolladores-que-trabajan-para-empresas-extranjeras-ganan-us-49-700-anuales-3960107"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Desarrolladores de software senior (published as senior with accent on page), ranked 4 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 9 million to 16 million COP per month, oriented to 2026, no attributed study (opaque method, hence Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternatives seen on fetched pages: UNIR magazine (published 17 June 2026) senior developer 5+ years earns 7,000,000 or more monthly, up to 15,000,000 or more, monthly basis explicit; La Republica (25 Sep 2024) citing Deel Salary Insights (500,000+ contracts): Colombian developers hired by foreign companies average USD 49,700 per year, near USD 98,000 per year in specialized roles, annual USD, foreign-employer niche."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "software-engineering",
@@ -1588,6 +1605,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -2701,6 +2726,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -3642,6 +3675,23 @@
         "https://www.datapath.ai/salarios/data-engineer-colombia"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Ingenieros y especialistas de datos, ranked 3 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 10.5 million to 18 million COP per month, oriented to 2026, no attributed study (Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternative on fetched page: DataPath (training company, updated March 2026, no method stated, page says valores en pesos colombianos COP mensuales) data engineer Bogota senior 4+ years 15 million to 25 million per month."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "data-and-ai",
@@ -4907,6 +4957,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -5835,6 +5893,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6619,6 +6685,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "COL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
@@ -7524,6 +7598,14 @@
       "family": "it-executive",
       "level": "lead",
       "country": "COL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
@@ -8639,6 +8721,14 @@
         "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published band endpoints by company size, not percentiles. Published study: Page Executive (PageGroup) Estudio de Remuneracion C-level 2024, reproduced by La Republica (13 March 2024): companies with monthly billing under US$30 million pay C-level executives 30 to 45 million COP; roles named include CEO, CFO, COO, CDO, CCO. Basis not labeled monthly or annual on the page; monthly resolved by arithmetic: as annual figures they would imply 2.5M to 3.75M per month for C-level, inconsistent with Buk CEO median 24.2M monthly and Michael Page CFO average 42.5M monthly; as monthly they are consistent. The same article says companies with sales over US$201 million pay 75 million and up, which exceeds the 50M plausibility rail and is recorded here only. Same-cell alternatives seen on fetched pages: Magneto365 ranking 1 Directores de tecnologia, CTO, CIO at 18 million to over 30 million monthly (Low); Portafolio (19 Feb 2023) citing Page Executive Estudio de Remuneracion 2023 Latam, survey of over 2,000 executives: CTO 35 to 70 million monthly (top exceeds rail)."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
     },
     {
       "family": "it-executive",
@@ -9802,6 +9892,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -10760,6 +10858,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11619,6 +11725,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -12453,6 +12567,23 @@
         "https://trabajaconmigo.info/guia-de-sueldos-en-tecnologia-colombia/"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published role: Especialistas en ciberseguridad, ranked 5 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 8 million to 16 million COP per month, oriented to 2026, no attributed study (Low). Gross not stated; treated as gross per Colombian monthly convention. Same-cell alternative on fetched page: trabajaconmigo.info lists analista de seguridad ofensiva / pentesting at 9 million to 16 million monthly and a CISO (director de seguridad) at over 25 million monthly, blog with opaque method."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 460511.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "cybersecurity",
@@ -13548,6 +13679,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14376,6 +14515,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15163,6 +15310,14 @@
         "https://www.coderhouse.com/us/sueldos/sueldo-disenador-ux-ui-colombia-2025"
       ],
       "note": "Only a floor figure is published for this cell; the stored value is that floor, and the true market center is likely higher. Shape d: floor only, upper bound suppressed by the source. Published role: Disenador UX/UI, senior level 6,500,000 COP con componente variable, data year 2026. Page does not state periodicity; monthly resolved by arithmetic: as an annual figure it would imply about 542,000 per month, impossible for a senior designer, while monthly fits the sanity zone. Sources linked by the page: Computrabajo, Talent.com, El Empleo, LinkedIn Salary; edtech blog, opaque method, hence Low."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
     },
     {
       "family": "design",
@@ -16115,6 +16270,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -16915,6 +17078,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17662,6 +17833,14 @@
         "https://co.computrabajo.com/salarios/gerente-de-proyectos"
       ],
       "note": "Median-only shape: source publishes a single average. On-page statement: el sueldo medio para el puesto de Gerente de proyectos en Colombia es de 5.128.922 al mes, based on 476 salarios (sample stated on page), last update 15 June 2025; method is an estimate from fuentes obtenidas de las empresas, usuarios y empleados in the last 12 months (mixed job-ad and self-reported data, hence Low). Average spans all experience levels of the project management family, so it is a conservative senior-row figure; management level is captured in the lead row. Gross not stated; treated as gross per Colombian monthly convention."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
     },
     {
       "family": "delivery-and-project-management",
@@ -18697,6 +18876,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -19587,6 +19774,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20404,6 +20599,23 @@
         "https://www.michaelpage.com.co/salary-comparison-tool/kam-salaries"
       ],
       "note": "Median-only shape: source publishes a single average (mean). On-page statement: salario promedio del cargo KAM (Key Account Manager) en Colombia es COP12,000,000; monthly base per tool framing; sueldos brutos; placements and advertised roles of the last 12 months; no sample size stated. KAM is the senior individual-contributor archetype with major accounts, mapped to senior."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 441767,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Wholesale and retail trade and repair (Comercio y reparación). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "sales-and-business-development",
@@ -21622,6 +21834,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -22723,6 +22943,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "COL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
@@ -23837,6 +24065,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 554000.21,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Professional, scientific, technical, and administrative support activities (Actividades profesionales y administrativas de apoyo). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. Marketing and people roles share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "marketing-and-growth",
@@ -24997,6 +25242,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -26068,6 +26321,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27059,6 +27320,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 929313.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Financial and insurance activities (Intermediación financiera y de seguros). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "finance-and-accounting",
@@ -28320,6 +28598,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -29516,6 +29802,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -30684,6 +30978,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 554000.21,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Professional, scientific, technical, and administrative support activities (Actividades profesionales y administrativas de apoyo). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. Marketing and people roles share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "hr-and-people",
@@ -31870,6 +32181,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -32982,6 +33301,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34021,6 +34348,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 444937.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Transportation and storage (Transporte y almacenamiento). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "operations-and-supply-chain",
@@ -35250,6 +35594,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -36375,6 +36727,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -37347,6 +37707,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -38148,6 +38516,14 @@
       "family": "general-management",
       "level": "lead",
       "country": "COL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"
@@ -39146,6 +39522,14 @@
         "https://www.portafolio.co/economia/empleo/salario-que-reciben-altos-ejecutivos-de-empresas-en-colombia-578694"
       ],
       "note": "Full ordered band shape: true published P25, P50 and P75 from percentile bands. Published role: Gerente general (CEO), Direccion de Empresas table of the Buk Guia Salarial Colombia 2026. Basis authority: page states the CEO median ronda los 24,2 millones mensuales and figures come from registros reales del modulo de nomina (payroll records) of 1,002 empresas and 78,326 colaboradores, private formal sector, January to June 2026 payroll data, guide dated August 2026; payroll remuneration implies gross. Same-cell alternatives seen on fetched pages: Buk Presidente de directorio P25 14,762,000, P50 22,762,000, P75 31,506,000; Page Executive Estudio C-level 2024 via La Republica 30 to 45 million monthly, 75 million and up in companies with sales over US$201 million (exceeds rail); Page Executive 2023 Latam via Portafolio (n over 2,000): CEO 40 to 70 million and Country Manager 30 to 50 million monthly (CEO top exceeds rail)."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
     },
     {
       "family": "general-management",
@@ -40321,6 +40705,23 @@
         "https://ingenieria.javeriana.edu.co/w/blog/cuanto-gana-un-ingeniero-civil"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles. Published roles: residente senior, jefe de obra, coordinador (civil engineering, 5 to 8 years of experience) earn 3,152,950 to 7,000,000 COP al mes; blog of the Pontificia Universidad Javeriana Faculty of Engineering citing job portals, no sample stated, hence Low. Gross not stated; treated as gross per Colombian monthly convention. Archetype is civil; mechanical and electrical specializations are not broken out on the page."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 447126.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Construction (Construcción). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -41516,6 +41917,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -42556,6 +42965,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "HRV",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -43533,6 +43950,23 @@
         "https://co.computrabajo.com/salarios/medico-especialista"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: published low to high range endpoints, not percentiles; upper endpoint published as mas de 18 million (open ended). Published role: Medicos especialistas, ranked 9 in the Magneto365 ranking, table column headed Rango salarial mensual aproximado, 7 million to over 18 million COP per month, oriented to 2026, no attributed study (Low); the same page carries an inconsistent comparison table showing a 4.5 million average, flagged here. Same-cell alternatives seen on fetched pages: Portafolio (April 2025) citing talent.com data via UNIR: pediatra about 8,074,200 monthly and anestesiologo above 12,500,000 monthly (96,890,400 per year for pediatra, monthly basis explicit); Computrabajo Medico especialista average 6,004,999 al mes from 63 salarios (updated 2025, mixed job-ad and user data). Specialist physician is the senior archetype; general physicians earn 3,793,080 monthly per the Portafolio piece."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 938053.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Education and health (Enseñanza y salud). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. INEC publishes the two sectors only as a combined branch, so healthcare and education share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "healthcare",
@@ -44686,6 +45120,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -45680,6 +46122,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -46610,6 +47060,23 @@
         "https://www.eltiempo.com/economia/finanzas-personales/asi-quedo-salario-para-profesores-publicos-tras-decretos-del-gobierno-el-listado-completo-con-cifras-exactas-3460423"
       ],
       "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. SPAN shape: band built from two published official scale points, not percentiles. Official 2025 teacher salary table (Estatuto 2277, updated by the June 2025 decretos 0596 to 0617) reproduced by El Tiempo: grado 11 base salary 4,506,804 and grado 14 base salary 6,758,592 per month; band covers late-career escalafon grades 11 to 14, the senior-teacher zone. Basis authority: article states the escalafon grades determinan el salario mensual; figures are statutory gross base amounts and exclude the 1.6 percent bonificacion (grado 14 adds 101,064). Same-cell alternative on the page: Estatuto 1278 grado 2 nivel 2D con especializacion 7,164,089 monthly. Public-sector statutory scale, hence High quality. Rector and directive-cargo tables were embedded as images and could not be read, so lead and executive cells are empty."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CRI",
+      "currency": "CRC",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 938053.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-07",
+      "sources": [
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384/download/7331",
+        "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
+      ],
+      "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Education and health (Enseñanza y salud). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. INEC publishes the two sectors only as a combined branch, so healthcare and education share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
     },
     {
       "family": "education-and-teaching",
@@ -47762,6 +48229,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "CRI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "HRV",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -48757,6 +49232,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "COL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-07"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-07"

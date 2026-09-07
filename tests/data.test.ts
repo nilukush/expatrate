@@ -1159,3 +1159,75 @@ test('Slovakia upgrade (2026-09-06): Eurostat SES 2022 replaces the platy.sk sec
   const keys = new Set(rows.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
   expect(keys.size).toBe(rows.length);
 });
+
+test('Romania and Greece SES upgrade (2026-09-06): official cells replace the Paylab Low rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const rou = by('ROU');
+  expect(rou.length, 'ROU row count').toBe(27);
+  // Romania gains ten official SES lead cells and the two Paylab executives go official;
+  // cybersecurity senior now shares the INS software pool instead of the crowd source.
+  const rouLead = rou.filter((r: { level: string }) => r.level === 'lead');
+  expect(rouLead.length).toBe(10);
+  for (const row of rouLead) {
+    expect(row.quality).toBe('High');
+    expect(row.currency).toBe('RON');
+    expect(row.basis).toBe('monthly-gross');
+    expect(row.note).toContain('2022');
+    expect(row.note).toContain('Eurostat');
+  }
+  const rouAnchor = (family: string, level: string, value: number) => {
+    const row = rou.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `ROU ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  rouAnchor('software-engineering', 'lead', 17_392);
+  rouAnchor('it-executive', 'lead', 17_392);
+  rouAnchor('finance-and-accounting', 'lead', 15_985);
+  rouAnchor('healthcare', 'lead', 14_800);
+  rouAnchor('education-and-teaching', 'lead', 11_352);
+  rouAnchor('it-executive', 'executive', 11_246);
+  rouAnchor('general-management', 'executive', 11_246);
+  rouAnchor('cybersecurity', 'senior', 22_689);
+  const rouCyber = rou.find((r: { family: string }) => r.family === 'cybersecurity')!;
+  expect(rouCyber.quality).toBe('High');
+  expect(rouCyber.note).toContain('shares the software-engineering senior pool');
+  // The two unarchetyped Paylab seniors survive.
+  expect(rou.filter((r: { quality: string }) => r.quality === 'Low').map((r: { family: string }) => r.family).sort())
+    .toEqual(['delivery-and-project-management', 'product-management']);
+
+  const grc = by('GRC');
+  expect(grc.length, 'GRC row count').toBe(39);
+  expect(grc.filter((r: { quality: string }) => r.quality === 'Low').length).toBe(6);
+  const grcAnchor = (family: string, level: string, value: number) => {
+    const row = grc.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `GRC ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.quality).toBe('High');
+  };
+  grcAnchor('cybersecurity', 'senior', 2_299);
+  grcAnchor('data-and-ai', 'senior', 2_299);
+  grcAnchor('hr-and-people', 'senior', 1_668);
+  grcAnchor('hr-and-people', 'lead', 4_427);
+  grcAnchor('marketing-and-growth', 'senior', 2_355);
+  grcAnchor('marketing-and-growth', 'lead', 4_504);
+  grcAnchor('operations-and-supply-chain', 'senior', 3_013);
+  grcAnchor('operations-and-supply-chain', 'lead', 4_388);
+  grcAnchor('sales-and-business-development', 'senior', 2_451);
+  grcAnchor('sales-and-business-development', 'lead', 3_155);
+  grcAnchor('education-and-teaching', 'lead', 1_961);
+  grcAnchor('finance-and-accounting', 'lead', 5_302);
+  grcAnchor('engineering-civil-mechanical-electrical', 'lead', 2_973);
+  grcAnchor('it-executive', 'lead', 4_486);
+  grcAnchor('healthcare', 'lead', 3_305);
+  for (const fam of ['finance-and-accounting', 'it-executive', 'general-management', 'sales-and-business-development', 'operations-and-supply-chain', 'hr-and-people', 'marketing-and-growth', 'engineering-civil-mechanical-electrical']) {
+    grcAnchor(fam, 'executive', 3_437);
+  }
+  // No family+level may exist twice in either country.
+  for (const cc of ['ROU', 'GRC']) {
+    const rs = by(cc);
+    const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
+    expect(keys.size).toBe(rs.length);
+  }
+});

@@ -51,6 +51,11 @@
       "date": "2026-09-06",
       "pass": "Slovakia SES upgrade",
       "summary": "24 platy.sk survey rows (10 senior, 10 lead, 4 executive) replaced with Eurostat SES 2022 cells on the Hungary recipe after every Slovak official portal proved unreachable to non-browser fetchers (slovak.statistics.sk behind Cloudflare, data.stat.sk TLS-broken, sosr.sk dead): senior cells are ISCO professionals in the family NACE (ICT 2,385 EUR), leads are ISCO managers in the family NACE (ICT 3,626, finance 3,994), executives share the economy-wide B-S managers pool at 2,708. All High with the 2022 vintage disclosed. The statutory physician scale stays (4,219), and platy.sk survives for design, product, delivery, general-management senior/lead, and the it-executive senior cells where no SES archetype exists."
+    },
+    {
+      "date": "2026-09-06",
+      "pass": "Romania and Greece SES upgrade",
+      "summary": "Romania gains ten official lead cells from Eurostat SES 2022 (managers in the family NACE: ICT 17,392 RON, finance 15,985, health 14,800) and its two Paylab executives go official on the economy-wide managers pool 11,246 RON; cybersecurity senior now shares the INS CAEN 62 software pool at 22,689 instead of the crowd source, leaving only delivery and product on Paylab. Greece swaps 23 Paylab and attributed-press rows for official SES cells on the same recipe (ICT professionals 2,299 EUR, finance managers 5,302, healthcare managers 3,305 replacing the press lead), with eight executive cells sharing the all-managers pool 3,437 that already anchored the general-management lead; only the six unarchetyped design, product, and delivery Paylab rows remain Low. Geo codes EL and RO were the trap: ISO3 codes return empty from the SES API."
     }
   ],
   "rows": [
@@ -18139,38 +18144,6 @@
       "note": "Archetype: Analist de date (data analyst). Figure is the mean average gross monthly earning for CAEN 63 (web portals, data processing and hosting) in June 2026, stated on page as: media sectorului la iunie 2026 - 14.733 lei brut. Original data: INS Tempo-Online FOM107G republished by salariile.ro. Mean across all seniorities and all roles in the sector. Same-cell alternative on page: salariile.ro occupation-adjusted estimate 16,487 lei gross. No dedicated data-scientist or ML-engineer official series was found."
     },
     {
-      "family": "cybersecurity",
-      "level": "senior",
-      "country": "ROU",
-      "currency": "RON",
-      "basis": "monthly-gross",
-      "p25": 7117,
-      "p50": 13776,
-      "p75": 20434,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.ro/informatii-calculator-salarii/tehnologia-informatiei/specialist-securitate-it"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Specialist securitate IT (IT security specialist). SPAN row: p25 is the 10th percentile and p75 is the 90th percentile, the merge derives a midpoint. Page states 80% of people earn between 7,117 and 20,434 RON and: Salariile din sondaj sunt exprimate in brut (survey salaries expressed in gross). Basis authority is that on-page statement; the page template elsewhere reuses the phrase lunar net, a site wording inconsistency disclosed here. Self-reported crowd survey cleaned of extremes and duplicates, sample size not published, and the band spans all seniority levels, so it understates a senior-specific market. No official INS occupation series exists for security roles; cybersecurity staff sit inside CAEN 62 (see software-engineering row)."
-    },
-    {
-      "family": "it-executive",
-      "level": "executive",
-      "country": "ROU",
-      "currency": "RON",
-      "basis": "monthly-gross",
-      "p25": 9251,
-      "p50": 25703,
-      "p75": 42154,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.ro/informatii-calculator-salarii/conducere-management-de-nivel-superior/director-it"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Director IT (IT director). SPAN row: p25 is the 10th percentile and p75 is the 90th percentile, the merge derives a midpoint. Page states 80% of people earn between 9,251 and 42,154 RON and that survey salaries are expressed in gross (Salariile din sondaj sunt exprimate in brut); the page also reuses the phrase lunar net in the band sentence, a wording inconsistency disclosed here. Crowd survey, sample size not published, all company sizes mixed. Same-cell alternative seen but not used as the row: Paylab Director Tehnic band 6,505 to 20,839 RON gross (adjacent archetype, generic technical director). Banned sources (PayScale, Glassdoor, Levels.fyi) excluded."
-    },
-    {
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "ROU",
@@ -18316,22 +18289,6 @@
       "note": "Archetype: senior general management proxied by CAEN 70 (head offices, centralized administration, management consultancy). Figure is the mean average gross monthly earning for CAEN 70 in June 2026, stated on page as: media sectorului la iunie 2026 - 18.157 lei brut. INS Tempo-Online FOM107G republished by salariile.ro; mean across all seniorities and includes consultants, so treat as an upper-ish proxy for senior general management. Alternative official anchor: INS October 2024 occupation survey (FOM121B, ISCO major group 1 Conducatori si functionari superiori, 426,810 employees) realized gross was 12,414 lei for men and 12,036 lei for women (no combined figure published); that mean includes public-sector directors and understates private executives."
     },
     {
-      "family": "general-management",
-      "level": "executive",
-      "country": "ROU",
-      "currency": "RON",
-      "basis": "monthly-gross",
-      "p25": 9993,
-      "p50": 22870,
-      "p75": 35747,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.ro/informatii-calculator-salarii/conducere-management-de-nivel-superior/director-general"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype: Director General (CEO / general manager). SPAN row: p25 is the 10th percentile and p75 is the 90th percentile, the merge derives a midpoint. Page states 80% of people earn between 9,993 and 35,747 RON, survey salaries expressed in gross (Salariile din sondaj sunt exprimate in brut); the band sentence reuses lunar net, a site wording inconsistency disclosed here. Crowd survey, n not published; dividend-heavy owner compensation is not captured, so the upper tail understates true executive take."
-    },
-    {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "ROU",
@@ -18413,73 +18370,6 @@
         "https://www.statistics.gr/documents/20181/52bde8fc-a53b-f0c6-eb45-0e3e4074e107"
       ],
       "note": "Published cell: ISCO major group 1 'Managers' in NACE J 'Information and communication', mean monthly gross; the closest official archetype for a head of engineering or lead developer with people responsibility. Eurostat Structure of Earnings Survey 2022, Greece (geo EL), data year 2022, reference month October 2022, employees in local units with 10 or more employees, NACE Rev. 2 B-S excluding public administration, sexes combined. Basis authority: dataset indic_se category 'Gross earnings', unit EUR, monthly earnings in the reference month (the Greek 13th and 14th payments are not included in a single reference month). Mean across all seniorities, not a level-specific figure. Same-cell alternative: Paylab Lead developer band 2505 to 6589 EUR, 10th to 90th percentile, fewer than 20 verified respondents (https://www.paylab.com/gr/salaryinfo/information-technology/lead-developer)."
-    },
-    {
-      "family": "data-and-ai",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1524,
-      "p50": 3871,
-      "p75": 6218,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/information-technology/data-scientist",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Data scientist'. Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Sample: 25 verified respondents. Official cross-check: mean monthly gross of all ICT sector professionals (all seniorities) was 2299 EUR (Eurostat SES 2022, ISCO 2 in NACE J), so the upper decile of this crowd band reflects senior data roles in paying companies. Same-cell alternatives from Paylab: Business Intelligence Specialist band 1470 to 3928 EUR (fewer than 20 respondents); the AI Engineer page exists but published no band when reviewed."
-    },
-    {
-      "family": "cybersecurity",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1430,
-      "p50": 4139,
-      "p75": 6848,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/information-technology/it-security-specialist",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'IT Security Specialist'. Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Official cross-check: mean monthly gross of all ICT sector professionals (all seniorities) was 2299 EUR (Eurostat SES 2022, ISCO 2 in NACE J). No Greek official statistics isolate security occupations."
-    },
-    {
-      "family": "it-executive",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2475,
-      "p50": 5367,
-      "p75": 8259,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/it-manager",
-        "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'IT Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Official cross-check: mean monthly gross of managers in NACE J Information and communication was 4486 EUR (Eurostat SES 2022, ISCO 1 in NACE J); public-sector Head of Department with 20 years of service earns 2199 EUR monthly gross from April 2026 per the Ministry of Finance (https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/)."
-    },
-    {
-      "family": "it-executive",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 2530,
-      "p50": 7194,
-      "p75": 11857,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/it-director"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'IT Director' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents; the wide band reflects small local firms at the bottom and multinational hubs at the top. No official Greek statistics isolate IT director pay."
     },
     {
       "family": "delivery-and-project-management",
@@ -18595,230 +18485,6 @@
       "note": "Published cell: ISCO major group 2 'Professionals' in NACE K 'Financial and insurance activities', mean monthly gross. Eurostat Structure of Earnings Survey 2022, Greece (geo EL), data year 2022, reference month October 2022, employees in local units with 10 or more employees, NACE Rev. 2 B-S excluding public administration, sexes combined. Basis authority: dataset indic_se category 'Gross earnings', unit EUR, monthly earnings in the reference month (the Greek 13th and 14th payments are not included in a single reference month). Mean across all seniorities, not a level-specific figure. Same-cell alternatives: Paylab Senior Accountant band 1107 to 2690 EUR (fewer than 20 respondents, https://www.paylab.com/gr/salaryinfo/economy-finance-accountancy/senior-accountant)."
     },
     {
-      "family": "finance-and-accounting",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1411,
-      "p50": 3123,
-      "p75": 4834,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/economy-finance-accountancy/chief-accountant"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Chief Accountant' (Paylab category Economy, Finance, Accountancy). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Official cross-check: mean monthly gross of all managers in NACE K was 5302 EUR (Eurostat SES 2022, ISCO 1 in NACE K)."
-    },
-    {
-      "family": "finance-and-accounting",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1857,
-      "p50": 4332,
-      "p75": 6806,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/finance-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Finance Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1459,
-      "p50": 3151,
-      "p75": 4842,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/commerce/key-account-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Key Account Manager' (Paylab category Commerce). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1245,
-      "p50": 3829,
-      "p75": 6413,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/sales-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Sales Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Same-cell alternative: Paylab Business Development Manager band 1396 to 5306 EUR (https://www.paylab.com/gr/salaryinfo/management/business-development-manager)."
-    },
-    {
-      "family": "sales-and-business-development",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1852,
-      "p50": 7086,
-      "p75": 12320,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/sales-director"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Sales Director' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents; commission-heavy roles make the top decile very high."
-    },
-    {
-      "family": "marketing-and-growth",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 982,
-      "p50": 1858,
-      "p75": 2733,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/marketing-advertising-pr/marketing-specialist"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Marketing Specialist' (Paylab category Marketing, Advertising, PR). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Same-cell alternative: Paylab Digital marketing specialist band 950 to 2379 EUR (https://www.paylab.com/gr/salaryinfo/marketing-advertising-pr/digital-marketing-specialist)."
-    },
-    {
-      "family": "marketing-and-growth",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1184,
-      "p50": 2673,
-      "p75": 4161,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/marketing-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Marketing Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "marketing-and-growth",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1706,
-      "p50": 5116,
-      "p75": 8526,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/marketing-director"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Marketing Director' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1800,
-      "p50": 3265,
-      "p75": 4729,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/human-resources/hr-business-partner"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'HR Business Partner' (Paylab category Human Resources). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1482,
-      "p50": 2966,
-      "p75": 4450,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/hr-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'HR Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "hr-and-people",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1105,
-      "p50": 3296,
-      "p75": 5487,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/personnel-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Personnel Manager' (Paylab category Top management), the closest published HR executive archetype. Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "operations-and-supply-chain",
-      "level": "senior",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1041,
-      "p50": 2632,
-      "p75": 4222,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/process-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Process Manager' (Paylab category Management), used as the senior individual contributor or small-team operations archetype; Greece has no free source that splits supply-chain seniority. Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "operations-and-supply-chain",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1135,
-      "p50": 2698,
-      "p75": 4261,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/management/logistics-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Logistics Manager' (Paylab category Management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
-      "family": "operations-and-supply-chain",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1583,
-      "p50": 4348,
-      "p75": 7112,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/logistics-director"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Logistics Director' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
       "family": "general-management",
       "level": "senior",
       "country": "GRC",
@@ -18852,23 +18518,6 @@
       "note": "Published cell: ISCO major group 1 'Managers', all industries, mean monthly gross; the official all-manager midpoint in Greece. Eurostat Structure of Earnings Survey 2022, Greece (geo EL), data year 2022, reference month October 2022, employees in local units with 10 or more employees, NACE Rev. 2 B-S excluding public administration, sexes combined. Basis authority: dataset indic_se category 'Gross earnings', unit EUR, monthly earnings in the reference month (the Greek 13th and 14th payments are not included in a single reference month). Mean across all seniorities, not a level-specific figure. Same-cell alternative: the public-sector Head of Department example of 2199 EUR gross (Ministry of Finance, April 2026, https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/). ELSTAT SES 2022 press release corroborates: mean gross annual earnings of managers 60105 EUR for men and 42788 EUR for women, data year 2022."
     },
     {
-      "family": "general-management",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1728,
-      "p50": 8708,
-      "p75": 15688,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/chief-executive-officer",
-        "https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Chief Executive Officer' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents; the very wide band reflects owner-managers of small firms at the bottom. Official alternative: public-sector 'Diefthintis' (Director) with 30 years of service earns 2702 EUR per month gross from April 2026 per the Ministry of Finance (https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/)."
-    },
-    {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
       "country": "GRC",
@@ -18886,38 +18535,6 @@
       "note": "Published cell: ISCO major group 2 'Professionals' in NACE F 'Construction', mean monthly gross; the closest official archetype for civil engineers. Eurostat Structure of Earnings Survey 2022, Greece (geo EL), data year 2022, reference month October 2022, employees in local units with 10 or more employees, NACE Rev. 2 B-S excluding public administration, sexes combined. Basis authority: dataset indic_se category 'Gross earnings', unit EUR, monthly earnings in the reference month (the Greek 13th and 14th payments are not included in a single reference month). Mean across all seniorities, not a level-specific figure. Same-cell alternatives: Professionals in NACE C Manufacturing (includes mechanical and electrical engineers) mean 2309 EUR; Paylab Civil Engineer band 1085 to 3090 EUR (https://www.paylab.com/gr/salaryinfo/construction-real-estate/civil-engineer, fewer than 20 respondents); Paylab Electrical Engineer band 1563 to 4490 EUR (20 respondents); Paylab Mechanical Engineer band 1266 to 2766 EUR (20 respondents)."
     },
     {
-      "family": "engineering-civil-mechanical-electrical",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1009,
-      "p50": 2025,
-      "p75": 3041,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/construction-real-estate/construction-manager"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Construction Manager' (Paylab category Construction and Real Estate). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Same-cell alternative: Paylab Technical Manager band 1233 to 4574 EUR (https://www.paylab.com/gr/salaryinfo/management/technical-manager)."
-    },
-    {
-      "family": "engineering-civil-mechanical-electrical",
-      "level": "executive",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1596,
-      "p50": 4693,
-      "p75": 7789,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/top-management/technical-director"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Technical Director' (Paylab category Top management). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents."
-    },
-    {
       "family": "healthcare",
       "level": "senior",
       "country": "GRC",
@@ -18933,22 +18550,6 @@
         "https://www.healthreport.gr/poioi-einai-oi-simerinoi-misthoi-ton-giatron-toy-esy-pos-ameivontai-stin-eyropi/"
       ],
       "note": "ESY (Greek National Health System) doctor grade 'Epimeleutis A' (Curator A, senior hospital specialist): 3073 EUR per month total gross excluding on-call duty pay, effective 1 January 2024, as reported by powergame.gr citing the government announcement of December 2023; the example case is an Emergency Department physician with one child, so it includes family and post allowances. Basis: monthly gross (mikta), no on-calls. Same-cell alternatives: healthreport.gr (12 March 2026) gives gross monthly basics of 1359 EUR for a specialty registrar (eidikevomenos) and 1658 EUR rising to 1713 EUR after the first year for Curator B, plus a hospital employment allowance of 400 EUR gross for all grades (https://www.healthreport.gr/poioi-einai-oi-simerinoi-misthoi-ton-giatron-toy-esy-pos-ameivontai-stin-eyropi/); Kathimerini reports 2025 raises of 400 to 750 EUR per month for ESY doctors. Eurostat SES 2022: professionals in NACE Q Human health mean 1927 EUR monthly gross, private sector only, all seniorities (https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en)."
-    },
-    {
-      "family": "healthcare",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 0,
-      "p50": 3387,
-      "p75": 0,
-      "quality": "Medium",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.powergame.gr/asfalisi/566640/esy-oi-misthoi-ton-giatron-apo-to-2019-mechri-simera/"
-      ],
-      "note": "ESY doctor grade 'Syntonistis Diefthintis' (Coordinating Director, department head): 3387 EUR per month total gross excluding on-call duty pay, effective 1 January 2024, as reported by powergame.gr citing the government announcement of December 2023. Basis: monthly gross (mikta), no on-calls; example case is a non-ICU department head with two children, so it includes family allowances. Kathimerini reports further 2025 raises of 400 to 750 EUR per month for ESY doctors."
     },
     {
       "family": "healthcare",
@@ -18983,22 +18584,6 @@
         "https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/"
       ],
       "note": "Statutory public-sector teacher pay: bracket MK10 of the university-education (PE) ladder of the unified payroll, 1763 EUR per month basic gross, effective 1 April 2026 (the edyp.gr page notes that bracket placement depends on years of prior service and postgraduate degrees, so MK10 represents a mid-to-late-career teacher). Basis authority: edyp.gr labels the amounts as the employee's basic salary 'mikta' (gross); the full 2026 PE ladder runs 1232 EUR at MK1 to 2235 EUR at MK18. Corroborated by the Ministry of Finance announcement (https://minfin.gov.gr/nea-afxisi-stis-apodoches-ton-dimosion-ypallilon-apo-ton-aprilio-sti-vasi-tis-anaprosarmogis-tou-katotatou-misthou/): PE new entrant 1232 EUR gross from April 2026 and a PE employee with 20 years and two children at 1942 EUR gross. Payment-count convention not stated on the pages; the Greek public sector pays 14 salaries per year. Same-cell alternatives: Eurostat SES 2022 professionals in private education (NACE P) mean 1553 EUR monthly gross (https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table?lang=en); Paylab Secondary School Teacher band 967 to 1896 EUR (fewer than 20 respondents)."
-    },
-    {
-      "family": "education-and-teaching",
-      "level": "lead",
-      "country": "GRC",
-      "currency": "EUR",
-      "basis": "monthly-gross",
-      "p25": 1299,
-      "p50": 1898,
-      "p75": 2497,
-      "quality": "Low",
-      "lastReviewed": "2026-09-02",
-      "sources": [
-        "https://www.paylab.com/gr/salaryinfo/education-science-research/deputy-headmaster"
-      ],
-      "note": "p50 is the midpoint of the source's published span; the span endpoints are stored as p25 and p75 and are wider than quartiles. Archetype 'Deputy Headmaster' (Paylab category Education, Science and Research). Paylab.com Greece salary survey. Basis authority: page states 'Salaries in the survey are expressed in gross' and 'Based on the Paylab.com salary survey ... earn between X EUR and Y EUR monthly gross'; method: 'data from employees, cleaned of extreme and duplicate values'. Endpoints are the 10th and 90th percentiles (page: 10 percent earn less, 10 percent earn more), so this row uses the SPAN shape with p50 = 0 and the merge derives a midpoint. Self-reported crowd data, small sample, quality Low. Reviewed 2026-09-02. Fewer than 20 verified respondents. Statutory cross-check: Greek public school principals and deputy principals are paid on the teacher ladder plus a responsibility allowance (see the executive row), so this crowd band is consistent with the statutory range."
     },
     {
       "family": "education-and-teaching",
@@ -32562,6 +32147,582 @@
         "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=SK&nace_r2=B-S&isco08=OC1"
       ],
       "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage). Archetype: Managers (ISCO major group 1) across the whole business economy (NACE B-S), the economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers, so treat as a floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22689,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://salariile.ro/salarii/programator"
+      ],
+      "note": "Archetype: the same CAEN 62 IT-services pool. This cell shares the software-engineering senior pool; no separate official security series exists. MEDIAN-ONLY shape carrying a published sector MEAN."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11246,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11246,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17392,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17392,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15985,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 14992,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9871,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9657,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10175,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8746,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11352,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "ROU",
+      "currency": "RON",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 14800,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=RO&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, RON, enterprises with 10 or more employees, total sex, 2022 vintage, geo RO). Archetype: Managers (ISCO major group 1) in human health and social work (NACE Q). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2299,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2299,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=J&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in information and communication (NACE J), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1668,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=N&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in administrative and support service activities (NACE N), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4427,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=N&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in administrative and support service activities (NACE N). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2355,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=M&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in professional, scientific and technical activities (NACE M), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4504,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=M&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in professional, scientific and technical activities (NACE M). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3013,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=H&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in transportation and storage (NACE H), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4388,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=H&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in transportation and storage (NACE H). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2451,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=G&isco08=OC2"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Professionals (ISCO major group 2) in wholesale and retail trade (NACE G), the all-seniority pool. MEDIAN-ONLY shape carrying a published MEAN; treat as a floor for senior quoting."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3155,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=G&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in wholesale and retail trade (NACE G). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1961,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=P&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in education (NACE P). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5302,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=K&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in financial and insurance activities (NACE K). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2973,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=F&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in construction (NACE F). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4486,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=J&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in information and communication (NACE J). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3305,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_48?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&nace_r2=Q&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_48, mean monthly gross earnings, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). Archetype: Managers (ISCO major group 1) in human health and social work (NACE Q). MEDIAN-ONLY shape carrying a published MEAN. The 2022 vintage predates current offers; pay has risen since, so treat as a floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "GRC",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3437,
+      "p75": 0,
+      "quality": "High",
+      "lastReviewed": "2026-09-06",
+      "sources": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_21?format=JSON&lang=EN&indic_se=ERN&sex=T&sizeclas=GE10&unit=NAC&time=2022&geo=EL&isco08=OC1"
+      ],
+      "note": "Curated directly by the reviewer from the Eurostat Structure of Earnings Survey 2022 (dataset earn_ses22_21, mean monthly gross earnings of ISCO major group 1 managers across all industries, EUR, enterprises with 10 or more employees, total sex, 2022 vintage, geo EL). The economy-wide managers pool shared by all executive cells; no sector-specific executive series is published. MEDIAN-ONLY shape carrying a published MEAN; the 2022 vintage makes it a floor."
     }
   ]
 }

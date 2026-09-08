@@ -1,6 +1,7 @@
 {
-  "lastReviewed": "2026-09-07",
+  "lastReviewed": "2026-09-08",
   "curationLog": [
+    "Vietnam official spine (2026-09-08): the GSO/NSO web hosts still time out from this network, but ILOSTAT republishes the Viet Nam Labour Force Survey with a public SDMX API, so nine official cells join the eleven wave-1 specialist rows. Section medians (2024 annual, total sex, VND, pre-tax survey income): finance K 12,000,000 with mean 12,553,714; marketing M 11,000,000; sales G 8,000,000; hr N 8,100,000; healthcare Q 9,100,000; education P 9,100,000; cybersecurity J 12,000,000 with the all-ICT-employees disclosure (the ICT branch mixes specialists with telecom and support roles, and the market's software and data seniors keep their ITviec specialist figures). The managers pool (ISCO-08 major group 1 economy-wide, median 13,000,000, mean 13,968,721) anchors general-management and finance leads, the Mongolia and Turkey convention; no chief-executives split exists so no executive rows were derived. Every value re-fetched from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL. 2022-to-2024 growth disclosed on every row (finance 9.7M to 12.0M) as floor context. Existing ITviec and VietnamWorks rows untouched.",
     "Costa Rica joins as the 83rd benchmarked market (2026-09-07). The old access block on www.inec.go.cr (TLS alert from this network) is bypassed entirely: INEC also publishes through the NADA microdata catalog at sistemas.inec.cr and the file host admin.inec.cr, both curl-reachable, and the historical-series workbook of the Encuesta Continua de Empleo carries cuadro 4, average monthly income from the main job by branch. Eleven senior rows from the moving quarter April to June 2026 (gross, colones): finance 929,313.95; the combined education-and-health branch 938,053.68 shared by both families; the professional-and-administrative branch 554,000.21 shared by marketing and hr; the ICT-mixed communications branch 460,511.33 shared by all three technology families with the understatement disclosed; sales 441,767.00; operations 444,937.44; construction 447,126.78. ENAHO 2025 was checked and publishes household income only (quintiles and zones, no occupational cut), and ECE publishes no manager-only cut (three combined skill bands), so executive, general-management, it-executive, and the unarchetyped families stay absent rather than approximated. Every anchor re-fetched from the catalog URL and matched verbatim before merge.",
     "Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close out the private-source gaps on the official Eurostat Structure of Earnings Survey 2022 backbone. Spain: the six tecnoempleo and infojobs cells swap and 16 archetype cells are added while the official INE rows stay untouched; Spain is the only one of the four whose B-S managers pool is published inside earn_ses22_48 (4,355). Portugal: the five landing.jobs cells swap and 17 cells are added onto the PORDATA seniors, with executives on the earn_ses22_21 economy-wide managers pool (3,543) because the B-S cell is unpublished there. Austria: the seven kununu and karriere.at cells swap to official means, leaving only three unarchetyped crowd rows in the country. Belgium: the two jobat cells swap and 10 archetype cells are added; the finance lead is not added because K OC1 is unpublished for Belgium, and the gap is pinned rather than papered over. Every swapped row discloses that SES monthly earnings exclude the customary extra payments. Every anchor was re-fetched and matched verbatim before merge. This completes the SES campaign: every EU/EEA market now runs on official earnings statistics except those on fresher national registers (EST DNK NLD NOR SWE ISL SVN FIN) and Liechtenstein, which SES does not cover.",
     "Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta join the official Eurostat Structure of Earnings Survey 2022 backbone. Poland: 20 wynagrodzenia.pl and justjoin.it cells swap and 11 archetype cells are added, clearing the last two Low rows. Italy: 27 manageritalia, techcompenso, and attributed-press cells swap and 4 cells are added; the statutory CCNL education and healthcare rows stay untouched, and every swapped row discloses that SES monthly earnings exclude the 13th and 14th payments. Cyprus: 16 CareerFinders cells swap onto the all-enterprise-sizes SES convention the country already runs on (verified by reproducing the eight existing Cypriot cells exactly before merge) and two executive cells are added; the HR lead keeps CareerFinders because N OC1 is unpublished even at all sizes. Malta: the ten Archer recruiter cells swap, executives onto the earn_ses22_21 all-managers pool 3,682 that already anchors the country's executives; delivery, product, and the IT-appointments senior keep their recruitment-market rows because no SES archetype exists. Every anchor was re-fetched and matched verbatim before merge.",
@@ -34632,6 +34633,159 @@
         "https://sistemas.inec.cr/nada5.4/index.php/catalog/384"
       ],
       "note": "Curated directly by the reviewer from the INEC Costa Rica Encuesta Continua de Empleo (Continuous Employment Survey), historical-series workbook Cuadro 4, average monthly income from the main job (gross current income, colones), moving quarter April to June 2026. Archetype: all employees in Information and communication together with real estate, arts, and other services (Comunicación y otros servicios). No occupation or seniority split is published, so this is an all-seniority average: treat it as a floor when quoting senior roles. The branch mixes ICT with lower-paying service activities, so it understates pure ICT specialists; the three technology families share this one published pool. For context, the economy-wide mean in the same quarter was 543,425 colones."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 12,553,714 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 9,700,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 8,790,350 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 7,000,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 11,712,229 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 9,000,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 9,139,664 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 7,000,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 9,930,604 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 7,800,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 9,891,180 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 7,533,264 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The branch mixes ICT specialists with telecom and support roles, so it understates pure security engineers; the market's software and data seniors carry ITviec specialist-survey figures, and this official floor covers cybersecurity. Published MEDIAN stored as p50; the same series publishes a mean of 12,726,648 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,000,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the same all-managers convention used for the Mongolia and Turkey lead cells; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 13,968,721 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,450,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "VNM",
+      "currency": "VND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13000000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/VNM.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Viet Nam Labour Force Survey of the General Statistics Office, now the National Statistics Office: median monthly earnings of employees, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the same all-managers convention used for the Mongolia and Turkey lead cells; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 13,968,721 VND for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,450,000 VND in 2022, so pay has kept climbing; 2024 is the latest annual published."
     }
   ]
 }

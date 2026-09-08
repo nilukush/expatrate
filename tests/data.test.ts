@@ -1395,7 +1395,7 @@ test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland m
     expect(keys.size).toBe(rs.length);
   }
   // Total moved to 2,012 by the southern-and-central SES round; the live count lives in the newest test.
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_075);
 });
 
 test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta move off private survey and recruiter sources', () => {
@@ -1504,7 +1504,7 @@ test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Ma
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_075);
 });
 
 test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close the private-source gaps', () => {
@@ -1598,7 +1598,7 @@ test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, 
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_075);
 });
 
 test('Costa Rica joins the benchmark matrix (2026-09-07): INEC ECE branch means after the source-access unblock', () => {
@@ -1638,5 +1638,48 @@ test('Costa Rica joins the benchmark matrix (2026-09-07): INEC ECE branch means 
   expect(cri.find((r: { family: string }) => r.family === 'general-management')).toBeUndefined();
   expect(cri.find((r: { family: string }) => r.family === 'it-executive')).toBeUndefined();
   expect(cri.find((r: { family: string }) => r.family === 'product-management')).toBeUndefined();
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_066);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_075);
+});
+
+test('Vietnam official spine (2026-09-08): ILOSTAT LFS medians add nine official cells beside the specialist-survey rows', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const vnm = by('VNM');
+  expect(vnm.length).toBe(20);
+  const anchor = (family: string, level: string, value: number) => {
+    const row = vnm.find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `VNM ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+    expect(row!.currency).toBe('VND');
+    expect(row!.basis).toBe('monthly-gross');
+    expect(row!.quality).toBe('Medium');
+    expect(row!.p25).toBe(0);
+    expect(row!.p75).toBe(0);
+  };
+  // Published MEDIANS of the 2024 annual, total sex, national currency, from the ILOSTAT
+  // republish of the Viet Nam Labour Force Survey; each row cites a filtered sdmx.ilo.org URL
+  // that reproduces the value verbatim.
+  anchor('finance-and-accounting', 'senior', 12_000_000);
+  anchor('sales-and-business-development', 'senior', 8_000_000);
+  anchor('marketing-and-growth', 'senior', 11_000_000);
+  anchor('hr-and-people', 'senior', 8_100_000);
+  anchor('healthcare', 'senior', 9_100_000);
+  anchor('education-and-teaching', 'senior', 9_100_000);
+  anchor('cybersecurity', 'senior', 12_000_000);
+  // The managers pool is the all-managers economy-wide median (ISCO-08 major group 1), used for
+  // lead cells only, the Mongolia and Turkey convention; no chief-executives split exists.
+  anchor('general-management', 'lead', 13_000_000);
+  anchor('finance-and-accounting', 'lead', 13_000_000);
+  // The wave-1 specialist-survey rows stay untouched: official all-employee pools would not
+  // replace role-specific ITviec and VietnamWorks figures.
+  const swe = vnm.find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior');
+  expect(swe!.p50).toBe(40_200_000);
+  expect(swe!.quality).toBe('Low');
+  const cto = vnm.find((r: { family: string; level: string }) => r.family === 'it-executive' && r.level === 'executive');
+  expect(cto!.p50).toBe(101_250_000);
+  expect(cto!.quality).toBe('Medium');
+  expect(vnm.find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive')).toBeUndefined();
+  expect(vnm.filter((r: { sources?: string[] }) => (r.sources ?? []).some((s: string) => s.includes('sdmx.ilo.org'))).length).toBe(9);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_075);
 });

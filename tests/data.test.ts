@@ -1395,7 +1395,7 @@ test('Big-market SES spine (2026-09-07): Germany, France, Ireland, Switzerland m
     expect(keys.size).toBe(rs.length);
   }
   // Total moved to 2,012 by the southern-and-central SES round; the live count lives in the newest test.
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Malta move off private survey and recruiter sources', () => {
@@ -1504,7 +1504,7 @@ test('Southern-and-central SES spine (2026-09-07): Poland, Italy, Cyprus, and Ma
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, and Belgium close the private-source gaps', () => {
@@ -1598,7 +1598,7 @@ test('Iberian-and-alpine SES completion (2026-09-07): Spain, Portugal, Austria, 
     const keys = new Set(rs.map((r: { family: string; level: string }) => `${r.family}|${r.level}`));
     expect(keys.size).toBe(rs.length);
   }
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('Costa Rica joins the benchmark matrix (2026-09-07): INEC ECE branch means after the source-access unblock', () => {
@@ -1638,7 +1638,7 @@ test('Costa Rica joins the benchmark matrix (2026-09-07): INEC ECE branch means 
   expect(cri.find((r: { family: string }) => r.family === 'general-management')).toBeUndefined();
   expect(cri.find((r: { family: string }) => r.family === 'it-executive')).toBeUndefined();
   expect(cri.find((r: { family: string }) => r.family === 'product-management')).toBeUndefined();
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('Vietnam official spine (2026-09-08): ILOSTAT LFS medians add nine official cells beside the specialist-survey rows', () => {
@@ -1681,7 +1681,7 @@ test('Vietnam official spine (2026-09-08): ILOSTAT LFS medians add nine official
   expect(cto!.quality).toBe('Medium');
   expect(vnm.find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive')).toBeUndefined();
   expect(vnm.filter((r: { sources?: string[] }) => (r.sources ?? []).some((s: string) => s.includes('sdmx.ilo.org'))).length).toBe(9);
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('ILOSTAT wave (2026-09-08): Cambodia, Honduras, El Salvador, and the Dominican Republic join on 2025 survey medians', () => {
@@ -1730,7 +1730,7 @@ test('ILOSTAT wave (2026-09-08): Cambodia, Honduras, El Salvador, and the Domini
     expect(by(cc).find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive'), `${cc} gm exec`).toBeUndefined();
   }
   expect(by('KHM').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'senior')).toBeUndefined();
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });
 
 test('ILOSTAT wave 2 (2026-09-08): Sri Lanka, Bangladesh, Zambia, Mauritius, Fiji, and Botswana join on 2024 survey medians', () => {
@@ -1774,5 +1774,66 @@ test('ILOSTAT wave 2 (2026-09-08): Sri Lanka, Bangladesh, Zambia, Mauritius, Fij
   anchor('BWA', 'software-engineering', 'senior', 8_467.8);
   anchor('BWA', 'finance-and-accounting', 'senior', 7_643.87);
   anchor('BWA', 'general-management', 'lead', 11_136.81);
-  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_214);
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
+});
+
+test('ILOSTAT wave 3 (2026-09-08): nine older-vintage markets join, Laos Mozambique Pakistan Bolivia Myanmar Ethiopia Tunisia Uganda Namibia', () => {
+  const by = (cc: string) => load('benchmarks.json').entries.filter(
+    (e: { country: string; status?: string }) => e.country === cc && e.status === undefined,
+  );
+  const counts = { LAO: 14, MOZ: 14, PAK: 10, BOL: 14, MMR: 14, ETH: 14, TUN: 14, UGA: 10, NAM: 11 };
+  const currencies = { LAO: 'LAK', MOZ: 'MZN', PAK: 'PKR', BOL: 'BOB', MMR: 'MMK', ETH: 'ETB', TUN: 'TND', UGA: 'UGX', NAM: 'ZAR' };
+  for (const cc of Object.keys(counts)) {
+    const rows = by(cc);
+    expect(rows.length, `${cc} rows`).toBe(counts[cc as keyof typeof counts]);
+    for (const row of rows) {
+      expect(row.currency, `${cc} currency`).toBe(currencies[cc as keyof typeof currencies]);
+      expect(row.basis, `${cc} basis`).toBe('monthly-gross');
+      expect(row.quality, `${cc} quality`).toBe('Medium');
+      expect(row.p25).toBe(0);
+      expect(row.p75).toBe(0);
+      expect((row.sources ?? []).some((s: string) => s.includes('sdmx.ilo.org')), `${cc} source`).toBe(true);
+    }
+    expect(by(cc).find((r: { family: string; level: string }) => r.family === 'general-management' && r.level === 'executive'), `${cc} gm exec`).toBeUndefined();
+  }
+  const anchor = (cc: string, family: string, level: string, value: number) => {
+    const row = by(cc).find((r: { family: string; level: string }) => r.family === family && r.level === level);
+    expect(row, `${cc} ${family} ${level}`).toBeDefined();
+    expect(row!.p50).toBe(value);
+  };
+  anchor('LAO', 'software-engineering', 'senior', 2_433_987.56);
+  anchor('LAO', 'finance-and-accounting', 'senior', 2_377_499.92);
+  anchor('LAO', 'general-management', 'lead', 2_300_000);
+  anchor('MOZ', 'software-engineering', 'senior', 8_500);
+  anchor('MOZ', 'finance-and-accounting', 'senior', 17_431.98);
+  anchor('MOZ', 'general-management', 'lead', 30_000);
+  anchor('PAK', 'sales-and-business-development', 'senior', 25_980);
+  anchor('PAK', 'marketing-and-growth', 'senior', 39_075.48);
+  anchor('PAK', 'general-management', 'lead', 38_205.96);
+  anchor('BOL', 'software-engineering', 'senior', 3_000);
+  anchor('BOL', 'finance-and-accounting', 'senior', 4_000);
+  anchor('BOL', 'general-management', 'lead', 6_600);
+  anchor('MMR', 'software-engineering', 'senior', 200_000);
+  anchor('MMR', 'finance-and-accounting', 'senior', 300_000);
+  anchor('MMR', 'general-management', 'lead', 379_793.55);
+  anchor('ETH', 'software-engineering', 'senior', 5_000);
+  anchor('ETH', 'finance-and-accounting', 'senior', 6_000);
+  anchor('ETH', 'general-management', 'lead', 6_000);
+  anchor('TUN', 'software-engineering', 'senior', 950);
+  anchor('TUN', 'finance-and-accounting', 'senior', 1_200);
+  anchor('TUN', 'general-management', 'lead', 1_200);
+  anchor('UGA', 'marketing-and-growth', 'senior', 1_005_658.23);
+  anchor('UGA', 'healthcare', 'senior', 550_000);
+  anchor('UGA', 'general-management', 'lead', 800_000);
+  anchor('NAM', 'software-engineering', 'senior', 10_000);
+  anchor('NAM', 'finance-and-accounting', 'senior', 12_000);
+  anchor('NAM', 'education-and-teaching', 'senior', 15_000);
+  // Pakistan and Uganda ICT and finance section medians carry ILO Unreliable flags: not shipped.
+  expect(by('PAK').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior')).toBeUndefined();
+  expect(by('PAK').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'senior')).toBeUndefined();
+  expect(by('UGA').find((r: { family: string; level: string }) => r.family === 'software-engineering' && r.level === 'senior')).toBeUndefined();
+  expect(by('UGA').find((r: { family: string; level: string }) => r.family === 'finance-and-accounting' && r.level === 'senior')).toBeUndefined();
+  // Namibia has no managers pool in the ILOSTAT occupation flow at all: no lead rows.
+  expect(by('NAM').find((r: { level: string }) => r.level === 'lead')).toBeUndefined();
+  expect(load('benchmarks.json').entries.filter((e: { status?: string }) => e.status === undefined).length).toBe(2_329);
 });

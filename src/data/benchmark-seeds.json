@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-08",
   "curationLog": [
+    "ILOSTAT means tail (2026-09-08): twelve final markets join, 135 rows, closing both ILOSTAT seams. Ivory Coast and Niger ship six section rows each at 2022: their vintages publish no ICT, professional, or admin sections and both managers pools are Unreliable-flagged, so there are no technology rows and no leads at all, pinned as absences. Comoros 2021 (12 rows, marketing Unreliable), Guinea 2019 (9 rows, no ICT/professional/admin series exist), Curaçao 2018 (14, complete), Belize 2020 (14, complete, the source publishes rounded figures), Burundi 2020 (10, ICT and marketing Unreliable), Maldives 2019 (14, complete), Mauritania 2019 (11, no managers pool published so section rows only), Marshall Islands 2019 (11, ICT Unreliable), Gambia 2018 (14, break-flagged), Sierra Leone 2018 (14, break-flagged). Every row carries the age sentence, now very-conservative-floor wording for the six-to-eight-year vintages. The clean-404 'No data is found' response is now distinguished from transient API failures, which retry. Every value re-fetched with retries and matched verbatim before merge, with a per-market currency cross-check against countries.json before any write; each row cites its filtered URL.",
     "ILOSTAT means wave 2 (2026-09-08): eleven 2022-2023 vintage markets join, 140 rows - Bahamas, Burkina Faso, Equatorial Guinea, Eswatini, Kiribati, Palau (2023 annuals) and Guinea-Bissau, Chad, Samoa, Togo, Benin (2022 annuals) - on the same mean-flow recipe with published means in the median-only shape. ILO Unreliable flags honored: Burkina Faso ICT, Kiribati ICT and marketing, Palau finance, Guinea-Bissau finance and marketing, and Chad ICT and finance cells are not shipped. Burkina Faso's managers pool is the 2025 annual (two years newer than its sections), disclosed. Break-in-series flags disclosed where present. Seychelles was probed and skipped: every cell carries an unexplained status code 2 and no managers pool exists; revisit with the code meaning established. Every value re-fetched with retries and matched verbatim before merge; each row cites its filtered URL.",
     "ILOSTAT means wave (2026-09-08): six markets join on survey MEANS, 79 rows, opening the mean-flow seam beyond the exhausted median seam. Ecuador joins at 2025 - a market long blocked on its own institute's coarse five-branch tables - on the ENEMDU means ILOSTAT republishes, every section carrying a break-in-series flag (survey redesign), disclosed per row. Bhutan 2025 sections plus a 2024 managers pool (the latest published), with the ngultrum-rupee one-to-one peg disclosed. Guyana 2024 minus the ICT section (ILO Unreliable flag: no technology rows). Angola 2024 minus marketing (Unreliable). Lesotho 2024 complete with managers pool. Mali 2024 minus marketing (Unreliable), finance shipped with its break flag disclosed. All are published means in the median-only shape (no median exists in this series), all-seniority averages, treat-as-floor framing. Every value re-fetched with retries from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL. API reliability note: transient fetch failures on this flow masquerade as missing cells, so all pulls now retry up to four times.",
     "ILOSTAT wave 3 (2026-09-08): nine markets join, 115 rows, closing out the ILOSTAT by-activity seam. Pakistan and Bolivia turned out to carry 2025 annuals (the filtered per-cell queries expose newer vintages than the wildcard probe suggested); Laos and Mozambique 2022; Uganda and Ethiopia 2021; Myanmar 2020; Tunisia 2019; Namibia 2018. All on the standard recipe: eleven section medians where published plus it-executive, finance, and general-management leads on the ISCO-08 managers-pool median. Honest exclusions from ILO Unreliable flags: Pakistan and Uganda ICT (J) and finance (K) section medians are flagged and are not shipped, so both markets carry no software, data, cyber, or finance senior cells (their finance leads still sit on the managers pool). Namibia publishes no managers pool in the occupation flow at all, so it ships 11 section rows with every lead absence pinned. Laos 2022 is a redesigned series (break-in-series flag), disclosed per row. Every older vintage carries an explicit age sentence (four to eight years) with the conservative-floor framing. Namibia's rand-peg disclosure sits on each row. Every value re-fetched from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL.",
@@ -42832,6 +42833,2301 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique et de l'Analyse Économique, Benin: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 156253.65,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 86995.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 115159.97,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 131062.62,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 188837.71,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CIV",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 229655.88,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CIV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Côte d'Ivoire: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 217627.45,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 52915.65,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 78987.51,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 66709.65,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 152605.24,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "NER",
+      "currency": "XOF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 102711.88,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/NER.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Niger: mean monthly earnings of employees, total sex, 2022 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2022 is the latest annual published and is now 4 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 116989.04,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 116989.04,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 116989.04,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 165124.82,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 80705.24,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 84420.77,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 108001.37,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 90927.35,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100088.32,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 181889.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 181889.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "COM",
+      "currency": "KMF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 181889.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/COM.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Comoros: mean monthly earnings of employees, total sex, 2021 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2021 is the latest annual published and is now 5 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2652151.45,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1199298.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1359760.11,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1421458.82,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1523253.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1483740.75,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2305321.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2305321.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "GIN",
+      "currency": "GNF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2305321.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GIN.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Institut National de la Statistique, Guinée: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3766.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3766.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3766.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3837.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2338.54,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4103.45,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1758.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2922.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2331.14,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2474.36,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3397.56,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4622.09,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4622.09,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CUW",
+      "currency": "XCG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4622.09,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/CUW.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Central Bureau of Statistics of Curaçao: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1980,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1980,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1980,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1620,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 900,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1620,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 780,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1020,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1020,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2220,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3420,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3420,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BLZ",
+      "currency": "BZD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3420,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BLZ.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the labour-force survey of the Statistical Institute of Belize: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 399757.74,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 94029.0,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 332881.85,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 126172.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 149351.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 243934.01,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 190688.98,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 337983.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 337983.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BDI",
+      "currency": "BIF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 337983.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/BDI.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the national statistical office of Burundi: mean monthly earnings of employees, total sex, 2020 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2020 is the latest annual published and is now 6 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12239.54,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12239.54,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12239.54,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13683.59,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9842.61,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 18783.25,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9215.56,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13219.03,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10966.08,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12439.36,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10370.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 19872.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 19872.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MDV",
+      "currency": "MVR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 19872.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MDV.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the household income and expenditure survey of the National Bureau of Statistics of the Maldives: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77628.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77628.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77628.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117942.89,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 53666.91,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 80660.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 54874.96,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 52048.96,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51270.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 75108.52,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MRT",
+      "currency": "MRU",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 95841.58,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MRT.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Office National de la Statistique, Mauritania: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1166.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 539.99,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1036.88,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 590.68,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 593.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 889.27,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 909.62,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1086.45,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1531.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1531.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MHL",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1531.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/MHL.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household survey of the Marshall Islands statistics office: mean monthly earnings of employees, total sex, 2019 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2019 is the latest annual published and is now 7 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4620.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4620.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4620.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5951.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3773.66,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5421.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4722.34,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3631.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3894.85,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5079.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4257.48,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8389.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8389.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "GMB",
+      "currency": "GMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8389.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/GMB.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household labour-force survey of the Gambia Bureau of Statistics: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2803374.07,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2803374.07,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2803374.07,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2096069.92,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2736339.11,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4613215.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1645363.86,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2458840.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2454558.59,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1857295.83,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1274794.24,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5305289.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5305289.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "SLE",
+      "currency": "SLE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5305289.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_OCU_CUR_NB,1.0/SLE.A.EAR_EMTA_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national labour-force survey of Statistics Sierra Leone: mean monthly earnings of employees, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2018 is the latest annual published and is now 8 years old; nominal pay has risen materially since, so treat as a very conservative floor."
     }
   ]
 }

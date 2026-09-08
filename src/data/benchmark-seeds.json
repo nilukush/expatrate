@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-08",
   "curationLog": [
+    "ILOSTAT wave 2 (2026-09-08): Sri Lanka, Bangladesh, Zambia, Mauritius, Fiji, and Botswana join as markets 88 through 93, 84 rows on the 2024 annual medians (total sex, national currency, survey income from employment, pre-tax) of each national labour-force survey as republished by ILOSTAT, the same SDMX recipe as Vietnam and the Cambodia-Honduras-El Salvador-Dominican Republic wave. Eleven section cells per market (software, data, and cybersecurity share the ICT section with the understatement disclosed) plus it-executive, finance, and general-management leads on the economy-wide all-managers pool median. Mauritius and Fiji 2024 are redesigned survey series (ILO break-in-series flags), disclosed on every row of both markets, with the 2022 comparison kept as indicative only for Mauritius and omitted for Fiji. Zambia and Botswana carry some 2022-to-2024 declines in sections, shipped verbatim. No Unreliable-flagged cell was found in this wave. Every value re-fetched from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL.",
     "ILOSTAT wave (2026-09-08): Cambodia, Honduras, El Salvador, and the Dominican Republic join as markets 84 through 87, 55 rows, all built on the 2025 annual medians (total sex, national currency, survey income from employment, pre-tax) that ILOSTAT republishes from each national household survey, with the same SDMX recipe proven on Vietnam. Eleven section cells per market (software, data, and cybersecurity share the ICT section with the understatement disclosed; finance K, sales G, marketing M, hr N, operations H, engineering F, healthcare Q, education P) plus three lead cells on the economy-wide all-managers pool (ISCO-08 major group 1 median): it-executive, finance, and general-management leads. Honest absences: no chief-executives split exists so no executive rows; Cambodia's 2025 finance section median carries an ILO Unreliable flag so the KHM finance senior is not shipped (its lead still has the managers pool); the Honduran series carries ILO break-in-series flags, disclosed on every Honduran row; Cambodian earlier vintages are flagged, so no KHM trend is quoted. Palestine was probed and left out: ILOSTAT publishes PSE earnings in Israeli shekels while the site's country config says JOD, a currency mismatch that needs an owner decision before any rows. Every value re-fetched from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL.",
     "Vietnam official spine (2026-09-08): the GSO/NSO web hosts still time out from this network, but ILOSTAT republishes the Viet Nam Labour Force Survey with a public SDMX API, so nine official cells join the eleven wave-1 specialist rows. Section medians (2024 annual, total sex, VND, pre-tax survey income): finance K 12,000,000 with mean 12,553,714; marketing M 11,000,000; sales G 8,000,000; hr N 8,100,000; healthcare Q 9,100,000; education P 9,100,000; cybersecurity J 12,000,000 with the all-ICT-employees disclosure (the ICT branch mixes specialists with telecom and support roles, and the market's software and data seniors keep their ITviec specialist figures). The managers pool (ISCO-08 major group 1 economy-wide, median 13,000,000, mean 13,968,721) anchors general-management and finance leads, the Mongolia and Turkey convention; no chief-executives split exists so no executive rows were derived. Every value re-fetched from its filtered sdmx.ilo.org URL and matched verbatim before merge; each row cites that URL. 2022-to-2024 growth disclosed on every row (finance 9.7M to 12.0M) as floor context. Existing ITviec and VietnamWorks rows untouched.",
     "Costa Rica joins as the 83rd benchmarked market (2026-09-07). The old access block on www.inec.go.cr (TLS alert from this network) is bypassed entirely: INEC also publishes through the NADA microdata catalog at sistemas.inec.cr and the file host admin.inec.cr, both curl-reachable, and the historical-series workbook of the Encuesta Continua de Empleo carries cuadro 4, average monthly income from the main job by branch. Eleven senior rows from the moving quarter April to June 2026 (gross, colones): finance 929,313.95; the combined education-and-health branch 938,053.68 shared by both families; the professional-and-administrative branch 554,000.21 shared by marketing and hr; the ICT-mixed communications branch 460,511.33 shared by all three technology families with the understatement disclosed; sales 441,767.00; operations 444,937.44; construction 447,126.78. ENAHO 2025 was checked and publishes household income only (quintiles and zones, no occupational cut), and ECE publishes no manager-only cut (three combined skill bands), so executive, general-management, it-executive, and the unarchetyped families stay absent rather than approximated. Every anchor re-fetched from the catalog URL and matched verbatim before merge.",
@@ -35722,6 +35723,1434 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Encuesta Nacional Continua de Fuerza de Trabajo of the Banco Central de la República Dominicana: median monthly earnings, total sex, 2025 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, and Vietnam; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 75,768 for 2025. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 48,750 in 2023, so pay has kept moving."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 119,688 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 75,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 119,688 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 75,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 100000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 119,688 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 75,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 74,489 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 50,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 37500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 43,680 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 35,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 72,441 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 45,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 40000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 51,102 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 35,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 49000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 57,556 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 44,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 40500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 45,266 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 40,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 75,377 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 50,347 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 58715.18,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 60,596 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 50,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 88922.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 112,163 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 80,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 88922.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 112,163 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 80,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "LKA",
+      "currency": "LKR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 88922.7,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LKA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Sri Lanka Labour Force Survey of the Department of Census and Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 112,163 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 80,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 22,784 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 15,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 22,784 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 15,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 22,784 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 15,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 27000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 31,907 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 25,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 13000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 14,466 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 25,770 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 19,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 14,229 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 15,145 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 12,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 14000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 13,653 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 11,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 23,288 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 16,700 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 20,816 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 18,500 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 37,690 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 29,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 37,690 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 29,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BGD",
+      "currency": "BDT",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BGD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Bangladesh Labour Force Survey of the Bangladesh Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 37,690 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 29,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2197.26,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 4,231 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 3,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2197.26,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 4,231 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 3,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2197.26,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 4,231 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 3,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4021.06,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 5,829 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 6,497 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1976.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 2,919 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 1,500 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5627.64,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 7,234 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 6,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1540.57,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 2,351 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 1,500 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 3,582 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 2,100 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 3,406 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 1,778 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7107.4,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 6,932 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 5,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 6,757 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 6,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8890.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 13,318 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 4,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8890.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 13,318 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 4,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "ZMB",
+      "currency": "ZMW",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8890.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/ZMB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Zambia Labour Force Survey of the Zambia Statistics Agency: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 13,318 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 4,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 46,069 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 25,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 46,069 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 25,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 35000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 46,069 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 25,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 37931.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 51,904 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 26,316 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 21000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 27,045 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 15,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 42,852 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 22,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 21000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 25,584 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 15,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 30000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 35,243 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 23,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 27,522 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 20,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 28000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 36,742 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 21,000 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32578.71,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 38,094 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 25,254 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71057.58,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 87,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 62,239 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71057.58,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 87,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 62,239 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MUS",
+      "currency": "MUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 71057.58,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MUS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Mauritius Labour Force Survey of Statistics Mauritius: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 87,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 62,239 in 2022. The 2024 figures start a redesigned survey series (ILO break-in-series flag), so treat the comparison as indicative."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1274.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 1,520 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1274.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 1,520 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1274.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 1,520 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1728,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 2,191 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 952.6,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 1,183 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1532.52,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 2,038 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1006.67,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 1,272 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1226.29,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 1,533 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1039.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 1,219 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1386.37,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 1,940 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1512,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 1,641 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1515.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 2,233 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1515.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 2,233 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "FJI",
+      "currency": "FJD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1515.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/FJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Fiji Employment and Unemployment Survey of the Fiji Bureau of Statistics: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 2,233 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. 2024 is the latest annual published and starts a redesigned survey series (ILO break-in-series flag), so no earlier-year comparison is quoted."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8467.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 9,729 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 9,461 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8467.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 9,729 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 9,461 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8467.8,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 9,729 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 9,461 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7643.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 19,144 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 10,310 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). Published MEDIAN stored as p50; the same series publishes a mean of 3,648 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 1,800 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3987.24,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). Published MEDIAN stored as p50; the same series publishes a mean of 11,447 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 4,769 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). Published MEDIAN stored as p50; the same series publishes a mean of 2,845 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 2,500 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3300,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). Published MEDIAN stored as p50; the same series publishes a mean of 6,467 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 3,528 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3026.39,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Construction (ISIC Rev.4 section F). Published MEDIAN stored as p50; the same series publishes a mean of 4,098 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 3,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8704.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). Published MEDIAN stored as p50; the same series publishes a mean of 12,533 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 5,300 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8604.83,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). Published MEDIAN stored as p50; the same series publishes a mean of 11,047 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 8,500 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11136.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 18,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 17,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11136.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 18,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 17,000 in 2022, so pay has kept moving."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BWA",
+      "currency": "BWP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11136.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-08",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BWA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata",
+        "https://ilostat.ilo.org/topics/wages/"
+      ],
+      "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Botswana Labour Force Survey of Statistics Botswana: median monthly earnings, total sex, 2024 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention also used for Mongolia, Turkey, Vietnam, and the earlier ILOSTAT wave; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50; the same series publishes a mean of 18,840 for 2024. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The same series stood at 17,000 in 2022, so pay has kept moving."
     }
   ]
 }

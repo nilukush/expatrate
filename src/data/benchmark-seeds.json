@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-09",
   "curationLog": [
+    "Tanzania joins as the 139th benchmarked market (2026-09-09) on the NBS Formal Sector Employment and Earnings Survey 2024/25, published July 2026, the freshest survey in the matrix: eleven senior rows from Table 4.4 (monthly average cash earnings per employee, URT, both sexes, TZS, gross cash). Finance K leads at 1,308,695; professional-scientific M 1,097,269; construction F 985,516; education P 940,299; operations H 683,055; hr N 680,782; healthcare Q 668,879; the ICT branch J 646,532 anchors the three technology families with the shared-pool understatement disclosed; sales G 603,114. Every note discloses the FORMAL SECTOR scope (informal pay sits below) and the economy-wide 689,730 TZS average as context. The survey publishes no occupation cut, so no lead rows exist and the absence is pinned. Found through a national-host sweep of the remaining floor-only markets: eight hosts answered (NIC MDG JAM TZA ZWE PNG XKX TJK); Kosovo's PxWeb UI is reachable but its JSON API 500s server-side and navigation is postback-only (parked, needs a browser session); Tajikistan's fresh LFS 2025 workbook carries employment counts only, no wages (its wage tables live elsewhere on stat.tj); Nicaragua publishes quarterly ECH reports whose income tables need a deeper dig (deferred). Every Table 4.4 value re-extracted from a fresh PDF download and matched verbatim before merge.",
     "Palestine joins as the 138th benchmarked market on a currency fix (2026-09-09): 14 rows of published 2025 medians from the Labour Force Survey as republished by ILOSTAT, in Israeli shekels. The fix came first: countries.json said JOD, but the stored World Bank PPP factor for Palestine (0.9065 per international dollar, 2025) is denominated in shekels - consistent with a plausible ~28 percent US price level under ILS and impossible under JOD - so the old config made every Palestinian purchasing-power floor compute roughly 4.6 times too high, the same class of LCU mismatch as the early Lebanon and Gulf fixes. The config now says ILS, matching both the wage data and the PPP factor. Eleven section medians (technology families share the ICT section with the understatement disclosed; the unusually high transport median shipped verbatim with its driver disclosed) plus it-executive, finance, and general-management leads on the economy-wide managers pool. The 2025 vintage is a redesigned series (break-in-series flag), disclosed on every row. Every value re-fetched with retries and matched verbatim before merge.",
     "ILOSTAT ISIC3 wave plus Seychelles (2026-09-08): six markets, 56 rows, coverage 137. The status-code mystery resolved: response-local OBS_STATUS lists are always [Break in series, Unreliable] and index the raw code; when the local list is absent the numerics index the global list (0 Break in series, 1 Adjusted, 2 Computed value), so every literal 1 previously treated as normal is Adjusted (benign) and Seychelles' code 2 means ILO-computed, which ships with that disclosure. A fresh sweep for ISIC Rev.3 sections (earlier probes filtered Rev.4 only) unlocked markets invisible until now: Paraguay 2020 means (11 rows, managers on the ISCO-88 group), Puerto Rico 2020 MEDIANS (11 rows, the first Rev.3 median market), Antigua and Barbuda 2018 (8 rows, no managers pool), Macao 2018 (11 rows), Suriname 2017 (4 rows: finance, sales, construction, operations only). Rev.3 mapping disclosed per row: finance J, education M, health N, marketing and hr share K; the combined transport-storage-communications section anchors operations only and cannot anchor technology families, so no technology rows exist in Rev.3 markets, pinned. Every value re-fetched with retries and matched verbatim before merge; currency cross-checked per market before write.",
     "ILOSTAT means tail (2026-09-08): twelve final markets join, 135 rows, closing both ILOSTAT seams. Ivory Coast and Niger ship six section rows each at 2022: their vintages publish no ICT, professional, or admin sections and both managers pools are Unreliable-flagged, so there are no technology rows and no leads at all, pinned as absences. Comoros 2021 (12 rows, marketing Unreliable), Guinea 2019 (9 rows, no ICT/professional/admin series exist), Curaçao 2018 (14, complete), Belize 2020 (14, complete, the source publishes rounded figures), Burundi 2020 (10, ICT and marketing Unreliable), Maldives 2019 (14, complete), Mauritania 2019 (11, no managers pool published so section rows only), Marshall Islands 2019 (11, ICT Unreliable), Gambia 2018 (14, break-flagged), Sierra Leone 2018 (14, break-flagged). Every row carries the age sentence, now very-conservative-floor wording for the six-to-eight-year vintages. The clean-404 'No data is found' response is now distinguished from transient API failures, which retry. Every value re-fetched with retries and matched verbatim before merge, with a per-market currency cross-check against countries.json before any write; each row cites its filtered URL.",
@@ -46320,6 +46321,193 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Palestinian Labour Force Survey of the Palestine Bureau of Statistics: median monthly earnings, total sex, 2025 annual, national currency (survey income from employment, pre-tax). Palestinian wages are quoted in Israeli shekels, which is the currency this site stores for Palestine. Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. Published MEDIAN stored as p50. No seniority split exists, so this is an all-seniority figure: treat it as a floor when quoting senior roles. The 2025 vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2025 is the latest annual published."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 646532,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 646532,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 646532,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1308695,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 603114,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1097269,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Professional, scientific and technical activities (ISIC Rev.4 section M). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 680782,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Administrative and support service activities (ISIC Rev.4 section N). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 683055,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 985516,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Construction (ISIC Rev.4 section F). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 668879,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Human health and social work activities (ISIC Rev.4 section Q). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "TZA",
+      "currency": "TZS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 940299,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.nbs.go.tz/uploads/statistics/documents/en-1788869444-Tanzania%20Formal%20Sector%20Employment%20and%20Earnings%20Survey%202024-25.pdf",
+        "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
+      ],
+      "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
     }
   ]
 }

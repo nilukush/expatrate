@@ -1,6 +1,7 @@
 {
   "lastReviewed": "2026-09-09",
   "curationLog": [
+    "Kosovo joins as the 140th benchmarked market (2026-09-09) on the ASK PxWeb wage register, closing the parked browser-session lead. The portal's JSON API 500s on every listing endpoint and its tree navigation is postback-only, so a one-off Safari session walked the tree (Labour market, Wage Level, Average salary in Euro by economic activities 2020-2025, tab03), and the result page's API-query dialog revealed the direct table endpoint, which plain curl then verified: listing endpoints are broken but table endpoints answer. Eleven senior rows on the 2025 annual, gross, euro, monthly (periodicity corroborated by the economy-wide 639 euro gross for 2024 in the sibling table): ICT 1,216 is the highest sector in the market, above health 862, finance 861, professional 825, admin 806, education 687, construction 627, sales 613, transport 592. The tech trio shares the ICT branch under the usual disclosure; no occupation cut is published, so no lead rows (pinned). Every cell re-fetched by POST and matched verbatim before merge; each row cites the reproducible API endpoint. Same-round closures: Nicaragua's public ECH quarterlies carry employment indicators only (no income by branch, closed with evidence); Tajikistan's fresh LFS workbook is wageless and its wage tables do not surface on the public site (parked); Madagascar, Jamaica, and PNG reachable but publishing nothing usable at activity level.",
     "Tanzania joins as the 139th benchmarked market (2026-09-09) on the NBS Formal Sector Employment and Earnings Survey 2024/25, published July 2026, the freshest survey in the matrix: eleven senior rows from Table 4.4 (monthly average cash earnings per employee, URT, both sexes, TZS, gross cash). Finance K leads at 1,308,695; professional-scientific M 1,097,269; construction F 985,516; education P 940,299; operations H 683,055; hr N 680,782; healthcare Q 668,879; the ICT branch J 646,532 anchors the three technology families with the shared-pool understatement disclosed; sales G 603,114. Every note discloses the FORMAL SECTOR scope (informal pay sits below) and the economy-wide 689,730 TZS average as context. The survey publishes no occupation cut, so no lead rows exist and the absence is pinned. Found through a national-host sweep of the remaining floor-only markets: eight hosts answered (NIC MDG JAM TZA ZWE PNG XKX TJK); Kosovo's PxWeb UI is reachable but its JSON API 500s server-side and navigation is postback-only (parked, needs a browser session); Tajikistan's fresh LFS 2025 workbook carries employment counts only, no wages (its wage tables live elsewhere on stat.tj); Nicaragua publishes quarterly ECH reports whose income tables need a deeper dig (deferred). Every Table 4.4 value re-extracted from a fresh PDF download and matched verbatim before merge.",
     "Palestine joins as the 138th benchmarked market on a currency fix (2026-09-09): 14 rows of published 2025 medians from the Labour Force Survey as republished by ILOSTAT, in Israeli shekels. The fix came first: countries.json said JOD, but the stored World Bank PPP factor for Palestine (0.9065 per international dollar, 2025) is denominated in shekels - consistent with a plausible ~28 percent US price level under ILS and impossible under JOD - so the old config made every Palestinian purchasing-power floor compute roughly 4.6 times too high, the same class of LCU mismatch as the early Lebanon and Gulf fixes. The config now says ILS, matching both the wage data and the PPP factor. Eleven section medians (technology families share the ICT section with the understatement disclosed; the unusually high transport median shipped verbatim with its driver disclosed) plus it-executive, finance, and general-management leads on the economy-wide managers pool. The 2025 vintage is a redesigned series (break-in-series flag), disclosed on every row. Every value re-fetched with retries and matched verbatim before merge.",
     "ILOSTAT ISIC3 wave plus Seychelles (2026-09-08): six markets, 56 rows, coverage 137. The status-code mystery resolved: response-local OBS_STATUS lists are always [Break in series, Unreliable] and index the raw code; when the local list is absent the numerics index the global list (0 Break in series, 1 Adjusted, 2 Computed value), so every literal 1 previously treated as normal is Adjusted (benign) and Seychelles' code 2 means ILO-computed, which ships with that disclosure. A fresh sweep for ISIC Rev.3 sections (earlier probes filtered Rev.4 only) unlocked markets invisible until now: Paraguay 2020 means (11 rows, managers on the ISCO-88 group), Puerto Rico 2020 MEDIANS (11 rows, the first Rev.3 median market), Antigua and Barbuda 2018 (8 rows, no managers pool), Macao 2018 (11 rows), Suriname 2017 (4 rows: finance, sales, construction, operations only). Rev.3 mapping disclosed per row: finance J, education M, health N, marketing and hr share K; the combined transport-storage-communications section anchors operations only and cannot anchor technology families, so no technology rows exist in Rev.3 markets, pinned. Every value re-fetched with retries and matched verbatim before merge; currency cross-checked per market before write.",
@@ -46508,6 +46509,193 @@
         "https://www.nbs.go.tz/statistics/topic/labour-and-employment-report"
       ],
       "note": "Curated directly by the reviewer from the Tanzania Formal Sector Employment and Earnings Survey 2024/25 of the National Bureau of Statistics (published July 2026), Table 4.4, monthly average cash earnings per employee, United Republic of Tanzania, both sexes, Tanzanian shillings (gross cash including paid leave, regular allowances, and overtime). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. This is a FORMAL SECTOR survey, so informal-sector pay sits below these figures; within the formal sector it is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The economy-wide formal-sector average was 689,730 TZS in the same table. 2024/25 is the latest survey year."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 861,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 613,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 825,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 806,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Administrative and support activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 592,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Transport and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 627,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 862,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 687,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     }
   ]
 }

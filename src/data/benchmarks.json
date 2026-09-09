@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-09",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 139,
-    "dataRows": 2764,
+    "tier1CountriesCount": 140,
+    "dataRows": 2775,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -1076,6 +1076,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "software-engineering",
@@ -2991,6 +3008,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -4460,6 +4485,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -6184,6 +6217,23 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "data-and-ai",
@@ -7997,6 +8047,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9303,6 +9361,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10565,6 +10631,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -12227,6 +12301,14 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "it-executive",
@@ -14038,6 +14120,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15611,6 +15701,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16982,6 +17080,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18231,6 +18337,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -19863,6 +19977,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1216,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Information and communication (section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -21491,6 +21622,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22750,6 +22889,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -24093,6 +24240,14 @@
       "family": "design",
       "level": "senior",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -25452,6 +25607,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -26633,6 +26796,14 @@
       "family": "design",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -27956,6 +28127,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -29429,6 +29608,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30691,6 +30878,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -32382,6 +32577,23 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Wholesale and retail trade (ISIC Rev.4 section G). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 613,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "sales-and-business-development",
@@ -34291,6 +34503,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -35807,6 +36027,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -37638,6 +37866,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 825,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -39465,6 +39710,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40929,6 +41182,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -42699,6 +42960,23 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 861,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "finance-and-accounting",
@@ -44877,6 +45155,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "KWT",
       "currency": "KWD",
       "basis": "monthly-gross",
@@ -46719,6 +47005,14 @@
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -48599,6 +48893,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 806,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Administrative and support activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -50459,6 +50770,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -51956,6 +52275,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -53801,6 +54128,23 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Transportation and storage (ISIC Rev.4 section H). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 592,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Transport and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "operations-and-supply-chain",
@@ -55713,6 +56057,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -57257,6 +57609,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -58610,6 +58970,14 @@
       "family": "general-management",
       "level": "senior",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -60182,6 +60550,14 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: the economy-wide pool of all Managers (ISCO-08 major group 1) across every industry, the all-managers convention used across the ILOSTAT markets; no chief-executives split is published, so no executive rows were derived from it. MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "general-management",
@@ -61886,6 +62262,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -63797,6 +64181,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 627,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "KWT",
       "currency": "KWD",
       "basis": "monthly-gross",
@@ -65679,6 +66080,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -67085,6 +67494,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -68897,6 +69314,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 862,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -70702,6 +71136,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -72087,6 +72529,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -73851,6 +74301,23 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the national household income and expenditure survey of the Kiribati National Statistics Office: mean monthly earnings of employees, total sex, 2023 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Education (ISIC Rev.4 section P). MEDIAN-ONLY shape carrying a published MEAN: this series publishes no median. The mean is an all-seniority, all-employee average: treat it as a floor when quoting senior roles. This vintage carries an ILO break-in-series flag (survey redesign), so multi-year comparison is indicative only. 2023 is the latest annual published and is now 3 years old; nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "XKX",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 687,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://askdata.rks-gov.net:443/api/v1/en/ASKdata/Labour%20market/Niveli%20i%20Pagave/tab03.px",
+        "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
+      ],
+      "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
     },
     {
       "family": "education-and-teaching",
@@ -75658,6 +76125,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "XKX",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "KWT",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -77050,6 +77525,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "KIR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "XKX",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"

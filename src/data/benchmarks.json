@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-09",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 141,
-    "dataRows": 2786,
+    "tier1CountriesCount": 142,
+    "dataRows": 2797,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -2009,6 +2009,23 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4609.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -3690,6 +3707,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -5053,6 +5078,14 @@
         "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
       ],
       "note": "Published title: ruan ti zhuan an zhu guan (software project supervisor), all-experience band from the 104 Salary Guide software and engineering category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=2321 from the category page JSON payload, category valid sample 26440. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives: dian zi shang wu ji shu zhu guan (e-commerce technology supervisor) 71200/86500/117500 n=161. Official crosscheck: MOL survey, publishing/video/ICT industry managers and supervisors average monthly regular pay 101000 TWD."
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "software-engineering",
@@ -7151,6 +7184,23 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4609.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -8672,6 +8722,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -9936,6 +9994,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "TWN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "TJK",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -11267,6 +11333,14 @@
         "https://guide.104.com.tw/salary/job/2007002001?analyze=workexp&salary=monthly"
       ],
       "note": "Published title: MIS wang guan zhu guan (MIS and network administration supervisor, i.e. IT manager), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=469, page total valid sample 2047. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: MIS zhu guan 3 to 5 years band 45000/57500/72000 n=195."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "it-executive",
@@ -13201,6 +13275,14 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -14907,6 +14989,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -16388,6 +16478,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17742,6 +17840,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18959,6 +19065,14 @@
         "https://guide.104.com.tw/salary/cat/2004002000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: chan pin qi hua zhu guan (product planning supervisor), all-experience band from the 104 Salary Guide product planning category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=707 from the category page JSON payload, category valid sample 2533. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: chan pin shi ye chu zhu guan (product business unit head) 65000/90000/120000 n=164 on the sales category page."
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "product-management",
@@ -20919,6 +21033,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4609.84,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -22301,6 +22432,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23553,6 +23692,14 @@
         "https://guide.104.com.tw/salary/cat/2007002000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: zi an zhu guan (cybersecurity supervisor), all-experience band from the 104 Salary Guide MIS and network administration category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=185 from the category page JSON payload, category valid sample 9444. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Same-cell alternative: MIS wang guan zhu guan (MIS supervisor) over 10 years band 54000/69000/90000 n=1323."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "cybersecurity",
@@ -25002,6 +25149,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -26284,6 +26439,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27450,6 +27613,14 @@
         "https://guide.104.com.tw/salary/cat/2013002000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: yi shu zhi dao / yi shu zong jian (art director), all-experience band from the 104 Salary Guide media and arts category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=89 from the category page JSON payload, category valid sample 2581. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: duo mei ti kai fa zhu guan (multimedia development supervisor) 50000/66000/84500 n=127 on the design category page."
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "design",
@@ -28957,6 +29128,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30362,6 +30541,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31581,6 +31768,14 @@
         "https://guide.104.com.tw/salary/cat/2004003000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: zhuan an guan li zhu guan (project management supervisor), all-experience band from the 104 Salary Guide project and product management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=3152 from the category page JSON payload, category valid sample 16399. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Page displays the band rounded as 5.6/7.2/9.1 wan TWD."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "delivery-and-project-management",
@@ -33706,6 +33901,23 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1862.71,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -35383,6 +35595,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -36936,6 +37156,14 @@
         "https://guide.104.com.tw/salary/cat/2005003000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: chan pin shi ye chu zhu guan (product business unit head), all-experience band from the 104 Salary Guide sales category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=164 from the category page JSON payload, category valid sample 37870. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. This P&L-carrying BU head is the closest published sales-side executive title. Same-cell alternative: zhuan an ye wu zhu guan (project sales supervisor) all-experience 51000/65000/80000 n=1039."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "sales-and-business-development",
@@ -38994,6 +39222,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2587.04,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -40629,6 +40874,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42040,6 +42293,14 @@
         "https://guide.104.com.tw/salary/cat/2004001000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: xing xiao zong jian (marketing director / CMO), all-experience band from the 104 Salary Guide marketing category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=193 from the category page JSON payload, category valid sample 13574. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternative: mei ti huo chu ban zhu guan (media or publishing supervisor) all-experience 52750/60000/73000 n=32."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "marketing-and-growth",
@@ -44188,6 +44449,23 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6199.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Financial intermediation and insurance (section K). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -46322,6 +46600,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -47999,6 +48285,14 @@
         "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
       ],
       "note": "Published title: cai wu zhang (chief financial officer), all-experience band from the 104 Salary Guide finance, accounting and tax category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=156 from the category page JSON payload, category valid sample 20477. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Official crosscheck: MOL survey, cai wu ji tou zi gui hua fen xi ren yuan (financial and investment planning analysts) average monthly regular pay 78073 TWD and 2024 annual pay 1.468 million TWD (n=11620); hui shen ji shi (accountants and auditors) 65569 TWD (n=5025)."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "finance-and-accounting",
@@ -50094,6 +50388,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1745.91,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Administrative and support activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -51763,6 +52074,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -53247,6 +53566,14 @@
         "https://guide.104.com.tw/salary/job/2001002001?analyze=workexp&salary=monthly"
       ],
       "note": "Published title: ren li zi yuan zhu guan (human resources supervisor), over 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=721, page total valid sample 1891. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. The source publishes no HR-specific C-suite title, so the long-tenure HR supervisor band is the top published HR leadership data."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "hr-and-people",
@@ -55400,6 +55727,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3137.28,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -57084,6 +57428,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -58597,6 +58949,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -59875,6 +60235,14 @@
         "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
       ],
       "note": "Published title: jing ying guan li zhu guan (business management supervisor, general manager track), 5 to 10 years experience band, 104 Salary Guide, data updated 2026-08-31. P25/P50/P75 monthly; bucket sample n=2702, page total valid sample 8666. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end and performance bonuses. Official crosscheck: MOL survey, jian du ren yuan (supervisors incl. site and office chiefs) average monthly regular pay 62981 TWD (n=617012)."
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "general-management",
@@ -61679,6 +62047,14 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -63348,6 +63724,14 @@
         "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
       ],
       "note": "Published title: fu zong jing li (vice president), all-experience band from the 104 Salary Guide corporate management category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=305 from the category page JSON payload, category valid sample 14376. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives on the same page: zong jing li (general manager) 70000/110000/170000 n=263; ying zhang chang (CEO, mostly small firms) 50000/70000/100000 n=265; ying yun zhang (COO) 55000/80000/100000 n=332. Official crosscheck: MOL survey, gao jie zhu guan (top executives, general managers and CEOs) average monthly regular pay 159736 TWD and 2024 annual pay 2.765 million TWD (n=83221)."
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "general-management",
@@ -65522,6 +65906,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3072.36,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -67150,6 +67551,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -68510,6 +68919,14 @@
         "https://guide.104.com.tw/salary/cat/2008001000?type=catjobs&salary=monthly"
       ],
       "note": "Published title: ying jian zhu guan (construction supervisor), all-experience band from the 104 Salary Guide construction planning category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=1448 from the category page JSON payload, category valid sample 7183. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Same-cell alternatives on the engineering R&D category page: ying ti gong cheng yan fa zhu guan (hardware engineering R&D supervisor) 80000/100000/120000 n=1006; qi ta gong cheng yan fa zhu guan (other engineering R&D supervisors) 70000/90000/113000 n=1575."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -70656,6 +71073,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1691.82,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Human health and social work (section Q). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -72220,6 +72654,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -73554,6 +73996,14 @@
         "https://statdb.mol.gov.tw/html/s3/svy14/1435all.pdf"
       ],
       "note": "Published title: yi shi (physician), all-experience band from the 104 Salary Guide medical professionals category page, data updated 2026-08-31. P25/P50/P75 monthly; per-job sample n=170 from the category page JSON payload, category valid sample 9031. Basis authority: page label yue xin (monthly pay), self-reported by 104 members, excludes year-end bonuses. Caveat: the source publishes no hospital-director band, so physicians, the top clinical pay band, stand in for the executive cell; they are senior clinicians, not managers. Official crosscheck: MOL survey, yi shi (physicians) average monthly regular pay 180007 TWD and 2024 annual pay 2.497 million TWD (n=56063)."
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "healthcare",
@@ -75680,6 +76130,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "TJK",
+      "currency": "TJS",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2024.22,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://www.stat.tj/wp-content/uploads/2026/06/table_21_1-2-1.xlsx",
+        "https://www.stat.tj/ru/analiticheskie-tabliczy/"
+      ],
+      "note": "Curated from the Agency on Statistics under the President of the Republic of Tajikistan analytical tables workbook, table 21 Average monthly wage by sectors 2008-2024 (sheet according to OKED, TUNFI-2 classification block), 2024 annual average, in somoni. The economy-wide 2024 average in the same sheet is 2,310.21 somoni per month; the service's monthly release puts the 2026 economy-wide level at 3,114.56 somoni in January rising to 3,304.05 in May 2026, so the 2024 cells predate roughly 40 percent wage growth and act as a conservative floor. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the workbook publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The workbook publishes no occupation cut, so no lead rows exist. The sector series switched to the TUNFI-2 classification in 2019; the 2019-2024 block is internally consistent."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "TZA",
       "currency": "TZS",
       "basis": "monthly-gross",
@@ -77250,6 +77717,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "TJK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "TZA",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -78562,6 +79037,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "TWN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "TJK",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"

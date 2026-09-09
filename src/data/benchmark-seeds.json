@@ -80,7 +80,8 @@
     "2026-09-09 Ukraine (UKR) on the Derzhstat Data Bank SDMX API (stat.gov.ua). Round 25. The old ukrstat.gov.ua frames site answers only through the remote web reader and its express tables moved behind the new portal's paid subscription, but the portal's Data Bank (QuantHub explorer) serves the same enterprise labour survey free under CC-BY 4.0 via a documented SDMX 3.0 API at stat.gov.ua/sdmx/workspaces/default:integration/registry. Dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0, indicator AVG_MTH_SALARY_UAH (average monthly nominal accrued wage of a regular employee), all-Ukraine region code, sexes total, NACE Rev.2 sections. Rows carry the Q2 2026 quarterly average (April to June): J 77598, K 64944, G 36686, M 39836, N 24776, H 29647, F 25060, Q 21564, P 22172 UAH per month; economy-wide 31421 UAH. Indicator semantics verified two ways: the quarterly economy-wide matches the 31421 announcement and the companion single-month indicator returns June 32783, matching the main-indicators headline; AVG_MTH_SALARY with monthly frequency is a year-to-date running average and was deliberately not used. No occupation cut exists in the dataflow, so no lead rows. Tech trio shares section J with the usual understatement disclosure; wartime scope (10+ employee legal entities, occupied territories excluded) disclosed per row. 11 rows, currency UAH cross-checked against countries.json. Every anchor re-fetched and matched verbatim in the merge script before write.",
     "2026-09-09 Tajikistan (TJK) on the stat.tj analytical tables workbook. Round 25. The round-24 parking ('wage databooks do not surface on public pages') was wrong: the Russian analytical tables page /ru/analiticheskie-tabliczy/ lists table 21 'Average monthly wage by sectors 2008-2024' (table_21_1-2-1.xlsx, sheet 'according to OKED') whose TUNFI-2 block carries annual average monthly nominal wages by NACE section through 2024, somoni. Rows carry 2024: J 4609.84, K 6199.30, H 3137.28, F 3072.36, M 2587.04, P 2024.22, G 1862.71, N 1745.91, Q 1691.82; economy-wide 2310.21. The monthly release (table_20ru.xls) shows only four coarse aggregates but its 2026 tail (January 3114.56 to May 3304.05 somoni) is disclosed per row as the growth path, so the 2024 cells read as conservative floors. No occupation cut, no lead rows. Tech trio shares section J with the usual understatement disclosure. 11 rows, currency TJS cross-checked against countries.json. The workbook was re-downloaded inside the merge script and every anchor matched verbatim before write.",
     "2026-09-09 Nepal (NPL) on the ILOSTAT SDMX republication of the NLFS 2017/18. Round 26. Nepal's own hosts stay network-blocked (cbs.gov.np, nso.gov.np, and the government CDN all fail from this network; the remote reader returns a fallback page), but the round-15 batch probe had simply missed Nepal: the median-by-activity flow carries the full ISIC4 section circle at 2017. 14 rows on the standard recipe: 11 section seniors (J 15,000; K 16,000; M 24,285.19; N 22,653.06; Q 20,000; F 19,816.86; P 18,000; H 15,208.33; G 12,000 NPR; tech trio shares J) plus it-exec/finance/gm leads on the ISCO-08 managers pool 32,000. Every cell is break-flagged (2017/18 survey redesign), disclosed per row; the real-estate L cell is the only Unreliable flag in the vintage and is not used; the mean flow corroborates (J mean 18,876.83, economy-wide median 15,208.33). Age handled with the conservative-floor sentence plus the minimum-wage revaluation anchor (13,450 -> 17,300 NPR, +28.6 percent 2018-2023) and the NLFS-IV 2024/25 forward look. No chief-executives split so no executive rows (pinned). 11+3 rows, currency NPR cross-checked against countries.json. Every anchor re-fetched from its filtered per-row URL and matched verbatim in the merge script before write.",
-    "2026-09-09 ILOSTAT resweep wave. Round 26, part 2. The Nepal discovery (a round-15 batch-probe miss) triggered an explicit per-country probe of all 64 remaining floor-only markets across the median and mean by-activity flows: the batch sweep had been unreliable and this wave is the first fruit. Six markets on the standard 14-row recipe (11 section seniors, tech trio shares J, plus it-exec/finance/gm leads on the ISCO-08 managers pool; no chief-executives split so no executive rows): Jordan 2024 (JOD, clean cells: J 450, K 500, managers 600), Rwanda 2024 (RWF: J 150,000, K 200,000, healthcare 198,711.52, managers 300,000), Senegal 2024 (XOF: J 145,270.04, K 150,000, education 300,000 which exceeds the 241,159.15 managers pool and ships verbatim under the Serbia/Hungary/Bosnia inversion precedent, disclosed per row), Uruguay 2024 (UYU: J 62,732.38, K 76,937.5, managers 120,000; the ILOSTAT source is the ECH household survey, which the round-10 national-host probe could not cut by activity), Guatemala 2023 (GTQ: J 4,218.04, education P 5,000 the highest section, managers 8,084.43; the old 'too coarse' assessment applied to a different vintage), and Ghana 2017 (GHS: J 968.84, managers 1,401.47; every cell break-flagged from the survey redesign and the eight-year age handled with the conservative-floor sentence, the 2023 wave publishing only broad aggregates so 2017 stays the freshest section-level vintage). Currencies cross-checked against countries.json in-merge. Every anchor re-fetched from its filtered per-row URL and matched verbatim, statuses asserted (clean for the five fresh markets, B across the board for Ghana) before write. Resweep queue for later rounds: Somalia, Sudan, Timor-Leste at 2021-2022; older vintages Barbados, Saint Lucia, Brunei, Cameroon, Cabo Verde, DR Congo, Jamaica, Madagascar, New Caledonia, Nicaragua, Afghanistan, Liberia, Congo-Brazzaville; means-only Montenegro, San Marino, Andorra, Aruba, Bermuda; Sint Maarten and Trinidad fetch-failed and need retries."
+    "2026-09-09 ILOSTAT resweep wave. Round 26, part 2. The Nepal discovery (a round-15 batch-probe miss) triggered an explicit per-country probe of all 64 remaining floor-only markets across the median and mean by-activity flows: the batch sweep had been unreliable and this wave is the first fruit. Six markets on the standard 14-row recipe (11 section seniors, tech trio shares J, plus it-exec/finance/gm leads on the ISCO-08 managers pool; no chief-executives split so no executive rows): Jordan 2024 (JOD, clean cells: J 450, K 500, managers 600), Rwanda 2024 (RWF: J 150,000, K 200,000, healthcare 198,711.52, managers 300,000), Senegal 2024 (XOF: J 145,270.04, K 150,000, education 300,000 which exceeds the 241,159.15 managers pool and ships verbatim under the Serbia/Hungary/Bosnia inversion precedent, disclosed per row), Uruguay 2024 (UYU: J 62,732.38, K 76,937.5, managers 120,000; the ILOSTAT source is the ECH household survey, which the round-10 national-host probe could not cut by activity), Guatemala 2023 (GTQ: J 4,218.04, education P 5,000 the highest section, managers 8,084.43; the old 'too coarse' assessment applied to a different vintage), and Ghana 2017 (GHS: J 968.84, managers 1,401.47; every cell break-flagged from the survey redesign and the eight-year age handled with the conservative-floor sentence, the 2023 wave publishing only broad aggregates so 2017 stays the freshest section-level vintage). Currencies cross-checked against countries.json in-merge. Every anchor re-fetched from its filtered per-row URL and matched verbatim, statuses asserted (clean for the five fresh markets, B across the board for Ghana) before write. Resweep queue for later rounds: Somalia, Sudan, Timor-Leste at 2021-2022; older vintages Barbados, Saint Lucia, Brunei, Cameroon, Cabo Verde, DR Congo, Jamaica, Madagascar, New Caledonia, Nicaragua, Afghanistan, Liberia, Congo-Brazzaville; means-only Montenegro, San Marino, Andorra, Aruba, Bermuda; Sint Maarten and Trinidad fetch-failed and need retries.",
+    "2026-09-09 ILOSTAT resweep tail wave. Round 27. Fifteen markets from the explicit per-country re-probe of the remaining floor-only list, two recipes (medians where the median flow carries sections, published-means in median-only shape where only the mean flow does) and both revisions. ISIC4 medians: Timor-Leste 2021 (USD; finance cell Unreliable so no finance senior, managers pool 114.93 sits below most sectors and ships with the inversion disclosed), Somalia 2022 (survey quotes USD, Panama/Lebanon convention with the QUOTE_CURRENCY exception; nine clean sections, no managers pool so no leads), Liberia 2017 (USD-quoted, break-flagged, six clean sections, leads on managers 129.42), Barbados 2016 (BBD, full nine sections plus managers 4,909.41), Saint Lucia 2016 (XCD, ICT cell Unreliable so no tech rows, eight sections, no managers pool), New Caledonia 2017 (XPF, full nine sections, no managers pool), Cameroon 2014 (XAF, professional-services cell Unreliable so no marketing row, managers 150,000), Cabo Verde 2015 (CVE, break-flagged, five clean sections, leads on managers 60,739.79), Sudan 2022 (SDG, break-flagged, ICT cell Unreliable so no tech rows, leads on managers 51,189.15), Madagascar 2015 (MGA, four clean sections, leads on managers 353,707.31). ISIC3 medians with the house Rev.3 mapping (finance J, marketing and hr share K, education M, health N, operations on the combined I section leaning high, no tech rows possible): Nicaragua 2014 (NIO, break-flagged, the round-24 closure was about the national ECH PDFs, not this ILOSTAT vintage), Afghanistan 2014 (AFN, no finance section published at all so no finance senior or finance lead), Jamaica 2014 (JMD, seven sections plus managers 62,499.16). Means-only: San Marino 2022 (EUR, full nine sections, no managers pool) and Montenegro 2022 (EUR, full nine sections, no managers pool; the 2022 ISIC4 means sit beside the older Eurostat SES cells already in the matrix). Older-vintage markets skipped with evidence: DR Congo 2005, Congo-Brazzaville 2009, Andorra 2008, Aruba 2010, Bermuda 2009 (16 to 21 years old, indefensible even as floors); Sint Maarten unreachable; Trinidad economy-wide only; Djibouti, Malawi, Nauru, Solomon Islands, Guam, Syria aggregates-only. CURRENCY LESSON institutionalized: the first sweep scripts mixed USD variants into LCU reads (last-write-wins on shared series keys); every value here was re-verified from year-and-currency-pinned filtered URLs, statuses asserted per cell before write. 158 rows, currencies cross-checked against countries.json except the two market-quoted USD markets."
   ],
   "rows": [
     {
@@ -48642,6 +48643,2534 @@
         "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/GHA.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
       ],
       "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2017 vintage, national currency: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every cell of the 2017 vintage carries a break-in-series flag, disclosed here. The vintage is roughly eight years old and the freshest section-level release; treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 314.08,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 314.08,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 314.08,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 130,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 165.1,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 171.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 325.76,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 289.18,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 114.93,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The managers median sits below most sector medians in this vintage; it ships verbatim with that inversion disclosed. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 114.93,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The managers median sits below most sector medians in this vintage; it ships verbatim with that inversion disclosed. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "TLS",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 114.93,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TLS.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The managers median sits below most sector medians in this vintage; it ships verbatim with that inversion disclosed. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 250,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 250,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 250,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 346.92,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 318.19,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 192,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 250,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SOM",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SOM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 247.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 115.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 125.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 112.09,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 171.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 61.35,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. The survey collects earnings in US dollars (ILOSTAT relabels the series local-currency); the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 129.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2017 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old: treat as a very conservative floor. The survey collects earnings in US dollars; the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 129.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2017 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old: treat as a very conservative floor. The survey collects earnings in US dollars; the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "LBR",
+      "currency": "USD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 129.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/LBR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2017 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2017 vintage carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old: treat as a very conservative floor. The survey collects earnings in US dollars; the seed keeps the survey's own unit, the Panama and Lebanon market-quoted convention. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3191.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3191.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3191.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3840.56,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1590.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2900,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2251.28,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4909.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2016 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4909.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2016 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "BRB",
+      "currency": "BBD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4909.41,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRB.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2016 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1247.09,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1629.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1809.75,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1925.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1411.62,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "LCA",
+      "currency": "XCD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2883.75,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/LCA.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2016 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2016 vintage is roughly 10 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 286393.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 286393.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 286393.44,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 300000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 170000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 244500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 165452.46,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 200000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 228688.89,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "NCL",
+      "currency": "XPF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 258555.56,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NCL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2017 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2017 vintage is roughly 9 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 81905.48,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 50000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 70000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 49346.91,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 85000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CMR",
+      "currency": "XAF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 150000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CMR.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17245.64,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 27529.49,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 47307.28,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60739.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60739.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "CPV",
+      "currency": "CVE",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60739.79,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/CPV.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2015 vintage carries a break-in-series flag, disclosed here. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 48083.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 85441.82,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 96456.76,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 37816.95,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 121333.34,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 91000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 47496.94,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 60000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51189.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2022 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51189.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2022 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "SDN",
+      "currency": "SDG",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 51189.15,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/SDN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2022 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2022 vintage carries a break-in-series flag, disclosed here. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 149534.48,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 126971.62,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 140646.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 213846.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2015 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2015 vintage is roughly 11 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 353707.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 353707.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "MDG",
+      "currency": "MGA",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 353707.31,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/MDG.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2015&endPeriod=2015"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2015 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2015 vintage is roughly 11 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 18272.27,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Financial intermediation (ISIC Rev.3 section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11008.25,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11008.25,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 11438.2,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Education (ISIC Rev.3 section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 14500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Health and social work (ISIC Rev.3 section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9369.5,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_I.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Transport, storage and communications (ISIC Rev.3 section I). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3 this section combines transport, storage, and communications, so the operations figure leans high. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7968.03,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (ISIC Rev.3 section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Construction (ISIC Rev.3 section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "NIC",
+      "currency": "NIO",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NIC.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7714.47,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7714.47,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 6700,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Education (ISIC Rev.3 section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 10000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Health and social work (ISIC Rev.3 section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 9000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_I.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Transport, storage and communications (ISIC Rev.3 section I). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3 this section combines transport, storage, and communications, so the operations figure leans high. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 7000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (ISIC Rev.3 section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 5600,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Construction (ISIC Rev.3 section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "AFG",
+      "currency": "AFN",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/AFG.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62499,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Financial intermediation (ISIC Rev.3 section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32499,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32499,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Real estate, renting and business activities (ISIC Rev.3 section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3, marketing and human-resources families share this one business-activities section; it is a broad professional-services pool. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32499,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Education (ISIC Rev.3 section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32499,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Health and social work (ISIC Rev.3 section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 24825.88,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_I.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Transport, storage and communications (ISIC Rev.3 section I). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. Under ISIC Rev.3 this section combines transport, storage, and communications, so the operations figure leans high. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17329,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (ISIC Rev.3 section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 17329,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.ECO_ISIC3_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC3 section, 2014 vintage, as published by the survey. Archetype: all employees in Construction (ISIC Rev.3 section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62499.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62499.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "JAM",
+      "currency": "JMD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 62499.16,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/JAM.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2391,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2391,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2391,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 3521,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1870,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2107,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1543,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1979,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2064,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1707,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "SMR",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1664,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/SMR.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1122,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1122,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1122,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1535,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 729,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 809,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 705,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 877,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 822,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1066,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "MNE",
+      "currency": "EUR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 853,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTA_SEX_ECO_CUR_NB,1.0/MNE.A.EAR_EMTA_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2022&endPeriod=2022"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, mean monthly earnings of employees, both sexes, ISIC4 section, 2022 vintage, as published by the survey. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the flow publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. "
     }
   ]
 }

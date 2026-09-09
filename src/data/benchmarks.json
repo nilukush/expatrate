@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-09",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 140,
-    "dataRows": 2775,
+    "tier1CountriesCount": 141,
+    "dataRows": 2786,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -2103,6 +2103,23 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -3730,6 +3747,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -5073,6 +5098,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -7211,6 +7244,23 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -8680,6 +8730,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -9926,6 +9984,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -11246,6 +11312,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -13221,6 +13295,14 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -14883,6 +14965,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -16355,6 +16445,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17701,6 +17799,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18906,6 +19012,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -20897,6 +21011,23 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22227,6 +22358,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23459,6 +23598,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -24911,6 +25058,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -26185,6 +26340,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27332,6 +27495,14 @@
       "family": "design",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -28842,6 +29013,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30239,6 +30418,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31439,6 +31626,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -33613,6 +33808,23 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 36686,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=G",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -35228,6 +35440,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -36769,6 +36989,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -38867,6 +39095,23 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 39836,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=M",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40442,6 +40687,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -41841,6 +42094,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -44019,6 +44280,23 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64944,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=K",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -46137,6 +46415,14 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -47767,6 +48053,14 @@
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -49901,6 +50195,23 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 24776,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=N",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -51508,6 +51819,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -52981,6 +53300,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -55174,6 +55501,23 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 29647,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=H",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -56798,6 +57142,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -58301,6 +58653,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "ARE",
       "currency": "AED",
       "basis": "monthly-gross",
@@ -59560,6 +59920,14 @@
       "family": "general-management",
       "level": "senior",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -61403,6 +61771,14 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -63027,6 +63403,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -65239,6 +65623,23 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25060,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=F",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -66806,6 +67207,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -68154,6 +68563,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -70332,6 +70749,23 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 21564,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=Q",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -71834,6 +72268,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -73157,6 +73599,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -75323,6 +75773,23 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22172,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=P",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -76831,6 +77298,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "UKR",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "ARE",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -78135,6 +78610,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "UGA",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "UKR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"

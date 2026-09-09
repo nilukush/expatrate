@@ -76,7 +76,8 @@
       "date": "2026-09-07",
       "pass": "Czechia Malta Luxembourg SES fill",
       "summary": "Czechia software-engineering lead moves from platy.cz to official SES managers-in-ICT at 124,036 CZK. Malta gains seven official cells (marketing senior 2,718 and lead 4,024, sales senior 2,643, operations senior 2,670, education lead 2,938, and the general-management and sales executives on the economy-wide managers pool 3,682 EUR); the admin-professionals cell is unpublished in SES so no HR senior was invented. Luxembourg replaces its three alleyesonme Low rows (data senior 5,818, HR senior 5,344, HR lead 8,687) and adds marketing both levels (6,108 / 10,986), healthcare lead 10,002, and it-executive lead 8,355 sharing the ICT managers pool. All High, 2022 vintage disclosed; sanity anchors matched the existing MLT and LUX SES values exactly before merge."
-    }
+    },
+    "2026-09-09 Ukraine (UKR) on the Derzhstat Data Bank SDMX API (stat.gov.ua). Round 25. The old ukrstat.gov.ua frames site answers only through the remote web reader and its express tables moved behind the new portal's paid subscription, but the portal's Data Bank (QuantHub explorer) serves the same enterprise labour survey free under CC-BY 4.0 via a documented SDMX 3.0 API at stat.gov.ua/sdmx/workspaces/default:integration/registry. Dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0, indicator AVG_MTH_SALARY_UAH (average monthly nominal accrued wage of a regular employee), all-Ukraine region code, sexes total, NACE Rev.2 sections. Rows carry the Q2 2026 quarterly average (April to June): J 77598, K 64944, G 36686, M 39836, N 24776, H 29647, F 25060, Q 21564, P 22172 UAH per month; economy-wide 31421 UAH. Indicator semantics verified two ways: the quarterly economy-wide matches the 31421 announcement and the companion single-month indicator returns June 32783, matching the main-indicators headline; AVG_MTH_SALARY with monthly frequency is a year-to-date running average and was deliberately not used. No occupation cut exists in the dataflow, so no lead rows. Tech trio shares section J with the usual understatement disclosure; wartime scope (10+ employee legal entities, occupied territories excluded) disclosed per row. 11 rows, currency UAH cross-checked against countries.json. Every anchor re-fetched and matched verbatim in the merge script before write."
   ],
   "rows": [
     {
@@ -46696,6 +46697,193 @@
         "https://askdata.rks-gov.net/pxweb/en/ASKdata/"
       ],
       "note": "Curated directly by the reviewer from the Kosovo Agency of Statistics (ASK) PxWeb portal, table Average salary (in Euro) by economic activities in Kosovo, 2020-2025 (tab03, Wage Level, Labour market folder): mean gross monthly wage in euro from administrative wage records, 2025, all employees. Kosovo uses the euro. The economy-wide gross was 639 euro per month in 2024 in the same publication's overview table, corroborating the monthly basis. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the register publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The portal publishes no occupation cut, so no lead rows exist. 2025 is the latest annual published."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 77598,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=J",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 64944,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=K",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 36686,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=G",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 39836,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=M",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 24776,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=N",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 29647,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=H",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 25060,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=F",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 21564,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=Q",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "UKR",
+      "currency": "UAH",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22172,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://stat.gov.ua/sdmx/workspaces/default:integration/registry/sdmx/3.0/data/dataflow/SSSU/DF_ENTERPRISE_LABOR_STATISTICS/24.0.0/*?dimensionAtObservation=AllDimensions&c%5BINDICATOR%5D=AVG_MTH_SALARY_UAH&c%5BREGION%5D=UA00000000000000000&c%5BBREAKDOWN%5D=_T&c%5BFREQ%5D=Q&c%5BTIME_PERIOD%5D=2026-Q2&c%5BNACE%5D=P",
+        "https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%28~%29"
+      ],
+      "note": "Curated from the State Statistics Service of Ukraine (Derzhstat) Data Bank SDMX API, dataflow DF_ENTERPRISE_LABOR_STATISTICS v24.0.0: average monthly nominal accrued wage of a regular employee by activity section, all Ukraine, both sexes, Q2 2026 (average for April to June), in hryvnia. The economy-wide cell of this exact query reads 31421 UAH, matching the service's published announcement, and the single-month June cell of the companion indicator reads 32783 UAH, matching the headline on the main indicators page, so the indicator semantics are verified. Archetype: all employees in Education (section P). MEDIAN-ONLY shape carrying a published MEAN: the survey publishes means only. It is an all-seniority, all-employee average: treat as a floor when quoting senior roles. The survey covers legal entities with 10 or more employees and, since March 2022, excludes temporarily occupied territories and areas of active combat; wartime monthly publication resumed in 2025. The Q2 quarterly average was chosen over the fresher July single month because June bonus payouts swing single months. The dataflow publishes no occupation cut, so no lead rows exist."
     }
   ]
 }

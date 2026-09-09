@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-09",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 142,
-    "dataRows": 2797,
+    "tier1CountriesCount": 143,
+    "dataRows": 2811,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -1457,6 +1457,22 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Namibia Labour Force Survey of the Namibia Statistics Agency: median monthly earnings, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Information and communication (ISIC Rev.4 section J). The three technology families share this one published pool; the ICT branch mixes specialists with telecom and support roles, so it understates pure specialists. Published MEDIAN stored as p50; the same series publishes a mean of 22,879 for 2018. No seniority split exists, so this is an all-seniority figure: treat as a floor when quoting senior roles. 2018 is the latest annual in this series and is now 8 years old; the Namibia dollar is pegged one-to-one to the rand, and nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
     },
     {
       "family": "software-engineering",
@@ -3284,6 +3300,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -4735,6 +4759,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -6654,6 +6686,22 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -8355,6 +8403,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -9677,6 +9733,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "NLD",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10973,6 +11037,14 @@
       "family": "it-executive",
       "level": "senior",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -12777,6 +12849,22 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, national currency: the closest published cut to leadership pay. The cell carries a break-in-series flag from the survey redesign, disclosed here. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -14535,6 +14623,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -16106,6 +16202,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -17501,6 +17605,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -18758,6 +18870,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -20556,6 +20676,22 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "NLD",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22092,6 +22228,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "NLD",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -23376,6 +23520,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -24757,6 +24909,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -26117,6 +26277,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -27314,6 +27482,14 @@
       "family": "design",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -28703,6 +28879,14 @@
       "family": "delivery-and-project-management",
       "level": "senior",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -30186,6 +30370,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -31453,6 +31645,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -33338,6 +33538,22 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 12000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -35161,6 +35377,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -36717,6 +36941,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -38698,6 +38930,22 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 24285.19,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -40449,6 +40697,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -41906,6 +42162,14 @@
       "family": "marketing-and-growth",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -43878,6 +44142,22 @@
         "https://ilostat.ilo.org/topics/wages/"
       ],
       "note": "Curated directly by the reviewer from ILOSTAT (International Labour Organization statistics), which republishes the Namibia Labour Force Survey of the Namibia Statistics Agency: median monthly earnings, total sex, 2018 annual, national currency (survey income from employment, pre-tax). Archetype: all employees in Financial and insurance activities (ISIC Rev.4 section K). Published MEDIAN stored as p50; the same series publishes a mean of 20,433 for 2018. No seniority split exists, so this is an all-seniority figure: treat as a floor when quoting senior roles. 2018 is the latest annual in this series and is now 8 years old; the Namibia dollar is pegged one-to-one to the rand, and nominal pay has risen materially since, so treat as a conservative floor."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 16000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
     },
     {
       "family": "finance-and-accounting",
@@ -46055,6 +46335,22 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, national currency: the closest published cut to leadership pay. The cell carries a break-in-series flag from the survey redesign, disclosed here. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -47839,6 +48135,14 @@
       "family": "finance-and-accounting",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -49840,6 +50144,22 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 22653.06,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -51642,6 +51962,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -53137,6 +53465,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -55170,6 +55506,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 15208.33,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -56989,6 +57341,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -58538,6 +58898,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -59890,6 +60258,14 @@
       "family": "general-management",
       "level": "senior",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -61599,6 +61975,22 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 32000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, national currency: the closest published cut to leadership pay. The cell carries a break-in-series flag from the survey redesign, disclosed here. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "NLD",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -63273,6 +63665,14 @@
       "family": "general-management",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -65347,6 +65747,22 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 19816.86,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -67118,6 +67534,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -68523,6 +68947,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -70527,6 +70959,22 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 20000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -72238,6 +72686,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -73622,6 +74078,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -75577,6 +76041,22 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "NPL",
+      "currency": "NPR",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 18000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/NPL.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the Nepal Labour Force Survey 2017/18 (National Statistics Office), median monthly earnings of employees, both sexes, national currency. Every cell in this vintage carries a break-in-series flag because the 2017/18 round redesigned the survey; the flag is disclosed here. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The survey vintage is 2017/18, roughly eight years old: treat every figure as a very conservative floor. Nepal's national minimum wage rose from 13,450 to 17,300 rupees between 2018 and August 2023, a 28.6 percent revaluation that approximates the market-wide drift since the survey; the fourth Nepal Labour Force Survey (2024/25) is in the field and its report is unpublished as of this review."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -77284,6 +77764,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "NPL",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "NLD",
       "currency": "EUR",
       "basis": "annual-gross",
@@ -78684,6 +79172,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "NAM",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "NPL",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"

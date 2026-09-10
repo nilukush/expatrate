@@ -4,8 +4,8 @@
     "lastReviewed": "2026-09-09",
     "familiesCount": 16,
     "levelsCount": 3,
-    "tier1CountriesCount": 164,
-    "dataRows": 3053,
+    "tier1CountriesCount": 169,
+    "dataRows": 3089,
     "curationNote": "Benchmarks are entered only from verifiable public recruiter and official statistics sources with quality ratings (docs/RESEARCH/analyzer-report.md and verifier-report.md). Cells without a verified source remain explicit insufficient-data markers; they are never silently filled from a global average."
   },
   "entries": [
@@ -358,6 +358,22 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1658.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -525,6 +541,14 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -633,6 +657,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2512 Software developers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 31322. Same-cell alternatives: 2513 Web and multimedia developers 42,972 to 52,454 to 63,734 DKK (n=3,272); loen.dk (DST republisher) shows backend developers avg 66,986, median 64,181, P25 52,382, P75 78,222. Distribution covers all experience levels within the occupation; DST does not split seniority. Corroboration: PROSA 2026 IT union survey, private sector east of Storebaelt, Build function (software developers) 15-19 yrs experience: 61,854 to 69,829 to 76,405 DKK per month."
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "software-engineering",
@@ -2350,6 +2382,30 @@
     {
       "family": "software-engineering",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 765.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -2759,6 +2815,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -2896,6 +2960,14 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -2982,6 +3054,14 @@
         "https://www.prosa.dk/raadgivning/loen-og-forhandling/loenstatistik-2026/"
       ],
       "note": "Published group: PROSA lonstatistik 2026, private sector east of Storebaelt, Management function ('Projektleder, teamleder, udviklingsleder' = project manager, team lead, development manager), 15-19 yrs IT experience, reported brutto monthly pay: lower quartile 65,830, median 76,233, upper quartile 90,000. Basis authority: PDF states bruttolon 'inkluderer faste tillaeg, bonus og arbejdsgiverens pensionsbidrag' and is normalized to a 37 hour week full time. Survey of 2,642 IT professionals (22 pct response rate), payslips for January 2026, self-reported but quality checked. Same-cell alternatives: DST 1330 ICT service managers in corporations 74,032 to 90,947 to 111,365 (n=3,282); LoenRadar Tech Lead median 69,600 (self-reported, small n)."
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "software-engineering",
@@ -4204,6 +4284,22 @@
     {
       "family": "software-engineering",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -4543,6 +4639,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -4665,6 +4769,14 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -4725,6 +4837,14 @@
       "family": "software-engineering",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -5746,6 +5866,22 @@
     {
       "family": "software-engineering",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "software-engineering",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -6206,6 +6342,22 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1658.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -6372,6 +6524,14 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -6479,6 +6639,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2521 Database designers and administrators'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 1554. Same-cell alternatives: 2120 Mathematicians, actuaries and statisticians 58,415 to 71,142 to 88,137 DKK (n=1,769); 2519 Software and applications developers nec 50,268 to 61,394 to 74,148 (n=4,981); LoenRadar medians: data engineer 55,435, data scientist 55,105, data analyst 60,317 (self-reported, n per role under 200). "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "data-and-ai",
@@ -8164,6 +8332,30 @@
     {
       "family": "data-and-ai",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 765.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -8562,6 +8754,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -8691,6 +8891,14 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -8772,6 +8980,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1223 Research and development managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 2136. Same-cell alternatives: closest published DISCO code covering heads of data science and ML engineering. No data-specific executive code exists; for executive level see it-executive family."
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "data-and-ai",
@@ -9860,6 +10076,22 @@
     {
       "family": "data-and-ai",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10154,6 +10386,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -10275,6 +10515,14 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -10324,6 +10572,14 @@
       "family": "data-and-ai",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -11305,6 +11561,22 @@
     {
       "family": "data-and-ai",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "data-and-ai",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11617,6 +11889,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "BGR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11722,6 +12002,14 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -11793,6 +12081,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1330 Information and communications technology service managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 3568. Same-cell alternatives: covers IT department heads (head of IT, head of development). Executive cells for this family stop here: DST publishes no separate CIO code."
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "it-executive",
@@ -12817,6 +13113,22 @@
     {
       "family": "it-executive",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "senior",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13258,6 +13570,22 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4240,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -13432,6 +13760,22 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "COD",
+      "currency": "CDF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/COD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -13522,6 +13866,22 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1330 Information and communications technology service managers, corporations and organizations sector'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 3282. Same-cell alternatives: all-sector version 72,229 to 89,434 to 109,578 (n=3,568); PROSA Management function 25-29 yrs: 65,269 to 75,583 to 83,439. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "DJI",
+      "currency": "DJF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 115340.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/DJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2017 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2017 cell carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest cut published: treat as a very conservative floor. "
     },
     {
       "family": "it-executive",
@@ -15078,6 +15438,38 @@
     {
       "family": "it-executive",
       "level": "lead",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1299.13,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
+      "country": "TTO",
+      "currency": "TTD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TTO.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-88 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "it-executive",
+      "level": "lead",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -15478,6 +15870,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -15619,6 +16019,14 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -15686,6 +16094,14 @@
       "family": "it-executive",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -16967,6 +17383,22 @@
     {
       "family": "it-executive",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "it-executive",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17313,6 +17745,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -17434,6 +17874,14 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -17520,6 +17968,14 @@
         "https://loenradar.dk/guides/product-manager-vs-marketing-manager-loen-2026"
       ],
       "note": "Published role: LoenRadar 'Product Manager' salary statistics 2026 (guide page dated 30-08-2026): P25 50,950, median 59,413, P75 69,130 kr/md. Basis authority: page states 'Medianloennen her er grundloen plus pension' (base pay plus pension, monthly) and figures are based on 70 'verificerede loenindberetninger' (verified self-reported pay submissions); dataset under 200 contributions and flagged by the site as interpret with caution. Quality Low: self-reported crowd data. Same-cell alternatives: Product Owner median 59,930; Engineering Manager median 73,317 (LoenRadar). DST has no product manager DISCO code. Head of Product and CPO levels: no citable free figures found."
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "product-management",
@@ -18631,6 +19087,22 @@
     {
       "family": "product-management",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "senior",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -18928,6 +19400,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -19048,6 +19528,14 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -19106,6 +19594,14 @@
       "family": "product-management",
       "level": "lead",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -20169,6 +20665,22 @@
     {
       "family": "product-management",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20442,6 +20954,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -20563,6 +21083,14 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -20612,6 +21140,14 @@
       "family": "product-management",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -21573,6 +22109,22 @@
     {
       "family": "product-management",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "product-management",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -22007,6 +22559,22 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1658.3,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -22163,6 +22731,14 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -22270,6 +22846,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2522 Systems administrators'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 3856. Same-cell alternatives: 2523 Computer network professionals 45,516 to 57,339 to 72,399 (n=1,071); 2529 Database and network professionals nec 48,736 to 60,273 to 74,560 (n=3,060); PROSA Run function (drift, netvaerk, sikkerhed i drift) 15-19 yrs: 52,267 to 61,039 to 74,771. DISCO-08 has no dedicated cybersecurity code; security engineers sit across 2512, 2522, 2523 and 2529. Management step: DST 1330 ICT service managers 72,229 to 89,434 to 109,578 (n=3,568)."
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "cybersecurity",
@@ -23844,6 +24428,30 @@
     {
       "family": "cybersecurity",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 765.63,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_J.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Information and communication (section J). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. The three technology families share this one published pool; section J mixes specialists with telecom and support roles, so it understates pure specialists. "
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -24208,6 +24816,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -24321,6 +24937,14 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -24370,6 +24994,14 @@
       "family": "cybersecurity",
       "level": "lead",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -25401,6 +26033,22 @@
     {
       "family": "cybersecurity",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -25693,6 +26341,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -25805,6 +26461,14 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -25854,6 +26518,14 @@
       "family": "cybersecurity",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -26832,6 +27504,22 @@
     {
       "family": "cybersecurity",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "cybersecurity",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27123,6 +27811,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -27252,6 +27948,14 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -27340,6 +28044,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2166 Graphic and multimedia designers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 1616. Same-cell alternatives: 2161 Building architects 49,834 to 57,635 to 65,514 (n=3,915); 2163 Product and garment designers 38,880 to 47,095 to 58,123 (n=2,441). Lead and executive cells left empty: no design management DISCO code; closest proxy DST 1222 Advertising and public relations managers 65,727 to 86,589 to 112,738 (n=589)."
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "design",
@@ -28469,6 +29181,22 @@
     {
       "family": "design",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "senior",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -28752,6 +29480,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -28856,6 +29592,14 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -28923,6 +29667,14 @@
       "family": "design",
       "level": "lead",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -29935,6 +30687,22 @@
     {
       "family": "design",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30208,6 +30976,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -30312,6 +31088,14 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -30361,6 +31145,14 @@
       "family": "design",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -31281,6 +32073,22 @@
     {
       "family": "design",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "design",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31589,6 +32397,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -31719,6 +32535,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -31808,6 +32632,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2421 Management and organization analysts'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 12149. Same-cell alternatives: 2422 Policy administration professionals 55,280 to 66,965 to 84,427 (n=6,522); PROSA Management function 15-19 yrs: 65,830 to 76,233 to 90,000; LoenRadar IT-projektleder median about 57,700 to 62,200 across its 2026 guides. "
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "delivery-and-project-management",
@@ -32976,6 +33808,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "senior",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -33285,6 +34133,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -33406,6 +34262,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -33485,6 +34349,14 @@
         "https://www.prosa.dk/raadgivning/loen-og-forhandling/loenstatistik-2026/"
       ],
       "note": "Published group: PROSA lonstatistik 2026, private sector east of Storebaelt, Management function (project manager, team lead, development manager), 20-24 yrs IT experience, reported brutto monthly pay: lower quartile 64,607, median 75,067, upper quartile 85,712. Basis authority: PDF states bruttolon includes fixed supplements, bonus and employer pension contribution, normalized to 37 hour week full time. Survey n=2,642, payslips January 2026, self-reported but quality checked. Same-cell alternatives: DST 1219 Business services and administration managers nec 55,554 to 71,374 to 92,879 (n=9,797)."
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "delivery-and-project-management",
@@ -34565,6 +35437,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -34839,6 +35727,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -34952,6 +35848,14 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -35001,6 +35905,14 @@
       "family": "delivery-and-project-management",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -35964,6 +36876,22 @@
     {
       "family": "delivery-and-project-management",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "delivery-and-project-management",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -36396,6 +37324,22 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 600,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -36587,6 +37531,14 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -36703,6 +37655,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2433 Technical and medical sales professionals (excluding ICT)'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 5005. Same-cell alternatives: 2434 ICT sales professionals 54,110 to 73,688 to 99,348 (n=3,869). "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "sales-and-business-development",
@@ -38465,6 +39425,30 @@
     {
       "family": "sales-and-business-development",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_G.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Wholesale and retail trade (section G). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -38886,6 +39870,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -39016,6 +40008,14 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -39105,6 +40105,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1221 Sales and marketing managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 9502. Same-cell alternatives: corporations sector variant 62,327 to 81,061 to 105,827 (n=9,484). Executive cell left empty: this code already spans commercial directors; DST publishes no higher commercial split (see general-management executive for MD band)."
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "sales-and-business-development",
@@ -40316,6 +41324,22 @@
     {
       "family": "sales-and-business-development",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40650,6 +41674,14 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -40780,6 +41812,14 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -40847,6 +41887,14 @@
       "family": "sales-and-business-development",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -42056,6 +43104,22 @@
     {
       "family": "sales-and-business-development",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "sales-and-business-development",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -42514,6 +43578,22 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_M.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Professional, scientific and technical activities (section M). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -42662,6 +43742,14 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -42770,6 +43858,14 @@
         "https://loenradar.dk/guides/product-manager-vs-marketing-manager-loen-2026"
       ],
       "note": "Published occupation: DST DISCO-08 '2431 Advertising and marketing professionals'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 11531. Same-cell alternatives: LoenRadar Marketing Manager (n=52, verified self-reports): P25 38,310, median 49,052, P75 56,119 kr/md, base pay plus pension. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "marketing-and-growth",
@@ -44465,6 +45561,22 @@
     {
       "family": "marketing-and-growth",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -44849,6 +45961,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -44970,6 +46090,14 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -45059,6 +46187,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1222 Advertising and public relations managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 589. Same-cell alternatives: smallest manager sample of the set but still official register data. "
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "marketing-and-growth",
@@ -46276,6 +47412,22 @@
     {
       "family": "marketing-and-growth",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -46567,6 +47719,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -46697,6 +47857,14 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -46777,6 +47945,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1221 Sales and marketing managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 9502. Same-cell alternatives: CMO-type roles map here; band sits slightly below 1222 because the title population is broader (includes mid-size commercial manager roles). Same figure set is used for the sales-and-business-development lead row; noted to avoid double counting."
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "marketing-and-growth",
@@ -47874,6 +49050,22 @@
     {
       "family": "marketing-and-growth",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "marketing-and-growth",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -48315,6 +49507,22 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -48472,6 +49680,14 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -48590,6 +49806,14 @@
         "https://finansforbundet.dk/dk/nyheder/2025/se-kortet-her-tjener-finansansatte-mest/"
       ],
       "note": "Published occupation: DST DISCO-08 '2411 Accountants'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 13944. Same-cell alternatives: 2412 Financial and investment advisers 54,647 to 62,870 to 75,382 (n=16,847); 2413 Financial analysts 61,929 to 74,440 to 89,115 (n=7,550); LoenRadar financial controller median 48,300; Finansforbundet July 2025: median pay for finance sector employees in the Capital Region 67,251 DKK per month. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "finance-and-accounting",
@@ -50364,6 +51588,30 @@
     {
       "family": "finance-and-accounting",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 988.73,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_K.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Financial and insurance activities (section K). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -50850,6 +52098,22 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4240,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -51041,6 +52305,22 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "COD",
+      "currency": "CDF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/COD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -51139,6 +52419,22 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1211 Finance managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 5218. Same-cell alternatives: corporations sector variant 67,541 to 85,555 to 111,219 (n=5,030). "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "DJI",
+      "currency": "DJF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 115340.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/DJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2017 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2017 cell carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest cut published: treat as a very conservative floor. "
     },
     {
       "family": "finance-and-accounting",
@@ -52802,6 +54098,38 @@
     {
       "family": "finance-and-accounting",
       "level": "lead",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1299.13,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
+      "country": "TTO",
+      "currency": "TTD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TTO.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-88 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "lead",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -53182,6 +54510,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -53321,6 +54657,14 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -53410,6 +54754,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1346 Financial and insurance services branch managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 1115. Same-cell alternatives: bank, pension and insurance branch leadership; CFO-type roles sit in 1211 Finance managers (see lead row). "
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "finance-and-accounting",
@@ -54666,6 +56018,22 @@
     {
       "family": "finance-and-accounting",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "finance-and-accounting",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -55133,6 +56501,22 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 650,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -55290,6 +56674,14 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -55397,6 +56789,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2423 Personnel and careers professionals'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 5482. Same-cell alternatives: 2424 Training and staff development professionals 50,772 to 62,936 to 77,314 (n=2,084). "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "hr-and-people",
@@ -57119,6 +58519,30 @@
     {
       "family": "hr-and-people",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 800,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_N.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Administrative and support service activities (section N). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -57530,6 +58954,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -57651,6 +59083,14 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -57740,6 +59180,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1212 Human resource managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 2513. Same-cell alternatives: corporations sector variant 60,411 to 77,749 to 101,888 (n=2,324). Executive cell left empty: no separate HR director code; HR directors sit in 1211/1219 populations."
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "hr-and-people",
@@ -58962,6 +60410,22 @@
     {
       "family": "hr-and-people",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -59280,6 +60744,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -59419,6 +60891,14 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -59486,6 +60966,14 @@
       "family": "hr-and-people",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -60634,6 +62122,22 @@
     {
       "family": "hr-and-people",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "hr-and-people",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -61102,6 +62606,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1196.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -61276,6 +62796,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -61392,6 +62920,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '3323 Buyers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 10204. Same-cell alternatives: procurement and supply chain specialist archetype; DISCO major group 3 (associate professionals), which explains the lower band. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "operations-and-supply-chain",
@@ -63162,6 +64698,30 @@
     {
       "family": "operations-and-supply-chain",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 760,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_H.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Transportation and storage (section H). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -63583,6 +65143,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -63715,6 +65283,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -63804,6 +65380,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1324 Supply, distribution and related managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 2759. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "operations-and-supply-chain",
@@ -65022,6 +66606,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -65366,6 +66966,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -65496,6 +67104,14 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -65576,6 +67192,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1321 Manufacturing managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 5238. Same-cell alternatives: 1323 Construction managers 55,796 to 69,222 to 89,878 (n=2,845) for construction operations. "
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "operations-and-supply-chain",
@@ -66717,6 +68341,22 @@
     {
       "family": "operations-and-supply-chain",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "operations-and-supply-chain",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -67028,6 +68668,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "BGR",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -67124,6 +68772,14 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -67195,6 +68851,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1219 Business services and administration managers not elsewhere classified'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 9797. Same-cell alternatives: 1349 Professional services managers nec 52,311 to 66,923 to 98,980 (n=868). Lead cell left empty: DST publishes no group-level GM code between department manager and managing director."
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "general-management",
@@ -68175,6 +69839,22 @@
     {
       "family": "general-management",
       "level": "senior",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "senior",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -68562,6 +70242,22 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 4240,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2014 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -68737,6 +70433,22 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "COD",
+      "currency": "CDF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 117000,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/COD.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -68827,6 +70539,22 @@
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "DJI",
+      "currency": "DJF",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 115340.42,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/DJI.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2017&endPeriod=2017"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2017 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2017 cell carries a break-in-series flag, disclosed here. The 2017 vintage is roughly 9 years old and the freshest cut published: treat as a very conservative floor. "
     },
     {
       "family": "general-management",
@@ -70304,6 +72032,38 @@
     {
       "family": "general-management",
       "level": "lead",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1299.13,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.OCU_ISCO08_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-08 major group 1 managers pool, all industries, both sexes, 2021 vintage: the closest published cut to leadership pay. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
+      "country": "TTO",
+      "currency": "TTD",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 8500,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_OCU_CUR_NB,1.0/TTO.A.EAR_EMTM_NB.SEX_T.OCU_ISCO88_1.CUR_TYPE_LCU?format=jsondata&startPeriod=2016&endPeriod=2016"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of the ISCO-88 major group 1 managers pool, all industries, both sexes, 2016 vintage. This flow publishes only occupation major groups with no economic-activity cut, so the managers pool anchors the three leadership families and no senior family rows exist; the country otherwise runs on the purchasing-power floor. The occupation flow publishes no chief-executives split, so no executive rows exist. MEDIAN-ONLY shape. The 2016 vintage is roughly 10 years old and the freshest cut published: treat as a very conservative floor. "
+    },
+    {
+      "family": "general-management",
+      "level": "lead",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -70676,6 +72436,14 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -70816,6 +72584,14 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -70908,6 +72684,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1120 Managing directors and chief executives'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 15589. Same-cell alternatives: 1112 Senior government officials (public sector top executives) 89,472 to 111,644 to 140,122 (n=839). "
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "general-management",
@@ -72162,6 +73946,22 @@
     {
       "family": "general-management",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "general-management",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -72604,6 +74404,22 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 720,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -72805,6 +74621,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -72921,6 +74745,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2142 Civil engineers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 14330. Same-cell alternatives: 2144 Mechanical engineers 54,971 to 65,370 to 77,075 (n=5,467); 2151 Electrical engineers 55,352 to 66,651 to 77,789 (n=2,205). IDA (the Danish engineering union) salary statistics are member login only and were rejected."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -74701,6 +76533,30 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_F.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Construction (section F). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -75081,6 +76937,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -75202,6 +77066,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -75291,6 +77163,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1323 Construction managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 2845. Same-cell alternatives: 1321 Manufacturing managers 57,397 to 71,895 to 98,031 (n=5,238); 1223 Research and development managers 74,355 to 94,622 to 121,163 (n=2,136). Executive cell left empty: no engineering-specific executive code; IDA statistics are gated."
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "engineering-civil-mechanical-electrical",
@@ -76504,6 +78384,22 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -76785,6 +78681,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -76898,6 +78802,14 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -76957,6 +78869,14 @@
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -78051,6 +79971,22 @@
     {
       "family": "engineering-civil-mechanical-electrical",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "engineering-civil-mechanical-electrical",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -78492,6 +80428,22 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1848.78,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -78693,6 +80645,14 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -78812,6 +80772,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2212 Specialist medical practitioners'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 732. Same-cell alternatives: 2211 Generalist medical practitioners 57,164 to 77,140 to 97,197 (n=19,380); 2221 Nursing professionals 42,297 to 46,916 to 52,853 (n=53,972). "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "healthcare",
@@ -80556,6 +82524,30 @@
     {
       "family": "healthcare",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 1092.81,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_Q.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Human health and social work activities (section Q). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -80943,6 +82935,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -81048,6 +83048,14 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -81139,6 +83147,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1342 Health services managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 178. Small n (178) but official register data. Band sits below specialist physicians because hospital managers are mostly nurse-background; flag when quoting."
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "healthcare",
@@ -82294,6 +84310,22 @@
     {
       "family": "healthcare",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -82586,6 +84618,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -82698,6 +84738,14 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -82768,6 +84816,14 @@
       "family": "healthcare",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -83816,6 +85872,22 @@
     {
       "family": "healthcare",
       "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "healthcare",
+      "level": "executive",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -84256,6 +86328,22 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "BRN",
+      "currency": "BND",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 2200,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/BRN.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2014&endPeriod=2014"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2014 vintage, national currency. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. Every used cell of the 2014 vintage carries a break-in-series flag, disclosed here. The 2014 vintage is roughly 12 years old and the freshest section-level release in this flow: treat every figure as a very conservative floor. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -84446,6 +86534,14 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "CRI",
       "currency": "CRC",
       "basis": "monthly-gross",
@@ -84566,6 +86662,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '2330 Secondary education teachers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 12752. Same-cell alternatives: 2341 Primary school teachers 46,800 to 50,483 to 52,659 (n=58,321); 2310 University and higher education teachers 46,350 to 54,087 to 61,437 (n=27,440). "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "education-and-teaching",
@@ -86317,6 +88421,30 @@
     {
       "family": "education-and-teaching",
       "level": "senior",
+      "country": "TON",
+      "currency": "TOP",
+      "basis": "monthly-gross",
+      "p25": 0,
+      "p50": 929.87,
+      "p75": 0,
+      "quality": "Medium",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        "https://sdmx.ilo.org/rest/data/ILO,DF_EAR_EMTM_SEX_ECO_CUR_NB,1.0/TON.A.EAR_EMTM_NB.SEX_T.ECO_ISIC4_P.CUR_TYPE_LCU?format=jsondata&startPeriod=2021&endPeriod=2021"
+      ],
+      "note": "Curated from the ILOSTAT SDMX API republishing the national household labour survey, median monthly earnings of employees, both sexes, ISIC4 section, 2021 vintage, national currency. Archetype: all employees in Education (section P). MEDIAN-ONLY shape: the flow publishes one median, no percentiles. It is an all-seniority, all-employee median: treat as a floor when quoting senior roles. "
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "senior",
       "country": "TUN",
       "currency": "TND",
       "basis": "monthly-gross",
@@ -86695,6 +88823,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -86808,6 +88944,14 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -86889,6 +89033,14 @@
         "https://www.dst.dk/statistikdokumentation/39350029-3a77-4daa-b3b1-eb41b3ef963a"
       ],
       "note": "Published occupation: DST DISCO-08 '1345 Education managers'. Basis authority: DST table LONS20 component text 'Median, standardberegnet timefortjeneste' (DKK per standard hour); band converted to monthly at 160.33 hours (37 h week), the exact factor DST itself uses (its 'STANDARDBEREGNET MAANEDSFORTJENESTE' equals average standard hourly x 160.33). Gross pay incl. employer pension contribution. Population: all full-time fixed-salaried employees, all sectors, data year 2024 (Lonstrukturstatistikken, employer-reported register data, published Sep 2025), n = 5274. Same-cell alternatives: school principals (rektor level) and education institution managers. Executive cell left empty: 1345 already covers top institution leadership."
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "DJI",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
     },
     {
       "family": "education-and-teaching",
@@ -88061,6 +90213,22 @@
     {
       "family": "education-and-teaching",
       "level": "lead",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
+      "country": "TTO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "lead",
       "country": "TUN",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -88353,6 +90521,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "BRN",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "BGR",
       "currency": "EUR",
       "basis": "monthly-gross",
@@ -88466,6 +90642,14 @@
     {
       "family": "education-and-teaching",
       "level": "executive",
+      "country": "COD",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
       "country": "CRI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
@@ -88536,6 +90720,14 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "DNK",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "DJI",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"
@@ -89557,6 +91749,22 @@
       "family": "education-and-teaching",
       "level": "executive",
       "country": "TGO",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "TON",
+      "status": "insufficient_data",
+      "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
+      "lastReviewed": "2026-09-09"
+    },
+    {
+      "family": "education-and-teaching",
+      "level": "executive",
+      "country": "TTO",
       "status": "insufficient_data",
       "reason": "Awaiting curation. No verified public source has been entered for this role, level, and country yet.",
       "lastReviewed": "2026-09-09"

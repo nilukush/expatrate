@@ -63,3 +63,44 @@ test.describe('seo pages', () => {
     expect(results.violations).toEqual([]);
   });
 });
+
+test.describe('head hreflang reciprocity', () => {
+  // The sitemap declares a full nine-way cluster for every URL; each page head
+  // must carry the same reciprocal set or Google drops the alternates.
+  const LOCALES = ['ar', 'hi', 'id', 'es', 'fr', 'pt', 'ru'];
+  const expectedAlternates = (path: string) =>
+    [`en:${path}`, ...LOCALES.map((l) => `${l}:/${l}${path}`), `x-default:${path}`].sort();
+  const alternates = (html: string) =>
+    [...html.matchAll(/<link\b[^>]*\bhreflang="([^"]+)"[^>]*>/g)]
+      .map((m) => {
+        const href = m[0].match(/href="([^"]+)"/)?.[1] ?? '';
+        return `${m[1]}:${new URL(href).pathname}`;
+      })
+      .sort();
+
+  // One case per head-emission path: home (EN and localized), every SeoPage
+  // kind on a localized route, the standalone EN methodology template, and
+  // privacy (EN and localized).
+  const cases: Array<[string, string]> = [
+    ['/', '/'],
+    ['/ar/', '/'],
+    ['/salaries/', '/salaries/'],
+    ['/es/salaries/', '/salaries/'],
+    ['/ru/salary/it-executive/in/australia/', '/salary/it-executive/in/australia/'],
+    ['/ar/salaries/australia/', '/salaries/australia/'],
+    ['/hi/salary/it-executive/', '/salary/it-executive/'],
+    ['/fr/methodology/', '/methodology/'],
+    ['/methodology/', '/methodology/'],
+    ['/privacy/', '/privacy/'],
+    ['/pt/privacy/', '/privacy/'],
+  ];
+
+  for (const [pagePath, neutralPath] of cases) {
+    test(`${pagePath} carries the full nine-way alternate set`, async ({ request }) => {
+      const response = await request.get(pagePath);
+      expect(response?.status(), `${pagePath} should resolve`).toBe(200);
+      const html = (await response?.text()) ?? '';
+      expect(alternates(html), `${pagePath} alternate set`).toEqual(expectedAlternates(neutralPath));
+    });
+  }
+});

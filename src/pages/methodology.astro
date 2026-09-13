@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import '../styles/wizard.css';
 import '../styles/seo.css';
-import { detailPages, breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL } from '../lib/seo';
+import { detailPages, breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL, alternateLinks } from '../lib/seo';
 import { t, setLocale } from '../i18n';
 import Pwa from '../components/Pwa.astro';
 setLocale('en');
@@ -34,6 +34,7 @@ const crumbs = [
     <title>{t('seo.methodologyTitle')}</title>
     <meta name="description" content="The two-anchor method: market percentiles where data exists, a purchasing-power floor everywhere, both shown with sources and dates." />
     <link rel="canonical" href={`${SITE_URL}/methodology/`} />
+    {alternateLinks('/methodology/').map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <script type="application/ld+json" set:html={JSON.stringify(webAppLd())} />
     <script type="application/ld+json" set:html={JSON.stringify(organizationLd())} />
     <script type="application/ld+json" set:html={JSON.stringify(datasetLd())} />

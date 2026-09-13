@@ -8,6 +8,7 @@ import fxSnapshot from '../data/fx-snapshot.json';
 import hardshipPosts from '../data/hardship-posts.json';
 import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, type Locale } from '../i18n';
+import { alternateLinks } from '../lib/seo';
 import Pwa from './Pwa.astro';
 
 interface Props {
@@ -69,15 +70,7 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
     <meta name="description" content={t('home.description')} />
     <title>{t('home.title')}</title>
     <link rel="canonical" href={`${SITE_URL}${localePath}`} />
-    <link rel="alternate" hreflang="en" href={`${SITE_URL}/`} />
-    <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/`} />
-    <link rel="alternate" hreflang="hi" href={`${SITE_URL}/hi/`} />
-    <link rel="alternate" hreflang="id" href={`${SITE_URL}/id/`} />
-    <link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`} />
-    <link rel="alternate" hreflang="fr" href={`${SITE_URL}/fr/`} />
-    <link rel="alternate" hreflang="pt" href={`${SITE_URL}/pt/`} />
-    <link rel="alternate" hreflang="ru" href={`${SITE_URL}/ru/`} />
-    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    {alternateLinks('/').map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <meta property="og:title" content={t('home.title')} />
     <meta property="og:description" content={t('home.description')} />
     <meta property="og:type" content="website" />

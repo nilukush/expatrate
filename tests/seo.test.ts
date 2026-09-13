@@ -177,3 +177,24 @@ it('detailPages computes once per locale: the build must not regroup 3,500 cells
   expect(detailPages(), 'and then caches per locale').toBe(arabic);
   setLocale(original);
 });
+
+it('no template hardcodes hreflang links, every head set comes from alternateLinks', async () => {
+  // A template writing literal hreflang="..." links drifts as locales are
+  // added (SeoPage shipped a three-locale set beside an eight-locale switcher).
+  // The shared helper is the only legal emitter of head alternates.
+  const { readFileSync, readdirSync } = await import('node:fs');
+  const { fileURLToPath } = await import('node:url');
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  const files: string[] = [];
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const p = `${dir}/${entry.name}`;
+      if (entry.isDirectory()) walk(p);
+      else if (entry.name.endsWith('.astro')) files.push(p);
+    }
+  };
+  walk(`${root}src`);
+  expect(files.length).toBeGreaterThan(10);
+  const offenders = files.filter((f) => readFileSync(f, 'utf8').includes('hreflang="'));
+  expect(offenders, 'templates must call alternateLinks() instead').toEqual([]);
+});

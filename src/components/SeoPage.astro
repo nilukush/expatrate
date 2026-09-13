@@ -4,7 +4,7 @@ import '../styles/wizard.css';
 import '../styles/seo.css';
 import {
   detailPage, detailPages, seoCountries, detailUrl, countryHubUrl,
-  breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL, countrySlug,
+  breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL, countrySlug, alternateLinks,
 } from '../lib/seo';
 import { t, setLocale, type Locale } from '../i18n';
 import { localName } from '../lib/seo';
@@ -65,6 +65,7 @@ const hrefFor = (l: string) => {
   if (kind === 'salaries') return `${SITE_URL}${lp}/salaries/`;
   return `${SITE_URL}${lp}/methodology/`;
 };
+const neutralPath = hrefFor('en').slice(SITE_URL.length);
 const crumbsBase = [{ name: t('seo.breadcrumbHome'), url: `${SITE_URL}${localePath}/` }];
 const crumbs = kind === 'detail' && page
   ? [...crumbsBase, { name: `${t('seo.breadcrumbSalaries')} - ${page.countryLocal}`, url: `${SITE_URL}${localePath}${countryHubUrl(page.countrySlug)}` }, { name: page.familyName, url: canonical }]
@@ -84,10 +85,7 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={hrefFor('en')} />
-    <link rel="alternate" hreflang="ar" href={hrefFor('ar')} />
-    <link rel="alternate" hreflang="hi" href={hrefFor('hi')} />
-    <link rel="alternate" hreflang="x-default" href={hrefFor('en')} />
+    {alternateLinks(neutralPath).map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />

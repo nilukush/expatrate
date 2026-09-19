@@ -107,7 +107,8 @@ test.describe('internal linking', () => {
           if (text.includes('.home-markets-list a:hover') || text.startsWith('a:focus-visible')) {
             found.push(text);
           }
-          if ('cssRules' in rule && rule.cssRules) walk(rule.cssRules);
+          const nested = (rule as { cssRules?: CSSRuleList }).cssRules;
+          if (nested) walk(nested);
         }
       };
       for (const sheet of document.styleSheets) {

@@ -99,8 +99,8 @@ test('the popular markets row joins the site link language and the page column',
   expect(globalCss, 'items never split across lines').toMatch(
     /\.home-markets-list\s+li\s*{[^}]*white-space:\s*nowrap/s,
   );
-  expect(globalCss, 'separators are decorative CSS, not text nodes').toMatch(
-    /\.home-markets-list\s+li\s*\+\s*li::before\s*{[^}]*content/s,
+  expect(globalCss, 'separators are decorative CSS trailing each item, never a leading dot on a wrapped line').toMatch(
+    /\.home-markets-list\s+li:not\(:last-child\)::after\s*{[^}]*content/s,
   );
   expect(globalCss, 'links use the primary link color').toMatch(
     /\.home-markets-list\s+a\s*{[^}]*var\(--primary\)/s,

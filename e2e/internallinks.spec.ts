@@ -133,12 +133,19 @@ test.describe('internal linking', () => {
     const data = await list.evaluate((ul) => {
       const items = ul.querySelectorAll('li');
       const first = getComputedStyle(items[0]);
-      const sep = getComputedStyle(items[1], '::before');
-      return { display: first.display, nowrap: first.whiteSpace, sepContent: sep.content };
+      const sep = getComputedStyle(items[0], '::after');
+      const lastSep = getComputedStyle(items[items.length - 1], '::after');
+      return {
+        display: first.display,
+        nowrap: first.whiteSpace,
+        sepContent: sep.content,
+        lastItemHasNoSeparator: lastSep.content === 'none',
+      };
     });
     expect(data.display).toBe('inline');
     expect(data.nowrap).toBe('nowrap');
     expect(data.sepContent).toContain('·');
+    expect(data.lastItemHasNoSeparator).toBe(true);
     const sectionWidth = await page
       .locator('.home-markets')
       .evaluate((el) => getComputedStyle(el).maxInlineSize);

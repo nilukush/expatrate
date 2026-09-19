@@ -276,10 +276,10 @@ html[lang='hi'] body {
   white-space: nowrap;
 }
 
-.home-markets-list li + li::before {
+.home-markets-list li:not(:last-child)::after {
   content: '·';
   color: var(--muted-foreground);
-  margin-inline: 0.5rem;
+  margin-inline: 0.5rem 0.375rem;
 }
 
 /* Footer nav in the shared SiteFooter partial */
@@ -295,10 +295,10 @@ html[lang='hi'] body {
   white-space: nowrap;
 }
 
-.site-footer .footer-nav li + li::before {
+.site-footer .footer-nav li:not(:last-child)::after {
   content: '·';
   color: var(--muted-foreground);
-  margin-inline: 0.5rem;
+  margin-inline: 0.5rem 0.375rem;
 }
 
 /* Shared link treatments, ordered so specificity never descends */

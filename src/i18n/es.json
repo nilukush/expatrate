@@ -16,6 +16,7 @@
     "langLabel": "Idioma",
     "linkMethodology": "Metodología",
     "linkSalaries": "Referencias salariales",
+    "popularMarkets": "Mercados populares",
     "trustData": "Datos al: referencias {benchmarks}, PPA del Banco Mundial {ppp}, tasas de cambio {fx}, asignaciones por dificultad {allowances}",
     "skip": "Saltar al contenido"
   },
@@ -241,6 +242,7 @@
     "countryHubTitle": "Referencias salariales para {country}",
     "countryHubAnswer": "Datos de mercado verificados para {n} familias de roles en {country}. Cada cifra cita su fuente. Para cualquier otro país, el suelo de poder adquisitivo funciona en todas partes.",
     "salariesAnswer": "Datos de mercado verificados para {n} países, con cada cifra trazada hasta su fuente. Para cualquier otro país, el suelo de poder adquisitivo sigue funcionando.",
+    "salariesRolesH2": "Explorar por familia de funciones",
     "countryHubH2": "Familias de roles con datos verificados",
     "roleHubTitle": "Salarios de {family} por país",
     "roleHubAnswer": "Referencias verificadas de {family} por país. Cada cifra cita su fuente.",

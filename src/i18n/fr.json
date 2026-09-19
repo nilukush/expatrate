@@ -16,6 +16,7 @@
     "langLabel": "Langue",
     "linkMethodology": "Méthodologie",
     "linkSalaries": "Références salariales",
+    "popularMarkets": "Marchés populaires",
     "trustData": "Données au : références {benchmarks}, PPA Banque mondiale {ppp}, taux de change {fx}, indemnités de difficulté {allowances}",
     "skip": "Aller au contenu"
   },
@@ -241,6 +242,7 @@
     "countryHubTitle": "Références salariales pour {country}",
     "countryHubAnswer": "Données de marché vérifiées pour {n} familles de métiers en {country}. Chaque chiffre cite sa source. Pour tout autre pays, le plancher de pouvoir d'achat fonctionne partout.",
     "salariesAnswer": "Données de marché vérifiées pour {n} pays, chaque chiffre remonte à sa source. Pour tout autre pays, le plancher de pouvoir d'achat fonctionne toujours.",
+    "salariesRolesH2": "Parcourir par famille de métiers",
     "countryHubH2": "Familles de métiers avec données vérifiées",
     "roleHubTitle": "Salaires {family} par pays",
     "roleHubAnswer": "Références vérifiées {family} par pays. Chaque chiffre cite sa source.",

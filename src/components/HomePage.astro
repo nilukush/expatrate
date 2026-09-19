@@ -8,7 +8,7 @@ import fxSnapshot from '../data/fx-snapshot.json';
 import hardshipPosts from '../data/hardship-posts.json';
 import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, type Locale } from '../i18n';
-import { alternateLinks } from '../lib/seo';
+import { alternateLinks, localName, popularMarkets } from '../lib/seo';
 import Pwa from './Pwa.astro';
 
 interface Props {
@@ -17,6 +17,7 @@ interface Props {
 
 const { locale } = Astro.props;
 setLocale(locale);
+const markets = popularMarkets();
 const dir = locale === 'ar' ? 'rtl' : 'ltr';
 const SITE_URL = 'https://expatrate.pages.dev';
 const localePath = locale === 'en' ? '/' : `/${locale}/`;
@@ -129,6 +130,18 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
 
       <div id="wizard" class="wizard-rail"></div>
       <section id="results" class="results-rail" hidden></section>
+
+      <section class="home-markets" aria-label={t('home.popularMarkets')}>
+        <h2 class="hero-eyebrow">{t('home.popularMarkets')}</h2>
+        <p class="footer-nav">
+          {markets.map((market, i) => (
+            <>
+              {i > 0 && ' · '}
+              <a href={`${localePath}salaries/${market.slug}/`}>{localName(market.iso3, market.name)}</a>
+            </>
+          ))}
+        </p>
+      </section>
 
       </main>
     <footer class="site-footer">

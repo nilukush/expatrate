@@ -2,12 +2,13 @@
 import '../../styles/global.css';
 import '../../styles/wizard.css';
 import '../../styles/seo.css';
-import { seoCountries, countryHubUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
+import { seoCountries, countryHubUrl, roleFamilyIndex, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
 import { t, setLocale } from '../../i18n';
 import Pwa from '../../components/Pwa.astro';
 setLocale('en');
 
 const countries = seoCountries();
+const roleFamilies = roleFamilyIndex();
 const crumbs = [
   { name: t('seo.breadcrumbHome'), url: `${SITE_URL}/` },
   { name: 'Salaries', url: `${SITE_URL}/salaries/` },
@@ -66,6 +67,15 @@ const crumbs = [
           {countries.map((country) => (
             <li>
               <a href={countryHubUrl(country.slug)}>{country.name} ({country.families} role families)</a>
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="seo-h2">{t('seo.salariesRolesH2')}</h2>
+        <ul class="seo-list">
+          {roleFamilies.map((family) => (
+            <li>
+              <a href={`/salary/${family.id}/`}>{family.name}</a>
             </li>
           ))}
         </ul>

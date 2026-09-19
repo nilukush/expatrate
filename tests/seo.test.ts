@@ -10,6 +10,9 @@ import {
   datasetLd,
   sitemapXml,
   alternateLinks,
+  seoCountries,
+  roleFamilyIndex,
+  popularMarkets,
 } from '../src/lib/seo';
 import { getLocale, setLocale } from '../src/i18n';
 import benchmarks from '../src/data/benchmarks.json';
@@ -48,6 +51,29 @@ describe('seo page inventory', () => {
   it('slugs are stable and reversible', () => {
     expect(countrySlug('United Arab Emirates')).toBe('united-arab-emirates');
     expect(detailUrl('it-executive', 'australia')).toBe('/salary/it-executive/in/australia/');
+  });
+});
+
+describe('internal linking', () => {
+  it('roleFamilyIndex lists exactly the families that have detail pages', () => {
+    const index = roleFamilyIndex();
+    const detailFamilies = new Set(detailPages().map((p) => p.familyId));
+    expect(index.map((f) => f.id).sort()).toEqual([...detailFamilies].sort());
+    expect(index.length).toBe(16);
+    expect(new Set(index.map((f) => f.id)).size).toBe(index.length);
+    expect(index.every((f) => f.name.length > 0)).toBe(true);
+    expect(index.some((f) => f.id === 'software-engineering' && f.name === 'Software Engineering')).toBe(true);
+  });
+
+  it('popularMarkets returns the tier-1 countries that have verified data, every hub live', () => {
+    const markets = popularMarkets();
+    expect(markets.map((m) => m.iso3).sort()).toEqual(
+      ['ARE', 'DEU', 'EGY', 'GBR', 'IDN', 'IND', 'QAT', 'SAU', 'SGP', 'USA'],
+    );
+    const hubSlugs = new Set(seoCountries().map((c) => c.slug));
+    for (const market of markets) {
+      expect(hubSlugs.has(market.slug), `${market.iso3} hub must exist`).toBe(true);
+    }
   });
 });
 

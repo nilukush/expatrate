@@ -22,7 +22,7 @@ type BenchmarkCell = {
   note: string;
 };
 
-const countries = countriesJson as Array<{ iso3: string; name: string; currency: string }>;
+const countries = countriesJson as Array<{ iso3: string; name: string; currency: string; tier: number }>;
 const families = roleFamiliesJson.families as Array<{ id: string; name: string }>;
 const dataCells = (benchmarksJson.entries as Array<Record<string, unknown>>).filter(
   (entry) => entry.status === undefined,
@@ -197,6 +197,19 @@ export function seoCountries(): Array<{ iso3: string; name: string; slug: string
 
 export const detailUrl = (familyId: string, slug: string): string =>
   `/salary/${familyId}/in/${slug}/`;
+
+export function roleFamilyIndex(): Array<{ id: string; name: string }> {
+  const withData = new Set(detailPages().map((page) => page.familyId));
+  return families.filter((family) => withData.has(family.id));
+}
+
+export function popularMarkets(): Array<{ iso3: string; name: string; slug: string }> {
+  const withData = new Set(dataCells.map((cell) => cell.country));
+  return countries
+    .filter((c) => c.tier === 1 && withData.has(c.iso3))
+    .map((c) => ({ iso3: c.iso3, name: c.name, slug: countrySlug(c.name) }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
 
 export const countryHubUrl = (slug: string): string => `/salaries/${slug}/`;
 

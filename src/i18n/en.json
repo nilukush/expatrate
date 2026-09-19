@@ -16,6 +16,7 @@
     "langLabel": "Language",
     "linkMethodology": "Methodology",
     "linkSalaries": "Salary benchmarks",
+    "popularMarkets": "Popular markets",
     "trustData": "Data as of: benchmarks {benchmarks}, World Bank PPP {ppp}, exchange rates {fx}, allowances {allowances}",
     "skip": "Skip to content"
   },
@@ -241,6 +242,7 @@
     "countryHubTitle": "Salary benchmarks for {country}",
     "countryHubAnswer": "Verified market data for {n} role families in {country}. Every number cites its source. For any other country, the purchasing-power floor works everywhere.",
     "salariesAnswer": "Verified market data for {n} countries, with every number traced to its source. For any other country, the purchasing-power floor still works.",
+    "salariesRolesH2": "Browse by role family",
     "countryHubH2": "Role families with verified data",
     "roleHubTitle": "{family} salaries by country",
     "roleHubAnswer": "Verified {family} benchmarks by country. Every number cites its source.",

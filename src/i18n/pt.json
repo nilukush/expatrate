@@ -16,6 +16,7 @@
     "langLabel": "Idioma",
     "linkMethodology": "Metodologia",
     "linkSalaries": "Referências salariais",
+    "popularMarkets": "Mercados populares",
     "trustData": "Dados de: referências {benchmarks}, PPA do Banco Mundial {ppp}, câmbio {fx}, adicional de dificuldade {allowances}",
     "skip": "Ir para o conteúdo"
   },
@@ -241,6 +242,7 @@
     "countryHubTitle": "Referências salariais para {country}",
     "countryHubAnswer": "Dados de mercado verificados para {n} famílias de cargo em {country}. Cada cifra cita a fonte. Para qualquer outro país, o piso de poder de compra funciona em qualquer lugar.",
     "salariesAnswer": "Dados de mercado verificados para {n} países, com cada cifra rastreada até a fonte. Para qualquer outro país, o piso de poder de compra continua funcionando.",
+    "salariesRolesH2": "Navegar por família de cargo",
     "countryHubH2": "Famílias de cargo com dados verificados",
     "roleHubTitle": "Salários de {family} por país",
     "roleHubAnswer": "Referências verificadas de {family} por país. Cada cifra cita a fonte.",

@@ -16,6 +16,7 @@
     "langLabel": "Bahasa",
     "linkMethodology": "Metodologi",
     "linkSalaries": "Tolok ukur gaji",
+    "popularMarkets": "Pasar populer",
     "trustData": "Data per: tolok ukur {benchmarks}, PPP Bank Dunia {ppp}, kurs {fx}, tunjangan kesulitan {allowances}",
     "skip": "Lompat ke konten"
   },
@@ -241,6 +242,7 @@
     "countryHubTitle": "Tolok ukur gaji untuk {country}",
     "countryHubAnswer": "Data pasar terverifikasi untuk {n} keluarga peran di {country}. Setiap angka mencantumkan sumbernya. Untuk negara lain mana pun, batas daya beli bekerja di mana saja.",
     "salariesAnswer": "Data pasar terverifikasi untuk {n} negara, setiap angka ditelusuri ke sumbernya. Untuk negara lain mana pun, batas daya beli tetap bekerja.",
+    "salariesRolesH2": "Jelajahi berdasarkan keluarga peran",
     "countryHubH2": "Keluarga peran dengan data terverifikasi",
     "roleHubTitle": "Gaji {family} menurut negara",
     "roleHubAnswer": "Tolok ukur {family} terverifikasi menurut negara. Setiap angka mencantumkan sumbernya.",

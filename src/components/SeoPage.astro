@@ -32,6 +32,8 @@ const levelCells = (level: { p25: number; p50: number; p75: number; currency: st
 
 // Resolve content per kind
 const countries = seoCountries();
+const salaryFamilies = [...new Map(detailPages().map((p) => [p.familyId, p.familyLocal])).entries()]
+  .map(([id, familyLocal]) => ({ id, familyLocal }));
 const page = kind === 'detail' && familyId
   ? detailPages().find((p) => p.familyId === familyId && p.countrySlug === countrySlugParam)
   : undefined;
@@ -176,6 +178,10 @@ const valid = (kind !== 'detail' && kind !== 'country') || page || country;
             <p class="seo-answer">{t('seo.salariesAnswer', { n: countries.length })}</p>
             <ul class="seo-list">
               {countries.map((c) => <li><a href={`${localePath}${countryHubUrl(c.slug)}`}>{localName(c.iso3, c.name)}</a></li>)}
+            </ul>
+            <h2 class="seo-h2">{t('seo.salariesRolesH2')}</h2>
+            <ul class="seo-list">
+              {salaryFamilies.map((f) => <li><a href={`${localePath}/salary/${f.id}/`}>{f.familyLocal}</a></li>)}
             </ul>
           </>
         )}

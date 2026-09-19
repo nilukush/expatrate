@@ -1,0 +1,27 @@
+---
+import { t, setLocale, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+setLocale(locale);
+const localePath = locale === 'en' ? '/' : `/${locale}/`;
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <slot />
+  <nav class="footer-nav">
+    <ul>
+      <li><a href={`${localePath}methodology/`}>{t('home.linkMethodology')}</a></li>
+      {' '}
+      <li><a href={`${localePath}salaries/`}>{t('home.linkSalaries')}</a></li>
+      {' '}
+      <li><a href={`${localePath}privacy/`}>{t('home.linkPrivacy')}</a></li>
+    </ul>
+  </nav>
+  <p>{t('home.footerAdvice')}</p>
+  <p>{t('home.footerRights', { year })}</p>
+</footer>

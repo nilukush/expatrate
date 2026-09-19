@@ -5,6 +5,7 @@ import '../styles/seo.css';
 import { t, setLocale, type Locale } from '../i18n';
 import { alternateLinks } from '../lib/seo';
 import Pwa from './Pwa.astro';
+import SiteFooter from './SiteFooter.astro';
 
 interface Props {
   locale: Locale;
@@ -57,10 +58,7 @@ const altPath = (l: string) => (l === 'en' ? '' : `/${l}`);
         <p class="seo-answer">{t('privacy.externalBody')}</p>
       </article>
       </main>
-    <footer class="site-footer">
-        <p>{t('home.footerAdvice')}</p>
-        <p>{t('home.footerRights', { year: new Date().getFullYear() })}</p>
-      </footer>
+    <SiteFooter locale={locale} />
     </div>
   </body>
 </html>

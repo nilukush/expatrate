@@ -10,6 +10,7 @@ import roleFamiliesJson from '../data/role-families.json';
 import { t, setLocale, type Locale } from '../i18n';
 import { alternateLinks, localName, popularMarkets } from '../lib/seo';
 import Pwa from './Pwa.astro';
+import SiteFooter from './SiteFooter.astro';
 
 interface Props {
   locale: Locale;
@@ -35,7 +36,6 @@ const dataDates = {
     '1970-01-01',
   ),
 };
-const year = new Date().getFullYear();
 const fontPreload =
   locale === 'ar'
     ? '/fonts/noto-sans-arabic-var.woff2'
@@ -133,25 +133,22 @@ const heroTitleHtml = t('home.titleLine', { word: '__HL__' }).replace(
 
       <section class="home-markets" aria-label={t('home.popularMarkets')}>
         <h2 class="hero-eyebrow">{t('home.popularMarkets')}</h2>
-        <p class="footer-nav">
+        <ul class="home-markets-list">
           {markets.map((market, i) => (
             <>
-              {i > 0 && ' · '}
-              <a href={`${localePath}salaries/${market.slug}/`}>{localName(market.iso3, market.name)}</a>
+              {i > 0 && ' '}
+              <li>
+                <a href={`${localePath}salaries/${market.slug}/`}>{localName(market.iso3, market.name)}</a>
+              </li>
             </>
           ))}
-        </p>
+        </ul>
       </section>
 
       </main>
-    <footer class="site-footer">
-        <p>{t('home.footerData', { n: countries.length, b: benchmarkCountries })}</p>
-        <nav class="footer-nav">
-          <a href={`${localePath}methodology/`}>{t('home.linkMethodology')}</a> · <a href={`${localePath}salaries/`}>{t('home.linkSalaries')}</a> · <a href={`${localePath}privacy/`}>{t('home.linkPrivacy')}</a>
-        </nav>
-        <p>{t('home.footerAdvice')}</p>
-        <p>{t('home.footerRights', { year })}</p>
-      </footer>
+    <SiteFooter locale={locale}>
+      <p>{t('home.footerData', { n: countries.length, b: benchmarkCountries })}</p>
+    </SiteFooter>
     </div>
     <script>
       import { mountWizard } from '../wizard/main';

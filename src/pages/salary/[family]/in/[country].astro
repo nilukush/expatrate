@@ -5,6 +5,7 @@ import '../../../../styles/seo.css';
 import { detailPages, detailUrl, countryHubUrl, breadcrumbLd, webAppLd, organizationLd, SITE_URL, monthlyFor, alternateLinks } from '../../../../lib/seo';
 import { t, setLocale } from '../../../../i18n';
 import Pwa from '../../../../components/Pwa.astro';
+import SiteFooter from '../../../../components/SiteFooter.astro';
 setLocale('en');
 
 export function getStaticPaths() {
@@ -115,10 +116,7 @@ const fmt = (amount: number, currency: string) =>
       </article>
 
       </main>
-    <footer class="site-footer">
-        <p>Estimates from public market data, indicative only. Not financial, tax, or legal advice.</p>
-        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
-      </footer>
+    <SiteFooter locale="en" />
     </div>
   </body>
 </html>

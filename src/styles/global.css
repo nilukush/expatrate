@@ -13,6 +13,11 @@
   ::selection {
     background-color: var(--range-band);
   }
+
+  a:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
 }
 
 /* Page shell */
@@ -250,6 +255,73 @@ html[lang='hi'] body {
 
 .site-footer p {
   margin: 0 0 0.25rem;
+}
+
+/* Homepage popular markets */
+
+.home-markets {
+  max-inline-size: 46rem;
+  margin-inline: auto;
+  margin-block-start: 2.5rem;
+}
+
+.home-markets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-markets-list li {
+  display: inline;
+  white-space: nowrap;
+}
+
+.home-markets-list li + li::before {
+  content: '·';
+  color: var(--muted-foreground);
+  margin-inline: 0.5rem;
+}
+
+/* Footer nav in the shared SiteFooter partial */
+
+.site-footer .footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.25rem;
+}
+
+.site-footer .footer-nav li {
+  display: inline;
+  white-space: nowrap;
+}
+
+.site-footer .footer-nav li + li::before {
+  content: '·';
+  color: var(--muted-foreground);
+  margin-inline: 0.5rem;
+}
+
+/* Shared link treatments, ordered so specificity never descends */
+
+.home-markets .home-markets-list a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer .footer-nav a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.home-markets .home-markets-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer .footer-nav a:hover {
+  color: var(--primary);
 }
 
 /* Print: the results page only, clean and black on white */

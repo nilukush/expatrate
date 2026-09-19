@@ -4,9 +4,9 @@ import '../styles/wizard.css';
 import '../styles/seo.css';
 import { t, setLocale } from '../i18n';
 import Pwa from '../components/Pwa.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 
 setLocale('en');
-const year = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -33,10 +33,7 @@ const year = new Date().getFullYear();
         <p class="seo-answer"><a href="/">Start a new salary check</a>.</p>
       </article>
       </main>
-    <footer class="site-footer">
-        <p>{t('home.footerAdvice')}</p>
-        <p>{t('home.footerRights', { year })}</p>
-      </footer>
+    <SiteFooter locale="en" />
     </div>
   </body>
 </html>

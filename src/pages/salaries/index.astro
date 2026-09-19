@@ -5,6 +5,7 @@ import '../../styles/seo.css';
 import { seoCountries, countryHubUrl, roleFamilyIndex, breadcrumbLd, webAppLd, organizationLd, SITE_URL, alternateLinks } from '../../lib/seo';
 import { t, setLocale } from '../../i18n';
 import Pwa from '../../components/Pwa.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
 setLocale('en');
 
 const countries = seoCountries();
@@ -86,10 +87,7 @@ const crumbs = [
       </article>
 
       </main>
-    <footer class="site-footer">
-        <p>Estimates from public market data, indicative only. Not financial, tax, or legal advice.</p>
-        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
-      </footer>
+    <SiteFooter locale="en" />
     </div>
   </body>
 </html>

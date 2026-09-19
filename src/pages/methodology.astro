@@ -5,6 +5,7 @@ import '../styles/seo.css';
 import { detailPages, breadcrumbLd, webAppLd, organizationLd, datasetLd, SITE_URL, alternateLinks } from '../lib/seo';
 import { t, setLocale } from '../i18n';
 import Pwa from '../components/Pwa.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 setLocale('en');
 
 const pages = detailPages();
@@ -109,10 +110,9 @@ const crumbs = [
       </article>
 
       </main>
-    <footer class="site-footer">
-        <p>ExpatRate. Free, no sign-up, resumes never leave your device.</p>
-        <p>© {new Date().getFullYear()} ExpatRate. Free, no account required.</p>
-      </footer>
+    <SiteFooter locale="en">
+      <p>ExpatRate. Free, no sign-up, resumes never leave your device.</p>
+    </SiteFooter>
     </div>
   </body>
 </html>

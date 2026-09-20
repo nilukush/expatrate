@@ -1,21 +1,23 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('layout composition', () => {
-  test('hero, wizard, and footer share one center axis and nothing overflows', async ({ page }) => {
+  test('header, hero, markets, and footer share one column axis and nothing overflows', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('/');
     await page.waitForSelector('#stepIndicator', { state: 'visible' });
 
-    const centers = await page.evaluate(() => {
+    const geo = await page.evaluate(() => {
       const pick = (sel: string) => {
         const el = document.querySelector(sel);
         if (!el) return null;
         const r = el.getBoundingClientRect();
-        return r.left + r.width / 2;
+        return { left: r.left, center: r.left + r.width / 2 };
       };
       return {
+        header: pick('.site-header'),
         hero: pick('.hero'),
         wizard: pick('.wizard-rail'),
+        markets: pick('.home-markets'),
         footer: pick('.site-footer'),
         halfViewport: innerWidth / 2,
         docWidth: document.documentElement.scrollWidth,
@@ -23,12 +25,18 @@ test.describe('layout composition', () => {
       };
     });
 
-    expect(centers.hero).not.toBeNull();
-    expect(centers.wizard).not.toBeNull();
-    expect(centers.footer).not.toBeNull();
-    expect(Math.abs(centers.hero! - centers.halfViewport)).toBeLessThanOrEqual(1);
-    expect(Math.abs(centers.wizard! - centers.halfViewport)).toBeLessThanOrEqual(1);
-    expect(Math.abs(centers.footer! - centers.halfViewport)).toBeLessThanOrEqual(1);
-    expect(centers.docWidth).toBeLessThanOrEqual(centers.viewport);
+    expect(geo.header).not.toBeNull();
+    expect(geo.hero).not.toBeNull();
+    expect(geo.wizard).not.toBeNull();
+    expect(geo.markets).not.toBeNull();
+    expect(geo.footer).not.toBeNull();
+    expect(Math.abs(geo.header!.left - geo.hero!.left)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.markets!.left - geo.hero!.left)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.footer!.left - geo.hero!.left)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.header!.center - geo.halfViewport)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.hero!.center - geo.halfViewport)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.wizard!.center - geo.halfViewport)).toBeLessThanOrEqual(1);
+    expect(Math.abs(geo.footer!.center - geo.halfViewport)).toBeLessThanOrEqual(1);
+    expect(geo.docWidth).toBeLessThanOrEqual(geo.viewport);
   });
 });

@@ -42,6 +42,8 @@
 /* Header */
 
 .site-header {
+  max-inline-size: 46rem;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

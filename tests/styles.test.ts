@@ -113,6 +113,16 @@ test('the popular markets row joins the site link language and the page column',
   );
 });
 
+test('the header content joins the shared page column', () => {
+  const globalCss = readFileSync(`${root}src/styles/global.css`, 'utf8');
+  expect(globalCss, 'header returns to the centered 46rem column').toMatch(
+    /\.site-header\s*{[^}]*max-inline-size:\s*46rem/s,
+  );
+  expect(globalCss, 'header centers like hero, markets, and footer').toMatch(
+    /\.site-header\s*{[^}]*margin-inline:\s*auto/s,
+  );
+});
+
 test('the markets row is a list, not a run of anchors in a paragraph', () => {
   const home = readFileSync(`${root}src/components/HomePage.astro`, 'utf8');
   expect(home).toContain('home-markets-list');
